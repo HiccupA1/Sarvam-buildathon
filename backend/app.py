@@ -1,24 +1,27 @@
-"""Phase 5: instrumentation.
+"""Phase 6: conference mode (up to 5 participants).
 
-Adds per-utterance latency logging to logs/metrics.jsonl (room,
-speaker/listener, languages, stt_ms/translate_ms/tts_ms/total_ms).
-stt_ms is speech_start -> transcript.final, a real measured value from
-the VAD events Sarvam already sends. translate_ms and tts_ms are the
-two API call durations. total_ms sums the three; it does NOT include
-mic-capture/network transit or client-side playback-start delay, since
-that needs client-reported timestamps that aren't wired up. Running an
-actual structured multi-language test set and reporting real numbers
-from it (per the build plan) is a separate step requiring live mic
-input -- not done here.
+Generalizes the two-party room into an N-party one (N <= MAX_PARTICIPANTS).
+Each participant still runs their own one-directional pipeline (mic -> STT
+in their own language), but a committed utterance now fans out to every
+*other* participant, translated into each listener's own selected language.
 
-Phase 4 (two-pane observer UI): transcript, VAD, and
-translated-caption events are now broadcast to *both* participants
-(tagged with the originating/listening party_id), not just to the
-party they came from. This lets a single shared screen render both
-parties' panes at once, per the demo's "only one device is visible
-physically" requirement. Audio playback itself still goes only to the
-intended listener -- broadcasting audio too would make both devices
-play sound meant for only one side.
+Key design point: with up to 5 people but only 4 supported languages,
+at least two participants must share a language once the room has 5
+people (pigeonhole). So utterances are translated/synthesized once per
+*distinct target language* among the other participants, not once per
+listener -- e.g. if 3 of 4 listeners picked Hindi, that's one translate
+call + one TTS call serving all 3, not three. The distinct-language
+groups are then processed concurrently (asyncio.gather), so a listener's
+latency doesn't scale with how many *other* languages happen to be in
+the room.
+
+Broadcast scope, generalized from the two-party version: transcript and
+VAD events (in the speaker's own language) still go to everyone, so any
+device can show a full participant grid. Translated captions, latency,
+and audio are now sent only to the specific listeners in that language
+group -- not broadcast room-wide -- since they're meaningless (or in
+audio's case, actively wrong) for participants in a different language
+group.
 
 Commit policy (from Phase 3): explicit, documented VAD tuning (see
 VAD_* constants below) instead of relying on Sarvam's defaults.
@@ -26,17 +29,18 @@ VAD_* constants below) instead of relying on Sarvam's defaults.
 Ordering (from Phase 3): each participant's committed utterances are
 translated/synthesized by a single ordered worker (translate_queue),
 not fire-and-forget asyncio.create_task calls. Without this, two quick
-utterances could race and arrive at the peer out of order, and the
+utterances could race and arrive at listeners out of order, and the
 last utterance of a call could be silently dropped if the socket
 closed before its background task finished.
 
-Barge-in policy: the *sender* side is strictly ordered (above).
-The *receiver* side (whether new audio interrupts still-playing audio,
-or queues behind it) is a frontend decision -- see frontend/index.html,
+Barge-in policy: the *sender* side is strictly ordered (above). The
+*receiver* side (whether new audio interrupts still-playing audio, or
+queues behind it) is a frontend decision -- see frontend/index.html,
 which interrupts: newly arrived audio stops whatever is currently
-playing. Rationale: queuing indefinitely would let translation lag
-compound across a long conversation; interrupting keeps lag bounded at
-the cost of occasionally clipping the tail of a translation.
+playing. This now also applies across different speakers, not just
+repeated utterances from one -- if two people talk over each other,
+whichever translation reaches you last is what plays, matching how a
+live conversation actually works.
 
 Integration verified against docs on 2026-09-26 (see ../phase0_realtime_stt.py)
 plus sarvamai 0.1.34's own signatures:
@@ -74,6 +78,9 @@ SAMPLE_RATE = 16000
 # bulbul:v3 speaker; verified compatible in phase0_realtime_stt.py after
 # the SDK's speaker Literal turned out to mix v2/v3 names.
 TTS_SPEAKER = "kavitha"
+
+MAX_PARTICIPANTS = 5
+PARTY_LABELS = "ABCDE"
 
 # Commit policy: an utterance becomes transcript.final after this much
 # trailing silence. Lower = less perceived lag before translation
@@ -140,14 +147,16 @@ class Session:
         self.room_id = room_id
         self.participants: dict[str, Participant] = {}
 
-    def other(self, party_id: str) -> Participant | None:
-        for pid, p in self.participants.items():
-            if pid != party_id:
-                return p
-        return None
+    def other_participants(self, party_id: str) -> list[Participant]:
+        return [p for pid, p in self.participants.items() if pid != party_id]
 
     async def broadcast_json_safe(self, payload: dict) -> None:
         for p in list(self.participants.values()):
+            await p.send_json_safe(payload)
+
+    @staticmethod
+    async def send_to_json_safe(participants: list[Participant], payload: dict) -> None:
+        for p in participants:
             await p.send_json_safe(payload)
 
 
@@ -168,20 +177,24 @@ async def ws_endpoint(websocket: WebSocket, room_id: str):
 
     async with SESSIONS_LOCK:
         session = SESSIONS.setdefault(room_id, Session(room_id))
-        if len(session.participants) >= 2:
-            await websocket.send_json({"type": "error", "message": "room is full"})
+        if len(session.participants) >= MAX_PARTICIPANTS:
+            await websocket.send_json({"type": "error", "message": f"room is full (max {MAX_PARTICIPANTS} participants)"})
             await websocket.close(code=1008)
             return
-        party_id = "A" if "A" not in session.participants else "B"
+        party_id = next(label for label in PARTY_LABELS if label not in session.participants)
         participant = Participant(party_id, websocket, language)
         session.participants[party_id] = participant
 
-    print(f"[room {room_id}] {party_id} joined ({language})")
+    print(f"[room {room_id}] {party_id} joined ({language}) -- {len(session.participants)}/{MAX_PARTICIPANTS}")
     await participant.send_json_safe({"type": "joined", "party_id": party_id, "language": language})
-    peer = session.other(party_id)
-    if peer is not None:
-        await peer.send_json_safe({"type": "peer_joined", "party_id": party_id, "language": language})
-        await participant.send_json_safe({"type": "peer_joined", "party_id": peer.party_id, "language": peer.language})
+
+    # Tell the newcomer about everyone already in the room, and tell
+    # everyone already in the room about the newcomer.
+    existing = session.other_participants(party_id)
+    for other in existing:
+        await participant.send_json_safe({"type": "peer_joined", "party_id": other.party_id, "language": other.language})
+    for other in existing:
+        await other.send_json_safe({"type": "peer_joined", "party_id": party_id, "language": language})
 
     client = AsyncSarvamAI(api_subscription_key=API_KEY)
     translate_queue: asyncio.Queue = asyncio.Queue()
@@ -194,10 +207,10 @@ async def ws_endpoint(websocket: WebSocket, room_id: str):
                 translate_queue.task_done()
                 break
             text, seq, stt_ms = item
-            current_peer = session.other(party_id)
-            if current_peer is not None:
-                await translate_and_speak(
-                    text, language, current_peer, session, client, seq, stt_ms, room_id, party_id
+            listeners = session.other_participants(party_id)
+            if listeners:
+                await translate_and_speak_to_listeners(
+                    text, language, listeners, client, seq, stt_ms, room_id, party_id
                 )
             translate_queue.task_done()
 
@@ -253,9 +266,9 @@ async def ws_endpoint(websocket: WebSocket, room_id: str):
             async def handle_stt_events():
                 async for message in stt_ws:
                     if message.event == "transcript.partial":
-                        # Broadcast (not just to self) so a single shared
-                        # screen can show both parties' panes at once, per
-                        # the demo's "one visible device" requirement.
+                        # Broadcast (not just to self) so any device can
+                        # show a full participant grid, per the demo's
+                        # "one visible device" requirement.
                         await session.broadcast_json_safe(
                             {"type": "transcript", "party": party_id, "kind": "partial", "text": message.text}
                         )
@@ -286,23 +299,43 @@ async def ws_endpoint(websocket: WebSocket, room_id: str):
             # its side of the STT connection, which isn't guaranteed to
             # happen promptly (or at all) just because we sent it an end
             # signal. If it hangs, this handler never reaches the cleanup
-            # below, and the room slot stays occupied forever -- exactly
-            # the "can't rejoin the same room" bug this fixes. Instead,
-            # tear both down as soon as either one finishes.
+            # below, and the room slot stays occupied forever -- the
+            # "can't rejoin the same room" bug this guards against.
             relay_task = asyncio.create_task(relay_audio())
             stt_task = asyncio.create_task(handle_stt_events())
             done, pending = await asyncio.wait({relay_task, stt_task}, return_when=asyncio.FIRST_COMPLETED)
-            for task in pending:
-                task.cancel()
-            for task in pending:
+
+            if relay_task in done and stt_task in pending:
+                # Client stopped sending audio (explicit "end" or a
+                # disconnect) -- this is the NORMAL end of an utterance,
+                # not just a leave. Sarvam needs a moment after the last
+                # audio chunk to actually deliver transcript.final; an
+                # earlier version of this cancelled stt_task instantly
+                # here, which cut off that final transcript every time
+                # (nothing ever got translated/spoken). Give it a bounded
+                # grace period before giving up on it.
                 try:
-                    await task
+                    await asyncio.wait_for(stt_task, timeout=5.0)
+                except asyncio.TimeoutError:
+                    stt_task.cancel()
+                    try:
+                        await stt_task
+                    except asyncio.CancelledError:
+                        pass
+            elif stt_task in done and relay_task in pending:
+                # STT session ended or errored on its own -- no point
+                # relaying more audio to a dead connection.
+                relay_task.cancel()
+                try:
+                    await relay_task
                 except asyncio.CancelledError:
                     pass
-            for task in done:
-                exc = task.exception()
-                if exc is not None:
-                    raise exc
+
+            for task in (relay_task, stt_task):
+                if task.done() and not task.cancelled():
+                    exc = task.exception()
+                    if exc is not None:
+                        raise exc
     except WebSocketDisconnect:
         pass
     finally:
@@ -313,27 +346,44 @@ async def ws_endpoint(websocket: WebSocket, room_id: str):
         await translate_queue.put(None)
         await worker_task
 
-        remaining = None
+        remaining_participants: list[Participant] = []
         async with SESSIONS_LOCK:
             room = SESSIONS.get(room_id)
             if room and party_id in room.participants:
                 del room.participants[party_id]
-                remaining = next(iter(room.participants.values()), None)
+                remaining_participants = list(room.participants.values())
                 if not room.participants:
                     del SESSIONS[room_id]
-        if remaining:
-            await remaining.send_json_safe({"type": "peer_left"})
-        print(f"[room {room_id}] {party_id} left")
+        await Session.send_to_json_safe(remaining_participants, {"type": "peer_left", "party_id": party_id})
+        print(f"[room {room_id}] {party_id} left -- {len(remaining_participants)}/{MAX_PARTICIPANTS} remain")
         try:
             await websocket.close()
         except (RuntimeError, WebSocketDisconnect):
             pass  # client already closed its side
 
 
-async def translate_and_speak(
-    text, source_language, listener: "Participant", session: "Session", client, seq, stt_ms, room_id, speaker_party_id
-):
-    target_language = listener.language
+async def translate_and_speak_to_listeners(
+    text: str, source_language: str, listeners: list[Participant], client, seq: int, stt_ms, room_id: str, speaker_party_id: str
+) -> None:
+    """Fan out one committed utterance to every listener, once per distinct
+    target language among them (not once per listener -- see module
+    docstring). The per-language branches run concurrently so a listener's
+    latency doesn't scale with how many other languages are in the room.
+    """
+    by_language: dict[str, list[Participant]] = {}
+    for listener in listeners:
+        by_language.setdefault(listener.language, []).append(listener)
+
+    await asyncio.gather(*(
+        _speak_one_language(text, source_language, target_language, group, client, seq, stt_ms, room_id, speaker_party_id)
+        for target_language, group in by_language.items()
+    ))
+
+
+async def _speak_one_language(
+    text: str, source_language: str, target_language: str, group: list[Participant],
+    client, seq: int, stt_ms, room_id: str, speaker_party_id: str
+) -> None:
     t0 = time.perf_counter()
     if target_language == source_language:
         translated = text
@@ -346,10 +396,10 @@ async def translate_and_speak(
         )
         translated = translation.translated_text
     t1 = time.perf_counter()
-    # Broadcast the caption (both panes can show it), but the audio
-    # itself goes only to the listener -- the other device shouldn't
-    # also play back audio meant for its peer.
-    await session.broadcast_json_safe({"type": "translated", "party": listener.party_id, "text": translated, "seq": seq})
+
+    await Session.send_to_json_safe(group, {
+        "type": "translated", "speaker": speaker_party_id, "language": target_language, "text": translated, "seq": seq,
+    })
 
     tts = await client.text_to_speech.convert(
         text=translated,
@@ -368,10 +418,16 @@ async def translate_and_speak(
     # or playback-start delay -- those need client-reported timestamps,
     # which aren't wired up yet.
     total_ms = (stt_ms or 0) + translate_ms + tts_ms
-    print(f"[latency] seq={seq} stt={stt_ms}ms translate={translate_ms}ms tts={tts_ms}ms total={total_ms}ms")
-    await session.broadcast_json_safe({
+    listener_ids = [p.party_id for p in group]
+    print(
+        f"[latency] seq={seq} speaker={speaker_party_id} -> {listener_ids} ({target_language}) "
+        f"stt={stt_ms}ms translate={translate_ms}ms tts={tts_ms}ms total={total_ms}ms"
+    )
+
+    await Session.send_to_json_safe(group, {
         "type": "latency",
-        "party": listener.party_id,
+        "speaker": speaker_party_id,
+        "language": target_language,
         "seq": seq,
         "stt_ms": stt_ms,
         "translate_ms": translate_ms,
@@ -381,7 +437,7 @@ async def translate_and_speak(
     log_metrics({
         "room": room_id,
         "speaker_party": speaker_party_id,
-        "listener_party": listener.party_id,
+        "listener_parties": listener_ids,
         "source_language": source_language,
         "target_language": target_language,
         "seq": seq,
@@ -392,4 +448,6 @@ async def translate_and_speak(
         "total_ms": total_ms,
     })
 
-    await listener.send_json_safe({"type": "audio", "party": listener.party_id, "format": "wav", "data": tts.audios[0], "seq": seq})
+    await Session.send_to_json_safe(group, {
+        "type": "audio", "speaker": speaker_party_id, "language": target_language, "format": "wav", "data": tts.audios[0], "seq": seq,
+    })

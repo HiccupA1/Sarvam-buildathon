@@ -1,8 +1,8 @@
 # Live Speech Interpreter
 
-Real-time, two-party speech interpreter: two people speak different Indian
-languages (Hindi, English, Tamil, Telugu -- any pair) and each hears the
-other translated live, in the browser. Built on Sarvam AI's realtime STT,
+Real-time speech interpreter for a room of up to 5 people: everyone speaks
+and hears in their own selected language (Hindi, English, Tamil, Telugu --
+any mix), live, in the browser. Built on Sarvam AI's realtime STT,
 translation, and TTS APIs.
 
 ## Architecture
@@ -12,22 +12,30 @@ mic (browser) --PCM16/16kHz--> FastAPI backend --> Sarvam realtime STT (per spea
                                                           |
                                                    transcript.final
                                                           v
-                                              Mayura translate (source -> peer's language)
+                                    group other participants by target language
                                                           v
-                                                   Bulbul v3 TTS
+                              Mayura translate (once per distinct language) -- concurrent
                                                           v
-                                        WebSocket --> peer's browser --> playback
+                                          Bulbul v3 TTS (once per distinct language)
+                                                          v
+                                 WebSocket --> that language's listeners --> playback
 ```
 
-Each participant runs their own one-directional pipeline; audio flows in one
-direction per speaker, through the same pipeline, twice. The backend is the
-hub (not peer-to-peer) -- both parties connect to the same room on the
-backend, which routes translated text/audio to the other participant.
+Each participant runs their own one-directional pipeline (mic -> their own
+STT); audio flows in one direction per speaker, through the pipeline, once
+per *distinct target language* among the other participants -- not once per
+listener. With up to 5 people but only 4 supported languages, at least two
+participants must share a language once the room has 5 people, so that
+translate+TTS call is naturally reused for all of them rather than repeated.
+The backend is the hub (not peer-to-peer, not mesh) -- everyone connects to
+the same room on the backend, which fans out translated text/audio to the
+right listeners.
 
-Transcript, VAD, and translated-caption events are broadcast to **both**
-participants (tagged by party), so a single shared screen can show both
-parties' panes at once. Actual synthesized audio goes only to the intended
-listener.
+Transcript and VAD events (in the speaker's own language) are broadcast to
+**everyone**, so any device can render a full participant grid. Translated
+captions, latency, and audio are sent only to the specific listeners in that
+language group -- broadcasting audio room-wide would mean everyone hears
+every language's synthesized speech, not just their own.
 
 See [phase0_realtime_stt.py](phase0_realtime_stt.py) and the docstring at
 the top of [backend/app.py](backend/app.py) for what was verified against
@@ -101,17 +109,18 @@ changes (different network, DHCP renewal, etc).
 3. **On the second device** (phone), connected to the **same Wi-Fi
    network**: open `https://<laptop-LAN-IP>:8000`, click through the same
    warning.
-4. On both devices, enter the **same room code**, pick each device's own
-   spoken language, click **Join & Start**, and grant mic access.
-5. **Wear headphones on both devices.** Without them, translated audio
+4. On each device, enter the **same room code**, pick that device's own
+   spoken language, click **Join & Start**, and grant mic access. Up to 5
+   devices can join one room.
+5. **Wear headphones on every device.** Without them, translated audio
    played on a device gets picked up by that device's own mic and garbles
    its transcription -- this is a hard requirement, not a nice-to-have.
 6. For the recruiter-facing view: mirror/project the **laptop's** screen.
-   Its two-pane layout shows both parties' live transcripts, incoming
-   translations, VAD activity, and the latency meter at once, even though
-   only one physical device is visible.
+   Its participant grid shows everyone's live transcript, and the "incoming"
+   panel shows whatever's being translated for that specific device's
+   language, even though only one physical device is visible.
 
-If the phone can't reach `https://<laptop-LAN-IP>:8000` at all (not even
+If a device can't reach `https://<laptop-LAN-IP>:8000` at all (not even
 the cert warning), that's a network issue, not a TLS one -- common on
 networks that isolate devices from each other (e.g. some guest Wi-Fi).
 Check that Windows Firewall allows inbound TCP on port 8000, or use a
@@ -167,12 +176,38 @@ Two hard constraints if you host this somewhere other than a LAN demo:
   audio blob URLs are revoked after use; best-effort cleanup on tab close
   so a closed tab doesn't leave a phantom participant in a room; visual
   connection-status indicator.
+- **Rejoin fix**: leaving a room used to leave it permanently occupied.
+  The handler waited for both the audio-relay loop *and* the STT event
+  loop to finish before cleaning up, but the STT loop only ends when
+  Sarvam's server closes its side -- not guaranteed to happen just
+  because the client said it's done. Fixed to tear down on a bounded
+  grace period instead of an unbounded wait (see backend/app.py).
+- **Phase 6 (conference mode)**: up to `MAX_PARTICIPANTS = 5` people per
+  room, each with their own selected language. A committed utterance is
+  translated/synthesized once per distinct target language among the
+  other participants (concurrently), not once per listener, and reused
+  across everyone who picked that language. Verified: 5/5 capacity with
+  the 6th join rejected while all 5 are still connected, correct fan-out
+  to all 4 languages from one speaker, and the two same-language
+  listeners sharing a single translate+TTS pass.
+
+  **Latency caveat, measured not assumed**: across two 5-participant test
+  runs, per-listener STT-commit latency (`stt_ms`) was ~3.1s in one run
+  and ~17.5s in the other for the same utterance, both with 4 of 5
+  connections idle. It's not yet clear whether that's a one-off
+  cold-start effect (opening 5 realtime STT connections nearly
+  simultaneously) or something that recurs -- a direct SDK test confirmed
+  Sarvam does support 2+ concurrent realtime connections without error,
+  so it isn't a hard rejection, but conference latency under real load
+  with all 5 slots filled hasn't been characterized enough to promise a
+  number. Worth watching before relying on a full room for a live demo.
 
 ## Known limitations / not yet built
 
-- **No reconnect handling.** A dropped socket removes that participant from
-  the room; they'd need to refresh and rejoin. (Plan's Phase "session
-  lifecycle" item.)
+- **No reconnect handling for the client's own session.** A dropped socket
+  removes that participant from the room; they'd need to refresh and
+  rejoin (the room itself becomes rejoinable promptly -- see the rejoin
+  fix above -- but no state is preserved for the rejoining device).
 - **No structured test set has been run.** The instrumentation captures
   real per-utterance timing from day one, but a scripted multi-language
   test set with reported real numbers (per language pair) needs live mic
