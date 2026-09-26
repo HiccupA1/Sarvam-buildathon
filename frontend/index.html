@@ -535,6 +535,7 @@
       stopBtn.disabled = true;
       if (ws && ws.readyState === WebSocket.OPEN) {
         ws.send(JSON.stringify({ type: "end" }));
+        ws.close();
       }
       if (mediaStream) mediaStream.getTracks().forEach((t) => t.stop());
       if (audioContext) audioContext.close();

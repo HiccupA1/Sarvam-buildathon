@@ -239,7 +239,10 @@ async def ws_endpoint(websocket: WebSocket, room_id: str):
                 except WebSocketDisconnect:
                     pass
                 finally:
-                    await stt_ws.send_realtime_end(RealtimeEnd())
+                    try:
+                        await stt_ws.send_realtime_end(RealtimeEnd())
+                    except Exception:
+                        pass  # STT connection may already be closing/closed
 
             # Speech-start timestamp for the utterance currently in progress,
             # used to derive an honest "STT commit" latency (speech_start ->
@@ -278,7 +281,28 @@ async def ws_endpoint(websocket: WebSocket, room_id: str):
                         if message.is_fatal:
                             break
 
-            await asyncio.gather(relay_audio(), handle_stt_events())
+            # Don't use gather() here: it waits for BOTH to finish, but
+            # handle_stt_events only returns once Sarvam's server closes
+            # its side of the STT connection, which isn't guaranteed to
+            # happen promptly (or at all) just because we sent it an end
+            # signal. If it hangs, this handler never reaches the cleanup
+            # below, and the room slot stays occupied forever -- exactly
+            # the "can't rejoin the same room" bug this fixes. Instead,
+            # tear both down as soon as either one finishes.
+            relay_task = asyncio.create_task(relay_audio())
+            stt_task = asyncio.create_task(handle_stt_events())
+            done, pending = await asyncio.wait({relay_task, stt_task}, return_when=asyncio.FIRST_COMPLETED)
+            for task in pending:
+                task.cancel()
+            for task in pending:
+                try:
+                    await task
+                except asyncio.CancelledError:
+                    pass
+            for task in done:
+                exc = task.exception()
+                if exc is not None:
+                    raise exc
     except WebSocketDisconnect:
         pass
     finally:
@@ -302,8 +326,8 @@ async def ws_endpoint(websocket: WebSocket, room_id: str):
         print(f"[room {room_id}] {party_id} left")
         try:
             await websocket.close()
-        except RuntimeError:
-            pass
+        except (RuntimeError, WebSocketDisconnect):
+            pass  # client already closed its side
 
 
 async def translate_and_speak(
