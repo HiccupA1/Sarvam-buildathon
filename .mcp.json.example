@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "sarvam-docs": {
+      "type": "http",
+      "url": "https://docs.sarvam.ai/_mcp/server"
+    },
+    "sarvam": {
+      "command": ".venv-mcp/Scripts/python.exe",
+      "args": ["-m", "sarvam_mcp"],
+      "env": {
+        "SARVAM_API_KEY": "<your-key-here>"
+      }
+    }
+  }
+}
