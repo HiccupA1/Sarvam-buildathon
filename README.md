@@ -1,20 +1,23 @@
 # Live Speech Interpreter
 
-Real-time speech interpreter for a room of up to 5 people: everyone speaks
-and hears in their own selected language (Hindi, English, Tamil, Telugu --
-any mix), live, in the browser. Built on Sarvam AI's realtime STT,
-translation, and TTS APIs.
+Real-time speech interpreter for a room of up to 5 people, live, in the
+browser. Everyone picks a language they want to **hear** in -- that's it.
+What you actually **speak** is completely separate: any of the four
+(Hindi, English, Tamil, Telugu), switch mid-conversation, or mix languages
+within a sentence. The model figures out what was said; everyone else gets
+it translated into whatever they personally picked. Built on Sarvam AI's
+realtime STT, translation, and TTS APIs.
 
 ## Architecture
 
 ```
-mic (browser) --PCM16/16kHz--> FastAPI backend --> Sarvam realtime STT (per speaker's language)
+mic (browser) --PCM16/16kHz--> FastAPI backend --> Sarvam realtime STT (language_code="auto", mode="codemix")
                                                           |
-                                                   transcript.final
+                                                   transcript.final (whatever was actually said)
                                                           v
-                                    group other participants by target language
+                                    group other participants by THEIR hearing-language preference
                                                           v
-                              Mayura translate (once per distinct language) -- concurrent
+                        Mayura translate, source_language_code="auto" (once per distinct language) -- concurrent
                                                           v
                                           Bulbul v3 TTS (once per distinct language)
                                                           v
@@ -22,14 +25,27 @@ mic (browser) --PCM16/16kHz--> FastAPI backend --> Sarvam realtime STT (per spea
 ```
 
 Each participant runs their own one-directional pipeline (mic -> their own
-STT); audio flows in one direction per speaker, through the pipeline, once
-per *distinct target language* among the other participants -- not once per
-listener. With up to 5 people but only 4 supported languages, at least two
-participants must share a language once the room has 5 people, so that
-translate+TTS call is naturally reused for all of them rather than repeated.
-The backend is the hub (not peer-to-peer, not mesh) -- everyone connects to
-the same room on the backend, which fans out translated text/audio to the
-right listeners.
+STT, always `language_code="auto"` so they're never boxed into one
+language); audio flows in one direction per speaker, through the pipeline,
+once per *distinct target language* among the other participants -- not
+once per listener. With up to 5 people but only 4 supported languages, at
+least two participants must share a hearing-language preference once the
+room has 5 people, so that translate+TTS call is naturally reused for all
+of them rather than repeated. The backend is the hub (not peer-to-peer, not
+mesh) -- everyone connects to the same room on the backend, which fans out
+translated text/audio to the right listeners.
+
+**Speak/hear are fully decoupled.** A participant's selected language is
+only ever used as their *listening* preference (which translate/TTS group
+they belong to when someone else talks) and never constrains what they
+speak. There's no same-language shortcut anymore either -- since the
+speaker's actual language isn't known ahead of time (it can vary utterance
+to utterance), every utterance gets a real `translate()` call per
+target-language group, with `source_language_code="auto"` so Mayura
+detects it from the text itself. Verified: a participant who set their
+hearing preference to Telugu but spoke English had their English correctly
+transcribed (not forced into Telugu), and a listener whose preference was
+Tamil received a correct Tamil translation of it.
 
 Transcript and VAD events (in the speaker's own language) are broadcast to
 **everyone**, so any device can render a full participant grid. Translated
@@ -109,8 +125,9 @@ changes (different network, DHCP renewal, etc).
 3. **On the second device** (phone), connected to the **same Wi-Fi
    network**: open `https://<laptop-LAN-IP>:8000`, click through the same
    warning.
-4. On each device, enter the **same room code**, pick that device's own
-   spoken language, click **Join & Start**, and grant mic access. Up to 5
+4. On each device, enter the **same room code**, pick the language *that
+   device's user wants to hear* (not what they'll speak -- speak however
+   you like), click **Join & Start**, and grant mic access. Up to 5
    devices can join one room.
 5. **Wear headphones on every device.** Without them, translated audio
    played on a device gets picked up by that device's own mic and garbles
@@ -201,6 +218,18 @@ Two hard constraints if you host this somewhere other than a LAN demo:
   so it isn't a hard rejection, but conference latency under real load
   with all 5 slots filled hasn't been characterized enough to promise a
   number. Worth watching before relying on a full room for a live demo.
+- **Phase 7 (decoupled speak/hear languages)**: a participant's selected
+  language now governs only what they *hear*. STT switched from a fixed
+  `language_code` per participant to `language_code="auto"` +
+  `mode="codemix"`, so anyone can speak any supported language, switch
+  mid-conversation, or mix languages within an utterance. Translation
+  switched to `source_language_code="auto"` for the same reason -- the
+  speaker's language is no longer known ahead of time, so there's no
+  same-language shortcut anymore; every utterance gets a real translate
+  call per target-language group. Verified: a participant whose hearing
+  preference was Telugu but who spoke English had it transcribed
+  correctly as English (not forced into Telugu), and a Tamil-preference
+  listener got a correct Tamil translation of it.
 
 ## Known limitations / not yet built
 

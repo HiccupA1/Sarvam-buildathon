@@ -1,9 +1,31 @@
-"""Phase 6: conference mode (up to 5 participants).
+"""Phase 7: decoupled speak/hear languages.
 
-Generalizes the two-party room into an N-party one (N <= MAX_PARTICIPANTS).
-Each participant still runs their own one-directional pipeline (mic -> STT
-in their own language), but a committed utterance now fans out to every
-*other* participant, translated into each listener's own selected language.
+A participant's selected `language` is now *only* the language they want
+to hear in, not the language they're speaking. Each participant can speak
+any supported language, switch mid-conversation, or code-mix (e.g.
+Tamil-English) freely -- the model figures out what was said and each
+listener gets it in whatever they personally selected.
+
+This means:
+  - STT connects with language_code="auto" (not the participant's
+    listening preference) and mode="codemix", so it adapts to whatever
+    the speaker actually says instead of being pinned to one language.
+    Sarvam's own docs don't fully specify how "auto" behaves with
+    intra-utterance code-switching (checked live on 2026-09-27, not
+    documented in detail) -- codemix mode is the closest documented fit
+    for a speaker who mixes languages within their speech.
+  - Translation always passes source_language_code="auto" too, since
+    the speaker's actual language is no longer known ahead of time (it
+    can vary utterance to utterance, or within one). This removes the
+    same-language shortcut _speak_one_language used to have -- every
+    utterance now gets a real translate() call per target-language
+    group, even on the (now unknown until Mayura detects it) chance
+    that speaker and listener happen to be using the same language.
+
+Phase 6 (conference mode): up to MAX_PARTICIPANTS participants per room.
+Each participant still runs their own one-directional STT pipeline, but
+a committed utterance fans out to every *other* participant, translated
+into each listener's own selected (hearing) language.
 
 Key design point: with up to 5 people but only 4 supported languages,
 at least two participants must share a language once the room has 5
@@ -170,7 +192,7 @@ async def ws_endpoint(websocket: WebSocket, room_id: str):
 
     try:
         join = json.loads(await websocket.receive_text())
-        language = join["language"]
+        hearing_language = join["language"]  # what THIS participant wants to hear, not what they'll speak
     except Exception:
         await websocket.close(code=1003)
         return
@@ -182,11 +204,11 @@ async def ws_endpoint(websocket: WebSocket, room_id: str):
             await websocket.close(code=1008)
             return
         party_id = next(label for label in PARTY_LABELS if label not in session.participants)
-        participant = Participant(party_id, websocket, language)
+        participant = Participant(party_id, websocket, hearing_language)
         session.participants[party_id] = participant
 
-    print(f"[room {room_id}] {party_id} joined ({language}) -- {len(session.participants)}/{MAX_PARTICIPANTS}")
-    await participant.send_json_safe({"type": "joined", "party_id": party_id, "language": language})
+    print(f"[room {room_id}] {party_id} joined (hears {hearing_language}) -- {len(session.participants)}/{MAX_PARTICIPANTS}")
+    await participant.send_json_safe({"type": "joined", "party_id": party_id, "language": hearing_language})
 
     # Tell the newcomer about everyone already in the room, and tell
     # everyone already in the room about the newcomer.
@@ -194,7 +216,7 @@ async def ws_endpoint(websocket: WebSocket, room_id: str):
     for other in existing:
         await participant.send_json_safe({"type": "peer_joined", "party_id": other.party_id, "language": other.language})
     for other in existing:
-        await other.send_json_safe({"type": "peer_joined", "party_id": party_id, "language": language})
+        await other.send_json_safe({"type": "peer_joined", "party_id": party_id, "language": hearing_language})
 
     client = AsyncSarvamAI(api_subscription_key=API_KEY)
     translate_queue: asyncio.Queue = asyncio.Queue()
@@ -210,18 +232,22 @@ async def ws_endpoint(websocket: WebSocket, room_id: str):
             listeners = session.other_participants(party_id)
             if listeners:
                 await translate_and_speak_to_listeners(
-                    text, language, listeners, client, seq, stt_ms, room_id, party_id
+                    text, listeners, client, seq, stt_ms, room_id, party_id
                 )
             translate_queue.task_done()
 
     worker_task = asyncio.create_task(translate_worker())
 
     try:
+        # language_code="auto" + mode="codemix": this participant can speak
+        # any supported language, switch mid-conversation, or mix languages
+        # within an utterance -- their own `hearing_language` above governs
+        # only what THEY hear, never what they're allowed to speak.
         async with client.speech_to_text_realtime_streaming.connect(
-            language_code=language,
+            language_code="auto",
             model="saaras:v3-realtime",
             stream_type="fast",
-            mode="transcribe",
+            mode="codemix",
             encoding="linear16",
             sample_rate=str(SAMPLE_RATE),
             threshold=str(VAD_THRESHOLD),
@@ -363,7 +389,7 @@ async def ws_endpoint(websocket: WebSocket, room_id: str):
 
 
 async def translate_and_speak_to_listeners(
-    text: str, source_language: str, listeners: list[Participant], client, seq: int, stt_ms, room_id: str, speaker_party_id: str
+    text: str, listeners: list[Participant], client, seq: int, stt_ms, room_id: str, speaker_party_id: str
 ) -> None:
     """Fan out one committed utterance to every listener, once per distinct
     target language among them (not once per listener -- see module
@@ -375,26 +401,28 @@ async def translate_and_speak_to_listeners(
         by_language.setdefault(listener.language, []).append(listener)
 
     await asyncio.gather(*(
-        _speak_one_language(text, source_language, target_language, group, client, seq, stt_ms, room_id, speaker_party_id)
+        _speak_one_language(text, target_language, group, client, seq, stt_ms, room_id, speaker_party_id)
         for target_language, group in by_language.items()
     ))
 
 
 async def _speak_one_language(
-    text: str, source_language: str, target_language: str, group: list[Participant],
+    text: str, target_language: str, group: list[Participant],
     client, seq: int, stt_ms, room_id: str, speaker_party_id: str
 ) -> None:
     t0 = time.perf_counter()
-    if target_language == source_language:
-        translated = text
-    else:
-        translation = await client.text.translate(
-            input=text,
-            source_language_code=source_language,
-            target_language_code=target_language,
-            model="mayura:v1",
-        )
-        translated = translation.translated_text
+    # source_language_code="auto": the speaker's language is no longer
+    # pinned to anything (see module docstring) -- it can vary utterance
+    # to utterance, or mix within one, so there's no known-in-advance
+    # language to compare against target_language for a same-language
+    # shortcut. Mayura detects the source itself from the text.
+    translation = await client.text.translate(
+        input=text,
+        source_language_code="auto",
+        target_language_code=target_language,
+        model="mayura:v1",
+    )
+    translated = translation.translated_text
     t1 = time.perf_counter()
 
     await Session.send_to_json_safe(group, {
@@ -438,7 +466,7 @@ async def _speak_one_language(
         "room": room_id,
         "speaker_party": speaker_party_id,
         "listener_parties": listener_ids,
-        "source_language": source_language,
+        "source_language": "auto",
         "target_language": target_language,
         "seq": seq,
         "text_chars": len(text),

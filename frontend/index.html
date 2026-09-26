@@ -231,7 +231,7 @@
 </head>
 <body>
   <h1>Live Speech Interpreter</h1>
-  <p class="subtitle">Real-time speech-to-speech translation across Hindi, English, Tamil, and Telugu -- up to 5 people, each in their own language.</p>
+  <p class="subtitle">Real-time speech-to-speech translation across Hindi, English, Tamil, and Telugu -- up to 5 people. Speak however you like (any of the four, switch anytime, even mix languages); everyone else hears it in whichever language they personally picked below.</p>
   <p class="warning">Wear headphones -- otherwise the translated audio feeds back into your own mic and garbles transcription.</p>
 
   <div class="controls glass">
@@ -241,7 +241,7 @@
         <input id="roomCode" type="text" placeholder="e.g. demo1" />
       </div>
       <div class="field">
-        <label for="myLang">My language</label>
+        <label for="myLang">I want to hear in</label>
         <select id="myLang">
           <option value="hi-IN">Hindi</option>
           <option value="en-IN">English</option>
@@ -346,7 +346,9 @@
         };
         participants[partyId] = p;
       }
-      if (language) p.lang.textContent = LANG_NAMES[language] || language;
+      // This is their HEARING preference, not what they're speaking --
+      // the transcript box below can show any language, or a mix.
+      if (language) p.lang.textContent = `hears ${LANG_NAMES[language] || language}`;
       return p;
     }
 
