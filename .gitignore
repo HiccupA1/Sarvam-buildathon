@@ -9,3 +9,4 @@ node_modules/
 dist/
 logs/
 .claude/scheduled_tasks.lock
+certs/

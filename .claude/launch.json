@@ -4,8 +4,9 @@
     {
       "name": "interpreter-backend",
       "runtimeExecutable": ".venv/Scripts/python.exe",
-      "runtimeArgs": ["-m", "uvicorn", "backend.app:app", "--host", "0.0.0.0", "--port", "8000"],
-      "port": 8000
+      "runtimeArgs": ["-m", "uvicorn", "backend.app:app", "--host", "0.0.0.0", "--port", "8000", "--ssl-keyfile", "certs/key.pem", "--ssl-certfile", "certs/cert.pem"],
+      "port": 8000,
+      "url": "https://localhost:8000"
     }
   ]
 }

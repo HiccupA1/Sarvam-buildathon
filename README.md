@@ -54,15 +54,53 @@ SARVAM_API_KEY=your_key_here
 ```
 
 Open `http://localhost:8000` in a real browser (mic access needs a real
-browser permission grant, not an embedded/sandboxed preview).
+browser permission grant, not an embedded/sandboxed preview). `localhost`
+counts as a secure context, so plain HTTP is fine here.
+
+### Running with HTTPS (needed for a second device)
+
+Browsers only grant mic access on a secure context -- `https://`, or exactly
+`localhost`/`127.0.0.1`. A phone opening the laptop's `http://<LAN-IP>:8000`
+is neither, so it'll get an explicit "mic access requires HTTPS" error. Fix
+it with a self-signed cert scoped to your LAN IP (stays local, nothing
+exposed to the internet):
+
+```bash
+mkdir certs
+cd certs
+MSYS_NO_PATHCONV=1 openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365 -nodes \
+  -subj "/CN=Live Speech Interpreter" \
+  -addext "subjectAltName=DNS:localhost,IP:127.0.0.1,IP:<your-laptop-LAN-IP>"
+cd ..
+```
+
+(`MSYS_NO_PATHCONV=1` is only needed on Git Bash for Windows, which
+otherwise mangles the leading `/CN=...`.)
+
+Then run the server with TLS:
+
+```bash
+.venv\Scripts\python -m uvicorn backend.app:app --host 0.0.0.0 --port 8000 --ssl-keyfile certs/key.pem --ssl-certfile certs/cert.pem
+```
+
+Both devices now use `https://` (see demo steps below). The cert is
+self-signed, so **every browser will show a "connection is not private"
+warning the first time** -- click **Advanced -> Proceed** (wording varies
+by browser). This is expected and safe here: it's still only reachable on
+your local network, this just isn't a certificate a public CA has vouched
+for. `certs/` is gitignored -- regenerate it if your laptop's LAN IP
+changes (different network, DHCP renewal, etc).
 
 ## Demo: two devices
 
-1. Start the server on your laptop (command above). Note the laptop's LAN IP
-   (Windows: `ipconfig`, look for the Wi-Fi adapter's IPv4 address).
-2. **On the laptop**: open `http://localhost:8000`.
+1. Start the server with HTTPS (above). Note the laptop's LAN IP (Windows:
+   `ipconfig`, look for the Wi-Fi adapter's IPv4 address) if you haven't
+   already, for the cert step.
+2. **On the laptop**: open `https://localhost:8000`, click through the
+   self-signed cert warning.
 3. **On the second device** (phone), connected to the **same Wi-Fi
-   network**: open `http://<laptop-LAN-IP>:8000`.
+   network**: open `https://<laptop-LAN-IP>:8000`, click through the same
+   warning.
 4. On both devices, enter the **same room code**, pick each device's own
    spoken language, click **Join & Start**, and grant mic access.
 5. **Wear headphones on both devices.** Without them, translated audio
@@ -73,11 +111,15 @@ browser permission grant, not an embedded/sandboxed preview).
    translations, VAD activity, and the latency meter at once, even though
    only one physical device is visible.
 
-If the phone can't reach `http://<laptop-LAN-IP>:8000` (common on networks
-that isolate devices from each other, e.g. some guest Wi-Fi), that's a
-network issue -- use a tunnel (ngrok / Cloudflare Tunnel) or a deployed
-backend instead. On Windows, also check that the firewall allows inbound
-TCP on the port you're using (see "Deploying beyond localhost" below).
+If the phone can't reach `https://<laptop-LAN-IP>:8000` at all (not even
+the cert warning), that's a network issue, not a TLS one -- common on
+networks that isolate devices from each other (e.g. some guest Wi-Fi).
+Check that Windows Firewall allows inbound TCP on port 8000, or use a
+tunnel / deployed backend instead if the two devices genuinely can't reach
+each other on the LAN. Don't use a public tunnel (ngrok, localtunnel, SSH
+reverse tunnels, etc.) without deciding that deliberately -- it exposes
+this server, and your Sarvam API key's usage, to the open internet with no
+authentication in front of it.
 
 ## Deploying beyond localhost
 
@@ -88,9 +130,11 @@ Two hard constraints if you host this somewhere other than a LAN demo:
   `localhost`/`127.0.0.1`. Serving over plain `http://` from any other host
   or IP will make the frontend refuse to request the mic at all (the app
   detects this and shows an explicit error rather than failing silently).
-  Put the app behind a reverse proxy or platform that terminates TLS
+  The self-signed cert above is enough for a LAN demo (with a one-time
+  click-through warning); for a real public deployment, put the app behind
+  a reverse proxy or platform that terminates TLS with a CA-issued cert
   (nginx + certbot, Caddy, or a PaaS like Render/Fly/Railway that provides
-  HTTPS automatically).
+  HTTPS automatically) instead of shipping a self-signed one.
 - **Run a single worker process.** Room/session state (`SESSIONS` in
   `backend/app.py`) lives in memory in one process. Running multiple
   worker processes (e.g. `uvicorn ... --workers 4`, or a process manager
