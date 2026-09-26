@@ -280,7 +280,11 @@ phase0_realtime_stt.py  Standalone realtime STT verification script
 loadtest/generate_fixtures.py  One-time: synthesizes the 4 test clips (run once)
 loadtest/fixtures/*.pcm  Pre-recorded speech clips used as simulated mic input
 loadtest/run_load_test.py  Runs N full 5-person sessions back to back
-loadtest/results/*.json  Raw per-session results from actual load test runs
+loadtest/test_set.py    92 scripted sentences (20 per language + 12 code-switched)
+loadtest/generate_test_fixtures.py  One-time: synthesizes audio for test_set.py
+loadtest/test_fixtures/*.pcm  Synthesized audio for the structured test set
+loadtest/run_structured_test.py  Runs every test_set.py utterance, one room each
+loadtest/results/*.json  Raw per-session/per-utterance results from actual runs
 logs/metrics.jsonl      Per-utterance latency log (gitignored, created at runtime)
 ```
 
@@ -294,3 +298,43 @@ logs/metrics.jsonl      Per-utterance latency log (gitignored, created at runtim
 Needs the server already running (any of the commands under "Running"
 above). Writes `loadtest/results/load_test_<timestamp>.json` with raw
 per-participant event timing for every session.
+
+## Structured test set (per-language-pair latency numbers)
+
+`loadtest/test_set.py` has 20 short scripted sentences per language
+(Hindi, English, Tamil, Telugu) plus 12 intra-sentence code-switched
+Tamil-English (Tanglish-style) sentences -- 92 total. The non-English
+sentences are model-generated, not verified by a native speaker.
+
+```bash
+.venv\Scripts\python loadtest\generate_test_fixtures.py   # once, needs SARVAM_API_KEY
+.venv\Scripts\python loadtest\run_structured_test.py
+```
+
+Each utterance runs in its own room: one speaker plus four listeners
+(one per hearing language), reusing the same fan-out the app already
+does in conference mode -- one STT pass produces four (source, target)
+data points per utterance, giving 20 samples for each of the 16
+combinations (12 cross-language + 4 same-language). Records both the
+server-measured stt_ms/translate_ms/tts_ms/total_ms and a harness-
+measured end_to_end_ms (send-start to audio-received on the listener's
+own socket) -- the true wall-clock number the earlier phases flagged as
+missing. Writes `results/structured_test_<timestamp>.json` (raw, every
+data point, nulls where something genuinely didn't arrive) and a
+`_summary.csv` with p50/p95 per pair and overall.
+
+**Status: not yet run to completion.** First attempt got through 29 of
+92 utterances (196 real data points, since discarded when the retry
+started clean) before hitting `"Credits exhausted. Visit the API
+Dashboard to review and manage your subscription."` from Sarvam. Along
+the way, found and fixed a real bug in the harness itself: it used
+`asyncio.gather()` without cancelling sibling tasks on failure, so one
+utterance's connection dropping left its other four tasks running in
+the background for their own 30-second timeout while the loop moved on
+-- across enough utterances those piled up. Also replaced an
+`asyncio.Barrier` (made every listener wait for the slowest of 5
+connections, up to ~3.8s per Priority 1's numbers, before the speaker
+even started) with a fixed 1-second delay, since a listener's own idle
+STT session sitting unused for longer than necessary seems related to
+why connections were dropping. The harness is fixed and ready; running
+it to completion needs Sarvam credits restored first.
