@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Live Speech Interpreter -- Phase 2</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 640px; margin: 2rem auto; padding: 0 1rem; }
+  select, input, button { font-size: 1rem; padding: 0.4rem 0.8rem; margin-right: 0.5rem; }
+  #status { color: #666; margin: 1rem 0; }
+  .box { border: 1px solid #ddd; border-radius: 6px; padding: 0.75rem 1rem; margin-bottom: 1rem; min-height: 2.5rem; }
+  .label { font-size: 0.8rem; color: #888; text-transform: uppercase; margin-bottom: 0.25rem; }
+  .partial { color: #999; font-style: italic; }
+  .join-row { margin-bottom: 0.75rem; }
+</style>
+</head>
+<body>
+  <h1>Live Speech Interpreter</h1>
+  <p>Phase 2 checkpoint: two parties, each in their own language, hear each other translated.</p>
+
+  <div class="join-row">
+    <label>Room code
+      <input id="roomCode" type="text" placeholder="e.g. demo1" />
+    </label>
+    <label>My language
+      <select id="myLang">
+        <option value="hi-IN">Hindi</option>
+        <option value="en-IN">English</option>
+        <option value="ta-IN" selected>Tamil</option>
+        <option value="te-IN">Telugu</option>
+      </select>
+    </label>
+  </div>
+
+  <p>
+    <button id="startBtn">Join & Start</button>
+    <button id="stopBtn" disabled>Stop</button>
+  </p>
+
+  <div id="status">idle</div>
+
+  <div class="box"><div class="label">My transcript</div><div id="transcript"></div></div>
+  <div class="box"><div class="label">Incoming (translated for me)</div><div id="translation"></div></div>
+
+  <audio id="player"></audio>
+
+  <script>
+    const startBtn = document.getElementById("startBtn");
+    const stopBtn = document.getElementById("stopBtn");
+    const statusEl = document.getElementById("status");
+    const transcriptEl = document.getElementById("transcript");
+    const translationEl = document.getElementById("translation");
+    const player = document.getElementById("player");
+    const roomCodeEl = document.getElementById("roomCode");
+    const myLangEl = document.getElementById("myLang");
+
+    let audioContext, workletNode, micSource, mediaStream, ws;
+
+    function setStatus(text) {
+      statusEl.textContent = text;
+    }
+
+    async function start() {
+      const room = roomCodeEl.value.trim();
+      if (!room) {
+        setStatus("error: enter a room code");
+        return;
+      }
+
+      startBtn.disabled = true;
+      setStatus("requesting mic access...");
+
+      mediaStream = await navigator.mediaDevices.getUserMedia({
+        audio: { channelCount: 1, echoCancellation: true, noiseSuppression: true },
+      });
+
+      audioContext = new AudioContext();
+      await audioContext.audioWorklet.addModule("/static/audio-processor.js");
+
+      micSource = audioContext.createMediaStreamSource(mediaStream);
+      workletNode = new AudioWorkletNode(audioContext, "pcm-worklet-processor");
+      micSource.connect(workletNode);
+
+      const protocol = location.protocol === "https:" ? "wss" : "ws";
+      ws = new WebSocket(`${protocol}://${location.host}/ws/${encodeURIComponent(room)}`);
+      ws.binaryType = "arraybuffer";
+
+      ws.onopen = () => {
+        ws.send(JSON.stringify({ type: "join", language: myLangEl.value }));
+        setStatus("joined, waiting for peer...");
+        stopBtn.disabled = false;
+      };
+
+      ws.onmessage = (event) => {
+        if (typeof event.data !== "string") return;
+        const msg = JSON.parse(event.data);
+        if (msg.type === "joined") {
+          setStatus(`joined as party ${msg.party_id}, waiting for peer...`);
+        } else if (msg.type === "peer_joined") {
+          setStatus("peer connected -- listening");
+        } else if (msg.type === "peer_left") {
+          setStatus("peer disconnected");
+        } else if (msg.type === "partial") {
+          transcriptEl.innerHTML = `<span class="partial">${msg.text}</span>`;
+        } else if (msg.type === "final") {
+          transcriptEl.textContent = msg.text;
+        } else if (msg.type === "translated") {
+          translationEl.textContent = msg.text;
+        } else if (msg.type === "audio") {
+          const bytes = Uint8Array.from(atob(msg.data), (c) => c.charCodeAt(0));
+          const blob = new Blob([bytes], { type: "audio/wav" });
+          player.src = URL.createObjectURL(blob);
+          player.play();
+        } else if (msg.type === "error") {
+          setStatus(`error: ${msg.message}`);
+        }
+      };
+
+      ws.onclose = () => setStatus("disconnected");
+
+      workletNode.port.onmessage = (event) => {
+        if (ws.readyState === WebSocket.OPEN) {
+          ws.send(event.data);
+        }
+      };
+    }
+
+    function stop() {
+      stopBtn.disabled = true;
+      if (ws && ws.readyState === WebSocket.OPEN) {
+        ws.send(JSON.stringify({ type: "end" }));
+      }
+      if (mediaStream) mediaStream.getTracks().forEach((t) => t.stop());
+      if (audioContext) audioContext.close();
+      setStatus("stopped");
+      startBtn.disabled = false;
+    }
+
+    startBtn.addEventListener("click", () => start().catch((err) => setStatus(`error: ${err.message}`)));
+    stopBtn.addEventListener("click", stop);
+  </script>
+</body>
+</html>
