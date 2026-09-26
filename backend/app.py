@@ -243,7 +243,8 @@ async def ws_endpoint(websocket: WebSocket, room_id: str):
         # any supported language, switch mid-conversation, or mix languages
         # within an utterance -- their own `hearing_language` above governs
         # only what THEY hear, never what they're allowed to speak.
-        async with client.speech_to_text_realtime_streaming.connect(
+        connect_start = time.perf_counter()
+        stt_connect_cm = client.speech_to_text_realtime_streaming.connect(
             language_code="auto",
             model="saaras:v3-realtime",
             stream_type="fast",
@@ -253,7 +254,11 @@ async def ws_endpoint(websocket: WebSocket, room_id: str):
             threshold=str(VAD_THRESHOLD),
             silence_duration_ms=str(VAD_SILENCE_DURATION_MS),
             min_speech_duration_ms=str(VAD_MIN_SPEECH_DURATION_MS),
-        ) as stt_ws:
+        )
+        async with stt_connect_cm as stt_ws:
+            connect_ms = round((time.perf_counter() - connect_start) * 1000)
+            print(f"[connect] room={room_id} party={party_id} stt_connect_ms={connect_ms}")
+            log_metrics({"kind": "connect", "room": room_id, "party": party_id, "connect_ms": connect_ms})
 
             async def relay_audio():
                 try:
@@ -463,6 +468,7 @@ async def _speak_one_language(
         "total_ms": total_ms,
     })
     log_metrics({
+        "kind": "utterance",
         "room": room_id,
         "speaker_party": speaker_party_id,
         "listener_parties": listener_ids,

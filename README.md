@@ -208,16 +208,32 @@ Two hard constraints if you host this somewhere other than a LAN demo:
   to all 4 languages from one speaker, and the two same-language
   listeners sharing a single translate+TTS pass.
 
-  **Latency caveat, measured not assumed**: across two 5-participant test
-  runs, per-listener STT-commit latency (`stt_ms`) was ~3.1s in one run
-  and ~17.5s in the other for the same utterance, both with 4 of 5
-  connections idle. It's not yet clear whether that's a one-off
-  cold-start effect (opening 5 realtime STT connections nearly
-  simultaneously) or something that recurs -- a direct SDK test confirmed
-  Sarvam does support 2+ concurrent realtime connections without error,
-  so it isn't a hard rejection, but conference latency under real load
-  with all 5 slots filled hasn't been characterized enough to promise a
-  number. Worth watching before relying on a full room for a live demo.
+  **Latency variance, root-caused (see `loadtest/`)**: an early ad-hoc
+  test showed one 5-participant utterance take ~17.5s to commit
+  (`stt_ms`) versus ~3.1s in a similar run right after. A dedicated load
+  test (`loadtest/run_load_test.py`, 16 full 5-person sessions using
+  pre-recorded audio, no manual test-process churn happening
+  concurrently) never reproduced anything close to that: `stt_ms` across
+  all 16 sessions ranged 2.4s-4.8s (p50 3.9s, p90 4.7s) -- the earlier
+  17.5s figure was very likely an artifact of other test processes being
+  killed/restarted on the same machine at that exact moment, not a
+  property of the architecture.
+
+  The load test did find a real, reproducible correlation: each
+  participant's own STT-connection-establishment time (newly measured as
+  `connect_ms`) is strongly negatively correlated with their first
+  utterance's `stt_ms` (Pearson r about -0.99 across 8 sessions) -- a
+  faster handshake correlates with slower initial transcription and vice
+  versa, consistent with Sarvam's backend needing a brief warm-up after
+  the WebSocket opens. Tried priming each connection with 300ms of
+  digital silence before real audio to test that theory; re-ran the same
+  16-session test and it made no measurable difference (mean `stt_ms`
+  3878ms before vs 3778ms after -- a ~100ms difference against a ~700ms
+  standard deviation, i.e. noise). Reverted the priming code since it
+  added latency with no benefit. The correlation itself is real, but its
+  cause is inside Sarvam's own backend, not something fixable from this
+  codebase -- documented rather than "fixed" with something that doesn't
+  work. `connect_ms` is still logged for every connection going forward.
 - **Phase 7 (decoupled speak/hear languages)**: a participant's selected
   language now governs only what they *hear*. STT switched from a fixed
   `language_code` per participant to `language_code="auto"` +
@@ -257,9 +273,24 @@ Two hard constraints if you host this somewhere other than a LAN demo:
 ```
 backend/app.py          FastAPI app: WebSocket room/pipeline logic
 backend/requirements.txt
-frontend/index.html     Two-pane UI, room join, mic capture wiring
+frontend/index.html     Participant grid UI, room join, mic capture wiring
 frontend/audio-processor.js   AudioWorklet: resamples mic input to 16kHz PCM16
 chat.py                 Minimal Sarvam chat completion smoke test
 phase0_realtime_stt.py  Standalone realtime STT verification script
+loadtest/generate_fixtures.py  One-time: synthesizes the 4 test clips (run once)
+loadtest/fixtures/*.pcm  Pre-recorded speech clips used as simulated mic input
+loadtest/run_load_test.py  Runs N full 5-person sessions back to back
+loadtest/results/*.json  Raw per-session results from actual load test runs
 logs/metrics.jsonl      Per-utterance latency log (gitignored, created at runtime)
 ```
+
+## Running the load test
+
+```bash
+.venv\Scripts\python loadtest\generate_fixtures.py   # once, needs SARVAM_API_KEY
+.venv\Scripts\python loadtest\run_load_test.py 8      # 8 full 5-person sessions
+```
+
+Needs the server already running (any of the commands under "Running"
+above). Writes `loadtest/results/load_test_<timestamp>.json` with raw
+per-participant event timing for every session.
