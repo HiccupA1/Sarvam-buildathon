@@ -3,74 +3,251 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Live Speech Interpreter -- Phase 5</title>
+<title>Live Speech Interpreter</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 <style>
-  :root { --accent: #2a6df4; --a-color: #2a6df4; --b-color: #d1591f; }
-  body { font-family: system-ui, sans-serif; max-width: 900px; margin: 1.5rem auto; padding: 0 1rem; }
-  select, input, button { font-size: 1rem; padding: 0.4rem 0.8rem; margin-right: 0.5rem; }
-  h1 { font-size: 1.4rem; margin-bottom: 0.25rem; }
-  #status { color: #666; margin: 0.75rem 0; display: flex; align-items: center; gap: 0.4rem; }
-  .conn-dot { width: 10px; height: 10px; border-radius: 50%; background: #ccc; flex-shrink: 0; }
-  .conn-dot.connecting { background: #e0a800; }
-  .conn-dot.connected { background: #2e9e44; }
-  .conn-dot.error { background: #c1440e; }
-  .join-row { margin-bottom: 0.75rem; }
-  .warning { background: #fff8e1; border: 1px solid #ffe082; border-radius: 6px; padding: 0.5rem 0.75rem; font-size: 0.9rem; }
-  #bargeIndicator { display: inline-block; margin-left: 0.5rem; font-size: 0.8rem; color: #c1440e; opacity: 0; transition: opacity 0.15s; }
+  :root {
+    --bg: #09090b;
+    --bg-elevated: rgba(255, 255, 255, 0.035);
+    --bg-elevated-hover: rgba(255, 255, 255, 0.055);
+    --border: rgba(255, 255, 255, 0.09);
+    --border-strong: rgba(255, 255, 255, 0.16);
+    --text: #fafafa;
+    --text-muted: #a1a1aa;
+    --text-faint: #71717a;
+    --accent: #10b981;
+    --accent-soft: rgba(16, 185, 129, 0.14);
+    --accent-text: #34d399;
+    --a-color: #34d399;
+    --b-color: #fb923c;
+    --danger: #f87171;
+    --warning: #fbbf24;
+    --radius: 16px;
+    --font-head: "Plus Jakarta Sans", system-ui, sans-serif;
+    --font-body: "Inter", system-ui, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    font-family: var(--font-body);
+    background: var(--bg);
+    color: var(--text);
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 4rem;
+    background-image:
+      radial-gradient(circle at 15% 0%, rgba(16, 185, 129, 0.10), transparent 45%),
+      radial-gradient(circle at 85% 10%, rgba(251, 146, 60, 0.08), transparent 40%);
+  }
+
+  h1 {
+    font-family: var(--font-head);
+    font-weight: 800;
+    font-size: 1.8rem;
+    letter-spacing: -0.03em;
+    margin: 0 0 0.35rem;
+  }
+
+  .subtitle { color: var(--text-muted); margin: 0 0 1.25rem; font-size: 0.95rem; }
+
+  .warning {
+    background: rgba(251, 191, 36, 0.08);
+    border: 1px solid rgba(251, 191, 36, 0.25);
+    color: #fde68a;
+    border-radius: 12px;
+    padding: 0.65rem 0.9rem;
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .glass {
+    background: var(--bg-elevated);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+  }
+
+  .controls { padding: 1.1rem 1.25rem; margin-bottom: 1.25rem; }
+
+  .join-row { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; }
+  .field { display: flex; flex-direction: column; gap: 0.35rem; flex: 1 1 200px; }
+  .field label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-faint); }
+
+  select, input {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    padding: 0.55rem 0.75rem;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--text);
+    transition: border-color 0.15s ease, background 0.15s ease;
+  }
+  select:hover, input:hover { border-color: var(--border-strong); }
+  select:focus, input:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: rgba(16, 185, 129, 0.06);
+  }
+  input::placeholder { color: var(--text-faint); }
+
+  button {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.6rem 1.15rem;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: transform 0.12s ease, background 0.15s ease, border-color 0.15s ease, opacity 0.15s ease;
+  }
+  button:active:not(:disabled) { transform: scale(0.97); }
+  button:disabled { opacity: 0.4; cursor: not-allowed; }
+
+  #startBtn { background: var(--accent); color: #062018; margin-right: 0.6rem; }
+  #startBtn:hover:not(:disabled) { background: #14c98c; }
+
+  #stopBtn { background: transparent; color: var(--text-muted); border-color: var(--border-strong); }
+  #stopBtn:hover:not(:disabled) { background: rgba(255, 255, 255, 0.06); color: var(--text); }
+
+  #status {
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .conn-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--text-faint); flex-shrink: 0; transition: background 0.2s ease; }
+  .conn-dot.connecting { background: var(--warning); box-shadow: 0 0 8px rgba(251, 191, 36, 0.6); }
+  .conn-dot.connected { background: var(--accent); box-shadow: 0 0 8px rgba(16, 185, 129, 0.6); }
+  .conn-dot.error { background: var(--danger); box-shadow: 0 0 8px rgba(248, 113, 113, 0.6); }
+
+  #bargeIndicator { display: inline-block; font-size: 0.8rem; color: var(--danger); opacity: 0; transition: opacity 0.15s; }
   #bargeIndicator.show { opacity: 1; }
 
-  .panes { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem; }
-  .pane { flex: 1 1 320px; border: 2px solid #ddd; border-radius: 8px; padding: 0.75rem 1rem; }
-  .pane.own { border-color: var(--accent); }
-  .pane-header { display: flex; align-items: center; gap: 0.5rem; font-weight: 600; margin-bottom: 0.5rem; }
+  .panes { display: flex; gap: 1.1rem; flex-wrap: wrap; margin-bottom: 1.1rem; }
+  .pane {
+    flex: 1 1 320px;
+    padding: 1rem 1.1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .pane.own { border-color: color-mix(in srgb, var(--pane-color, var(--accent)) 55%, transparent); box-shadow: 0 0 0 1px color-mix(in srgb, var(--pane-color, var(--accent)) 25%, transparent), 0 8px 32px rgba(0, 0, 0, 0.35); }
+  .pane.party-A { --pane-color: var(--a-color); }
+  .pane.party-B { --pane-color: var(--b-color); }
+
+  .pane-header {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+  }
   .pane.party-A .pane-header { color: var(--a-color); }
   .pane.party-B .pane-header { color: var(--b-color); }
-  .lang-badge { font-weight: 400; color: #888; font-size: 0.85rem; }
-  .you-badge { font-weight: 400; font-size: 0.75rem; background: var(--accent); color: white; border-radius: 3px; padding: 0.05rem 0.4rem; }
+  .lang-badge { font-family: var(--font-body); font-weight: 500; color: var(--text-faint); font-size: 0.82rem; }
+  .you-badge {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.68rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    background: var(--pane-color, var(--accent));
+    color: #06120d;
+    border-radius: 5px;
+    padding: 0.1rem 0.45rem;
+  }
 
-  .vad-dot { width: 12px; height: 12px; border-radius: 50%; background: #ccc; flex-shrink: 0; }
+  .vad-dot { width: 11px; height: 11px; border-radius: 50%; background: rgba(255, 255, 255, 0.15); flex-shrink: 0; }
   .vad-dot.active { background: currentColor; animation: pulse 0.9s infinite; }
-  @keyframes pulse { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.35); opacity: 0.6; } }
+  @keyframes pulse { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.4); opacity: 0.55; } }
 
-  .box { border: 1px solid #eee; border-radius: 6px; padding: 0.6rem 0.8rem; margin-bottom: 0.6rem; min-height: 2.2rem; background: #fafafa; }
-  .label { font-size: 0.75rem; color: #888; text-transform: uppercase; margin-bottom: 0.2rem; }
-  .partial { color: #999; font-style: italic; }
+  .box {
+    border: 1px solid var(--border);
+    border-radius: 11px;
+    padding: 0.65rem 0.85rem;
+    margin-bottom: 0.6rem;
+    min-height: 2.3rem;
+    background: rgba(255, 255, 255, 0.02);
+    font-size: 0.92rem;
+    line-height: 1.4;
+  }
+  .box:last-child { margin-bottom: 0; }
+  .label { font-size: 0.68rem; color: var(--text-faint); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.3rem; }
+  .partial { color: var(--text-faint); font-style: italic; }
 
-  .latency-box { margin-top: 1rem; border: 1px solid #ddd; border-radius: 8px; padding: 0.75rem 1rem; }
-  .latency-number { font-size: 1.6rem; font-weight: 600; }
-  .latency-breakdown { color: #888; font-size: 0.85rem; margin: 0.15rem 0 0.5rem; }
-  .sparkline { display: flex; align-items: flex-end; gap: 2px; height: 36px; }
-  .sparkline .bar { flex: 1; background: var(--accent); min-height: 2px; border-radius: 1px 1px 0 0; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(2px); } to { opacity: 1; transform: translateY(0); } }
+  .box > span, .box.updated { animation: fadeIn 0.25s ease; }
+
+  .latency-box { padding: 1rem 1.25rem; }
+  .latency-number {
+    font-family: var(--font-head);
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--accent-text);
+  }
+  .latency-breakdown { color: var(--text-faint); font-size: 0.82rem; margin: 0.2rem 0 0.75rem; }
+  .sparkline { display: flex; align-items: flex-end; gap: 3px; height: 40px; }
+  .sparkline .bar {
+    flex: 1;
+    background: linear-gradient(180deg, var(--accent) 0%, rgba(16, 185, 129, 0.25) 100%);
+    min-height: 3px;
+    border-radius: 2px 2px 0 0;
+    transition: height 0.2s ease;
+  }
+
+  @media (max-width: 640px) {
+    body { padding: 1.5rem 1rem 3rem; }
+    h1 { font-size: 1.5rem; }
+    .join-row { flex-direction: column; }
+    .field { flex: none; } /* flex-basis:200px would set HEIGHT once the row above switches to column */
+    button { width: 100%; margin-right: 0; margin-bottom: 0.5rem; }
+    .panes { flex-direction: column; }
+    .pane { flex: none; } /* same trap: flex-basis:320px would set HEIGHT in a column layout */
+  }
 </style>
 </head>
 <body>
   <h1>Live Speech Interpreter</h1>
-  <p>Phase 5 checkpoint: latency instrumentation logged per utterance.</p>
+  <p class="subtitle">Real-time speech-to-speech translation across Hindi, English, Tamil, and Telugu.</p>
   <p class="warning">Wear headphones -- otherwise the translated audio feeds back into your own mic and garbles transcription.</p>
 
-  <div class="join-row">
-    <label>Room code
-      <input id="roomCode" type="text" placeholder="e.g. demo1" />
-    </label>
-    <label>My language
-      <select id="myLang">
-        <option value="hi-IN">Hindi</option>
-        <option value="en-IN">English</option>
-        <option value="ta-IN" selected>Tamil</option>
-        <option value="te-IN">Telugu</option>
-      </select>
-    </label>
+  <div class="controls glass">
+    <div class="join-row">
+      <div class="field">
+        <label for="roomCode">Room code</label>
+        <input id="roomCode" type="text" placeholder="e.g. demo1" />
+      </div>
+      <div class="field">
+        <label for="myLang">My language</label>
+        <select id="myLang">
+          <option value="hi-IN">Hindi</option>
+          <option value="en-IN">English</option>
+          <option value="ta-IN" selected>Tamil</option>
+          <option value="te-IN">Telugu</option>
+        </select>
+      </div>
+    </div>
+
+    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem;">
+      <div>
+        <button id="startBtn">Join &amp; Start</button>
+        <button id="stopBtn" disabled>Stop</button>
+      </div>
+      <div id="status"><span class="conn-dot" id="connDot"></span><span id="statusText">idle</span><span id="bargeIndicator">interrupted previous playback</span></div>
+    </div>
   </div>
 
-  <p>
-    <button id="startBtn">Join & Start</button>
-    <button id="stopBtn" disabled>Stop</button>
-  </p>
-
-  <div id="status"><span class="conn-dot" id="connDot"></span><span id="statusText">idle</span><span id="bargeIndicator">interrupted previous playback</span></div>
-
   <div class="panes">
-    <div class="pane party-A" id="paneA">
+    <div class="pane party-A glass" id="paneA">
       <div class="pane-header">
         <span class="vad-dot" id="vadA"></span>
         Party A <span class="lang-badge" id="langA"></span>
@@ -79,7 +256,7 @@
       <div class="box"><div class="label">Transcript</div><div id="transcriptA"></div></div>
       <div class="box"><div class="label">Incoming (translated)</div><div id="translationA"></div></div>
     </div>
-    <div class="pane party-B" id="paneB">
+    <div class="pane party-B glass" id="paneB">
       <div class="pane-header">
         <span class="vad-dot" id="vadB"></span>
         Party B <span class="lang-badge" id="langB"></span>
@@ -90,7 +267,7 @@
     </div>
   </div>
 
-  <div class="latency-box">
+  <div class="latency-box glass">
     <div class="label">End-to-end lag (speech-end to audio-ready; excludes mic/network transit and playback start)</div>
     <div class="latency-number" id="latencyNumber">--</div>
     <div class="latency-breakdown" id="latencyBreakdown"></div>
@@ -150,6 +327,14 @@
     function flashBargeIndicator() {
       bargeIndicator.classList.add("show");
       setTimeout(() => bargeIndicator.classList.remove("show"), 1500);
+    }
+
+    function updateBox(el, content, asHtml) {
+      if (asHtml) el.innerHTML = content;
+      else el.textContent = content;
+      el.classList.remove("updated");
+      void el.offsetWidth; // force reflow so the animation restarts
+      el.classList.add("updated");
     }
 
     function setPaneLanguage(partyId, language) {
@@ -233,15 +418,15 @@
           const pane = panes[msg.party];
           if (!pane) return;
           if (msg.kind === "partial") {
-            pane.transcript.innerHTML = `<span class="partial">${msg.text}</span>`;
+            updateBox(pane.transcript, `<span class="partial">${msg.text}</span>`, true);
           } else {
-            pane.transcript.textContent = msg.text;
+            updateBox(pane.transcript, msg.text, false);
           }
         } else if (msg.type === "vad") {
           setVad(msg.party, msg.state === "start");
         } else if (msg.type === "translated") {
           const pane = panes[msg.party];
-          if (pane) pane.translation.textContent = msg.text;
+          if (pane) updateBox(pane.translation, msg.text, false);
         } else if (msg.type === "latency") {
           renderLatency(msg);
         } else if (msg.type === "audio") {
