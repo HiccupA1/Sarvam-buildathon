@@ -115,6 +115,11 @@ async def index():
     return FileResponse(os.path.join(FRONTEND_DIR, "index.html"))
 
 
+@app.get("/health")
+async def health():
+    return {"status": "ok", "active_rooms": len(SESSIONS)}
+
+
 class Participant:
     def __init__(self, party_id: str, websocket: WebSocket, language: str):
         self.party_id = party_id

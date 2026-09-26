@@ -76,7 +76,29 @@ browser permission grant, not an embedded/sandboxed preview).
 If the phone can't reach `http://<laptop-LAN-IP>:8000` (common on networks
 that isolate devices from each other, e.g. some guest Wi-Fi), that's a
 network issue -- use a tunnel (ngrok / Cloudflare Tunnel) or a deployed
-backend instead.
+backend instead. On Windows, also check that the firewall allows inbound
+TCP on the port you're using (see "Deploying beyond localhost" below).
+
+## Deploying beyond localhost
+
+Two hard constraints if you host this somewhere other than a LAN demo:
+
+- **HTTPS is required.** Browsers only grant microphone access
+  (`getUserMedia`) on a secure context -- `https://` or exactly
+  `localhost`/`127.0.0.1`. Serving over plain `http://` from any other host
+  or IP will make the frontend refuse to request the mic at all (the app
+  detects this and shows an explicit error rather than failing silently).
+  Put the app behind a reverse proxy or platform that terminates TLS
+  (nginx + certbot, Caddy, or a PaaS like Render/Fly/Railway that provides
+  HTTPS automatically).
+- **Run a single worker process.** Room/session state (`SESSIONS` in
+  `backend/app.py`) lives in memory in one process. Running multiple
+  worker processes (e.g. `uvicorn ... --workers 4`, or a process manager
+  that forks) would split participants across workers that can't see each
+  other's rooms. Scale vertically (more CPU) or move session state to a
+  shared store (Redis, etc.) before scaling horizontally -- not done here.
+- `GET /health` returns `{"status": "ok", "active_rooms": N}` for
+  platforms that expect a health-check endpoint.
 
 ## What's implemented
 
@@ -93,6 +115,14 @@ backend instead.
 - **Phase 5**: per-utterance latency logged to `logs/metrics.jsonl`
   (`stt_ms` = speech-start to transcript-commit, `translate_ms`, `tts_ms`,
   `total_ms`).
+- **Hardening pass**: WebSocket auto-reconnect with backoff if the
+  connection drops unexpectedly (mic stays live, a fresh STT session
+  starts on reconnect); secure-context check before requesting mic access
+  (clear error instead of a silent failure over plain HTTP on a non-
+  localhost host); friendly messages for mic-permission-denied/no-mic;
+  audio blob URLs are revoked after use; best-effort cleanup on tab close
+  so a closed tab doesn't leave a phantom participant in a room; visual
+  connection-status indicator.
 
 ## Known limitations / not yet built
 

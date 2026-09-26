@@ -9,7 +9,11 @@
   body { font-family: system-ui, sans-serif; max-width: 900px; margin: 1.5rem auto; padding: 0 1rem; }
   select, input, button { font-size: 1rem; padding: 0.4rem 0.8rem; margin-right: 0.5rem; }
   h1 { font-size: 1.4rem; margin-bottom: 0.25rem; }
-  #status { color: #666; margin: 0.75rem 0; }
+  #status { color: #666; margin: 0.75rem 0; display: flex; align-items: center; gap: 0.4rem; }
+  .conn-dot { width: 10px; height: 10px; border-radius: 50%; background: #ccc; flex-shrink: 0; }
+  .conn-dot.connecting { background: #e0a800; }
+  .conn-dot.connected { background: #2e9e44; }
+  .conn-dot.error { background: #c1440e; }
   .join-row { margin-bottom: 0.75rem; }
   .warning { background: #fff8e1; border: 1px solid #ffe082; border-radius: 6px; padding: 0.5rem 0.75rem; font-size: 0.9rem; }
   #bargeIndicator { display: inline-block; margin-left: 0.5rem; font-size: 0.8rem; color: #c1440e; opacity: 0; transition: opacity 0.15s; }
@@ -63,7 +67,7 @@
     <button id="stopBtn" disabled>Stop</button>
   </p>
 
-  <div id="status">idle<span id="bargeIndicator">interrupted previous playback</span></div>
+  <div id="status"><span class="conn-dot" id="connDot"></span><span id="statusText">idle</span><span id="bargeIndicator">interrupted previous playback</span></div>
 
   <div class="panes">
     <div class="pane party-A" id="paneA">
@@ -98,7 +102,8 @@
   <script>
     const startBtn = document.getElementById("startBtn");
     const stopBtn = document.getElementById("stopBtn");
-    const statusEl = document.getElementById("status");
+    const statusTextEl = document.getElementById("statusText");
+    const connDot = document.getElementById("connDot");
     const player = document.getElementById("player");
     const roomCodeEl = document.getElementById("roomCode");
     const myLangEl = document.getElementById("myLang");
@@ -131,10 +136,15 @@
 
     let myPartyId = null;
     let audioContext, workletNode, micSource, mediaStream, ws;
+    let currentAudioUrl = null;
+    let manualStop = true; // true = user hasn't asked to run yet / explicitly stopped
+    let reconnectAttempt = 0;
+    let reconnectTimer = null;
+    let currentRoom = null;
 
-    function setStatus(text) {
-      statusEl.textContent = text;
-      statusEl.appendChild(bargeIndicator);
+    function setStatus(text, dotState) {
+      statusTextEl.textContent = text;
+      if (dotState) connDot.className = `conn-dot ${dotState}`;
     }
 
     function flashBargeIndicator() {
@@ -179,34 +189,31 @@
       }
     }
 
-    async function start() {
-      const room = roomCodeEl.value.trim();
-      if (!room) {
-        setStatus("error: enter a room code");
-        return;
+    function resetPanesForNewSession() {
+      myPartyId = null;
+      latencyHistory.length = 0;
+      for (const [id, pane] of Object.entries(panes)) {
+        pane.el.classList.remove("own");
+        pane.you.style.display = "none";
+        pane.lang.textContent = "";
+        pane.transcript.textContent = "";
+        pane.translation.textContent = "";
+        pane.vad.classList.remove("active");
       }
+      latencyNumber.textContent = "--";
+      latencyBreakdown.textContent = "";
+      sparkline.innerHTML = "";
+    }
 
-      startBtn.disabled = true;
-      setStatus("requesting mic access...");
-
-      mediaStream = await navigator.mediaDevices.getUserMedia({
-        audio: { channelCount: 1, echoCancellation: true, noiseSuppression: true },
-      });
-
-      audioContext = new AudioContext();
-      await audioContext.audioWorklet.addModule("/static/audio-processor.js");
-
-      micSource = audioContext.createMediaStreamSource(mediaStream);
-      workletNode = new AudioWorkletNode(audioContext, "pcm-worklet-processor");
-      micSource.connect(workletNode);
-
+    function connectWebSocket() {
       const protocol = location.protocol === "https:" ? "wss" : "ws";
-      ws = new WebSocket(`${protocol}://${location.host}/ws/${encodeURIComponent(room)}`);
+      ws = new WebSocket(`${protocol}://${location.host}/ws/${encodeURIComponent(currentRoom)}`);
       ws.binaryType = "arraybuffer";
 
       ws.onopen = () => {
+        reconnectAttempt = 0;
         ws.send(JSON.stringify({ type: "join", language: myLangEl.value }));
-        setStatus("joined, waiting for peer...");
+        setStatus("joined, waiting for peer...", "connecting");
         stopBtn.disabled = false;
       };
 
@@ -216,12 +223,12 @@
         if (msg.type === "joined") {
           markSelf(msg.party_id);
           setPaneLanguage(msg.party_id, msg.language);
-          setStatus(`joined as party ${msg.party_id}, waiting for peer...`);
+          setStatus(`joined as party ${msg.party_id}, waiting for peer...`, "connecting");
         } else if (msg.type === "peer_joined") {
           setPaneLanguage(msg.party_id, msg.language);
-          setStatus("peer connected -- listening");
+          setStatus("peer connected -- listening", "connected");
         } else if (msg.type === "peer_left") {
-          setStatus("peer disconnected");
+          setStatus("peer disconnected", "connecting");
         } else if (msg.type === "transcript") {
           const pane = panes[msg.party];
           if (!pane) return;
@@ -248,36 +255,124 @@
             const bytes = Uint8Array.from(atob(msg.data), (c) => c.charCodeAt(0));
             const blob = new Blob([bytes], { type: "audio/wav" });
             player.pause();
-            player.src = URL.createObjectURL(blob);
+            if (currentAudioUrl) URL.revokeObjectURL(currentAudioUrl);
+            currentAudioUrl = URL.createObjectURL(blob);
+            player.src = currentAudioUrl;
             player.play();
           }
         } else if (msg.type === "error") {
-          setStatus(`error: ${msg.message}`);
+          setStatus(`error: ${msg.message}`, "error");
         }
       };
 
-      ws.onclose = () => setStatus("disconnected");
-
-      workletNode.port.onmessage = (event) => {
-        if (ws.readyState === WebSocket.OPEN) {
-          ws.send(event.data);
+      ws.onclose = () => {
+        if (manualStop) {
+          setStatus("stopped", null);
+          connDot.className = "conn-dot";
+          return;
         }
+        // Unexpected drop (network blip, server restart) while the mic is
+        // still live -- reconnect with backoff instead of just dying.
+        // Note: this starts a fresh STT session server-side, so a few
+        // words around the drop may be lost; that's an accepted trade-off
+        // for a live demo over recovering mid-utterance state.
+        reconnectAttempt += 1;
+        const delayMs = Math.min(10000, 1000 * 2 ** (reconnectAttempt - 1));
+        setStatus(`connection lost -- reconnecting in ${Math.round(delayMs / 1000)}s...`, "error");
+        reconnectTimer = setTimeout(connectWebSocket, delayMs);
+      };
+
+      ws.onerror = () => {
+        // The close event follows and handles reconnect; this just makes
+        // the failure visible immediately instead of waiting for onclose.
+        setStatus("connection error", "error");
       };
     }
 
+    async function start() {
+      const room = roomCodeEl.value.trim();
+      if (!room) {
+        setStatus("error: enter a room code", "error");
+        return;
+      }
+
+      if (!window.isSecureContext) {
+        setStatus("error: mic access requires HTTPS (or localhost) -- this page was loaded over plain HTTP", "error");
+        return;
+      }
+
+      currentRoom = room;
+      manualStop = false;
+      reconnectAttempt = 0;
+      startBtn.disabled = true;
+      resetPanesForNewSession();
+      setStatus("requesting mic access...", "connecting");
+
+      try {
+        mediaStream = await navigator.mediaDevices.getUserMedia({
+          audio: { channelCount: 1, echoCancellation: true, noiseSuppression: true },
+        });
+      } catch (err) {
+        manualStop = true;
+        startBtn.disabled = false;
+        if (err.name === "NotAllowedError") {
+          setStatus("error: mic permission denied -- allow it in the browser's site settings and retry", "error");
+        } else if (err.name === "NotFoundError") {
+          setStatus("error: no microphone found on this device", "error");
+        } else {
+          setStatus(`error: ${err.message}`, "error");
+        }
+        return;
+      }
+
+      audioContext = new AudioContext();
+      await audioContext.audioWorklet.addModule("/static/audio-processor.js");
+
+      micSource = audioContext.createMediaStreamSource(mediaStream);
+      workletNode = new AudioWorkletNode(audioContext, "pcm-worklet-processor");
+      micSource.connect(workletNode);
+
+      workletNode.port.onmessage = (event) => {
+        if (ws && ws.readyState === WebSocket.OPEN) {
+          ws.send(event.data);
+        }
+      };
+
+      connectWebSocket();
+    }
+
     function stop() {
+      manualStop = true;
+      if (reconnectTimer) {
+        clearTimeout(reconnectTimer);
+        reconnectTimer = null;
+      }
       stopBtn.disabled = true;
       if (ws && ws.readyState === WebSocket.OPEN) {
         ws.send(JSON.stringify({ type: "end" }));
       }
       if (mediaStream) mediaStream.getTracks().forEach((t) => t.stop());
       if (audioContext) audioContext.close();
-      setStatus("stopped");
+      if (currentAudioUrl) {
+        URL.revokeObjectURL(currentAudioUrl);
+        currentAudioUrl = null;
+      }
+      setStatus("stopped", null);
+      connDot.className = "conn-dot";
       startBtn.disabled = false;
     }
 
-    startBtn.addEventListener("click", () => start().catch((err) => setStatus(`error: ${err.message}`)));
+    startBtn.addEventListener("click", () => start().catch((err) => setStatus(`error: ${err.message}`, "error")));
     stopBtn.addEventListener("click", stop);
+
+    // Best-effort cleanup so a closed tab doesn't leave a phantom
+    // participant occupying a room slot until the socket times out.
+    window.addEventListener("beforeunload", () => {
+      if (ws && ws.readyState === WebSocket.OPEN) {
+        ws.send(JSON.stringify({ type: "end" }));
+      }
+      if (mediaStream) mediaStream.getTracks().forEach((t) => t.stop());
+    });
   </script>
 </body>
 </html>
