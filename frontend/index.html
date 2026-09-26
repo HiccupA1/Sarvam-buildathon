@@ -2,20 +2,47 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>Live Speech Interpreter -- Phase 2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Live Speech Interpreter -- Phase 5</title>
 <style>
-  body { font-family: system-ui, sans-serif; max-width: 640px; margin: 2rem auto; padding: 0 1rem; }
+  :root { --accent: #2a6df4; --a-color: #2a6df4; --b-color: #d1591f; }
+  body { font-family: system-ui, sans-serif; max-width: 900px; margin: 1.5rem auto; padding: 0 1rem; }
   select, input, button { font-size: 1rem; padding: 0.4rem 0.8rem; margin-right: 0.5rem; }
-  #status { color: #666; margin: 1rem 0; }
-  .box { border: 1px solid #ddd; border-radius: 6px; padding: 0.75rem 1rem; margin-bottom: 1rem; min-height: 2.5rem; }
-  .label { font-size: 0.8rem; color: #888; text-transform: uppercase; margin-bottom: 0.25rem; }
-  .partial { color: #999; font-style: italic; }
+  h1 { font-size: 1.4rem; margin-bottom: 0.25rem; }
+  #status { color: #666; margin: 0.75rem 0; }
   .join-row { margin-bottom: 0.75rem; }
+  .warning { background: #fff8e1; border: 1px solid #ffe082; border-radius: 6px; padding: 0.5rem 0.75rem; font-size: 0.9rem; }
+  #bargeIndicator { display: inline-block; margin-left: 0.5rem; font-size: 0.8rem; color: #c1440e; opacity: 0; transition: opacity 0.15s; }
+  #bargeIndicator.show { opacity: 1; }
+
+  .panes { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem; }
+  .pane { flex: 1 1 320px; border: 2px solid #ddd; border-radius: 8px; padding: 0.75rem 1rem; }
+  .pane.own { border-color: var(--accent); }
+  .pane-header { display: flex; align-items: center; gap: 0.5rem; font-weight: 600; margin-bottom: 0.5rem; }
+  .pane.party-A .pane-header { color: var(--a-color); }
+  .pane.party-B .pane-header { color: var(--b-color); }
+  .lang-badge { font-weight: 400; color: #888; font-size: 0.85rem; }
+  .you-badge { font-weight: 400; font-size: 0.75rem; background: var(--accent); color: white; border-radius: 3px; padding: 0.05rem 0.4rem; }
+
+  .vad-dot { width: 12px; height: 12px; border-radius: 50%; background: #ccc; flex-shrink: 0; }
+  .vad-dot.active { background: currentColor; animation: pulse 0.9s infinite; }
+  @keyframes pulse { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.35); opacity: 0.6; } }
+
+  .box { border: 1px solid #eee; border-radius: 6px; padding: 0.6rem 0.8rem; margin-bottom: 0.6rem; min-height: 2.2rem; background: #fafafa; }
+  .label { font-size: 0.75rem; color: #888; text-transform: uppercase; margin-bottom: 0.2rem; }
+  .partial { color: #999; font-style: italic; }
+
+  .latency-box { margin-top: 1rem; border: 1px solid #ddd; border-radius: 8px; padding: 0.75rem 1rem; }
+  .latency-number { font-size: 1.6rem; font-weight: 600; }
+  .latency-breakdown { color: #888; font-size: 0.85rem; margin: 0.15rem 0 0.5rem; }
+  .sparkline { display: flex; align-items: flex-end; gap: 2px; height: 36px; }
+  .sparkline .bar { flex: 1; background: var(--accent); min-height: 2px; border-radius: 1px 1px 0 0; }
 </style>
 </head>
 <body>
   <h1>Live Speech Interpreter</h1>
-  <p>Phase 2 checkpoint: two parties, each in their own language, hear each other translated.</p>
+  <p>Phase 5 checkpoint: latency instrumentation logged per utterance.</p>
+  <p class="warning">Wear headphones -- otherwise the translated audio feeds back into your own mic and garbles transcription.</p>
 
   <div class="join-row">
     <label>Room code
@@ -36,10 +63,35 @@
     <button id="stopBtn" disabled>Stop</button>
   </p>
 
-  <div id="status">idle</div>
+  <div id="status">idle<span id="bargeIndicator">interrupted previous playback</span></div>
 
-  <div class="box"><div class="label">My transcript</div><div id="transcript"></div></div>
-  <div class="box"><div class="label">Incoming (translated for me)</div><div id="translation"></div></div>
+  <div class="panes">
+    <div class="pane party-A" id="paneA">
+      <div class="pane-header">
+        <span class="vad-dot" id="vadA"></span>
+        Party A <span class="lang-badge" id="langA"></span>
+        <span class="you-badge" id="youA" style="display:none">you</span>
+      </div>
+      <div class="box"><div class="label">Transcript</div><div id="transcriptA"></div></div>
+      <div class="box"><div class="label">Incoming (translated)</div><div id="translationA"></div></div>
+    </div>
+    <div class="pane party-B" id="paneB">
+      <div class="pane-header">
+        <span class="vad-dot" id="vadB"></span>
+        Party B <span class="lang-badge" id="langB"></span>
+        <span class="you-badge" id="youB" style="display:none">you</span>
+      </div>
+      <div class="box"><div class="label">Transcript</div><div id="transcriptB"></div></div>
+      <div class="box"><div class="label">Incoming (translated)</div><div id="translationB"></div></div>
+    </div>
+  </div>
+
+  <div class="latency-box">
+    <div class="label">End-to-end lag (speech-end to audio-ready; excludes mic/network transit and playback start)</div>
+    <div class="latency-number" id="latencyNumber">--</div>
+    <div class="latency-breakdown" id="latencyBreakdown"></div>
+    <div class="sparkline" id="sparkline"></div>
+  </div>
 
   <audio id="player"></audio>
 
@@ -47,16 +99,84 @@
     const startBtn = document.getElementById("startBtn");
     const stopBtn = document.getElementById("stopBtn");
     const statusEl = document.getElementById("status");
-    const transcriptEl = document.getElementById("transcript");
-    const translationEl = document.getElementById("translation");
     const player = document.getElementById("player");
     const roomCodeEl = document.getElementById("roomCode");
     const myLangEl = document.getElementById("myLang");
+    const bargeIndicator = document.getElementById("bargeIndicator");
+    const latencyNumber = document.getElementById("latencyNumber");
+    const latencyBreakdown = document.getElementById("latencyBreakdown");
+    const sparkline = document.getElementById("sparkline");
 
+    const panes = {
+      A: {
+        el: document.getElementById("paneA"),
+        vad: document.getElementById("vadA"),
+        lang: document.getElementById("langA"),
+        you: document.getElementById("youA"),
+        transcript: document.getElementById("transcriptA"),
+        translation: document.getElementById("translationA"),
+      },
+      B: {
+        el: document.getElementById("paneB"),
+        vad: document.getElementById("vadB"),
+        lang: document.getElementById("langB"),
+        you: document.getElementById("youB"),
+        transcript: document.getElementById("transcriptB"),
+        translation: document.getElementById("translationB"),
+      },
+    };
+
+    const LANG_NAMES = { "hi-IN": "Hindi", "en-IN": "English", "ta-IN": "Tamil", "te-IN": "Telugu" };
+    const latencyHistory = [];
+
+    let myPartyId = null;
     let audioContext, workletNode, micSource, mediaStream, ws;
 
     function setStatus(text) {
       statusEl.textContent = text;
+      statusEl.appendChild(bargeIndicator);
+    }
+
+    function flashBargeIndicator() {
+      bargeIndicator.classList.add("show");
+      setTimeout(() => bargeIndicator.classList.remove("show"), 1500);
+    }
+
+    function setPaneLanguage(partyId, language) {
+      const pane = panes[partyId];
+      if (!pane) return;
+      pane.lang.textContent = LANG_NAMES[language] || language;
+    }
+
+    function markSelf(partyId) {
+      myPartyId = partyId;
+      for (const [id, pane] of Object.entries(panes)) {
+        pane.el.classList.toggle("own", id === partyId);
+        pane.you.style.display = id === partyId ? "inline-block" : "none";
+      }
+    }
+
+    function setVad(partyId, active) {
+      const pane = panes[partyId];
+      if (!pane) return;
+      pane.vad.classList.toggle("active", active);
+    }
+
+    function renderLatency(msg) {
+      latencyNumber.textContent = `${msg.total_ms} ms`;
+      const sttPart = msg.stt_ms != null ? `stt ${msg.stt_ms}ms + ` : "";
+      latencyBreakdown.textContent = `${sttPart}translate ${msg.translate_ms}ms + tts ${msg.tts_ms}ms -> party ${msg.party}`;
+      latencyHistory.push(msg.total_ms);
+      if (latencyHistory.length > 20) latencyHistory.shift();
+      const max = Math.max(...latencyHistory, 1);
+      sparkline.innerHTML = "";
+      for (const v of latencyHistory) {
+        const bar = document.createElement("div");
+        bar.className = "bar";
+        bar.style.height = `${Math.max(4, (v / max) * 100)}%`;
+        bar.title = `${v} ms`;
+        sparkline.appendChild(bar);
+      }
     }
 
     async function start() {
@@ -94,22 +214,43 @@
         if (typeof event.data !== "string") return;
         const msg = JSON.parse(event.data);
         if (msg.type === "joined") {
+          markSelf(msg.party_id);
+          setPaneLanguage(msg.party_id, msg.language);
           setStatus(`joined as party ${msg.party_id}, waiting for peer...`);
         } else if (msg.type === "peer_joined") {
+          setPaneLanguage(msg.party_id, msg.language);
           setStatus("peer connected -- listening");
         } else if (msg.type === "peer_left") {
           setStatus("peer disconnected");
-        } else if (msg.type === "partial") {
-          transcriptEl.innerHTML = `<span class="partial">${msg.text}</span>`;
-        } else if (msg.type === "final") {
-          transcriptEl.textContent = msg.text;
+        } else if (msg.type === "transcript") {
+          const pane = panes[msg.party];
+          if (!pane) return;
+          if (msg.kind === "partial") {
+            pane.transcript.innerHTML = `<span class="partial">${msg.text}</span>`;
+          } else {
+            pane.transcript.textContent = msg.text;
+          }
+        } else if (msg.type === "vad") {
+          setVad(msg.party, msg.state === "start");
         } else if (msg.type === "translated") {
-          translationEl.textContent = msg.text;
+          const pane = panes[msg.party];
+          if (pane) pane.translation.textContent = msg.text;
+        } else if (msg.type === "latency") {
+          renderLatency(msg);
         } else if (msg.type === "audio") {
-          const bytes = Uint8Array.from(atob(msg.data), (c) => c.charCodeAt(0));
-          const blob = new Blob([bytes], { type: "audio/wav" });
-          player.src = URL.createObjectURL(blob);
-          player.play();
+          // Barge-in policy: newly arrived audio interrupts whatever is
+          // still playing, rather than queuing behind it -- otherwise
+          // translation lag would compound over a long conversation.
+          if (msg.party === myPartyId) {
+            if (!player.paused && !player.ended) {
+              flashBargeIndicator();
+            }
+            const bytes = Uint8Array.from(atob(msg.data), (c) => c.charCodeAt(0));
+            const blob = new Blob([bytes], { type: "audio/wav" });
+            player.pause();
+            player.src = URL.createObjectURL(blob);
+            player.play();
+          }
         } else if (msg.type === "error") {
           setStatus(`error: ${msg.message}`);
         }
