@@ -10,6 +10,11 @@ realtime STT, translation, and TTS APIs.
 
 ## Portfolio release
 
+[Hosted preview](https://sarvam-interpreter-preview.onrender.com/) deployed on
+Render with Docker on 2026-10-10. This free preview intentionally disables live
+speech processing and has zero API allowances. It can take around a minute to
+wake after inactivity. Protected live access and two-device testing are pending.
+
 See [DEPLOYMENT.md](DEPLOYMENT.md) for the INR 500 budget, deployment steps,
 verification commands, and resume wording. Live Sarvam access now defaults to
 disabled and requires a private demo invite. Listen-only participants use no

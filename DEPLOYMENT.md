@@ -53,6 +53,21 @@ https://render.com/docs/disks
 
 ### Free disabled preview
 
+Deployed on 2026-10-10:
+https://sarvam-interpreter-preview.onrender.com/
+
+Render reported a successful Docker deployment of commit `d30805f`. Its
+health-check logs showed HTTP 200, and the public HTTPS frontend displayed
+`live demo offline` with Join disabled. No Sarvam key was supplied. This is
+hosting verification, not an end-to-end live speech test.
+
+The initial Blueprint used the public repository URL without granting Render
+repository access. Render warns that automatic code deployments are unavailable
+for an unconfigured public repository. Use Manual Deploy for new application
+commits; connecting the Git provider later requires reviewing and approving
+repository permissions. Do not assume CI passing automatically updates this
+service. Blueprint configuration synchronization is separate from code deploys.
+
 The repository includes `render.yaml` for a free Docker preview in Singapore.
 In Render, create a new Blueprint from this repository and its `main` branch.
 Review that the proposed service uses the free plan before creating it. It
