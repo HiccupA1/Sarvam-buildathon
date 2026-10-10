@@ -80,7 +80,59 @@ hosting cost, configure durable storage and secrets, and replace the zero
 allowances with reviewed limits. Update the Blueprint too, or a later sync can
 restore its disabled-preview settings. Never commit secrets to `render.yaml`.
 
-### Protected live deployment
+### No-hosting-cost temporary laptop demo
+
+Use the local Docker app and Cloudflare Quick Tunnel for supervised testing.
+Your laptop, Docker, and internet connection must stay running; visitors need
+only a browser and headphones. This is not a permanent hosting deployment.
+Cloudflare relays browser traffic (including the demo invite, audio, and text).
+The Sarvam key stays in the local backend configuration and is not provided to
+Cloudflare, Render, GitHub, or visitors. Speech processing still calls Sarvam.
+
+```powershell
+# Run from the repository root. The local .env must contain SARVAM_API_KEY.
+docker build -t sarvam-interpreter:portfolio .
+docker pull cloudflare/cloudflared:latest
+.venv\Scripts\python.exe scripts\local_demo.py start --live
+.venv\Scripts\python.exe scripts\local_demo.py status
+# Optional public listener-only check; this sends the demo invite via Cloudflare.
+.venv\Scripts\python.exe scripts\local_demo.py verify
+# Always stop after testing:
+.venv\Scripts\python.exe scripts\local_demo.py stop
+```
+
+Startup prints the temporary URL, but never the Sarvam key. The private invite
+is in `logs/local-demo/PRIVATE-INVITE.md`; this directory is ignored by Git.
+Do not publish the invite or include it in a URL. Each start creates a new link
+and invite, but reuses the `sarvam-local-demo-budget` Docker volume. Do not delete
+that volume to reset allowances. Stop removes only labeled demo containers and
+generated local secret files; it retains the budget. Stopping Docker alone does
+not remove those files, so use the stop command when possible.
+
+The initial allowance is 240 reserved STT seconds, 1,000 translation input
+characters, and 1,000 TTS characters, about INR 7 in reservations at the rates
+above, before GST. This is not an actual billing cap. Each speaker join reserves
+60 seconds even if stopped early. Listeners use no STT. No automatic paid test
+is performed by startup. Limits are lifetime allowances across starts, not
+per-demo allocations. The demo stays reachable until explicitly stopped.
+
+For two-laptop testing:
+
+1. Open the temporary URL on both devices (not the disabled Render preview).
+2. Enter the same unique room code and private invite on both.
+3. Set each device's preferred hearing language; keep headphones on.
+4. On laptop B, check Listen only and join first. On laptop A, leave it unchecked,
+   join, and allow microphone access. A speaker alone still consumes STT budget.
+5. Say one short sentence on A and confirm B receives translated text and audio.
+6. Stop both within 60 seconds. Swap roles and repeat with a different language.
+7. Check status for reservations. Record any errors and observed latency; do not
+   repeatedly rejoin after an error because each speaker join reserves a session.
+8. Stop the demo after testing. Do not share sensitive conversations in a demo.
+
+Quick Tunnels have changing hostnames and no uptime guarantee:
+https://developers.cloudflare.com/tunnel/get-started/quick-tunnels/
+
+### Persistent Render live release
 
 1. Push the reviewed source to your GitHub repository after offline CI passes.
    The Docker context excludes credentials, private certificates, logs, fixtures,
