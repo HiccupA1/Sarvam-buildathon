@@ -4,6 +4,18 @@ const fs = require('node:fs');
 const path = require('node:path');
 const assert = require('node:assert/strict');
 
+function wavAudio(durationMs, tone = false) {
+  const count = durationMs * 16;
+  const wav = Buffer.alloc(44 + count * 2);
+  wav.write('RIFF', 0); wav.writeUInt32LE(wav.length - 8, 4); wav.write('WAVEfmt ', 8);
+  wav.writeUInt32LE(16, 16); wav.writeUInt16LE(1, 20); wav.writeUInt16LE(1, 22);
+  wav.writeUInt32LE(16000, 24); wav.writeUInt32LE(32000, 28);
+  wav.writeUInt16LE(2, 32); wav.writeUInt16LE(16, 34); wav.write('data', 36);
+  wav.writeUInt32LE(count * 2, 40);
+  if (tone) for (let i = 0; i < count; i++) wav.writeInt16LE(Math.round(6000 * Math.sin(i * Math.PI / 20)), 44 + i * 2);
+  return wav;
+}
+
 async function main() {
   const root = path.resolve(__dirname, '..');
   const source = fs.readFileSync(path.join(root, 'frontend/index.html'), 'utf8');
@@ -20,41 +32,43 @@ async function main() {
       try { if ((await fetch(`${baseUrl}/health`)).ok) break; } catch {}
       await new Promise(resolve => setTimeout(resolve, 250));
     }
-    browser = await chromium.launch({ headless: true, channel: 'msedge',
-      args: ['--use-fake-device-for-media-stream', '--use-fake-ui-for-media-stream'] });
     fs.mkdirSync(path.join(root, 'logs'), { recursive: true });
+    const fakeMicrophone = path.join(root, 'logs/fake-microphone.wav');
+    fs.writeFileSync(fakeMicrophone, wavAudio(2000, true));
+    browser = await chromium.launch({ headless: true, channel: 'msedge',
+      args: ['--use-fake-device-for-media-stream', '--use-fake-ui-for-media-stream', `--use-file-for-fake-audio-capture=${fakeMicrophone}`] });
     for (const viewport of [{ width: 1440, height: 1000 }, { width: 390, height: 844 }]) {
       const page = await browser.newPage({ viewport });
       const errors = [];
       const pcmPackets = [];
       const playbackReports = [];
+      let activeSocket;
       page.on('pageerror', error => errors.push(error.message));
       await page.goto(baseUrl);
       await page.waitForFunction(() => document.getElementById('statusText').textContent === 'live demo offline');
       assert(await page.locator('#startBtn').isDisabled());
       await page.route('**/config', route => route.fulfill({ json: { live_enabled: true, session_seconds: 120 } }));
       await page.routeWebSocket('**/ws/**', socket => {
+        activeSocket = socket;
         socket.onMessage(raw => {
           if (typeof raw !== 'string') { pcmPackets.push(Buffer.from(raw)); return; }
           const msg = JSON.parse(raw);
           if (msg.type === 'join') {
-            socket.send(JSON.stringify({ type: 'joined', party_id: 'A', language: 'ta-IN', resume_token: 'fake', resumed: false }));
+            socket.send(JSON.stringify({ type: 'joined', party_id: 'A', language: 'ta-IN', resume_token: 'fake', resumed: false,
+              role: msg.role, muted: msg.role === 'listener' }));
             socket.send(JSON.stringify({ type: 'ready' }));
             socket.send(JSON.stringify({ type: 'peer_joined', party_id: 'B', language: 'en-IN' }));
             socket.send(JSON.stringify({ type: 'transcript', party: 'B', kind: 'partial', text: '<img src=x onerror="window.injected=true">' }));
             socket.send(JSON.stringify({ type: 'translated', speaker: 'B', text: 'Translated text' }));
           } else if (msg.type === 'ping') {
             socket.send(JSON.stringify({ type: 'pong', client_ms: msg.client_ms, server_ms: Date.now() }));
-            const wav = Buffer.alloc(44 + 3200);
-            wav.write('RIFF', 0); wav.writeUInt32LE(wav.length - 8, 4); wav.write('WAVEfmt ', 8);
-            wav.writeUInt32LE(16, 16); wav.writeUInt16LE(1, 20); wav.writeUInt16LE(1, 22);
-            wav.writeUInt32LE(16000, 24); wav.writeUInt32LE(32000, 28);
-            wav.writeUInt16LE(2, 32); wav.writeUInt16LE(16, 34); wav.write('data', 36);
-            wav.writeUInt32LE(3200, 40);
+            const wav = wavAudio(100);
             socket.send(JSON.stringify({ type: 'audio', speaker: 'B', seq: 1, format: 'wav',
               capture_start_ms: Date.now() - 500, data: wav.toString('base64') }));
           } else if (msg.type === 'playback') {
             playbackReports.push(msg);
+          } else if (msg.type === 'microphone') {
+            socket.send(JSON.stringify({type: 'microphone', party_id: 'A', role: 'speaker', muted: msg.muted, accepted: true}));
           } else if (msg.type === 'end') socket.close({ code: 1000 });
         });
       });
@@ -67,6 +81,7 @@ async function main() {
       await page.locator('#incomingText').filter({ hasText: 'Translated text' }).waitFor();
       assert.equal(await page.evaluate(() => window.injected), undefined);
       assert(await page.locator('#myLang').isDisabled());
+      assert(await page.locator('#micBtn').isDisabled());
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
       await page.screenshot({ path: path.join(root, `logs/browser-${viewport.width}.png`), fullPage: true });
       await page.locator('#stopBtn').click();
@@ -83,11 +98,43 @@ async function main() {
       assert(pcmPackets.length > 0, 'mic worklet emitted no PCM');
       assert.equal(pcmPackets[0].length, 3208);
       assert(Math.abs(pcmPackets[0].readDoubleLE(0) - Date.now()) < 3000);
+      const nonzero = packet => packet.subarray(8).some(byte => byte !== 0);
+      async function waitForAudio(expectedNonzero) {
+        const start = pcmPackets.length;
+        for (let i = 0; i < 60; i++) {
+          if (pcmPackets.slice(start).some(packet => nonzero(packet) === expectedNonzero)) return;
+          await page.waitForTimeout(100);
+        }
+        throw new Error(`Expected ${expectedNonzero ? 'live' : 'silent'} microphone packets`);
+      }
+      await waitForAudio(true);
+      await page.locator('#micBtn').click();
+      await page.getByRole('button', {name: 'Unmute microphone', exact: true}).waitFor();
+      await waitForAudio(false);
+      await page.locator('#micBtn').click();
+      await page.getByRole('button', {name: 'Mute microphone', exact: true}).waitFor();
+      await waitForAudio(true);
+      const sendAudio = (speaker, seq) => activeSocket.send(JSON.stringify({type: 'audio', speaker, seq,
+        capture_start_ms: Date.now() - 500, data: wavAudio(1500).toString('base64')}));
+      await page.locator('#echoGuard').uncheck();
+      sendAudio('B', 2);
+      await waitForAudio(true);
+      await page.locator('#echoGuard').check();
+      await waitForAudio(false);
+      await page.locator('#echoGuard').uncheck();
+      await waitForAudio(true);
+      sendAudio('C', 3);
+      for (let i = 0; i < 60 && !playbackReports.some(m => m.speaker === 'C' && m.seq === 3); i++) await page.waitForTimeout(100);
+      assert(playbackReports.some(m => m.speaker === 'B' && m.seq === 2));
+      assert(playbackReports.some(m => m.speaker === 'C' && m.seq === 3));
+      assert.equal(await page.locator('#micStatus').textContent(), 'Microphone live');
+      assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+      await page.screenshot({path: path.join(root, `logs/microphone-${viewport.width}.png`), fullPage: true});
       await page.locator('#stopBtn').click();
       assert.deepEqual(errors, []);
       await page.close();
     }
-    console.log('Desktop/mobile layout, join/stop, transcript escaping, PCM capture and playback timing passed.');
+    console.log('Desktop/mobile layout, manual mute/unmute, live PCM during playback, echo-guard recovery, queued two-speaker audio and playback timing passed.');
   } finally {
     if (browser) await browser.close();
     if (service) {

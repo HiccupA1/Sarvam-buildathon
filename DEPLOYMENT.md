@@ -228,8 +228,8 @@ default verification path.
   The scripted harness measures first translated audio receipt, which can be
   an initial fragment if VAD splits a longer clip. Review the text before making
   full-sentence translation quality claims.
-- Browser AEC and playback-time microphone muting reduce feedback. This muting
-  makes the default interaction half-duplex. Full-duplex echo suppression needs
+- Browser AEC and optional playback-time microphone muting reduce feedback. The
+  playback guard is off by default; enabling it makes interaction half-duplex. Full-duplex echo suppression needs
   device testing and a proven audio engine; headphones remain recommended.
 - Redis/distributed room routing is not part of this single-instance release.
   Adding a shared dictionary alone is insufficient: audio delivery needs a

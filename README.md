@@ -22,6 +22,11 @@ upstream STT. Short reconnects preserve identity and STT within a 10-second
 grace period; server restarts and longer interruptions start fresh sessions.
 Usage reservations persist in SQLite and stop new paid work at configured limits.
 
+Explicit microphone mute/unmute and visible capture state are now available.
+Rooms allow at most two unmuted speaker streams, translated independently;
+incoming audio is queued rather than interrupting earlier translations.
+See [audio concurrency](docs/AUDIO-CONCURRENCY.md) for testing and limitations.
+
 The structured harness now defaults to a zero-credit five-clip dry run, saves
 each utterance immediately, resumes completed samples, and stops on failures.
 The pilot completed all 5 categories / 20 target outputs. The full campaign then
@@ -290,8 +295,8 @@ Two hard constraints if you host this somewhere other than a LAN demo:
   clock RTT. Approximate capture uses the first above-threshold PCM chunk, not
   acoustic speech-end; these metrics must not be conflated.
 - **Feedback:** browser AEC, noise suppression, and automatic gain control are
-  requested. The default playback guard sends silence while translated audio
-  plays, making interaction half-duplex. Headphones remain recommended; robust
+  requested. The optional playback guard sends silence while translated audio
+  plays; it is off by default for two-speaker capture. Headphones remain recommended; robust
   full-duplex echo suppression needs separate device testing.
 - **Deployment:** private invite access is implemented. Rooms still live in one
   process; run one worker/instance. Distributed routing and native-speaker

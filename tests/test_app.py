@@ -29,6 +29,21 @@ class BudgetTests(unittest.TestCase):
 
 
 class RoutingTests(unittest.IsolatedAsyncioTestCase):
+    async def test_only_two_microphones_can_be_unmuted(self):
+        room = server.Session("floor")
+        for label in "ABC":
+            p = server.Participant(label, Mock(), "en-IN")
+            p.muted = True
+            room.participants[label] = p
+        self.assertTrue(room.set_microphone(room.participants["A"], False))
+        self.assertTrue(room.set_microphone(room.participants["B"], False))
+        self.assertFalse(room.set_microphone(room.participants["C"], False))
+        self.assertTrue(room.participants["C"].muted)
+        self.assertTrue(room.set_microphone(room.participants["A"], True))
+        self.assertTrue(room.set_microphone(room.participants["C"], False))
+        room.participants["A"].role = "listener"
+        self.assertFalse(room.set_microphone(room.participants["A"], False))
+
     async def test_distinct_languages_share_one_paid_call(self):
         listeners = [server.Participant(label, Mock(send_json=AsyncMock()), language)
                      for label, language in [("B", "ta-IN"), ("C", "ta-IN"), ("D", "en-IN")]]
@@ -131,6 +146,91 @@ class WebSocketTests(unittest.TestCase):
         with patch.object(server, "LIVE_ENABLED", False):
             with self.client.websocket_connect("/ws/demo") as ws:
                 self.assertEqual(self.join(ws)["type"], "error")
+
+    def test_listener_cannot_unmute(self):
+        with self.client.websocket_connect("/ws/listener-mic") as ws:
+            self.assertTrue(self.join(ws)["muted"])
+            ws.receive_json()
+            ws.send_json({"type": "microphone", "muted": False})
+            reply = ws.receive_json()
+            self.assertFalse(reply["accepted"])
+            self.assertTrue(reply["muted"])
+            ws.send_json({"type": "end"})
+
+    def test_two_speakers_translate_independently_and_muted_pcm_is_zeroed(self):
+        import base64
+        streams = []
+
+        class Stream:
+            def __init__(self):
+                self.events = asyncio.Queue()
+                self.frames = []
+                self.emitted = False
+                self.text = f"speaker-{len(streams)}"
+                streams.append(self)
+
+            async def __aenter__(self):
+                return self
+
+            async def __aexit__(self, *args):
+                return False
+
+            def __aiter__(self):
+                return self
+
+            async def __anext__(self):
+                event = await self.events.get()
+                if event is None:
+                    raise StopAsyncIteration
+                return event
+
+            async def send_realtime_audio_input(self, audio):
+                frame = base64.b64decode(audio.audio)
+                self.frames.append(frame)
+                if any(frame) and not self.emitted:
+                    self.emitted = True
+                    await self.events.put(SimpleNamespace(event="transcript.final", text=self.text))
+
+            async def send_realtime_end(self, end):
+                await self.events.put(None)
+
+        provider = Mock()
+        provider.speech_to_text_realtime_streaming.connect.side_effect = lambda **kwargs: Stream()
+        provider.text.translate = AsyncMock(side_effect=lambda **kwargs: SimpleNamespace(translated_text=kwargs["input"]))
+        provider.text_to_speech.convert = AsyncMock(return_value=SimpleNamespace(audios=["AA=="]))
+
+        def until(ws, predicate):
+            while True:
+                message = ws.receive_json()
+                if predicate(message):
+                    return message
+
+        with patch.object(server, "AsyncSarvamAI", return_value=provider), patch.object(server, "BUDGET", Mock()), patch.object(server, "log_metrics"):
+            with self.client.websocket_connect("/ws/overlap") as listener:
+                self.join(listener)
+                listener.receive_json()
+                with self.client.websocket_connect("/ws/overlap") as a, self.client.websocket_connect("/ws/overlap") as b:
+                    self.join(a, role="speaker")
+                    until(a, lambda m: m["type"] == "ready")
+                    self.join(b, role="speaker")
+                    until(b, lambda m: m["type"] == "ready")
+                    a.send_json({"type": "microphone", "muted": True})
+                    until(a, lambda m: m["type"] == "microphone" and m["party_id"] == "B")
+                    a.send_bytes(b"\x01\x10" * 1600)
+                    a.send_json({"type": "ping", "client_ms": 123})
+                    until(a, lambda m: m["type"] == "pong")
+                    self.assertFalse(any(streams[0].frames[-1]))
+                    a.send_json({"type": "microphone", "muted": False})
+                    until(a, lambda m: m["type"] == "microphone" and m["party_id"] == "B")
+                    a.send_bytes(b"\x01\x10" * 1600)
+                    b.send_bytes(b"\x02\x20" * 1600)
+                    speakers = {until(listener, lambda m: m["type"] == "audio")["speaker"] for _ in range(2)}
+                    self.assertEqual(speakers, {"B", "C"})
+                    self.assertTrue(all(stream.emitted for stream in streams))
+                    a.send_json({"type": "end"})
+                    b.send_json({"type": "end"})
+                listener.send_json({"type": "end"})
+        self.assertFalse(server.SESSIONS)
 
     def test_room_limit(self):
         with patch.object(server, "MAX_ROOMS", 1):

@@ -162,6 +162,14 @@
   #stopBtn { background: transparent; color: var(--text-muted); border-color: var(--border-strong); }
   #stopBtn:hover:not(:disabled) { background: rgba(255, 255, 255, 0.06); color: var(--text); }
   .session-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 0.6rem; }
+  .mic-controls { display: flex; align-items: center; flex-wrap: wrap; gap: 0.65rem; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+  #micBtn { width: 48px; height: 48px; padding: 12px; border-radius: 8px; background: var(--accent-soft); border-color: var(--border-strong); }
+  #micBtn[aria-pressed="true"] { background: rgba(248,113,113,0.15); border-color: var(--danger); }
+  #micBtn img { width: 22px; height: 22px; filter: invert(1); }
+  #micStatus { min-width: 140px; font-size: 0.85rem; color: var(--text-muted); }
+  #micLevel { width: 100px; height: 12px; accent-color: var(--accent); }
+  .mic-badge { margin-left: auto; font: 500 0.72rem var(--font-body); color: var(--text-muted); }
+  button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
   .session-actions label { display: flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; }
   input[type="checkbox"] { width: 16px; height: 16px; margin: 0; accent-color: var(--accent); }
   #statusText { overflow-wrap: anywhere; }
@@ -201,6 +209,7 @@
 
   .pane-header {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 0.55rem;
     font-family: var(--font-head);
@@ -343,9 +352,15 @@
         <button id="startBtn">Join &amp; Start</button>
         <button id="stopBtn" disabled>Stop</button>
         <label><input id="listenOnly" type="checkbox" /> Listen only</label>
-        <label><input id="echoGuard" type="checkbox" checked /> Mute mic during playback</label>
+        <label><input id="echoGuard" type="checkbox" /> Mute mic during playback</label>
       </div>
-      <div id="status" role="status" aria-live="polite"><span class="conn-dot" id="connDot"></span><span id="statusText">idle</span><span id="bargeIndicator">interrupted previous playback</span></div>
+      <div id="status" role="status" aria-live="polite"><span class="conn-dot" id="connDot"></span><span id="statusText">idle</span></div>
+    </div>
+    <div class="mic-controls">
+      <button id="micBtn" type="button" disabled aria-label="Unmute microphone" aria-pressed="true" title="Unmute microphone"><img id="micIcon" src="/static/icons/mic-off.svg" alt="" /></button>
+      <span id="micStatus" role="status" aria-live="polite">Microphone off</span>
+      <meter id="micLevel" min="0" max="1" value="0" aria-label="Microphone input level"></meter>
+      <span id="micNotice" role="status" aria-live="polite"></span>
     </div>
   </div>
 
@@ -375,7 +390,6 @@
     const player = document.getElementById("player");
     const roomCodeEl = document.getElementById("roomCode");
     const myLangEl = document.getElementById("myLang");
-    const bargeIndicator = document.getElementById("bargeIndicator");
     const latencyNumber = document.getElementById("latencyNumber");
     const latencyBreakdown = document.getElementById("latencyBreakdown");
     const sparkline = document.getElementById("sparkline");
@@ -401,6 +415,75 @@
     const accessTokenEl = document.getElementById("accessToken");
     const listenOnlyEl = document.getElementById("listenOnly");
     const echoGuardEl = document.getElementById("echoGuard");
+    const micBtn = document.getElementById("micBtn");
+    const micIcon = document.getElementById("micIcon");
+    const micStatus = document.getElementById("micStatus");
+    const micLevel = document.getElementById("micLevel");
+    const micNotice = document.getElementById("micNotice");
+    let micMuted = true;
+    let micPending = false;
+    let playbackActive = false;
+    const playbackQueue = [];
+
+    function updateMicrophone() {
+      const canSpeak = !manualStop && !listenOnlyEl.checked && !!mediaStream;
+      const track = mediaStream && mediaStream.getAudioTracks()[0];
+      if (track) track.enabled = canSpeak && !micMuted;
+      micBtn.disabled = !canSpeak || !joined || micPending;
+      micBtn.setAttribute("aria-pressed", String(micMuted));
+      const action = micMuted ? "Unmute microphone" : "Mute microphone";
+      micBtn.setAttribute("aria-label", action);
+      micBtn.title = action;
+      micIcon.src = `/static/icons/${micMuted ? "mic-off" : "mic"}.svg`;
+      micStatus.textContent = !canSpeak ? (listenOnlyEl.checked && !manualStop ? "Listen only" : "Microphone off")
+        : track && (track.muted || track.readyState === "ended") ? "Microphone unavailable"
+        : micPending ? "Requesting microphone" : micMuted ? "Microphone muted"
+        : echoGuardEl.checked && playbackActive ? "Paused during playback" : "Microphone live";
+      if (micMuted || !canSpeak) micLevel.value = 0;
+    }
+
+    function setMicrophoneMuted(muted) {
+      if (!joined || listenOnlyEl.checked || !ws || ws.readyState !== WebSocket.OPEN || micPending) return;
+      if (muted) micMuted = true; // Privacy takes effect before the server acknowledgement.
+      micPending = true;
+      micNotice.textContent = "";
+      updateMicrophone();
+      ws.send(JSON.stringify({type: "microphone", muted}));
+    }
+    function muteMicrophone() { setMicrophoneMuted(true); }
+    function unmuteMicrophone() { setMicrophoneMuted(false); }
+
+    function finishPlayback() {
+      playbackActive = false;
+      playbackMeasurement = null;
+      player.pause();
+      player.removeAttribute("src");
+      if (currentAudioUrl) URL.revokeObjectURL(currentAudioUrl);
+      currentAudioUrl = null;
+      updateMicrophone();
+      playNext();
+    }
+
+    function playNext() {
+      if (manualStop || playbackActive || !playbackQueue.length) return;
+      const item = playbackQueue.shift();
+      const msg = item.msg;
+      const bytes = Uint8Array.from(atob(msg.data), c => c.charCodeAt(0));
+      currentAudioUrl = URL.createObjectURL(new Blob([bytes], {type: "audio/wav"}));
+      player.src = currentAudioUrl;
+      playbackMeasurement = {received: item.received, speaker: msg.speaker, seq: msg.seq, captureStart: msg.capture_start_ms};
+      playbackActive = true;
+      updateMicrophone();
+      player.play().catch(() => {
+        setStatus("audio playback blocked by browser", "error");
+        finishPlayback();
+      });
+    }
+    player.addEventListener("ended", finishPlayback);
+    player.addEventListener("error", () => {
+      setStatus("audio playback failed", "error");
+      finishPlayback();
+    });
 
     player.addEventListener("playing", () => {
       if (!playbackMeasurement || !ws || ws.readyState !== WebSocket.OPEN) return;
@@ -420,11 +503,6 @@
     function setStatus(text, dotState) {
       statusTextEl.textContent = text;
       if (dotState) connDot.className = `conn-dot ${dotState}`;
-    }
-
-    function flashBargeIndicator() {
-      bargeIndicator.classList.add("show");
-      setTimeout(() => bargeIndicator.classList.remove("show"), 1500);
     }
 
     function updateBox(el, content, asHtml) {
@@ -447,8 +525,10 @@
             <span class="label-text">Party ${partyId}</span>
             <span class="lang-badge"></span>
             <span class="you-badge" style="display:none">you</span>
+            <span class="mic-badge"></span>
           </div>
           <div class="box"><div class="label">Transcript</div><div class="transcript-text"></div></div>
+          <div class="box"><div class="label">Translation</div><div class="translation-text"></div></div>
         `;
         panesContainer.appendChild(el);
         p = {
@@ -457,6 +537,8 @@
           lang: el.querySelector(".lang-badge"),
           you: el.querySelector(".you-badge"),
           transcript: el.querySelector(".transcript-text"),
+          translation: el.querySelector(".translation-text"),
+          mic: el.querySelector(".mic-badge"),
         };
         participants[partyId] = p;
       }
@@ -518,6 +600,8 @@
 
     function connectWebSocket() {
       joined = false;
+      micPending = false;
+      updateMicrophone();
       clockOffsetMs = null;
       const protocol = location.protocol === "https:" ? "wss" : "ws";
       ws = new WebSocket(`${protocol}://${location.host}/ws/${encodeURIComponent(currentRoom)}`);
@@ -526,7 +610,7 @@
       ws.onopen = () => {
         ws.send(JSON.stringify({ type: "join", language: myLangEl.value,
           access_token: accessTokenEl.value, role: listenOnlyEl.checked ? "listener" : "speaker",
-          resume_token: resumeToken, audio_protocol: "timestamped_pcm16" }));
+          resume_token: resumeToken, muted: micMuted, audio_protocol: "timestamped_pcm16" }));
         setStatus("joined, waiting for others...", "connecting");
         stopBtn.disabled = false;
       };
@@ -540,18 +624,24 @@
           resetForNewSession();
           ensureParticipant(msg.party_id, msg.language);
           markSelf(msg.party_id);
+          micMuted = msg.muted ?? listenOnlyEl.checked;
+          micPending = false;
+          participants[msg.party_id].mic.textContent = msg.role === "listener" ? "Listen only" : micMuted ? "Muted" : "Mic live";
+          updateMicrophone();
           setStatus(`joined as party ${msg.party_id}, waiting for others...`, "connecting");
           ws.send(JSON.stringify({type: "ping", client_ms: Date.now()}));
-          if (msg.resumed) joined = true;
+          if (msg.resumed) { joined = true; updateMicrophone(); }
         } else if (msg.type === "ready") {
           joined = true;
+          updateMicrophone();
           setStatus("connected", "connected");
         } else if (msg.type === "pong") {
           const now = Date.now();
           clockRttMs = now - msg.client_ms;
           clockOffsetMs = msg.server_ms - (msg.client_ms + now) / 2;
         } else if (msg.type === "peer_joined") {
-          ensureParticipant(msg.party_id, msg.language);
+          const peer = ensureParticipant(msg.party_id, msg.language);
+          peer.mic.textContent = msg.role === "listener" ? "Listen only" : msg.muted ? "Muted" : "Mic live";
           setStatus("participant connected -- listening", "connected");
         } else if (msg.type === "peer_left") {
           removeParticipant(msg.party_id);
@@ -569,27 +659,25 @@
           setVad(msg.party, msg.state === "start");
         } else if (msg.type === "translated") {
           updateBox(incomingText, `${msg.speaker}: ${msg.text}`, false);
+          updateBox(ensureParticipant(msg.speaker).translation, msg.text, false);
+        } else if (msg.type === "microphone") {
+          const peer = ensureParticipant(msg.party_id);
+          peer.mic.textContent = msg.role === "listener" ? "Listen only" : msg.muted ? "Muted" : "Mic live";
+          if (msg.party_id === myPartyId) {
+            micMuted = msg.muted;
+            micPending = false;
+            micNotice.textContent = msg.accepted === false ? msg.message : "";
+            updateMicrophone();
+          }
         } else if (msg.type === "latency") {
           renderLatency(msg);
         } else if (msg.type === "audio") {
-          // Barge-in policy: newly arrived audio interrupts whatever is
-          // still playing, rather than queuing behind it -- otherwise
-          // translation lag would compound across a conversation. With
-          // more than two people, this can now also happen because two
-          // different speakers' translations reached you close together,
-          // not just repeated utterances from the same speaker.
-          if (!player.paused && !player.ended) {
-            flashBargeIndicator();
+          if (playbackQueue.length >= 8) {
+            setStatus("audio queue full; captions remain available", "error");
+          } else {
+            playbackQueue.push({msg, received: performance.now()});
+            playNext();
           }
-          const bytes = Uint8Array.from(atob(msg.data), (c) => c.charCodeAt(0));
-          const blob = new Blob([bytes], { type: "audio/wav" });
-          player.pause();
-          if (currentAudioUrl) URL.revokeObjectURL(currentAudioUrl);
-          currentAudioUrl = URL.createObjectURL(blob);
-          player.src = currentAudioUrl;
-          playbackMeasurement = {received: performance.now(), speaker: msg.speaker,
-            seq: msg.seq, captureStart: msg.capture_start_ms};
-          player.play().catch(() => setStatus("audio playback blocked by browser", "error"));
         } else if (msg.type === "error") {
           setStatus(`error: ${msg.message}`, "error");
         }
@@ -597,6 +685,8 @@
 
       ws.onclose = (event) => {
         joined = false;
+        micPending = false;
+        updateMicrophone();
         if ([1000, 1003, 1008].includes(event.code) && !manualStop) {
           const message = statusTextEl.textContent;
           stop();
@@ -646,6 +736,9 @@
       currentRoom = room;
       resumeToken = null;
       manualStop = false;
+      micMuted = false;
+      micPending = false;
+      micNotice.textContent = "";
       reconnectAttempt = 0;
       startBtn.disabled = true;
       resetForNewSession();
@@ -689,7 +782,9 @@
 
       workletNode.port.onmessage = (event) => {
         if (joined && clockOffsetMs != null && ws && ws.readyState === WebSocket.OPEN && ws.bufferedAmount < 64000) {
-          const muted = echoGuardEl.checked && !player.paused && !player.ended;
+          const muted = micMuted || (echoGuardEl.checked && playbackActive);
+          const samples = new Int16Array(event.data);
+          micLevel.value = muted ? 0 : Math.min(1, Math.sqrt(samples.reduce((sum, n) => sum + (n / 32768) ** 2, 0) / samples.length) * 4);
           const pcm = muted ? new ArrayBuffer(event.data.byteLength) : event.data;
           const packet = new ArrayBuffer(pcm.byteLength + 8);
           new DataView(packet).setFloat64(0, Date.now() + clockOffsetMs - pcm.byteLength / 32, true);
@@ -697,12 +792,20 @@
           ws.send(packet);
         }
       };
+      const track = mediaStream.getAudioTracks()[0];
+      track.addEventListener("mute", updateMicrophone);
+      track.addEventListener("unmute", updateMicrophone);
+      track.addEventListener("ended", updateMicrophone);
 
       connectWebSocket();
     }
 
     function stop() {
       manualStop = true;
+      micMuted = true;
+      micPending = false;
+      playbackQueue.length = 0;
+      playbackActive = false;
       joined = false;
       resumeToken = null;
       myLangEl.disabled = listenOnlyEl.disabled = accessTokenEl.disabled = roomCodeEl.disabled = false;
@@ -722,6 +825,8 @@
       if (micSource) micSource.disconnect();
       if (micSink) micSink.disconnect();
       if (audioContext) audioContext.close();
+      mediaStream = null;
+      updateMicrophone();
       if (currentAudioUrl) {
         URL.revokeObjectURL(currentAudioUrl);
         currentAudioUrl = null;
@@ -733,6 +838,8 @@
 
     startBtn.addEventListener("click", () => start().catch((err) => { stop(); setStatus(`error: ${err.message}`, "error"); }));
     stopBtn.addEventListener("click", stop);
+    micBtn.addEventListener("click", () => micMuted ? unmuteMicrophone() : muteMicrophone());
+    echoGuardEl.addEventListener("change", updateMicrophone);
     startBtn.disabled = true;
     fetch("/config").then((response) => {
       if (!response.ok) throw new Error("Demo unavailable");

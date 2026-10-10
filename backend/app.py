@@ -55,14 +55,11 @@ utterances could race and arrive at listeners out of order, and the
 last utterance of a call could be silently dropped if the socket
 closed before its background task finished.
 
-Barge-in policy: the *sender* side is strictly ordered (above). The
-*receiver* side (whether new audio interrupts still-playing audio, or
-queues behind it) is a frontend decision -- see frontend/index.html,
-which interrupts: newly arrived audio stops whatever is currently
-playing. This now also applies across different speakers, not just
-repeated utterances from one -- if two people talk over each other,
-whichever translation reaches you last is what plays, matching how a
-live conversation actually works.
+Each speaker has an independent STT stream and ordered translation worker.
+At most two speaker microphones can be unmuted per room. Explicit server
+mute enforcement replaces PCM with silence; listening remains available.
+The frontend uses a bounded FIFO for translated audio rather than cutting
+off another speaker's translation. Queue delay is included in playback timing.
 
 Integration verified against docs on 2026-09-26 (see ../phase0_realtime_stt.py)
 plus sarvamai 0.1.34's own signatures:
@@ -179,6 +176,8 @@ class Participant:
         self.capture_start_ms = None
         self.audio_protocol = "pcm16"
         self.playback_records = {}
+        self.role = "speaker"
+        self.muted = False
 
     async def receive(self):
         while True:
@@ -213,6 +212,17 @@ class Session:
 
     def other_participants(self, party_id: str) -> list[Participant]:
         return [p for pid, p in self.participants.items() if pid != party_id]
+
+    def set_microphone(self, participant: Participant, muted: bool) -> bool:
+        if participant.role != "speaker":
+            return False
+        if not muted and sum(p.role == "speaker" and not p.muted
+                             for p in self.other_participants(participant.party_id)) >= 2:
+            return False
+        participant.muted = muted
+        if muted:
+            participant.capture_start_ms = None
+        return True
 
     async def broadcast_json_safe(self, payload: dict) -> None:
         for p in list(self.participants.values()):
@@ -280,23 +290,30 @@ async def ws_endpoint(websocket: WebSocket, room_id: str):
                 return
             party_id = next(label for label in PARTY_LABELS if label not in session.participants)
             participant = Participant(party_id, websocket, hearing_language)
+            participant.role = join.get("role", "speaker")
+            participant.muted = True
+            if participant.role == "speaker" and not join.get("muted", False):
+                session.set_microphone(participant, False)
             participant.audio_protocol = join.get("audio_protocol", "pcm16")
             session.participants[party_id] = participant
 
     print(f"[room {room_id}] {party_id} joined (hears {hearing_language}) -- {len(session.participants)}/{MAX_PARTICIPANTS}")
     await participant.send_json_safe({"type": "joined", "party_id": party_id, "language": hearing_language,
-                                     "resume_token": participant.resume_token, "resumed": resumed})
+                                     "resume_token": participant.resume_token, "resumed": resumed,
+                                     "muted": participant.muted, "role": participant.role})
 
     # Tell the newcomer about everyone already in the room, and tell
     # everyone already in the room about the newcomer.
     existing = session.other_participants(party_id)
     for other in existing:
-        await participant.send_json_safe({"type": "peer_joined", "party_id": other.party_id, "language": other.language})
+        await participant.send_json_safe({"type": "peer_joined", "party_id": other.party_id, "language": other.language,
+                                          "muted": other.muted, "role": other.role})
     if resumed:
         await participant.closed.wait()
         return
     for other in existing:
-        await other.send_json_safe({"type": "peer_joined", "party_id": party_id, "language": hearing_language})
+        await other.send_json_safe({"type": "peer_joined", "party_id": party_id, "language": hearing_language,
+                                    "muted": participant.muted, "role": participant.role})
 
     client = None
     http_client = None
@@ -322,7 +339,17 @@ async def ws_endpoint(websocket: WebSocket, room_id: str):
     relay_task = stt_task = None
 
     async def handle_control(control):
-        if control.get("type") == "ping":
+        if control.get("type") == "microphone" and isinstance(control.get("muted"), bool):
+            async with SESSIONS_LOCK:
+                accepted = session.set_microphone(participant, control["muted"])
+            payload = {"type": "microphone", "party_id": party_id, "muted": participant.muted,
+                       "role": participant.role, "accepted": accepted}
+            if accepted:
+                await session.broadcast_json_safe(payload)
+            else:
+                payload["message"] = "Two microphones are already unmuted" if participant.role == "speaker" else "Listen-only session"
+                await participant.send_json_safe(payload)
+        elif control.get("type") == "ping":
             await participant.send_json_safe({"type": "pong", "client_ms": control.get("client_ms"), "server_ms": time.time() * 1000})
         elif control.get("type") == "playback":
             key = (control.get("speaker"), control.get("seq"))
@@ -393,9 +420,11 @@ async def ws_endpoint(websocket: WebSocket, room_id: str):
                                 if len(audio_bytes) % 2:
                                     raise ValueError("Invalid PCM")
                                 samples = struct.unpack(f"<{len(audio_bytes) // 2}h", audio_bytes)
-                                if participant.capture_start_ms is None and any(abs(s) > 400 for s in samples):
+                                if not participant.muted and participant.capture_start_ms is None and any(abs(s) > 400 for s in samples):
                                     if abs(time.time() * 1000 - captured_ms) < 60000:
                                         participant.capture_start_ms = captured_ms
+                            if participant.muted:
+                                audio_bytes = bytes(len(audio_bytes))
                             await stt_ws.send_realtime_audio_input(
                                 RealtimeAudioInput(audio=base64.b64encode(audio_bytes).decode("utf-8"))
                             )

@@ -75,7 +75,11 @@ def wait_for_app(live):
     raise RuntimeError("Local demo did not become ready")
 
 
-def start():
+def start(stt_seconds=None):
+    previous = json.loads(STATE.read_text()) if STATE.exists() else {}
+    stt_seconds = stt_seconds if stt_seconds is not None else previous.get("stt_limit_seconds", 240)
+    if stt_seconds < 60:
+        raise RuntimeError("STT allowance must cover at least one 60-second session")
     if any(owned_container(name) for name in (APP, TUNNEL)):
         raise RuntimeError("Demo containers already exist; use status or stop first")
     key = os.getenv("SARVAM_API_KEY") or dotenv_values(ROOT / ".env").get("SARVAM_API_KEY")
@@ -87,7 +91,7 @@ def start():
         "SARVAM_API_KEY": key, "DEMO_ACCESS_TOKEN": invite,
         "LIVE_ENABLED": "false", "WEB_CONCURRENCY": "1", "MAX_ROOMS": "1",
         "SESSION_SECONDS": "60", "RECONNECT_SECONDS": "10",
-        "MAX_STT_SECONDS": "240", "MAX_TRANSLATE_CHARS": "1000",
+        "MAX_STT_SECONDS": str(stt_seconds), "MAX_TRANSLATE_CHARS": "1000",
         "MAX_TTS_CHARS": "1000", "USAGE_DB_PATH": "/app/logs/usage.sqlite3",
         "ALLOWED_ORIGINS": f"http://127.0.0.1:{PORT},http://localhost:{PORT}",
     }
@@ -124,7 +128,7 @@ def start():
         docker("rm", APP)
         start_app()
         wait_for_app(True)
-        STATE.write_text(json.dumps({"url": url, "running": True,
+        STATE.write_text(json.dumps({"url": url, "running": True, "stt_limit_seconds": stt_seconds,
                                      "local_url": f"http://127.0.0.1:{PORT}"}, indent=2) + "\n")
         (DIRECTORY / "PRIVATE-INVITE.md").write_text(
             f"# Private temporary demo\n\nURL: {url}\n\nDemo invite: `{invite}`\n\n"
@@ -133,7 +137,7 @@ def start():
             "`.venv\\Scripts\\python.exe scripts\\local_demo.py stop`\n")
         print(f"Live demo ready: {url}")
         print(f"Private invite: {DIRECTORY / 'PRIVATE-INVITE.md'}")
-        print("60-second speaker sessions; persistent 240s STT / 1000 translation / 1000 TTS allowances.")
+        print(f"60-second speaker sessions; persistent {stt_seconds}s STT / 1000 translation / 1000 TTS allowances.")
         print("No speech calls were made by startup. Stop after testing; do not delete the budget volume.")
     except BaseException:
         stop()
@@ -193,10 +197,14 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("command", choices=("start", "stop", "status", "verify"))
     parser.add_argument("--live", action="store_true", help="Explicitly enable billable speech sessions")
+    parser.add_argument("--stt-seconds", type=int, help="Lifetime STT allowance; preserves usage, not a reset")
     args = parser.parse_args()
     if args.command == "start" and not args.live:
         parser.error("start requires --live; this exposes invite-protected billable access")
     try:
-        {"start": start, "stop": stop, "status": status, "verify": verify}[args.command]()
+        if args.command == "start":
+            start(args.stt_seconds)
+        else:
+            {"stop": stop, "status": status, "verify": verify}[args.command]()
     except (RuntimeError, subprocess.TimeoutExpired) as error:
         raise SystemExit(str(error)) from None
