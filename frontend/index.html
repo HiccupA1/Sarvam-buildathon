@@ -6,20 +6,20 @@
 <title>Live Speech Interpreter</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet" />
 <style>
   :root {
-    --bg: #09090b;
-    --bg-elevated: rgba(255, 255, 255, 0.035);
-    --bg-elevated-hover: rgba(255, 255, 255, 0.055);
-    --border: rgba(255, 255, 255, 0.09);
-    --border-strong: rgba(255, 255, 255, 0.16);
-    --text: #fafafa;
-    --text-muted: #a1a1aa;
-    --text-faint: #71717a;
-    --accent: #10b981;
-    --accent-soft: rgba(16, 185, 129, 0.14);
-    --accent-text: #34d399;
+    --bg: #0d0e0c;
+    --bg-elevated: rgba(27, 31, 25, 0.82);
+    --bg-elevated-hover: rgba(39, 45, 35, 0.9);
+    --border: rgba(226, 236, 211, 0.12);
+    --border-strong: rgba(226, 236, 211, 0.25);
+    --text: #f3f6ed;
+    --text-muted: #aeb8a4;
+    --text-faint: #77816f;
+    --accent: #c8f169;
+    --accent-soft: rgba(200, 241, 105, 0.13);
+    --accent-text: #d8fb83;
     --party-A: #34d399;
     --party-B: #fb923c;
     --party-C: #38bdf8;
@@ -27,9 +27,10 @@
     --party-E: #a78bfa;
     --danger: #f87171;
     --warning: #fbbf24;
-    --radius: 16px;
-    --font-head: "Plus Jakarta Sans", system-ui, sans-serif;
-    --font-body: "Inter", system-ui, sans-serif;
+    --radius: 20px;
+    --font-head: "Bricolage Grotesque", system-ui, sans-serif;
+    --font-body: "DM Sans", system-ui, sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, monospace;
   }
 
   * { box-sizing: border-box; }
@@ -38,44 +39,84 @@
     font-family: var(--font-body);
     background: var(--bg);
     color: var(--text);
-    max-width: 1100px;
+    max-width: 1180px;
     margin: 0 auto;
-    padding: 2.5rem 1.25rem 4rem;
+    padding: 1.5rem 1.5rem 4.5rem;
+    overflow-x: hidden;
     background-image:
-      radial-gradient(circle at 15% 0%, rgba(16, 185, 129, 0.10), transparent 45%),
-      radial-gradient(circle at 85% 10%, rgba(251, 146, 60, 0.08), transparent 40%);
+      radial-gradient(circle at 10% -10%, rgba(200, 241, 105, 0.15), transparent 35%),
+      radial-gradient(circle at 105% 18%, rgba(249, 151, 83, 0.13), transparent 30%),
+      linear-gradient(135deg, rgba(255,255,255,0.02), transparent 30%);
   }
+
+  body::before { content: ""; position: fixed; inset: 0; pointer-events: none; opacity: 0.035; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E"); z-index: -1; }
+
+  .topbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 4.5rem; }
+  .brand { display: flex; align-items: center; gap: 0.65rem; font-family: var(--font-head); font-weight: 700; letter-spacing: -0.03em; }
+  .brand-mark { display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 9px; color: #131a0d; background: var(--accent); box-shadow: 0 0 28px rgba(200,241,105,0.2); }
+  .brand-mark::before { content: "↗"; font-size: 1.25rem; font-weight: 700; }
+  .topbar-note { color: var(--text-faint); font: 600 0.68rem var(--font-mono); text-transform: uppercase; letter-spacing: 0.12em; }
+
+  .hero-layout { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr); gap: clamp(2rem, 7vw, 7rem); align-items: center; margin-bottom: 2.25rem; }
+  .hero { max-width: 760px; }
+  .eyebrow { display: inline-flex; align-items: center; gap: 0.55rem; color: var(--accent-text); font: 600 0.7rem var(--font-mono); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 1.1rem; }
+  .eyebrow::before { content: ""; width: 0.45rem; height: 0.45rem; border-radius: 50%; background: var(--accent); box-shadow: 0 0 12px var(--accent); }
+
+  .hero-preview { position: relative; min-height: 300px; padding: 1.1rem; border: 1px solid var(--border); border-radius: 24px; background: linear-gradient(145deg, rgba(38, 47, 31, 0.9), rgba(17, 20, 16, 0.94)); box-shadow: 0 24px 70px rgba(0,0,0,0.34); overflow: hidden; transform: rotate(1.2deg); }
+  .hero-preview::before { content: ""; position: absolute; width: 220px; height: 220px; top: -100px; right: -70px; border-radius: 50%; background: rgba(200,241,105,0.18); filter: blur(30px); }
+  .preview-top { position: relative; display: flex; align-items: center; justify-content: space-between; margin-bottom: 2.1rem; color: var(--text-muted); font: 600 0.65rem var(--font-mono); text-transform: uppercase; letter-spacing: 0.08em; }
+  .preview-live { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--accent-text); }
+  .preview-live::before { content: ""; width: 0.42rem; height: 0.42rem; border-radius: 50%; background: var(--accent); box-shadow: 0 0 12px var(--accent); }
+  .preview-line { position: relative; height: 86px; display: flex; align-items: center; gap: 4px; margin: 0 0 1.8rem; }
+  .preview-line::before { content: ""; position: absolute; left: 0; right: 0; height: 1px; background: rgba(200,241,105,0.16); }
+  .preview-line span { position: relative; flex: 1; min-width: 3px; height: var(--bar-height); border-radius: 99px; background: linear-gradient(180deg, #dbff87, rgba(200,241,105,0.16)); animation: waveform 1.8s ease-in-out infinite alternate; animation-delay: var(--delay); }
+  @keyframes waveform { from { transform: scaleY(0.7); opacity: 0.55; } to { transform: scaleY(1.08); opacity: 1; } }
+  .preview-caption { position: relative; width: 86%; padding: 0.75rem 0.85rem; border: 1px solid rgba(226,236,211,0.12); border-radius: 12px; background: rgba(7,10,7,0.32); color: var(--text); font-size: 0.9rem; line-height: 1.4; }
+  .preview-caption small { display: block; margin-bottom: 0.35rem; color: var(--accent-text); font: 600 0.62rem var(--font-mono); text-transform: uppercase; letter-spacing: 0.08em; }
+  .preview-caption.alt { width: 74%; margin: 0.65rem 0 0 auto; color: var(--text-muted); }
 
   h1 {
     font-family: var(--font-head);
     font-weight: 800;
-    font-size: 1.8rem;
-    letter-spacing: -0.03em;
-    margin: 0 0 0.35rem;
+    font-size: clamp(2.4rem, 6vw, 4.6rem);
+    line-height: 0.98;
+    letter-spacing: -0.065em;
+    max-width: 10ch;
+    margin: 0 0 1.1rem;
   }
 
-  .subtitle { color: var(--text-muted); margin: 0 0 1.25rem; font-size: 0.95rem; }
+  .subtitle { color: var(--text-muted); margin: 0; font-size: 1rem; line-height: 1.65; max-width: 64ch; }
+  .hero-meta { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 1.35rem; }
+  .hero-chip { border: 1px solid var(--border); color: var(--text-muted); padding: 0.42rem 0.7rem; border-radius: 999px; background: rgba(255,255,255,0.025); font-size: 0.76rem; }
 
   .warning {
-    background: rgba(251, 191, 36, 0.08);
-    border: 1px solid rgba(251, 191, 36, 0.25);
-    color: #fde68a;
-    border-radius: 12px;
-    padding: 0.65rem 0.9rem;
+    background: rgba(249, 151, 83, 0.08);
+    border: 1px solid rgba(249, 151, 83, 0.25);
+    color: #ffc49b;
+    border-radius: 14px;
+    padding: 0.85rem 1rem;
     font-size: 0.85rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
   }
+  .warning::before { content: "◌"; font-size: 1.1rem; }
 
   .glass {
-    background: var(--bg-elevated);
+    background: linear-gradient(145deg, rgba(32, 38, 29, 0.82), rgba(17, 20, 16, 0.88));
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 18px 60px rgba(0, 0, 0, 0.28);
   }
 
-  .controls { padding: 1.1rem 1.25rem; margin-bottom: 1.25rem; }
+  .controls { padding: 1.35rem; margin-bottom: 1.25rem; }
+  .section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; }
+  .section-title { font-family: var(--font-head); font-size: 1.15rem; letter-spacing: -0.03em; }
+  .section-note { color: var(--text-faint); font-size: 0.75rem; }
+  .controls-footer { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; }
 
   .join-row { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; }
   .field { display: flex; flex-direction: column; gap: 0.35rem; flex: 1 1 200px; }
@@ -84,18 +125,21 @@
   select, input {
     font-family: var(--font-body);
     font-size: 0.95rem;
-    padding: 0.55rem 0.75rem;
-    background: rgba(255, 255, 255, 0.04);
+    padding: 0.7rem 0.8rem;
+    background: rgba(255, 255, 255, 0.045);
     border: 1px solid var(--border);
-    border-radius: 10px;
+    border-radius: 12px;
     color: var(--text);
     transition: border-color 0.15s ease, background 0.15s ease;
   }
+  select { color-scheme: dark; appearance: auto; }
+  select option { background: #1b2316; color: var(--text); }
+  select option:checked, select option:hover { background: #3f5d1e; color: #f7ffe9; }
   select:hover, input:hover { border-color: var(--border-strong); }
   select:focus, input:focus {
     outline: none;
     border-color: var(--accent);
-    background: rgba(16, 185, 129, 0.06);
+    background: var(--accent-soft);
   }
   input::placeholder { color: var(--text-faint); }
 
@@ -103,8 +147,8 @@
     font-family: var(--font-body);
     font-weight: 600;
     font-size: 0.9rem;
-    padding: 0.6rem 1.15rem;
-    border-radius: 10px;
+    padding: 0.72rem 1.15rem;
+    border-radius: 12px;
     border: 1px solid transparent;
     cursor: pointer;
     transition: transform 0.12s ease, background 0.15s ease, border-color 0.15s ease, opacity 0.15s ease;
@@ -112,19 +156,19 @@
   button:active:not(:disabled) { transform: scale(0.97); }
   button:disabled { opacity: 0.4; cursor: not-allowed; }
 
-  #startBtn { background: var(--accent); color: #062018; margin-right: 0.6rem; }
-  #startBtn:hover:not(:disabled) { background: #14c98c; }
+  #startBtn { background: var(--accent); color: #17210d; margin-right: 0.25rem; box-shadow: 0 8px 24px rgba(200,241,105,0.16); }
+  #startBtn:hover:not(:disabled) { background: #d9ff85; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(200,241,105,0.24); }
 
   #stopBtn { background: transparent; color: var(--text-muted); border-color: var(--border-strong); }
   #stopBtn:hover:not(:disabled) { background: rgba(255, 255, 255, 0.06); color: var(--text); }
-  .session-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 0.75rem; }
+  .session-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 0.6rem; }
   .session-actions label { display: flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; }
   input[type="checkbox"] { width: 16px; height: 16px; margin: 0; accent-color: var(--accent); }
   #statusText { overflow-wrap: anywhere; }
 
   #status {
     color: var(--text-muted);
-    font-size: 0.88rem;
+    font-size: 0.78rem;
     margin: 0;
     display: flex;
     align-items: center;
@@ -138,7 +182,7 @@
   #bargeIndicator { display: inline-block; font-size: 0.8rem; color: var(--danger); opacity: 0; transition: opacity 0.15s; }
   #bargeIndicator.show { opacity: 1; }
 
-  .panes { display: flex; gap: 1.1rem; flex-wrap: wrap; margin-bottom: 1.1rem; }
+  .panes { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin-bottom: 1.1rem; }
   .panes:empty::before {
     content: "Waiting for participants to join...";
     color: var(--text-faint);
@@ -146,8 +190,7 @@
     padding: 1rem 0;
   }
   .pane {
-    flex: 1 1 260px;
-    padding: 1rem 1.1rem;
+    padding: 1.1rem;
     transition: border-color 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
     animation: fadeIn 0.25s ease;
   }
@@ -200,17 +243,19 @@
   @keyframes fadeIn { from { opacity: 0; transform: translateY(2px); } to { opacity: 1; transform: translateY(0); } }
   .box > span, .box.updated { animation: fadeIn 0.25s ease; }
 
-  .incoming-box { padding: 1rem 1.25rem; margin-bottom: 1.1rem; }
+  .live-grid { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(260px, 0.6fr); gap: 1rem; align-items: stretch; }
+  .incoming-box { padding: 1.1rem 1.25rem; margin-bottom: 0; min-height: 145px; }
   .incoming-speaker { font-weight: 600; margin-right: 0.4rem; }
   #incomingText:empty::before { content: "Nothing yet."; color: var(--text-faint); }
 
-  .latency-box { padding: 1rem 1.25rem; }
+  .latency-box { padding: 1.1rem 1.25rem; }
   .latency-number {
     font-family: var(--font-head);
-    font-size: 1.9rem;
+    font-size: 2.35rem;
     font-weight: 700;
     letter-spacing: -0.02em;
     color: var(--accent-text);
+    font-family: var(--font-mono);
   }
   .latency-breakdown { color: var(--text-faint); font-size: 0.82rem; margin: 0.2rem 0 0.75rem; }
   .sparkline { display: flex; align-items: flex-end; gap: 3px; height: 40px; }
@@ -223,22 +268,56 @@
   }
 
   @media (max-width: 640px) {
-    body { padding: 1.5rem 1rem 3rem; }
-    h1 { font-size: 1.5rem; }
+    body { padding: 1.15rem 1rem 3rem; }
+    .topbar { margin-bottom: 3rem; }
+    .topbar-note { display: none; }
+    .section-note { display: none; }
+    .hero-layout { grid-template-columns: 1fr; gap: 1.7rem; }
+    .hero-preview { min-height: 235px; transform: none; }
+    h1 { font-size: 3rem; }
     .join-row { flex-direction: column; }
     .field { flex: none; } /* flex-basis:200px would set HEIGHT once the row above switches to column */
     button { width: 100%; margin-right: 0; margin-bottom: 0.5rem; }
-    .panes { flex-direction: column; }
-    .pane { flex: none; } /* same trap: flex-basis:260px would set HEIGHT in a column layout */
+    .panes { grid-template-columns: 1fr; }
+    .live-grid { grid-template-columns: 1fr; }
+    .pane { flex: none; }
   }
 </style>
 </head>
 <body>
-  <h1>Live Speech Interpreter</h1>
-  <p class="subtitle">Real-time speech-to-speech translation across Hindi, English, Tamil, and Telugu -- up to 5 people. Speak however you like (any of the four, switch anytime, even mix languages); everyone else hears it in whichever language they personally picked below.</p>
-  <p class="warning">Wear headphones -- otherwise the translated audio feeds back into your own mic and garbles transcription.</p>
+  <div class="topbar">
+    <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>Sarvam / Live</span></div>
+    <div class="topbar-note">real-time interpretation · v1</div>
+  </div>
+
+  <div class="hero-layout">
+    <header class="hero">
+      <div class="eyebrow">A room for every voice</div>
+      <h1>Make every conversation sound native.</h1>
+      <p class="subtitle">Real-time speech-to-speech translation across Hindi, English, Tamil, and Telugu — with each person hearing the language they choose.</p>
+      <div class="hero-meta" aria-label="Product highlights">
+        <span class="hero-chip">Up to 5 people</span>
+        <span class="hero-chip">Live captions</span>
+        <span class="hero-chip">Low-latency audio</span>
+      </div>
+    </header>
+    <aside class="hero-preview" aria-hidden="true">
+      <div class="preview-top"><span class="preview-live">Live room</span><span>2 voices · 2 languages</span></div>
+      <div class="preview-line">
+        <span style="--bar-height: 26%; --delay: -0.1s"></span><span style="--bar-height: 64%; --delay: -0.4s"></span><span style="--bar-height: 42%; --delay: -0.7s"></span><span style="--bar-height: 88%; --delay: -0.2s"></span><span style="--bar-height: 55%; --delay: -0.9s"></span><span style="--bar-height: 72%; --delay: -0.5s"></span><span style="--bar-height: 34%; --delay: -0.3s"></span><span style="--bar-height: 78%; --delay: -0.8s"></span><span style="--bar-height: 48%; --delay: -0.6s"></span><span style="--bar-height: 92%; --delay: -0.15s"></span><span style="--bar-height: 58%; --delay: -0.65s"></span><span style="--bar-height: 32%; --delay: -0.25s"></span><span style="--bar-height: 68%; --delay: -0.75s"></span><span style="--bar-height: 44%; --delay: -0.35s"></span><span style="--bar-height: 84%; --delay: -0.55s"></span>
+      </div>
+      <div class="preview-caption"><small>Party A · Tamil</small>நாளை சந்திப்போம்</div>
+      <div class="preview-caption alt"><small>Translated · English</small>See you tomorrow</div>
+    </aside>
+  </div>
+
+  <p class="warning"><strong>For the clearest session:</strong> wear headphones so translated audio does not feed back into your microphone.</p>
 
   <div class="controls glass">
+    <div class="section-heading">
+      <span class="section-title">Start a live room</span>
+      <span class="section-note">Your settings stay private to this session</span>
+    </div>
     <div class="join-row">
       <div class="field">
         <label for="roomCode">Room code</label>
@@ -259,29 +338,31 @@
       </div>
     </div>
 
-    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem;">
+    <div class="controls-footer">
       <div class="session-actions">
         <button id="startBtn">Join &amp; Start</button>
         <button id="stopBtn" disabled>Stop</button>
         <label><input id="listenOnly" type="checkbox" /> Listen only</label>
         <label><input id="echoGuard" type="checkbox" checked /> Mute mic during playback</label>
       </div>
-      <div id="status"><span class="conn-dot" id="connDot"></span><span id="statusText">idle</span><span id="bargeIndicator">interrupted previous playback</span></div>
+      <div id="status" role="status" aria-live="polite"><span class="conn-dot" id="connDot"></span><span id="statusText">idle</span><span id="bargeIndicator">interrupted previous playback</span></div>
     </div>
   </div>
 
   <div class="panes" id="panesContainer"></div>
 
-  <div class="incoming-box glass">
-    <div class="label">Incoming (translated for me)</div>
-    <div id="incomingText"></div>
-  </div>
+  <div class="live-grid">
+    <div class="incoming-box glass">
+      <div class="label">Incoming · translated for me</div>
+      <div id="incomingText" aria-live="polite"></div>
+    </div>
 
-  <div class="latency-box glass">
-    <div class="label">Pipeline latency</div>
-    <div class="latency-number" id="latencyNumber">--</div>
-    <div class="latency-breakdown" id="latencyBreakdown"></div>
-    <div class="sparkline" id="sparkline"></div>
+    <div class="latency-box glass">
+      <div class="label">Pipeline latency</div>
+      <div class="latency-number" id="latencyNumber">--</div>
+      <div class="latency-breakdown" id="latencyBreakdown"></div>
+      <div class="sparkline" id="sparkline"></div>
+    </div>
   </div>
 
   <audio id="player"></audio>
