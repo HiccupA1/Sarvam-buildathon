@@ -1,0 +1,31 @@
+{
+  "purpose": "Developmental synthetic-audio benchmark for the portfolio release",
+  "date": "2026-10-09",
+  "unique_utterances": 92,
+  "final_target_outputs": 368,
+  "missing_final_target_outputs": 0,
+  "upstream_stt_attempts_including_pilot": 94,
+  "controlled_retries": [
+    {"category": "mix", "index": 2, "first_failure": "No committed transcript before receive deadline"},
+    {"category": "te", "index": 10, "first_failure": "Upstream STT connection timeout"}
+  ],
+  "reused_pilot_samples": 5,
+  "initial_samples_without_explicit_silence_tail": 14,
+  "remaining_samples_with_silence_tail_seconds": 0.8,
+  "minimum_utterance_interval_seconds": 10,
+  "notes": [
+    "The pacing-loop bug stopped an early invocation after one saved success; that sample was reused.",
+    "Final raw data retains successful attempts after controlled retries; zero final missing outputs is not a first-attempt success rate.",
+    "Implementation was hardened during this developmental campaign; it is not a controlled production SLA measurement.",
+    "The listener metric is first translated audio receipt and excludes actual playback start.",
+    "Native-speaker accuracy review remains unperformed."
+  ],
+  "usage_reservations": {
+    "stt_seconds": 4230,
+    "translate_chars": 14960,
+    "tts_chars": 15647,
+    "estimated_inr_excluding_gst": 112.111,
+    "provider_balance_queried": false,
+    "prices_source": "https://docs.sarvam.ai/api/getting-started/pricing"
+  }
+}

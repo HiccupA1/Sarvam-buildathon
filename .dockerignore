@@ -1,0 +1,11 @@
+.git
+.env*
+.mcp*
+.venv*
+.claude
+certs
+logs
+loadtest
+tests
+**/__pycache__
+node_modules

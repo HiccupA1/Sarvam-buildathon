@@ -117,6 +117,10 @@
 
   #stopBtn { background: transparent; color: var(--text-muted); border-color: var(--border-strong); }
   #stopBtn:hover:not(:disabled) { background: rgba(255, 255, 255, 0.06); color: var(--text); }
+  .session-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 0.75rem; }
+  .session-actions label { display: flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; }
+  input[type="checkbox"] { width: 16px; height: 16px; margin: 0; accent-color: var(--accent); }
+  #statusText { overflow-wrap: anywhere; }
 
   #status {
     color: var(--text-muted);
@@ -249,12 +253,18 @@
           <option value="te-IN">Telugu</option>
         </select>
       </div>
+      <div class="field">
+        <label for="accessToken">Demo invite</label>
+        <input id="accessToken" type="password" autocomplete="off" />
+      </div>
     </div>
 
     <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem;">
-      <div>
+      <div class="session-actions">
         <button id="startBtn">Join &amp; Start</button>
         <button id="stopBtn" disabled>Stop</button>
+        <label><input id="listenOnly" type="checkbox" /> Listen only</label>
+        <label><input id="echoGuard" type="checkbox" checked /> Mute mic during playback</label>
       </div>
       <div id="status"><span class="conn-dot" id="connDot"></span><span id="statusText">idle</span><span id="bargeIndicator">interrupted previous playback</span></div>
     </div>
@@ -268,7 +278,7 @@
   </div>
 
   <div class="latency-box glass">
-    <div class="label">End-to-end lag (speech-end to audio-ready; excludes mic/network transit and playback start)</div>
+    <div class="label">Pipeline latency</div>
     <div class="latency-number" id="latencyNumber">--</div>
     <div class="latency-breakdown" id="latencyBreakdown"></div>
     <div class="sparkline" id="sparkline"></div>
@@ -296,12 +306,35 @@
     const participants = {}; // party_id -> { el, vad, lang, you, transcript }
 
     let myPartyId = null;
-    let audioContext, workletNode, micSource, mediaStream, ws;
+    let audioContext, workletNode, micSource, micSink, mediaStream, ws;
     let currentAudioUrl = null;
     let manualStop = true; // true = user hasn't asked to run yet / explicitly stopped
     let reconnectAttempt = 0;
     let reconnectTimer = null;
     let currentRoom = null;
+    let resumeToken = null;
+    let joined = false;
+    let clockOffsetMs = null;
+    let clockRttMs = null;
+    let playbackMeasurement = null;
+    const accessTokenEl = document.getElementById("accessToken");
+    const listenOnlyEl = document.getElementById("listenOnly");
+    const echoGuardEl = document.getElementById("echoGuard");
+
+    player.addEventListener("playing", () => {
+      if (!playbackMeasurement || !ws || ws.readyState !== WebSocket.OPEN) return;
+      const m = playbackMeasurement;
+      playbackMeasurement = null;
+      const elapsed = performance.now() - m.received;
+      const total = m.captureStart != null && clockOffsetMs != null
+        ? Date.now() + clockOffsetMs - m.captureStart : null;
+      if (total != null && total >= 0) {
+        latencyNumber.textContent = `${Math.round(total)} ms`;
+        latencyBreakdown.textContent = `capture to playback; clock RTT ${Math.round(clockRttMs)} ms`;
+      }
+      ws.send(JSON.stringify({type: "playback", speaker: m.speaker, seq: m.seq,
+        receive_to_playback_ms: elapsed, capture_to_playback_ms: total, clock_rtt_ms: clockRttMs}));
+    });
 
     function setStatus(text, dotState) {
       statusTextEl.textContent = text;
@@ -376,7 +409,8 @@
     function renderLatency(msg) {
       latencyNumber.textContent = `${msg.total_ms} ms`;
       const sttPart = msg.stt_ms != null ? `stt ${msg.stt_ms}ms + ` : "";
-      latencyBreakdown.textContent = `${sttPart}translate ${msg.translate_ms}ms + tts ${msg.tts_ms}ms -- from party ${msg.speaker}`;
+      const queuePart = msg.queue_ms ? `queue ${msg.queue_ms}ms + ` : "";
+      latencyBreakdown.textContent = `${sttPart}${queuePart}translate ${msg.translate_ms}ms + tts ${msg.tts_ms}ms -- from party ${msg.speaker}`;
       latencyHistory.push(msg.total_ms);
       if (latencyHistory.length > 20) latencyHistory.shift();
       const max = Math.max(...latencyHistory, 1);
@@ -402,13 +436,16 @@
     }
 
     function connectWebSocket() {
+      joined = false;
+      clockOffsetMs = null;
       const protocol = location.protocol === "https:" ? "wss" : "ws";
       ws = new WebSocket(`${protocol}://${location.host}/ws/${encodeURIComponent(currentRoom)}`);
       ws.binaryType = "arraybuffer";
 
       ws.onopen = () => {
-        reconnectAttempt = 0;
-        ws.send(JSON.stringify({ type: "join", language: myLangEl.value }));
+        ws.send(JSON.stringify({ type: "join", language: myLangEl.value,
+          access_token: accessTokenEl.value, role: listenOnlyEl.checked ? "listener" : "speaker",
+          resume_token: resumeToken, audio_protocol: "timestamped_pcm16" }));
         setStatus("joined, waiting for others...", "connecting");
         stopBtn.disabled = false;
       };
@@ -417,9 +454,21 @@
         if (typeof event.data !== "string") return;
         const msg = JSON.parse(event.data);
         if (msg.type === "joined") {
+          reconnectAttempt = 0;
+          resumeToken = msg.resume_token;
+          resetForNewSession();
           ensureParticipant(msg.party_id, msg.language);
           markSelf(msg.party_id);
           setStatus(`joined as party ${msg.party_id}, waiting for others...`, "connecting");
+          ws.send(JSON.stringify({type: "ping", client_ms: Date.now()}));
+          if (msg.resumed) joined = true;
+        } else if (msg.type === "ready") {
+          joined = true;
+          setStatus("connected", "connected");
+        } else if (msg.type === "pong") {
+          const now = Date.now();
+          clockRttMs = now - msg.client_ms;
+          clockOffsetMs = msg.server_ms - (msg.client_ms + now) / 2;
         } else if (msg.type === "peer_joined") {
           ensureParticipant(msg.party_id, msg.language);
           setStatus("participant connected -- listening", "connected");
@@ -429,18 +478,16 @@
         } else if (msg.type === "transcript") {
           const p = ensureParticipant(msg.party);
           if (msg.kind === "partial") {
-            updateBox(p.transcript, `<span class="partial">${msg.text}</span>`, true);
+            updateBox(p.transcript, msg.text, false);
+            p.transcript.classList.add("partial");
           } else {
             updateBox(p.transcript, msg.text, false);
+            p.transcript.classList.remove("partial");
           }
         } else if (msg.type === "vad") {
           setVad(msg.party, msg.state === "start");
         } else if (msg.type === "translated") {
-          updateBox(
-            incomingText,
-            `<span class="incoming-speaker" style="color:var(--party-${msg.speaker})">${msg.speaker}:</span>${msg.text}`,
-            true
-          );
+          updateBox(incomingText, `${msg.speaker}: ${msg.text}`, false);
         } else if (msg.type === "latency") {
           renderLatency(msg);
         } else if (msg.type === "audio") {
@@ -459,13 +506,22 @@
           if (currentAudioUrl) URL.revokeObjectURL(currentAudioUrl);
           currentAudioUrl = URL.createObjectURL(blob);
           player.src = currentAudioUrl;
-          player.play();
+          playbackMeasurement = {received: performance.now(), speaker: msg.speaker,
+            seq: msg.seq, captureStart: msg.capture_start_ms};
+          player.play().catch(() => setStatus("audio playback blocked by browser", "error"));
         } else if (msg.type === "error") {
           setStatus(`error: ${msg.message}`, "error");
         }
       };
 
-      ws.onclose = () => {
+      ws.onclose = (event) => {
+        joined = false;
+        if ([1000, 1003, 1008].includes(event.code) && !manualStop) {
+          const message = statusTextEl.textContent;
+          stop();
+          setStatus(message.startsWith("error:") ? message : "session ended", "error");
+          return;
+        }
         if (manualStop) {
           setStatus("stopped", null);
           connDot.className = "conn-dot";
@@ -477,6 +533,11 @@
         // words around the drop may be lost; that's an accepted trade-off
         // for a live demo over recovering mid-utterance state.
         reconnectAttempt += 1;
+        if (reconnectAttempt > 5) {
+          stop();
+          setStatus("connection unavailable; retry later", "error");
+          return;
+        }
         const delayMs = Math.min(10000, 1000 * 2 ** (reconnectAttempt - 1));
         setStatus(`connection lost -- reconnecting in ${Math.round(delayMs / 1000)}s...`, "error");
         reconnectTimer = setTimeout(connectWebSocket, delayMs);
@@ -502,19 +563,27 @@
       }
 
       currentRoom = room;
+      resumeToken = null;
       manualStop = false;
       reconnectAttempt = 0;
       startBtn.disabled = true;
       resetForNewSession();
       setStatus("requesting mic access...", "connecting");
 
+      myLangEl.disabled = listenOnlyEl.disabled = accessTokenEl.disabled = roomCodeEl.disabled = true;
+      if (listenOnlyEl.checked) {
+        connectWebSocket();
+        return;
+      }
+
       try {
         mediaStream = await navigator.mediaDevices.getUserMedia({
-          audio: { channelCount: 1, echoCancellation: true, noiseSuppression: true },
+          audio: { channelCount: 1, echoCancellation: true, noiseSuppression: true, autoGainControl: true },
         });
       } catch (err) {
         manualStop = true;
         startBtn.disabled = false;
+        myLangEl.disabled = listenOnlyEl.disabled = accessTokenEl.disabled = roomCodeEl.disabled = false;
         if (err.name === "NotAllowedError") {
           setStatus("error: mic permission denied -- allow it in the browser's site settings and retry", "error");
         } else if (err.name === "NotFoundError") {
@@ -526,15 +595,25 @@
       }
 
       audioContext = new AudioContext();
+      await audioContext.resume();
       await audioContext.audioWorklet.addModule("/static/audio-processor.js");
 
       micSource = audioContext.createMediaStreamSource(mediaStream);
       workletNode = new AudioWorkletNode(audioContext, "pcm-worklet-processor");
       micSource.connect(workletNode);
+      micSink = audioContext.createGain();
+      micSink.gain.value = 0;
+      workletNode.connect(micSink);
+      micSink.connect(audioContext.destination);
 
       workletNode.port.onmessage = (event) => {
-        if (ws && ws.readyState === WebSocket.OPEN) {
-          ws.send(event.data);
+        if (joined && clockOffsetMs != null && ws && ws.readyState === WebSocket.OPEN && ws.bufferedAmount < 64000) {
+          const muted = echoGuardEl.checked && !player.paused && !player.ended;
+          const pcm = muted ? new ArrayBuffer(event.data.byteLength) : event.data;
+          const packet = new ArrayBuffer(pcm.byteLength + 8);
+          new DataView(packet).setFloat64(0, Date.now() + clockOffsetMs - pcm.byteLength / 32, true);
+          new Uint8Array(packet, 8).set(new Uint8Array(pcm));
+          ws.send(packet);
         }
       };
 
@@ -543,16 +622,24 @@
 
     function stop() {
       manualStop = true;
+      joined = false;
+      resumeToken = null;
+      myLangEl.disabled = listenOnlyEl.disabled = accessTokenEl.disabled = roomCodeEl.disabled = false;
       if (reconnectTimer) {
         clearTimeout(reconnectTimer);
         reconnectTimer = null;
       }
       stopBtn.disabled = true;
-      if (ws && ws.readyState === WebSocket.OPEN) {
-        ws.send(JSON.stringify({ type: "end" }));
+      if (ws) {
+        if (ws.readyState === WebSocket.OPEN) ws.send(JSON.stringify({ type: "end" }));
         ws.close();
       }
+      player.pause();
+      playbackMeasurement = null;
       if (mediaStream) mediaStream.getTracks().forEach((t) => t.stop());
+      if (workletNode) { workletNode.port.onmessage = null; workletNode.disconnect(); }
+      if (micSource) micSource.disconnect();
+      if (micSink) micSink.disconnect();
       if (audioContext) audioContext.close();
       if (currentAudioUrl) {
         URL.revokeObjectURL(currentAudioUrl);
@@ -563,8 +650,16 @@
       startBtn.disabled = false;
     }
 
-    startBtn.addEventListener("click", () => start().catch((err) => setStatus(`error: ${err.message}`, "error")));
+    startBtn.addEventListener("click", () => start().catch((err) => { stop(); setStatus(`error: ${err.message}`, "error"); }));
     stopBtn.addEventListener("click", stop);
+    startBtn.disabled = true;
+    fetch("/config").then((response) => {
+      if (!response.ok) throw new Error("Demo unavailable");
+      return response.json();
+    }).then((config) => {
+      startBtn.disabled = !config.live_enabled;
+      if (!config.live_enabled) setStatus("live demo offline", null);
+    }).catch(() => setStatus("demo unavailable", "error"));
 
     // Best-effort cleanup so a closed tab doesn't leave a phantom
     // participant occupying a room slot until the socket times out.

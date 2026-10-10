@@ -1,241 +1,228 @@
-"""Runs every utterance in test_set.py through the full pipeline and
-records real per-stage and end-to-end latency for every language pair.
-
-Each utterance gets its own room with one speaker (streaming that
-utterance's audio) and four listeners, one per hearing language
-(Hindi, English, Tamil, Telugu). This reuses the same fan-out the app
-already does in conference mode, so one STT pass produces four
-(source, target) data points per utterance.
-
-end_to_end_ms is measured by this harness, not the server: time from
-when the speaker starts sending audio to when a specific listener
-receives the translated audio. This is the number the README flagged
-as missing (server-side total_ms does not include network transit).
-
-If a listener never receives anything within the timeout, that data
-point is recorded as missing (null), not estimated.
-
-Usage: python loadtest/run_structured_test.py
-Writes results/structured_test_<timestamp>.json (raw) and
-results/structured_test_<timestamp>_summary.csv (aggregated).
-"""
+"""Checkpointed live benchmark. Defaults to a zero-credit five-clip dry run."""
+import argparse
 import asyncio
 import csv
 import json
 import os
 import ssl
 import time
+from pathlib import Path
 
 import websockets
-
 import test_set
 
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-FIXTURES_DIR = os.path.join(SCRIPT_DIR, "test_fixtures")
-RESULTS_DIR = os.path.join(SCRIPT_DIR, "results")
-
-SERVER_URL = "wss://localhost:8000"
+SCRIPT_DIR = Path(__file__).resolve().parent
+FIXTURES_DIR = SCRIPT_DIR / "test_fixtures"
+RESULTS_DIR = SCRIPT_DIR / "results"
 SAMPLE_RATE = 16000
 CHUNK_BYTES = 3200
 LISTENER_LANGUAGES = ["hi-IN", "en-IN", "ta-IN", "te-IN"]
-MAX_CONCURRENT_ROOMS = 1  # 5 participants per room; 4 concurrent rooms (20 connections) timed out in testing
-RECEIVE_TIMEOUT_SECONDS = 30
-
-ssl_ctx = ssl.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
-ssl_ctx.check_hostname = False
-ssl_ctx.verify_mode = ssl.CERT_NONE
 
 
-def load_clip(category, index):
-    path = os.path.join(FIXTURES_DIR, f"{category}_{index}.pcm")
-    with open(path, "rb") as f:
-        return f.read()
+def select_entries(per_category, maximum):
+    entries = test_set.ALL_STANDARD + test_set.ALL_CODEMIX
+    categories = {}
+    for category, index, text in entries:
+        categories.setdefault(category, []).append((category, index, text))
+    selected = []
+    for sample in range(per_category):
+        for group in categories.values():
+            if sample < len(group):
+                selected.append(group[sample])
+    return selected[:maximum]
 
 
-async def run_one_utterance(category, index, text):
-    room_id = f"structured-{category}-{index}-{int(time.time() * 1000)}"
-    clip_bytes = load_clip(category, index)
-    results = {}
-    send_start_holder = {}
+def connection_options(url, insecure):
+    if not url.startswith("wss://"):
+        return {}
+    ctx = ssl.create_default_context()
+    if insecure:
+        ctx.check_hostname = False
+        ctx.verify_mode = ssl.CERT_NONE
+    return {"ssl": ctx}
 
-    async def listener_join_then_wait(lang):
-        ws = await websockets.connect(f"{SERVER_URL}/ws/{room_id}", ssl=ssl_ctx)
-        await ws.send(json.dumps({"type": "join", "language": lang}))
-        await ws.recv()
-        try:
-            while True:
-                raw = await asyncio.wait_for(ws.recv(), timeout=RECEIVE_TIMEOUT_SECONDS)
-                msg = json.loads(raw)
-                if msg["type"] == "audio":
-                    received_at = time.perf_counter()
-                    send_start = send_start_holder.get("t")
-                    end_to_end_ms = round((received_at - send_start) * 1000) if send_start else None
-                    entry = results.setdefault(lang, {})
-                    entry["end_to_end_ms"] = end_to_end_ms
-                    if entry.get("stt_ms") is not None:
-                        break
-                elif msg["type"] == "latency":
-                    entry = results.setdefault(lang, {})
-                    entry["stt_ms"] = msg["stt_ms"]
-                    entry["translate_ms"] = msg["translate_ms"]
-                    entry["tts_ms"] = msg["tts_ms"]
-                    entry["total_ms"] = msg["total_ms"]
-                    if entry.get("end_to_end_ms") is not None:
-                        break
-        except asyncio.TimeoutError:
-            results.setdefault(lang, None)
-        finally:
+
+async def run_one_utterance(category, index, text, args):
+    room_id = f"structured-{category}-{index}-{time.time_ns()}"
+    clip = (FIXTURES_DIR / f"{category}_{index}.pcm").read_bytes()
+    results = {lang: {"end_to_end_ms": None} for lang in LISTENER_LANGUAGES}
+    sockets = []
+    started = None
+    transcript = None
+    deadline = asyncio.get_running_loop().time() + args.timeout
+
+    async def receive(ws):
+        remaining = deadline - asyncio.get_running_loop().time()
+        if remaining <= 0:
+            raise asyncio.TimeoutError("utterance deadline reached")
+        msg = json.loads(await asyncio.wait_for(ws.recv(), remaining))
+        if msg.get("type") == "error":
+            raise RuntimeError(msg.get("message", "provider error"))
+        return msg
+
+    async def connect(language, role):
+        ws = await websockets.connect(f"{args.server_url}/ws/{room_id}",
+                                      open_timeout=5, close_timeout=1, max_queue=64,
+                                      **connection_options(args.server_url, args.insecure))
+        sockets.append(ws)
+        await ws.send(json.dumps({"type": "join", "language": language, "role": role,
+                                  "access_token": os.environ.get("DEMO_ACCESS_TOKEN", "")}))
+        while (await receive(ws)).get("type") != "ready":
+            pass
+        return ws
+
+    async def listen(ws, lang):
+        nonlocal transcript
+        while True:
+            msg = await receive(ws)
+            if msg["type"] == "transcript" and msg.get("kind") == "final":
+                transcript = msg["text"]
+            if msg["type"] == "translated":
+                results[lang]["translated_text"] = msg["text"]
+            if msg["type"] == "latency":
+                for key in ("stt_ms", "queue_ms", "translate_ms", "tts_ms", "total_ms"):
+                    results[lang][key] = msg.get(key)
+            if msg["type"] == "audio":
+                results[lang]["end_to_end_ms"] = round((time.perf_counter() - started) * 1000)
+                return
+
+    tasks = []
+    error = None
+    try:
+        # Listeners open no Sarvam connections. All must be ready before speech.
+        listeners = []
+        for lang in LISTENER_LANGUAGES:
+            listeners.append(await connect(lang, "listener"))
+        speaker = await connect("en-IN", "speaker")
+        started = time.perf_counter()
+        tasks = [asyncio.create_task(listen(ws, lang)) for ws, lang in zip(listeners, LISTENER_LANGUAGES)]
+        for offset in range(0, len(clip), CHUNK_BYTES):
+            if any(task.done() and task.exception() for task in tasks):
+                raise RuntimeError("listener failed during speech")
+            chunk = clip[offset:offset + CHUNK_BYTES]
+            await speaker.send(chunk)
+            await asyncio.sleep(len(chunk) / (SAMPLE_RATE * 2))
+        # Give VAD an explicit silence boundary before requesting stream end.
+        # The fixtures may end immediately after a word with no trailing silence.
+        for _ in range(8):
+            await speaker.send(bytes(CHUNK_BYTES))
+            await asyncio.sleep(.1)
+        await speaker.send(json.dumps({"type": "end"}))
+        await asyncio.wait_for(asyncio.gather(*tasks), max(0.1, deadline - asyncio.get_running_loop().time()))
+    except Exception as exc:
+        error = f"{type(exc).__name__}: {exc}"
+    finally:
+        for task in tasks:
+            if not task.done():
+                task.cancel()
+        await asyncio.gather(*tasks, return_exceptions=True)
+        for ws in sockets:
             try:
                 await ws.send(json.dumps({"type": "end"}))
-                await ws.close()
-            except Exception:
+            except websockets.exceptions.ConnectionClosed:
                 pass
-
-    async def speaker_join_then_speak():
-        ws = await websockets.connect(f"{SERVER_URL}/ws/{room_id}", ssl=ssl_ctx)
-        await ws.send(json.dumps({"type": "join", "language": "en-IN"}))
-        await ws.recv()
-        # Fixed delay rather than a barrier waiting for all 5 to connect:
-        # a barrier can make a fast-connecting listener wait on the
-        # slowest of 5 (up to ~3.8s, see loadtest/results/ from Priority 1)
-        # before the speaker even starts, which matters if idle STT
-        # sessions have any kind of timeout.
-        await asyncio.sleep(1.0)
-        send_start_holder["t"] = time.perf_counter()
-        for offset in range(0, len(clip_bytes), CHUNK_BYTES):
-            await ws.send(clip_bytes[offset:offset + CHUNK_BYTES])
-            await asyncio.sleep(CHUNK_BYTES / (SAMPLE_RATE * 2))
-        await ws.send(json.dumps({"type": "end"}))
-        try:
-            await asyncio.wait_for(ws.recv(), timeout=5)
-        except (asyncio.TimeoutError, websockets.exceptions.ConnectionClosed):
-            pass
-        await ws.close()
-
-    named_tasks = {lang: asyncio.create_task(listener_join_then_wait(lang)) for lang in LISTENER_LANGUAGES}
-    named_tasks["speaker"] = asyncio.create_task(speaker_join_then_speak())
-    tasks = list(named_tasks.values())
-    task_labels = {task: label for label, task in named_tasks.items()}
-
-    # If one task fails (for example the speaker's connection drops),
-    # cancel the rest right away instead of letting them run to their own
-    # 30 second timeout. An earlier version used plain gather(), which
-    # does not cancel sibling tasks on failure -- the leftover listener
-    # tasks from one failed utterance kept running in the background
-    # while the loop moved on to the next utterance, and this piled up
-    # over the run until something broke and every later utterance
-    # failed too.
-    done, pending = await asyncio.wait(tasks, return_when=asyncio.FIRST_EXCEPTION)
-    for task in pending:
-        task.cancel()
-    if pending:
-        await asyncio.gather(*pending, return_exceptions=True)
-    for task in done:
-        if not task.cancelled() and task.exception() is not None:
-            label = task_labels[task]
-            print(f"  {category}_{index} [{label}] failed: {task.exception()!r}")
-
-    return {
-        "category": category,
-        "index": index,
-        "text": text,
-        "room_id": room_id,
-        "results": results,
-    }
+            await ws.close()
+    return {"category": category, "index": index, "text": text, "transcript": transcript,
+            "room_id": room_id, "results": results, "error": error,
+            "complete": error is None and all(r.get("end_to_end_ms") is not None for r in results.values())}
 
 
-async def main():
-    os.makedirs(RESULTS_DIR, exist_ok=True)
-    all_entries = test_set.ALL_STANDARD + test_set.ALL_CODEMIX
-    semaphore = asyncio.Semaphore(MAX_CONCURRENT_ROOMS)
-
-    async def run_with_limit(category, index, text):
-        async with semaphore:
-            print(f"running {category}_{index}...")
-            try:
-                return await run_one_utterance(category, index, text)
-            except Exception as e:
-                print(f"  {category}_{index} failed: {e!r}")
-                return {"category": category, "index": index, "text": text, "room_id": None, "results": {}}
-
-    all_results = await asyncio.gather(*(
-        run_with_limit(category, index, text) for category, index, text in all_entries
-    ))
-
-    timestamp = int(time.time())
-    raw_path = os.path.join(RESULTS_DIR, f"structured_test_{timestamp}.json")
-    with open(raw_path, "w", encoding="utf-8") as f:
-        json.dump(all_results, f, indent=2, ensure_ascii=False)
-    print(f"wrote {raw_path}")
-
-    write_summary(all_results, os.path.join(RESULTS_DIR, f"structured_test_{timestamp}_summary.csv"))
+def save_checkpoint(entries, path):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_suffix(".tmp")
+    temporary.write_text(json.dumps(entries, indent=2, ensure_ascii=False), encoding="utf-8")
+    temporary.replace(path)
+    write_summary(entries, path.with_name(path.stem + "_summary.csv"))
 
 
-def write_summary(all_results, out_path):
-    lang_name = {"hi-IN": "hi", "en-IN": "en", "ta-IN": "ta", "te-IN": "te"}
-    rows = []
-    for entry in all_results:
-        category = entry["category"]
-        for target_lang, data in entry["results"].items():
-            rows.append({
-                "source": category,
-                "target": lang_name.get(target_lang, target_lang),
-                "stt_ms": data.get("stt_ms") if data else None,
-                "translate_ms": data.get("translate_ms") if data else None,
-                "tts_ms": data.get("tts_ms") if data else None,
-                "total_ms": data.get("total_ms") if data else None,
-                "end_to_end_ms": data.get("end_to_end_ms") if data else None,
-            })
-
+def write_summary(entries, path):
     groups = {}
-    for row in rows:
-        key = (row["source"], row["target"])
-        groups.setdefault(key, []).append(row)
+    metrics = ("stt_ms", "queue_ms", "translate_ms", "tts_ms", "total_ms", "end_to_end_ms")
+    for entry in entries:
+        for language in LISTENER_LANGUAGES:
+            groups.setdefault((entry["category"], language), []).append(entry.get("results", {}).get(language) or {})
 
-    missing_count = sum(1 for row in rows if row["end_to_end_ms"] is None)
-    print(f"total data points: {len(rows)}, missing: {missing_count}")
+    def percentile(values, quantile):
+        if not values:
+            return None
+        values = sorted(values)
+        return values[min(len(values) - 1, int((len(values) - 1) * quantile + 0.5))]
 
-    with open(out_path, "w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f)
-        writer.writerow([
-            "source", "target", "n", "n_missing",
-            "stt_ms_p50", "stt_ms_p95",
-            "translate_ms_p50", "translate_ms_p95",
-            "tts_ms_p50", "tts_ms_p95",
-            "end_to_end_ms_p50", "end_to_end_ms_p95",
-        ])
+    with path.open("w", newline="", encoding="utf-8") as stream:
+        writer = csv.writer(stream)
+        writer.writerow(["source", "target", "n", "n_missing"] +
+                        [f"{key}_p{p}" for key in metrics for p in (50, 95)])
+        overall = [row for rows in groups.values() for row in rows]
+        for (source, target), rows in [*sorted(groups.items()), (("OVERALL", ""), overall)]:
+            stats = []
+            for key in metrics:
+                values = [r[key] for r in rows if r.get(key) is not None]
+                stats.extend([percentile(values, .5), percentile(values, .95)])
+            writer.writerow([source, target, len(rows), sum(r.get("end_to_end_ms") is None for r in rows), *stats])
 
-        def percentile(values, p):
-            if not values:
-                return None
-            values = sorted(values)
-            index = min(len(values) - 1, int(len(values) * p))
-            return values[index]
 
-        for (source, target), group_rows in sorted(groups.items()):
-            stt_values = [r["stt_ms"] for r in group_rows if r["stt_ms"] is not None]
-            translate_values = [r["translate_ms"] for r in group_rows if r["translate_ms"] is not None]
-            tts_values = [r["tts_ms"] for r in group_rows if r["tts_ms"] is not None]
-            e2e_values = [r["end_to_end_ms"] for r in group_rows if r["end_to_end_ms"] is not None]
-            n_missing = sum(1 for r in group_rows if r["end_to_end_ms"] is None)
-            writer.writerow([
-                source, target, len(group_rows), n_missing,
-                percentile(stt_values, 0.5), percentile(stt_values, 0.95),
-                percentile(translate_values, 0.5), percentile(translate_values, 0.95),
-                percentile(tts_values, 0.5), percentile(tts_values, 0.95),
-                percentile(e2e_values, 0.5), percentile(e2e_values, 0.95),
-            ])
+def prepare(args):
+    entries = select_entries(args.per_category, args.max_utterances)
+    output = Path(args.output)
+    previous = json.loads(output.read_text(encoding="utf-8")) if output.exists() else []
+    completed = {(e["category"], e["index"]) for e in previous if e.get("complete")}
+    entries = [entry for entry in entries if (entry[0], entry[1]) not in completed]
+    seconds = sum((FIXTURES_DIR / f"{cat}_{idx}.pcm").stat().st_size / 32000 for cat, idx, _ in entries)
+    chars = sum(len(text) for _, _, text in entries)
+    estimate = seconds / 3600 * 30 + chars * 4 / 10000 * 20 + chars * 4 * 2 / 10000 * 30
+    print(json.dumps({"utterances_remaining": len(entries), "input_seconds": round(seconds, 2),
+                      "source_chars": chars, "estimated_inr_excl_gst": round(estimate, 2),
+                      "tts_output_assumption": "2x source characters per target; estimate, not billing cap",
+                      "live": args.live}, indent=2))
+    if seconds > args.max_input_seconds or chars > args.max_source_chars:
+        raise SystemExit("Plan exceeds input budget. Choose a smaller sample or explicitly increase limits.")
+    if not args.live:
+        print("Dry run only: no API calls. Pass --live to execute.")
+        return
+    if not os.environ.get("DEMO_ACCESS_TOKEN"):
+        raise SystemExit("Set DEMO_ACCESS_TOKEN to the server invite before running live tests")
+    return entries, previous, output
 
-        all_e2e = [r["end_to_end_ms"] for r in rows if r["end_to_end_ms"] is not None]
-        all_stt = [r["stt_ms"] for r in rows if r["stt_ms"] is not None]
-        writer.writerow([])
-        writer.writerow(["OVERALL", "", len(rows), missing_count,
-                          percentile(all_stt, 0.5), percentile(all_stt, 0.95),
-                          "", "", "", "",
-                          percentile(all_e2e, 0.5), percentile(all_e2e, 0.95)])
 
-    print(f"wrote {out_path}")
+async def main(args, plan):
+    entries, previous, output = plan
+    for category, index, text in entries:
+        utterance_started = time.monotonic()
+        print(f"Running {category}_{index}", flush=True)
+        result = await run_one_utterance(category, index, text, args)
+        prior = next((e for e in previous if (e["category"], e["index"]) == (category, index)), None)
+        if prior:
+            result["prior_attempts"] = [*prior.get("prior_attempts", []),
+                                        {"room_id": prior.get("room_id"), "error": prior.get("error"),
+                                         "complete": prior.get("complete"), "results": prior.get("results")}]
+        previous = [e for e in previous if (e["category"], e["index"]) != (category, index)]
+        previous.append(result)
+        save_checkpoint(previous, output)
+        if not result["complete"]:
+            raise SystemExit(f"Stopped after failure; checkpoint saved: {result['error']}")
+        await asyncio.sleep(max(0, args.min_utterance_seconds - (time.monotonic() - utterance_started)))
+    print(f"Saved {output} and summary CSV")
+
+
+def parser():
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("--live", action="store_true")
+    p.add_argument("--server-url", default="ws://127.0.0.1:8000")
+    p.add_argument("--insecure", action="store_true", help="Local self-signed TLS only")
+    p.add_argument("--per-category", type=int, default=1)
+    p.add_argument("--max-utterances", type=int, default=5)
+    p.add_argument("--max-input-seconds", type=float, default=60)
+    p.add_argument("--max-source-chars", type=int, default=2000)
+    p.add_argument("--timeout", type=float, default=40)
+    p.add_argument("--min-utterance-seconds", type=float, default=0, help="Pace large campaigns below provider rate limits")
+    p.add_argument("--output", default=str(RESULTS_DIR / "structured_test_pilot.json"))
+    return p
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    args = parser().parse_args()
+    if args.per_category < 1 or args.max_utterances < 1 or args.timeout <= 0:
+        raise SystemExit("Sample limits and timeout must be positive")
+    plan = prepare(args)
+    if plan is not None:
+        asyncio.run(main(args, plan))

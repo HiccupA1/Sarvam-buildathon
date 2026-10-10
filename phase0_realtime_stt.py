@@ -8,6 +8,7 @@ The test clip is synthesized with TTS so the check needs no recorded audio.
 """
 
 import asyncio
+import argparse
 import base64
 import os
 import sys
@@ -20,8 +21,6 @@ sys.stdout.reconfigure(encoding="utf-8")
 load_dotenv()
 
 API_KEY = os.environ.get("SARVAM_API_KEY")
-if not API_KEY:
-    sys.exit("SARVAM_API_KEY is not set. Add it to .env and try again.")
 
 SAMPLE_RATE = 16000
 # 3200 bytes = ~100ms of 16kHz mono 16-bit PCM, the chunk size the docs recommend.
@@ -89,6 +88,8 @@ async def stream_through_stt(pcm: bytes, mode: str) -> None:
 
 
 async def main() -> None:
+    if not API_KEY:
+        raise RuntimeError("SARVAM_API_KEY is not set")
     print(f"Synthesizing test clip ({SOURCE_LANGUAGE}): {SOURCE_TEXT}")
     pcm = synthesize_test_clip()
     duration = len(pcm) / (SAMPLE_RATE * 2)
@@ -103,4 +104,9 @@ async def main() -> None:
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--live", action="store_true")
+    if parser.parse_args().live:
+        asyncio.run(main())
+    else:
+        print("Dry run only. Pass --live to synthesize one clip and make two STT calls.")

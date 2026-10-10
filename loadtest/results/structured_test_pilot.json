@@ -1,0 +1,217 @@
+[
+  {
+    "category": "hi",
+    "index": 0,
+    "text": "नमस्ते, आज आप कैसे हैं?",
+    "transcript": "नमस्ते आज आप कैसे हैं",
+    "room_id": "structured-hi-0-1791528087074784400",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 5920,
+        "translated_text": "नमस्ते, आप आज कैसी हैं?",
+        "stt_ms": 2662,
+        "translate_ms": 2164,
+        "tts_ms": 712,
+        "total_ms": 5538
+      },
+      "en-IN": {
+        "end_to_end_ms": 5275,
+        "translated_text": "Hello, how are you today",
+        "stt_ms": 2662,
+        "translate_ms": 1477,
+        "tts_ms": 603,
+        "total_ms": 4742
+      },
+      "ta-IN": {
+        "end_to_end_ms": 5759,
+        "translated_text": "வணக்கம், இன்று எப்படி இருக்கிறீர்கள்?",
+        "stt_ms": 2662,
+        "translate_ms": 1834,
+        "tts_ms": 705,
+        "total_ms": 5201
+      },
+      "te-IN": {
+        "end_to_end_ms": 5972,
+        "translated_text": "నమస్కారం, ఈ రోజు ఎలా ఉన్నారు?",
+        "stt_ms": 2662,
+        "translate_ms": 1891,
+        "tts_ms": 827,
+        "total_ms": 5380
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "en",
+    "index": 0,
+    "text": "Hello, how are you doing today?",
+    "transcript": "Hello, how are you doing today?",
+    "room_id": "structured-en-0-1791528105137690800",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 4712,
+        "translated_text": "नमस्ते, आज आप कैसे हैं?",
+        "stt_ms": 2172,
+        "translate_ms": 1448,
+        "tts_ms": 687,
+        "total_ms": 4307
+      },
+      "en-IN": {
+        "end_to_end_ms": 4108,
+        "translated_text": "Hello, how are you doing today?",
+        "stt_ms": 2172,
+        "translate_ms": 870,
+        "tts_ms": 622,
+        "total_ms": 3664
+      },
+      "ta-IN": {
+        "end_to_end_ms": 4898,
+        "translated_text": "வணக்கம், இன்று எப்படி இருக்கிறீர்கள்?",
+        "stt_ms": 2172,
+        "translate_ms": 1414,
+        "tts_ms": 838,
+        "total_ms": 4424
+      },
+      "te-IN": {
+        "end_to_end_ms": 4765,
+        "translated_text": "నమస్కారం, ఈ రోజు ఎలా ఉన్నారు?",
+        "stt_ms": 2172,
+        "translate_ms": 1309,
+        "tts_ms": 783,
+        "total_ms": 4264
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "ta",
+    "index": 0,
+    "text": "வணக்கம், இன்று நீங்கள் எப்படி இருக்கிறீர்கள்?",
+    "transcript": "வணக்கம் இன்று நீங்கள் எப்படி இருக்கிறீர்கள்",
+    "room_id": "structured-ta-0-1791528123586290700",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 6426,
+        "translated_text": "नमस्ते, आप आज कैसी हैं?",
+        "stt_ms": 3199,
+        "translate_ms": 2011,
+        "tts_ms": 826,
+        "total_ms": 6036
+      },
+      "en-IN": {
+        "end_to_end_ms": 5684,
+        "translated_text": "Hello, how are you today",
+        "stt_ms": 3199,
+        "translate_ms": 1438,
+        "tts_ms": 639,
+        "total_ms": 5276
+      },
+      "ta-IN": {
+        "end_to_end_ms": 6318,
+        "translated_text": "வணக்கம், இன்று எப்படி இருக்கிறீர்கள்?",
+        "stt_ms": 3199,
+        "translate_ms": 1849,
+        "tts_ms": 828,
+        "total_ms": 5876
+      },
+      "te-IN": {
+        "end_to_end_ms": 6556,
+        "translated_text": "నమస్కారం, ఈ రోజు ఎలా ఉన్నారు?",
+        "stt_ms": 3199,
+        "translate_ms": 1972,
+        "tts_ms": 912,
+        "total_ms": 6083
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "te",
+    "index": 0,
+    "text": "నమస్తే, ఈరోజు మీరు ఎలా ఉన్నారు?",
+    "transcript": "నమస్తే ఈరోజు మీరు ఎలా ఉన్నారు",
+    "room_id": "structured-te-0-1791528143478972100",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 6163,
+        "translated_text": "नमस्ते, आप आज कैसी हैं?",
+        "stt_ms": 2794,
+        "translate_ms": 1991,
+        "tts_ms": 992,
+        "total_ms": 5777
+      },
+      "en-IN": {
+        "end_to_end_ms": 5382,
+        "translated_text": "Hello, how are you today",
+        "stt_ms": 2794,
+        "translate_ms": 1443,
+        "tts_ms": 732,
+        "total_ms": 4969
+      },
+      "ta-IN": {
+        "end_to_end_ms": 6523,
+        "translated_text": "வணக்கம், இன்று எப்படி இருக்கிறீர்கள்?",
+        "stt_ms": 2794,
+        "translate_ms": 2111,
+        "tts_ms": 1176,
+        "total_ms": 6081
+      },
+      "te-IN": {
+        "end_to_end_ms": 6411,
+        "translated_text": "నమస్కారం, ఈ రోజు ఎలా ఉన్నారు?",
+        "stt_ms": 2794,
+        "translate_ms": 1964,
+        "tts_ms": 1180,
+        "total_ms": 5938
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "mix",
+    "index": 0,
+    "text": "நான் இன்னைக்கு office ku போக மாட்டேன், work from home பண்றேன்.",
+    "transcript": "நான் இன்னைக்கு office-க்கு போக மாட்டேன். work from home பண்றேன்.",
+    "room_id": "structured-mix-0-1791528163218709000",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 8573,
+        "translated_text": "\"मैंने आज कार्यालय नहीं जाने का निर्णय लिया है। मैं गृह से कार्य करती हूँ।",
+        "stt_ms": 4390,
+        "translate_ms": 2127,
+        "tts_ms": 1612,
+        "total_ms": 8129
+      },
+      "en-IN": {
+        "end_to_end_ms": 7926,
+        "translated_text": "“I have decided not to go to office today. I work from home.",
+        "stt_ms": 4390,
+        "translate_ms": 1568,
+        "tts_ms": 1509,
+        "total_ms": 7467
+      },
+      "ta-IN": {
+        "end_to_end_ms": 8895,
+        "translated_text": "\"நான் இன்று அலுவலகத்திற்கு வர வேண்டாம் என்று முடிவு செய்துள்ளேன். நான் வீட்டிலிருந்தே பணிபுரிகிறேன்.",
+        "stt_ms": 4390,
+        "translate_ms": 2164,
+        "tts_ms": 1845,
+        "total_ms": 8399
+      },
+      "te-IN": {
+        "end_to_end_ms": 9197,
+        "translated_text": "\"నేను ఈ రోజు కార్యాలయానికి వెళ్ళకూడదని నిర్ణయించుకున్నాను. నేను ఇంటి నుండి పని చేస్తాను.",
+        "stt_ms": 4390,
+        "translate_ms": 2106,
+        "tts_ms": 2160,
+        "total_ms": 8656
+      }
+    },
+    "error": null,
+    "complete": true
+  }
+]

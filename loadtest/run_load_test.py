@@ -9,17 +9,18 @@ about timing/concurrency, not language-pair differences:
   party B hears English
   party C hears Tamil, and is the speaker (speaks the Tamil clip)
   party D hears Tamil too, on purpose, to exercise the same-language
-    listener group (should be a passthrough, no translate call)
+    listener group (one shared translate/TTS call)
   party E hears Telugu
 
 All 5 join, then C speaks once. This produces 4 distinct target-language
-groups (Tamil passthrough for C+D, English, Hindi, Telugu) from a single
+groups (Tamil for D, English, Hindi, Telugu) from a single
 utterance, matching the fan-out this feature is built around.
 
 Usage: python loadtest/run_load_test.py [num_sessions]
 Writes results/load_test_<timestamp>.json
 """
 import asyncio
+import argparse
 import json
 import os
 import ssl
@@ -32,13 +33,11 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 FIXTURES_DIR = os.path.join(SCRIPT_DIR, "fixtures")
 RESULTS_DIR = os.path.join(SCRIPT_DIR, "results")
 
-SERVER_URL = "wss://localhost:8000"
+SERVER_URL = os.getenv("LOADTEST_SERVER_URL", "ws://127.0.0.1:8000")
 SAMPLE_RATE = 16000
 CHUNK_BYTES = 3200
 
-ssl_ctx = ssl.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
-ssl_ctx.check_hostname = False
-ssl_ctx.verify_mode = ssl.CERT_NONE
+ssl_ctx = ssl.create_default_context()
 
 LAYOUT = [
     ("A", "hi-IN", None),
@@ -56,25 +55,36 @@ def load_clip(name):
 
 
 async def run_participant(room_id, label, hearing_language, speak_clip_name, session_result):
-    async with websockets.connect(f"{SERVER_URL}/ws/{room_id}", ssl=ssl_ctx) as ws:
-        await ws.send(json.dumps({"type": "join", "language": hearing_language}))
+    options = {"ssl": ssl_ctx} if SERVER_URL.startswith("wss://") else {}
+    async with websockets.connect(f"{SERVER_URL}/ws/{room_id}", **options) as ws:
+        await ws.send(json.dumps({"type": "join", "language": hearing_language,
+                                  "role": "speaker" if speak_clip_name else "listener",
+                                  "access_token": os.environ.get("DEMO_ACCESS_TOKEN", "")}))
         joined = json.loads(await ws.recv())
+        if joined.get("type") != "joined":
+            raise RuntimeError("Join rejected; check server configuration and invite")
         party_id = joined["party_id"]
 
         received_events = []
         connect_done_time = time.perf_counter()
+        ready = asyncio.Event()
 
         async def receive_loop():
             try:
                 async for raw in ws:
                     msg = json.loads(raw)
                     received_events.append((time.perf_counter(), msg))
+                    if msg["type"] == "ready":
+                        ready.set()
+                    if msg["type"] == "error":
+                        raise RuntimeError(msg.get("message", "provider error"))
                     if msg["type"] == "audio":
                         return
             except websockets.exceptions.ConnectionClosed:
                 pass
 
         receive_task = asyncio.create_task(receive_loop())
+        await asyncio.wait_for(ready.wait(), timeout=10)
 
         if speak_clip_name:
             clip = load_clip(speak_clip_name)
@@ -123,8 +133,7 @@ async def run_one_session(session_index):
     return session_result
 
 
-async def main():
-    num_sessions = int(sys.argv[1]) if len(sys.argv) > 1 else 8
+async def main(num_sessions):
     os.makedirs(RESULTS_DIR, exist_ok=True)
 
     all_sessions = []
@@ -132,6 +141,9 @@ async def main():
         print(f"running session {i + 1}/{num_sessions}...")
         result = await run_one_session(i + 1)
         all_sessions.append(result)
+        checkpoint = os.path.join(RESULTS_DIR, "load_test_latest.json")
+        with open(checkpoint, "w", encoding="utf-8") as stream:
+            json.dump(all_sessions, stream, indent=2)
         for party_id, events in result["events"].items():
             for e in events:
                 if e["type"] == "latency":
@@ -142,6 +154,7 @@ async def main():
                     )
         if result.get("timeouts"):
             print(f"  WARNING: timeouts in session {i + 1}: {result['timeouts']}")
+            break
 
     out_path = os.path.join(RESULTS_DIR, f"load_test_{int(time.time())}.json")
     with open(out_path, "w", encoding="utf-8") as f:
@@ -150,4 +163,15 @@ async def main():
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    parser = argparse.ArgumentParser(description="Historical concurrency benchmark; prefer run_pilot.py")
+    parser.add_argument("num_sessions", nargs="?", type=int, default=1)
+    parser.add_argument("--live", action="store_true")
+    args = parser.parse_args()
+    if not args.live:
+        print(f"Dry run only: {args.num_sessions} session(s). Pass --live to execute.")
+    elif not os.environ.get("DEMO_ACCESS_TOKEN"):
+        raise SystemExit("Set DEMO_ACCESS_TOKEN to the server invite")
+    elif args.num_sessions < 1 or args.num_sessions > 3:
+        raise SystemExit("Choose 1-3 sessions; use the checkpointed structured campaign for larger tests")
+    else:
+        asyncio.run(main(args.num_sessions))

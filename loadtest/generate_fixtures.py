@@ -6,6 +6,7 @@ microphone or human speaker.
 Run once: python loadtest/generate_fixtures.py
 """
 import base64
+import argparse
 import os
 
 from dotenv import load_dotenv
@@ -16,7 +17,6 @@ FIXTURES_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fixture
 SAMPLE_RATE = 16000
 
 load_dotenv(os.path.join(PROJECT_DIR, ".env"))
-API_KEY = os.environ["SARVAM_API_KEY"]
 
 CLIPS = {
     "hindi": ("hi-IN", "नमस्ते, मैं आज सुबह बाजार गया था कुछ सब्जियां खरीदने के लिए।"),
@@ -27,10 +27,19 @@ CLIPS = {
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--live", action="store_true")
+    args = parser.parse_args()
     os.makedirs(FIXTURES_DIR, exist_ok=True)
-    client = SarvamAI(api_subscription_key=API_KEY)
+    missing = [name for name in CLIPS if not os.path.exists(os.path.join(FIXTURES_DIR, f"{name}.pcm"))]
+    print(f"{len(missing)} missing clips; existing fixtures will be reused")
+    if not args.live or not missing:
+        return
+    client = SarvamAI(api_subscription_key=os.environ["SARVAM_API_KEY"])
 
     for name, (language_code, text) in CLIPS.items():
+        if name not in missing:
+            continue
         response = client.text_to_speech.convert(
             text=text,
             language_code=language_code,

@@ -5,6 +5,7 @@ input without needing a real speaker.
 Run once: python loadtest/generate_test_fixtures.py
 """
 import base64
+import argparse
 import os
 
 from dotenv import load_dotenv
@@ -18,7 +19,6 @@ FIXTURES_DIR = os.path.join(SCRIPT_DIR, "test_fixtures")
 SAMPLE_RATE = 16000
 
 load_dotenv(os.path.join(PROJECT_DIR, ".env"))
-API_KEY = os.environ["SARVAM_API_KEY"]
 
 # Code-mixed text is mostly Tamil with English words embedded, so it is
 # synthesized with the Tamil voice, same as a Tamil TTS engine would
@@ -39,13 +39,19 @@ def synthesize(client, text, language_code):
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--live", action="store_true")
+    args = parser.parse_args()
     os.makedirs(FIXTURES_DIR, exist_ok=True)
-    client = SarvamAI(api_subscription_key=API_KEY)
-
     all_entries = test_set.ALL_STANDARD + test_set.ALL_CODEMIX
-    print(f"synthesizing {len(all_entries)} clips...")
+    missing = [(category, index, text) for category, index, text in all_entries
+               if not os.path.exists(os.path.join(FIXTURES_DIR, f"{category}_{index}.pcm"))]
+    print(f"{len(missing)} missing clips; {len(all_entries) - len(missing)} reused")
+    if not args.live or not missing:
+        return
+    client = SarvamAI(api_subscription_key=os.environ["SARVAM_API_KEY"])
 
-    for category, index, text in all_entries:
+    for category, index, text in missing:
         tts_language = TTS_LANGUAGE_FOR[category]
         out_path = os.path.join(FIXTURES_DIR, f"{category}_{index}.pcm")
         if os.path.exists(out_path):

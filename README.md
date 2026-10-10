@@ -8,6 +8,24 @@ within a sentence. The model figures out what was said; everyone else gets
 it translated into whatever they personally picked. Built on Sarvam AI's
 realtime STT, translation, and TTS APIs.
 
+## Portfolio release
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for the INR 500 budget, deployment steps,
+verification commands, and resume wording. Live Sarvam access now defaults to
+disabled and requires a private demo invite. Listen-only participants use no
+upstream STT. Short reconnects preserve identity and STT within a 10-second
+grace period; server restarts and longer interruptions start fresh sessions.
+Usage reservations persist in SQLite and stop new paid work at configured limits.
+
+The structured harness now defaults to a zero-credit five-clip dry run, saves
+each utterance immediately, resumes completed samples, and stops on failures.
+The pilot completed all 5 categories / 20 target outputs. The full campaign then
+completed all 92 utterances / 368 target outputs with no missing final results.
+See [the benchmark report](loadtest/results/structured_test_campaign_report.md)
+for per-pair results and methodology; two failed attempts required controlled
+retries. Conservative lifetime reservations for both runs total INR 112.111
+before GST; this is not a provider billing receipt.
+
 ## Architecture
 
 ```
@@ -24,7 +42,7 @@ mic (browser) --PCM16/16kHz--> FastAPI backend --> Sarvam realtime STT (language
                                  WebSocket --> that language's listeners --> playback
 ```
 
-Each participant runs their own one-directional pipeline (mic -> their own
+Each speaking participant runs their own one-directional pipeline (mic -> their own
 STT, always `language_code="auto"` so they're never boxed into one
 language); audio flows in one direction per speaker, through the pipeline,
 once per *distinct target language* among the other participants -- not
@@ -69,6 +87,8 @@ Create `.env` in the project root:
 
 ```
 SARVAM_API_KEY=your_key_here
+LIVE_ENABLED=true
+DEMO_ACCESS_TOKEN=use_a_random_secret_of_at_least_32_characters
 ```
 
 ## Running
@@ -80,6 +100,8 @@ SARVAM_API_KEY=your_key_here
 Open `http://localhost:8000` in a real browser (mic access needs a real
 browser permission grant, not an embedded/sandboxed preview). `localhost`
 counts as a secure context, so plain HTTP is fine here.
+Enter your private demo invite before joining. See `.env.example` for usage
+caps and configuration; leave `LIVE_ENABLED=false` for a zero-credit preview.
 
 ### Running with HTTPS (needed for a second device)
 
@@ -144,8 +166,8 @@ Check that Windows Firewall allows inbound TCP on port 8000, or use a
 tunnel / deployed backend instead if the two devices genuinely can't reach
 each other on the LAN. Don't use a public tunnel (ngrok, localtunnel, SSH
 reverse tunnels, etc.) without deciding that deliberately -- it exposes
-this server, and your Sarvam API key's usage, to the open internet with no
-authentication in front of it.
+this server to the open internet. Keep invite access, origin restrictions,
+session limits, and the persistent usage ledger configured before exposing it.
 
 ## Deploying beyond localhost
 
@@ -186,8 +208,8 @@ Two hard constraints if you host this somewhere other than a LAN demo:
   (`stt_ms` = speech-start to transcript-commit, `translate_ms`, `tts_ms`,
   `total_ms`).
 - **Hardening pass**: WebSocket auto-reconnect with backoff if the
-  connection drops unexpectedly (mic stays live, a fresh STT session
-  starts on reconnect); secure-context check before requesting mic access
+  connection drops unexpectedly (mic stays live; the portfolio pass now retains
+  the STT session within a bounded reconnect grace period); secure-context check before requesting mic access
   (clear error instead of a silent failure over plain HTTP on a non-
   localhost host); friendly messages for mic-permission-denied/no-mic;
   audio blob URLs are revoked after use; best-effort cleanup on tab close
@@ -247,24 +269,28 @@ Two hard constraints if you host this somewhere other than a LAN demo:
   correctly as English (not forced into Telugu), and a Tamil-preference
   listener got a correct Tamil translation of it.
 
-## Known limitations / not yet built
+## Measurement boundaries and remaining work
 
-- **No reconnect handling for the client's own session.** A dropped socket
-  removes that participant from the room; they'd need to refresh and
-  rejoin (the room itself becomes rejoinable promptly -- see the rejoin
-  fix above -- but no state is preserved for the rejoining device).
-- **No structured test set has been run.** The instrumentation captures
-  real per-utterance timing from day one, but a scripted multi-language
-  test set with reported real numbers (per language pair) needs live mic
-  input across actual conversations -- that hasn't been executed yet.
-  Don't quote `logs/metrics.jsonl` numbers as representative until it has.
-- **`total_ms` is a partial end-to-end number.** It covers STT-commit +
-  translate + TTS-generation. It does **not** include mic-capture/network
-  transit to the backend or the client-side delay between receiving audio
-  and playback actually starting -- those need client-reported timestamps
-  that aren't wired up.
-- **No acoustic echo cancellation.** Headphones are required (see above)
-  instead; AEC is an explicit stretch goal in the build plan, not core.
+- **Reconnects:** a short network drop resumes the same participant and STT
+  connection using a private resume token. Audio captured during the drop is
+  discarded rather than replayed. Restarted servers and expired sessions cannot
+  recover upstream STT state.
+- **Structured tests:** raw JSON and per-pair summary CSV are now checkpointed
+  durably. The full campaign completed 92 utterances / 368 target outputs. Synthetic test
+  audio measures this pipeline, not human conversational accuracy.
+- **Timing:** `total_ms` remains the server pipeline timing (speech-start VAD
+  event to transcript commit, translation, synthesis). The harness separately
+  records send-start to listener audio receipt as `end_to_end_ms`. The browser
+  reports receive-to-playback and approximate capture-to-playback timing with
+  clock RTT. Approximate capture uses the first above-threshold PCM chunk, not
+  acoustic speech-end; these metrics must not be conflated.
+- **Feedback:** browser AEC, noise suppression, and automatic gain control are
+  requested. The default playback guard sends silence while translated audio
+  plays, making interaction half-duplex. Headphones remain recommended; robust
+  full-duplex echo suppression needs separate device testing.
+- **Deployment:** private invite access is implemented. Rooms still live in one
+  process; run one worker/instance. Distributed routing and native-speaker
+  accuracy review remain future work, as detailed in DEPLOYMENT.md.
 - **Stretch goals not built**: real telephony bridge, voice cloning,
   document AI integration -- all explicitly out of scope for the core demo.
 
@@ -292,7 +318,7 @@ logs/metrics.jsonl      Per-utterance latency log (gitignored, created at runtim
 
 ```bash
 .venv\Scripts\python loadtest\generate_fixtures.py   # once, needs SARVAM_API_KEY
-.venv\Scripts\python loadtest\run_load_test.py 8      # 8 full 5-person sessions
+.venv\Scripts\python loadtest\run_load_test.py       # dry run; --live opens one paid session
 ```
 
 Needs the server already running (any of the commands under "Running"
@@ -307,8 +333,9 @@ Tamil-English (Tanglish-style) sentences -- 92 total. The non-English
 sentences are model-generated, not verified by a native speaker.
 
 ```bash
-.venv\Scripts\python loadtest\generate_test_fixtures.py   # once, needs SARVAM_API_KEY
-.venv\Scripts\python loadtest\run_structured_test.py
+.venv\Scripts\python loadtest\generate_test_fixtures.py   # checks existing fixtures; no API calls
+.venv\Scripts\python loadtest\run_structured_test.py       # zero-credit cost preview
+.venv\Scripts\python loadtest\run_pilot.py --live          # bounded 5-utterance campaign
 ```
 
 Each utterance runs in its own room: one speaker plus four listeners
@@ -323,7 +350,7 @@ missing. Writes `results/structured_test_<timestamp>.json` (raw, every
 data point, nulls where something genuinely didn't arrive) and a
 `_summary.csv` with p50/p95 per pair and overall.
 
-**Status: not yet run to completion.** First attempt got through 29 of
+**Historical status before the portfolio hardening pass:** First attempt got through 29 of
 92 utterances (196 real data points, since discarded when the retry
 started clean) before hitting `"Credits exhausted. Visit the API
 Dashboard to review and manage your subscription."` from Sarvam. Along
@@ -336,5 +363,6 @@ the background for their own 30-second timeout while the loop moved on
 connections, up to ~3.8s per Priority 1's numbers, before the speaker
 even started) with a fixed 1-second delay, since a listener's own idle
 STT session sitting unused for longer than necessary seems related to
-why connections were dropping. The harness is fixed and ready; running
-it to completion needs Sarvam credits restored first.
+why connections were dropping. This was the historical blocker; the portfolio
+pass has now completed the full campaign using listen-only participants,
+readiness negotiation, explicit trailing silence, and durable checkpoints.

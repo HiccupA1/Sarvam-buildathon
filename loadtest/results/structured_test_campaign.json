@@ -1,0 +1,4270 @@
+[
+  {
+    "category": "hi",
+    "index": 0,
+    "text": "नमस्ते, आज आप कैसे हैं?",
+    "transcript": "नमस्ते आज आप कैसे हैं",
+    "room_id": "structured-hi-0-1791528087074784400",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 5920,
+        "translated_text": "नमस्ते, आप आज कैसी हैं?",
+        "stt_ms": 2662,
+        "translate_ms": 2164,
+        "tts_ms": 712,
+        "total_ms": 5538
+      },
+      "en-IN": {
+        "end_to_end_ms": 5275,
+        "translated_text": "Hello, how are you today",
+        "stt_ms": 2662,
+        "translate_ms": 1477,
+        "tts_ms": 603,
+        "total_ms": 4742
+      },
+      "ta-IN": {
+        "end_to_end_ms": 5759,
+        "translated_text": "வணக்கம், இன்று எப்படி இருக்கிறீர்கள்?",
+        "stt_ms": 2662,
+        "translate_ms": 1834,
+        "tts_ms": 705,
+        "total_ms": 5201
+      },
+      "te-IN": {
+        "end_to_end_ms": 5972,
+        "translated_text": "నమస్కారం, ఈ రోజు ఎలా ఉన్నారు?",
+        "stt_ms": 2662,
+        "translate_ms": 1891,
+        "tts_ms": 827,
+        "total_ms": 5380
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "en",
+    "index": 0,
+    "text": "Hello, how are you doing today?",
+    "transcript": "Hello, how are you doing today?",
+    "room_id": "structured-en-0-1791528105137690800",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 4712,
+        "translated_text": "नमस्ते, आज आप कैसे हैं?",
+        "stt_ms": 2172,
+        "translate_ms": 1448,
+        "tts_ms": 687,
+        "total_ms": 4307
+      },
+      "en-IN": {
+        "end_to_end_ms": 4108,
+        "translated_text": "Hello, how are you doing today?",
+        "stt_ms": 2172,
+        "translate_ms": 870,
+        "tts_ms": 622,
+        "total_ms": 3664
+      },
+      "ta-IN": {
+        "end_to_end_ms": 4898,
+        "translated_text": "வணக்கம், இன்று எப்படி இருக்கிறீர்கள்?",
+        "stt_ms": 2172,
+        "translate_ms": 1414,
+        "tts_ms": 838,
+        "total_ms": 4424
+      },
+      "te-IN": {
+        "end_to_end_ms": 4765,
+        "translated_text": "నమస్కారం, ఈ రోజు ఎలా ఉన్నారు?",
+        "stt_ms": 2172,
+        "translate_ms": 1309,
+        "tts_ms": 783,
+        "total_ms": 4264
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "ta",
+    "index": 0,
+    "text": "வணக்கம், இன்று நீங்கள் எப்படி இருக்கிறீர்கள்?",
+    "transcript": "வணக்கம் இன்று நீங்கள் எப்படி இருக்கிறீர்கள்",
+    "room_id": "structured-ta-0-1791528123586290700",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 6426,
+        "translated_text": "नमस्ते, आप आज कैसी हैं?",
+        "stt_ms": 3199,
+        "translate_ms": 2011,
+        "tts_ms": 826,
+        "total_ms": 6036
+      },
+      "en-IN": {
+        "end_to_end_ms": 5684,
+        "translated_text": "Hello, how are you today",
+        "stt_ms": 3199,
+        "translate_ms": 1438,
+        "tts_ms": 639,
+        "total_ms": 5276
+      },
+      "ta-IN": {
+        "end_to_end_ms": 6318,
+        "translated_text": "வணக்கம், இன்று எப்படி இருக்கிறீர்கள்?",
+        "stt_ms": 3199,
+        "translate_ms": 1849,
+        "tts_ms": 828,
+        "total_ms": 5876
+      },
+      "te-IN": {
+        "end_to_end_ms": 6556,
+        "translated_text": "నమస్కారం, ఈ రోజు ఎలా ఉన్నారు?",
+        "stt_ms": 3199,
+        "translate_ms": 1972,
+        "tts_ms": 912,
+        "total_ms": 6083
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "te",
+    "index": 0,
+    "text": "నమస్తే, ఈరోజు మీరు ఎలా ఉన్నారు?",
+    "transcript": "నమస్తే ఈరోజు మీరు ఎలా ఉన్నారు",
+    "room_id": "structured-te-0-1791528143478972100",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 6163,
+        "translated_text": "नमस्ते, आप आज कैसी हैं?",
+        "stt_ms": 2794,
+        "translate_ms": 1991,
+        "tts_ms": 992,
+        "total_ms": 5777
+      },
+      "en-IN": {
+        "end_to_end_ms": 5382,
+        "translated_text": "Hello, how are you today",
+        "stt_ms": 2794,
+        "translate_ms": 1443,
+        "tts_ms": 732,
+        "total_ms": 4969
+      },
+      "ta-IN": {
+        "end_to_end_ms": 6523,
+        "translated_text": "வணக்கம், இன்று எப்படி இருக்கிறீர்கள்?",
+        "stt_ms": 2794,
+        "translate_ms": 2111,
+        "tts_ms": 1176,
+        "total_ms": 6081
+      },
+      "te-IN": {
+        "end_to_end_ms": 6411,
+        "translated_text": "నమస్కారం, ఈ రోజు ఎలా ఉన్నారు?",
+        "stt_ms": 2794,
+        "translate_ms": 1964,
+        "tts_ms": 1180,
+        "total_ms": 5938
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "mix",
+    "index": 0,
+    "text": "நான் இன்னைக்கு office ku போக மாட்டேன், work from home பண்றேன்.",
+    "transcript": "நான் இன்னைக்கு office-க்கு போக மாட்டேன். work from home பண்றேன்.",
+    "room_id": "structured-mix-0-1791528163218709000",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 8573,
+        "translated_text": "\"मैंने आज कार्यालय नहीं जाने का निर्णय लिया है। मैं गृह से कार्य करती हूँ।",
+        "stt_ms": 4390,
+        "translate_ms": 2127,
+        "tts_ms": 1612,
+        "total_ms": 8129
+      },
+      "en-IN": {
+        "end_to_end_ms": 7926,
+        "translated_text": "“I have decided not to go to office today. I work from home.",
+        "stt_ms": 4390,
+        "translate_ms": 1568,
+        "tts_ms": 1509,
+        "total_ms": 7467
+      },
+      "ta-IN": {
+        "end_to_end_ms": 8895,
+        "translated_text": "\"நான் இன்று அலுவலகத்திற்கு வர வேண்டாம் என்று முடிவு செய்துள்ளேன். நான் வீட்டிலிருந்தே பணிபுரிகிறேன்.",
+        "stt_ms": 4390,
+        "translate_ms": 2164,
+        "tts_ms": 1845,
+        "total_ms": 8399
+      },
+      "te-IN": {
+        "end_to_end_ms": 9197,
+        "translated_text": "\"నేను ఈ రోజు కార్యాలయానికి వెళ్ళకూడదని నిర్ణయించుకున్నాను. నేను ఇంటి నుండి పని చేస్తాను.",
+        "stt_ms": 4390,
+        "translate_ms": 2106,
+        "tts_ms": 2160,
+        "total_ms": 8656
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "hi",
+    "index": 1,
+    "text": "मैं आज सुबह सब्जियां खरीदने बाजार गया था।",
+    "transcript": "मैं आज सुबह सब्ज़ियाँ खरीदने बाज़ार गया था",
+    "room_id": "structured-hi-1-1791528302707131600",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 8354,
+        "translated_text": "मैं आज सुबह सब्ज़ियाँ खरीदने के लिए बाज़ार गई थी।",
+        "stt_ms": 4408,
+        "translate_ms": 2258,
+        "tts_ms": 1281,
+        "total_ms": 7947
+      },
+      "en-IN": {
+        "end_to_end_ms": 7876,
+        "translated_text": "I went to the market this morning to buy vegetables",
+        "stt_ms": 4408,
+        "translate_ms": 1472,
+        "tts_ms": 1432,
+        "total_ms": 7312
+      },
+      "ta-IN": {
+        "end_to_end_ms": 8218,
+        "translated_text": "நான் இன்று காலை காய்கறிகள் வாங்க கடைக்குச் சென்றேன்.",
+        "stt_ms": 4408,
+        "translate_ms": 2007,
+        "tts_ms": 1208,
+        "total_ms": 7623
+      },
+      "te-IN": {
+        "end_to_end_ms": 8677,
+        "translated_text": "నేను ఈ ఉదయం కూరగాయలు కొనడానికి మార్కెట్‌కి వెళ్ళాను",
+        "stt_ms": 4408,
+        "translate_ms": 2066,
+        "tts_ms": 1554,
+        "total_ms": 8028
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "en",
+    "index": 1,
+    "text": "I went to the market this morning to buy vegetables.",
+    "transcript": "I went to the market this morning to buy vegetables.",
+    "room_id": "structured-en-1-1791528953919160000",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 6929,
+        "translated_text": "मैं आज सुबह सब्ज़ियाँ खरीदने के लिए बाज़ार गई थी।",
+        "stt_ms": 3594,
+        "translate_ms": 1636,
+        "tts_ms": 1188,
+        "total_ms": 6418
+      },
+      "en-IN": {
+        "end_to_end_ms": 6090,
+        "translated_text": "I went to the market this morning to buy vegetables.",
+        "stt_ms": 3594,
+        "translate_ms": 856,
+        "tts_ms": 999,
+        "total_ms": 5449
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7090,
+        "translated_text": "நான் இன்று காலையில் காய்கறிகள் வாங்குவதற்காகச் சந்தைக்குச் சென்றேன்.",
+        "stt_ms": 3594,
+        "translate_ms": 1504,
+        "tts_ms": 1289,
+        "total_ms": 6387
+      },
+      "te-IN": {
+        "end_to_end_ms": 6901,
+        "translated_text": "నేను ఈ ఉదయం కూరగాయలు కొనడానికి మార్కెట్‌కి వెళ్ళాను.",
+        "stt_ms": 3594,
+        "translate_ms": 1401,
+        "tts_ms": 1200,
+        "total_ms": 6195
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "ta",
+    "index": 1,
+    "text": "நான் இன்று காலை காய்கறிகள் வாங்க சந்தைக்கு சென்றேன்.",
+    "transcript": "நான் இன்று காலை காய்கறிகள் வாங்க சந்தைக்கு சென்றேன்",
+    "room_id": "structured-ta-1-1791528974056070400",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7628,
+        "translated_text": "मैं आज सुबह सब्ज़ियाँ खरीदने के लिए बाज़ार गई थी।",
+        "stt_ms": 3867,
+        "translate_ms": 2230,
+        "tts_ms": 1119,
+        "total_ms": 7216
+      },
+      "en-IN": {
+        "end_to_end_ms": 6742,
+        "translated_text": "I went to the market this morning to buy vegetables",
+        "stt_ms": 3867,
+        "translate_ms": 1431,
+        "tts_ms": 989,
+        "total_ms": 6287
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7507,
+        "translated_text": "நான் இன்று காலை காய்கறிகள் வாங்க கடைக்குச் சென்றேன்.",
+        "stt_ms": 3867,
+        "translate_ms": 1990,
+        "tts_ms": 1153,
+        "total_ms": 7010
+      },
+      "te-IN": {
+        "end_to_end_ms": 7678,
+        "translated_text": "నేను ఈ ఉదయం కూరగాయలు కొనడానికి మార్కెట్‌కి వెళ్ళాను",
+        "stt_ms": 3867,
+        "translate_ms": 2005,
+        "tts_ms": 1278,
+        "total_ms": 7150
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "te",
+    "index": 1,
+    "text": "నేను ఈరోజు ఉదయం కూరగాయలు కొనడానికి మార్కెట్‌కు వెళ్ళాను.",
+    "transcript": "నేను ఈరోజు ఉదయం కూరగాయలు కొనడానికి market-కు వెళ్ళాను.",
+    "room_id": "structured-te-1-1791528995700210800",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 8335,
+        "translated_text": "मैं आज सब्ज़ियाँ खरीदने के लिए बाज़ार गई हूँ।",
+        "stt_ms": 4888,
+        "translate_ms": 2150,
+        "tts_ms": 904,
+        "total_ms": 7942
+      },
+      "en-IN": {
+        "end_to_end_ms": 7754,
+        "translated_text": "I went to the market to buy vegetables today.",
+        "stt_ms": 4888,
+        "translate_ms": 1482,
+        "tts_ms": 962,
+        "total_ms": 7332
+      },
+      "ta-IN": {
+        "end_to_end_ms": 8658,
+        "translated_text": "நான் இன்று காய்கறிகள் வாங்குவதற்குச் சந்தைக்குச் சென்றேன்.",
+        "stt_ms": 4888,
+        "translate_ms": 2009,
+        "tts_ms": 1304,
+        "total_ms": 8201
+      },
+      "te-IN": {
+        "end_to_end_ms": 8686,
+        "translated_text": "నేను ఈ రోజు కూరగాయలు కొనడానికి మార్కెట్ కి వెళ్ళాను.",
+        "stt_ms": 4888,
+        "translate_ms": 2030,
+        "tts_ms": 1287,
+        "total_ms": 8205
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "mix",
+    "index": 1,
+    "text": "அந்த meeting நாளைக்கு morning ku postpone ஆகிடுச்சு.",
+    "transcript": "அந்த meeting நாளைக்கு morningக்கு postpone ஆகிடுச்சு",
+    "room_id": "structured-mix-1-1791529017492456200",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 8071,
+        "translated_text": "(उस बैठक को कल सुबह के लिए स्थगित कर दिया गया है।)",
+        "stt_ms": 4185,
+        "translate_ms": 2142,
+        "tts_ms": 1103,
+        "total_ms": 7430
+      },
+      "en-IN": {
+        "end_to_end_ms": 7569,
+        "translated_text": "(That meeting has been postponed to tomorrow morning.)",
+        "stt_ms": 4185,
+        "translate_ms": 1577,
+        "tts_ms": 1163,
+        "total_ms": 6925
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7888,
+        "translated_text": "(அந்தக் கூட்டம் நாளை காலைக்கு ஒத்திவைக்கப்பட்டுள்ளது.)",
+        "stt_ms": 4185,
+        "translate_ms": 2070,
+        "tts_ms": 968,
+        "total_ms": 7223
+      },
+      "te-IN": {
+        "end_to_end_ms": 7787,
+        "translated_text": "(ఆ సమావేశం రేపు ఉదయం వరకు వాయిదా పడింది.)",
+        "stt_ms": 4185,
+        "translate_ms": 1910,
+        "tts_ms": 1000,
+        "total_ms": 7095
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "hi",
+    "index": 2,
+    "text": "इस हफ्ते मौसम बहुत अच्छा है।",
+    "transcript": "इस हफ्ते मौसम बहुत अच्छा है",
+    "room_id": "structured-hi-2-1791529038812512600",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 6411,
+        "translated_text": "इस सप्ताह मौसम बहुत अच्छा है।",
+        "stt_ms": 2990,
+        "translate_ms": 2059,
+        "tts_ms": 985,
+        "total_ms": 6034
+      },
+      "en-IN": {
+        "end_to_end_ms": 5245,
+        "translated_text": "The weather is very good this week",
+        "stt_ms": 2990,
+        "translate_ms": 1308,
+        "tts_ms": 555,
+        "total_ms": 4853
+      },
+      "ta-IN": {
+        "end_to_end_ms": 6450,
+        "translated_text": "இந்த வாரத்தில் வானிலை மிகவும் நன்றாக உள்ளது.",
+        "stt_ms": 2990,
+        "translate_ms": 2042,
+        "tts_ms": 978,
+        "total_ms": 6010
+      },
+      "te-IN": {
+        "end_to_end_ms": 6030,
+        "translated_text": "ఈ వారం వాతావరణం చాలా బాగుంది",
+        "stt_ms": 2990,
+        "translate_ms": 1865,
+        "tts_ms": 729,
+        "total_ms": 5584
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "en",
+    "index": 2,
+    "text": "The weather is very nice this week.",
+    "transcript": "The weather is very nice this week.",
+    "room_id": "structured-en-2-1791529058974595100",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 5037,
+        "translated_text": "इस सप्ताह मौसम बहुत अच्छा है।",
+        "stt_ms": 2321,
+        "translate_ms": 1381,
+        "tts_ms": 953,
+        "total_ms": 4655
+      },
+      "en-IN": {
+        "end_to_end_ms": 4069,
+        "translated_text": "The weather is very nice this week.",
+        "stt_ms": 2321,
+        "translate_ms": 698,
+        "tts_ms": 630,
+        "total_ms": 3649
+      },
+      "ta-IN": {
+        "end_to_end_ms": 5015,
+        "translated_text": "இந்த வாரம் வானிலை மிகவும் நன்றாக இருக்கிறது.",
+        "stt_ms": 2321,
+        "translate_ms": 1269,
+        "tts_ms": 1002,
+        "total_ms": 4592
+      },
+      "te-IN": {
+        "end_to_end_ms": 4846,
+        "translated_text": "ఈ వారం వాతావరణం చాలా బాగుంది.",
+        "stt_ms": 2321,
+        "translate_ms": 1228,
+        "tts_ms": 857,
+        "total_ms": 4406
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "ta",
+    "index": 2,
+    "text": "இந்த வாரம் வானிலை மிகவும் நன்றாக இருக்கிறது.",
+    "transcript": "இந்த ஆரம் வானிலை மிகவும் நன்றாக இருக்கிறது",
+    "room_id": "structured-ta-2-1791529076920709700",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7040,
+        "translated_text": "यहाँ का मौसम बहुत अच्छा है",
+        "stt_ms": 3656,
+        "translate_ms": 2077,
+        "tts_ms": 925,
+        "total_ms": 6658
+      },
+      "en-IN": {
+        "end_to_end_ms": 6134,
+        "translated_text": "The weather here is very good",
+        "stt_ms": 3656,
+        "translate_ms": 1389,
+        "tts_ms": 675,
+        "total_ms": 5720
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7107,
+        "translated_text": "இங்குள்ள வானிலை மிகவும் நன்றாக உள்ளது.",
+        "stt_ms": 3656,
+        "translate_ms": 1984,
+        "tts_ms": 1019,
+        "total_ms": 6659
+      },
+      "te-IN": {
+        "end_to_end_ms": 6925,
+        "translated_text": "ఇక్కడ వాతావరణం చాలా బాగుంది",
+        "stt_ms": 3656,
+        "translate_ms": 1924,
+        "tts_ms": 873,
+        "total_ms": 6453
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "te",
+    "index": 2,
+    "text": "ఈ వారం వాతావరణం చాలా బాగుంది.",
+    "transcript": "ఈ వారం వాతావరణం చాలా బాగుంది",
+    "room_id": "structured-te-2-1791529096817873400",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 6490,
+        "translated_text": "इस सप्ताह मौसम बहुत अच्छा रहा है",
+        "stt_ms": 2643,
+        "translate_ms": 2026,
+        "tts_ms": 1127,
+        "total_ms": 5796
+      },
+      "en-IN": {
+        "end_to_end_ms": 5555,
+        "translated_text": "The weather has been very nice this week",
+        "stt_ms": 2643,
+        "translate_ms": 1346,
+        "tts_ms": 845,
+        "total_ms": 4834
+      },
+      "ta-IN": {
+        "end_to_end_ms": 6465,
+        "translated_text": "இந்த வாரத்தில் வானிலை மிகவும் நன்றாக இருந்தது.",
+        "stt_ms": 2643,
+        "translate_ms": 1922,
+        "tts_ms": 1148,
+        "total_ms": 5713
+      },
+      "te-IN": {
+        "end_to_end_ms": 6153,
+        "translated_text": "ఈ వారం వాతావరణం చాలా బాగుంది",
+        "stt_ms": 2643,
+        "translate_ms": 1773,
+        "tts_ms": 960,
+        "total_ms": 5376
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "mix",
+    "index": 2,
+    "text": "நீ market போற வழியில ரொம்ப busy ஆ இருந்துச்சு.",
+    "transcript": "நீ market போற வழியில ரொம்ப busy-ஆ இருந்துச்சு",
+    "room_id": "structured-mix-2-1791529629435258600",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 9265,
+        "translated_text": "आप बाजार जाने के रास्ते में बहुत व्यस्त थे।",
+        "stt_ms": 4446,
+        "queue_ms": 0,
+        "translate_ms": 2102,
+        "tts_ms": 1430,
+        "total_ms": 7978
+      },
+      "en-IN": {
+        "end_to_end_ms": 8150,
+        "translated_text": "You were very busy on your way to the market",
+        "stt_ms": 4446,
+        "queue_ms": 0,
+        "translate_ms": 1417,
+        "tts_ms": 897,
+        "total_ms": 6760
+      },
+      "ta-IN": {
+        "end_to_end_ms": 9228,
+        "translated_text": "நீங்கள் சந்தைக்குச் செல்லும் வழியில் மிகவும் பரபரப்பாக இருந்தீர்கள்.",
+        "stt_ms": 4446,
+        "queue_ms": 0,
+        "translate_ms": 1903,
+        "tts_ms": 1449,
+        "total_ms": 7798
+      },
+      "te-IN": {
+        "end_to_end_ms": 9288,
+        "translated_text": "మీరు మార్కెట్ కి వెళ్ళే దారిలో చాలా బిజీగా ఉన్నారు",
+        "stt_ms": 4446,
+        "queue_ms": 0,
+        "translate_ms": 2109,
+        "tts_ms": 1285,
+        "total_ms": 7840
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "hi",
+    "index": 3,
+    "text": "क्या आप मुझे कल तक रिपोर्ट भेज सकते हैं?",
+    "transcript": "क्या आप मुझे कल तक report भेज सकते हैं",
+    "room_id": "structured-hi-3-1791529642164826600",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7264,
+        "translated_text": "महोदय, क्या मैं कल तक रिपोर्ट प्राप्त कर सकती हूँ?",
+        "stt_ms": 3661,
+        "queue_ms": 0,
+        "translate_ms": 2096,
+        "tts_ms": 1121,
+        "total_ms": 6878
+      },
+      "en-IN": {
+        "end_to_end_ms": 6901,
+        "translated_text": "Sir please can I have the report by tomorrow",
+        "stt_ms": 3661,
+        "queue_ms": 0,
+        "translate_ms": 1415,
+        "tts_ms": 1415,
+        "total_ms": 6491
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7297,
+        "translated_text": "மன்னிக்கவும், அறிக்கையை நாளைக்குள் தர முடியுமா?",
+        "stt_ms": 3661,
+        "queue_ms": 0,
+        "translate_ms": 1938,
+        "tts_ms": 1250,
+        "total_ms": 6849
+      },
+      "te-IN": {
+        "end_to_end_ms": 7089,
+        "translated_text": "నివేదికను రేపు నాటికి నాకు అందజేయగలరా?",
+        "stt_ms": 3661,
+        "queue_ms": 0,
+        "translate_ms": 1887,
+        "tts_ms": 1073,
+        "total_ms": 6621
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "en",
+    "index": 3,
+    "text": "Can you please send me the report by tomorrow?",
+    "transcript": "Can you please send me the report by tomorrow?",
+    "room_id": "structured-en-3-1791529653738701900",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7088,
+        "translated_text": "क्या आप मुझे कल तक रिपोर्ट भेज सकते हैं?",
+        "stt_ms": 3797,
+        "queue_ms": 0,
+        "translate_ms": 1416,
+        "tts_ms": 1467,
+        "total_ms": 6680
+      },
+      "en-IN": {
+        "end_to_end_ms": 5974,
+        "translated_text": "Can you please send me the report by tomorrow?",
+        "stt_ms": 3797,
+        "queue_ms": 0,
+        "translate_ms": 824,
+        "tts_ms": 922,
+        "total_ms": 5543
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7137,
+        "translated_text": "அறிக்கையை நாளைக்குள் அனுப்ப முடியுமா?",
+        "stt_ms": 3797,
+        "queue_ms": 0,
+        "translate_ms": 1395,
+        "tts_ms": 1489,
+        "total_ms": 6681
+      },
+      "te-IN": {
+        "end_to_end_ms": 6900,
+        "translated_text": "రేపు నాటికి నాకు నివేదిక పంపగలరా?",
+        "stt_ms": 3797,
+        "queue_ms": 0,
+        "translate_ms": 1399,
+        "tts_ms": 1218,
+        "total_ms": 6414
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "ta",
+    "index": 3,
+    "text": "நீங்கள் நாளைக்குள் அறிக்கையை அனுப்ப முடியுமா?",
+    "transcript": "நீங்கள் நாளைக்குள் அறிக்கையை அனுப்ப முடியுமா?",
+    "room_id": "structured-ta-3-1791529664969337900",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 6799,
+        "translated_text": "क्या आप कल तक रिपोर्ट भेज सकते हैं?",
+        "stt_ms": 3368,
+        "queue_ms": 0,
+        "translate_ms": 2122,
+        "tts_ms": 921,
+        "total_ms": 6411
+      },
+      "en-IN": {
+        "end_to_end_ms": 6134,
+        "translated_text": "Can you send the report by tomorrow?",
+        "stt_ms": 3368,
+        "queue_ms": 0,
+        "translate_ms": 1406,
+        "tts_ms": 944,
+        "total_ms": 5718
+      },
+      "ta-IN": {
+        "end_to_end_ms": 6968,
+        "translated_text": "நீங்கள் அறிக்கையை நாளைக்குள் அனுப்ப முடியுமா?",
+        "stt_ms": 3368,
+        "queue_ms": 0,
+        "translate_ms": 2029,
+        "tts_ms": 1100,
+        "total_ms": 6497
+      },
+      "te-IN": {
+        "end_to_end_ms": 6825,
+        "translated_text": "రేపు నాటికి నివేదిక పంపించగలరా?",
+        "stt_ms": 3368,
+        "queue_ms": 0,
+        "translate_ms": 1965,
+        "tts_ms": 1014,
+        "total_ms": 6347
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "te",
+    "index": 3,
+    "text": "మీరు రేపటిలోగా నివేదిక పంపగలరా?",
+    "transcript": "మీరు రేపటి యోగ నివేదిక పంపగలరా?",
+    "room_id": "structured-te-3-1791529675895706200",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 8243,
+        "translated_text": "क्या आप कृपया मुझे कल का योग रिपोर्ट भेज सकते हैं?",
+        "stt_ms": 4079,
+        "queue_ms": 0,
+        "translate_ms": 2073,
+        "tts_ms": 1465,
+        "total_ms": 7617
+      },
+      "en-IN": {
+        "end_to_end_ms": 7165,
+        "translated_text": "Could you please send me the yoga report for tomorrow?",
+        "stt_ms": 4079,
+        "queue_ms": 0,
+        "translate_ms": 1471,
+        "tts_ms": 967,
+        "total_ms": 6517
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7920,
+        "translated_text": "நாளைக்கான யோகா அறிக்கையை அனுப்ப முடியுமா?",
+        "stt_ms": 4079,
+        "queue_ms": 0,
+        "translate_ms": 1935,
+        "tts_ms": 1239,
+        "total_ms": 7253
+      },
+      "te-IN": {
+        "end_to_end_ms": 7658,
+        "translated_text": "రేపు యోగా నివేదిక పంపగలరా?",
+        "stt_ms": 4079,
+        "queue_ms": 0,
+        "translate_ms": 2036,
+        "tts_ms": 860,
+        "total_ms": 6975
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "mix",
+    "index": 3,
+    "text": "என் phone battery ரொம்ப fast ஆ drain ஆகுது.",
+    "transcript": "என் phone battery ரொம்ப fast-ஆ drain ஆகுது",
+    "room_id": "structured-mix-3-1791529688151339300",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 8042,
+        "translated_text": "मेरी सेल फोन की बैटरी इतनी जल्दी क्यों खत्म हो रही है?",
+        "stt_ms": 3827,
+        "queue_ms": 0,
+        "translate_ms": 2002,
+        "tts_ms": 1495,
+        "total_ms": 7324
+      },
+      "en-IN": {
+        "end_to_end_ms": 7043,
+        "translated_text": "My cell phone battery is draining so fast",
+        "stt_ms": 3827,
+        "queue_ms": 0,
+        "translate_ms": 1405,
+        "tts_ms": 1090,
+        "total_ms": 6322
+      },
+      "ta-IN": {
+        "end_to_end_ms": 8291,
+        "translated_text": "என்னுடைய செல்ஃபோன் பேட்டரி மிகவும் வேகமாக வற்றிக் கொண்டிருக்கிறது.",
+        "stt_ms": 3827,
+        "queue_ms": 0,
+        "translate_ms": 2041,
+        "tts_ms": 1671,
+        "total_ms": 7539
+      },
+      "te-IN": {
+        "end_to_end_ms": 7709,
+        "translated_text": "నా సెల్ ఫోన్ బ్యాటరీ అంత త్వరగా ఖాళీ అవుతోంది.",
+        "stt_ms": 3827,
+        "queue_ms": 0,
+        "translate_ms": 1879,
+        "tts_ms": 1241,
+        "total_ms": 6947
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "hi",
+    "index": 4,
+    "text": "मेरा भाई कॉलेज में कंप्यूटर साइंस पढ़ रहा है।",
+    "transcript": "मेरा भाई college में computer science पढ़ रहा है",
+    "room_id": "structured-hi-4-1791529700418794000",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 9088,
+        "translated_text": "मेरा भाई महाविद्यालय में कंप्यूटर विज्ञान की पढ़ाई कर रहा है।",
+        "stt_ms": 4962,
+        "queue_ms": 0,
+        "translate_ms": 2134,
+        "tts_ms": 1599,
+        "total_ms": 8695
+      },
+      "en-IN": {
+        "end_to_end_ms": 8009,
+        "translated_text": "My brother is studying computer science in college",
+        "stt_ms": 4962,
+        "queue_ms": 0,
+        "translate_ms": 1417,
+        "tts_ms": 1226,
+        "total_ms": 7605
+      },
+      "ta-IN": {
+        "end_to_end_ms": 8770,
+        "translated_text": "என் அண்ணன் கல்லூரியில் கணினி அறிவியல் பயின்று வருகிறார்.",
+        "stt_ms": 4962,
+        "queue_ms": 0,
+        "translate_ms": 1987,
+        "tts_ms": 1394,
+        "total_ms": 8343
+      },
+      "te-IN": {
+        "end_to_end_ms": 13505,
+        "translated_text": "నా తమ్ముడు కళాశాలలో కంప్యూటర్ సైన్స్ చదువుతున్నాడు.",
+        "stt_ms": 4962,
+        "queue_ms": 0,
+        "translate_ms": 2009,
+        "tts_ms": 6089,
+        "total_ms": 13060
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "en",
+    "index": 4,
+    "text": "My brother is studying computer science in college.",
+    "transcript": "My brother is studying computer science in college.",
+    "room_id": "structured-en-4-1791529715569843300",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7897,
+        "translated_text": "मेरा भाई कॉलेज में कंप्यूटर विज्ञान की पढ़ाई कर रहा है।",
+        "stt_ms": 4485,
+        "queue_ms": 0,
+        "translate_ms": 1411,
+        "tts_ms": 1582,
+        "total_ms": 7478
+      },
+      "en-IN": {
+        "end_to_end_ms": 6830,
+        "translated_text": "My brother is studying computer science in college.",
+        "stt_ms": 4485,
+        "queue_ms": 0,
+        "translate_ms": 709,
+        "tts_ms": 1203,
+        "total_ms": 6397
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7509,
+        "translated_text": "என் அண்ணன் கல்லூரியில் கணினி அறிவியலைப் பயின்று வருகிறார்.",
+        "stt_ms": 4485,
+        "queue_ms": 0,
+        "translate_ms": 1281,
+        "tts_ms": 1274,
+        "total_ms": 7040
+      },
+      "te-IN": {
+        "end_to_end_ms": 7511,
+        "translated_text": "మా అన్నయ్య కళాశాలలో కంప్యూటర్ సైన్స్ చదువుతున్నారు.",
+        "stt_ms": 4485,
+        "queue_ms": 0,
+        "translate_ms": 1326,
+        "tts_ms": 1232,
+        "total_ms": 7043
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "ta",
+    "index": 4,
+    "text": "என் தம்பி கல்லூரியில் கணினி அறிவியல் படிக்கிறான்.",
+    "transcript": "என் தம்பி கல்லூரியில் கணினி அறிவியல் படிக்கிறான்",
+    "room_id": "structured-ta-4-1791529726211335000",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 8277,
+        "translated_text": "मेरा भाई महाविद्यालय में कंप्यूटर विज्ञान का अध्ययन कर रहा है।",
+        "stt_ms": 4269,
+        "queue_ms": 0,
+        "translate_ms": 1925,
+        "tts_ms": 1674,
+        "total_ms": 7868
+      },
+      "en-IN": {
+        "end_to_end_ms": 7099,
+        "translated_text": "My brother is studying computer science in college",
+        "stt_ms": 4269,
+        "queue_ms": 0,
+        "translate_ms": 1365,
+        "tts_ms": 1031,
+        "total_ms": 6665
+      },
+      "ta-IN": {
+        "end_to_end_ms": 8249,
+        "translated_text": "என் அண்ணன் கல்லூரியில் கணினி அறிவியல் பயின்று வருகிறார்.",
+        "stt_ms": 4269,
+        "queue_ms": 0,
+        "translate_ms": 2004,
+        "tts_ms": 1520,
+        "total_ms": 7793
+      },
+      "te-IN": {
+        "end_to_end_ms": 8195,
+        "translated_text": "నా తమ్ముడు కళాశాలలో కంప్యూటర్ సైన్స్ చదువుతున్నాడు.",
+        "stt_ms": 4269,
+        "queue_ms": 0,
+        "translate_ms": 1894,
+        "tts_ms": 1559,
+        "total_ms": 7722
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "te",
+    "index": 4,
+    "text": "నా తమ్ముడు కళాశాలలో కంప్యూటర్ సైన్స్ చదువుతున్నాడు.",
+    "transcript": "నా తమ్ముడు కళాశాలలో Computer Science చదువుతున్నాడు.",
+    "room_id": "structured-te-4-1791529737181157800",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 9157,
+        "translated_text": "मेरा भाई कॉलेज में कंप्यूटर विज्ञान की पढ़ाई कर रहा है।",
+        "stt_ms": 5560,
+        "queue_ms": 0,
+        "translate_ms": 1971,
+        "tts_ms": 1234,
+        "total_ms": 8765
+      },
+      "en-IN": {
+        "end_to_end_ms": 8489,
+        "translated_text": "My brother is studying computer science in college.",
+        "stt_ms": 5560,
+        "queue_ms": 0,
+        "translate_ms": 1412,
+        "tts_ms": 1091,
+        "total_ms": 8063
+      },
+      "ta-IN": {
+        "end_to_end_ms": 9513,
+        "translated_text": "என் அண்ணன் கல்லூரியில் கணினி அறிவியலைப் பயின்று வருகிறார்.",
+        "stt_ms": 5560,
+        "queue_ms": 0,
+        "translate_ms": 1981,
+        "tts_ms": 1547,
+        "total_ms": 9088
+      },
+      "te-IN": {
+        "end_to_end_ms": 9500,
+        "translated_text": "మా అన్నయ్య కళాశాలలో కంప్యూటర్ సైన్స్ చదువుతున్నారు.",
+        "stt_ms": 5560,
+        "queue_ms": 0,
+        "translate_ms": 1942,
+        "tts_ms": 1544,
+        "total_ms": 9046
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "mix",
+    "index": 4,
+    "text": "இந்த weekend நாங்க ஒரு trip plan பண்றோம்.",
+    "transcript": "இந்த weekend நாங்க 1 trip plan பண்றோம்",
+    "room_id": "structured-mix-4-1791529749608876200",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7936,
+        "translated_text": "हम इस सप्ताहांत एक 1 यात्रा पर जाने की योजना बना रहे हैं।",
+        "stt_ms": 3816,
+        "queue_ms": 0,
+        "translate_ms": 2119,
+        "tts_ms": 1471,
+        "total_ms": 7406
+      },
+      "en-IN": {
+        "end_to_end_ms": 6565,
+        "translated_text": "We are planning to go on a 1 trip this weekend",
+        "stt_ms": 3816,
+        "queue_ms": 0,
+        "translate_ms": 1378,
+        "tts_ms": 834,
+        "total_ms": 6028
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7540,
+        "translated_text": "இந்த வார இறுதியில் ஒரு 1 trip செல்லத் திட்டமிட்டுள்ளோம்.",
+        "stt_ms": 3816,
+        "queue_ms": 0,
+        "translate_ms": 2102,
+        "tts_ms": 1048,
+        "total_ms": 6966
+      },
+      "te-IN": {
+        "end_to_end_ms": 7700,
+        "translated_text": "ఈ వారాంతంలో మేము ఒక 1 ప్రయాణం చేయాలని యోచిస్తున్నాము.",
+        "stt_ms": 3816,
+        "queue_ms": 0,
+        "translate_ms": 1979,
+        "tts_ms": 1313,
+        "total_ms": 7108
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "hi",
+    "index": 5,
+    "text": "हमने कल रात साथ में एक फिल्म देखी।",
+    "transcript": "हमने कल रात साथ में एक फ़िल्म देखी।",
+    "room_id": "structured-hi-5-1791529760291161000",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 6732,
+        "translated_text": "हमने कल रात एक फिल्म देखी थी।",
+        "stt_ms": 3516,
+        "queue_ms": 0,
+        "translate_ms": 2040,
+        "tts_ms": 777,
+        "total_ms": 6333
+      },
+      "en-IN": {
+        "end_to_end_ms": 6255,
+        "translated_text": "We watched a movie last night together.",
+        "stt_ms": 3516,
+        "queue_ms": 0,
+        "translate_ms": 1413,
+        "tts_ms": 896,
+        "total_ms": 5825
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7163,
+        "translated_text": "நேற்று இரவு நாங்கள் இருவரும் சேர்ந்து ஒரு திரைப்படம் பார்த்தோம்.",
+        "stt_ms": 3516,
+        "queue_ms": 0,
+        "translate_ms": 1964,
+        "tts_ms": 1213,
+        "total_ms": 6693
+      },
+      "te-IN": {
+        "end_to_end_ms": 6639,
+        "translated_text": "మేము నిన్న రాత్రి కలిసి ఒక సినిమా చూశాము.",
+        "stt_ms": 3516,
+        "queue_ms": 0,
+        "translate_ms": 1787,
+        "tts_ms": 871,
+        "total_ms": 6174
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "en",
+    "index": 5,
+    "text": "We watched a movie together last night.",
+    "transcript": "We watched a movie together last night.",
+    "room_id": "structured-en-5-1791529770299772300",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 5997,
+        "translated_text": "हमने कल रात एक फिल्म देखी थी।",
+        "stt_ms": 3180,
+        "queue_ms": 0,
+        "translate_ms": 1514,
+        "tts_ms": 897,
+        "total_ms": 5591
+      },
+      "en-IN": {
+        "end_to_end_ms": 5122,
+        "translated_text": "We watched a movie together last night.",
+        "stt_ms": 3180,
+        "queue_ms": 0,
+        "translate_ms": 735,
+        "tts_ms": 772,
+        "total_ms": 4687
+      },
+      "ta-IN": {
+        "end_to_end_ms": 5963,
+        "translated_text": "நாங்கள் நேற்று இரவு ஒன்றாக ஒரு திரைப்படம் பார்த்தோம்.",
+        "stt_ms": 3180,
+        "queue_ms": 0,
+        "translate_ms": 1330,
+        "tts_ms": 993,
+        "total_ms": 5503
+      },
+      "te-IN": {
+        "end_to_end_ms": 5855,
+        "translated_text": "మేము నిన్న రాత్రి కలిసి ఒక సినిమా చూశాము.",
+        "stt_ms": 3180,
+        "queue_ms": 0,
+        "translate_ms": 1277,
+        "tts_ms": 921,
+        "total_ms": 5378
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "ta",
+    "index": 5,
+    "text": "நேற்று இரவு நாங்கள் ஒன்றாக ஒரு படம் பார்த்தோம்.",
+    "transcript": "நேற்று இரவு நாங்கள் ஒன்றாக ஒரு படம் பார்த்தோம்",
+    "room_id": "structured-ta-5-1791529780313234300",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7975,
+        "translated_text": "पिछली रात हमने एक साथ एक फिल्म देखी।",
+        "stt_ms": 4387,
+        "queue_ms": 0,
+        "translate_ms": 2100,
+        "tts_ms": 1097,
+        "total_ms": 7584
+      },
+      "en-IN": {
+        "end_to_end_ms": 7007,
+        "translated_text": "Last night we watched a movie together",
+        "stt_ms": 4387,
+        "queue_ms": 0,
+        "translate_ms": 1429,
+        "tts_ms": 794,
+        "total_ms": 6610
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7802,
+        "translated_text": "நேற்று இரவு நாங்கள் ஒன்றாக ஒரு திரைப்படம் பார்த்தோம்.",
+        "stt_ms": 4387,
+        "queue_ms": 0,
+        "translate_ms": 1954,
+        "tts_ms": 1041,
+        "total_ms": 7382
+      },
+      "te-IN": {
+        "end_to_end_ms": 7493,
+        "translated_text": "గత రాత్రి మేము కలిసి ఒక సినిమా చూశాము.",
+        "stt_ms": 4387,
+        "queue_ms": 0,
+        "translate_ms": 1826,
+        "tts_ms": 845,
+        "total_ms": 7058
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "te",
+    "index": 5,
+    "text": "నిన్న రాత్రి మేము కలిసి ఒక సినిమా చూశాము.",
+    "transcript": "నిన్న రాత్రి మేము కలిసి ఒక సినిమా చూశాము.",
+    "room_id": "structured-te-5-1791529790861268400",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 8236,
+        "translated_text": "हम कल रात भी बाहर गए थे, है ना?",
+        "stt_ms": 4804,
+        "queue_ms": 0,
+        "translate_ms": 2009,
+        "tts_ms": 1012,
+        "total_ms": 7825
+      },
+      "en-IN": {
+        "end_to_end_ms": 7488,
+        "translated_text": "We went out last night too, right?",
+        "stt_ms": 4804,
+        "queue_ms": 0,
+        "translate_ms": 1469,
+        "tts_ms": 795,
+        "total_ms": 7068
+      },
+      "ta-IN": {
+        "end_to_end_ms": 8153,
+        "translated_text": "நாங்கள் நேற்று இரவு வெளியே சென்றோம், இல்லையா?",
+        "stt_ms": 4804,
+        "queue_ms": 0,
+        "translate_ms": 2034,
+        "tts_ms": 870,
+        "total_ms": 7708
+      },
+      "te-IN": {
+        "end_to_end_ms": 8211,
+        "translated_text": "మేము కూడా నిన్న రాత్రి బయటకు వెళ్ళాము కదా?",
+        "stt_ms": 4804,
+        "queue_ms": 0,
+        "translate_ms": 1992,
+        "tts_ms": 964,
+        "total_ms": 7760
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "mix",
+    "index": 5,
+    "text": "அவன் project ரொம்ப நல்லா complete பண்ணிட்டான்.",
+    "transcript": "அவன் project ரொம்ப நல்லா complete பண்ணிட்டான்",
+    "room_id": "structured-mix-5-1791529801845955200",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7360,
+        "translated_text": "उन्होंने परियोजना को बहुत अच्छी तरह से पूरा किया है।",
+        "stt_ms": 3756,
+        "queue_ms": 0,
+        "translate_ms": 1911,
+        "tts_ms": 1198,
+        "total_ms": 6865
+      },
+      "en-IN": {
+        "end_to_end_ms": 6666,
+        "translated_text": "He has completed the project very well",
+        "stt_ms": 3756,
+        "queue_ms": 0,
+        "translate_ms": 1385,
+        "tts_ms": 1014,
+        "total_ms": 6155
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7267,
+        "translated_text": "அவர் திட்டத்தை மிகவும் சிறப்பாக நிறைவு செய்துள்ளார்.",
+        "stt_ms": 3756,
+        "queue_ms": 0,
+        "translate_ms": 1792,
+        "tts_ms": 1195,
+        "total_ms": 6743
+      },
+      "te-IN": {
+        "end_to_end_ms": 7196,
+        "translated_text": "ఆయన ఈ ప్రాజెక్టును చాలా చక్కగా పూర్తి చేశారు.",
+        "stt_ms": 3756,
+        "queue_ms": 0,
+        "translate_ms": 1895,
+        "tts_ms": 1007,
+        "total_ms": 6658
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "hi",
+    "index": 6,
+    "text": "ट्रेन बीस मिनट देरी से आई।",
+    "transcript": "Train 20 minute देरी से आई",
+    "room_id": "structured-hi-6-1791529811917125400",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 6296,
+        "translated_text": "ट्रेन 20 मिनट विलंबित हो गई थी।",
+        "stt_ms": 2766,
+        "queue_ms": 0,
+        "translate_ms": 2152,
+        "tts_ms": 993,
+        "total_ms": 5911
+      },
+      "en-IN": {
+        "end_to_end_ms": 5456,
+        "translated_text": "The train was delayed by 20 minutes",
+        "stt_ms": 2766,
+        "queue_ms": 0,
+        "translate_ms": 1455,
+        "tts_ms": 806,
+        "total_ms": 5027
+      },
+      "ta-IN": {
+        "end_to_end_ms": 5955,
+        "translated_text": "20 நிமிடங்கள் ரயில் தாமதமானது.",
+        "stt_ms": 2766,
+        "queue_ms": 0,
+        "translate_ms": 1856,
+        "tts_ms": 900,
+        "total_ms": 5522
+      },
+      "te-IN": {
+        "end_to_end_ms": 6450,
+        "translated_text": "రైలు 20 నిమిషాలు ఆలస్యం అయ్యింది.",
+        "stt_ms": 2766,
+        "queue_ms": 0,
+        "translate_ms": 2003,
+        "tts_ms": 1221,
+        "total_ms": 5990
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "en",
+    "index": 6,
+    "text": "The train was delayed by twenty minutes.",
+    "transcript": "The train was delayed by twenty minutes.",
+    "room_id": "structured-en-6-1791529822350142000",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 6200,
+        "translated_text": "ट्रेन को बीस मिनट का विलंब हुआ।",
+        "stt_ms": 3581,
+        "queue_ms": 0,
+        "translate_ms": 1358,
+        "tts_ms": 871,
+        "total_ms": 5810
+      },
+      "en-IN": {
+        "end_to_end_ms": 5776,
+        "translated_text": "The train was delayed by twenty minutes.",
+        "stt_ms": 3581,
+        "queue_ms": 0,
+        "translate_ms": 753,
+        "tts_ms": 1005,
+        "total_ms": 5339
+      },
+      "ta-IN": {
+        "end_to_end_ms": 6392,
+        "translated_text": "அந்த இரயில் இருபது நிமிடங்கள் தாமதமானது.",
+        "stt_ms": 3581,
+        "queue_ms": 0,
+        "translate_ms": 1282,
+        "tts_ms": 1070,
+        "total_ms": 5933
+      },
+      "te-IN": {
+        "end_to_end_ms": 6454,
+        "translated_text": "రైలు ఇరవై నిమిషాలు ఆలస్యం అయ్యింది.",
+        "stt_ms": 3581,
+        "queue_ms": 0,
+        "translate_ms": 1315,
+        "tts_ms": 1100,
+        "total_ms": 5996
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "ta",
+    "index": 6,
+    "text": "ரயில் இருபது நிமிடம் தாமதமாக வந்தது.",
+    "transcript": "ரயில் 20 நிமிடம் தாமதமாக வந்தது",
+    "room_id": "structured-ta-6-1791529832688554500",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7131,
+        "translated_text": "ट्रेन 20 मिनट विलंबित हो गई थी।",
+        "stt_ms": 3630,
+        "queue_ms": 0,
+        "translate_ms": 2112,
+        "tts_ms": 980,
+        "total_ms": 6722
+      },
+      "en-IN": {
+        "end_to_end_ms": 6305,
+        "translated_text": "The train was delayed by 20 minutes",
+        "stt_ms": 3630,
+        "queue_ms": 0,
+        "translate_ms": 1436,
+        "tts_ms": 810,
+        "total_ms": 5876
+      },
+      "ta-IN": {
+        "end_to_end_ms": 6876,
+        "translated_text": "20 நிமிடங்கள் ரயில் தாமதமானது.",
+        "stt_ms": 3630,
+        "queue_ms": 0,
+        "translate_ms": 1838,
+        "tts_ms": 945,
+        "total_ms": 6413
+      },
+      "te-IN": {
+        "end_to_end_ms": 7290,
+        "translated_text": "రైలు 20 నిమిషాలు ఆలస్యం అయ్యింది.",
+        "stt_ms": 3630,
+        "queue_ms": 0,
+        "translate_ms": 1948,
+        "tts_ms": 1227,
+        "total_ms": 6805
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "te",
+    "index": 6,
+    "text": "రైలు ఇరవై నిమిషాలు ఆలస్యంగా వచ్చింది.",
+    "transcript": "రైలు 20 నిమిషాలు ఆలస్యంగా వచ్చింది.",
+    "room_id": "structured-te-6-1791529844053713600",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7816,
+        "translated_text": "ट्रेन बीस मिनट देरी से चल रही थी।",
+        "stt_ms": 4332,
+        "queue_ms": 0,
+        "translate_ms": 1995,
+        "tts_ms": 1079,
+        "total_ms": 7406
+      },
+      "en-IN": {
+        "end_to_end_ms": 7284,
+        "translated_text": "The train was running twenty minutes late.",
+        "stt_ms": 4332,
+        "queue_ms": 0,
+        "translate_ms": 1411,
+        "tts_ms": 1103,
+        "total_ms": 6846
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7749,
+        "translated_text": "ரயில் இருபது நிமிடங்கள் தாமதமாக ஓடியது.",
+        "stt_ms": 4332,
+        "queue_ms": 0,
+        "translate_ms": 1975,
+        "tts_ms": 980,
+        "total_ms": 7287
+      },
+      "te-IN": {
+        "end_to_end_ms": 8232,
+        "translated_text": "రైలు ఇరవై నిమిషాలు ఆలస్యంగా నడుస్తోంది.",
+        "stt_ms": 4332,
+        "queue_ms": 0,
+        "translate_ms": 2020,
+        "tts_ms": 1395,
+        "total_ms": 7747
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "mix",
+    "index": 6,
+    "text": "நான் இப்போ traffic la stuck ஆயிட்டேன்.",
+    "transcript": "நான் இப்போ traffic-ல stuck ஆயிட்டேன்",
+    "room_id": "structured-mix-6-1791529856460023600",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 6553,
+        "translated_text": "मैं ट्रैफिक जाम में फँसी हुई हूँ।",
+        "stt_ms": 3099,
+        "queue_ms": 0,
+        "translate_ms": 1991,
+        "tts_ms": 1090,
+        "total_ms": 6180
+      },
+      "en-IN": {
+        "end_to_end_ms": 5411,
+        "translated_text": "I am stuck in traffic jam",
+        "stt_ms": 3099,
+        "queue_ms": 0,
+        "translate_ms": 1259,
+        "tts_ms": 659,
+        "total_ms": 5017
+      },
+      "ta-IN": {
+        "end_to_end_ms": 6430,
+        "translated_text": "போக்குவரத்து நெரிசலில் சிக்கித் தவிக்கிறேன்.",
+        "stt_ms": 3099,
+        "queue_ms": 0,
+        "translate_ms": 1972,
+        "tts_ms": 942,
+        "total_ms": 6013
+      },
+      "te-IN": {
+        "end_to_end_ms": 6348,
+        "translated_text": "నేను ట్రాఫిక్ జామ్‌లో చిక్కుకున్నాను.",
+        "stt_ms": 3099,
+        "queue_ms": 0,
+        "translate_ms": 1798,
+        "tts_ms": 1017,
+        "total_ms": 5914
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "hi",
+    "index": 7,
+    "text": "वह हमारे घर के पास एक अस्पताल में काम करती है।",
+    "transcript": "वह हमारे घर के पास एक अस्पताल में काम करती है।",
+    "room_id": "structured-hi-7-1791529866835166800",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 8170,
+        "translated_text": "वे हमारे घर के पास एक अस्पताल में काम करती हैं।",
+        "stt_ms": 4568,
+        "queue_ms": 0,
+        "translate_ms": 1952,
+        "tts_ms": 1247,
+        "total_ms": 7767
+      },
+      "en-IN": {
+        "end_to_end_ms": 7732,
+        "translated_text": "She works in a hospital near our house.",
+        "stt_ms": 4568,
+        "queue_ms": 0,
+        "translate_ms": 1421,
+        "tts_ms": 1296,
+        "total_ms": 7285
+      },
+      "ta-IN": {
+        "end_to_end_ms": 8277,
+        "translated_text": "அவர் எங்கள் வீட்டருகே உள்ள ஒரு மருத்துவமனையில் பணிபுரிகிறார்.",
+        "stt_ms": 4568,
+        "queue_ms": 0,
+        "translate_ms": 1929,
+        "tts_ms": 1287,
+        "total_ms": 7784
+      },
+      "te-IN": {
+        "end_to_end_ms": 8711,
+        "translated_text": "ఆమె మా ఇంటి సమీపంలో ఉన్న ఆసుపత్రిలో పనిచేస్తారు.",
+        "stt_ms": 4568,
+        "queue_ms": 0,
+        "translate_ms": 1973,
+        "tts_ms": 1656,
+        "total_ms": 8197
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "en",
+    "index": 7,
+    "text": "She works at a hospital near our house.",
+    "transcript": "She works at a hospital near our house.",
+    "room_id": "structured-en-7-1791529880012623400",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7164,
+        "translated_text": "वह हमारे घर के पास एक अस्पताल में काम करती हैं।",
+        "stt_ms": 3658,
+        "queue_ms": 0,
+        "translate_ms": 1631,
+        "tts_ms": 1451,
+        "total_ms": 6740
+      },
+      "en-IN": {
+        "end_to_end_ms": 6218,
+        "translated_text": "She works at a hospital near our house.",
+        "stt_ms": 3658,
+        "queue_ms": 0,
+        "translate_ms": 863,
+        "tts_ms": 1237,
+        "total_ms": 5758
+      },
+      "ta-IN": {
+        "end_to_end_ms": 6856,
+        "translated_text": "அவர் எங்கள் வீட்டருகே உள்ள ஒரு மருத்துவமனையில் பணிபுரிகிறார்.",
+        "stt_ms": 3658,
+        "queue_ms": 0,
+        "translate_ms": 1449,
+        "tts_ms": 1252,
+        "total_ms": 6359
+      },
+      "te-IN": {
+        "end_to_end_ms": 7137,
+        "translated_text": "ఆమె మా ఇంటి సమీపంలో ఉన్న ఆసుపత్రిలో పనిచేస్తారు.",
+        "stt_ms": 3658,
+        "queue_ms": 0,
+        "translate_ms": 1463,
+        "tts_ms": 1486,
+        "total_ms": 6607
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "ta",
+    "index": 7,
+    "text": "அவள் எங்கள் வீட்டிற்கு அருகில் ஒரு மருத்துவமனையில் வேலை செய்கிறாள்.",
+    "transcript": "அவள் எங்கள் வீட்டிற்கு அருகில் ஒரு மருத்துவமனையில் வேலை செய்கிறாள்",
+    "room_id": "structured-ta-7-1791529891467433400",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 9742,
+        "translated_text": "वह हमारे घर के पास एक अस्पताल में काम करती है।",
+        "stt_ms": 5589,
+        "queue_ms": 0,
+        "translate_ms": 2203,
+        "tts_ms": 1551,
+        "total_ms": 9343
+      },
+      "en-IN": {
+        "end_to_end_ms": 8793,
+        "translated_text": "She works in a hospital near our house",
+        "stt_ms": 5589,
+        "queue_ms": 0,
+        "translate_ms": 1489,
+        "tts_ms": 1282,
+        "total_ms": 8360
+      },
+      "ta-IN": {
+        "end_to_end_ms": 10091,
+        "translated_text": "எங்கள் வீட்டருகே இருக்கும் மருத்துவமனையில் பணிபுரிகிறார்.",
+        "stt_ms": 5589,
+        "queue_ms": 0,
+        "translate_ms": 1992,
+        "tts_ms": 2030,
+        "total_ms": 9611
+      },
+      "te-IN": {
+        "end_to_end_ms": 9559,
+        "translated_text": "ఆమె మా ఇంటి సమీపంలో ఉన్న ఆసుపత్రిలో పనిచేస్తుంది.",
+        "stt_ms": 5589,
+        "queue_ms": 0,
+        "translate_ms": 1924,
+        "tts_ms": 1554,
+        "total_ms": 9067
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "te",
+    "index": 7,
+    "text": "ఆమె మా ఇంటికి దగ్గరలో ఉన్న ఆసుపత్రిలో పని చేస్తుంది.",
+    "transcript": "ఆమె మా ఇంటికి దగ్గరలో ఉన్న ఆసుపత్రిలో పని చేస్తుంది.",
+    "room_id": "structured-te-7-1791529905231216600",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 9342,
+        "translated_text": "वह मेरे घर के निकट स्थित एक अस्पताल में कार्यरत है।",
+        "stt_ms": 5384,
+        "queue_ms": 0,
+        "translate_ms": 2111,
+        "tts_ms": 1332,
+        "total_ms": 8827
+      },
+      "en-IN": {
+        "end_to_end_ms": 8459,
+        "translated_text": "She works in a hospital which is near my house.",
+        "stt_ms": 5384,
+        "queue_ms": 0,
+        "translate_ms": 1449,
+        "tts_ms": 1068,
+        "total_ms": 7901
+      },
+      "ta-IN": {
+        "end_to_end_ms": 9976,
+        "translated_text": "அவர் என் வீட்டிற்கு அருகே உள்ள மருத்துவமனையில் பணியாற்றி வருகிறார்.",
+        "stt_ms": 5384,
+        "queue_ms": 0,
+        "translate_ms": 2017,
+        "tts_ms": 2002,
+        "total_ms": 9403
+      },
+      "te-IN": {
+        "end_to_end_ms": 9661,
+        "translated_text": "ఆమె నా ఇంటికి సమీపంలో ఉన్న ఆసుపత్రిలో కార్మికురాలు.",
+        "stt_ms": 5384,
+        "queue_ms": 0,
+        "translate_ms": 2086,
+        "tts_ms": 1596,
+        "total_ms": 9066
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "mix",
+    "index": 7,
+    "text": "அந்த restaurant food ரொம்ப tasty ஆ இருந்துச்சு.",
+    "transcript": "அந்த restaurant food ரொம்ப tasty-ஆ இருந்துச்சு",
+    "room_id": "structured-mix-7-1791529919078252300",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7419,
+        "translated_text": "और रेस्तराँ का खाना बहुत अच्छा था।",
+        "stt_ms": 3829,
+        "queue_ms": 0,
+        "translate_ms": 2046,
+        "tts_ms": 915,
+        "total_ms": 6790
+      },
+      "en-IN": {
+        "end_to_end_ms": 6626,
+        "translated_text": "And the food at the restaurant was very",
+        "stt_ms": 3829,
+        "queue_ms": 0,
+        "translate_ms": 1306,
+        "tts_ms": 850,
+        "total_ms": 5985
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7461,
+        "translated_text": "மேலும் உணவகத்தில் உணவு மிகவும்",
+        "stt_ms": 3829,
+        "queue_ms": 0,
+        "translate_ms": 1922,
+        "tts_ms": 1046,
+        "total_ms": 6797
+      },
+      "te-IN": {
+        "end_to_end_ms": 7830,
+        "translated_text": "మరియు రెస్టారెంట్లోని ఆహారం చాలా బాగుంది.",
+        "stt_ms": 3829,
+        "queue_ms": 0,
+        "translate_ms": 1937,
+        "tts_ms": 1375,
+        "total_ms": 7141
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "hi",
+    "index": 8,
+    "text": "मुझे अगले महीने एक नया फोन खरीदना है।",
+    "transcript": "मुझे अगले महीने एक नया phone खरीदना है",
+    "room_id": "structured-hi-8-1791529930820952700",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7597,
+        "translated_text": "मुझे अगले महीने एक नया फ़ोन खरीदना है।",
+        "stt_ms": 3735,
+        "queue_ms": 0,
+        "translate_ms": 2026,
+        "tts_ms": 1081,
+        "total_ms": 6842
+      },
+      "en-IN": {
+        "end_to_end_ms": 6588,
+        "translated_text": "I need to buy a new phone next month",
+        "stt_ms": 3735,
+        "queue_ms": 0,
+        "translate_ms": 1346,
+        "tts_ms": 717,
+        "total_ms": 5798
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7709,
+        "translated_text": "அடுத்த மாதம் நான் ஒரு புதிய தொலைபேசி வாங்க வேண்டும்.",
+        "stt_ms": 3735,
+        "queue_ms": 0,
+        "translate_ms": 2007,
+        "tts_ms": 1143,
+        "total_ms": 6885
+      },
+      "te-IN": {
+        "end_to_end_ms": 7836,
+        "translated_text": "వచ్చే నెలలో నేను ఒక కొత్త ఫోన్ కొనుగోలు చేయవలసి ఉంది.",
+        "stt_ms": 3735,
+        "queue_ms": 0,
+        "translate_ms": 2078,
+        "tts_ms": 1132,
+        "total_ms": 6945
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "en",
+    "index": 8,
+    "text": "I need to buy a new phone next month.",
+    "transcript": "I need to buy a new phone next month.",
+    "room_id": "structured-en-8-1791529942825406100",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 6099,
+        "translated_text": "मुझे अगले महीने एक नया फ़ोन खरीदना है।",
+        "stt_ms": 3208,
+        "queue_ms": 0,
+        "translate_ms": 1442,
+        "tts_ms": 1025,
+        "total_ms": 5675
+      },
+      "en-IN": {
+        "end_to_end_ms": 5430,
+        "translated_text": "I need to buy a new phone next month.",
+        "stt_ms": 3208,
+        "queue_ms": 0,
+        "translate_ms": 866,
+        "tts_ms": 898,
+        "total_ms": 4972
+      },
+      "ta-IN": {
+        "end_to_end_ms": 6225,
+        "translated_text": "அடுத்த மாதம் நான் ஒரு புதிய தொலைபேசி வாங்க வேண்டும்.",
+        "stt_ms": 3208,
+        "queue_ms": 0,
+        "translate_ms": 1281,
+        "tts_ms": 1243,
+        "total_ms": 5732
+      },
+      "te-IN": {
+        "end_to_end_ms": 6292,
+        "translated_text": "నేను వచ్చే నెలలో కొత్త ఫోన్ కొనుగోలు చేయవలసి ఉంది.",
+        "stt_ms": 3208,
+        "queue_ms": 0,
+        "translate_ms": 1406,
+        "tts_ms": 1162,
+        "total_ms": 5776
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "ta",
+    "index": 8,
+    "text": "அடுத்த மாதம் நான் ஒரு புதிய போன் வாங்க வேண்டும்.",
+    "transcript": "அடுத்த மாதம் நான் ஒரு புதிய phone வாங்க வேண்டும்",
+    "room_id": "structured-ta-8-1791529953207133800",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7979,
+        "translated_text": "अगले महीने मुझे एक नया फ़ोन खरीदना है।",
+        "stt_ms": 4252,
+        "queue_ms": 0,
+        "translate_ms": 1990,
+        "tts_ms": 993,
+        "total_ms": 7235
+      },
+      "en-IN": {
+        "end_to_end_ms": 7321,
+        "translated_text": "Next month I need to buy a new phone",
+        "stt_ms": 4252,
+        "queue_ms": 0,
+        "translate_ms": 1452,
+        "tts_ms": 833,
+        "total_ms": 6537
+      },
+      "ta-IN": {
+        "end_to_end_ms": 8473,
+        "translated_text": "அடுத்த மாதம் நான் ஒரு புதிய தொலைபேசி வாங்க வேண்டும்.",
+        "stt_ms": 4252,
+        "queue_ms": 0,
+        "translate_ms": 2030,
+        "tts_ms": 1372,
+        "total_ms": 7654
+      },
+      "te-IN": {
+        "end_to_end_ms": 8364,
+        "translated_text": "వచ్చే నెలలో నేను ఒక కొత్త ఫోన్ కొనుగోలు చేయవలసి ఉంది.",
+        "stt_ms": 4252,
+        "queue_ms": 0,
+        "translate_ms": 2035,
+        "tts_ms": 1224,
+        "total_ms": 7511
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "te",
+    "index": 8,
+    "text": "వచ్చే నెలలో నేను కొత్త ఫోన్ కొనాలి.",
+    "transcript": "వచ్చే నెలలో నేను కొత్త phone కొనాలి.",
+    "room_id": "structured-te-8-1791529965803091700",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7131,
+        "translated_text": "मुझे अगले महीने एक नया फ़ोन खरीदना है।",
+        "stt_ms": 3588,
+        "queue_ms": 0,
+        "translate_ms": 2134,
+        "tts_ms": 958,
+        "total_ms": 6680
+      },
+      "en-IN": {
+        "end_to_end_ms": 6422,
+        "translated_text": "I need to buy a new phone next month.",
+        "stt_ms": 3588,
+        "queue_ms": 0,
+        "translate_ms": 1433,
+        "tts_ms": 916,
+        "total_ms": 5937
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7106,
+        "translated_text": "அடுத்த மாதம் நான் ஒரு புதிய தொலைபேசி வாங்க வேண்டும்.",
+        "stt_ms": 3588,
+        "queue_ms": 0,
+        "translate_ms": 1992,
+        "tts_ms": 1010,
+        "total_ms": 6590
+      },
+      "te-IN": {
+        "end_to_end_ms": 10684,
+        "translated_text": "నేను వచ్చే నెలలో కొత్త ఫోన్ కొనుగోలు చేయవలసి ఉంది.",
+        "stt_ms": 3588,
+        "queue_ms": 0,
+        "translate_ms": 2083,
+        "tts_ms": 4477,
+        "total_ms": 10148
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "mix",
+    "index": 8,
+    "text": "நாளைக்கு exam இருக்கு, நான் இன்னைக்கு night study பண்ணனும்.",
+    "transcript": "நாளைக்கு exam இருக்கு. நான் இன்னைக்கு night study பண்ணணும்.",
+    "room_id": "structured-mix-8-1791529979541046700",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 9014,
+        "translated_text": "मेरी कल एक परीक्षा है। मुझे आज रात पढ़ाई करनी है।",
+        "stt_ms": 4994,
+        "queue_ms": 0,
+        "translate_ms": 2141,
+        "tts_ms": 1343,
+        "total_ms": 8478
+      },
+      "en-IN": {
+        "end_to_end_ms": 8580,
+        "translated_text": "I have an exam tomorrow. I have to study tonight.",
+        "stt_ms": 4994,
+        "queue_ms": 0,
+        "translate_ms": 1513,
+        "tts_ms": 1491,
+        "total_ms": 7998
+      },
+      "ta-IN": {
+        "end_to_end_ms": 9189,
+        "translated_text": "நாளை எனக்கு ஒரு தேர்வில் கலந்து கொள்ள வேண்டும். நான் இன்று இரவு படிக்க வேண்டும்.",
+        "stt_ms": 4994,
+        "queue_ms": 0,
+        "translate_ms": 2044,
+        "tts_ms": 1530,
+        "total_ms": 8568
+      },
+      "te-IN": {
+        "end_to_end_ms": 9517,
+        "translated_text": "నాకు రేపు ఒక పరీక్ష ఉంది. ఈ రాత్రి నేను చదువుకోవాలి.",
+        "stt_ms": 4994,
+        "queue_ms": 0,
+        "translate_ms": 1934,
+        "tts_ms": 1939,
+        "total_ms": 8867
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "hi",
+    "index": 9,
+    "text": "बच्चे पार्क में खेल रहे हैं।",
+    "transcript": "बच्चे पार्क में खेल रहे हैं",
+    "room_id": "structured-hi-9-1791529993577007500",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 6523,
+        "translated_text": "बच्चे पार्क में खेल रहे हैं।",
+        "stt_ms": 3304,
+        "queue_ms": 0,
+        "translate_ms": 1941,
+        "tts_ms": 865,
+        "total_ms": 6110
+      },
+      "en-IN": {
+        "end_to_end_ms": 6057,
+        "translated_text": "Children are playing in the park",
+        "stt_ms": 3304,
+        "queue_ms": 0,
+        "translate_ms": 1485,
+        "tts_ms": 816,
+        "total_ms": 5605
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7059,
+        "translated_text": "குழந்தைகள் பூங்காவில் விளையாடுகிறார்கள்.",
+        "stt_ms": 3304,
+        "queue_ms": 0,
+        "translate_ms": 2036,
+        "tts_ms": 1237,
+        "total_ms": 6577
+      },
+      "te-IN": {
+        "end_to_end_ms": 6811,
+        "translated_text": "పిల్లలు పార్కులో ఆడుకుంటున్నారు",
+        "stt_ms": 3304,
+        "queue_ms": 0,
+        "translate_ms": 2045,
+        "tts_ms": 958,
+        "total_ms": 6307
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "en",
+    "index": 9,
+    "text": "The children are playing in the park.",
+    "transcript": "The children are playing in the park",
+    "room_id": "structured-en-9-1791530004823820500",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 5575,
+        "translated_text": "बच्चे पार्क में खेल रहे हैं।",
+        "stt_ms": 2984,
+        "queue_ms": 0,
+        "translate_ms": 1372,
+        "tts_ms": 813,
+        "total_ms": 5169
+      },
+      "en-IN": {
+        "end_to_end_ms": 4972,
+        "translated_text": "The children are playing in the park",
+        "stt_ms": 2984,
+        "queue_ms": 0,
+        "translate_ms": 840,
+        "tts_ms": 711,
+        "total_ms": 4535
+      },
+      "ta-IN": {
+        "end_to_end_ms": 5645,
+        "translated_text": "குழந்தைகள் பூங்காவில் விளையாடுகிறார்கள்.",
+        "stt_ms": 2984,
+        "queue_ms": 0,
+        "translate_ms": 1259,
+        "tts_ms": 936,
+        "total_ms": 5179
+      },
+      "te-IN": {
+        "end_to_end_ms": 5766,
+        "translated_text": "పిల్లలు పార్కులో ఆడుకుంటున్నారు",
+        "stt_ms": 2984,
+        "queue_ms": 0,
+        "translate_ms": 1325,
+        "tts_ms": 967,
+        "total_ms": 5276
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "ta",
+    "index": 9,
+    "text": "குழந்தைகள் பூங்காவில் விளையாடுகிறார்கள்.",
+    "transcript": "குழந்தைகள் பூங்காவில் விளையாடுகிறார்கள்",
+    "room_id": "structured-ta-9-1791530014817103400",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7388,
+        "translated_text": "बच्चे पार्क में खेल रहे हैं।",
+        "stt_ms": 3929,
+        "queue_ms": 0,
+        "translate_ms": 2086,
+        "tts_ms": 965,
+        "total_ms": 6980
+      },
+      "en-IN": {
+        "end_to_end_ms": 6312,
+        "translated_text": "Children are playing in the park",
+        "stt_ms": 3929,
+        "queue_ms": 0,
+        "translate_ms": 1290,
+        "tts_ms": 654,
+        "total_ms": 5873
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7601,
+        "translated_text": "குழந்தைகள் பூங்காவில் விளையாடுகிறார்கள்.",
+        "stt_ms": 3929,
+        "queue_ms": 0,
+        "translate_ms": 1984,
+        "tts_ms": 1222,
+        "total_ms": 7135
+      },
+      "te-IN": {
+        "end_to_end_ms": 7077,
+        "translated_text": "పిల్లలు పార్కులో ఆడుకుంటున్నారు",
+        "stt_ms": 3929,
+        "queue_ms": 0,
+        "translate_ms": 1916,
+        "tts_ms": 716,
+        "total_ms": 6561
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "te",
+    "index": 9,
+    "text": "పిల్లలు పార్కులో ఆడుకుంటున్నారు.",
+    "transcript": "పిల్లలు park-లో ఆడుకుంటున్నారు.",
+    "room_id": "structured-te-9-1791530026533874800",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 6419,
+        "translated_text": "बच्चे पार्क में खेल रहे हैं।",
+        "stt_ms": 3163,
+        "queue_ms": 0,
+        "translate_ms": 1945,
+        "tts_ms": 933,
+        "total_ms": 6041
+      },
+      "en-IN": {
+        "end_to_end_ms": 5788,
+        "translated_text": "The children are playing in the park.",
+        "stt_ms": 3163,
+        "queue_ms": 0,
+        "translate_ms": 1330,
+        "tts_ms": 875,
+        "total_ms": 5368
+      },
+      "ta-IN": {
+        "end_to_end_ms": 6629,
+        "translated_text": "குழந்தைகள் பூங்காவில் விளையாடிக் கொண்டிருக்கிறார்கள்.",
+        "stt_ms": 3163,
+        "queue_ms": 0,
+        "translate_ms": 1917,
+        "tts_ms": 1093,
+        "total_ms": 6173
+      },
+      "te-IN": {
+        "end_to_end_ms": 6345,
+        "translated_text": "పిల్లలు పార్కులో ఆడుకుంటున్నారు.",
+        "stt_ms": 3163,
+        "queue_ms": 0,
+        "translate_ms": 1924,
+        "tts_ms": 781,
+        "total_ms": 5868
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "mix",
+    "index": 9,
+    "text": "என் laptop screen crack ஆயிடுச்சு, repair பண்ணனும்.",
+    "transcript": "என் laptop screen crack ஆயிடுச்சு repair பண்ணணும்",
+    "room_id": "structured-mix-9-1791530037215212000",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 9556,
+        "translated_text": "मेरे लैपटॉप की स्क्रीन टूट गई है, जिसकी मरम्मत करवानी होगी।",
+        "stt_ms": 5103,
+        "queue_ms": 0,
+        "translate_ms": 2216,
+        "tts_ms": 1722,
+        "total_ms": 9041
+      },
+      "en-IN": {
+        "end_to_end_ms": 8332,
+        "translated_text": "I have a broken laptop screen that needs repair",
+        "stt_ms": 5103,
+        "queue_ms": 0,
+        "translate_ms": 1414,
+        "tts_ms": 1282,
+        "total_ms": 7799
+      },
+      "ta-IN": {
+        "end_to_end_ms": 9365,
+        "translated_text": "என்னுடைய உடைந்து போன மடிக்கணினித் திரை சரிசெய்யப்பட வேண்டும்.",
+        "stt_ms": 5103,
+        "queue_ms": 0,
+        "translate_ms": 2092,
+        "tts_ms": 1611,
+        "total_ms": 8806
+      },
+      "te-IN": {
+        "end_to_end_ms": 9619,
+        "translated_text": "నా దగ్గర ఒక విరిగిన ల్యాప్టాప్ స్క్రీన్ ఉంది, దాన్ని మరమ్మతు చేయించాలి.",
+        "stt_ms": 5103,
+        "queue_ms": 0,
+        "translate_ms": 2102,
+        "tts_ms": 1792,
+        "total_ms": 8997
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "hi",
+    "index": 10,
+    "text": "जब आप घर पहुंचें तो मुझे फोन करें।",
+    "transcript": "जब आप घर पहुँचे तो मुझे phone करें",
+    "room_id": "structured-hi-10-1791530050702836900",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7642,
+        "translated_text": "घर पहुँचते ही मुझे फ़ोन कर दीजिएगा।",
+        "stt_ms": 3720,
+        "queue_ms": 0,
+        "translate_ms": 2184,
+        "tts_ms": 1283,
+        "total_ms": 7187
+      },
+      "en-IN": {
+        "end_to_end_ms": 6949,
+        "translated_text": "When you reach home, please give me a call",
+        "stt_ms": 3720,
+        "queue_ms": 0,
+        "translate_ms": 1559,
+        "tts_ms": 1186,
+        "total_ms": 6465
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7609,
+        "translated_text": "நீங்கள் வீட்டிற்கு வந்தவுடன் எனக்குத் தொலைபேசி செய்து கூறுங்கள்.",
+        "stt_ms": 3720,
+        "queue_ms": 0,
+        "translate_ms": 1998,
+        "tts_ms": 1356,
+        "total_ms": 7074
+      },
+      "te-IN": {
+        "end_to_end_ms": 7448,
+        "translated_text": "మీరు ఇంటికి చేరుకున్న వెంటనే నాకు ఫోన్ చేయండి.",
+        "stt_ms": 3720,
+        "queue_ms": 0,
+        "translate_ms": 1998,
+        "tts_ms": 1172,
+        "total_ms": 6890
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "en",
+    "index": 10,
+    "text": "Please call me when you reach home.",
+    "transcript": "Please call me when you reach home.",
+    "room_id": "structured-en-10-1791530062333710000",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 6361,
+        "translated_text": "कृपया घर पहुँचने पर मुझे फ़ोन कर लीजिए।",
+        "stt_ms": 2973,
+        "queue_ms": 0,
+        "translate_ms": 1502,
+        "tts_ms": 1474,
+        "total_ms": 5949
+      },
+      "en-IN": {
+        "end_to_end_ms": 5097,
+        "translated_text": "Please call me when you reach home.",
+        "stt_ms": 2973,
+        "queue_ms": 0,
+        "translate_ms": 746,
+        "tts_ms": 933,
+        "total_ms": 4652
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7174,
+        "translated_text": "நீங்கள் வீடு திரும்பும்போது எனக்குத் தொலைபேசி செய்து கூறுங்கள்.",
+        "stt_ms": 2973,
+        "queue_ms": 0,
+        "translate_ms": 2420,
+        "tts_ms": 1304,
+        "total_ms": 6697
+      },
+      "te-IN": {
+        "end_to_end_ms": 6223,
+        "translated_text": "మీరు ఇంటికి చేరుకున్న వెంటనే నాకు ఫోన్ చేయండి.",
+        "stt_ms": 2973,
+        "queue_ms": 0,
+        "translate_ms": 1468,
+        "tts_ms": 1292,
+        "total_ms": 5733
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "ta",
+    "index": 10,
+    "text": "வீட்டிற்கு வந்ததும் என்னை அழையுங்கள்.",
+    "transcript": "வீட்டிற்கு வந்ததும் என்னை அழையுங்கள்",
+    "room_id": "structured-ta-10-1791530073470307800",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7410,
+        "translated_text": "जब आप घर आएँ तो मुझे फ़ोन कर दीजिए।",
+        "stt_ms": 4152,
+        "queue_ms": 0,
+        "translate_ms": 2021,
+        "tts_ms": 943,
+        "total_ms": 7116
+      },
+      "en-IN": {
+        "end_to_end_ms": 6576,
+        "translated_text": "Call me when you come home",
+        "stt_ms": 4152,
+        "queue_ms": 0,
+        "translate_ms": 1394,
+        "tts_ms": 715,
+        "total_ms": 6261
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7780,
+        "translated_text": "வீடு வந்தால் எனக்குத் தொலைபேசி செய்யுங்கள்.",
+        "stt_ms": 4152,
+        "queue_ms": 0,
+        "translate_ms": 2006,
+        "tts_ms": 1275,
+        "total_ms": 7433
+      },
+      "te-IN": {
+        "end_to_end_ms": 7813,
+        "translated_text": "మీరు ఇంటికి వచ్చినప్పుడు నాకు ఫోన్ చేయండి.",
+        "stt_ms": 4152,
+        "queue_ms": 0,
+        "translate_ms": 1881,
+        "tts_ms": 1410,
+        "total_ms": 7443
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "te",
+    "index": 10,
+    "text": "మీరు ఇంటికి చేరుకున్నప్పుడు నాకు కాల్ చేయండి.",
+    "transcript": "మీరు ఇంటికి చేరుకున్నప్పుడు నాకు call చేయండి.",
+    "room_id": "structured-te-10-1791541667832458200",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 8084,
+        "translated_text": "कृपया जब आप घर के आस-पास हों तो मुझे फ़ोन कर लें।",
+        "stt_ms": 4136,
+        "queue_ms": 0,
+        "translate_ms": 2207,
+        "tts_ms": 1251,
+        "total_ms": 7594
+      },
+      "en-IN": {
+        "end_to_end_ms": 7233,
+        "translated_text": "Please give me a ring when you are around to come back to my home.",
+        "stt_ms": 4136,
+        "queue_ms": 0,
+        "translate_ms": 1481,
+        "tts_ms": 1038,
+        "total_ms": 6655
+      },
+      "ta-IN": {
+        "end_to_end_ms": 8538,
+        "translated_text": "தயவுசெய்து நீங்கள் வீட்டிற்கு வரும்போது எனக்கு ஒரு தொலைபேசி அழைப்பு கொடுங்கள்.",
+        "stt_ms": 4136,
+        "queue_ms": 0,
+        "translate_ms": 1985,
+        "tts_ms": 1819,
+        "total_ms": 7940
+      },
+      "te-IN": {
+        "end_to_end_ms": 7749,
+        "translated_text": "దయచేసి మీరు ఇంటికి వచ్చేటప్పుడు నాకు ఫోన్ చేయండి.",
+        "stt_ms": 4136,
+        "queue_ms": 0,
+        "translate_ms": 1992,
+        "tts_ms": 1015,
+        "total_ms": 7143
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "mix",
+    "index": 10,
+    "text": "அவங்க team இந்த match ரொம்ப நல்லா play பண்ணாங்க.",
+    "transcript": "அவங்க team இந்த match ரொம்ப நல்லா play பண்ணாங்க.",
+    "room_id": "structured-mix-10-1791541679890821600",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7798,
+        "translated_text": "उनकी टीम ने शानदार लड़ाई लड़ी।",
+        "stt_ms": 3957,
+        "queue_ms": 0,
+        "translate_ms": 1984,
+        "tts_ms": 1005,
+        "total_ms": 6946
+      },
+      "en-IN": {
+        "end_to_end_ms": 7036,
+        "translated_text": "“Their team put up a great fight.",
+        "stt_ms": 3957,
+        "queue_ms": 0,
+        "translate_ms": 1373,
+        "tts_ms": 841,
+        "total_ms": 6171
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7554,
+        "translated_text": "\"அவர்களின் அணி சிறப்பாக போராடியது.",
+        "stt_ms": 3957,
+        "queue_ms": 0,
+        "translate_ms": 1857,
+        "tts_ms": 870,
+        "total_ms": 6684
+      },
+      "te-IN": {
+        "end_to_end_ms": 7864,
+        "translated_text": "\"వారి జట్టు గొప్ప పోరాటం చేసింది.",
+        "stt_ms": 3957,
+        "queue_ms": 0,
+        "translate_ms": 1975,
+        "tts_ms": 1048,
+        "total_ms": 6980
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "hi",
+    "index": 11,
+    "text": "यह रेस्टोरेंट बहुत अच्छा खाना देता है।",
+    "transcript": "यह restaurant बहुत अच्छा खाना देता है",
+    "room_id": "structured-hi-11-1791541690470731400",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7857,
+        "translated_text": "यह रेस्टोरेंट खाना परोसने में वास्तव में अच्छा काम करता है।",
+        "stt_ms": 3768,
+        "queue_ms": 0,
+        "translate_ms": 1977,
+        "tts_ms": 1733,
+        "total_ms": 7478
+      },
+      "en-IN": {
+        "end_to_end_ms": 6606,
+        "translated_text": "This restaurant does a really good job of serving food",
+        "stt_ms": 3768,
+        "queue_ms": 0,
+        "translate_ms": 1331,
+        "tts_ms": 1116,
+        "total_ms": 6215
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7528,
+        "translated_text": "இந்த உணவகம் உணவு பரிமாறுவதில் மிகவும் சிறப்பாக செயல்படுகிறது.",
+        "stt_ms": 3768,
+        "queue_ms": 0,
+        "translate_ms": 1924,
+        "tts_ms": 1437,
+        "total_ms": 7129
+      },
+      "te-IN": {
+        "end_to_end_ms": 7896,
+        "translated_text": "ఈ రెస్టారెంట్ ఆహారం అందించడంలో చాలా బాగా పని చేస్తుంది.",
+        "stt_ms": 3768,
+        "queue_ms": 0,
+        "translate_ms": 1929,
+        "tts_ms": 1787,
+        "total_ms": 7484
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "en",
+    "index": 11,
+    "text": "This restaurant serves very good food.",
+    "transcript": "This restaurant serves very good food.",
+    "room_id": "structured-en-11-1791541701112059200",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7029,
+        "translated_text": "यह रेस्टोरेंट बहुत अच्छा खाना परोसता है।",
+        "stt_ms": 3948,
+        "queue_ms": 0,
+        "translate_ms": 1340,
+        "tts_ms": 1359,
+        "total_ms": 6647
+      },
+      "en-IN": {
+        "end_to_end_ms": 6099,
+        "translated_text": "This restaurant serves very good food.",
+        "stt_ms": 3948,
+        "queue_ms": 0,
+        "translate_ms": 740,
+        "tts_ms": 1019,
+        "total_ms": 5707
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7471,
+        "translated_text": "இந்த உணவகத்தில் மிகவும் நல்ல உணவு கிடைக்கிறது.",
+        "stt_ms": 3948,
+        "queue_ms": 0,
+        "translate_ms": 1692,
+        "tts_ms": 1431,
+        "total_ms": 7071
+      },
+      "te-IN": {
+        "end_to_end_ms": 6915,
+        "translated_text": "ఈ రెస్టారెంట్ చాలా మంచి ఆహారాన్ని అందిస్తుంది.",
+        "stt_ms": 3948,
+        "queue_ms": 0,
+        "translate_ms": 1289,
+        "tts_ms": 1253,
+        "total_ms": 6490
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "ta",
+    "index": 11,
+    "text": "இந்த உணவகம் மிகவும் நல்ல உணவை பரிமாறுகிறது.",
+    "transcript": "இந்த உணவகம் மிகவும் நல்ல உணவை பரிமாறுகிறது",
+    "room_id": "structured-ta-11-1791541711387053700",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7861,
+        "translated_text": "इस रेस्टोरेंट में बहुत अच्छा खाना मिलता है।",
+        "stt_ms": 4350,
+        "queue_ms": 0,
+        "translate_ms": 1990,
+        "tts_ms": 1150,
+        "total_ms": 7490
+      },
+      "en-IN": {
+        "end_to_end_ms": 7268,
+        "translated_text": "This restaurant serves very good food",
+        "stt_ms": 4350,
+        "queue_ms": 0,
+        "translate_ms": 1336,
+        "tts_ms": 1197,
+        "total_ms": 6883
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7994,
+        "translated_text": "இந்த உணவகத்தில் மிகவும் நல்ல உணவு கிடைக்கிறது.",
+        "stt_ms": 4350,
+        "queue_ms": 0,
+        "translate_ms": 1901,
+        "tts_ms": 1345,
+        "total_ms": 7596
+      },
+      "te-IN": {
+        "end_to_end_ms": 8539,
+        "translated_text": "ఈ రెస్టారెంట్‌లో చాలా మంచి ఆహారం లభిస్తుంది.",
+        "stt_ms": 4350,
+        "queue_ms": 0,
+        "translate_ms": 2370,
+        "tts_ms": 1401,
+        "total_ms": 8121
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "te",
+    "index": 11,
+    "text": "ఈ రెస్టారెంట్ చాలా మంచి భోజనం అందిస్తుంది.",
+    "transcript": "ఈ restaurant చాలా మంచి భోజనం అందిస్తుంది.",
+    "room_id": "structured-te-11-1791541723062334300",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 9502,
+        "translated_text": "यह रेस्टोरेंट अपने स्वादिष्ट भोजन के लिए जाना जाता है।",
+        "stt_ms": 5449,
+        "queue_ms": 0,
+        "translate_ms": 2037,
+        "tts_ms": 1526,
+        "total_ms": 9012
+      },
+      "en-IN": {
+        "end_to_end_ms": 8454,
+        "translated_text": "This restaurant is known for its delicious food.",
+        "stt_ms": 5449,
+        "queue_ms": 0,
+        "translate_ms": 1487,
+        "tts_ms": 1020,
+        "total_ms": 7956
+      },
+      "ta-IN": {
+        "end_to_end_ms": 9116,
+        "translated_text": "இந்த உணவகம் சுவையான உணவு வகைகளுக்குப் பெயர் பெற்றது.",
+        "stt_ms": 5449,
+        "queue_ms": 0,
+        "translate_ms": 1927,
+        "tts_ms": 1235,
+        "total_ms": 8611
+      },
+      "te-IN": {
+        "end_to_end_ms": 9806,
+        "translated_text": "ఈ రెస్టారెంట్ దాని రుచికరమైన ఆహారం కోసం ప్రసిద్ధి చెందింది.",
+        "stt_ms": 5449,
+        "queue_ms": 0,
+        "translate_ms": 1892,
+        "tts_ms": 1939,
+        "total_ms": 9280
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "mix",
+    "index": 11,
+    "text": "நான் இந்த file ஐ email ல அனுப்பிட்டேன்.",
+    "transcript": "நான் இந்த file-ஐ email-இல் அனுப்பிவிட்டேன்",
+    "room_id": "structured-mix-11-1791541736039539600",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7100,
+        "translated_text": "मैंने फ़ाइल को ईमेल कर दिया है",
+        "stt_ms": 3642,
+        "queue_ms": 0,
+        "translate_ms": 1856,
+        "tts_ms": 884,
+        "total_ms": 6382
+      },
+      "en-IN": {
+        "end_to_end_ms": 6264,
+        "translated_text": "I have emailed the file with",
+        "stt_ms": 3642,
+        "queue_ms": 0,
+        "translate_ms": 1268,
+        "tts_ms": 621,
+        "total_ms": 5531
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7321,
+        "translated_text": "நான் கோப்பை மின்னஞ்சலில் அனுப்பியுள்ளேன்.",
+        "stt_ms": 3642,
+        "queue_ms": 0,
+        "translate_ms": 1798,
+        "tts_ms": 1136,
+        "total_ms": 6576
+      },
+      "te-IN": {
+        "end_to_end_ms": 7061,
+        "translated_text": "నేను ఆ ఫైలును పంపించాను",
+        "stt_ms": 3642,
+        "queue_ms": 0,
+        "translate_ms": 1851,
+        "tts_ms": 811,
+        "total_ms": 6304
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "hi",
+    "index": 12,
+    "text": "उसने खाने से पहले अपना होमवर्क पूरा किया।",
+    "transcript": "उसने खाने से पहले अपना homework पूरा किया।",
+    "room_id": "structured-hi-12-1791541746626891800",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 8086,
+        "translated_text": "उसने खाना खाने से पहले अपना गृहकार्य पूरा कर लिया।",
+        "stt_ms": 4286,
+        "queue_ms": 0,
+        "translate_ms": 2071,
+        "tts_ms": 1312,
+        "total_ms": 7669
+      },
+      "en-IN": {
+        "end_to_end_ms": 6906,
+        "translated_text": "She finished her homework before eating.",
+        "stt_ms": 4286,
+        "queue_ms": 0,
+        "translate_ms": 1234,
+        "tts_ms": 962,
+        "total_ms": 6482
+      },
+      "ta-IN": {
+        "end_to_end_ms": 8123,
+        "translated_text": "அவள் சாப்பிடுவதற்கு முன்பாக தனது வீட்டுப்பாடத்தை முடித்துவிட்டாள்.",
+        "stt_ms": 4286,
+        "queue_ms": 0,
+        "translate_ms": 2017,
+        "tts_ms": 1384,
+        "total_ms": 7687
+      },
+      "te-IN": {
+        "end_to_end_ms": 8108,
+        "translated_text": "ఆమె తినడానికి ముందు తన హోమ్ వర్క్ పూర్తి చేసింది.",
+        "stt_ms": 4286,
+        "queue_ms": 0,
+        "translate_ms": 1979,
+        "tts_ms": 1391,
+        "total_ms": 7656
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "en",
+    "index": 12,
+    "text": "He finished his homework before dinner.",
+    "transcript": "He finished his homework before dinner.",
+    "room_id": "structured-en-12-1791541757597549700",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7277,
+        "translated_text": "उसने रात्रिभोज से पहले अपना गृहकार्य पूरा कर लिया।",
+        "stt_ms": 3351,
+        "queue_ms": 0,
+        "translate_ms": 1879,
+        "tts_ms": 1643,
+        "total_ms": 6873
+      },
+      "en-IN": {
+        "end_to_end_ms": 5567,
+        "translated_text": "He finished his homework before dinner.",
+        "stt_ms": 3351,
+        "queue_ms": 0,
+        "translate_ms": 754,
+        "tts_ms": 1036,
+        "total_ms": 5141
+      },
+      "ta-IN": {
+        "end_to_end_ms": 6836,
+        "translated_text": "அவர் இரவு உணவுக்கு முன் தனது வீட்டுப்பாடத்தை முடித்தார்.",
+        "stt_ms": 3351,
+        "queue_ms": 0,
+        "translate_ms": 1306,
+        "tts_ms": 1740,
+        "total_ms": 6397
+      },
+      "te-IN": {
+        "end_to_end_ms": 6567,
+        "translated_text": "అతను భోజనం చేసే ముందు తన ఇంటి పని పూర్తి చేసాడు.",
+        "stt_ms": 3351,
+        "queue_ms": 0,
+        "translate_ms": 1331,
+        "tts_ms": 1422,
+        "total_ms": 6104
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "ta",
+    "index": 12,
+    "text": "அவன் இரவு உணவிற்கு முன் தன் வீட்டுப்பாடத்தை முடித்தான்.",
+    "transcript": "அவன் இரவு உணவிற்கு முன் தன் வீட்டுப் பாடத்தை முடித்தான்",
+    "room_id": "structured-ta-12-1791541767688807100",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 9700,
+        "translated_text": "उसने रात्रिभोज से पहले अपना गृहकार्य पूरा कर लिया।",
+        "stt_ms": 5804,
+        "queue_ms": 0,
+        "translate_ms": 2016,
+        "tts_ms": 1479,
+        "total_ms": 9299
+      },
+      "en-IN": {
+        "end_to_end_ms": 8538,
+        "translated_text": "He finished his homework before dinner",
+        "stt_ms": 5804,
+        "queue_ms": 0,
+        "translate_ms": 1321,
+        "tts_ms": 1009,
+        "total_ms": 8134
+      },
+      "ta-IN": {
+        "end_to_end_ms": 10096,
+        "translated_text": "அவர் இரவு உணவுக்கு முன் தனது வீட்டுப்பாடத்தை முடித்தார்.",
+        "stt_ms": 5804,
+        "queue_ms": 0,
+        "translate_ms": 2287,
+        "tts_ms": 1574,
+        "total_ms": 9665
+      },
+      "te-IN": {
+        "end_to_end_ms": 9641,
+        "translated_text": "అతను భోజనం చేసే ముందు తన ఇంటి పనిని పూర్తి చేసాడు",
+        "stt_ms": 5804,
+        "queue_ms": 0,
+        "translate_ms": 1942,
+        "tts_ms": 1446,
+        "total_ms": 9192
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "te",
+    "index": 12,
+    "text": "అతను రాత్రి భోజనానికి ముందు తన హోంవర్క్ పూర్తి చేశాడు.",
+    "transcript": "అతను రాత్రి భోజనానికి ముందు తన homework పూర్తి చేశాడు.",
+    "room_id": "structured-te-12-1791541780537744900",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 9952,
+        "translated_text": "उसने रात्रिभोज से पहले अपना गृहकार्य पूरा कर लिया।",
+        "stt_ms": 5315,
+        "queue_ms": 0,
+        "translate_ms": 2058,
+        "tts_ms": 2184,
+        "total_ms": 9557
+      },
+      "en-IN": {
+        "end_to_end_ms": 8049,
+        "translated_text": "He finished his homework before dinner.",
+        "stt_ms": 5315,
+        "queue_ms": 0,
+        "translate_ms": 1351,
+        "tts_ms": 983,
+        "total_ms": 7649
+      },
+      "ta-IN": {
+        "end_to_end_ms": 9177,
+        "translated_text": "அவர் இரவு உணவுக்கு முன் தனது வீட்டுப்பாடத்தை முடித்தார்.",
+        "stt_ms": 5315,
+        "queue_ms": 0,
+        "translate_ms": 1997,
+        "tts_ms": 1417,
+        "total_ms": 8729
+      },
+      "te-IN": {
+        "end_to_end_ms": 9340,
+        "translated_text": "అతను భోజనం చేసే ముందు తన ఇంటి పని పూర్తి చేసాడు.",
+        "stt_ms": 5315,
+        "queue_ms": 0,
+        "translate_ms": 1958,
+        "tts_ms": 1616,
+        "total_ms": 8889
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "hi",
+    "index": 13,
+    "text": "मीटिंग को तीन बजे कर दिया गया है।",
+    "transcript": "मीटिंग को 3 बजे कर दिया गया है।",
+    "room_id": "structured-hi-13-1791541793053472500",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 6899,
+        "translated_text": "बैठक 3 बजे निर्धारित की गई है।",
+        "stt_ms": 3510,
+        "queue_ms": 0,
+        "translate_ms": 2016,
+        "tts_ms": 975,
+        "total_ms": 6501
+      },
+      "en-IN": {
+        "end_to_end_ms": 6393,
+        "translated_text": "The meeting has been scheduled for 3 o'clock.",
+        "stt_ms": 3510,
+        "queue_ms": 0,
+        "translate_ms": 1352,
+        "tts_ms": 1109,
+        "total_ms": 5971
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7125,
+        "translated_text": "கூட்டம் 3 மணிக்கு திட்டமிடப்பட்டுள்ளது.",
+        "stt_ms": 3510,
+        "queue_ms": 0,
+        "translate_ms": 2052,
+        "tts_ms": 1128,
+        "total_ms": 6690
+      },
+      "te-IN": {
+        "end_to_end_ms": 7168,
+        "translated_text": "సమావేశం మూడు గంటలకు నిర్ణయించబడింది.",
+        "stt_ms": 3510,
+        "queue_ms": 0,
+        "translate_ms": 2013,
+        "tts_ms": 1192,
+        "total_ms": 6715
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "en",
+    "index": 13,
+    "text": "The meeting has been moved to three o'clock.",
+    "transcript": "The meeting has been moved to 3 o'clock.",
+    "room_id": "structured-en-13-1791541803099399800",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 6332,
+        "translated_text": "बैठक तीन बजे के लिए पुनर्निर्धारित की गई है।",
+        "stt_ms": 3420,
+        "queue_ms": 0,
+        "translate_ms": 1380,
+        "tts_ms": 1125,
+        "total_ms": 5925
+      },
+      "en-IN": {
+        "end_to_end_ms": 5563,
+        "translated_text": "The meeting has been moved to 3 o'clock.",
+        "stt_ms": 3420,
+        "queue_ms": 0,
+        "translate_ms": 740,
+        "tts_ms": 967,
+        "total_ms": 5127
+      },
+      "ta-IN": {
+        "end_to_end_ms": 6368,
+        "translated_text": "கூட்டம் 3 மணிக்கு மாற்றப்பட்டுள்ளது.",
+        "stt_ms": 3420,
+        "queue_ms": 0,
+        "translate_ms": 1431,
+        "tts_ms": 1050,
+        "total_ms": 5901
+      },
+      "te-IN": {
+        "end_to_end_ms": 6113,
+        "translated_text": "సమావేశాన్ని 3 గంటలకు వాయిదా వేసి ఉంచారు.",
+        "stt_ms": 3420,
+        "queue_ms": 0,
+        "translate_ms": 1221,
+        "tts_ms": 995,
+        "total_ms": 5636
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "ta",
+    "index": 13,
+    "text": "கூட்டம் மூன்று மணிக்கு மாற்றப்பட்டுள்ளது.",
+    "transcript": "கூட்டம் 3 மணிக்கு மாற்றப்பட்டுள்ளது.",
+    "room_id": "structured-ta-13-1791541813098977000",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 6980,
+        "translated_text": "बैठक तीन बजे कर दी गई है।",
+        "stt_ms": 3804,
+        "queue_ms": 0,
+        "translate_ms": 2020,
+        "tts_ms": 771,
+        "total_ms": 6595
+      },
+      "en-IN": {
+        "end_to_end_ms": 6743,
+        "translated_text": "The meeting has been changed to 3 o'clock.",
+        "stt_ms": 3804,
+        "queue_ms": 0,
+        "translate_ms": 1428,
+        "tts_ms": 1110,
+        "total_ms": 6342
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7185,
+        "translated_text": "கூட்டம் 3 மணிக்குத் மாற்றப்பட்டுள்ளது.",
+        "stt_ms": 3804,
+        "queue_ms": 0,
+        "translate_ms": 2014,
+        "tts_ms": 953,
+        "total_ms": 6771
+      },
+      "te-IN": {
+        "end_to_end_ms": 7524,
+        "translated_text": "సమావేశం మూడు గంటలకు మార్చాము.",
+        "stt_ms": 3804,
+        "queue_ms": 0,
+        "translate_ms": 1945,
+        "tts_ms": 1340,
+        "total_ms": 7089
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "te",
+    "index": 13,
+    "text": "సమావేశం మూడు గంటలకు మార్చబడింది.",
+    "transcript": "సమావేశం 3 గంటలకు మార్చబడింది.",
+    "room_id": "structured-te-13-1791541823356282400",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7690,
+        "translated_text": "3 बजे बैठक बदली गई।",
+        "stt_ms": 3917,
+        "queue_ms": 0,
+        "translate_ms": 2168,
+        "tts_ms": 1216,
+        "total_ms": 7301
+      },
+      "en-IN": {
+        "end_to_end_ms": 7637,
+        "translated_text": "The meeting was changed at 3 o'clock.",
+        "stt_ms": 3917,
+        "queue_ms": 0,
+        "translate_ms": 1507,
+        "tts_ms": 1795,
+        "total_ms": 7219
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7826,
+        "translated_text": "3 மணிக்கு கூட்டம் மாற்றப்பட்டது.",
+        "stt_ms": 3917,
+        "queue_ms": 0,
+        "translate_ms": 2114,
+        "tts_ms": 1347,
+        "total_ms": 7378
+      },
+      "te-IN": {
+        "end_to_end_ms": 7810,
+        "translated_text": "సమావేశం 3 గంటలకు మార్చబడింది.",
+        "stt_ms": 3917,
+        "queue_ms": 0,
+        "translate_ms": 2064,
+        "tts_ms": 1351,
+        "total_ms": 7332
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "hi",
+    "index": 14,
+    "text": "मैं अपनी छाता ऑफिस में भूल गया।",
+    "transcript": "मैं अपनी छाता office में भूल गया",
+    "room_id": "structured-hi-14-1791541833801888800",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 6863,
+        "translated_text": "मेरी छतरी कार्यालय में छोड़ आया हूँ।",
+        "stt_ms": 3678,
+        "queue_ms": 0,
+        "translate_ms": 2028,
+        "tts_ms": 855,
+        "total_ms": 6561
+      },
+      "en-IN": {
+        "end_to_end_ms": 6099,
+        "translated_text": "I left my umbrella in the office",
+        "stt_ms": 3678,
+        "queue_ms": 0,
+        "translate_ms": 1347,
+        "tts_ms": 753,
+        "total_ms": 5778
+      },
+      "ta-IN": {
+        "end_to_end_ms": 6790,
+        "translated_text": "நான் எனது छत्री அலுவலகத்தில் விட்டுச் சென்றேன்.",
+        "stt_ms": 3678,
+        "queue_ms": 0,
+        "translate_ms": 1875,
+        "tts_ms": 893,
+        "total_ms": 6446
+      },
+      "te-IN": {
+        "end_to_end_ms": 7119,
+        "translated_text": "నేను నా గొడుగును కార్యాలయంలో వదిలేసి వచ్చాను.",
+        "stt_ms": 3678,
+        "queue_ms": 0,
+        "translate_ms": 2022,
+        "tts_ms": 1054,
+        "total_ms": 6754
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "en",
+    "index": 14,
+    "text": "I forgot my umbrella at the office.",
+    "transcript": "I forgot my umbrella at the office.",
+    "room_id": "structured-en-14-1791541843809090300",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 6658,
+        "translated_text": "मैं अपनी छतरी कार्यालय में भूल गई हूँ।",
+        "stt_ms": 3956,
+        "queue_ms": 0,
+        "translate_ms": 1333,
+        "tts_ms": 974,
+        "total_ms": 6263
+      },
+      "en-IN": {
+        "end_to_end_ms": 6239,
+        "translated_text": "I forgot my umbrella at the office.",
+        "stt_ms": 3956,
+        "queue_ms": 0,
+        "translate_ms": 812,
+        "tts_ms": 1052,
+        "total_ms": 5820
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7131,
+        "translated_text": "நான் அலுவலகத்தில் என் குடையை மறந்துவிட்டேன்.",
+        "stt_ms": 3956,
+        "queue_ms": 0,
+        "translate_ms": 1384,
+        "tts_ms": 1349,
+        "total_ms": 6689
+      },
+      "te-IN": {
+        "end_to_end_ms": 7305,
+        "translated_text": "నేను నా గొడుగును కార్యాలయంలో మర్చిపోయాను.",
+        "stt_ms": 3956,
+        "queue_ms": 0,
+        "translate_ms": 1432,
+        "tts_ms": 1456,
+        "total_ms": 6844
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "ta",
+    "index": 14,
+    "text": "நான் என் குடையை அலுவலகத்தில் மறந்துவிட்டேன்.",
+    "transcript": "நான் என் குடையை அலுவலகத்தை மறந்துவிட்டேன்",
+    "room_id": "structured-ta-14-1791541854655139800",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7301,
+        "translated_text": "मैं कार्यालय में अपनी छतरी भूल गई हूँ।",
+        "stt_ms": 3814,
+        "queue_ms": 0,
+        "translate_ms": 2089,
+        "tts_ms": 1011,
+        "total_ms": 6914
+      },
+      "en-IN": {
+        "end_to_end_ms": 7167,
+        "translated_text": "I forgot my umbrella in the office",
+        "stt_ms": 3814,
+        "queue_ms": 0,
+        "translate_ms": 1328,
+        "tts_ms": 1612,
+        "total_ms": 6754
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7844,
+        "translated_text": "அலுவலகத்தில் எனது umbrella-ஐ மறந்துவிட்டேன்.",
+        "stt_ms": 3814,
+        "queue_ms": 0,
+        "translate_ms": 2311,
+        "tts_ms": 1292,
+        "total_ms": 7417
+      },
+      "te-IN": {
+        "end_to_end_ms": 7184,
+        "translated_text": "నేను ఆఫీసులో నా గొడుగు మరచిపోయాను.",
+        "stt_ms": 3814,
+        "queue_ms": 0,
+        "translate_ms": 1897,
+        "tts_ms": 1042,
+        "total_ms": 6753
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "te",
+    "index": 14,
+    "text": "నేను నా గొడుగును ఆఫీసులో మర్చిపోయాను.",
+    "transcript": "నేను నా బొడుగును office-లో మర్చిపోయాను.",
+    "room_id": "structured-te-14-1791541865359769600",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7885,
+        "translated_text": "मेरी छतरी कार्यालय में छोड़ आया हूँ।",
+        "stt_ms": 4143,
+        "queue_ms": 0,
+        "translate_ms": 2134,
+        "tts_ms": 1225,
+        "total_ms": 7502
+      },
+      "en-IN": {
+        "end_to_end_ms": 6863,
+        "translated_text": "I left my umbrella in the office.",
+        "stt_ms": 4143,
+        "queue_ms": 0,
+        "translate_ms": 1398,
+        "tts_ms": 914,
+        "total_ms": 6455
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7701,
+        "translated_text": "நான் என் छत्री அலுவலகத்தில் விட்டுவிட்டேன்.",
+        "stt_ms": 4143,
+        "queue_ms": 0,
+        "translate_ms": 2005,
+        "tts_ms": 1121,
+        "total_ms": 7269
+      },
+      "te-IN": {
+        "end_to_end_ms": 7606,
+        "translated_text": "నా గొడుగు ఆఫీసులో వదిలేసి వచ్చాను.",
+        "stt_ms": 4143,
+        "queue_ms": 0,
+        "translate_ms": 1953,
+        "tts_ms": 1064,
+        "total_ms": 7160
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "hi",
+    "index": 15,
+    "text": "हमारी टीम कल मैच जीत गई।",
+    "transcript": "हमारी टीम कल मैच जीत गई",
+    "room_id": "structured-hi-15-1791541875890619900",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 6338,
+        "translated_text": "हमारी टीम कल का मैच जीत गई।",
+        "stt_ms": 2932,
+        "queue_ms": 0,
+        "translate_ms": 1955,
+        "tts_ms": 1064,
+        "total_ms": 5951
+      },
+      "en-IN": {
+        "end_to_end_ms": 5392,
+        "translated_text": "Our team won the match yesterday",
+        "stt_ms": 2932,
+        "queue_ms": 0,
+        "translate_ms": 1284,
+        "tts_ms": 777,
+        "total_ms": 4993
+      },
+      "ta-IN": {
+        "end_to_end_ms": 6573,
+        "translated_text": "நேற்று நடைபெற்ற போட்டியில் எங்கள் அணி வெற்றி பெற்றது.",
+        "stt_ms": 2932,
+        "queue_ms": 0,
+        "translate_ms": 2157,
+        "tts_ms": 1067,
+        "total_ms": 6156
+      },
+      "te-IN": {
+        "end_to_end_ms": 6276,
+        "translated_text": "మా బృందం నిన్న మ్యాచ్‌ను గెలుచుకుంది.",
+        "stt_ms": 2932,
+        "queue_ms": 0,
+        "translate_ms": 1850,
+        "tts_ms": 1061,
+        "total_ms": 5843
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "en",
+    "index": 15,
+    "text": "Our team won the match yesterday.",
+    "transcript": "Our team won the match yesterday.",
+    "room_id": "structured-en-15-1791541885888344900",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 6091,
+        "translated_text": "हमारी टीम ने कल मैच जीत लिया।",
+        "stt_ms": 3228,
+        "queue_ms": 0,
+        "translate_ms": 1392,
+        "tts_ms": 1075,
+        "total_ms": 5695
+      },
+      "en-IN": {
+        "end_to_end_ms": 5358,
+        "translated_text": "Our team won the match yesterday.",
+        "stt_ms": 3228,
+        "queue_ms": 0,
+        "translate_ms": 949,
+        "tts_ms": 759,
+        "total_ms": 4936
+      },
+      "ta-IN": {
+        "end_to_end_ms": 6327,
+        "translated_text": "நேற்று எங்கள் அணி போட்டியில் வெற்றி பெற்றது.",
+        "stt_ms": 3228,
+        "queue_ms": 0,
+        "translate_ms": 1462,
+        "tts_ms": 1191,
+        "total_ms": 5881
+      },
+      "te-IN": {
+        "end_to_end_ms": 6109,
+        "translated_text": "మా జట్టు నిన్న మ్యాచ్‌ను గెలుచుకుంది.",
+        "stt_ms": 3228,
+        "queue_ms": 0,
+        "translate_ms": 1420,
+        "tts_ms": 1003,
+        "total_ms": 5651
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "ta",
+    "index": 15,
+    "text": "எங்கள் அணி நேற்று போட்டியில் வென்றது.",
+    "transcript": "எங்கள் அணி நேற்று போட்டியில் வென்றது",
+    "room_id": "structured-ta-15-1791541895904246800",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 6763,
+        "translated_text": "हमारी टीम कल का मैच जीत गई।",
+        "stt_ms": 3387,
+        "queue_ms": 0,
+        "translate_ms": 2019,
+        "tts_ms": 960,
+        "total_ms": 6366
+      },
+      "en-IN": {
+        "end_to_end_ms": 5995,
+        "translated_text": "Our team won the match yesterday",
+        "stt_ms": 3387,
+        "queue_ms": 0,
+        "translate_ms": 1297,
+        "tts_ms": 884,
+        "total_ms": 5568
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7578,
+        "translated_text": "நேற்று நடைபெற்ற போட்டியில் எங்கள் அணி வெற்றி பெற்றது.",
+        "stt_ms": 3387,
+        "queue_ms": 0,
+        "translate_ms": 2048,
+        "tts_ms": 1671,
+        "total_ms": 7106
+      },
+      "te-IN": {
+        "end_to_end_ms": 6676,
+        "translated_text": "మా బృందం నిన్న మ్యాచ్ గెలిచింది.",
+        "stt_ms": 3387,
+        "queue_ms": 0,
+        "translate_ms": 1931,
+        "tts_ms": 900,
+        "total_ms": 6218
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "te",
+    "index": 15,
+    "text": "మా జట్టు నిన్న మ్యాచ్ గెలిచింది.",
+    "transcript": "మా జట్టు నిన్న match గెలిచింది.",
+    "room_id": "structured-te-15-1791541906176785000",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 6409,
+        "translated_text": "हमारी टीम ने कल जीत हासिल की।",
+        "stt_ms": 3028,
+        "queue_ms": 0,
+        "translate_ms": 1987,
+        "tts_ms": 996,
+        "total_ms": 6011
+      },
+      "en-IN": {
+        "end_to_end_ms": 5478,
+        "translated_text": "Our team won yesterday.",
+        "stt_ms": 3028,
+        "queue_ms": 0,
+        "translate_ms": 1388,
+        "tts_ms": 638,
+        "total_ms": 5054
+      },
+      "ta-IN": {
+        "end_to_end_ms": 6196,
+        "translated_text": "நேற்று எங்கள் அணி வெற்றி பெற்றது.",
+        "stt_ms": 3028,
+        "queue_ms": 0,
+        "translate_ms": 2025,
+        "tts_ms": 701,
+        "total_ms": 5754
+      },
+      "te-IN": {
+        "end_to_end_ms": 6166,
+        "translated_text": "మా జట్టు నిన్న గెలిచింది.",
+        "stt_ms": 3028,
+        "queue_ms": 0,
+        "translate_ms": 1947,
+        "tts_ms": 736,
+        "total_ms": 5711
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "hi",
+    "index": 16,
+    "text": "लाइब्रेरी शाम को आठ बजे बंद होती है।",
+    "transcript": "library शाम को 8 बजे बंद होती है।",
+    "room_id": "structured-hi-16-1791541916189082500",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7285,
+        "translated_text": "पुस्तकालय शाम 8 बजे बंद हो जाता है।",
+        "stt_ms": 3683,
+        "queue_ms": 0,
+        "translate_ms": 1958,
+        "tts_ms": 1247,
+        "total_ms": 6888
+      },
+      "en-IN": {
+        "end_to_end_ms": 6865,
+        "translated_text": "The library closes at 8 in the evening.",
+        "stt_ms": 3683,
+        "queue_ms": 0,
+        "translate_ms": 1583,
+        "tts_ms": 1183,
+        "total_ms": 6449
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7493,
+        "translated_text": "நூலகம் மாலை 8 மணிக்கு மூடப்படும்.",
+        "stt_ms": 3683,
+        "queue_ms": 0,
+        "translate_ms": 1983,
+        "tts_ms": 1400,
+        "total_ms": 7066
+      },
+      "te-IN": {
+        "end_to_end_ms": 7451,
+        "translated_text": "గ్రంథాలయం సాయంత్రం 8 గంటలకు మూసివేయబడుతుంది.",
+        "stt_ms": 3683,
+        "queue_ms": 0,
+        "translate_ms": 1941,
+        "tts_ms": 1376,
+        "total_ms": 7000
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "en",
+    "index": 16,
+    "text": "The library closes at eight in the evening.",
+    "transcript": "The library closes at 8 in the evening.",
+    "room_id": "structured-en-16-1791541926434346800",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 6837,
+        "translated_text": "पुस्तकालय शाम 8 बजे बंद हो जाता है।",
+        "stt_ms": 3798,
+        "queue_ms": 0,
+        "translate_ms": 1414,
+        "tts_ms": 1252,
+        "total_ms": 6464
+      },
+      "en-IN": {
+        "end_to_end_ms": 6148,
+        "translated_text": "The library closes at 8 in the evening.",
+        "stt_ms": 3798,
+        "queue_ms": 0,
+        "translate_ms": 788,
+        "tts_ms": 1169,
+        "total_ms": 5755
+      },
+      "ta-IN": {
+        "end_to_end_ms": 6707,
+        "translated_text": "நூலகம் மாலை 8 மணிக்கு மூடப்படும்.",
+        "stt_ms": 3798,
+        "queue_ms": 0,
+        "translate_ms": 1387,
+        "tts_ms": 1117,
+        "total_ms": 6302
+      },
+      "te-IN": {
+        "end_to_end_ms": 7602,
+        "translated_text": "గ్రంథాలయం సాయంత్రం 8 గంటలకు మూసివేయబడుతుంది.",
+        "stt_ms": 3798,
+        "queue_ms": 0,
+        "translate_ms": 1285,
+        "tts_ms": 2083,
+        "total_ms": 7166
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "ta",
+    "index": 16,
+    "text": "நூலகம் மாலை எட்டு மணிக்கு மூடப்படும்.",
+    "transcript": "நூலதம் மாலை 8 மணிக்கு மூடப்படும்.",
+    "room_id": "structured-ta-16-1791541936859895700",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7721,
+        "translated_text": "पुस्तकालय शाम 8 बजे बंद हो जाता है।",
+        "stt_ms": 4084,
+        "queue_ms": 0,
+        "translate_ms": 1989,
+        "tts_ms": 1259,
+        "total_ms": 7332
+      },
+      "en-IN": {
+        "end_to_end_ms": 7204,
+        "translated_text": "The library is closed at 8 in the evening.",
+        "stt_ms": 4084,
+        "queue_ms": 0,
+        "translate_ms": 1373,
+        "tts_ms": 1332,
+        "total_ms": 6789
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7562,
+        "translated_text": "நூலகம் மாலை 8 மணிக்கு மூடப்படும்.",
+        "stt_ms": 4084,
+        "queue_ms": 0,
+        "translate_ms": 1902,
+        "tts_ms": 1144,
+        "total_ms": 7130
+      },
+      "te-IN": {
+        "end_to_end_ms": 8007,
+        "translated_text": "గ్రంథాలయం సాయంత్రం 8 గంటలకు మూసివేయబడుతుంది.",
+        "stt_ms": 4084,
+        "queue_ms": 0,
+        "translate_ms": 1910,
+        "tts_ms": 1554,
+        "total_ms": 7548
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "te",
+    "index": 16,
+    "text": "గ్రంథాలయం సాయంత్రం ఎనిమిది గంటలకు మూసివేయబడుతుంది.",
+    "transcript": "గ్రంథాలయం సాయంత్రం 8:00 PM-కు మూసివేయబడుతుంది.",
+    "room_id": "structured-te-16-1791541947506596800",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 9921,
+        "translated_text": "पुस्तकालय रात्रि 8:00 बजे बंद हो जाता है।",
+        "stt_ms": 6075,
+        "queue_ms": 0,
+        "translate_ms": 2010,
+        "tts_ms": 1333,
+        "total_ms": 9418
+      },
+      "en-IN": {
+        "end_to_end_ms": 8919,
+        "translated_text": "The library is closed at 8:00 PM.",
+        "stt_ms": 6075,
+        "queue_ms": 0,
+        "translate_ms": 1401,
+        "tts_ms": 931,
+        "total_ms": 8407
+      },
+      "ta-IN": {
+        "end_to_end_ms": 9807,
+        "translated_text": "நூலகம் இரவு 8:00 மணிக்கு மூடப்படும்.",
+        "stt_ms": 6075,
+        "queue_ms": 0,
+        "translate_ms": 2014,
+        "tts_ms": 1187,
+        "total_ms": 9276
+      },
+      "te-IN": {
+        "end_to_end_ms": 10359,
+        "translated_text": "గ్రంథాలయం రాత్రి 8:00 గంటలకు మూసివేయబడుతుంది.",
+        "stt_ms": 6075,
+        "queue_ms": 0,
+        "translate_ms": 2057,
+        "tts_ms": 1679,
+        "total_ms": 9811
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "hi",
+    "index": 17,
+    "text": "मैं पहाड़ों की यात्रा की योजना बना रहा हूं।",
+    "transcript": "मैं पहाड़ों की यात्रा की योजना बना रहा हूँ",
+    "room_id": "structured-hi-17-1791541960534721800",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7478,
+        "translated_text": "मैं पहाड़ों की यात्रा की योजना बना रही हूँ।",
+        "stt_ms": 4024,
+        "queue_ms": 0,
+        "translate_ms": 1991,
+        "tts_ms": 1066,
+        "total_ms": 7081
+      },
+      "en-IN": {
+        "end_to_end_ms": 6436,
+        "translated_text": "I am planning a trip to the mountains",
+        "stt_ms": 4024,
+        "queue_ms": 0,
+        "translate_ms": 1278,
+        "tts_ms": 723,
+        "total_ms": 6025
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7300,
+        "translated_text": "நான் மலைகளுக்குப் பயணம் செய்யத் திட்டமிட்டுள்ளேன்.",
+        "stt_ms": 4024,
+        "queue_ms": 0,
+        "translate_ms": 1861,
+        "tts_ms": 984,
+        "total_ms": 6869
+      },
+      "te-IN": {
+        "end_to_end_ms": 7746,
+        "translated_text": "నేను పర్వతాలకు ఒక పర్యటనకు ప్రణాళిక వేస్తున్నాను",
+        "stt_ms": 4024,
+        "queue_ms": 0,
+        "translate_ms": 1917,
+        "tts_ms": 1350,
+        "total_ms": 7291
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "en",
+    "index": 17,
+    "text": "I am planning a trip to the mountains.",
+    "transcript": "I am planning a trip to the mountains.",
+    "room_id": "structured-en-17-1791541970814087000",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 6252,
+        "translated_text": "मैं पहाड़ों की यात्रा की योजना बना रही हूँ।",
+        "stt_ms": 3242,
+        "queue_ms": 0,
+        "translate_ms": 1446,
+        "tts_ms": 1075,
+        "total_ms": 5763
+      },
+      "en-IN": {
+        "end_to_end_ms": 5412,
+        "translated_text": "I am planning a trip to the mountains.",
+        "stt_ms": 3242,
+        "queue_ms": 0,
+        "translate_ms": 807,
+        "tts_ms": 850,
+        "total_ms": 4899
+      },
+      "ta-IN": {
+        "end_to_end_ms": 6446,
+        "translated_text": "நான் மலைகளுக்குச் செல்லத் திட்டமிட்டுள்ளேன்.",
+        "stt_ms": 3242,
+        "queue_ms": 0,
+        "translate_ms": 1624,
+        "tts_ms": 1060,
+        "total_ms": 5926
+      },
+      "te-IN": {
+        "end_to_end_ms": 6789,
+        "translated_text": "నేను పర్వతాలకు ఒక పర్యటనకు ప్రణాళిక వేస్తున్నాను.",
+        "stt_ms": 3242,
+        "queue_ms": 0,
+        "translate_ms": 1451,
+        "tts_ms": 1549,
+        "total_ms": 6242
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "ta",
+    "index": 17,
+    "text": "நான் மலைகளுக்கு ஒரு பயணத்தை திட்டமிடுகிறேன்.",
+    "transcript": "நான் மலைகளுக்கு ஒரு பயணத்தை திட்டமிடுகிறேன்",
+    "room_id": "structured-ta-17-1791541980809286900",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 8012,
+        "translated_text": "मैं पहाड़ों की यात्रा की योजना बना रही हूँ।",
+        "stt_ms": 4331,
+        "queue_ms": 0,
+        "translate_ms": 1926,
+        "tts_ms": 1376,
+        "total_ms": 7633
+      },
+      "en-IN": {
+        "end_to_end_ms": 6754,
+        "translated_text": "I am planning a trip to the mountains",
+        "stt_ms": 4331,
+        "queue_ms": 0,
+        "translate_ms": 1248,
+        "tts_ms": 789,
+        "total_ms": 6368
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7858,
+        "translated_text": "நான் மலைகளுக்குப் பயணம் செய்யத் திட்டமிட்டுள்ளேன்.",
+        "stt_ms": 4331,
+        "queue_ms": 0,
+        "translate_ms": 1963,
+        "tts_ms": 1164,
+        "total_ms": 7458
+      },
+      "te-IN": {
+        "end_to_end_ms": 8118,
+        "translated_text": "నేను పర్వతాలకు ఒక పర్యటనకు ప్రణాళిక వేస్తున్నాను",
+        "stt_ms": 4331,
+        "queue_ms": 0,
+        "translate_ms": 1862,
+        "tts_ms": 1505,
+        "total_ms": 7698
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "te",
+    "index": 17,
+    "text": "నేను కొండలకు ఒక ప్రయాణం ప్లాన్ చేస్తున్నాను.",
+    "transcript": "నేను కొండలకు ఒక ప్రయాణం plan చేస్తున్నాను.",
+    "room_id": "structured-te-17-1791541991624068700",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 8039,
+        "translated_text": "मैं पहाड़ों की यात्रा की योजना बना रही हूँ।",
+        "stt_ms": 4576,
+        "queue_ms": 0,
+        "translate_ms": 1974,
+        "tts_ms": 1107,
+        "total_ms": 7657
+      },
+      "en-IN": {
+        "end_to_end_ms": 7518,
+        "translated_text": "I'm planning a trip to the mountains.",
+        "stt_ms": 4576,
+        "queue_ms": 0,
+        "translate_ms": 1389,
+        "tts_ms": 1145,
+        "total_ms": 7110
+      },
+      "ta-IN": {
+        "end_to_end_ms": 8177,
+        "translated_text": "நான் மலைகளுக்குப் பயணம் செய்யத் திட்டமிட்டுள்ளேன்.",
+        "stt_ms": 4576,
+        "queue_ms": 0,
+        "translate_ms": 1952,
+        "tts_ms": 1220,
+        "total_ms": 7748
+      },
+      "te-IN": {
+        "end_to_end_ms": 8578,
+        "translated_text": "నేను పర్వతాలకు ఒక పర్యటనకు ప్రణాళిక వేస్తున్నాను.",
+        "stt_ms": 4576,
+        "queue_ms": 0,
+        "translate_ms": 2059,
+        "tts_ms": 1495,
+        "total_ms": 8130
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "hi",
+    "index": 18,
+    "text": "उसका प्रेजेंटेशन बहुत साफ और उपयोगी था।",
+    "transcript": "उसका presentation बहुत साफ़ और उपयोगी था।",
+    "room_id": "structured-hi-18-1791542002804497700",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 8345,
+        "translated_text": "उनकी प्रस्तुति बहुत स्पष्ट और बहुत सहायक थी।",
+        "stt_ms": 4494,
+        "queue_ms": 0,
+        "translate_ms": 1995,
+        "tts_ms": 1443,
+        "total_ms": 7932
+      },
+      "en-IN": {
+        "end_to_end_ms": 7416,
+        "translated_text": "His presentation was very clear and very helpful.",
+        "stt_ms": 4494,
+        "queue_ms": 0,
+        "translate_ms": 1310,
+        "tts_ms": 1183,
+        "total_ms": 6987
+      },
+      "ta-IN": {
+        "end_to_end_ms": 8724,
+        "translated_text": "அவரது விளக்கக்காட்சி மிகவும் தெளிவாகவும் மிகவும் பயனுள்ளதாகவும் இருந்தது.",
+        "stt_ms": 4494,
+        "queue_ms": 0,
+        "translate_ms": 1888,
+        "tts_ms": 1886,
+        "total_ms": 8268
+      },
+      "te-IN": {
+        "end_to_end_ms": 8671,
+        "translated_text": "ఆయన సమర్పణ చాలా స్పష్టంగా, చాలా ఉపయోగకరంగా ఉండింది.",
+        "stt_ms": 4494,
+        "queue_ms": 0,
+        "translate_ms": 1966,
+        "tts_ms": 1753,
+        "total_ms": 8213
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "en",
+    "index": 18,
+    "text": "Her presentation was very clear and useful.",
+    "transcript": "Her presentation was very clear and useful.",
+    "room_id": "structured-en-18-1791542014635597800",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7163,
+        "translated_text": "उनकी प्रस्तुति बहुत स्पष्ट और उपयोगी थी।",
+        "stt_ms": 4052,
+        "queue_ms": 0,
+        "translate_ms": 1287,
+        "tts_ms": 1325,
+        "total_ms": 6664
+      },
+      "en-IN": {
+        "end_to_end_ms": 6372,
+        "translated_text": "Her presentation was very clear and useful.",
+        "stt_ms": 4052,
+        "queue_ms": 0,
+        "translate_ms": 733,
+        "tts_ms": 1079,
+        "total_ms": 5864
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7436,
+        "translated_text": "அவரது விளக்கக்காட்சி மிகவும் தெளிவாகவும் பயனுள்ளதாகவும் இருந்தது.",
+        "stt_ms": 4052,
+        "queue_ms": 0,
+        "translate_ms": 1307,
+        "tts_ms": 1537,
+        "total_ms": 6896
+      },
+      "te-IN": {
+        "end_to_end_ms": 7383,
+        "translated_text": "ఆమె ప్రదర్శన చాలా స్పష్టంగా, ఉపయోగకరంగా ఉండింది.",
+        "stt_ms": 4052,
+        "queue_ms": 0,
+        "translate_ms": 1318,
+        "tts_ms": 1476,
+        "total_ms": 6846
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "ta",
+    "index": 18,
+    "text": "அவளுடைய விளக்கக்காட்சி மிகவும் தெளிவாகவும் பயனுள்ளதாகவும் இருந்தது.",
+    "transcript": "அவளுடைய விளக்கக் காட்சி மிகவும் தெளிவாகவும் பயனுள்ளதாகவும் இருந்தது",
+    "room_id": "structured-ta-18-1791542025014372700",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 10189,
+        "translated_text": "उनका स्पष्टीकरण बहुत स्पष्ट और उपयोगी था।",
+        "stt_ms": 6734,
+        "queue_ms": 0,
+        "translate_ms": 1882,
+        "tts_ms": 1167,
+        "total_ms": 9783
+      },
+      "en-IN": {
+        "end_to_end_ms": 9842,
+        "translated_text": "Her explanation was very clear and useful",
+        "stt_ms": 6734,
+        "queue_ms": 0,
+        "translate_ms": 1431,
+        "tts_ms": 1235,
+        "total_ms": 9400
+      },
+      "ta-IN": {
+        "end_to_end_ms": 11133,
+        "translated_text": "அவருடைய விளக்கம் மிகவும் தெளிவாகவும் பயனுள்ளதாகவும் இருந்தது.",
+        "stt_ms": 6734,
+        "queue_ms": 0,
+        "translate_ms": 1979,
+        "tts_ms": 1959,
+        "total_ms": 10672
+      },
+      "te-IN": {
+        "end_to_end_ms": 10285,
+        "translated_text": "ఆమె వివరణ చాలా స్పష్టంగా, ఉపయోగకరంగా ఉంది.",
+        "stt_ms": 6734,
+        "queue_ms": 0,
+        "translate_ms": 1883,
+        "tts_ms": 1189,
+        "total_ms": 9806
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "te",
+    "index": 18,
+    "text": "ఆమె ప్రజెంటేషన్ చాలా స్పష్టంగా మరియు ఉపయోగకరంగా ఉంది.",
+    "transcript": "ఆమె presentation చాలా స్పష్టంగా మరియు ఉపయోగకరంగా ఉంది.",
+    "room_id": "structured-te-18-1791542038948336600",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 9733,
+        "translated_text": "उनकी प्रस्तुति जीवंत और जानकारीपूर्ण थी।",
+        "stt_ms": 6078,
+        "queue_ms": 0,
+        "translate_ms": 2018,
+        "tts_ms": 1093,
+        "total_ms": 9189
+      },
+      "en-IN": {
+        "end_to_end_ms": 9402,
+        "translated_text": "Her presentation was lively and informative.",
+        "stt_ms": 6078,
+        "queue_ms": 0,
+        "translate_ms": 1432,
+        "tts_ms": 1321,
+        "total_ms": 8831
+      },
+      "ta-IN": {
+        "end_to_end_ms": 10122,
+        "translated_text": "அவரது விளக்கக்காட்சி உற்சாகமாகவும் தகவலூட்டமாகவும் இருந்தது.",
+        "stt_ms": 6078,
+        "queue_ms": 0,
+        "translate_ms": 1851,
+        "tts_ms": 1604,
+        "total_ms": 9533
+      },
+      "te-IN": {
+        "end_to_end_ms": 10232,
+        "translated_text": "ఆమె ప్రదర్శన సజీవంగా, సమాచారమయంగా ఉండింది.",
+        "stt_ms": 6078,
+        "queue_ms": 0,
+        "translate_ms": 2035,
+        "tts_ms": 1494,
+        "total_ms": 9607
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "hi",
+    "index": 19,
+    "text": "बस स्टॉप सड़क के उस पार ही है।",
+    "transcript": "bus stop सड़क के उस पार ही है।",
+    "room_id": "structured-hi-19-1791542051721726700",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 6783,
+        "translated_text": "बस स्टॉप सड़क के पार है।",
+        "stt_ms": 3608,
+        "queue_ms": 0,
+        "translate_ms": 2013,
+        "tts_ms": 775,
+        "total_ms": 6396
+      },
+      "en-IN": {
+        "end_to_end_ms": 6339,
+        "translated_text": "The bus stop is just across the road.",
+        "stt_ms": 3608,
+        "queue_ms": 0,
+        "translate_ms": 1367,
+        "tts_ms": 962,
+        "total_ms": 5937
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7203,
+        "translated_text": "பேருந்து நிறுத்தம் சாலையின் குறுக்கே உள்ளது.",
+        "stt_ms": 3608,
+        "queue_ms": 0,
+        "translate_ms": 1942,
+        "tts_ms": 1230,
+        "total_ms": 6780
+      },
+      "te-IN": {
+        "end_to_end_ms": 6941,
+        "translated_text": "బస్సు స్టాప్ రోడ్డుకు అడ్డంగా ఉంది.",
+        "stt_ms": 3608,
+        "queue_ms": 0,
+        "translate_ms": 1979,
+        "tts_ms": 918,
+        "total_ms": 6505
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "en",
+    "index": 19,
+    "text": "The bus stop is just across the street.",
+    "transcript": "The bus stop is just across the street.",
+    "room_id": "structured-en-19-1791542061726220000",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 6244,
+        "translated_text": "बस स्टॉप सड़क के पार ही है।",
+        "stt_ms": 3433,
+        "queue_ms": 0,
+        "translate_ms": 1399,
+        "tts_ms": 975,
+        "total_ms": 5807
+      },
+      "en-IN": {
+        "end_to_end_ms": 5712,
+        "translated_text": "The bus stop is just across the street.",
+        "stt_ms": 3433,
+        "queue_ms": 0,
+        "translate_ms": 803,
+        "tts_ms": 1017,
+        "total_ms": 5253
+      },
+      "ta-IN": {
+        "end_to_end_ms": 6643,
+        "translated_text": "பேருந்து நிறுத்தம் தெருவின் குறுக்கே உள்ளது.",
+        "stt_ms": 3433,
+        "queue_ms": 0,
+        "translate_ms": 1338,
+        "tts_ms": 1401,
+        "total_ms": 6172
+      },
+      "te-IN": {
+        "end_to_end_ms": 6357,
+        "translated_text": "బస్సు స్టాప్ వీధికి అడ్డంగా ఉంది.",
+        "stt_ms": 3433,
+        "queue_ms": 0,
+        "translate_ms": 1430,
+        "tts_ms": 1003,
+        "total_ms": 5866
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "ta",
+    "index": 19,
+    "text": "பேருந்து நிறுத்தம் தெருவுக்கு அப்பாலேயே இருக்கிறது.",
+    "transcript": "பேருந்து நிறுத்தம் தெருவுக்கு அப்பாலேயே இருக்கிறது",
+    "room_id": "structured-ta-19-1791542071813423400",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 8055,
+        "translated_text": "बस स्टॉप सड़क के पार है।",
+        "stt_ms": 4728,
+        "queue_ms": 0,
+        "translate_ms": 2006,
+        "tts_ms": 924,
+        "total_ms": 7658
+      },
+      "en-IN": {
+        "end_to_end_ms": 7454,
+        "translated_text": "The bus stop is just across the street",
+        "stt_ms": 4728,
+        "queue_ms": 0,
+        "translate_ms": 1416,
+        "tts_ms": 888,
+        "total_ms": 7032
+      },
+      "ta-IN": {
+        "end_to_end_ms": 8289,
+        "translated_text": "பேருந்து நிறுத்தம் தெருவின் குறுக்கே உள்ளது.",
+        "stt_ms": 4728,
+        "queue_ms": 0,
+        "translate_ms": 1994,
+        "tts_ms": 1130,
+        "total_ms": 7852
+      },
+      "te-IN": {
+        "end_to_end_ms": 7912,
+        "translated_text": "బస్సు స్టాప్ వీధికి అడ్డంగా ఉంది.",
+        "stt_ms": 4728,
+        "queue_ms": 0,
+        "translate_ms": 1839,
+        "tts_ms": 892,
+        "total_ms": 7459
+      }
+    },
+    "error": null,
+    "complete": true
+  },
+  {
+    "category": "te",
+    "index": 19,
+    "text": "బస్ స్టాప్ వీధికి అవతల వైపే ఉంది.",
+    "transcript": "bus stop వీధికి అవతల వైపే ఉంది",
+    "room_id": "structured-te-19-1791542083152840700",
+    "results": {
+      "hi-IN": {
+        "end_to_end_ms": 7058,
+        "translated_text": "बस स्टॉप सड़क के पार है।",
+        "stt_ms": 3529,
+        "queue_ms": 0,
+        "translate_ms": 2369,
+        "tts_ms": 772,
+        "total_ms": 6670
+      },
+      "en-IN": {
+        "end_to_end_ms": 6346,
+        "translated_text": "The bus stop is across from the street",
+        "stt_ms": 3529,
+        "queue_ms": 0,
+        "translate_ms": 1393,
+        "tts_ms": 981,
+        "total_ms": 5903
+      },
+      "ta-IN": {
+        "end_to_end_ms": 7230,
+        "translated_text": "பேருந்து நிறுத்தம் தெருவின் குறுக்கே உள்ளது.",
+        "stt_ms": 3529,
+        "queue_ms": 0,
+        "translate_ms": 2079,
+        "tts_ms": 1158,
+        "total_ms": 6766
+      },
+      "te-IN": {
+        "end_to_end_ms": 6851,
+        "translated_text": "బస్సు స్టాప్ వీధికి అడ్డంగా ఉంది",
+        "stt_ms": 3529,
+        "queue_ms": 0,
+        "translate_ms": 1918,
+        "tts_ms": 925,
+        "total_ms": 6372
+      }
+    },
+    "error": null,
+    "complete": true
+  }
+]
