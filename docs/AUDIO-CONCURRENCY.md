@@ -46,8 +46,10 @@ captured in the same microphone cannot be reliably separated by this change.
 - Each of the two speakers keeps its own upstream STT connection, timestamps,
   final transcripts and ordered translation worker. Their input is never mixed
   before STT, and translation remains concurrent across speakers.
-- The playback-mute checkbox is off by default. When enabled, it sends silence
-  only while a translated clip is active; it does not change manual mute state.
+- The playback-mute checkbox is off by default. When enabled, it disables the
+  local audio track and sends silence while a translated clip is active; it does
+  not change manual mute state. The crossed-out mic and subtle pulse identify
+  the automatic pause; reduced-motion preferences disable the pulse.
   End/error/rejected playback clears the pause. A manually muted mic stays muted.
 - Translated clips play in arrival order without interrupting earlier clips.
   Eight clips may wait; excess audio is rejected with a visible message while
@@ -65,12 +67,29 @@ mocked WebSockets to verify desktop/mobile controls, silent/live PCM, capture
 during playback with the guard off, guard recovery and queued speaker clips.
 No Sarvam credits are used by these tests.
 
-A proposed paid smoke test uses two 60-second speaker reservations (INR 1 at
-INR 30/hour), about 240 total translation characters (INR 0.48), and about 600
-TTS characters (INR 1.80). Expected reservations are around INR 3.28 before GST;
-request approval for up to INR 5 as an estimate, not a provider billing guarantee.
-No automatic retries. Two microphones multiply STT consumption. Keep the
-existing persistent ledger and do not reset allowances as part of deployment.
+On 2026-10-10 the user approved INR 5, expandable to INR 20, for testing. A real
+provider overlap smoke test passed using existing fixtures `en_0` and `en_2`,
+sent concurrently through the running Docker backend on local loopback. Both
+final transcripts, Hindi translations and audio messages reached a common
+listener and the opposite speaker, with no provider errors. Completion was
+6.203 seconds. This verifies independent concurrent provider streams, not two
+physical microphones or public-tunnel authentication.
+
+Incremental reservations: 120 STT seconds, 66 translation characters and 52
+TTS characters. At the project's documented rates the conservative estimate
+is INR 1.288 excluding GST, not a Sarvam billing receipt. No new fixture TTS or
+automatic retries were used. Evidence is ignored local runtime data in
+`logs/local-demo/live-overlap-result.json`; explicit paid reruns use
+`scripts/test_live_overlap.py --live`. Two microphones multiply STT consumption.
+Keep the existing persistent ledger; deployments do not reset allowances.
+
+The reported failed join showed a network error loading the AudioWorklet and a
+broken external SVG icon. Both assets were available through local Docker;
+the old quick-tunnel hostname subsequently failed DNS resolution. The HTML
+response now embeds the existing Lucide SVGs and worklet source, loading the
+worklet from a local Blob URL, so these critical assets need no secondary
+network requests. HTML uses `Cache-Control: no-store`. Browser regression tests
+deliberately abort all `/static` requests and still join/capture successfully.
 
 After approval, test on two laptops with headphones: leave listen-only and
 playback muting unchecked, speak short overlapping phrases, confirm both

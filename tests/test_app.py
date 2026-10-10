@@ -123,6 +123,16 @@ class WebSocketTests(unittest.TestCase):
                 self.assertEqual(self.join(ws, access_token="wrong")["type"], "error")
             provider.assert_not_called()
 
+    def test_capture_assets_are_embedded_in_page(self):
+        response = self.client.get("/")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.headers["cache-control"], "no-store")
+        self.assertNotIn("__PCM_WORKLET_SOURCE__", response.text)
+        self.assertNotIn("<!-- INLINE_", response.text)
+        self.assertIn('class="lucide lucide-mic"', response.text)
+        self.assertIn('class="lucide lucide-mic-off"', response.text)
+        self.assertIn('registerProcessor', response.text)
+
     def test_invalid_language_rejected(self):
         with self.client.websocket_connect("/ws/demo") as ws:
             self.assertEqual(self.join(ws, language="xx")["type"], "error")

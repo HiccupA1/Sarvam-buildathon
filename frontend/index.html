@@ -165,7 +165,13 @@
   .mic-controls { display: flex; align-items: center; flex-wrap: wrap; gap: 0.65rem; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); }
   #micBtn { width: 48px; height: 48px; padding: 12px; border-radius: 8px; background: var(--accent-soft); border-color: var(--border-strong); }
   #micBtn[aria-pressed="true"] { background: rgba(248,113,113,0.15); border-color: var(--danger); }
-  #micBtn img { width: 22px; height: 22px; filter: invert(1); }
+  #micBtn svg { width: 22px; height: 22px; color: var(--text); }
+  #micBtn .lucide-mic-off { display: none; }
+  #micBtn[data-muted="true"] .lucide-mic { display: none; }
+  #micBtn[data-muted="true"] .lucide-mic-off { display: block; }
+  #micBtn[data-paused="true"] { animation: mic-paused 1.4s ease-in-out infinite; }
+  @keyframes mic-paused { 50% { box-shadow: 0 0 0 4px rgba(248,113,113,0.2); } }
+  @media (prefers-reduced-motion: reduce) { #micBtn[data-paused="true"] { animation: none; } }
   #micStatus { min-width: 140px; font-size: 0.85rem; color: var(--text-muted); }
   #micLevel { width: 100px; height: 12px; accent-color: var(--accent); }
   .mic-badge { margin-left: auto; font: 500 0.72rem var(--font-body); color: var(--text-muted); }
@@ -357,7 +363,7 @@
       <div id="status" role="status" aria-live="polite"><span class="conn-dot" id="connDot"></span><span id="statusText">idle</span></div>
     </div>
     <div class="mic-controls">
-      <button id="micBtn" type="button" disabled aria-label="Unmute microphone" aria-pressed="true" title="Unmute microphone"><img id="micIcon" src="/static/icons/mic-off.svg" alt="" /></button>
+      <button id="micBtn" type="button" disabled data-muted="true" aria-label="Unmute microphone" aria-pressed="true" title="Unmute microphone"><span id="micIcon" aria-hidden="true"><!-- INLINE_MIC --><!-- INLINE_MIC-OFF --></span></button>
       <span id="micStatus" role="status" aria-live="polite">Microphone off</span>
       <meter id="micLevel" min="0" max="1" value="0" aria-label="Microphone input level"></meter>
       <span id="micNotice" role="status" aria-live="polite"></span>
@@ -416,7 +422,6 @@
     const listenOnlyEl = document.getElementById("listenOnly");
     const echoGuardEl = document.getElementById("echoGuard");
     const micBtn = document.getElementById("micBtn");
-    const micIcon = document.getElementById("micIcon");
     const micStatus = document.getElementById("micStatus");
     const micLevel = document.getElementById("micLevel");
     const micNotice = document.getElementById("micNotice");
@@ -428,18 +433,23 @@
     function updateMicrophone() {
       const canSpeak = !manualStop && !listenOnlyEl.checked && !!mediaStream;
       const track = mediaStream && mediaStream.getAudioTracks()[0];
-      if (track) track.enabled = canSpeak && !micMuted;
+      const paused = canSpeak && !micMuted && echoGuardEl.checked && playbackActive;
+      const effectiveMuted = !canSpeak || micMuted || paused;
+      if (track) track.enabled = !effectiveMuted;
       micBtn.disabled = !canSpeak || !joined || micPending;
-      micBtn.setAttribute("aria-pressed", String(micMuted));
+      micBtn.setAttribute("aria-pressed", String(effectiveMuted));
+      micBtn.dataset.muted = String(effectiveMuted);
+      micBtn.dataset.paused = String(paused);
       const action = micMuted ? "Unmute microphone" : "Mute microphone";
       micBtn.setAttribute("aria-label", action);
-      micBtn.title = action;
-      micIcon.src = `/static/icons/${micMuted ? "mic-off" : "mic"}.svg`;
+      micBtn.title = paused ? "Muted during playback; click to stay muted" : action;
       micStatus.textContent = !canSpeak ? (listenOnlyEl.checked && !manualStop ? "Listen only" : "Microphone off")
         : track && (track.muted || track.readyState === "ended") ? "Microphone unavailable"
         : micPending ? "Requesting microphone" : micMuted ? "Microphone muted"
         : echoGuardEl.checked && playbackActive ? "Paused during playback" : "Microphone live";
-      if (micMuted || !canSpeak) micLevel.value = 0;
+      if (effectiveMuted) micLevel.value = 0;
+      if (participants[myPartyId]) participants[myPartyId].mic.textContent =
+        !canSpeak ? "Listen only" : paused ? "Playback muted" : micMuted ? "Muted" : "Mic live";
     }
 
     function setMicrophoneMuted(muted) {
@@ -770,7 +780,12 @@
 
       audioContext = new AudioContext();
       await audioContext.resume();
-      await audioContext.audioWorklet.addModule("/static/audio-processor.js");
+      const workletUrl = URL.createObjectURL(new Blob(["__PCM_WORKLET_SOURCE__"], {type: "text/javascript"}));
+      try {
+        await audioContext.audioWorklet.addModule(workletUrl);
+      } finally {
+        URL.revokeObjectURL(workletUrl);
+      }
 
       micSource = audioContext.createMediaStreamSource(mediaStream);
       workletNode = new AudioWorkletNode(audioContext, "pcm-worklet-processor");

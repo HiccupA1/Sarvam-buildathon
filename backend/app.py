@@ -85,7 +85,7 @@ from datetime import datetime, timezone
 import httpx
 from dotenv import load_dotenv
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
-from fastapi.responses import FileResponse
+from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from sarvamai import AsyncSarvamAI, RealtimeAudioInput, RealtimeEnd
 
@@ -149,7 +149,16 @@ def log_metrics(record: dict) -> None:
 
 @app.get("/")
 async def index():
-    return FileResponse(os.path.join(FRONTEND_DIR, "index.html"))
+    # Deliver capture-critical assets atomically with the page, even on a tunnel.
+    with open(os.path.join(FRONTEND_DIR, "index.html"), encoding="utf-8") as source:
+        html = source.read()
+    with open(os.path.join(FRONTEND_DIR, "audio-processor.js"), encoding="utf-8") as source:
+        worklet = json.dumps(source.read()).replace("<", "\\u003c")
+    html = html.replace('"__PCM_WORKLET_SOURCE__"', worklet)
+    for icon in ("mic", "mic-off"):
+        with open(os.path.join(FRONTEND_DIR, "icons", f"{icon}.svg"), encoding="utf-8") as source:
+            html = html.replace(f"<!-- INLINE_{icon.upper()} -->", source.read())
+    return HTMLResponse(html, headers={"Cache-Control": "no-store"})
 
 
 @app.get("/health")

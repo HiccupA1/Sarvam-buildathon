@@ -44,10 +44,13 @@ async function main() {
       const playbackReports = [];
       let activeSocket;
       page.on('pageerror', error => errors.push(error.message));
+      await page.route('**/config', route => route.fulfill({json: {live_enabled: false, session_seconds: 120}}));
       await page.goto(baseUrl);
       await page.waitForFunction(() => document.getElementById('statusText').textContent === 'live demo offline');
       assert(await page.locator('#startBtn').isDisabled());
       await page.route('**/config', route => route.fulfill({ json: { live_enabled: true, session_seconds: 120 } }));
+      // Reproduce the public tunnel's failed secondary asset requests.
+      await page.route('**/static/**', route => route.abort());
       await page.routeWebSocket('**/ws/**', socket => {
         activeSocket = socket;
         socket.onMessage(raw => {
@@ -108,6 +111,8 @@ async function main() {
         throw new Error(`Expected ${expectedNonzero ? 'live' : 'silent'} microphone packets`);
       }
       await waitForAudio(true);
+      assert.equal(await page.locator('#micIcon svg').count(), 2);
+      assert(await page.locator('#micIcon .lucide-mic').isVisible());
       await page.locator('#micBtn').click();
       await page.getByRole('button', {name: 'Unmute microphone', exact: true}).waitFor();
       await waitForAudio(false);
@@ -120,14 +125,36 @@ async function main() {
       sendAudio('B', 2);
       await waitForAudio(true);
       await page.locator('#echoGuard').check();
+      assert.equal(await page.evaluate(() => mediaStream.getAudioTracks()[0].enabled), false);
+      assert.equal(await page.locator('#micBtn').getAttribute('data-paused'), 'true');
+      assert(await page.locator('#micIcon .lucide-mic-off').isVisible());
       await waitForAudio(false);
+      await page.screenshot({path: path.join(root, `logs/playback-muted-${viewport.width}.png`), fullPage: true});
       await page.locator('#echoGuard').uncheck();
+      assert.equal(await page.evaluate(() => mediaStream.getAudioTracks()[0].enabled), true);
+      assert.equal(await page.locator('#micBtn').getAttribute('data-paused'), 'false');
       await waitForAudio(true);
       sendAudio('C', 3);
       for (let i = 0; i < 60 && !playbackReports.some(m => m.speaker === 'C' && m.seq === 3); i++) await page.waitForTimeout(100);
       assert(playbackReports.some(m => m.speaker === 'B' && m.seq === 2));
       assert(playbackReports.some(m => m.speaker === 'C' && m.seq === 3));
       assert.equal(await page.locator('#micStatus').textContent(), 'Microphone live');
+      await page.locator('#echoGuard').check();
+      sendAudio('B', 4);
+      await page.waitForFunction(() => document.getElementById('micBtn').dataset.paused === 'true');
+      await page.waitForFunction(() => !playbackActive);
+      assert.equal(await page.evaluate(() => mediaStream.getAudioTracks()[0].enabled), true);
+      assert.equal(await page.locator('#micBtn').getAttribute('data-paused'), 'false');
+      sendAudio('B', 5);
+      await page.waitForFunction(() => document.getElementById('micBtn').dataset.paused === 'true');
+      await page.locator('#micBtn').click();
+      await page.waitForFunction(() => micMuted && !micPending);
+      await page.waitForFunction(() => !playbackActive);
+      assert.equal(await page.evaluate(() => mediaStream.getAudioTracks()[0].enabled), false);
+      assert.equal(await page.locator('#micStatus').textContent(), 'Microphone muted');
+      await page.locator('#micBtn').click();
+      await page.waitForFunction(() => !micMuted && !micPending);
+      assert.equal(await page.evaluate(() => mediaStream.getAudioTracks()[0].enabled), true);
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
       await page.screenshot({path: path.join(root, `logs/microphone-${viewport.width}.png`), fullPage: true});
       await page.locator('#stopBtn').click();
