@@ -1,0 +1,28 @@
+# Disabled preview only. A live demo requires approved paid storage and secrets.
+services:
+  - type: web
+    name: sarvam-interpreter-preview
+    runtime: docker
+    plan: free
+    region: singapore
+    branch: main
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    autoDeployTrigger: checksPass
+    envVars:
+      - key: LIVE_ENABLED
+        value: "false"
+      - key: WEB_CONCURRENCY
+        value: "1"
+      - key: MAX_ROOMS
+        value: "2"
+      - key: SESSION_SECONDS
+        value: "120"
+      - key: MAX_STT_SECONDS
+        value: "0"
+      - key: MAX_TRANSLATE_CHARS
+        value: "0"
+      - key: MAX_TTS_CHARS
+        value: "0"
+      - key: USAGE_DB_PATH
+        value: /app/logs/usage.sqlite3

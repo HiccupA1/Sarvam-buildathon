@@ -51,6 +51,22 @@ https://render.com/docs/websocket
 https://render.com/docs/free
 https://render.com/docs/disks
 
+### Free disabled preview
+
+The repository includes `render.yaml` for a free Docker preview in Singapore.
+In Render, create a new Blueprint from this repository and its `main` branch.
+Review that the proposed service uses the free plan before creating it. It
+uses `/health` and deploys updates after CI passes. No Sarvam key or invite is
+required: live access is disabled and all paid API allowances are zero.
+
+This preview has no persistent disk and must not be converted to live access
+by only changing `LIVE_ENABLED`. Before enabling live sessions, approve the
+hosting cost, configure durable storage and secrets, and replace the zero
+allowances with reviewed limits. Update the Blueprint too, or a later sync can
+restore its disabled-preview settings. Never commit secrets to `render.yaml`.
+
+### Protected live deployment
+
 1. Push the reviewed source to your GitHub repository after offline CI passes.
    The Docker context excludes credentials, private certificates, logs, fixtures,
    and test results. Docker contains only the runtime app and frontend.
