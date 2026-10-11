@@ -1,5 +1,44 @@
 # Microphone control and two-speaker overlap
 
+## Explicit Unlimited Testing
+
+With spending approval, `scripts/local_demo.py start --live --unlimited`
+removes cumulative STT, translation and TTS allowances for the local demo.
+Usage remains recorded in the persistent ledger. Sarvam balance and provider
+limits still apply; unlimited-credit demo sessions now last 30 minutes. Keep the invite
+private and stop the demo when testing ends. Omitting `--unlimited` restores
+limited mode on the next startup; the Render preview remains disabled.
+
+## Session Timeout Fix
+
+Saved metrics for room `test2` showed both upstream streams connecting at
+21:23:02 UTC and ending with `TimeoutError` at 21:24:02 UTC: a one-minute
+application timer, not a demonstrated provider failure. Unlimited credit caps
+had not removed `SESSION_SECONDS=60`. The enclosing `asyncio.timeout` raced the
+inner timed wait and obscured the expiry as a generic session failure.
+
+Bounded timeouts now report `Demo session time limit reached`. On 2026-10-12
+the user explicitly chose a 30-minute duration rather than indefinite billing.
+Local unlimited-credit mode therefore defaults to 1800 seconds. An explicit
+`--session-seconds` can configure a different positive duration. The backend
+also supports an explicitly configured unlimited duration only with an
+unlimited STT allowance, reserving successive minute blocks in that mode.
+This mode is not enabled on the deployed demo.
+
+Regression tests cover a bounded timeout message, an unlimited listener,
+independent concurrent streams and ongoing accounting. The paid soak command
+`scripts/test_live_overlap.py --live --soak-seconds 210` keeps two real provider
+streams and a listener open past the reported three-minute failure window,
+then repeats both fixture utterances to verify translation still works.
+
+The deployed Docker soak passed: listener audio from B/C arrived at 5.453s /
+5.797s initially and again at 214.859s / 215.094s (sequence 2). Total run:
+215.203s, no error events. All three test sockets closed cleanly and health
+reported zero active rooms afterward. Evidence is ignored runtime data in
+`logs/local-demo/live-soak-result.json`. This is a real-provider loopback test,
+not a two-physical-laptop or full-30-minute endurance test. Host and Linux Docker
+backend tests (28) and desktop/mobile browser regressions also passed.
+
 ## Scope
 
 The user reported that a second microphone became silent even when playback

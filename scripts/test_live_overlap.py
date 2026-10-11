@@ -12,7 +12,7 @@ from dotenv import dotenv_values
 ROOT = Path(__file__).resolve().parents[1]
 
 
-async def run():
+async def run(soak_seconds=0):
     endpoint = "ws://127.0.0.1:8780/ws/approved-overlap-check"
     origin = "http://127.0.0.1:8780"
     with urllib.request.urlopen(origin + "/health", timeout=5) as response:
@@ -40,11 +40,20 @@ async def run():
                 raise RuntimeError(msg.get("message", "Provider error"))
 
     async def send(pcm, ws):
-        for offset in range(0, len(pcm), 3200):
-            await ws.send(pcm[offset:offset + 3200])
-            await asyncio.sleep(.1)
+        async def utterance():
+            for offset in range(0, len(pcm), 3200):
+                await ws.send(pcm[offset:offset + 3200])
+                await asyncio.sleep(.1)
+
+        await utterance()
         # Continue silence for VAD commit and translation completion.
         while True:
+            if soak_seconds and time.monotonic() - started >= soak_seconds:
+                await utterance()
+                for _ in range(20):
+                    await ws.send(bytes(3200))
+                    await asyncio.sleep(.1)
+                return
             await ws.send(bytes(3200))
             await asyncio.sleep(.1)
 
@@ -63,7 +72,20 @@ async def run():
                     if task.done() and not task.cancelled() and task.exception():
                         raise task.exception()
                 await asyncio.sleep(.1)
-        print("PASS: listener received real translated WAV audio from both overlapping speakers.")
+        if soak_seconds:
+            async with asyncio.timeout(soak_seconds + 35):
+                while len({event.get("speaker") for event in events if event["client"] == 0
+                           and event["type"] == "audio" and event["elapsed_s"] >= soak_seconds}) < 2:
+                    for task in tasks[:3]:
+                        if task.done():
+                            if task.exception():
+                                raise task.exception()
+                            raise RuntimeError("Socket ended during soak test")
+                    for task in tasks[3:]:
+                        if task.done() and task.exception():
+                            raise task.exception()
+                    await asyncio.sleep(.1)
+        print(f"PASS: both overlapping speakers delivered translated audio{' before and after the soak period' if soak_seconds else ''}.")
     finally:
         for task in tasks:
             task.cancel()
@@ -73,7 +95,7 @@ async def run():
                 await ws.send(json.dumps({"type": "end"}))
             finally:
                 await ws.close()
-        output = ROOT / "logs/local-demo/live-overlap-result.json"
+        output = ROOT / "logs/local-demo" / ("live-soak-result.json" if soak_seconds else "live-overlap-result.json")
         output.write_text(json.dumps({"fixture_ids": ["en_0", "en_2"], "events": events,
                                       "elapsed_s": round(time.monotonic() - started, 3)}, indent=2), encoding="utf-8")
         print(f"Evidence: {output}")
@@ -82,6 +104,10 @@ async def run():
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--live", action="store_true", help="Requires explicit Sarvam spending approval")
-    if not parser.parse_args().live:
+    parser.add_argument("--soak-seconds", type=int, default=0, help="Keep both streams open, then repeat speech; billable")
+    args = parser.parse_args()
+    if args.soak_seconds < 0:
+        parser.error("soak duration cannot be negative")
+    if not args.live:
         parser.error("--live required; this test reserves two 60-second STT sessions and pays for translation/TTS")
-    asyncio.run(run())
+    asyncio.run(run(args.soak_seconds))

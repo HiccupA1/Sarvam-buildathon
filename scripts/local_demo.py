@@ -75,11 +75,15 @@ def wait_for_app(live):
     raise RuntimeError("Local demo did not become ready")
 
 
-def start(stt_seconds=None):
+def start(stt_seconds=None, unlimited=False, session_seconds=None):
     previous = json.loads(STATE.read_text()) if STATE.exists() else {}
     stt_seconds = stt_seconds if stt_seconds is not None else previous.get("stt_limit_seconds", 240)
     if stt_seconds < 60:
         raise RuntimeError("STT allowance must cover at least one 60-second session")
+    if session_seconds is not None and session_seconds <= 0:
+        raise RuntimeError("Session duration must be positive")
+    session_seconds = session_seconds if session_seconds is not None else 1800 if unlimited else 60
+    duration = str(session_seconds)
     if any(owned_container(name) for name in (APP, TUNNEL)):
         raise RuntimeError("Demo containers already exist; use status or stop first")
     key = os.getenv("SARVAM_API_KEY") or dotenv_values(ROOT / ".env").get("SARVAM_API_KEY")
@@ -90,9 +94,10 @@ def start(stt_seconds=None):
     environment = {
         "SARVAM_API_KEY": key, "DEMO_ACCESS_TOKEN": invite,
         "LIVE_ENABLED": "false", "WEB_CONCURRENCY": "1", "MAX_ROOMS": "1",
-        "SESSION_SECONDS": "60", "RECONNECT_SECONDS": "10",
-        "MAX_STT_SECONDS": str(stt_seconds), "MAX_TRANSLATE_CHARS": "1000",
-        "MAX_TTS_CHARS": "1000", "USAGE_DB_PATH": "/app/logs/usage.sqlite3",
+        "SESSION_SECONDS": duration, "RECONNECT_SECONDS": "10",
+        "MAX_STT_SECONDS": "unlimited" if unlimited else str(stt_seconds),
+        "MAX_TRANSLATE_CHARS": "unlimited" if unlimited else "1000",
+        "MAX_TTS_CHARS": "unlimited" if unlimited else "1000", "USAGE_DB_PATH": "/app/logs/usage.sqlite3",
         "ALLOWED_ORIGINS": f"http://127.0.0.1:{PORT},http://localhost:{PORT}",
     }
 
@@ -129,6 +134,8 @@ def start(stt_seconds=None):
         start_app()
         wait_for_app(True)
         STATE.write_text(json.dumps({"url": url, "running": True, "stt_limit_seconds": stt_seconds,
+                                     "unlimited_credits": unlimited,
+                                     "session_seconds": session_seconds,
                                      "local_url": f"http://127.0.0.1:{PORT}"}, indent=2) + "\n")
         (DIRECTORY / "PRIVATE-INVITE.md").write_text(
             f"# Private temporary demo\n\nURL: {url}\n\nDemo invite: `{invite}`\n\n"
@@ -137,7 +144,10 @@ def start(stt_seconds=None):
             "`.venv\\Scripts\\python.exe scripts\\local_demo.py stop`\n")
         print(f"Live demo ready: {url}")
         print(f"Private invite: {DIRECTORY / 'PRIVATE-INVITE.md'}")
-        print(f"60-second speaker sessions; persistent {stt_seconds}s STT / 1000 translation / 1000 TTS allowances.")
+        if unlimited:
+            print(f"Unlimited application credit allowances; session duration: {duration}. Sarvam balance/provider limits still apply.")
+        else:
+            print(f"{duration}-second speaker sessions; persistent {stt_seconds}s STT / 1000 translation / 1000 TTS allowances.")
         print("No speech calls were made by startup. Stop after testing; do not delete the budget volume.")
     except BaseException:
         stop()
@@ -198,12 +208,14 @@ if __name__ == "__main__":
     parser.add_argument("command", choices=("start", "stop", "status", "verify"))
     parser.add_argument("--live", action="store_true", help="Explicitly enable billable speech sessions")
     parser.add_argument("--stt-seconds", type=int, help="Lifetime STT allowance; preserves usage, not a reset")
+    parser.add_argument("--unlimited", action="store_true", help="Remove cumulative speech/translation/TTS caps; requires spending approval")
+    parser.add_argument("--session-seconds", type=int, help="Explicit per-join duration, even with unlimited credit caps")
     args = parser.parse_args()
     if args.command == "start" and not args.live:
         parser.error("start requires --live; this exposes invite-protected billable access")
     try:
         if args.command == "start":
-            start(args.stt_seconds)
+            start(args.stt_seconds, unlimited=args.unlimited, session_seconds=args.session_seconds)
         else:
             {"stop": stop, "status": status, "verify": verify}[args.command]()
     except (RuntimeError, subprocess.TimeoutExpired) as error:

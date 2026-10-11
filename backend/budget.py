@@ -23,15 +23,19 @@ class UsageBudget:
             db.execute("BEGIN IMMEDIATE")
             row = db.execute("SELECT amount FROM usage WHERE kind = ?", (kind,)).fetchone()
             used = row[0] if row else 0
-            if used + amount > self.limits[kind]:
+            if self.limits[kind] is not None and used + amount > self.limits[kind]:
                 raise BudgetExceeded(f"Demo {kind} allowance exhausted")
             db.execute("INSERT INTO usage VALUES (?, ?) ON CONFLICT(kind) DO UPDATE SET amount = excluded.amount",
                        (kind, used + amount))
 
 
 def configured_budget():
+    def limit(name, default, parse):
+        value = os.getenv(name, default)
+        return None if value.strip().lower() == "unlimited" else parse(value)
+
     return UsageBudget(os.getenv("USAGE_DB_PATH", "logs/usage.sqlite3"), {
-        "stt_seconds": float(os.getenv("MAX_STT_SECONDS", "1800")),
-        "translate_chars": int(os.getenv("MAX_TRANSLATE_CHARS", "20000")),
-        "tts_chars": int(os.getenv("MAX_TTS_CHARS", "20000")),
+        "stt_seconds": limit("MAX_STT_SECONDS", "1800", float),
+        "translate_chars": limit("MAX_TRANSLATE_CHARS", "20000", int),
+        "tts_chars": limit("MAX_TTS_CHARS", "20000", int),
     })

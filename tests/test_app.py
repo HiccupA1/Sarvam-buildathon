@@ -2,6 +2,7 @@ import asyncio
 import importlib.util
 import json
 import tempfile
+import time
 import unittest
 from pathlib import Path
 from types import SimpleNamespace
@@ -13,6 +14,18 @@ from backend.budget import BudgetExceeded, UsageBudget, configured_budget
 
 
 class BudgetTests(unittest.TestCase):
+    def test_explicit_unlimited_caps_keep_usage_history(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "usage.db"
+            with patch.dict("os.environ", {"MAX_STT_SECONDS": "unlimited", "MAX_TRANSLATE_CHARS": "unlimited",
+                                           "MAX_TTS_CHARS": "unlimited", "USAGE_DB_PATH": str(path)}):
+                budget = configured_budget()
+            self.assertTrue(all(value is None for value in budget.limits.values()))
+            budget.reserve("stt_seconds", 5000)
+            budget.reserve("stt_seconds", 5000)
+            with self.assertRaises(BudgetExceeded):
+                UsageBudget(path, {"stt_seconds": 9999}).reserve("stt_seconds", 0)
+
     def test_budget_reads_configuration_when_created(self):
         with patch.dict("os.environ", {"MAX_STT_SECONDS": "123", "USAGE_DB_PATH": "logs/custom.sqlite3"}):
             budget = configured_budget()
@@ -167,6 +180,23 @@ class WebSocketTests(unittest.TestCase):
             self.assertTrue(reply["muted"])
             ws.send_json({"type": "end"})
 
+    def test_bounded_listener_timeout_has_specific_message(self):
+        with patch.object(server, "SESSION_SECONDS", .02):
+            with self.client.websocket_connect("/ws/timer") as ws:
+                self.join(ws)
+                self.assertEqual(ws.receive_json()["type"], "ready")
+                self.assertEqual(ws.receive_json()["message"], "Demo session time limit reached")
+
+    def test_unlimited_listener_remains_open(self):
+        with patch.object(server, "SESSION_SECONDS", None):
+            with self.client.websocket_connect("/ws/no-timer") as ws:
+                self.join(ws)
+                self.assertEqual(ws.receive_json()["type"], "ready")
+                time.sleep(.1)
+                ws.send_json({"type": "ping", "client_ms": 123})
+                self.assertEqual(ws.receive_json()["type"], "pong")
+                ws.send_json({"type": "end"})
+
     def test_two_speakers_translate_independently_and_muted_pcm_is_zeroed(self):
         import base64
         streams = []
@@ -215,7 +245,8 @@ class WebSocketTests(unittest.TestCase):
                 if predicate(message):
                     return message
 
-        with patch.object(server, "AsyncSarvamAI", return_value=provider), patch.object(server, "BUDGET", Mock()), patch.object(server, "log_metrics"):
+        budget = Mock()
+        with patch.object(server, "AsyncSarvamAI", return_value=provider), patch.object(server, "BUDGET", budget), patch.object(server, "log_metrics"), patch.object(server, "SESSION_SECONDS", None), patch.object(server, "STT_ACCOUNTING_SECONDS", .05):
             with self.client.websocket_connect("/ws/overlap") as listener:
                 self.join(listener)
                 listener.receive_json()
@@ -224,6 +255,8 @@ class WebSocketTests(unittest.TestCase):
                     until(a, lambda m: m["type"] == "ready")
                     self.join(b, role="speaker")
                     until(b, lambda m: m["type"] == "ready")
+                    time.sleep(.15)
+                    self.assertGreaterEqual(budget.reserve.call_count, 4)
                     a.send_json({"type": "microphone", "muted": True})
                     until(a, lambda m: m["type"] == "microphone" and m["party_id"] == "B")
                     a.send_bytes(b"\x01\x10" * 1600)

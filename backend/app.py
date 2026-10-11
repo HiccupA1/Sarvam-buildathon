@@ -99,7 +99,13 @@ LIVE_ENABLED = os.getenv("LIVE_ENABLED", "false").lower() == "true"
 ACCESS_TOKEN = os.getenv("DEMO_ACCESS_TOKEN", "")
 ALLOWED_ORIGINS = set(filter(None, os.getenv("ALLOWED_ORIGINS", "").split(",")))
 MAX_ROOMS = int(os.getenv("MAX_ROOMS", "2"))
-SESSION_SECONDS = int(os.getenv("SESSION_SECONDS", "120"))
+_session_duration = os.getenv("SESSION_SECONDS", "120")
+SESSION_SECONDS = None if _session_duration.lower() == "unlimited" else int(_session_duration)
+if SESSION_SECONDS is None and BUDGET.limits["stt_seconds"] is not None:
+    raise RuntimeError("Unlimited sessions require an explicit unlimited STT allowance")
+if SESSION_SECONDS is not None and SESSION_SECONDS <= 0:
+    raise RuntimeError("SESSION_SECONDS must be positive or unlimited")
+STT_ACCOUNTING_SECONDS = 60
 RECONNECT_SECONDS = float(os.getenv("RECONNECT_SECONDS", "10"))
 LANGUAGES = {"hi-IN", "en-IN", "ta-IN", "te-IN"}
 if LIVE_ENABLED and (not API_KEY or len(ACCESS_TOKEN) < 16):
@@ -345,7 +351,7 @@ async def ws_endpoint(websocket: WebSocket, room_id: str):
             translate_queue.task_done()
 
     worker_task = asyncio.create_task(translate_worker())
-    relay_task = stt_task = None
+    relay_task = stt_task = accounting_task = None
 
     async def handle_control(control):
         if control.get("type") == "microphone" and isinstance(control.get("muted"), bool):
@@ -386,7 +392,7 @@ async def ws_endpoint(websocket: WebSocket, room_id: str):
             return
         # Reserve the entire bounded upstream session before opening it.
         # Counting only PCM misses potentially billable idle connection time.
-        BUDGET.reserve("stt_seconds", SESSION_SECONDS)
+        BUDGET.reserve("stt_seconds", SESSION_SECONDS or STT_ACCOUNTING_SECONDS)
         http_client = httpx.AsyncClient(timeout=15, follow_redirects=True)
         client = AsyncSarvamAI(api_subscription_key=API_KEY, httpx_client=http_client)
         # language_code="auto" + mode="codemix": this participant can speak
@@ -503,7 +509,16 @@ async def ws_endpoint(websocket: WebSocket, room_id: str):
             # "can't rejoin the same room" bug this guards against.
             relay_task = asyncio.create_task(relay_audio())
             stt_task = asyncio.create_task(handle_stt_events())
-            done, pending = await asyncio.wait({relay_task, stt_task}, timeout=SESSION_SECONDS, return_when=asyncio.FIRST_COMPLETED)
+            active_tasks = {relay_task, stt_task}
+            if SESSION_SECONDS is None:
+                async def account_stt():
+                    while True:
+                        await asyncio.sleep(STT_ACCOUNTING_SECONDS)
+                        BUDGET.reserve("stt_seconds", STT_ACCOUNTING_SECONDS)
+
+                accounting_task = asyncio.create_task(account_stt())
+                active_tasks.add(accounting_task)
+            done, pending = await asyncio.wait(active_tasks, timeout=SESSION_SECONDS, return_when=asyncio.FIRST_COMPLETED)
             if not done:
                 for task in pending:
                     task.cancel()
@@ -536,7 +551,7 @@ async def ws_endpoint(websocket: WebSocket, room_id: str):
                 except asyncio.CancelledError:
                     pass
 
-            for task in (relay_task, stt_task):
+            for task in active_tasks:
                 if task.done() and not task.cancelled():
                     exc = task.exception()
                     if exc is not None:
@@ -545,12 +560,15 @@ async def ws_endpoint(websocket: WebSocket, room_id: str):
         pass
     except Exception as exc:
         log_metrics({"kind": "session_error", "error_type": type(exc).__name__})
-        await participant.send_json_safe({"type": "error", "message": str(exc) if isinstance(exc, BudgetExceeded) else "Session stopped; please try again later"})
+        message = str(exc) if isinstance(exc, BudgetExceeded) else (
+            "Demo session time limit reached" if isinstance(exc, TimeoutError) and SESSION_SECONDS is not None
+            else "Session stopped; please try again later")
+        await participant.send_json_safe({"type": "error", "message": message})
     finally:
-        for task in (relay_task, stt_task):
+        for task in (relay_task, stt_task, accounting_task):
             if task and not task.done():
                 task.cancel()
-        await asyncio.gather(*(t for t in (relay_task, stt_task) if t), return_exceptions=True)
+        await asyncio.gather(*(t for t in (relay_task, stt_task, accounting_task) if t), return_exceptions=True)
         # Drain any in-flight utterances so the last thing said isn't
         # silently dropped just because the mic/STT side finished (or
         # errored, e.g. connect() itself failing) before translation

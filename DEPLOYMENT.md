@@ -116,6 +116,15 @@ above, before GST. This is not an actual billing cap. Each speaker join reserves
 is performed by startup. Limits are lifetime allowances across starts, not
 per-demo allocations. The demo stays reachable until explicitly stopped.
 
+For explicitly approved uncapped-credit testing, use
+`scripts/local_demo.py start --live --unlimited --session-seconds 1800`.
+This removes cumulative credit allowances but keeps a 30-minute session timer
+(also the default duration with `--unlimited`). Every speaker join conservatively
+reserves the full 30 minutes in the usage ledger; this is not actual provider
+billing. Share the invite only with supervised testers and stop afterward.
+The earlier one-minute timer is still used in limited mode. Expiry now shows
+`Demo session time limit reached`, not a generic provider error.
+
 For two-laptop testing:
 
 1. Open the temporary URL on both devices (not the disabled Render preview).
