@@ -26,6 +26,12 @@ missing trials, not failed trials; build/harness hashes must match. Use a new
 directory for changed code/protocol. Every final segment is correlated and
 WAV-validated; first audio alone is insufficient. No automatic trial retries.
 
+Each fresh output directory now gets its own hashed runtime subdirectory under
+`logs/controlled-benchmark/runs/`, so metrics and accounting do not mix between
+campaigns. `metadata.json` records its location. The 20261012 run retains its
+original runtime directory and exact measured harness in `harness_measured.py`;
+it is an immutable historical result, not a rerun with newer plumbing.
+
 The CSV/JSON analyzer uses the Python standard library. Optional plots require
 `pip install -r loadtest/requirements-analysis.txt`, then run
 `python loadtest/plot_controlled.py <results-directory>`.

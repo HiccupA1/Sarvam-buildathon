@@ -13,7 +13,8 @@ def check():
     manifest = json.loads((OUTPUT / "manifest.json").read_text(encoding="utf-8"))
     metadata = json.loads((OUTPUT / "metadata.json").read_text())
     assert metadata["status"] == "completed", "Campaign still incomplete"
-    assert hashlib.sha256((ROOT / "loadtest/controlled_benchmark.py").read_bytes()).hexdigest() == metadata["harness_sha256"]
+    harness_source = OUTPUT / metadata["harness_snapshot"] if metadata.get("harness_snapshot") else ROOT / "loadtest/controlled_benchmark.py"
+    assert hashlib.sha256(harness_source.read_bytes()).hexdigest() == metadata["harness_sha256"]
     assert hashlib.sha256((ROOT / "backend/app.py").read_bytes()).hexdigest() == metadata["backend_sha256"]
     assert len(manifest["trials"]) == 90 and len(manifest["dataset"]) == 30
     checks = 0

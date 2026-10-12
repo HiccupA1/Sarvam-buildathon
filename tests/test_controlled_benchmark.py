@@ -2,9 +2,11 @@ import base64
 import importlib
 import io
 import sys
+import tempfile
 import unittest
 import wave
 from pathlib import Path
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "loadtest"))
 harness = importlib.import_module("controlled_benchmark")
@@ -12,6 +14,17 @@ analysis = importlib.import_module("analyze_controlled")
 
 
 class ControlledBenchmarkTests(unittest.TestCase):
+    def test_fresh_campaigns_use_separate_runtime_directories(self):
+        with tempfile.TemporaryDirectory() as directory, patch.object(harness, "RUNTIME", harness.RUNTIME):
+            with patch.object(sys, "argv", ["benchmark", "--output", str(Path(directory) / "one")]):
+                harness.main()
+                first = harness.RUNTIME
+            with patch.object(sys, "argv", ["benchmark", "--output", str(Path(directory) / "two")]):
+                harness.main()
+                second = harness.RUNTIME
+            self.assertNotEqual(first, second)
+            self.assertTrue(first.is_relative_to(harness.ROOT / "logs/controlled-benchmark/runs"))
+
     def test_statistics_missing_values_and_reference_errors(self):
         self.assertEqual(analysis.percentile([None, 4, 1, 3, 2], .5), 2)
         self.assertEqual(analysis.percentile([None, 4, 1, 3, 2], .95), 4)

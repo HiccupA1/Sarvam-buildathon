@@ -331,7 +331,8 @@ def report(output, manifest, metadata, inputs, targets, segments, trials, summar
               "The harness field named `max_frame_lateness_ms` measures overrun of the NEXT scheduled frame deadline after send, not absolute per-frame dispatch jitter. Zero does not prove zero jitter; no per-frame dispatch trace was recorded.", "",
               "## Consumption", "",
               f"Measured PCM sent (including silence): {fmt(sum(row['sent_audio_seconds'] for row in inputs))} seconds; unique fixture speech clips total {fmt(sum(row['duration_s'] for row in manifest['dataset']))} seconds before repetition."]
-    db_path = ROOT / "logs/controlled-benchmark/usage.sqlite3"
+    runtime = ROOT.joinpath(*PureWindowsPath(metadata.get("runtime_directory", "logs/controlled-benchmark")).parts)
+    db_path = runtime / "usage.sqlite3"
     if db_path.exists():
         with sqlite3.connect(f"file:{db_path.as_posix()}?mode=ro", uri=True) as db:
             usage = dict(db.execute("SELECT kind,amount FROM usage").fetchall())
@@ -428,7 +429,8 @@ def main():
     metadata = json.loads((output / "metadata.json").read_text(encoding="utf-8"))
     metrics_path = output / "backend_metrics.jsonl"
     if not metrics_path.exists():
-        metrics_path = ROOT / "logs/controlled-benchmark/metrics.jsonl"
+        runtime = ROOT.joinpath(*PureWindowsPath(metadata.get("runtime_directory", "logs/controlled-benchmark")).parts)
+        metrics_path = runtime / "metrics.jsonl"
     metrics = [json.loads(line) for line in metrics_path.read_text().splitlines()] if metrics_path.exists() else []
     inputs, targets, segments, trials = load_observations(output, metrics)
     summaries = summarize(inputs, targets, segments)

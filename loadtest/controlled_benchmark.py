@@ -298,6 +298,7 @@ async def campaign(args, plan, invite):
 
 
 def main():
+    global RUNTIME
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--live", action="store_true")
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT))
@@ -310,6 +311,8 @@ def main():
         parser.error("Invalid positive limits")
     plan = make_plan(args.per_category, args.repetitions)
     output = Path(args.output)
+    runtime_id = digest(str(output.resolve()).encode())[:12]
+    RUNTIME = ROOT / "logs/controlled-benchmark/runs" / runtime_id
     manifest_path = output / "manifest.json"
     if manifest_path.exists() and json.loads(manifest_path.read_text(encoding="utf-8")) != plan:
         raise RuntimeError("Do not mix different protocols in one output directory")
@@ -330,6 +333,7 @@ def main():
                 "host": platform.platform(), "machine": platform.machine(), "python": platform.python_version(),
                 "transport": "local loopback WebSocket", "workers": 1, "timeout_s": args.timeout,
                 "min_trial_seconds": args.min_trial_seconds, "status": "running", "endurance_test": False}
+    metadata["runtime_directory"] = RUNTIME.relative_to(ROOT).as_posix()
     if metadata_path.exists():
         previous = json.loads(metadata_path.read_text())
         if any(previous[key] != metadata[key] for key in ("backend_sha256", "harness_sha256", "docker_image_id")):

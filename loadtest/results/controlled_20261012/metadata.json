@@ -4,6 +4,8 @@
   "commit": "fd4cbd624336810bdd84efd3cf1e25bc8952dd89",
   "backend_sha256": "14000367fc63ac27f747dd9a6c4c278358bbbf30b4ad35695d3f3a7f02d0841d",
   "harness_sha256": "70687d9863206c56e62e583198e611528555d41e3734101147036b33dd6b9947",
+  "harness_snapshot": "harness_measured.py",
+  "runtime_directory": "logs/controlled-benchmark",
   "docker_image_id": "sha256:9a948687fd12aaf460217051ff76595de4548cad8276ebeee43dc529b49de599",
   "host": "Windows-11-10.0.26200-SP0",
   "machine": "AMD64",
