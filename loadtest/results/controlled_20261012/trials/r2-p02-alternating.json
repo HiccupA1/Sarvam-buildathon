@@ -1,0 +1,70 @@
+{
+  "spec": {
+    "id": "r2-p02-alternating",
+    "repetition": 2,
+    "pair": 2,
+    "condition": "alternating",
+    "inputs": [
+      {
+        "id": "mix_2",
+        "category": "mix",
+        "index": 2,
+        "reference": "நீ market போற வழியில ரொம்ப busy ஆ இருந்துச்சு.",
+        "sha256": "43e4a4498bd08dabaa3160bc2357fd0ce5b0197661c942d36116d53bd33e7faf",
+        "bytes": 155648,
+        "duration_s": 4.864,
+        "signal_start_s": 0.8431875,
+        "signal_end_s": 4.35225,
+        "peak": 19393,
+        "rms": 2941.281459467114
+      },
+      {
+        "id": "mix_5",
+        "category": "mix",
+        "index": 5,
+        "reference": "அவன் project ரொம்ப நல்லா complete பண்ணிட்டான்.",
+        "sha256": "b9ae3e226a4900c917333d3a55d598474a87cf018d833ed43bd6d79e20993093",
+        "bytes": 117418,
+        "duration_s": 3.6693125,
+        "signal_start_s": 0.182875,
+        "signal_end_s": 3.0323125,
+        "peak": 19517,
+        "rms": 2776.3797019529975
+      }
+    ],
+    "targets": [
+      "hi-IN",
+      "ta-IN",
+      "te-IN"
+    ]
+  },
+  "room": "bench-r2-p02-alternating",
+  "parties": {
+    "0": "A",
+    "1": "B",
+    "2": "C",
+    "3": "D",
+    "4": "E"
+  },
+  "send_start_ms": {
+    "3": 436.5981000009924,
+    "4": 6302.285900019342
+  },
+  "frames_sent": {
+    "3": {
+      "bytes": 345600,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    },
+    "4": {
+      "bytes": 156800,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    }
+  },
+  "duration_s": 16.326,
+  "error": null,
+  "events_file": "events\\r2-p02-alternating.jsonl",
+  "event_count": 505,
+  "events_sha256": "fa8b1291a0fdf163bbfceb92787fc6924958dab1f09a0a87ab37499f26fd1c57"
+}

@@ -1,0 +1,70 @@
+{
+  "spec": {
+    "id": "r1-p05-overlap",
+    "repetition": 1,
+    "pair": 5,
+    "condition": "overlap",
+    "inputs": [
+      {
+        "id": "hi_2",
+        "category": "hi",
+        "index": 2,
+        "reference": "इस हफ्ते मौसम बहुत अच्छा है।",
+        "sha256": "eae77f1dbc101820bc0186e02eb5a937d4c5fc2e14ec7fe278cfb785156838ec",
+        "bytes": 90112,
+        "duration_s": 2.816,
+        "signal_start_s": 0.03725,
+        "signal_end_s": 2.6424375,
+        "peak": 21383,
+        "rms": 2579.083905079439
+      },
+      {
+        "id": "mix_1",
+        "category": "mix",
+        "index": 1,
+        "reference": "அந்த meeting நாளைக்கு morning ku postpone ஆகிடுச்சு.",
+        "sha256": "ad2622c5b64e002b622fae5cf9057e0c4e0e390093bef48f8c0602a0b1a81b00",
+        "bytes": 133802,
+        "duration_s": 4.1813125,
+        "signal_start_s": 0.2978125,
+        "signal_end_s": 3.9126875,
+        "peak": 22561,
+        "rms": 3800.8370294577735
+      }
+    ],
+    "targets": [
+      "en-IN",
+      "hi-IN",
+      "ta-IN"
+    ]
+  },
+  "room": "bench-r1-p05-overlap",
+  "parties": {
+    "0": "A",
+    "1": "B",
+    "2": "C",
+    "3": "D",
+    "4": "E"
+  },
+  "send_start_ms": {
+    "3": 511.6678999911528,
+    "4": 821.9518999976572
+  },
+  "frames_sent": {
+    "3": {
+      "bytes": 182400,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    },
+    "4": {
+      "bytes": 172800,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    }
+  },
+  "duration_s": 11.336,
+  "error": null,
+  "events_file": "events\\r1-p05-overlap.jsonl",
+  "event_count": 440,
+  "events_sha256": "7b8651299b7a8e341e913939250680f36703dab2e8ce72efa6696e92d6d112f1"
+}

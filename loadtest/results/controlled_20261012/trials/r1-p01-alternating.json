@@ -1,0 +1,70 @@
+{
+  "spec": {
+    "id": "r1-p01-alternating",
+    "repetition": 1,
+    "pair": 1,
+    "condition": "alternating",
+    "inputs": [
+      {
+        "id": "ta_7",
+        "category": "ta",
+        "index": 7,
+        "reference": "அவள் எங்கள் வீட்டிற்கு அருகில் ஒரு மருத்துவமனையில் வேலை செய்கிறாள்.",
+        "sha256": "ea4a13ed9531592fb3c210a881aa38783e8f27e79483a44619795c23bc4488aa",
+        "bytes": 144726,
+        "duration_s": 4.5226875,
+        "signal_start_s": 0.035375,
+        "signal_end_s": 4.39775,
+        "peak": 21696,
+        "rms": 3279.2200138219787
+      },
+      {
+        "id": "hi_18",
+        "category": "hi",
+        "index": 18,
+        "reference": "उसका प्रेजेंटेशन बहुत साफ और उपयोगी था।",
+        "sha256": "3c28564be8b04e5de4925476cfcd8a00356504831548f798a65c778d5bcc2f4a",
+        "bytes": 120150,
+        "duration_s": 3.7546875,
+        "signal_start_s": 0.0261875,
+        "signal_end_s": 3.6221875,
+        "peak": 27012,
+        "rms": 3025.7748635724784
+      }
+    ],
+    "targets": [
+      "en-IN",
+      "hi-IN",
+      "ta-IN"
+    ]
+  },
+  "room": "bench-r1-p01-alternating",
+  "parties": {
+    "0": "A",
+    "1": "B",
+    "2": "C",
+    "3": "D",
+    "4": "E"
+  },
+  "send_start_ms": {
+    "3": 471.528699999908,
+    "4": 5998.617200006265
+  },
+  "frames_sent": {
+    "3": {
+      "bytes": 336000,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    },
+    "4": {
+      "bytes": 160000,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    }
+  },
+  "duration_s": 16.113,
+  "error": null,
+  "events_file": "events\\r1-p01-alternating.jsonl",
+  "event_count": 1245,
+  "events_sha256": "4d94c31860333f4ed81c090eee1061ca5afabfaaa5feab4dcef718a01d69c146"
+}

@@ -315,6 +315,7 @@ class WebSocketTests(unittest.TestCase):
 
             async def send_realtime_end(self, end):
                 await self.events.put(SimpleNamespace(event="transcript.final", text="hello"))
+                await self.events.put(SimpleNamespace(event="transcript.final", text="again"))
                 await self.events.put(None)
 
         provider = Mock()
@@ -332,12 +333,15 @@ class WebSocketTests(unittest.TestCase):
                     speaker.send_bytes(b"\0\0" * 1600)
                     speaker.send_json({"type": "end"})
                     messages = []
-                    while not messages or messages[-1]["type"] != "audio":
+                    while not messages or messages[-1]["type"] != "stream_drained":
                         messages.append(listener.receive_json())
                     latency = next(m for m in messages if m["type"] == "latency")
                     self.assertIn("queue_ms", latency)
-                    self.assertEqual(messages[-1]["speaker"], "B")
-                    self.assertEqual(messages[-1]["language"], "en-IN")
+                    audios = [msg for msg in messages if msg["type"] == "audio"]
+                    self.assertEqual([msg["seq"] for msg in audios], [1, 2])
+                    self.assertTrue(all(msg["speaker"] == "B" and msg["language"] == "en-IN" for msg in audios))
+                    self.assertEqual(messages[-1]["committed_segments"], 2)
+                    self.assertTrue(messages[-1]["completed"])
                 listener.send_json({"type": "end"})
             self.assertEqual(provider.speech_to_text_realtime_streaming.connect.call_count, 1)
         self.assertFalse(server.SESSIONS)

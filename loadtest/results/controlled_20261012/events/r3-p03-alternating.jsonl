@@ -1,0 +1,465 @@
+{"receiver": 0, "at_ms": 9.66, "type": "joined", "party_id": "A", "language": "ta-IN", "resumed": false, "muted": true, "role": "listener"}
+{"receiver": 0, "at_ms": 9.722, "type": "ready"}
+{"receiver": 1, "at_ms": 17.102, "type": "joined", "party_id": "B", "language": "te-IN", "resumed": false, "muted": true, "role": "listener"}
+{"receiver": 1, "at_ms": 17.203, "type": "peer_joined", "party_id": "A", "language": "ta-IN", "muted": true, "role": "listener"}
+{"receiver": 1, "at_ms": 17.544, "type": "ready"}
+{"receiver": 2, "at_ms": 23.745, "type": "joined", "party_id": "C", "language": "en-IN", "resumed": false, "muted": true, "role": "listener"}
+{"receiver": 2, "at_ms": 24.269, "type": "peer_joined", "party_id": "A", "language": "ta-IN", "muted": true, "role": "listener"}
+{"receiver": 2, "at_ms": 24.31, "type": "peer_joined", "party_id": "B", "language": "te-IN", "muted": true, "role": "listener"}
+{"receiver": 2, "at_ms": 24.338, "type": "ready"}
+{"receiver": 3, "at_ms": 31.842, "type": "joined", "party_id": "D", "language": "ta-IN", "resumed": false, "muted": false, "role": "speaker"}
+{"receiver": 3, "at_ms": 31.91, "type": "peer_joined", "party_id": "A", "language": "ta-IN", "muted": true, "role": "listener"}
+{"receiver": 3, "at_ms": 31.94, "type": "peer_joined", "party_id": "B", "language": "te-IN", "muted": true, "role": "listener"}
+{"receiver": 3, "at_ms": 31.962, "type": "peer_joined", "party_id": "C", "language": "en-IN", "muted": true, "role": "listener"}
+{"receiver": 3, "at_ms": 273.253, "type": "ready"}
+{"receiver": 4, "at_ms": 290.902, "type": "joined", "party_id": "E", "language": "ta-IN", "resumed": false, "muted": false, "role": "speaker"}
+{"receiver": 4, "at_ms": 290.988, "type": "peer_joined", "party_id": "A", "language": "ta-IN", "muted": true, "role": "listener"}
+{"receiver": 4, "at_ms": 291.021, "type": "peer_joined", "party_id": "B", "language": "te-IN", "muted": true, "role": "listener"}
+{"receiver": 4, "at_ms": 291.045, "type": "peer_joined", "party_id": "C", "language": "en-IN", "muted": true, "role": "listener"}
+{"receiver": 4, "at_ms": 291.521, "type": "peer_joined", "party_id": "D", "language": "ta-IN", "muted": false, "role": "speaker"}
+{"receiver": 4, "at_ms": 499.141, "type": "ready"}
+{"receiver": 0, "at_ms": 499.219, "type": "peer_joined", "party_id": "B", "language": "te-IN", "muted": true, "role": "listener"}
+{"receiver": 0, "at_ms": 499.229, "type": "peer_joined", "party_id": "C", "language": "en-IN", "muted": true, "role": "listener"}
+{"receiver": 0, "at_ms": 499.235, "type": "peer_joined", "party_id": "D", "language": "ta-IN", "muted": false, "role": "speaker"}
+{"receiver": 0, "at_ms": 499.241, "type": "peer_joined", "party_id": "E", "language": "ta-IN", "muted": false, "role": "speaker"}
+{"receiver": 1, "at_ms": 499.25, "type": "peer_joined", "party_id": "C", "language": "en-IN", "muted": true, "role": "listener"}
+{"receiver": 1, "at_ms": 499.256, "type": "peer_joined", "party_id": "D", "language": "ta-IN", "muted": false, "role": "speaker"}
+{"receiver": 1, "at_ms": 499.261, "type": "peer_joined", "party_id": "E", "language": "ta-IN", "muted": false, "role": "speaker"}
+{"receiver": 2, "at_ms": 499.27, "type": "peer_joined", "party_id": "D", "language": "ta-IN", "muted": false, "role": "speaker"}
+{"receiver": 2, "at_ms": 499.276, "type": "peer_joined", "party_id": "E", "language": "ta-IN", "muted": false, "role": "speaker"}
+{"receiver": 3, "at_ms": 499.283, "type": "peer_joined", "party_id": "E", "language": "ta-IN", "muted": false, "role": "speaker"}
+{"receiver": 0, "at_ms": 1038.611, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 1, "at_ms": 1038.984, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 2, "at_ms": 1039.01, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 3, "at_ms": 1039.024, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 4, "at_ms": 1039.087, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 0, "at_ms": 1080.929, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 1, "at_ms": 1080.965, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 3, "at_ms": 1080.979, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 2, "at_ms": 1080.994, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 4, "at_ms": 1081.009, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 0, "at_ms": 1350.063, "type": "transcript", "party": "D", "kind": "partial", "text": "On"}
+{"receiver": 2, "at_ms": 1350.086, "type": "transcript", "party": "D", "kind": "partial", "text": "On"}
+{"receiver": 1, "at_ms": 1350.095, "type": "transcript", "party": "D", "kind": "partial", "text": "On"}
+{"receiver": 4, "at_ms": 1350.102, "type": "transcript", "party": "D", "kind": "partial", "text": "On"}
+{"receiver": 3, "at_ms": 1350.108, "type": "transcript", "party": "D", "kind": "partial", "text": "On"}
+{"receiver": 0, "at_ms": 1358.966, "type": "transcript", "party": "D", "kind": "partial", "text": "On the"}
+{"receiver": 1, "at_ms": 1358.996, "type": "transcript", "party": "D", "kind": "partial", "text": "On the"}
+{"receiver": 2, "at_ms": 1359.008, "type": "transcript", "party": "D", "kind": "partial", "text": "On the"}
+{"receiver": 3, "at_ms": 1359.021, "type": "transcript", "party": "D", "kind": "partial", "text": "On the"}
+{"receiver": 4, "at_ms": 1359.036, "type": "transcript", "party": "D", "kind": "partial", "text": "On the"}
+{"receiver": 1, "at_ms": 1374.702, "type": "transcript", "party": "D", "kind": "partial", "text": "On the"}
+{"receiver": 2, "at_ms": 1374.762, "type": "transcript", "party": "D", "kind": "partial", "text": "On the"}
+{"receiver": 0, "at_ms": 1374.786, "type": "transcript", "party": "D", "kind": "partial", "text": "On the"}
+{"receiver": 4, "at_ms": 1374.796, "type": "transcript", "party": "D", "kind": "partial", "text": "On the"}
+{"receiver": 3, "at_ms": 1374.805, "type": "transcript", "party": "D", "kind": "partial", "text": "On the"}
+{"receiver": 1, "at_ms": 1873.892, "type": "transcript", "party": "D", "kind": "partial", "text": "On the"}
+{"receiver": 2, "at_ms": 1874.486, "type": "transcript", "party": "D", "kind": "partial", "text": "On the"}
+{"receiver": 0, "at_ms": 1874.542, "type": "transcript", "party": "D", "kind": "partial", "text": "On the"}
+{"receiver": 4, "at_ms": 1874.971, "type": "transcript", "party": "D", "kind": "partial", "text": "On the"}
+{"receiver": 3, "at_ms": 1874.998, "type": "transcript", "party": "D", "kind": "partial", "text": "On the"}
+{"receiver": 0, "at_ms": 1876.106, "type": "transcript", "party": "D", "kind": "partial", "text": "On the"}
+{"receiver": 1, "at_ms": 1876.397, "type": "transcript", "party": "D", "kind": "partial", "text": "On the"}
+{"receiver": 4, "at_ms": 1876.499, "type": "transcript", "party": "D", "kind": "partial", "text": "On the"}
+{"receiver": 3, "at_ms": 1877.086, "type": "transcript", "party": "D", "kind": "partial", "text": "On the"}
+{"receiver": 2, "at_ms": 1877.105, "type": "transcript", "party": "D", "kind": "partial", "text": "On the"}
+{"receiver": 0, "at_ms": 2371.841, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest"}
+{"receiver": 1, "at_ms": 2371.873, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest"}
+{"receiver": 4, "at_ms": 2372.058, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest"}
+{"receiver": 0, "at_ms": 2372.074, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest,"}
+{"receiver": 3, "at_ms": 2372.085, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest"}
+{"receiver": 2, "at_ms": 2372.096, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest"}
+{"receiver": 1, "at_ms": 2372.106, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest,"}
+{"receiver": 4, "at_ms": 2372.5, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest,"}
+{"receiver": 2, "at_ms": 2372.529, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest,"}
+{"receiver": 3, "at_ms": 2372.542, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest,"}
+{"receiver": 0, "at_ms": 2373.134, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest, restaurant"}
+{"receiver": 1, "at_ms": 2373.337, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest, restaurant"}
+{"receiver": 2, "at_ms": 2373.362, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest, restaurant"}
+{"receiver": 3, "at_ms": 2373.374, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest, restaurant"}
+{"receiver": 4, "at_ms": 2373.385, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest, restaurant"}
+{"receiver": 0, "at_ms": 2376.272, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest, restaurant"}
+{"receiver": 1, "at_ms": 2376.31, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest, restaurant"}
+{"receiver": 2, "at_ms": 2376.442, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest, restaurant"}
+{"receiver": 3, "at_ms": 2376.458, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest, restaurant"}
+{"receiver": 4, "at_ms": 2376.469, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest, restaurant"}
+{"receiver": 0, "at_ms": 2863.833, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of"}
+{"receiver": 1, "at_ms": 2863.858, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of"}
+{"receiver": 3, "at_ms": 2863.951, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of"}
+{"receiver": 4, "at_ms": 2863.96, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of"}
+{"receiver": 2, "at_ms": 2863.994, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of"}
+{"receiver": 1, "at_ms": 2866.495, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of,"}
+{"receiver": 0, "at_ms": 2866.52, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of,"}
+{"receiver": 2, "at_ms": 2866.529, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of,"}
+{"receiver": 4, "at_ms": 2866.538, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of,"}
+{"receiver": 3, "at_ms": 2866.545, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of,"}
+{"receiver": 2, "at_ms": 2990.574, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of,"}
+{"receiver": 4, "at_ms": 2990.742, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of,"}
+{"receiver": 4, "at_ms": 2990.752, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, fron"}
+{"receiver": 0, "at_ms": 2990.781, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of,"}
+{"receiver": 0, "at_ms": 2990.788, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, fron"}
+{"receiver": 3, "at_ms": 2990.839, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of,"}
+{"receiver": 3, "at_ms": 2990.846, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, fron"}
+{"receiver": 1, "at_ms": 2990.871, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of,"}
+{"receiver": 1, "at_ms": 2990.877, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, fron"}
+{"receiver": 2, "at_ms": 2991.069, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, fron"}
+{"receiver": 2, "at_ms": 2991.079, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front"}
+{"receiver": 2, "at_ms": 2991.084, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot"}
+{"receiver": 2, "at_ms": 2991.09, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 4, "at_ms": 2991.137, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front"}
+{"receiver": 4, "at_ms": 2991.153, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot"}
+{"receiver": 4, "at_ms": 2991.159, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 0, "at_ms": 2991.191, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front"}
+{"receiver": 0, "at_ms": 2991.197, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot"}
+{"receiver": 0, "at_ms": 2991.202, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 3, "at_ms": 2991.23, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front"}
+{"receiver": 3, "at_ms": 2991.236, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot"}
+{"receiver": 3, "at_ms": 2991.242, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 1, "at_ms": 2991.25, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front"}
+{"receiver": 1, "at_ms": 2991.255, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot"}
+{"receiver": 1, "at_ms": 2991.26, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 0, "at_ms": 3001.74, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 4, "at_ms": 3001.766, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 3, "at_ms": 3001.776, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 1, "at_ms": 3001.87, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 2, "at_ms": 3001.879, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 0, "at_ms": 3381.344, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of,"}
+{"receiver": 1, "at_ms": 3381.377, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of,"}
+{"receiver": 3, "at_ms": 3382.11, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of,"}
+{"receiver": 4, "at_ms": 3382.136, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of,"}
+{"receiver": 2, "at_ms": 3382.152, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of,"}
+{"receiver": 0, "at_ms": 3385.638, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, fron"}
+{"receiver": 1, "at_ms": 3385.954, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, fron"}
+{"receiver": 2, "at_ms": 3385.967, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, fron"}
+{"receiver": 4, "at_ms": 3386.661, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, fron"}
+{"receiver": 3, "at_ms": 3386.688, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, fron"}
+{"receiver": 1, "at_ms": 3389.343, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front"}
+{"receiver": 0, "at_ms": 3389.365, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front"}
+{"receiver": 2, "at_ms": 3389.374, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front"}
+{"receiver": 4, "at_ms": 3389.381, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front"}
+{"receiver": 3, "at_ms": 3389.417, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front"}
+{"receiver": 1, "at_ms": 3394.666, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot"}
+{"receiver": 2, "at_ms": 3394.689, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot"}
+{"receiver": 0, "at_ms": 3394.698, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot"}
+{"receiver": 4, "at_ms": 3394.705, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot"}
+{"receiver": 3, "at_ms": 3394.712, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot"}
+{"receiver": 1, "at_ms": 3397.728, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 2, "at_ms": 3397.75, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 0, "at_ms": 3397.758, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 4, "at_ms": 3397.766, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 3, "at_ms": 3397.775, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 0, "at_ms": 3401.571, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 1, "at_ms": 3401.606, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 2, "at_ms": 3401.748, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 3, "at_ms": 3401.765, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 4, "at_ms": 3401.777, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 0, "at_ms": 3871.872, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, R"}
+{"receiver": 1, "at_ms": 3872.148, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, R"}
+{"receiver": 2, "at_ms": 3872.169, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, R"}
+{"receiver": 3, "at_ms": 3872.182, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, R"}
+{"receiver": 4, "at_ms": 3872.193, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, R"}
+{"receiver": 0, "at_ms": 3876.133, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, R"}
+{"receiver": 1, "at_ms": 3876.169, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, R"}
+{"receiver": 2, "at_ms": 3876.297, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, R"}
+{"receiver": 3, "at_ms": 3876.313, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, R"}
+{"receiver": 4, "at_ms": 3876.405, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, R"}
+{"receiver": 0, "at_ms": 4355.475, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 1, "at_ms": 4355.506, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 2, "at_ms": 4355.518, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 3, "at_ms": 4355.599, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 4, "at_ms": 4355.612, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 0, "at_ms": 4371.681, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 1, "at_ms": 4371.714, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 2, "at_ms": 4371.729, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 3, "at_ms": 4371.869, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 4, "at_ms": 4371.884, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 0, "at_ms": 4372.583, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 1, "at_ms": 4372.615, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 2, "at_ms": 4372.704, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 3, "at_ms": 4372.787, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 4, "at_ms": 4372.801, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot,"}
+{"receiver": 0, "at_ms": 4388.04, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, tru"}
+{"receiver": 1, "at_ms": 4388.185, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, tru"}
+{"receiver": 4, "at_ms": 4388.301, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, tru"}
+{"receiver": 3, "at_ms": 4388.347, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, tru"}
+{"receiver": 3, "at_ms": 4388.358, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, trump"}
+{"receiver": 2, "at_ms": 4388.487, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, tru"}
+{"receiver": 2, "at_ms": 4388.499, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, trump"}
+{"receiver": 0, "at_ms": 4388.51, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, trump"}
+{"receiver": 1, "at_ms": 4388.521, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, trump"}
+{"receiver": 4, "at_ms": 4388.566, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, trump"}
+{"receiver": 0, "at_ms": 4388.862, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, trumpet"}
+{"receiver": 1, "at_ms": 4389.01, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, trumpet"}
+{"receiver": 2, "at_ms": 4389.03, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, trumpet"}
+{"receiver": 3, "at_ms": 4389.042, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, trumpet"}
+{"receiver": 4, "at_ms": 4389.122, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, trumpet"}
+{"receiver": 0, "at_ms": 4393.605, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, trumpet,"}
+{"receiver": 2, "at_ms": 4394.131, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, trumpet,"}
+{"receiver": 4, "at_ms": 4394.158, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, trumpet,"}
+{"receiver": 3, "at_ms": 4394.173, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, trumpet,"}
+{"receiver": 1, "at_ms": 4394.185, "type": "transcript", "party": "D", "kind": "partial", "text": "On the rest of, front foot, trumpet,"}
+{"receiver": 0, "at_ms": 4482.104, "type": "transcript", "party": "D", "kind": "final", "text": "அந்த restaurant food ரொம்ப tasty-ஆ இருந்துச்சு", "seq": 1}
+{"receiver": 2, "at_ms": 4482.142, "type": "transcript", "party": "D", "kind": "final", "text": "அந்த restaurant food ரொம்ப tasty-ஆ இருந்துச்சு", "seq": 1}
+{"receiver": 1, "at_ms": 4482.157, "type": "transcript", "party": "D", "kind": "final", "text": "அந்த restaurant food ரொம்ப tasty-ஆ இருந்துச்சு", "seq": 1}
+{"receiver": 3, "at_ms": 4482.17, "type": "transcript", "party": "D", "kind": "final", "text": "அந்த restaurant food ரொம்ப tasty-ஆ இருந்துச்சு", "seq": 1}
+{"receiver": 4, "at_ms": 4482.293, "type": "transcript", "party": "D", "kind": "final", "text": "அந்த restaurant food ரொம்ப tasty-ஆ இருந்துச்சு", "seq": 1}
+{"receiver": 0, "at_ms": 5347.968, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 1, "at_ms": 5348.0, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 2, "at_ms": 5348.168, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 3, "at_ms": 5348.184, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 4, "at_ms": 5348.234, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 0, "at_ms": 5382.476, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 1, "at_ms": 5383.408, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 2, "at_ms": 5383.436, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 3, "at_ms": 5383.503, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 4, "at_ms": 5383.552, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 0, "at_ms": 5859.155, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 1, "at_ms": 5859.271, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 2, "at_ms": 5859.425, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 3, "at_ms": 5859.444, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 4, "at_ms": 5859.457, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 3, "at_ms": 5861.439, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan"}
+{"receiver": 1, "at_ms": 5861.472, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan"}
+{"receiver": 4, "at_ms": 5861.486, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan"}
+{"receiver": 2, "at_ms": 5861.636, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan"}
+{"receiver": 0, "at_ms": 5861.664, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan"}
+{"receiver": 0, "at_ms": 5864.237, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan mal"}
+{"receiver": 1, "at_ms": 5864.272, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan mal"}
+{"receiver": 2, "at_ms": 5864.4, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan mal"}
+{"receiver": 3, "at_ms": 5864.416, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan mal"}
+{"receiver": 4, "at_ms": 5864.428, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan mal"}
+{"receiver": 0, "at_ms": 5869.047, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan mal"}
+{"receiver": 2, "at_ms": 5869.083, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan mal"}
+{"receiver": 1, "at_ms": 5869.249, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan mal"}
+{"receiver": 3, "at_ms": 5869.268, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan mal"}
+{"receiver": 4, "at_ms": 5869.28, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan mal"}
+{"receiver": 2, "at_ms": 5968.492, "type": "translated", "speaker": "D", "language": "en-IN", "text": "And the food at the restaurant was very", "seq": 1}
+{"receiver": 4, "at_ms": 6367.649, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 3, "at_ms": 6367.674, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 0, "at_ms": 6367.684, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 1, "at_ms": 6367.691, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 2, "at_ms": 6367.699, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 4, "at_ms": 6462.723, "type": "translated", "speaker": "D", "language": "ta-IN", "text": "மேலும் உணவகத்தில் உணவு மிகவும்", "seq": 1}
+{"receiver": 0, "at_ms": 6462.749, "type": "translated", "speaker": "D", "language": "ta-IN", "text": "மேலும் உணவகத்தில் உணவு மிகவும்", "seq": 1}
+{"receiver": 1, "at_ms": 6528.754, "type": "translated", "speaker": "D", "language": "te-IN", "text": "మరియు రెస్టారెంట్లోని ఆహారం చాలా బాగుంది.", "seq": 1}
+{"receiver": 2, "at_ms": 6752.299, "type": "latency", "speaker": "D", "language": "en-IN", "seq": 1, "stt_ms": 3443, "queue_ms": 0, "translate_ms": 1238, "tts_ms": 784, "total_ms": 5465}
+{"receiver": 2, "at_ms": 6777.749, "type": "audio", "speaker": "D", "language": "en-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791758488676.9868, "wav_duration_s": 2.3893125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 76502, "wav_sha256": "b0296aaecc63d65489af3eacc704bd5ce2cd2183a0a92f42e41d5359c0996aae", "wav_valid": true}
+{"receiver": 1, "at_ms": 6872.636, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 0, "at_ms": 6872.679, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 4, "at_ms": 6872.698, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 3, "at_ms": 6872.713, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 2, "at_ms": 6872.729, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 0, "at_ms": 7313.318, "type": "latency", "speaker": "D", "language": "ta-IN", "seq": 1, "stt_ms": 3443, "queue_ms": 0, "translate_ms": 1980, "tts_ms": 849, "total_ms": 6272}
+{"receiver": 4, "at_ms": 7313.38, "type": "latency", "speaker": "D", "language": "ta-IN", "seq": 1, "stt_ms": 3443, "queue_ms": 0, "translate_ms": 1980, "tts_ms": 849, "total_ms": 6272}
+{"receiver": 0, "at_ms": 7336.305, "type": "audio", "speaker": "D", "language": "ta-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791758488676.9868, "wav_duration_s": 2.816, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 90156, "wav_sha256": "5d3737f95eeaf499630fc2b77ef76646958fcec5de4c696d52e1b2609802edbb", "wav_valid": true}
+{"receiver": 4, "at_ms": 7346.319, "type": "audio", "speaker": "D", "language": "ta-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791758488676.9868, "wav_duration_s": 2.816, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 90156, "wav_sha256": "5d3737f95eeaf499630fc2b77ef76646958fcec5de4c696d52e1b2609802edbb", "wav_valid": true}
+{"receiver": 1, "at_ms": 7401.035, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan"}
+{"receiver": 0, "at_ms": 7401.109, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan"}
+{"receiver": 2, "at_ms": 7401.147, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan"}
+{"receiver": 3, "at_ms": 7403.994, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan"}
+{"receiver": 4, "at_ms": 7404.167, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan"}
+{"receiver": 0, "at_ms": 7405.003, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan mal"}
+{"receiver": 2, "at_ms": 7405.127, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan mal"}
+{"receiver": 1, "at_ms": 7405.155, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan mal"}
+{"receiver": 4, "at_ms": 7405.173, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan mal"}
+{"receiver": 3, "at_ms": 7405.35, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan mal"}
+{"receiver": 0, "at_ms": 7412.078, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malay"}
+{"receiver": 3, "at_ms": 7412.132, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malay"}
+{"receiver": 1, "at_ms": 7412.42, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malay"}
+{"receiver": 2, "at_ms": 7412.447, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malay"}
+{"receiver": 4, "at_ms": 7413.441, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malay"}
+{"receiver": 0, "at_ms": 7417.97, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malay"}
+{"receiver": 3, "at_ms": 7418.028, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malay"}
+{"receiver": 2, "at_ms": 7418.051, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malay"}
+{"receiver": 1, "at_ms": 7418.07, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malay"}
+{"receiver": 4, "at_ms": 7418.088, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malay"}
+{"receiver": 1, "at_ms": 7682.868, "type": "latency", "speaker": "D", "language": "te-IN", "seq": 1, "stt_ms": 3443, "queue_ms": 0, "translate_ms": 1846, "tts_ms": 1152, "total_ms": 6441}
+{"receiver": 1, "at_ms": 7715.996, "type": "audio", "speaker": "D", "language": "te-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791758488676.9868, "wav_duration_s": 4.4373125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 142038, "wav_sha256": "507a098b229ac0058c2970a644d4331492cc7fc24ef920a2613586ccac1fd30a", "wav_valid": true}
+{"receiver": 0, "at_ms": 7850.131, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan"}
+{"receiver": 1, "at_ms": 7851.333, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan"}
+{"receiver": 3, "at_ms": 7851.438, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan"}
+{"receiver": 2, "at_ms": 7851.479, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan"}
+{"receiver": 4, "at_ms": 7851.849, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan"}
+{"receiver": 0, "at_ms": 7853.185, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan mal"}
+{"receiver": 1, "at_ms": 7854.159, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan mal"}
+{"receiver": 4, "at_ms": 7854.21, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan mal"}
+{"receiver": 3, "at_ms": 7854.233, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan mal"}
+{"receiver": 2, "at_ms": 7854.252, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan mal"}
+{"receiver": 0, "at_ms": 7857.202, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malay"}
+{"receiver": 4, "at_ms": 7857.251, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malay"}
+{"receiver": 3, "at_ms": 7857.274, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malay"}
+{"receiver": 1, "at_ms": 7857.292, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malay"}
+{"receiver": 2, "at_ms": 7857.31, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malay"}
+{"receiver": 0, "at_ms": 7861.37, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygal"}
+{"receiver": 4, "at_ms": 7861.419, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygal"}
+{"receiver": 1, "at_ms": 7861.441, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygal"}
+{"receiver": 3, "at_ms": 7861.456, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygal"}
+{"receiver": 2, "at_ms": 7861.471, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygal"}
+{"receiver": 1, "at_ms": 7865.614, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygaluk"}
+{"receiver": 0, "at_ms": 7865.738, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygaluk"}
+{"receiver": 2, "at_ms": 7865.966, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygaluk"}
+{"receiver": 3, "at_ms": 7865.992, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygaluk"}
+{"receiver": 4, "at_ms": 7866.012, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygaluk"}
+{"receiver": 0, "at_ms": 7869.011, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku"}
+{"receiver": 4, "at_ms": 7869.314, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku"}
+{"receiver": 1, "at_ms": 7869.341, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku"}
+{"receiver": 2, "at_ms": 7869.359, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku"}
+{"receiver": 3, "at_ms": 7869.374, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku"}
+{"receiver": 0, "at_ms": 7874.05, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku or"}
+{"receiver": 1, "at_ms": 7874.122, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku or"}
+{"receiver": 2, "at_ms": 7874.523, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku or"}
+{"receiver": 4, "at_ms": 7874.569, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku or"}
+{"receiver": 3, "at_ms": 7874.6, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku or"}
+{"receiver": 1, "at_ms": 7877.914, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru"}
+{"receiver": 2, "at_ms": 7877.966, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru"}
+{"receiver": 0, "at_ms": 7877.989, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru"}
+{"receiver": 4, "at_ms": 7878.246, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru"}
+{"receiver": 3, "at_ms": 7878.271, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru"}
+{"receiver": 0, "at_ms": 7881.37, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru pay"}
+{"receiver": 2, "at_ms": 7881.441, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru pay"}
+{"receiver": 1, "at_ms": 7881.478, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru pay"}
+{"receiver": 4, "at_ms": 7881.713, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru pay"}
+{"receiver": 3, "at_ms": 7881.739, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru pay"}
+{"receiver": 0, "at_ms": 7884.444, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payan"}
+{"receiver": 1, "at_ms": 7884.493, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payan"}
+{"receiver": 2, "at_ms": 7884.515, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payan"}
+{"receiver": 3, "at_ms": 7884.654, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payan"}
+{"receiver": 4, "at_ms": 7884.683, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payan"}
+{"receiver": 3, "at_ms": 7887.174, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payan"}
+{"receiver": 2, "at_ms": 7887.204, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payan"}
+{"receiver": 0, "at_ms": 7887.218, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payan"}
+{"receiver": 4, "at_ms": 7887.229, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payan"}
+{"receiver": 1, "at_ms": 7887.239, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payan"}
+{"receiver": 0, "at_ms": 8375.3, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygal"}
+{"receiver": 1, "at_ms": 8375.372, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygal"}
+{"receiver": 2, "at_ms": 8376.115, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygal"}
+{"receiver": 4, "at_ms": 8376.185, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygal"}
+{"receiver": 3, "at_ms": 8376.283, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygal"}
+{"receiver": 0, "at_ms": 8379.135, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygaluk"}
+{"receiver": 1, "at_ms": 8379.379, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygaluk"}
+{"receiver": 4, "at_ms": 8379.424, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygaluk"}
+{"receiver": 2, "at_ms": 8379.445, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygaluk"}
+{"receiver": 3, "at_ms": 8379.462, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygaluk"}
+{"receiver": 0, "at_ms": 8381.471, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku"}
+{"receiver": 1, "at_ms": 8381.523, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku"}
+{"receiver": 2, "at_ms": 8381.545, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku"}
+{"receiver": 4, "at_ms": 8381.687, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku"}
+{"receiver": 3, "at_ms": 8381.71, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku"}
+{"receiver": 1, "at_ms": 8387.03, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku or"}
+{"receiver": 0, "at_ms": 8387.08, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku or"}
+{"receiver": 2, "at_ms": 8387.101, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku or"}
+{"receiver": 4, "at_ms": 8387.232, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku or"}
+{"receiver": 3, "at_ms": 8387.255, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku or"}
+{"receiver": 0, "at_ms": 8391.246, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru"}
+{"receiver": 1, "at_ms": 8391.308, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru"}
+{"receiver": 3, "at_ms": 8391.33, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru"}
+{"receiver": 2, "at_ms": 8391.347, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru"}
+{"receiver": 4, "at_ms": 8391.364, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru"}
+{"receiver": 0, "at_ms": 8394.61, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru pay"}
+{"receiver": 2, "at_ms": 8394.855, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru pay"}
+{"receiver": 1, "at_ms": 8394.882, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru pay"}
+{"receiver": 3, "at_ms": 8395.003, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru pay"}
+{"receiver": 4, "at_ms": 8395.024, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru pay"}
+{"receiver": 0, "at_ms": 8397.411, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payan"}
+{"receiver": 1, "at_ms": 8397.892, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payan"}
+{"receiver": 3, "at_ms": 8397.941, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payan"}
+{"receiver": 2, "at_ms": 8397.962, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payan"}
+{"receiver": 4, "at_ms": 8398.238, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payan"}
+{"receiver": 0, "at_ms": 8402.082, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payan"}
+{"receiver": 1, "at_ms": 8402.134, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payan"}
+{"receiver": 2, "at_ms": 8402.449, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payan"}
+{"receiver": 3, "at_ms": 8402.476, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payan"}
+{"receiver": 4, "at_ms": 8402.492, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payan"}
+{"receiver": 0, "at_ms": 8870.377, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanath"}
+{"receiver": 4, "at_ms": 8870.875, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanath"}
+{"receiver": 1, "at_ms": 8871.921, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanath"}
+{"receiver": 2, "at_ms": 8872.031, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanath"}
+{"receiver": 3, "at_ms": 8872.062, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanath"}
+{"receiver": 0, "at_ms": 8875.966, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai"}
+{"receiver": 2, "at_ms": 8876.163, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai"}
+{"receiver": 1, "at_ms": 8876.381, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai"}
+{"receiver": 3, "at_ms": 8877.202, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai"}
+{"receiver": 4, "at_ms": 8877.229, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai"}
+{"receiver": 0, "at_ms": 8877.683, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai th"}
+{"receiver": 2, "at_ms": 8877.704, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai th"}
+{"receiver": 4, "at_ms": 8877.713, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai th"}
+{"receiver": 3, "at_ms": 8877.77, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai th"}
+{"receiver": 1, "at_ms": 8877.782, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai th"}
+{"receiver": 0, "at_ms": 8881.812, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai thitt"}
+{"receiver": 1, "at_ms": 8881.878, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai thitt"}
+{"receiver": 4, "at_ms": 8881.901, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai thitt"}
+{"receiver": 3, "at_ms": 8881.92, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai thitt"}
+{"receiver": 2, "at_ms": 8882.032, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai thitt"}
+{"receiver": 0, "at_ms": 8885.119, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai thittam"}
+{"receiver": 1, "at_ms": 8886.991, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai thittam"}
+{"receiver": 2, "at_ms": 8888.354, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai thittam"}
+{"receiver": 3, "at_ms": 8888.402, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai thittam"}
+{"receiver": 4, "at_ms": 8888.496, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai thittam"}
+{"receiver": 0, "at_ms": 8892.343, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai thittam"}
+{"receiver": 1, "at_ms": 8892.393, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai thittam"}
+{"receiver": 2, "at_ms": 8892.416, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai thittam"}
+{"receiver": 3, "at_ms": 8892.559, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai thittam"}
+{"receiver": 4, "at_ms": 8892.836, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai thittam"}
+{"receiver": 0, "at_ms": 9051.347, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 1, "at_ms": 9051.39, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 3, "at_ms": 9051.409, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 4, "at_ms": 9051.423, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 2, "at_ms": 9051.436, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 0, "at_ms": 9081.202, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanath"}
+{"receiver": 4, "at_ms": 9081.34, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanath"}
+{"receiver": 1, "at_ms": 9081.405, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanath"}
+{"receiver": 2, "at_ms": 9081.429, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanath"}
+{"receiver": 3, "at_ms": 9081.446, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanath"}
+{"receiver": 0, "at_ms": 9084.916, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai"}
+{"receiver": 1, "at_ms": 9084.996, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai"}
+{"receiver": 2, "at_ms": 9085.353, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai"}
+{"receiver": 4, "at_ms": 9085.393, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai"}
+{"receiver": 3, "at_ms": 9085.418, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai"}
+{"receiver": 0, "at_ms": 9088.304, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai th"}
+{"receiver": 2, "at_ms": 9088.797, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai th"}
+{"receiver": 3, "at_ms": 9088.851, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai th"}
+{"receiver": 1, "at_ms": 9088.873, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai th"}
+{"receiver": 4, "at_ms": 9088.89, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai th"}
+{"receiver": 2, "at_ms": 9090.635, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai thitt"}
+{"receiver": 0, "at_ms": 9090.655, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai thitt"}
+{"receiver": 1, "at_ms": 9090.664, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai thitt"}
+{"receiver": 3, "at_ms": 9090.67, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai thitt"}
+{"receiver": 4, "at_ms": 9090.727, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai thitt"}
+{"receiver": 0, "at_ms": 9095.902, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai thittam"}
+{"receiver": 1, "at_ms": 9095.951, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai thittam"}
+{"receiver": 2, "at_ms": 9096.142, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai thittam"}
+{"receiver": 3, "at_ms": 9096.165, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai thittam"}
+{"receiver": 4, "at_ms": 9097.061, "type": "transcript", "party": "E", "kind": "partial", "text": "Naan malaygalukku oru payanathai thittam"}
+{"receiver": 0, "at_ms": 9214.314, "type": "transcript", "party": "E", "kind": "final", "text": "நான் மலைகளுக்கு ஒரு பயணத்தை திட்டமிடுகிறேன்", "seq": 1}
+{"receiver": 1, "at_ms": 9214.364, "type": "transcript", "party": "E", "kind": "final", "text": "நான் மலைகளுக்கு ஒரு பயணத்தை திட்டமிடுகிறேன்", "seq": 1}
+{"receiver": 2, "at_ms": 9214.386, "type": "transcript", "party": "E", "kind": "final", "text": "நான் மலைகளுக்கு ஒரு பயணத்தை திட்டமிடுகிறேன்", "seq": 1}
+{"receiver": 4, "at_ms": 9214.572, "type": "transcript", "party": "E", "kind": "final", "text": "நான் மலைகளுக்கு ஒரு பயணத்தை திட்டமிடுகிறேன்", "seq": 1}
+{"receiver": 3, "at_ms": 9214.593, "type": "transcript", "party": "E", "kind": "final", "text": "நான் மலைகளுக்கு ஒரு பயணத்தை திட்டமிடுகிறேன்", "seq": 1}
+{"receiver": 2, "at_ms": 10651.256, "type": "translated", "speaker": "E", "language": "en-IN", "text": "I am planning a trip to the mountains", "seq": 1}
+{"receiver": 0, "at_ms": 11180.24, "type": "translated", "speaker": "E", "language": "ta-IN", "text": "நான் மலைகளுக்குப் பயணம் செய்யத் திட்டமிட்டுள்ளேன்.", "seq": 1}
+{"receiver": 3, "at_ms": 11180.653, "type": "translated", "speaker": "E", "language": "ta-IN", "text": "நான் மலைகளுக்குப் பயணம் செய்யத் திட்டமிட்டுள்ளேன்.", "seq": 1}
+{"receiver": 1, "at_ms": 11258.626, "type": "translated", "speaker": "E", "language": "te-IN", "text": "నేను పర్వతాలకు ఒక పర్యటనకు ప్రణాళిక వేస్తున్నాను", "seq": 1}
+{"receiver": 2, "at_ms": 11403.402, "type": "latency", "speaker": "E", "language": "en-IN", "seq": 1, "stt_ms": 3866, "queue_ms": 0, "translate_ms": 1289, "tts_ms": 751, "total_ms": 5906}
+{"receiver": 2, "at_ms": 11423.841, "type": "audio", "speaker": "E", "language": "en-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791758492983.8613, "wav_duration_s": 2.304, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 73772, "wav_sha256": "70b48740f55670d91da1634621dc5995e255e807a03ce1a58be0489a11e9fe22", "wav_valid": true}
+{"receiver": 0, "at_ms": 12304.7, "type": "latency", "speaker": "E", "language": "ta-IN", "seq": 1, "stt_ms": 3866, "queue_ms": 0, "translate_ms": 1966, "tts_ms": 1124, "total_ms": 6956}
+{"receiver": 3, "at_ms": 12304.755, "type": "latency", "speaker": "E", "language": "ta-IN", "seq": 1, "stt_ms": 3866, "queue_ms": 0, "translate_ms": 1966, "tts_ms": 1124, "total_ms": 6956}
+{"receiver": 0, "at_ms": 12331.038, "type": "audio", "speaker": "E", "language": "ta-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791758492983.8613, "wav_duration_s": 3.584, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 114732, "wav_sha256": "41c8a0b8e5269081a2344c8045d6925042e5db0e0d6de52695876aa910bd7164", "wav_valid": true}
+{"receiver": 3, "at_ms": 12340.826, "type": "audio", "speaker": "E", "language": "ta-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791758492983.8613, "wav_duration_s": 3.584, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 114732, "wav_sha256": "41c8a0b8e5269081a2344c8045d6925042e5db0e0d6de52695876aa910bd7164", "wav_valid": true}
+{"receiver": 1, "at_ms": 12606.25, "type": "latency", "speaker": "E", "language": "te-IN", "seq": 1, "stt_ms": 3866, "queue_ms": 0, "translate_ms": 1967, "tts_ms": 1347, "total_ms": 7180}
+{"receiver": 1, "at_ms": 12637.922, "type": "audio", "speaker": "E", "language": "te-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791758492983.8613, "wav_duration_s": 4.9493125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 158422, "wav_sha256": "60c65d1ab028e94302068fd7b4b9d4a51adb0528766cd022477500b985baa6d6", "wav_valid": true}
+{"receiver": 0, "at_ms": 14838.477, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 1, "at_ms": 14839.573, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 2, "at_ms": 14839.802, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 2, "at_ms": 14839.856, "type": "peer_left", "party_id": "D"}
+{"receiver": 4, "at_ms": 14840.889, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 4, "at_ms": 14840.926, "type": "peer_left", "party_id": "D"}
+{"receiver": 4, "at_ms": 14840.941, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 3, "at_ms": 14841.624, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 1, "at_ms": 14842.119, "type": "peer_left", "party_id": "D"}
+{"receiver": 1, "at_ms": 14842.239, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 1, "at_ms": 14842.265, "type": "peer_left", "party_id": "E"}
+{"receiver": 0, "at_ms": 14842.468, "type": "peer_left", "party_id": "D"}
+{"receiver": 0, "at_ms": 14842.486, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 0, "at_ms": 14842.499, "type": "peer_left", "party_id": "E"}
+{"receiver": 2, "at_ms": 14842.563, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 2, "at_ms": 14842.578, "type": "peer_left", "party_id": "E"}

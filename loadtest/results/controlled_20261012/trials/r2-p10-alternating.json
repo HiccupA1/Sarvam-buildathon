@@ -1,0 +1,70 @@
+{
+  "spec": {
+    "id": "r2-p10-alternating",
+    "repetition": 2,
+    "pair": 10,
+    "condition": "alternating",
+    "inputs": [
+      {
+        "id": "en_1",
+        "category": "en",
+        "index": 1,
+        "reference": "I went to the market this morning to buy vegetables.",
+        "sha256": "1b5092af19b1ef91c90f547362be4f3f1ef481f34bd91584dea00f3985c31d6d",
+        "bytes": 111958,
+        "duration_s": 3.4986875,
+        "signal_start_s": 0.033875,
+        "signal_end_s": 3.3286875,
+        "peak": 21982,
+        "rms": 2802.488084349976
+      },
+      {
+        "id": "te_3",
+        "category": "te",
+        "index": 3,
+        "reference": "మీరు రేపటిలోగా నివేదిక పంపగలరా?",
+        "sha256": "dc33b8701808208b21ab3418200066a53340c243fb84e7284b049e0468bc6285",
+        "bytes": 117418,
+        "duration_s": 3.6693125,
+        "signal_start_s": 0.029875,
+        "signal_end_s": 3.498875,
+        "peak": 20027,
+        "rms": 3115.62309705793
+      }
+    ],
+    "targets": [
+      "hi-IN",
+      "ta-IN",
+      "te-IN"
+    ]
+  },
+  "room": "bench-r2-p10-alternating",
+  "parties": {
+    "0": "A",
+    "1": "B",
+    "2": "C",
+    "3": "D",
+    "4": "E"
+  },
+  "send_start_ms": {
+    "3": 480.60049998457544,
+    "4": 4970.314400008647
+  },
+  "frames_sent": {
+    "3": {
+      "bytes": 300800,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    },
+    "4": {
+      "bytes": 156800,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    }
+  },
+  "duration_s": 14.981,
+  "error": null,
+  "events_file": "events\\r2-p10-alternating.jsonl",
+  "event_count": 330,
+  "events_sha256": "343bfdbb8f0d17deec6d218edaa9887056bfd401337154099bd0ea02d020a59f"
+}

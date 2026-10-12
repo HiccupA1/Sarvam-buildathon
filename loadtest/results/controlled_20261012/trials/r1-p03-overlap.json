@@ -1,0 +1,70 @@
+{
+  "spec": {
+    "id": "r1-p03-overlap",
+    "repetition": 1,
+    "pair": 3,
+    "condition": "overlap",
+    "inputs": [
+      {
+        "id": "mix_7",
+        "category": "mix",
+        "index": 7,
+        "reference": "அந்த restaurant food ரொம்ப tasty ஆ இருந்துச்சு.",
+        "sha256": "f7c64760fe29c497d7da8aefb3c791679fce490e6717198e1cfe2f22ea3742a1",
+        "bytes": 111958,
+        "duration_s": 3.4986875,
+        "signal_start_s": 0.23975,
+        "signal_end_s": 3.158,
+        "peak": 18801,
+        "rms": 2778.3238237503856
+      },
+      {
+        "id": "ta_17",
+        "category": "ta",
+        "index": 17,
+        "reference": "நான் மலைகளுக்கு ஒரு பயணத்தை திட்டமிடுகிறேன்.",
+        "sha256": "6a3ece1bc8cf82504e5e16a5d3198a01677b278f959f0ece67c818af19caa83b",
+        "bytes": 114688,
+        "duration_s": 3.584,
+        "signal_start_s": 0.0400625,
+        "signal_end_s": 3.4251875,
+        "peak": 21013,
+        "rms": 2951.775979663245
+      }
+    ],
+    "targets": [
+      "ta-IN",
+      "te-IN",
+      "en-IN"
+    ]
+  },
+  "room": "bench-r1-p03-overlap",
+  "parties": {
+    "0": "A",
+    "1": "B",
+    "2": "C",
+    "3": "D",
+    "4": "E"
+  },
+  "send_start_ms": {
+    "3": 1919.8086000105832,
+    "4": 2234.572899993509
+  },
+  "frames_sent": {
+    "3": {
+      "bytes": 163200,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    },
+    "4": {
+      "bytes": 153600,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    }
+  },
+  "duration_s": 12.123,
+  "error": null,
+  "events_file": "events\\r1-p03-overlap.jsonl",
+  "event_count": 480,
+  "events_sha256": "cdd1f6968d5e485c7baf5e4c51f4f63ec43d87e9b225298e08388afd67f9f1a1"
+}

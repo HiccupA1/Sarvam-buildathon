@@ -499,6 +499,11 @@ async def ws_endpoint(websocket: WebSocket, room_id: str):
                         await participant.send_json_safe({"type": "error", "message": "Speech provider unavailable; session stopped"})
                         if message.is_fatal:
                             break
+                    elif message.event == "session.end":
+                        log_metrics({"kind": "provider_session_end", "room": room_id, "party": party_id,
+                                     "audio_duration_s": getattr(message, "audio_duration_s", None),
+                                     "total_duration_s": getattr(message, "total_duration_s", None),
+                                     "total_utterances": getattr(message, "total_utterances", None)})
 
             # Don't use gather() here: it waits for BOTH to finish, but
             # handle_stt_events only returns once Sarvam's server closes
@@ -573,12 +578,17 @@ async def ws_endpoint(websocket: WebSocket, room_id: str):
         # silently dropped just because the mic/STT side finished (or
         # errored, e.g. connect() itself failing) before translation
         # caught up. Safe to run even if the queue was never touched.
+        drained = False
         try:
             await asyncio.wait_for(translate_queue.put(None), 1)
             await asyncio.wait_for(worker_task, 35)
+            drained = True
         except (Exception, asyncio.CancelledError):
             worker_task.cancel()
             await asyncio.gather(worker_task, return_exceptions=True)
+
+        await session.broadcast_json_safe({"type": "stream_drained", "party_id": party_id,
+                                           "completed": drained, "committed_segments": next(seq_counter) - 1})
 
         remaining_participants: list[Participant] = []
         async with SESSIONS_LOCK:

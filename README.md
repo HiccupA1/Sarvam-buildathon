@@ -13,7 +13,8 @@ realtime STT, translation, and TTS APIs.
 [Hosted preview](https://sarvam-interpreter-preview.onrender.com/) deployed on
 Render with Docker on 2026-10-10. This free preview intentionally disables live
 speech processing and has zero API allowances. It can take around a minute to
-wake after inactivity. Protected live access and two-device testing are pending.
+wake after inactivity. Protected live access uses a private laptop-hosted demo;
+the user has verified basic two-device functionality.
 
 See [DEPLOYMENT.md](DEPLOYMENT.md) for the INR 500 budget, deployment steps,
 verification commands, and resume wording. Live Sarvam access now defaults to
@@ -35,6 +36,15 @@ See [the benchmark report](loadtest/results/structured_test_campaign_report.md)
 for per-pair results and methodology; two failed attempts required controlled
 retries. Conservative lifetime reservations for both runs total INR 112.111
 before GST; this is not a provider billing receipt.
+
+The newer [controlled two-speaker benchmark](loadtest/results/controlled_20261012/REPORT.md)
+ran 30 balanced synthetic fixtures, two conditions and three repetitions:
+180 input runs / 540 complete stable-listener results, no trial-level retries.
+Post-clip complete-audio-receipt p95 was 4.49s alternating / 4.79s overlapping.
+This excludes playback, WAN and physical microphone effects. Normalized WER
+was 11.65%, not a translation-accuracy score. Native quality review and the
+30-minute endurance test remain unperformed. See [protocol](docs/CONTROLLED-BENCHMARK-PLAN.md)
+and [reproduction commands](loadtest/README.md).
 
 ## Architecture
 

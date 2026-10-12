@@ -1,0 +1,70 @@
+{
+  "spec": {
+    "id": "r2-p08-overlap",
+    "repetition": 2,
+    "pair": 8,
+    "condition": "overlap",
+    "inputs": [
+      {
+        "id": "hi_1",
+        "category": "hi",
+        "index": 1,
+        "reference": "मैं आज सुबह सब्जियां खरीदने बाजार गया था।",
+        "sha256": "2252d7cdd3c1e8324f259fb4685b2b339aaa7b9e1f17427fc9a9164000d86e13",
+        "bytes": 128342,
+        "duration_s": 4.0106875,
+        "signal_start_s": 0.0443125,
+        "signal_end_s": 3.8786875,
+        "peak": 27344,
+        "rms": 3441.043065674839
+      },
+      {
+        "id": "en_17",
+        "category": "en",
+        "index": 17,
+        "reference": "I am planning a trip to the mountains.",
+        "sha256": "79c6b88eede1adce09aa35833792f6bc285c4250536c9ae2a9f9589c6ae214fd",
+        "bytes": 84650,
+        "duration_s": 2.6453125,
+        "signal_start_s": 0.02775,
+        "signal_end_s": 2.5311875,
+        "peak": 17811,
+        "rms": 2872.240402044241
+      }
+    ],
+    "targets": [
+      "te-IN",
+      "en-IN",
+      "hi-IN"
+    ]
+  },
+  "room": "bench-r2-p08-overlap",
+  "parties": {
+    "0": "A",
+    "1": "B",
+    "2": "C",
+    "3": "D",
+    "4": "E"
+  },
+  "send_start_ms": {
+    "3": 421.0793999955058,
+    "4": 724.4502000103239
+  },
+  "frames_sent": {
+    "3": {
+      "bytes": 169600,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    },
+    "4": {
+      "bytes": 160000,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    }
+  },
+  "duration_s": 10.965,
+  "error": null,
+  "events_file": "events\\r2-p08-overlap.jsonl",
+  "event_count": 395,
+  "events_sha256": "b98b1d707b31c6f1efe80d93a1fa7c0ebecb53b766221b29f1be35014096564c"
+}

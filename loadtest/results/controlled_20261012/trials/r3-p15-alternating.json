@@ -1,0 +1,70 @@
+{
+  "spec": {
+    "id": "r3-p15-alternating",
+    "repetition": 3,
+    "pair": 15,
+    "condition": "alternating",
+    "inputs": [
+      {
+        "id": "te_17",
+        "category": "te",
+        "index": 17,
+        "reference": "నేను కొండలకు ఒక ప్రయాణం ప్లాన్ చేస్తున్నాను.",
+        "sha256": "398869378b7b105a85f73fabb1b4942a57679b9e9d836334734b3935a89d8e3e",
+        "bytes": 117418,
+        "duration_s": 3.6693125,
+        "signal_start_s": 0.0374375,
+        "signal_end_s": 3.5678125,
+        "peak": 18176,
+        "rms": 2998.9585956745445
+      },
+      {
+        "id": "te_13",
+        "category": "te",
+        "index": 13,
+        "reference": "సమావేశం మూడు గంటలకు మార్చబడింది.",
+        "sha256": "1e933ae3eb358c376e9c8652d13062d412be1687ca6cf46d809c2748e621ba1d",
+        "bytes": 106496,
+        "duration_s": 3.328,
+        "signal_start_s": 0.0081875,
+        "signal_end_s": 3.1928125,
+        "peak": 19076,
+        "rms": 3423.06100928994
+      }
+    ],
+    "targets": [
+      "ta-IN",
+      "te-IN",
+      "en-IN"
+    ]
+  },
+  "room": "bench-r3-p15-alternating",
+  "parties": {
+    "0": "A",
+    "1": "B",
+    "2": "C",
+    "3": "D",
+    "4": "E"
+  },
+  "send_start_ms": {
+    "3": 514.2193000065163,
+    "4": 5195.059299992863
+  },
+  "frames_sent": {
+    "3": {
+      "bytes": 294400,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    },
+    "4": {
+      "bytes": 147200,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    }
+  },
+  "duration_s": 14.864,
+  "error": null,
+  "events_file": "events\\r3-p15-alternating.jsonl",
+  "event_count": 350,
+  "events_sha256": "8b8b892912aa4914ecb7301aa5643be1fe1e95d2c80c70c24327ccee99a0d120"
+}

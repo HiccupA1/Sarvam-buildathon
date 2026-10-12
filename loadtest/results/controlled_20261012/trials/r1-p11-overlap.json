@@ -1,0 +1,70 @@
+{
+  "spec": {
+    "id": "r1-p11-overlap",
+    "repetition": 1,
+    "pair": 11,
+    "condition": "overlap",
+    "inputs": [
+      {
+        "id": "hi_12",
+        "category": "hi",
+        "index": 12,
+        "reference": "उसने खाने से पहले अपना होमवर्क पूरा किया।",
+        "sha256": "84b8c314e4250f602ff4276a9adde5d5456242639a0c660f8f87ff11b6cd7dc1",
+        "bytes": 117418,
+        "duration_s": 3.6693125,
+        "signal_start_s": 0.0280625,
+        "signal_end_s": 3.5149375,
+        "peak": 18821,
+        "rms": 2921.0187487733187
+      },
+      {
+        "id": "mix_4",
+        "category": "mix",
+        "index": 4,
+        "reference": "இந்த weekend நாங்க ஒரு trip plan பண்றோம்.",
+        "sha256": "ef5e80cd14080aa4b85eeec0893d3f52bd720d189f838b3b1ebed2c00d9cd25b",
+        "bytes": 106496,
+        "duration_s": 3.328,
+        "signal_start_s": 0.178875,
+        "signal_end_s": 3.00775,
+        "peak": 26624,
+        "rms": 2941.77725375978
+      }
+    ],
+    "targets": [
+      "ta-IN",
+      "te-IN",
+      "en-IN"
+    ]
+  },
+  "room": "bench-r1-p11-overlap",
+  "parties": {
+    "0": "A",
+    "1": "B",
+    "2": "C",
+    "3": "D",
+    "4": "E"
+  },
+  "send_start_ms": {
+    "3": 478.623900009552,
+    "4": 784.0494000120088
+  },
+  "frames_sent": {
+    "3": {
+      "bytes": 156800,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    },
+    "4": {
+      "bytes": 147200,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    }
+  },
+  "duration_s": 10.457,
+  "error": null,
+  "events_file": "events\\r1-p11-overlap.jsonl",
+  "event_count": 485,
+  "events_sha256": "7758d1b76455984e2f1b1c00de57a5d55811790e72abb2f3106f564dfda6655e"
+}

@@ -1,0 +1,390 @@
+{"receiver": 0, "at_ms": 6.078, "type": "joined", "party_id": "A", "language": "te-IN", "resumed": false, "muted": true, "role": "listener"}
+{"receiver": 0, "at_ms": 6.114, "type": "ready"}
+{"receiver": 1, "at_ms": 11.235, "type": "joined", "party_id": "B", "language": "en-IN", "resumed": false, "muted": true, "role": "listener"}
+{"receiver": 1, "at_ms": 11.287, "type": "peer_joined", "party_id": "A", "language": "te-IN", "muted": true, "role": "listener"}
+{"receiver": 1, "at_ms": 11.3, "type": "ready"}
+{"receiver": 2, "at_ms": 17.156, "type": "joined", "party_id": "C", "language": "hi-IN", "resumed": false, "muted": true, "role": "listener"}
+{"receiver": 2, "at_ms": 17.293, "type": "peer_joined", "party_id": "A", "language": "te-IN", "muted": true, "role": "listener"}
+{"receiver": 2, "at_ms": 17.31, "type": "peer_joined", "party_id": "B", "language": "en-IN", "muted": true, "role": "listener"}
+{"receiver": 2, "at_ms": 17.32, "type": "ready"}
+{"receiver": 3, "at_ms": 22.231, "type": "joined", "party_id": "D", "language": "te-IN", "resumed": false, "muted": false, "role": "speaker"}
+{"receiver": 3, "at_ms": 22.272, "type": "peer_joined", "party_id": "A", "language": "te-IN", "muted": true, "role": "listener"}
+{"receiver": 3, "at_ms": 22.285, "type": "peer_joined", "party_id": "B", "language": "en-IN", "muted": true, "role": "listener"}
+{"receiver": 3, "at_ms": 22.42, "type": "peer_joined", "party_id": "C", "language": "hi-IN", "muted": true, "role": "listener"}
+{"receiver": 3, "at_ms": 223.791, "type": "ready"}
+{"receiver": 4, "at_ms": 236.014, "type": "joined", "party_id": "E", "language": "te-IN", "resumed": false, "muted": false, "role": "speaker"}
+{"receiver": 4, "at_ms": 236.088, "type": "peer_joined", "party_id": "A", "language": "te-IN", "muted": true, "role": "listener"}
+{"receiver": 4, "at_ms": 236.121, "type": "peer_joined", "party_id": "B", "language": "en-IN", "muted": true, "role": "listener"}
+{"receiver": 4, "at_ms": 236.952, "type": "peer_joined", "party_id": "C", "language": "hi-IN", "muted": true, "role": "listener"}
+{"receiver": 4, "at_ms": 237.066, "type": "peer_joined", "party_id": "D", "language": "te-IN", "muted": false, "role": "speaker"}
+{"receiver": 4, "at_ms": 417.105, "type": "ready"}
+{"receiver": 0, "at_ms": 417.184, "type": "peer_joined", "party_id": "B", "language": "en-IN", "muted": true, "role": "listener"}
+{"receiver": 0, "at_ms": 417.194, "type": "peer_joined", "party_id": "C", "language": "hi-IN", "muted": true, "role": "listener"}
+{"receiver": 0, "at_ms": 417.2, "type": "peer_joined", "party_id": "D", "language": "te-IN", "muted": false, "role": "speaker"}
+{"receiver": 0, "at_ms": 417.213, "type": "peer_joined", "party_id": "E", "language": "te-IN", "muted": false, "role": "speaker"}
+{"receiver": 1, "at_ms": 417.243, "type": "peer_joined", "party_id": "C", "language": "hi-IN", "muted": true, "role": "listener"}
+{"receiver": 1, "at_ms": 417.253, "type": "peer_joined", "party_id": "D", "language": "te-IN", "muted": false, "role": "speaker"}
+{"receiver": 1, "at_ms": 417.262, "type": "peer_joined", "party_id": "E", "language": "te-IN", "muted": false, "role": "speaker"}
+{"receiver": 2, "at_ms": 417.281, "type": "peer_joined", "party_id": "D", "language": "te-IN", "muted": false, "role": "speaker"}
+{"receiver": 2, "at_ms": 417.291, "type": "peer_joined", "party_id": "E", "language": "te-IN", "muted": false, "role": "speaker"}
+{"receiver": 3, "at_ms": 417.306, "type": "peer_joined", "party_id": "E", "language": "te-IN", "muted": false, "role": "speaker"}
+{"receiver": 3, "at_ms": 876.326, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 2, "at_ms": 876.369, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 0, "at_ms": 876.387, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 1, "at_ms": 876.401, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 4, "at_ms": 876.516, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 0, "at_ms": 902.098, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 1, "at_ms": 902.147, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 2, "at_ms": 903.391, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 3, "at_ms": 903.441, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 4, "at_ms": 903.469, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 0, "at_ms": 1068.535, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 1, "at_ms": 1068.585, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 4, "at_ms": 1069.237, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 3, "at_ms": 1069.284, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 2, "at_ms": 1069.306, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 2, "at_ms": 1109.609, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 0, "at_ms": 1109.649, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 1, "at_ms": 1109.664, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 4, "at_ms": 1110.463, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 3, "at_ms": 1110.491, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 0, "at_ms": 1290.038, "type": "transcript", "party": "D", "kind": "partial", "text": "L"}
+{"receiver": 1, "at_ms": 1292.013, "type": "transcript", "party": "D", "kind": "partial", "text": "L"}
+{"receiver": 2, "at_ms": 1292.064, "type": "transcript", "party": "D", "kind": "partial", "text": "L"}
+{"receiver": 4, "at_ms": 1292.086, "type": "transcript", "party": "D", "kind": "partial", "text": "L"}
+{"receiver": 3, "at_ms": 1292.102, "type": "transcript", "party": "D", "kind": "partial", "text": "L"}
+{"receiver": 0, "at_ms": 1295.465, "type": "transcript", "party": "D", "kind": "partial", "text": "L"}
+{"receiver": 2, "at_ms": 1297.039, "type": "transcript", "party": "D", "kind": "partial", "text": "L"}
+{"receiver": 1, "at_ms": 1297.376, "type": "transcript", "party": "D", "kind": "partial", "text": "L"}
+{"receiver": 3, "at_ms": 1297.407, "type": "transcript", "party": "D", "kind": "partial", "text": "L"}
+{"receiver": 4, "at_ms": 1297.425, "type": "transcript", "party": "D", "kind": "partial", "text": "L"}
+{"receiver": 2, "at_ms": 1580.414, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 0, "at_ms": 1580.437, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 1, "at_ms": 1580.447, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 4, "at_ms": 1580.454, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 3, "at_ms": 1580.461, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 0, "at_ms": 1585.549, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 1, "at_ms": 1585.576, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 4, "at_ms": 1585.66, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 2, "at_ms": 1585.67, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 3, "at_ms": 1585.678, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 0, "at_ms": 1775.717, "type": "transcript", "party": "D", "kind": "partial", "text": "L"}
+{"receiver": 1, "at_ms": 1775.825, "type": "transcript", "party": "D", "kind": "partial", "text": "L"}
+{"receiver": 2, "at_ms": 1775.933, "type": "transcript", "party": "D", "kind": "partial", "text": "L"}
+{"receiver": 3, "at_ms": 1775.95, "type": "transcript", "party": "D", "kind": "partial", "text": "L"}
+{"receiver": 4, "at_ms": 1776.007, "type": "transcript", "party": "D", "kind": "partial", "text": "L"}
+{"receiver": 0, "at_ms": 2050.788, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 4, "at_ms": 2050.82, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 1, "at_ms": 2050.979, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 3, "at_ms": 2050.999, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 2, "at_ms": 2051.058, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 1, "at_ms": 2057.679, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 0, "at_ms": 2057.71, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 2, "at_ms": 2057.723, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 3, "at_ms": 2057.785, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 4, "at_ms": 2058.023, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 0, "at_ms": 2269.693, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop"}
+{"receiver": 1, "at_ms": 2269.938, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop"}
+{"receiver": 2, "at_ms": 2269.958, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop"}
+{"receiver": 3, "at_ms": 2269.97, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop"}
+{"receiver": 4, "at_ms": 2270.021, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop"}
+{"receiver": 0, "at_ms": 2277.759, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop"}
+{"receiver": 1, "at_ms": 2277.793, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop"}
+{"receiver": 2, "at_ms": 2277.806, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop"}
+{"receiver": 4, "at_ms": 2277.821, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop"}
+{"receiver": 3, "at_ms": 2277.832, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop"}
+{"receiver": 1, "at_ms": 2283.61, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop scre"}
+{"receiver": 0, "at_ms": 2283.644, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop scre"}
+{"receiver": 2, "at_ms": 2285.114, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop scre"}
+{"receiver": 4, "at_ms": 2285.223, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop scre"}
+{"receiver": 0, "at_ms": 2285.3, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen"}
+{"receiver": 1, "at_ms": 2285.396, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen"}
+{"receiver": 2, "at_ms": 2285.411, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen"}
+{"receiver": 3, "at_ms": 2285.538, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop scre"}
+{"receiver": 3, "at_ms": 2285.552, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen"}
+{"receiver": 4, "at_ms": 2285.565, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen"}
+{"receiver": 0, "at_ms": 2288.313, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen"}
+{"receiver": 1, "at_ms": 2288.437, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen"}
+{"receiver": 2, "at_ms": 2288.453, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen"}
+{"receiver": 3, "at_ms": 2288.527, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen"}
+{"receiver": 4, "at_ms": 2288.586, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen"}
+{"receiver": 0, "at_ms": 2572.259, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 1, "at_ms": 2572.314, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 1, "at_ms": 2572.322, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 2, "at_ms": 2572.349, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 2, "at_ms": 2572.355, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 4, "at_ms": 2572.379, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 4, "at_ms": 2572.384, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 3, "at_ms": 2572.408, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 3, "at_ms": 2572.413, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 0, "at_ms": 2572.456, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe"}
+{"receiver": 0, "at_ms": 2894.498, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop"}
+{"receiver": 0, "at_ms": 2894.519, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop"}
+{"receiver": 0, "at_ms": 2894.525, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop scre"}
+{"receiver": 0, "at_ms": 2894.531, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen"}
+{"receiver": 1, "at_ms": 2894.587, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop"}
+{"receiver": 1, "at_ms": 2894.594, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop"}
+{"receiver": 1, "at_ms": 2894.599, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop scre"}
+{"receiver": 1, "at_ms": 2894.604, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen"}
+{"receiver": 1, "at_ms": 2894.609, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack"}
+{"receiver": 2, "at_ms": 2894.701, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop"}
+{"receiver": 2, "at_ms": 2894.719, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop"}
+{"receiver": 2, "at_ms": 2894.981, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop scre"}
+{"receiver": 2, "at_ms": 2895.265, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen"}
+{"receiver": 2, "at_ms": 2895.305, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack"}
+{"receiver": 4, "at_ms": 2895.432, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop"}
+{"receiver": 4, "at_ms": 2895.44, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop"}
+{"receiver": 4, "at_ms": 2895.446, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop scre"}
+{"receiver": 4, "at_ms": 2895.451, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen"}
+{"receiver": 4, "at_ms": 2895.458, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack"}
+{"receiver": 3, "at_ms": 2895.529, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop"}
+{"receiver": 3, "at_ms": 2895.54, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop"}
+{"receiver": 3, "at_ms": 2895.548, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop scre"}
+{"receiver": 3, "at_ms": 2895.557, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen"}
+{"receiver": 3, "at_ms": 2895.565, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack"}
+{"receiver": 0, "at_ms": 2896.527, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack"}
+{"receiver": 0, "at_ms": 2896.586, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack"}
+{"receiver": 1, "at_ms": 2896.613, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack"}
+{"receiver": 3, "at_ms": 2896.624, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack"}
+{"receiver": 4, "at_ms": 2896.633, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack"}
+{"receiver": 2, "at_ms": 2896.644, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack"}
+{"receiver": 0, "at_ms": 3046.747, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe eve"}
+{"receiver": 1, "at_ms": 3046.771, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe eve"}
+{"receiver": 3, "at_ms": 3046.78, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe eve"}
+{"receiver": 2, "at_ms": 3046.788, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe eve"}
+{"receiver": 4, "at_ms": 3046.828, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe eve"}
+{"receiver": 0, "at_ms": 3050.183, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 1, "at_ms": 3050.207, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 2, "at_ms": 3050.216, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 3, "at_ms": 3053.43, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 4, "at_ms": 3053.709, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 0, "at_ms": 3061.552, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 1, "at_ms": 3061.626, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 1, "at_ms": 3061.636, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 2, "at_ms": 3061.781, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 2, "at_ms": 3061.789, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 4, "at_ms": 3061.813, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 4, "at_ms": 3061.818, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 3, "at_ms": 3061.841, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 3, "at_ms": 3061.847, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 0, "at_ms": 3061.853, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 1, "at_ms": 3275.424, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack"}
+{"receiver": 0, "at_ms": 3275.45, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack"}
+{"receiver": 2, "at_ms": 3275.46, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack"}
+{"receiver": 3, "at_ms": 3275.545, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack"}
+{"receiver": 4, "at_ms": 3275.555, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack"}
+{"receiver": 1, "at_ms": 3281.115, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack"}
+{"receiver": 2, "at_ms": 3281.14, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack"}
+{"receiver": 0, "at_ms": 3281.15, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack"}
+{"receiver": 3, "at_ms": 3281.157, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack"}
+{"receiver": 4, "at_ms": 3281.22, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack"}
+{"receiver": 0, "at_ms": 3553.774, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 1, "at_ms": 3553.998, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 3, "at_ms": 3554.017, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 2, "at_ms": 3554.029, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 4, "at_ms": 3554.041, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 3, "at_ms": 3557.269, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 2, "at_ms": 3557.3, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 4, "at_ms": 3557.311, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 1, "at_ms": 3557.319, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 0, "at_ms": 3557.371, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 0, "at_ms": 3559.516, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 1, "at_ms": 3559.548, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 4, "at_ms": 3559.56, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 2, "at_ms": 3559.571, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 3, "at_ms": 3559.581, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even"}
+{"receiver": 0, "at_ms": 3777.105, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I"}
+{"receiver": 1, "at_ms": 3777.23, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I"}
+{"receiver": 2, "at_ms": 3777.328, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I"}
+{"receiver": 3, "at_ms": 3777.343, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I"}
+{"receiver": 4, "at_ms": 3777.628, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I"}
+{"receiver": 0, "at_ms": 3779.357, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch"}
+{"receiver": 3, "at_ms": 3780.114, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch"}
+{"receiver": 2, "at_ms": 3780.143, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch"}
+{"receiver": 1, "at_ms": 3780.224, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch"}
+{"receiver": 4, "at_ms": 3780.24, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch"}
+{"receiver": 0, "at_ms": 3783.405, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch"}
+{"receiver": 1, "at_ms": 3783.776, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch"}
+{"receiver": 2, "at_ms": 3783.807, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch"}
+{"receiver": 3, "at_ms": 3783.918, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch"}
+{"receiver": 4, "at_ms": 3783.937, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch"}
+{"receiver": 0, "at_ms": 4051.061, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 2, "at_ms": 4051.097, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 1, "at_ms": 4051.114, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 3, "at_ms": 4051.269, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 4, "at_ms": 4051.29, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 0, "at_ms": 4056.851, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 1, "at_ms": 4056.888, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 2, "at_ms": 4056.898, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 3, "at_ms": 4056.983, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 4, "at_ms": 4056.993, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 2, "at_ms": 4272.242, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch"}
+{"receiver": 1, "at_ms": 4272.579, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch"}
+{"receiver": 3, "at_ms": 4272.687, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch"}
+{"receiver": 4, "at_ms": 4272.752, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch"}
+{"receiver": 0, "at_ms": 4272.823, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch"}
+{"receiver": 0, "at_ms": 4276.036, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch."}
+{"receiver": 1, "at_ms": 4276.156, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch."}
+{"receiver": 2, "at_ms": 4276.25, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch."}
+{"receiver": 3, "at_ms": 4276.345, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch."}
+{"receiver": 4, "at_ms": 4276.362, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch."}
+{"receiver": 3, "at_ms": 4278.36, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Rep"}
+{"receiver": 4, "at_ms": 4278.613, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Rep"}
+{"receiver": 0, "at_ms": 4278.634, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Rep"}
+{"receiver": 1, "at_ms": 4278.648, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Rep"}
+{"receiver": 2, "at_ms": 4278.658, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Rep"}
+{"receiver": 0, "at_ms": 4281.441, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair"}
+{"receiver": 2, "at_ms": 4281.473, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair"}
+{"receiver": 3, "at_ms": 4281.485, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair"}
+{"receiver": 1, "at_ms": 4281.496, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair"}
+{"receiver": 4, "at_ms": 4281.507, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair"}
+{"receiver": 0, "at_ms": 4288.797, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair"}
+{"receiver": 2, "at_ms": 4290.034, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair"}
+{"receiver": 1, "at_ms": 4290.212, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair"}
+{"receiver": 4, "at_ms": 4290.239, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair"}
+{"receiver": 3, "at_ms": 4290.302, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair"}
+{"receiver": 0, "at_ms": 4556.493, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 4, "at_ms": 4556.516, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 1, "at_ms": 4556.525, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 3, "at_ms": 4556.532, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 2, "at_ms": 4556.54, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 0, "at_ms": 4560.986, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 1, "at_ms": 4561.022, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 4, "at_ms": 4561.033, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 3, "at_ms": 4561.184, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 2, "at_ms": 4561.195, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 0, "at_ms": 4776.159, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch."}
+{"receiver": 1, "at_ms": 4776.343, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch."}
+{"receiver": 2, "at_ms": 4777.209, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch."}
+{"receiver": 4, "at_ms": 4777.234, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch."}
+{"receiver": 3, "at_ms": 4777.243, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch."}
+{"receiver": 0, "at_ms": 4779.642, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Rep"}
+{"receiver": 2, "at_ms": 4779.695, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Rep"}
+{"receiver": 1, "at_ms": 4779.727, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Rep"}
+{"receiver": 3, "at_ms": 4779.742, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Rep"}
+{"receiver": 4, "at_ms": 4779.756, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Rep"}
+{"receiver": 2, "at_ms": 4783.607, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair"}
+{"receiver": 1, "at_ms": 4783.63, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair"}
+{"receiver": 0, "at_ms": 4783.639, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair"}
+{"receiver": 4, "at_ms": 4783.646, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair"}
+{"receiver": 3, "at_ms": 4783.655, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair"}
+{"receiver": 1, "at_ms": 4787.257, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair p"}
+{"receiver": 0, "at_ms": 4787.28, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair p"}
+{"receiver": 2, "at_ms": 4787.354, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair p"}
+{"receiver": 3, "at_ms": 4787.364, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair p"}
+{"receiver": 4, "at_ms": 4787.372, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair p"}
+{"receiver": 0, "at_ms": 4791.48, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair p"}
+{"receiver": 1, "at_ms": 4791.504, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair p"}
+{"receiver": 2, "at_ms": 4791.513, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair p"}
+{"receiver": 3, "at_ms": 4791.521, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair p"}
+{"receiver": 4, "at_ms": 4791.528, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair p"}
+{"receiver": 0, "at_ms": 5087.695, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 4, "at_ms": 5087.74, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 2, "at_ms": 5087.759, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 1, "at_ms": 5087.774, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 3, "at_ms": 5087.894, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 0, "at_ms": 5091.069, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 1, "at_ms": 5092.196, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 2, "at_ms": 5092.753, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 3, "at_ms": 5092.798, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 4, "at_ms": 5092.819, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 0, "at_ms": 5254.878, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 1, "at_ms": 5254.923, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 4, "at_ms": 5254.943, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 3, "at_ms": 5255.117, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 2, "at_ms": 5255.136, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 1, "at_ms": 5270.574, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair p"}
+{"receiver": 0, "at_ms": 5270.625, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair p"}
+{"receiver": 4, "at_ms": 5270.872, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair p"}
+{"receiver": 3, "at_ms": 5270.898, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair p"}
+{"receiver": 2, "at_ms": 5270.979, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair p"}
+{"receiver": 1, "at_ms": 5277.0, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair p"}
+{"receiver": 0, "at_ms": 5277.058, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair p"}
+{"receiver": 2, "at_ms": 5277.083, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair p"}
+{"receiver": 3, "at_ms": 5277.102, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair p"}
+{"receiver": 4, "at_ms": 5277.12, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair p"}
+{"receiver": 0, "at_ms": 5281.389, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair pann"}
+{"receiver": 1, "at_ms": 5281.443, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair pann"}
+{"receiver": 2, "at_ms": 5281.466, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair pann"}
+{"receiver": 3, "at_ms": 5282.051, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair pann"}
+{"receiver": 4, "at_ms": 5282.073, "type": "transcript", "party": "D", "kind": "partial", "text": "L laptop screen crack I ditch. Repair pann"}
+{"receiver": 0, "at_ms": 5373.152, "type": "transcript", "party": "D", "kind": "final", "text": "என் laptop screen crack ஆயிடுச்சு repair பண்ணணும்", "seq": 1}
+{"receiver": 1, "at_ms": 5373.474, "type": "transcript", "party": "D", "kind": "final", "text": "என் laptop screen crack ஆயிடுச்சு repair பண்ணணும்", "seq": 1}
+{"receiver": 2, "at_ms": 5373.52, "type": "transcript", "party": "D", "kind": "final", "text": "என் laptop screen crack ஆயிடுச்சு repair பண்ணணும்", "seq": 1}
+{"receiver": 3, "at_ms": 5373.542, "type": "transcript", "party": "D", "kind": "final", "text": "என் laptop screen crack ஆயிடுச்சு repair பண்ணணும்", "seq": 1}
+{"receiver": 4, "at_ms": 5373.557, "type": "transcript", "party": "D", "kind": "final", "text": "என் laptop screen crack ஆயிடுச்சு repair பண்ணணும்", "seq": 1}
+{"receiver": 2, "at_ms": 5632.074, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 0, "at_ms": 5632.139, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 1, "at_ms": 5632.152, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 3, "at_ms": 5632.159, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 4, "at_ms": 5632.168, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat"}
+{"receiver": 0, "at_ms": 5852.829, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 1, "at_ms": 5852.956, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 2, "at_ms": 5853.087, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 3, "at_ms": 5853.104, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 4, "at_ms": 5853.118, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 0, "at_ms": 5869.334, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat wit"}
+{"receiver": 1, "at_ms": 5869.374, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat wit"}
+{"receiver": 2, "at_ms": 5869.39, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat wit"}
+{"receiver": 3, "at_ms": 5869.545, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat wit"}
+{"receiver": 4, "at_ms": 5869.615, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat wit"}
+{"receiver": 0, "at_ms": 5873.161, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat with"}
+{"receiver": 4, "at_ms": 5873.202, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat with"}
+{"receiver": 2, "at_ms": 5873.219, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat with"}
+{"receiver": 3, "at_ms": 5873.232, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat with"}
+{"receiver": 1, "at_ms": 5873.246, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat with"}
+{"receiver": 0, "at_ms": 5875.077, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat with"}
+{"receiver": 1, "at_ms": 5875.097, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat with"}
+{"receiver": 2, "at_ms": 5875.106, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat with"}
+{"receiver": 3, "at_ms": 5875.146, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat with"}
+{"receiver": 4, "at_ms": 5875.192, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat with"}
+{"receiver": 0, "at_ms": 5882.081, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat with"}
+{"receiver": 1, "at_ms": 5882.124, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat with"}
+{"receiver": 2, "at_ms": 5882.141, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat with"}
+{"receiver": 4, "at_ms": 5882.159, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat with"}
+{"receiver": 3, "at_ms": 5882.174, "type": "transcript", "party": "E", "kind": "partial", "text": "Maybe even eat with"}
+{"receiver": 4, "at_ms": 6003.782, "type": "transcript", "party": "E", "kind": "final", "text": "నేను ఈరోజు ఉదయం కూరగాయలు కొనడానికి market-కు వెళ్ళాను.", "seq": 1}
+{"receiver": 1, "at_ms": 6003.882, "type": "transcript", "party": "E", "kind": "final", "text": "నేను ఈరోజు ఉదయం కూరగాయలు కొనడానికి market-కు వెళ్ళాను.", "seq": 1}
+{"receiver": 0, "at_ms": 6003.911, "type": "transcript", "party": "E", "kind": "final", "text": "నేను ఈరోజు ఉదయం కూరగాయలు కొనడానికి market-కు వెళ్ళాను.", "seq": 1}
+{"receiver": 2, "at_ms": 6003.933, "type": "transcript", "party": "E", "kind": "final", "text": "నేను ఈరోజు ఉదయం కూరగాయలు కొనడానికి market-కు వెళ్ళాను.", "seq": 1}
+{"receiver": 3, "at_ms": 6003.951, "type": "transcript", "party": "E", "kind": "final", "text": "నేను ఈరోజు ఉదయం కూరగాయలు కొనడానికి market-కు వెళ్ళాను.", "seq": 1}
+{"receiver": 1, "at_ms": 6770.48, "type": "translated", "speaker": "D", "language": "en-IN", "text": "I have a broken laptop screen that needs repair", "seq": 1}
+{"receiver": 2, "at_ms": 7340.353, "type": "translated", "speaker": "D", "language": "hi-IN", "text": "मेरे लैपटॉप की स्क्रीन टूट गई है, जिसकी मरम्मत करवानी होगी।", "seq": 1}
+{"receiver": 0, "at_ms": 7404.047, "type": "translated", "speaker": "D", "language": "te-IN", "text": "నా దగ్గర ఒక విరిగిన ల్యాప్టాప్ స్క్రీన్ ఉంది, దానికి మరమ్మతు చేయవలసి ఉంది.", "seq": 1}
+{"receiver": 4, "at_ms": 7404.129, "type": "translated", "speaker": "D", "language": "te-IN", "text": "నా దగ్గర ఒక విరిగిన ల్యాప్టాప్ స్క్రీన్ ఉంది, దానికి మరమ్మతు చేయవలసి ఉంది.", "seq": 1}
+{"receiver": 1, "at_ms": 7922.265, "type": "latency", "speaker": "D", "language": "en-IN", "seq": 1, "stt_ms": 4498, "queue_ms": 0, "translate_ms": 1324, "tts_ms": 1152, "total_ms": 6974}
+{"receiver": 1, "at_ms": 7948.673, "type": "audio", "speaker": "D", "language": "en-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757633099.067, "wav_duration_s": 3.84, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 122924, "wav_sha256": "f2b6ffc1192564a522cb7ee416c971b4ae2b0aab3ce06b073d5eaf77cc08562b", "wav_valid": true}
+{"receiver": 2, "at_ms": 7987.604, "type": "translated", "speaker": "E", "language": "hi-IN", "text": "मैं आज सब्ज़ियाँ खरीदने के लिए बाज़ार गई हूँ।", "seq": 1}
+{"receiver": 0, "at_ms": 8065.061, "type": "translated", "speaker": "E", "language": "te-IN", "text": "నేను ఈ రోజు కూరగాయలు కొనడానికి మార్కెట్ కి వెళ్ళాను.", "seq": 1}
+{"receiver": 3, "at_ms": 8065.129, "type": "translated", "speaker": "E", "language": "te-IN", "text": "నేను ఈ రోజు కూరగాయలు కొనడానికి మార్కెట్ కి వెళ్ళాను.", "seq": 1}
+{"receiver": 1, "at_ms": 8161.933, "type": "translated", "speaker": "E", "language": "en-IN", "text": "I went to the market to buy vegetables today.", "seq": 1}
+{"receiver": 2, "at_ms": 8673.793, "type": "latency", "speaker": "D", "language": "hi-IN", "seq": 1, "stt_ms": 4498, "queue_ms": 0, "translate_ms": 1811, "tts_ms": 1334, "total_ms": 7643}
+{"receiver": 2, "at_ms": 8697.377, "type": "audio", "speaker": "D", "language": "hi-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757633099.067, "wav_duration_s": 4.6933125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 150230, "wav_sha256": "b802580b22a0eac5ae8ef295521840182ec7a462e59207077ffa9a6754b3e9d0", "wav_valid": true}
+{"receiver": 1, "at_ms": 9073.566, "type": "latency", "speaker": "E", "language": "en-IN", "seq": 1, "stt_ms": 4936, "queue_ms": 0, "translate_ms": 2088, "tts_ms": 912, "total_ms": 7936}
+{"receiver": 1, "at_ms": 9089.986, "type": "audio", "speaker": "E", "language": "en-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757633286.9624, "wav_duration_s": 2.9013125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 92886, "wav_sha256": "b299e366ba27905caa1c2ae34028d03f6a2bad79aca36fdd8d864afa4af4e1da", "wav_valid": true}
+{"receiver": 0, "at_ms": 9124.519, "type": "latency", "speaker": "D", "language": "te-IN", "seq": 1, "stt_ms": 4498, "queue_ms": 0, "translate_ms": 2030, "tts_ms": 1722, "total_ms": 8250}
+{"receiver": 4, "at_ms": 9124.547, "type": "latency", "speaker": "D", "language": "te-IN", "seq": 1, "stt_ms": 4498, "queue_ms": 0, "translate_ms": 2030, "tts_ms": 1722, "total_ms": 8250}
+{"receiver": 0, "at_ms": 9149.264, "type": "audio", "speaker": "D", "language": "te-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757633099.067, "wav_duration_s": 6.7413125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 215766, "wav_sha256": "81932590915578fbfc53d1b3d4678b33a0ebad7ff8f9012c0967631fb1419115", "wav_valid": true}
+{"receiver": 4, "at_ms": 9165.811, "type": "audio", "speaker": "D", "language": "te-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757633099.067, "wav_duration_s": 6.7413125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 215766, "wav_sha256": "81932590915578fbfc53d1b3d4678b33a0ebad7ff8f9012c0967631fb1419115", "wav_valid": true}
+{"receiver": 2, "at_ms": 9166.884, "type": "latency", "speaker": "E", "language": "hi-IN", "seq": 1, "stt_ms": 4936, "queue_ms": 0, "translate_ms": 1846, "tts_ms": 1178, "total_ms": 7960}
+{"receiver": 2, "at_ms": 9177.098, "type": "audio", "speaker": "E", "language": "hi-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757633286.9624, "wav_duration_s": 2.9866875, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 95618, "wav_sha256": "44289d788333c81b50cabeb51d577ffd222b9c96e7339a88e22a5cfc497e09de", "wav_valid": true}
+{"receiver": 0, "at_ms": 9486.749, "type": "latency", "speaker": "E", "language": "te-IN", "seq": 1, "stt_ms": 4936, "queue_ms": 0, "translate_ms": 2059, "tts_ms": 1422, "total_ms": 8417}
+{"receiver": 3, "at_ms": 9486.848, "type": "latency", "speaker": "E", "language": "te-IN", "seq": 1, "stt_ms": 4936, "queue_ms": 0, "translate_ms": 2059, "tts_ms": 1422, "total_ms": 8417}
+{"receiver": 0, "at_ms": 9517.269, "type": "audio", "speaker": "E", "language": "te-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757633286.9624, "wav_duration_s": 4.2666875, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 136578, "wav_sha256": "a52fc354d1341e7181e566aeb758fe2ed0298b4223fd6841d72fcdda0408ec66", "wav_valid": true}
+{"receiver": 3, "at_ms": 9534.207, "type": "audio", "speaker": "E", "language": "te-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757633286.9624, "wav_duration_s": 4.2666875, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 136578, "wav_sha256": "a52fc354d1341e7181e566aeb758fe2ed0298b4223fd6841d72fcdda0408ec66", "wav_valid": true}
+{"receiver": 0, "at_ms": 11666.071, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 1, "at_ms": 11666.712, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 2, "at_ms": 11668.004, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 2, "at_ms": 11668.058, "type": "peer_left", "party_id": "D"}
+{"receiver": 3, "at_ms": 11668.932, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 0, "at_ms": 11668.972, "type": "peer_left", "party_id": "D"}
+{"receiver": 1, "at_ms": 11669.043, "type": "peer_left", "party_id": "D"}
+{"receiver": 4, "at_ms": 11669.284, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 4, "at_ms": 11669.301, "type": "peer_left", "party_id": "D"}
+{"receiver": 0, "at_ms": 11752.905, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 1, "at_ms": 11753.329, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 2, "at_ms": 11753.624, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 4, "at_ms": 11753.659, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 0, "at_ms": 11753.682, "type": "peer_left", "party_id": "E"}
+{"receiver": 1, "at_ms": 11753.7, "type": "peer_left", "party_id": "E"}
+{"receiver": 2, "at_ms": 11753.838, "type": "peer_left", "party_id": "E"}

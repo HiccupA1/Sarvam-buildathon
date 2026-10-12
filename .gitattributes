@@ -1,0 +1,5 @@
+# Keep tested-source and raw-evidence checksums stable across Windows/Linux.
+backend/app.py text eol=lf
+loadtest/controlled_benchmark.py text eol=lf
+loadtest/analyze_controlled.py text eol=lf
+loadtest/results/controlled_20261012/** -text

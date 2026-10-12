@@ -1,0 +1,70 @@
+{
+  "spec": {
+    "id": "r1-p07-overlap",
+    "repetition": 1,
+    "pair": 7,
+    "condition": "overlap",
+    "inputs": [
+      {
+        "id": "ta_18",
+        "category": "ta",
+        "index": 18,
+        "reference": "அவளுடைய விளக்கக்காட்சி மிகவும் தெளிவாகவும் பயனுள்ளதாகவும் இருந்தது.",
+        "sha256": "134c5726fe4b1f69bb3f9d7f41d2c4a16ff713fb7560d97d4a5d551d02e99c7f",
+        "bytes": 185686,
+        "duration_s": 5.8026875,
+        "signal_start_s": 0.03675,
+        "signal_end_s": 5.678,
+        "peak": 30752,
+        "rms": 4209.627379824822
+      },
+      {
+        "id": "en_18",
+        "category": "en",
+        "index": 18,
+        "reference": "Her presentation was very clear and useful.",
+        "sha256": "7b9f253744503ff849b6ff57dc87a5de6cc04f3523ebb410f3167a1512307f02",
+        "bytes": 109226,
+        "duration_s": 3.4133125,
+        "signal_start_s": 0.020875,
+        "signal_end_s": 3.2525,
+        "peak": 28406,
+        "rms": 2742.7925875448336
+      }
+    ],
+    "targets": [
+      "ta-IN",
+      "te-IN",
+      "en-IN"
+    ]
+  },
+  "room": "bench-r1-p07-overlap",
+  "parties": {
+    "0": "A",
+    "1": "B",
+    "2": "C",
+    "3": "D",
+    "4": "E"
+  },
+  "send_start_ms": {
+    "3": 415.36109999287874,
+    "4": 721.3970999873709
+  },
+  "frames_sent": {
+    "3": {
+      "bytes": 227200,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    },
+    "4": {
+      "bytes": 217600,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    }
+  },
+  "duration_s": 12.589,
+  "error": null,
+  "events_file": "events\\r1-p07-overlap.jsonl",
+  "event_count": 485,
+  "events_sha256": "a63181a25b18535f4f755b31742c8375f30eaff22efc0bc77c0debe35102cead"
+}

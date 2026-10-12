@@ -1,0 +1,390 @@
+{"receiver": 0, "at_ms": 12.384, "type": "joined", "party_id": "A", "language": "en-IN", "resumed": false, "muted": true, "role": "listener"}
+{"receiver": 0, "at_ms": 12.431, "type": "ready"}
+{"receiver": 1, "at_ms": 20.503, "type": "joined", "party_id": "B", "language": "hi-IN", "resumed": false, "muted": true, "role": "listener"}
+{"receiver": 1, "at_ms": 20.581, "type": "peer_joined", "party_id": "A", "language": "en-IN", "muted": true, "role": "listener"}
+{"receiver": 1, "at_ms": 20.614, "type": "ready"}
+{"receiver": 2, "at_ms": 26.046, "type": "joined", "party_id": "C", "language": "ta-IN", "resumed": false, "muted": true, "role": "listener"}
+{"receiver": 2, "at_ms": 26.084, "type": "peer_joined", "party_id": "A", "language": "en-IN", "muted": true, "role": "listener"}
+{"receiver": 2, "at_ms": 26.215, "type": "peer_joined", "party_id": "B", "language": "hi-IN", "muted": true, "role": "listener"}
+{"receiver": 2, "at_ms": 26.272, "type": "ready"}
+{"receiver": 3, "at_ms": 31.811, "type": "joined", "party_id": "D", "language": "en-IN", "resumed": false, "muted": false, "role": "speaker"}
+{"receiver": 3, "at_ms": 31.952, "type": "peer_joined", "party_id": "A", "language": "en-IN", "muted": true, "role": "listener"}
+{"receiver": 3, "at_ms": 32.074, "type": "peer_joined", "party_id": "B", "language": "hi-IN", "muted": true, "role": "listener"}
+{"receiver": 3, "at_ms": 32.362, "type": "peer_joined", "party_id": "C", "language": "ta-IN", "muted": true, "role": "listener"}
+{"receiver": 3, "at_ms": 277.896, "type": "ready"}
+{"receiver": 4, "at_ms": 294.483, "type": "joined", "party_id": "E", "language": "en-IN", "resumed": false, "muted": false, "role": "speaker"}
+{"receiver": 4, "at_ms": 294.559, "type": "peer_joined", "party_id": "A", "language": "en-IN", "muted": true, "role": "listener"}
+{"receiver": 4, "at_ms": 294.588, "type": "peer_joined", "party_id": "B", "language": "hi-IN", "muted": true, "role": "listener"}
+{"receiver": 4, "at_ms": 294.684, "type": "peer_joined", "party_id": "C", "language": "ta-IN", "muted": true, "role": "listener"}
+{"receiver": 4, "at_ms": 294.828, "type": "peer_joined", "party_id": "D", "language": "en-IN", "muted": false, "role": "speaker"}
+{"receiver": 4, "at_ms": 515.1, "type": "ready"}
+{"receiver": 0, "at_ms": 515.299, "type": "peer_joined", "party_id": "B", "language": "hi-IN", "muted": true, "role": "listener"}
+{"receiver": 0, "at_ms": 515.324, "type": "peer_joined", "party_id": "C", "language": "ta-IN", "muted": true, "role": "listener"}
+{"receiver": 0, "at_ms": 515.339, "type": "peer_joined", "party_id": "D", "language": "en-IN", "muted": false, "role": "speaker"}
+{"receiver": 0, "at_ms": 515.351, "type": "peer_joined", "party_id": "E", "language": "en-IN", "muted": false, "role": "speaker"}
+{"receiver": 1, "at_ms": 515.375, "type": "peer_joined", "party_id": "C", "language": "ta-IN", "muted": true, "role": "listener"}
+{"receiver": 1, "at_ms": 515.39, "type": "peer_joined", "party_id": "D", "language": "en-IN", "muted": false, "role": "speaker"}
+{"receiver": 1, "at_ms": 515.405, "type": "peer_joined", "party_id": "E", "language": "en-IN", "muted": false, "role": "speaker"}
+{"receiver": 2, "at_ms": 515.426, "type": "peer_joined", "party_id": "D", "language": "en-IN", "muted": false, "role": "speaker"}
+{"receiver": 2, "at_ms": 515.439, "type": "peer_joined", "party_id": "E", "language": "en-IN", "muted": false, "role": "speaker"}
+{"receiver": 3, "at_ms": 515.458, "type": "peer_joined", "party_id": "E", "language": "en-IN", "muted": false, "role": "speaker"}
+{"receiver": 0, "at_ms": 861.144, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 1, "at_ms": 861.169, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 2, "at_ms": 861.178, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 3, "at_ms": 861.261, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 4, "at_ms": 861.27, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 0, "at_ms": 896.037, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 1, "at_ms": 896.064, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 2, "at_ms": 896.155, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 3, "at_ms": 896.167, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 4, "at_ms": 896.176, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 0, "at_ms": 1148.012, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 1, "at_ms": 1148.065, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 4, "at_ms": 1148.409, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 3, "at_ms": 1148.438, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 2, "at_ms": 1148.458, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 0, "at_ms": 1184.355, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 1, "at_ms": 1184.405, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 2, "at_ms": 1184.425, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 3, "at_ms": 1184.442, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 4, "at_ms": 1184.528, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 1, "at_ms": 1378.723, "type": "transcript", "party": "D", "kind": "partial", "text": "K"}
+{"receiver": 0, "at_ms": 1378.779, "type": "transcript", "party": "D", "kind": "partial", "text": "K"}
+{"receiver": 4, "at_ms": 1378.998, "type": "transcript", "party": "D", "kind": "partial", "text": "K"}
+{"receiver": 3, "at_ms": 1379.032, "type": "transcript", "party": "D", "kind": "partial", "text": "K"}
+{"receiver": 2, "at_ms": 1379.055, "type": "transcript", "party": "D", "kind": "partial", "text": "K"}
+{"receiver": 0, "at_ms": 1383.115, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuz"}
+{"receiver": 2, "at_ms": 1383.171, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuz"}
+{"receiver": 1, "at_ms": 1383.192, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuz"}
+{"receiver": 4, "at_ms": 1383.39, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuz"}
+{"receiver": 3, "at_ms": 1383.416, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuz"}
+{"receiver": 0, "at_ms": 1385.874, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuz"}
+{"receiver": 1, "at_ms": 1385.926, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuz"}
+{"receiver": 2, "at_ms": 1385.95, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuz"}
+{"receiver": 4, "at_ms": 1385.968, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuz"}
+{"receiver": 3, "at_ms": 1385.985, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuz"}
+{"receiver": 0, "at_ms": 1659.183, "type": "transcript", "party": "E", "kind": "partial", "text": "In"}
+{"receiver": 1, "at_ms": 1659.206, "type": "transcript", "party": "E", "kind": "partial", "text": "In"}
+{"receiver": 3, "at_ms": 1659.215, "type": "transcript", "party": "E", "kind": "partial", "text": "In"}
+{"receiver": 4, "at_ms": 1659.223, "type": "transcript", "party": "E", "kind": "partial", "text": "In"}
+{"receiver": 2, "at_ms": 1659.23, "type": "transcript", "party": "E", "kind": "partial", "text": "In"}
+{"receiver": 0, "at_ms": 1662.544, "type": "transcript", "party": "E", "kind": "partial", "text": "In the"}
+{"receiver": 1, "at_ms": 1662.579, "type": "transcript", "party": "E", "kind": "partial", "text": "In the"}
+{"receiver": 4, "at_ms": 1662.594, "type": "transcript", "party": "E", "kind": "partial", "text": "In the"}
+{"receiver": 3, "at_ms": 1662.605, "type": "transcript", "party": "E", "kind": "partial", "text": "In the"}
+{"receiver": 2, "at_ms": 1662.664, "type": "transcript", "party": "E", "kind": "partial", "text": "In the"}
+{"receiver": 0, "at_ms": 1666.042, "type": "transcript", "party": "E", "kind": "partial", "text": "In the"}
+{"receiver": 3, "at_ms": 1666.065, "type": "transcript", "party": "E", "kind": "partial", "text": "In the"}
+{"receiver": 1, "at_ms": 1666.075, "type": "transcript", "party": "E", "kind": "partial", "text": "In the"}
+{"receiver": 2, "at_ms": 1666.171, "type": "transcript", "party": "E", "kind": "partial", "text": "In the"}
+{"receiver": 4, "at_ms": 1666.187, "type": "transcript", "party": "E", "kind": "partial", "text": "In the"}
+{"receiver": 0, "at_ms": 1895.529, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuz"}
+{"receiver": 1, "at_ms": 1895.648, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuz"}
+{"receiver": 2, "at_ms": 1895.724, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuz"}
+{"receiver": 3, "at_ms": 1895.781, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuz"}
+{"receiver": 4, "at_ms": 1896.105, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuz"}
+{"receiver": 0, "at_ms": 1899.082, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuz"}
+{"receiver": 1, "at_ms": 1899.84, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuz"}
+{"receiver": 2, "at_ms": 1899.99, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuz"}
+{"receiver": 3, "at_ms": 1900.01, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuz"}
+{"receiver": 4, "at_ms": 1900.023, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuz"}
+{"receiver": 1, "at_ms": 2173.117, "type": "transcript", "party": "E", "kind": "partial", "text": "In"}
+{"receiver": 0, "at_ms": 2173.143, "type": "transcript", "party": "E", "kind": "partial", "text": "In"}
+{"receiver": 2, "at_ms": 2173.624, "type": "transcript", "party": "E", "kind": "partial", "text": "In"}
+{"receiver": 4, "at_ms": 2173.664, "type": "transcript", "party": "E", "kind": "partial", "text": "In"}
+{"receiver": 3, "at_ms": 2173.687, "type": "transcript", "party": "E", "kind": "partial", "text": "In"}
+{"receiver": 1, "at_ms": 2176.808, "type": "transcript", "party": "E", "kind": "partial", "text": "In the"}
+{"receiver": 0, "at_ms": 2176.837, "type": "transcript", "party": "E", "kind": "partial", "text": "In the"}
+{"receiver": 3, "at_ms": 2176.847, "type": "transcript", "party": "E", "kind": "partial", "text": "In the"}
+{"receiver": 2, "at_ms": 2176.855, "type": "transcript", "party": "E", "kind": "partial", "text": "In the"}
+{"receiver": 4, "at_ms": 2176.862, "type": "transcript", "party": "E", "kind": "partial", "text": "In the"}
+{"receiver": 0, "at_ms": 2182.569, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn"}
+{"receiver": 2, "at_ms": 2182.593, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn"}
+{"receiver": 1, "at_ms": 2182.602, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn"}
+{"receiver": 3, "at_ms": 2182.61, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn"}
+{"receiver": 4, "at_ms": 2182.617, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn"}
+{"receiver": 0, "at_ms": 2185.523, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn"}
+{"receiver": 1, "at_ms": 2185.548, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn"}
+{"receiver": 3, "at_ms": 2185.557, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn"}
+{"receiver": 4, "at_ms": 2185.564, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn"}
+{"receiver": 2, "at_ms": 2185.572, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn"}
+{"receiver": 0, "at_ms": 2374.304, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhand"}
+{"receiver": 1, "at_ms": 2374.468, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhand"}
+{"receiver": 2, "at_ms": 2374.577, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhand"}
+{"receiver": 3, "at_ms": 2374.611, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhand"}
+{"receiver": 4, "at_ms": 2374.668, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhand"}
+{"receiver": 0, "at_ms": 2379.078, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandang"}
+{"receiver": 1, "at_ms": 2379.249, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandang"}
+{"receiver": 2, "at_ms": 2379.266, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandang"}
+{"receiver": 4, "at_ms": 2379.277, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandang"}
+{"receiver": 3, "at_ms": 2379.348, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandang"}
+{"receiver": 0, "at_ms": 2382.534, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandang"}
+{"receiver": 1, "at_ms": 2382.758, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandang"}
+{"receiver": 2, "at_ms": 2382.78, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandang"}
+{"receiver": 4, "at_ms": 2382.793, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandang"}
+{"receiver": 3, "at_ms": 2382.803, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandang"}
+{"receiver": 0, "at_ms": 2744.029, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn"}
+{"receiver": 4, "at_ms": 2744.185, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn"}
+{"receiver": 1, "at_ms": 2744.197, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn"}
+{"receiver": 2, "at_ms": 2744.226, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn"}
+{"receiver": 2, "at_ms": 2744.234, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn,"}
+{"receiver": 3, "at_ms": 2744.266, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn"}
+{"receiver": 3, "at_ms": 2744.271, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn,"}
+{"receiver": 3, "at_ms": 2744.276, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the"}
+{"receiver": 4, "at_ms": 2744.379, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn,"}
+{"receiver": 4, "at_ms": 2744.385, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the"}
+{"receiver": 4, "at_ms": 2744.39, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the w"}
+{"receiver": 0, "at_ms": 2744.519, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn,"}
+{"receiver": 0, "at_ms": 2744.532, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the"}
+{"receiver": 0, "at_ms": 2744.537, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the w"}
+{"receiver": 0, "at_ms": 2744.542, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weat"}
+{"receiver": 0, "at_ms": 2744.548, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather"}
+{"receiver": 1, "at_ms": 2744.6, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn,"}
+{"receiver": 1, "at_ms": 2744.606, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the"}
+{"receiver": 1, "at_ms": 2744.61, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the w"}
+{"receiver": 2, "at_ms": 2744.682, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the"}
+{"receiver": 2, "at_ms": 2744.688, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the w"}
+{"receiver": 3, "at_ms": 2744.818, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the w"}
+{"receiver": 3, "at_ms": 2744.826, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weat"}
+{"receiver": 3, "at_ms": 2744.831, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather"}
+{"receiver": 3, "at_ms": 2744.838, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather"}
+{"receiver": 4, "at_ms": 2744.916, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weat"}
+{"receiver": 4, "at_ms": 2744.923, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather"}
+{"receiver": 4, "at_ms": 2744.928, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather"}
+{"receiver": 1, "at_ms": 2744.935, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weat"}
+{"receiver": 1, "at_ms": 2744.94, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather"}
+{"receiver": 1, "at_ms": 2744.944, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather"}
+{"receiver": 0, "at_ms": 2744.951, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather"}
+{"receiver": 2, "at_ms": 2744.961, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weat"}
+{"receiver": 2, "at_ms": 2744.966, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather"}
+{"receiver": 2, "at_ms": 2744.97, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather"}
+{"receiver": 0, "at_ms": 2889.326, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandang"}
+{"receiver": 1, "at_ms": 2889.444, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandang"}
+{"receiver": 2, "at_ms": 2889.455, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandang"}
+{"receiver": 4, "at_ms": 2889.464, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandang"}
+{"receiver": 3, "at_ms": 2889.471, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandang"}
+{"receiver": 0, "at_ms": 2893.308, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandang"}
+{"receiver": 1, "at_ms": 2893.333, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandang"}
+{"receiver": 2, "at_ms": 2893.343, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandang"}
+{"receiver": 3, "at_ms": 2893.402, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandang"}
+{"receiver": 4, "at_ms": 2893.411, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandang"}
+{"receiver": 1, "at_ms": 3184.695, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn,"}
+{"receiver": 3, "at_ms": 3184.993, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn,"}
+{"receiver": 0, "at_ms": 3185.045, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn,"}
+{"receiver": 4, "at_ms": 3185.061, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn,"}
+{"receiver": 2, "at_ms": 3185.072, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn,"}
+{"receiver": 0, "at_ms": 3189.001, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the"}
+{"receiver": 3, "at_ms": 3189.027, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the"}
+{"receiver": 2, "at_ms": 3189.104, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the"}
+{"receiver": 1, "at_ms": 3189.114, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the"}
+{"receiver": 4, "at_ms": 3189.122, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the"}
+{"receiver": 1, "at_ms": 3192.817, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the w"}
+{"receiver": 2, "at_ms": 3192.918, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the w"}
+{"receiver": 0, "at_ms": 3192.93, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the w"}
+{"receiver": 4, "at_ms": 3192.987, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the w"}
+{"receiver": 3, "at_ms": 3192.997, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the w"}
+{"receiver": 0, "at_ms": 3195.557, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weat"}
+{"receiver": 1, "at_ms": 3195.581, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weat"}
+{"receiver": 2, "at_ms": 3195.589, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weat"}
+{"receiver": 4, "at_ms": 3195.596, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weat"}
+{"receiver": 3, "at_ms": 3195.603, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weat"}
+{"receiver": 3, "at_ms": 3201.775, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather"}
+{"receiver": 4, "at_ms": 3201.802, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather"}
+{"receiver": 0, "at_ms": 3201.811, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather"}
+{"receiver": 1, "at_ms": 3201.877, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather"}
+{"receiver": 2, "at_ms": 3201.886, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather"}
+{"receiver": 2, "at_ms": 3202.81, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was"}
+{"receiver": 0, "at_ms": 3202.834, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was"}
+{"receiver": 4, "at_ms": 3202.843, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was"}
+{"receiver": 1, "at_ms": 3202.85, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was"}
+{"receiver": 3, "at_ms": 3202.857, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was"}
+{"receiver": 1, "at_ms": 3207.695, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very"}
+{"receiver": 0, "at_ms": 3207.727, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very"}
+{"receiver": 3, "at_ms": 3207.774, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very"}
+{"receiver": 4, "at_ms": 3207.829, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very"}
+{"receiver": 2, "at_ms": 3207.839, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very"}
+{"receiver": 0, "at_ms": 3216.097, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very"}
+{"receiver": 1, "at_ms": 3216.123, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very"}
+{"receiver": 2, "at_ms": 3216.236, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very"}
+{"receiver": 4, "at_ms": 3216.247, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very"}
+{"receiver": 3, "at_ms": 3216.255, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very"}
+{"receiver": 0, "at_ms": 3379.016, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal"}
+{"receiver": 2, "at_ms": 3379.136, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal"}
+{"receiver": 1, "at_ms": 3379.228, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal"}
+{"receiver": 4, "at_ms": 3379.239, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal"}
+{"receiver": 3, "at_ms": 3379.247, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal"}
+{"receiver": 0, "at_ms": 3382.08, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal"}
+{"receiver": 2, "at_ms": 3382.104, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal"}
+{"receiver": 1, "at_ms": 3382.113, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal"}
+{"receiver": 3, "at_ms": 3382.121, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal"}
+{"receiver": 4, "at_ms": 3382.128, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal"}
+{"receiver": 0, "at_ms": 3386.782, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Po"}
+{"receiver": 1, "at_ms": 3386.811, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Po"}
+{"receiver": 3, "at_ms": 3387.449, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Po"}
+{"receiver": 4, "at_ms": 3387.472, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Po"}
+{"receiver": 2, "at_ms": 3387.509, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Po"}
+{"receiver": 1, "at_ms": 3390.343, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Po"}
+{"receiver": 0, "at_ms": 3390.374, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Po"}
+{"receiver": 3, "at_ms": 3390.489, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Po"}
+{"receiver": 4, "at_ms": 3390.505, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Po"}
+{"receiver": 2, "at_ms": 3390.516, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Po"}
+{"receiver": 0, "at_ms": 3658.525, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was"}
+{"receiver": 2, "at_ms": 3658.741, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was"}
+{"receiver": 1, "at_ms": 3658.761, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was"}
+{"receiver": 4, "at_ms": 3658.776, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was"}
+{"receiver": 3, "at_ms": 3658.786, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was"}
+{"receiver": 1, "at_ms": 3661.838, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very"}
+{"receiver": 0, "at_ms": 3661.909, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very"}
+{"receiver": 2, "at_ms": 3661.925, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very"}
+{"receiver": 3, "at_ms": 3662.025, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very"}
+{"receiver": 4, "at_ms": 3662.038, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very"}
+{"receiver": 1, "at_ms": 3664.462, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very"}
+{"receiver": 0, "at_ms": 3664.499, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very"}
+{"receiver": 3, "at_ms": 3664.64, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very"}
+{"receiver": 2, "at_ms": 3664.657, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very"}
+{"receiver": 4, "at_ms": 3664.705, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very"}
+{"receiver": 0, "at_ms": 3887.025, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal"}
+{"receiver": 1, "at_ms": 3887.367, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal"}
+{"receiver": 2, "at_ms": 3887.452, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal"}
+{"receiver": 3, "at_ms": 3887.535, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal"}
+{"receiver": 4, "at_ms": 3887.55, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal"}
+{"receiver": 0, "at_ms": 3890.042, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Po"}
+{"receiver": 1, "at_ms": 3890.135, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Po"}
+{"receiver": 2, "at_ms": 3891.654, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Po"}
+{"receiver": 3, "at_ms": 3892.163, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Po"}
+{"receiver": 4, "at_ms": 3892.908, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Po"}
+{"receiver": 0, "at_ms": 3893.556, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poong"}
+{"receiver": 1, "at_ms": 3893.701, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poong"}
+{"receiver": 2, "at_ms": 3893.721, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poong"}
+{"receiver": 3, "at_ms": 3893.735, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poong"}
+{"receiver": 4, "at_ms": 3893.783, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poong"}
+{"receiver": 0, "at_ms": 3898.174, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poong"}
+{"receiver": 2, "at_ms": 3899.361, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poong"}
+{"receiver": 1, "at_ms": 3899.391, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poong"}
+{"receiver": 3, "at_ms": 3899.405, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poong"}
+{"receiver": 4, "at_ms": 3899.417, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poong"}
+{"receiver": 0, "at_ms": 4077.292, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 4, "at_ms": 4077.54, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 1, "at_ms": 4077.62, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 2, "at_ms": 4077.681, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 3, "at_ms": 4077.733, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 0, "at_ms": 4090.682, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poong"}
+{"receiver": 2, "at_ms": 4090.831, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poong"}
+{"receiver": 1, "at_ms": 4091.205, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poong"}
+{"receiver": 3, "at_ms": 4091.234, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poong"}
+{"receiver": 4, "at_ms": 4091.308, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poong"}
+{"receiver": 0, "at_ms": 4096.552, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poong"}
+{"receiver": 1, "at_ms": 4096.663, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poong"}
+{"receiver": 2, "at_ms": 4096.737, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poong"}
+{"receiver": 3, "at_ms": 4096.8, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poong"}
+{"receiver": 4, "at_ms": 4096.957, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poong"}
+{"receiver": 0, "at_ms": 4103.881, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poonga"}
+{"receiver": 1, "at_ms": 4103.915, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poonga"}
+{"receiver": 2, "at_ms": 4104.711, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poonga"}
+{"receiver": 3, "at_ms": 4104.741, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poonga"}
+{"receiver": 4, "at_ms": 4104.755, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poonga"}
+{"receiver": 0, "at_ms": 4108.104, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poongaavil"}
+{"receiver": 1, "at_ms": 4108.423, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poongaavil"}
+{"receiver": 2, "at_ms": 4108.658, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poongaavil"}
+{"receiver": 3, "at_ms": 4109.237, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poongaavil"}
+{"receiver": 4, "at_ms": 4109.545, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poongaavil"}
+{"receiver": 0, "at_ms": 4111.945, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poongaavil Vel"}
+{"receiver": 1, "at_ms": 4111.978, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poongaavil Vel"}
+{"receiver": 2, "at_ms": 4112.094, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poongaavil Vel"}
+{"receiver": 3, "at_ms": 4112.109, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poongaavil Vel"}
+{"receiver": 4, "at_ms": 4112.132, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poongaavil Vel"}
+{"receiver": 0, "at_ms": 4118.026, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poongaavil Velay"}
+{"receiver": 1, "at_ms": 4118.159, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poongaavil Velay"}
+{"receiver": 2, "at_ms": 4119.453, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poongaavil Velay"}
+{"receiver": 3, "at_ms": 4119.548, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poongaavil Velay"}
+{"receiver": 4, "at_ms": 4120.119, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poongaavil Velay"}
+{"receiver": 0, "at_ms": 4124.131, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poongaavil Velayad"}
+{"receiver": 1, "at_ms": 4124.239, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poongaavil Velayad"}
+{"receiver": 2, "at_ms": 4124.332, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poongaavil Velayad"}
+{"receiver": 3, "at_ms": 4124.347, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poongaavil Velayad"}
+{"receiver": 4, "at_ms": 4124.507, "type": "transcript", "party": "D", "kind": "partial", "text": "Kuzhandangal Poongaavil Velayad"}
+{"receiver": 1, "at_ms": 4167.506, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good"}
+{"receiver": 0, "at_ms": 4167.54, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good"}
+{"receiver": 4, "at_ms": 4167.552, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good"}
+{"receiver": 2, "at_ms": 4167.562, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good"}
+{"receiver": 3, "at_ms": 4167.574, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good"}
+{"receiver": 4, "at_ms": 4174.842, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good."}
+{"receiver": 0, "at_ms": 4174.88, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good."}
+{"receiver": 2, "at_ms": 4174.893, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good."}
+{"receiver": 3, "at_ms": 4174.903, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good."}
+{"receiver": 1, "at_ms": 4174.913, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good."}
+{"receiver": 0, "at_ms": 4175.97, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good."}
+{"receiver": 1, "at_ms": 4176.074, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good."}
+{"receiver": 2, "at_ms": 4176.146, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good."}
+{"receiver": 3, "at_ms": 4176.227, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good."}
+{"receiver": 4, "at_ms": 4176.241, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good."}
+{"receiver": 0, "at_ms": 4198.756, "type": "transcript", "party": "D", "kind": "final", "text": "குழந்தைகள் பூங்காவில் விளையாடுகிறார்கள்", "seq": 1}
+{"receiver": 1, "at_ms": 4198.792, "type": "transcript", "party": "D", "kind": "final", "text": "குழந்தைகள் பூங்காவில் விளையாடுகிறார்கள்", "seq": 1}
+{"receiver": 2, "at_ms": 4199.604, "type": "transcript", "party": "D", "kind": "final", "text": "குழந்தைகள் பூங்காவில் விளையாடுகிறார்கள்", "seq": 1}
+{"receiver": 3, "at_ms": 4199.692, "type": "transcript", "party": "D", "kind": "final", "text": "குழந்தைகள் பூங்காவில் விளையாடுகிறார்கள்", "seq": 1}
+{"receiver": 4, "at_ms": 4199.748, "type": "transcript", "party": "D", "kind": "final", "text": "குழந்தைகள் பூங்காவில் விளையாடுகிறார்கள்", "seq": 1}
+{"receiver": 0, "at_ms": 4686.345, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good."}
+{"receiver": 1, "at_ms": 4686.372, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good."}
+{"receiver": 2, "at_ms": 4686.382, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good."}
+{"receiver": 3, "at_ms": 4686.389, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good."}
+{"receiver": 4, "at_ms": 4686.456, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good."}
+{"receiver": 2, "at_ms": 4689.224, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good."}
+{"receiver": 1, "at_ms": 4689.249, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good."}
+{"receiver": 0, "at_ms": 4689.257, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good."}
+{"receiver": 3, "at_ms": 4689.313, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good."}
+{"receiver": 4, "at_ms": 4689.322, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good."}
+{"receiver": 0, "at_ms": 4756.689, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 1, "at_ms": 4756.72, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 2, "at_ms": 4756.733, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 4, "at_ms": 4756.743, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 3, "at_ms": 4756.753, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 0, "at_ms": 4772.385, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good. It"}
+{"receiver": 1, "at_ms": 4772.418, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good. It"}
+{"receiver": 2, "at_ms": 4772.539, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good. It"}
+{"receiver": 4, "at_ms": 4772.78, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good. It"}
+{"receiver": 3, "at_ms": 4772.849, "type": "transcript", "party": "E", "kind": "partial", "text": "In the autumn, the weather was very good. It"}
+{"receiver": 0, "at_ms": 4871.009, "type": "transcript", "party": "E", "kind": "final", "text": "இந்த ஆரம் வானிலை மிகவும் நன்றாக இருக்கிறது", "seq": 1}
+{"receiver": 1, "at_ms": 4871.034, "type": "transcript", "party": "E", "kind": "final", "text": "இந்த ஆரம் வானிலை மிகவும் நன்றாக இருக்கிறது", "seq": 1}
+{"receiver": 2, "at_ms": 4871.045, "type": "transcript", "party": "E", "kind": "final", "text": "இந்த ஆரம் வானிலை மிகவும் நன்றாக இருக்கிறது", "seq": 1}
+{"receiver": 4, "at_ms": 4871.132, "type": "transcript", "party": "E", "kind": "final", "text": "இந்த ஆரம் வானிலை மிகவும் நன்றாக இருக்கிறது", "seq": 1}
+{"receiver": 3, "at_ms": 4871.142, "type": "transcript", "party": "E", "kind": "final", "text": "இந்த ஆரம் வானிலை மிகவும் நன்றாக இருக்கிறது", "seq": 1}
+{"receiver": 4, "at_ms": 5949.256, "type": "translated", "speaker": "D", "language": "en-IN", "text": "Children are playing in the park", "seq": 1}
+{"receiver": 0, "at_ms": 5949.304, "type": "translated", "speaker": "D", "language": "en-IN", "text": "Children are playing in the park", "seq": 1}
+{"receiver": 2, "at_ms": 6276.463, "type": "translated", "speaker": "D", "language": "ta-IN", "text": "குழந்தைகள் பூங்காவில் விளையாடுகிறார்கள்.", "seq": 1}
+{"receiver": 0, "at_ms": 6356.677, "type": "translated", "speaker": "E", "language": "en-IN", "text": "The weather here is very good", "seq": 1}
+{"receiver": 3, "at_ms": 6356.719, "type": "translated", "speaker": "E", "language": "en-IN", "text": "The weather here is very good", "seq": 1}
+{"receiver": 1, "at_ms": 6424.456, "type": "translated", "speaker": "D", "language": "hi-IN", "text": "बच्चे पार्क में खेल रहे हैं।", "seq": 1}
+{"receiver": 0, "at_ms": 6607.771, "type": "latency", "speaker": "D", "language": "en-IN", "seq": 1, "stt_ms": 3338, "queue_ms": 0, "translate_ms": 1749, "tts_ms": 659, "total_ms": 5746}
+{"receiver": 4, "at_ms": 6608.011, "type": "latency", "speaker": "D", "language": "en-IN", "seq": 1, "stt_ms": 3338, "queue_ms": 0, "translate_ms": 1749, "tts_ms": 659, "total_ms": 5746}
+{"receiver": 0, "at_ms": 6625.091, "type": "audio", "speaker": "D", "language": "en-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757717902.7898, "wav_duration_s": 1.8773125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 60118, "wav_sha256": "945a0cad6f04af48a74a5c96e9a295bcf429efb5a0572626f061429b6844f60f", "wav_valid": true}
+{"receiver": 4, "at_ms": 6634.534, "type": "audio", "speaker": "D", "language": "en-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757717902.7898, "wav_duration_s": 1.8773125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 60118, "wav_sha256": "945a0cad6f04af48a74a5c96e9a295bcf429efb5a0572626f061429b6844f60f", "wav_valid": true}
+{"receiver": 1, "at_ms": 6794.214, "type": "translated", "speaker": "E", "language": "hi-IN", "text": "यहाँ का मौसम बहुत अच्छा है", "seq": 1}
+{"receiver": 2, "at_ms": 6869.322, "type": "translated", "speaker": "E", "language": "ta-IN", "text": "இங்குள்ள வானிலை மிகவும் நன்றாக உள்ளது.", "seq": 1}
+{"receiver": 0, "at_ms": 7063.856, "type": "latency", "speaker": "E", "language": "en-IN", "seq": 1, "stt_ms": 3724, "queue_ms": 0, "translate_ms": 1485, "tts_ms": 707, "total_ms": 5916}
+{"receiver": 3, "at_ms": 7064.37, "type": "latency", "speaker": "E", "language": "en-IN", "seq": 1, "stt_ms": 3724, "queue_ms": 0, "translate_ms": 1485, "tts_ms": 707, "total_ms": 5916}
+{"receiver": 0, "at_ms": 7085.254, "type": "audio", "speaker": "E", "language": "en-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757718201.037, "wav_duration_s": 1.8773125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 60118, "wav_sha256": "8289e5a7dc2b94ad29175a611fa9107d762621de9f68b24f3625a5170449c91d", "wav_valid": true}
+{"receiver": 3, "at_ms": 7092.985, "type": "audio", "speaker": "E", "language": "en-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757718201.037, "wav_duration_s": 1.8773125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 60118, "wav_sha256": "8289e5a7dc2b94ad29175a611fa9107d762621de9f68b24f3625a5170449c91d", "wav_valid": true}
+{"receiver": 1, "at_ms": 7197.101, "type": "latency", "speaker": "D", "language": "hi-IN", "seq": 1, "stt_ms": 3338, "queue_ms": 0, "translate_ms": 1960, "tts_ms": 773, "total_ms": 6071}
+{"receiver": 1, "at_ms": 7220.016, "type": "audio", "speaker": "D", "language": "hi-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757717902.7898, "wav_duration_s": 2.4746875, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 79234, "wav_sha256": "75b34f670774f296859dd715dfb22e99eede6a2188296899c934e6f00b395cee", "wav_valid": true}
+{"receiver": 2, "at_ms": 7305.468, "type": "latency", "speaker": "D", "language": "ta-IN", "seq": 1, "stt_ms": 3338, "queue_ms": 0, "translate_ms": 1760, "tts_ms": 1030, "total_ms": 6128}
+{"receiver": 2, "at_ms": 7321.822, "type": "audio", "speaker": "D", "language": "ta-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757717902.7898, "wav_duration_s": 2.816, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 90156, "wav_sha256": "b3ae99dbff49fe47fd4f12bc635a64d1198f4230f56937f6821698f49501a959", "wav_valid": true}
+{"receiver": 1, "at_ms": 7612.557, "type": "latency", "speaker": "E", "language": "hi-IN", "seq": 1, "stt_ms": 3724, "queue_ms": 0, "translate_ms": 1783, "tts_ms": 818, "total_ms": 6325}
+{"receiver": 1, "at_ms": 7629.223, "type": "audio", "speaker": "E", "language": "hi-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757718201.037, "wav_duration_s": 2.2186875, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 71042, "wav_sha256": "cd69ad2df42eea3c47349cb54a85846ef7d6f405ec09b294fdd36d9a1ceb6172", "wav_valid": true}
+{"receiver": 2, "at_ms": 7816.203, "type": "latency", "speaker": "E", "language": "ta-IN", "seq": 1, "stt_ms": 3724, "queue_ms": 0, "translate_ms": 1798, "tts_ms": 947, "total_ms": 6469}
+{"receiver": 2, "at_ms": 7836.923, "type": "audio", "speaker": "E", "language": "ta-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757718201.037, "wav_duration_s": 3.2426875, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 103810, "wav_sha256": "9fd709937268a84a8ff48d4912fe9e9c93273bbd3481375d1dc3757defb6fd7e", "wav_valid": true}
+{"receiver": 0, "at_ms": 10564.265, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 0, "at_ms": 10564.307, "type": "peer_left", "party_id": "E"}
+{"receiver": 1, "at_ms": 10564.405, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 1, "at_ms": 10564.422, "type": "peer_left", "party_id": "E"}
+{"receiver": 3, "at_ms": 10564.81, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 3, "at_ms": 10564.83, "type": "peer_left", "party_id": "E"}
+{"receiver": 2, "at_ms": 10564.916, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 2, "at_ms": 10564.976, "type": "peer_left", "party_id": "E"}
+{"receiver": 4, "at_ms": 10565.013, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 0, "at_ms": 10570.103, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 2, "at_ms": 10570.158, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 2, "at_ms": 10570.297, "type": "peer_left", "party_id": "D"}
+{"receiver": 3, "at_ms": 10571.158, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 1, "at_ms": 10571.208, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 1, "at_ms": 10571.228, "type": "peer_left", "party_id": "D"}
+{"receiver": 0, "at_ms": 10571.246, "type": "peer_left", "party_id": "D"}

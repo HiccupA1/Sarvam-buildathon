@@ -1,0 +1,5 @@
+﻿metric,paired_fixtures,matched_repetition_pairs,mean_overlap_minus_alternating,bootstrap_95_low,bootstrap_95_high,pair_block_95_low,pair_block_95_high,pair_blocks,bootstrap_unit,resamples
+mean_last_audio_after_clip_end_ms,30,90,129.89964851750008,26.808357778033688,240.52714518546765,2.281188520745754,276.5867566643165,15,"fixture, after averaging repetitions/targets",2000
+mean_last_audio_after_signal_end_ms,30,90,129.89964851750008,26.80835777803367,240.52714518546767,2.281188520745773,276.5867566643165,15,"fixture, after averaging repetitions/targets",2000
+wer,30,90,0.0,0.0,0.0,0.0,0.0,15,"fixture, after averaging repetitions/targets",2000
+cer,30,90,0.0,0.0,0.0,0.0,0.0,15,"fixture, after averaging repetitions/targets",2000

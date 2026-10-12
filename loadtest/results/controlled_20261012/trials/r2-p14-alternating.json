@@ -1,0 +1,70 @@
+{
+  "spec": {
+    "id": "r2-p14-alternating",
+    "repetition": 2,
+    "pair": 14,
+    "condition": "alternating",
+    "inputs": [
+      {
+        "id": "en_8",
+        "category": "en",
+        "index": 8,
+        "reference": "I need to buy a new phone next month.",
+        "sha256": "e9db310b7e93a0beb877377e40c9887a941c656f64342235616e90fb6e44236d",
+        "bytes": 84650,
+        "duration_s": 2.6453125,
+        "signal_start_s": 0.034375,
+        "signal_end_s": 2.4953125,
+        "peak": 18619,
+        "rms": 3477.2250312353917
+      },
+      {
+        "id": "en_13",
+        "category": "en",
+        "index": 13,
+        "reference": "The meeting has been moved to three o'clock.",
+        "sha256": "bcee2ee3a183b471d0d783fa03da3ba6875c8820a2117c171e0eaba051b4a159",
+        "bytes": 92842,
+        "duration_s": 2.9013125,
+        "signal_start_s": 0.024,
+        "signal_end_s": 2.604875,
+        "peak": 24380,
+        "rms": 3123.2724963279607
+      }
+    ],
+    "targets": [
+      "hi-IN",
+      "ta-IN",
+      "te-IN"
+    ]
+  },
+  "room": "bench-r2-p14-alternating",
+  "parties": {
+    "0": "A",
+    "1": "B",
+    "2": "C",
+    "3": "D",
+    "4": "E"
+  },
+  "send_start_ms": {
+    "3": 447.91089999489486,
+    "4": 4103.049299999839
+  },
+  "frames_sent": {
+    "3": {
+      "bytes": 249600,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    },
+    "4": {
+      "bytes": 131200,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    }
+  },
+  "duration_s": 13.332,
+  "error": null,
+  "events_file": "events\\r2-p14-alternating.jsonl",
+  "event_count": 480,
+  "events_sha256": "7daf0d547f203816139adf1ff975ae5e08f762f083a762c136e2f6369c878f79"
+}

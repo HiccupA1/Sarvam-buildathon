@@ -1,0 +1,3911 @@
+{
+  "protocol": "controlled-v1",
+  "seed": 20261012,
+  "dataset": [
+    {
+      "id": "en_0",
+      "category": "en",
+      "index": 0,
+      "reference": "Hello, how are you doing today?",
+      "sha256": "e94c48c6e654b4d6c79fc33b44a82af037bbac75d05518732324037549e04b1e",
+      "bytes": 62806,
+      "duration_s": 1.9626875,
+      "signal_start_s": 0.0141875,
+      "signal_end_s": 1.8596875,
+      "peak": 16865,
+      "rms": 3031.275285688363
+    },
+    {
+      "id": "en_1",
+      "category": "en",
+      "index": 1,
+      "reference": "I went to the market this morning to buy vegetables.",
+      "sha256": "1b5092af19b1ef91c90f547362be4f3f1ef481f34bd91584dea00f3985c31d6d",
+      "bytes": 111958,
+      "duration_s": 3.4986875,
+      "signal_start_s": 0.033875,
+      "signal_end_s": 3.3286875,
+      "peak": 21982,
+      "rms": 2802.488084349976
+    },
+    {
+      "id": "en_8",
+      "category": "en",
+      "index": 8,
+      "reference": "I need to buy a new phone next month.",
+      "sha256": "e9db310b7e93a0beb877377e40c9887a941c656f64342235616e90fb6e44236d",
+      "bytes": 84650,
+      "duration_s": 2.6453125,
+      "signal_start_s": 0.034375,
+      "signal_end_s": 2.4953125,
+      "peak": 18619,
+      "rms": 3477.2250312353917
+    },
+    {
+      "id": "en_13",
+      "category": "en",
+      "index": 13,
+      "reference": "The meeting has been moved to three o'clock.",
+      "sha256": "bcee2ee3a183b471d0d783fa03da3ba6875c8820a2117c171e0eaba051b4a159",
+      "bytes": 92842,
+      "duration_s": 2.9013125,
+      "signal_start_s": 0.024,
+      "signal_end_s": 2.604875,
+      "peak": 24380,
+      "rms": 3123.2724963279607
+    },
+    {
+      "id": "en_17",
+      "category": "en",
+      "index": 17,
+      "reference": "I am planning a trip to the mountains.",
+      "sha256": "79c6b88eede1adce09aa35833792f6bc285c4250536c9ae2a9f9589c6ae214fd",
+      "bytes": 84650,
+      "duration_s": 2.6453125,
+      "signal_start_s": 0.02775,
+      "signal_end_s": 2.5311875,
+      "peak": 17811,
+      "rms": 2872.240402044241
+    },
+    {
+      "id": "en_18",
+      "category": "en",
+      "index": 18,
+      "reference": "Her presentation was very clear and useful.",
+      "sha256": "7b9f253744503ff849b6ff57dc87a5de6cc04f3523ebb410f3167a1512307f02",
+      "bytes": 109226,
+      "duration_s": 3.4133125,
+      "signal_start_s": 0.020875,
+      "signal_end_s": 3.2525,
+      "peak": 28406,
+      "rms": 2742.7925875448336
+    },
+    {
+      "id": "hi_1",
+      "category": "hi",
+      "index": 1,
+      "reference": "मैं आज सुबह सब्जियां खरीदने बाजार गया था।",
+      "sha256": "2252d7cdd3c1e8324f259fb4685b2b339aaa7b9e1f17427fc9a9164000d86e13",
+      "bytes": 128342,
+      "duration_s": 4.0106875,
+      "signal_start_s": 0.0443125,
+      "signal_end_s": 3.8786875,
+      "peak": 27344,
+      "rms": 3441.043065674839
+    },
+    {
+      "id": "hi_2",
+      "category": "hi",
+      "index": 2,
+      "reference": "इस हफ्ते मौसम बहुत अच्छा है।",
+      "sha256": "eae77f1dbc101820bc0186e02eb5a937d4c5fc2e14ec7fe278cfb785156838ec",
+      "bytes": 90112,
+      "duration_s": 2.816,
+      "signal_start_s": 0.03725,
+      "signal_end_s": 2.6424375,
+      "peak": 21383,
+      "rms": 2579.083905079439
+    },
+    {
+      "id": "hi_7",
+      "category": "hi",
+      "index": 7,
+      "reference": "वह हमारे घर के पास एक अस्पताल में काम करती है।",
+      "sha256": "37c66cd24d0cd58d05574d133ee4d028c28bf9e546104d02c4aa8f3d1f8dbf2a",
+      "bytes": 122880,
+      "duration_s": 3.84,
+      "signal_start_s": 0.020875,
+      "signal_end_s": 3.7039375,
+      "peak": 21570,
+      "rms": 2844.4075705998157
+    },
+    {
+      "id": "hi_12",
+      "category": "hi",
+      "index": 12,
+      "reference": "उसने खाने से पहले अपना होमवर्क पूरा किया।",
+      "sha256": "84b8c314e4250f602ff4276a9adde5d5456242639a0c660f8f87ff11b6cd7dc1",
+      "bytes": 117418,
+      "duration_s": 3.6693125,
+      "signal_start_s": 0.0280625,
+      "signal_end_s": 3.5149375,
+      "peak": 18821,
+      "rms": 2921.0187487733187
+    },
+    {
+      "id": "hi_16",
+      "category": "hi",
+      "index": 16,
+      "reference": "लाइब्रेरी शाम को आठ बजे बंद होती है।",
+      "sha256": "f22f14373dc69c5d5289d65a722f9a97504435702429ebfaf6236e7221b00817",
+      "bytes": 101034,
+      "duration_s": 3.1573125,
+      "signal_start_s": 0.03,
+      "signal_end_s": 3.0060625,
+      "peak": 20771,
+      "rms": 3319.4991954756347
+    },
+    {
+      "id": "hi_18",
+      "category": "hi",
+      "index": 18,
+      "reference": "उसका प्रेजेंटेशन बहुत साफ और उपयोगी था।",
+      "sha256": "3c28564be8b04e5de4925476cfcd8a00356504831548f798a65c778d5bcc2f4a",
+      "bytes": 120150,
+      "duration_s": 3.7546875,
+      "signal_start_s": 0.0261875,
+      "signal_end_s": 3.6221875,
+      "peak": 27012,
+      "rms": 3025.7748635724784
+    },
+    {
+      "id": "ta_2",
+      "category": "ta",
+      "index": 2,
+      "reference": "இந்த வாரம் வானிலை மிகவும் நன்றாக இருக்கிறது.",
+      "sha256": "ec0c8d6731d8247746dc5f50dfc1bc0e238cdd12bc38e320ad4aebaf7069c514",
+      "bytes": 109226,
+      "duration_s": 3.4133125,
+      "signal_start_s": 0.036,
+      "signal_end_s": 3.2558125,
+      "peak": 19535,
+      "rms": 3215.5731808898727
+    },
+    {
+      "id": "ta_7",
+      "category": "ta",
+      "index": 7,
+      "reference": "அவள் எங்கள் வீட்டிற்கு அருகில் ஒரு மருத்துவமனையில் வேலை செய்கிறாள்.",
+      "sha256": "ea4a13ed9531592fb3c210a881aa38783e8f27e79483a44619795c23bc4488aa",
+      "bytes": 144726,
+      "duration_s": 4.5226875,
+      "signal_start_s": 0.035375,
+      "signal_end_s": 4.39775,
+      "peak": 21696,
+      "rms": 3279.2200138219787
+    },
+    {
+      "id": "ta_9",
+      "category": "ta",
+      "index": 9,
+      "reference": "குழந்தைகள் பூங்காவில் விளையாடுகிறார்கள்.",
+      "sha256": "a40e4f5a09a3744d29134dfaafc0a9bb3b2f23ca9fe8fea7127aa046515a070f",
+      "bytes": 98304,
+      "duration_s": 3.072,
+      "signal_start_s": 0.0200625,
+      "signal_end_s": 2.9390625,
+      "peak": 17461,
+      "rms": 3427.070744385637
+    },
+    {
+      "id": "ta_17",
+      "category": "ta",
+      "index": 17,
+      "reference": "நான் மலைகளுக்கு ஒரு பயணத்தை திட்டமிடுகிறேன்.",
+      "sha256": "6a3ece1bc8cf82504e5e16a5d3198a01677b278f959f0ece67c818af19caa83b",
+      "bytes": 114688,
+      "duration_s": 3.584,
+      "signal_start_s": 0.0400625,
+      "signal_end_s": 3.4251875,
+      "peak": 21013,
+      "rms": 2951.775979663245
+    },
+    {
+      "id": "ta_18",
+      "category": "ta",
+      "index": 18,
+      "reference": "அவளுடைய விளக்கக்காட்சி மிகவும் தெளிவாகவும் பயனுள்ளதாகவும் இருந்தது.",
+      "sha256": "134c5726fe4b1f69bb3f9d7f41d2c4a16ff713fb7560d97d4a5d551d02e99c7f",
+      "bytes": 185686,
+      "duration_s": 5.8026875,
+      "signal_start_s": 0.03675,
+      "signal_end_s": 5.678,
+      "peak": 30752,
+      "rms": 4209.627379824822
+    },
+    {
+      "id": "ta_19",
+      "category": "ta",
+      "index": 19,
+      "reference": "பேருந்து நிறுத்தம் தெருவுக்கு அப்பாலேயே இருக்கிறது.",
+      "sha256": "826342e65b06a062b7b7f4d331392a4ee5fd02a8a5a63a7810b24d91d82cd283",
+      "bytes": 131072,
+      "duration_s": 4.096,
+      "signal_start_s": 0.0546875,
+      "signal_end_s": 3.9341875,
+      "peak": 20816,
+      "rms": 3067.1483546229642
+    },
+    {
+      "id": "te_1",
+      "category": "te",
+      "index": 1,
+      "reference": "నేను ఈరోజు ఉదయం కూరగాయలు కొనడానికి మార్కెట్‌కు వెళ్ళాను.",
+      "sha256": "292cdf009249b1f42b9baca61f3f8a8e57c229f14d5e3decd5a89167aea5dc21",
+      "bytes": 150186,
+      "duration_s": 4.6933125,
+      "signal_start_s": 0.0455625,
+      "signal_end_s": 4.5435625,
+      "peak": 18452,
+      "rms": 3193.941485592485
+    },
+    {
+      "id": "te_3",
+      "category": "te",
+      "index": 3,
+      "reference": "మీరు రేపటిలోగా నివేదిక పంపగలరా?",
+      "sha256": "dc33b8701808208b21ab3418200066a53340c243fb84e7284b049e0468bc6285",
+      "bytes": 117418,
+      "duration_s": 3.6693125,
+      "signal_start_s": 0.029875,
+      "signal_end_s": 3.498875,
+      "peak": 20027,
+      "rms": 3115.62309705793
+    },
+    {
+      "id": "te_4",
+      "category": "te",
+      "index": 4,
+      "reference": "నా తమ్ముడు కళాశాలలో కంప్యూటర్ సైన్స్ చదువుతున్నాడు.",
+      "sha256": "2c4a6fbeb4c93a7152f2a440a25ec1a9120b62c42898d4d6936f98cfdcf62368",
+      "bytes": 147456,
+      "duration_s": 4.608,
+      "signal_start_s": 0.0483125,
+      "signal_end_s": 4.446375,
+      "peak": 24236,
+      "rms": 3238.1326108390363
+    },
+    {
+      "id": "te_10",
+      "category": "te",
+      "index": 10,
+      "reference": "మీరు ఇంటికి చేరుకున్నప్పుడు నాకు కాల్ చేయండి.",
+      "sha256": "bc95a093f9003d182f77337b1b73b572d6596e3caae115eac104daa7877c745a",
+      "bytes": 122880,
+      "duration_s": 3.84,
+      "signal_start_s": 0.1999375,
+      "signal_end_s": 3.50925,
+      "peak": 20648,
+      "rms": 3319.7825989336925
+    },
+    {
+      "id": "te_13",
+      "category": "te",
+      "index": 13,
+      "reference": "సమావేశం మూడు గంటలకు మార్చబడింది.",
+      "sha256": "1e933ae3eb358c376e9c8652d13062d412be1687ca6cf46d809c2748e621ba1d",
+      "bytes": 106496,
+      "duration_s": 3.328,
+      "signal_start_s": 0.0081875,
+      "signal_end_s": 3.1928125,
+      "peak": 19076,
+      "rms": 3423.06100928994
+    },
+    {
+      "id": "te_17",
+      "category": "te",
+      "index": 17,
+      "reference": "నేను కొండలకు ఒక ప్రయాణం ప్లాన్ చేస్తున్నాను.",
+      "sha256": "398869378b7b105a85f73fabb1b4942a57679b9e9d836334734b3935a89d8e3e",
+      "bytes": 117418,
+      "duration_s": 3.6693125,
+      "signal_start_s": 0.0374375,
+      "signal_end_s": 3.5678125,
+      "peak": 18176,
+      "rms": 2998.9585956745445
+    },
+    {
+      "id": "mix_1",
+      "category": "mix",
+      "index": 1,
+      "reference": "அந்த meeting நாளைக்கு morning ku postpone ஆகிடுச்சு.",
+      "sha256": "ad2622c5b64e002b622fae5cf9057e0c4e0e390093bef48f8c0602a0b1a81b00",
+      "bytes": 133802,
+      "duration_s": 4.1813125,
+      "signal_start_s": 0.2978125,
+      "signal_end_s": 3.9126875,
+      "peak": 22561,
+      "rms": 3800.8370294577735
+    },
+    {
+      "id": "mix_2",
+      "category": "mix",
+      "index": 2,
+      "reference": "நீ market போற வழியில ரொம்ப busy ஆ இருந்துச்சு.",
+      "sha256": "43e4a4498bd08dabaa3160bc2357fd0ce5b0197661c942d36116d53bd33e7faf",
+      "bytes": 155648,
+      "duration_s": 4.864,
+      "signal_start_s": 0.8431875,
+      "signal_end_s": 4.35225,
+      "peak": 19393,
+      "rms": 2941.281459467114
+    },
+    {
+      "id": "mix_4",
+      "category": "mix",
+      "index": 4,
+      "reference": "இந்த weekend நாங்க ஒரு trip plan பண்றோம்.",
+      "sha256": "ef5e80cd14080aa4b85eeec0893d3f52bd720d189f838b3b1ebed2c00d9cd25b",
+      "bytes": 106496,
+      "duration_s": 3.328,
+      "signal_start_s": 0.178875,
+      "signal_end_s": 3.00775,
+      "peak": 26624,
+      "rms": 2941.77725375978
+    },
+    {
+      "id": "mix_5",
+      "category": "mix",
+      "index": 5,
+      "reference": "அவன் project ரொம்ப நல்லா complete பண்ணிட்டான்.",
+      "sha256": "b9ae3e226a4900c917333d3a55d598474a87cf018d833ed43bd6d79e20993093",
+      "bytes": 117418,
+      "duration_s": 3.6693125,
+      "signal_start_s": 0.182875,
+      "signal_end_s": 3.0323125,
+      "peak": 19517,
+      "rms": 2776.3797019529975
+    },
+    {
+      "id": "mix_7",
+      "category": "mix",
+      "index": 7,
+      "reference": "அந்த restaurant food ரொம்ப tasty ஆ இருந்துச்சு.",
+      "sha256": "f7c64760fe29c497d7da8aefb3c791679fce490e6717198e1cfe2f22ea3742a1",
+      "bytes": 111958,
+      "duration_s": 3.4986875,
+      "signal_start_s": 0.23975,
+      "signal_end_s": 3.158,
+      "peak": 18801,
+      "rms": 2778.3238237503856
+    },
+    {
+      "id": "mix_9",
+      "category": "mix",
+      "index": 9,
+      "reference": "என் laptop screen crack ஆயிடுச்சு, repair பண்ணனும்.",
+      "sha256": "635c5fc9eb89f3fe9e2b41edd1c3fc811bf5477ffc4390c672f2fa8a1422591d",
+      "bytes": 150186,
+      "duration_s": 4.6933125,
+      "signal_start_s": 0.1904375,
+      "signal_end_s": 4.232375,
+      "peak": 30344,
+      "rms": 3845.3833711725374
+    }
+  ],
+  "repetitions": 3,
+  "trials": [
+    {
+      "id": "r1-p03-alternating",
+      "repetition": 1,
+      "pair": 3,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "mix_7",
+          "category": "mix",
+          "index": 7,
+          "reference": "அந்த restaurant food ரொம்ப tasty ஆ இருந்துச்சு.",
+          "sha256": "f7c64760fe29c497d7da8aefb3c791679fce490e6717198e1cfe2f22ea3742a1",
+          "bytes": 111958,
+          "duration_s": 3.4986875,
+          "signal_start_s": 0.23975,
+          "signal_end_s": 3.158,
+          "peak": 18801,
+          "rms": 2778.3238237503856
+        },
+        {
+          "id": "ta_17",
+          "category": "ta",
+          "index": 17,
+          "reference": "நான் மலைகளுக்கு ஒரு பயணத்தை திட்டமிடுகிறேன்.",
+          "sha256": "6a3ece1bc8cf82504e5e16a5d3198a01677b278f959f0ece67c818af19caa83b",
+          "bytes": 114688,
+          "duration_s": 3.584,
+          "signal_start_s": 0.0400625,
+          "signal_end_s": 3.4251875,
+          "peak": 21013,
+          "rms": 2951.775979663245
+        }
+      ],
+      "targets": [
+        "ta-IN",
+        "te-IN",
+        "en-IN"
+      ]
+    },
+    {
+      "id": "r1-p03-overlap",
+      "repetition": 1,
+      "pair": 3,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "mix_7",
+          "category": "mix",
+          "index": 7,
+          "reference": "அந்த restaurant food ரொம்ப tasty ஆ இருந்துச்சு.",
+          "sha256": "f7c64760fe29c497d7da8aefb3c791679fce490e6717198e1cfe2f22ea3742a1",
+          "bytes": 111958,
+          "duration_s": 3.4986875,
+          "signal_start_s": 0.23975,
+          "signal_end_s": 3.158,
+          "peak": 18801,
+          "rms": 2778.3238237503856
+        },
+        {
+          "id": "ta_17",
+          "category": "ta",
+          "index": 17,
+          "reference": "நான் மலைகளுக்கு ஒரு பயணத்தை திட்டமிடுகிறேன்.",
+          "sha256": "6a3ece1bc8cf82504e5e16a5d3198a01677b278f959f0ece67c818af19caa83b",
+          "bytes": 114688,
+          "duration_s": 3.584,
+          "signal_start_s": 0.0400625,
+          "signal_end_s": 3.4251875,
+          "peak": 21013,
+          "rms": 2951.775979663245
+        }
+      ],
+      "targets": [
+        "ta-IN",
+        "te-IN",
+        "en-IN"
+      ]
+    },
+    {
+      "id": "r1-p09-alternating",
+      "repetition": 1,
+      "pair": 9,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "te_4",
+          "category": "te",
+          "index": 4,
+          "reference": "నా తమ్ముడు కళాశాలలో కంప్యూటర్ సైన్స్ చదువుతున్నాడు.",
+          "sha256": "2c4a6fbeb4c93a7152f2a440a25ec1a9120b62c42898d4d6936f98cfdcf62368",
+          "bytes": 147456,
+          "duration_s": 4.608,
+          "signal_start_s": 0.0483125,
+          "signal_end_s": 4.446375,
+          "peak": 24236,
+          "rms": 3238.1326108390363
+        },
+        {
+          "id": "en_0",
+          "category": "en",
+          "index": 0,
+          "reference": "Hello, how are you doing today?",
+          "sha256": "e94c48c6e654b4d6c79fc33b44a82af037bbac75d05518732324037549e04b1e",
+          "bytes": 62806,
+          "duration_s": 1.9626875,
+          "signal_start_s": 0.0141875,
+          "signal_end_s": 1.8596875,
+          "peak": 16865,
+          "rms": 3031.275285688363
+        }
+      ],
+      "targets": [
+        "en-IN",
+        "hi-IN",
+        "ta-IN"
+      ]
+    },
+    {
+      "id": "r1-p09-overlap",
+      "repetition": 1,
+      "pair": 9,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "te_4",
+          "category": "te",
+          "index": 4,
+          "reference": "నా తమ్ముడు కళాశాలలో కంప్యూటర్ సైన్స్ చదువుతున్నాడు.",
+          "sha256": "2c4a6fbeb4c93a7152f2a440a25ec1a9120b62c42898d4d6936f98cfdcf62368",
+          "bytes": 147456,
+          "duration_s": 4.608,
+          "signal_start_s": 0.0483125,
+          "signal_end_s": 4.446375,
+          "peak": 24236,
+          "rms": 3238.1326108390363
+        },
+        {
+          "id": "en_0",
+          "category": "en",
+          "index": 0,
+          "reference": "Hello, how are you doing today?",
+          "sha256": "e94c48c6e654b4d6c79fc33b44a82af037bbac75d05518732324037549e04b1e",
+          "bytes": 62806,
+          "duration_s": 1.9626875,
+          "signal_start_s": 0.0141875,
+          "signal_end_s": 1.8596875,
+          "peak": 16865,
+          "rms": 3031.275285688363
+        }
+      ],
+      "targets": [
+        "en-IN",
+        "hi-IN",
+        "ta-IN"
+      ]
+    },
+    {
+      "id": "r1-p08-overlap",
+      "repetition": 1,
+      "pair": 8,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "hi_1",
+          "category": "hi",
+          "index": 1,
+          "reference": "मैं आज सुबह सब्जियां खरीदने बाजार गया था।",
+          "sha256": "2252d7cdd3c1e8324f259fb4685b2b339aaa7b9e1f17427fc9a9164000d86e13",
+          "bytes": 128342,
+          "duration_s": 4.0106875,
+          "signal_start_s": 0.0443125,
+          "signal_end_s": 3.8786875,
+          "peak": 27344,
+          "rms": 3441.043065674839
+        },
+        {
+          "id": "en_17",
+          "category": "en",
+          "index": 17,
+          "reference": "I am planning a trip to the mountains.",
+          "sha256": "79c6b88eede1adce09aa35833792f6bc285c4250536c9ae2a9f9589c6ae214fd",
+          "bytes": 84650,
+          "duration_s": 2.6453125,
+          "signal_start_s": 0.02775,
+          "signal_end_s": 2.5311875,
+          "peak": 17811,
+          "rms": 2872.240402044241
+        }
+      ],
+      "targets": [
+        "te-IN",
+        "en-IN",
+        "hi-IN"
+      ]
+    },
+    {
+      "id": "r1-p08-alternating",
+      "repetition": 1,
+      "pair": 8,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "hi_1",
+          "category": "hi",
+          "index": 1,
+          "reference": "मैं आज सुबह सब्जियां खरीदने बाजार गया था।",
+          "sha256": "2252d7cdd3c1e8324f259fb4685b2b339aaa7b9e1f17427fc9a9164000d86e13",
+          "bytes": 128342,
+          "duration_s": 4.0106875,
+          "signal_start_s": 0.0443125,
+          "signal_end_s": 3.8786875,
+          "peak": 27344,
+          "rms": 3441.043065674839
+        },
+        {
+          "id": "en_17",
+          "category": "en",
+          "index": 17,
+          "reference": "I am planning a trip to the mountains.",
+          "sha256": "79c6b88eede1adce09aa35833792f6bc285c4250536c9ae2a9f9589c6ae214fd",
+          "bytes": 84650,
+          "duration_s": 2.6453125,
+          "signal_start_s": 0.02775,
+          "signal_end_s": 2.5311875,
+          "peak": 17811,
+          "rms": 2872.240402044241
+        }
+      ],
+      "targets": [
+        "te-IN",
+        "en-IN",
+        "hi-IN"
+      ]
+    },
+    {
+      "id": "r1-p07-alternating",
+      "repetition": 1,
+      "pair": 7,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "ta_18",
+          "category": "ta",
+          "index": 18,
+          "reference": "அவளுடைய விளக்கக்காட்சி மிகவும் தெளிவாகவும் பயனுள்ளதாகவும் இருந்தது.",
+          "sha256": "134c5726fe4b1f69bb3f9d7f41d2c4a16ff713fb7560d97d4a5d551d02e99c7f",
+          "bytes": 185686,
+          "duration_s": 5.8026875,
+          "signal_start_s": 0.03675,
+          "signal_end_s": 5.678,
+          "peak": 30752,
+          "rms": 4209.627379824822
+        },
+        {
+          "id": "en_18",
+          "category": "en",
+          "index": 18,
+          "reference": "Her presentation was very clear and useful.",
+          "sha256": "7b9f253744503ff849b6ff57dc87a5de6cc04f3523ebb410f3167a1512307f02",
+          "bytes": 109226,
+          "duration_s": 3.4133125,
+          "signal_start_s": 0.020875,
+          "signal_end_s": 3.2525,
+          "peak": 28406,
+          "rms": 2742.7925875448336
+        }
+      ],
+      "targets": [
+        "ta-IN",
+        "te-IN",
+        "en-IN"
+      ]
+    },
+    {
+      "id": "r1-p07-overlap",
+      "repetition": 1,
+      "pair": 7,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "ta_18",
+          "category": "ta",
+          "index": 18,
+          "reference": "அவளுடைய விளக்கக்காட்சி மிகவும் தெளிவாகவும் பயனுள்ளதாகவும் இருந்தது.",
+          "sha256": "134c5726fe4b1f69bb3f9d7f41d2c4a16ff713fb7560d97d4a5d551d02e99c7f",
+          "bytes": 185686,
+          "duration_s": 5.8026875,
+          "signal_start_s": 0.03675,
+          "signal_end_s": 5.678,
+          "peak": 30752,
+          "rms": 4209.627379824822
+        },
+        {
+          "id": "en_18",
+          "category": "en",
+          "index": 18,
+          "reference": "Her presentation was very clear and useful.",
+          "sha256": "7b9f253744503ff849b6ff57dc87a5de6cc04f3523ebb410f3167a1512307f02",
+          "bytes": 109226,
+          "duration_s": 3.4133125,
+          "signal_start_s": 0.020875,
+          "signal_end_s": 3.2525,
+          "peak": 28406,
+          "rms": 2742.7925875448336
+        }
+      ],
+      "targets": [
+        "ta-IN",
+        "te-IN",
+        "en-IN"
+      ]
+    },
+    {
+      "id": "r1-p10-overlap",
+      "repetition": 1,
+      "pair": 10,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "en_1",
+          "category": "en",
+          "index": 1,
+          "reference": "I went to the market this morning to buy vegetables.",
+          "sha256": "1b5092af19b1ef91c90f547362be4f3f1ef481f34bd91584dea00f3985c31d6d",
+          "bytes": 111958,
+          "duration_s": 3.4986875,
+          "signal_start_s": 0.033875,
+          "signal_end_s": 3.3286875,
+          "peak": 21982,
+          "rms": 2802.488084349976
+        },
+        {
+          "id": "te_3",
+          "category": "te",
+          "index": 3,
+          "reference": "మీరు రేపటిలోగా నివేదిక పంపగలరా?",
+          "sha256": "dc33b8701808208b21ab3418200066a53340c243fb84e7284b049e0468bc6285",
+          "bytes": 117418,
+          "duration_s": 3.6693125,
+          "signal_start_s": 0.029875,
+          "signal_end_s": 3.498875,
+          "peak": 20027,
+          "rms": 3115.62309705793
+        }
+      ],
+      "targets": [
+        "hi-IN",
+        "ta-IN",
+        "te-IN"
+      ]
+    },
+    {
+      "id": "r1-p10-alternating",
+      "repetition": 1,
+      "pair": 10,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "en_1",
+          "category": "en",
+          "index": 1,
+          "reference": "I went to the market this morning to buy vegetables.",
+          "sha256": "1b5092af19b1ef91c90f547362be4f3f1ef481f34bd91584dea00f3985c31d6d",
+          "bytes": 111958,
+          "duration_s": 3.4986875,
+          "signal_start_s": 0.033875,
+          "signal_end_s": 3.3286875,
+          "peak": 21982,
+          "rms": 2802.488084349976
+        },
+        {
+          "id": "te_3",
+          "category": "te",
+          "index": 3,
+          "reference": "మీరు రేపటిలోగా నివేదిక పంపగలరా?",
+          "sha256": "dc33b8701808208b21ab3418200066a53340c243fb84e7284b049e0468bc6285",
+          "bytes": 117418,
+          "duration_s": 3.6693125,
+          "signal_start_s": 0.029875,
+          "signal_end_s": 3.498875,
+          "peak": 20027,
+          "rms": 3115.62309705793
+        }
+      ],
+      "targets": [
+        "hi-IN",
+        "ta-IN",
+        "te-IN"
+      ]
+    },
+    {
+      "id": "r1-p05-alternating",
+      "repetition": 1,
+      "pair": 5,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "hi_2",
+          "category": "hi",
+          "index": 2,
+          "reference": "इस हफ्ते मौसम बहुत अच्छा है।",
+          "sha256": "eae77f1dbc101820bc0186e02eb5a937d4c5fc2e14ec7fe278cfb785156838ec",
+          "bytes": 90112,
+          "duration_s": 2.816,
+          "signal_start_s": 0.03725,
+          "signal_end_s": 2.6424375,
+          "peak": 21383,
+          "rms": 2579.083905079439
+        },
+        {
+          "id": "mix_1",
+          "category": "mix",
+          "index": 1,
+          "reference": "அந்த meeting நாளைக்கு morning ku postpone ஆகிடுச்சு.",
+          "sha256": "ad2622c5b64e002b622fae5cf9057e0c4e0e390093bef48f8c0602a0b1a81b00",
+          "bytes": 133802,
+          "duration_s": 4.1813125,
+          "signal_start_s": 0.2978125,
+          "signal_end_s": 3.9126875,
+          "peak": 22561,
+          "rms": 3800.8370294577735
+        }
+      ],
+      "targets": [
+        "en-IN",
+        "hi-IN",
+        "ta-IN"
+      ]
+    },
+    {
+      "id": "r1-p05-overlap",
+      "repetition": 1,
+      "pair": 5,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "hi_2",
+          "category": "hi",
+          "index": 2,
+          "reference": "इस हफ्ते मौसम बहुत अच्छा है।",
+          "sha256": "eae77f1dbc101820bc0186e02eb5a937d4c5fc2e14ec7fe278cfb785156838ec",
+          "bytes": 90112,
+          "duration_s": 2.816,
+          "signal_start_s": 0.03725,
+          "signal_end_s": 2.6424375,
+          "peak": 21383,
+          "rms": 2579.083905079439
+        },
+        {
+          "id": "mix_1",
+          "category": "mix",
+          "index": 1,
+          "reference": "அந்த meeting நாளைக்கு morning ku postpone ஆகிடுச்சு.",
+          "sha256": "ad2622c5b64e002b622fae5cf9057e0c4e0e390093bef48f8c0602a0b1a81b00",
+          "bytes": 133802,
+          "duration_s": 4.1813125,
+          "signal_start_s": 0.2978125,
+          "signal_end_s": 3.9126875,
+          "peak": 22561,
+          "rms": 3800.8370294577735
+        }
+      ],
+      "targets": [
+        "en-IN",
+        "hi-IN",
+        "ta-IN"
+      ]
+    },
+    {
+      "id": "r1-p11-alternating",
+      "repetition": 1,
+      "pair": 11,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "hi_12",
+          "category": "hi",
+          "index": 12,
+          "reference": "उसने खाने से पहले अपना होमवर्क पूरा किया।",
+          "sha256": "84b8c314e4250f602ff4276a9adde5d5456242639a0c660f8f87ff11b6cd7dc1",
+          "bytes": 117418,
+          "duration_s": 3.6693125,
+          "signal_start_s": 0.0280625,
+          "signal_end_s": 3.5149375,
+          "peak": 18821,
+          "rms": 2921.0187487733187
+        },
+        {
+          "id": "mix_4",
+          "category": "mix",
+          "index": 4,
+          "reference": "இந்த weekend நாங்க ஒரு trip plan பண்றோம்.",
+          "sha256": "ef5e80cd14080aa4b85eeec0893d3f52bd720d189f838b3b1ebed2c00d9cd25b",
+          "bytes": 106496,
+          "duration_s": 3.328,
+          "signal_start_s": 0.178875,
+          "signal_end_s": 3.00775,
+          "peak": 26624,
+          "rms": 2941.77725375978
+        }
+      ],
+      "targets": [
+        "ta-IN",
+        "te-IN",
+        "en-IN"
+      ]
+    },
+    {
+      "id": "r1-p11-overlap",
+      "repetition": 1,
+      "pair": 11,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "hi_12",
+          "category": "hi",
+          "index": 12,
+          "reference": "उसने खाने से पहले अपना होमवर्क पूरा किया।",
+          "sha256": "84b8c314e4250f602ff4276a9adde5d5456242639a0c660f8f87ff11b6cd7dc1",
+          "bytes": 117418,
+          "duration_s": 3.6693125,
+          "signal_start_s": 0.0280625,
+          "signal_end_s": 3.5149375,
+          "peak": 18821,
+          "rms": 2921.0187487733187
+        },
+        {
+          "id": "mix_4",
+          "category": "mix",
+          "index": 4,
+          "reference": "இந்த weekend நாங்க ஒரு trip plan பண்றோம்.",
+          "sha256": "ef5e80cd14080aa4b85eeec0893d3f52bd720d189f838b3b1ebed2c00d9cd25b",
+          "bytes": 106496,
+          "duration_s": 3.328,
+          "signal_start_s": 0.178875,
+          "signal_end_s": 3.00775,
+          "peak": 26624,
+          "rms": 2941.77725375978
+        }
+      ],
+      "targets": [
+        "ta-IN",
+        "te-IN",
+        "en-IN"
+      ]
+    },
+    {
+      "id": "r1-p15-alternating",
+      "repetition": 1,
+      "pair": 15,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "te_17",
+          "category": "te",
+          "index": 17,
+          "reference": "నేను కొండలకు ఒక ప్రయాణం ప్లాన్ చేస్తున్నాను.",
+          "sha256": "398869378b7b105a85f73fabb1b4942a57679b9e9d836334734b3935a89d8e3e",
+          "bytes": 117418,
+          "duration_s": 3.6693125,
+          "signal_start_s": 0.0374375,
+          "signal_end_s": 3.5678125,
+          "peak": 18176,
+          "rms": 2998.9585956745445
+        },
+        {
+          "id": "te_13",
+          "category": "te",
+          "index": 13,
+          "reference": "సమావేశం మూడు గంటలకు మార్చబడింది.",
+          "sha256": "1e933ae3eb358c376e9c8652d13062d412be1687ca6cf46d809c2748e621ba1d",
+          "bytes": 106496,
+          "duration_s": 3.328,
+          "signal_start_s": 0.0081875,
+          "signal_end_s": 3.1928125,
+          "peak": 19076,
+          "rms": 3423.06100928994
+        }
+      ],
+      "targets": [
+        "ta-IN",
+        "te-IN",
+        "en-IN"
+      ]
+    },
+    {
+      "id": "r1-p15-overlap",
+      "repetition": 1,
+      "pair": 15,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "te_17",
+          "category": "te",
+          "index": 17,
+          "reference": "నేను కొండలకు ఒక ప్రయాణం ప్లాన్ చేస్తున్నాను.",
+          "sha256": "398869378b7b105a85f73fabb1b4942a57679b9e9d836334734b3935a89d8e3e",
+          "bytes": 117418,
+          "duration_s": 3.6693125,
+          "signal_start_s": 0.0374375,
+          "signal_end_s": 3.5678125,
+          "peak": 18176,
+          "rms": 2998.9585956745445
+        },
+        {
+          "id": "te_13",
+          "category": "te",
+          "index": 13,
+          "reference": "సమావేశం మూడు గంటలకు మార్చబడింది.",
+          "sha256": "1e933ae3eb358c376e9c8652d13062d412be1687ca6cf46d809c2748e621ba1d",
+          "bytes": 106496,
+          "duration_s": 3.328,
+          "signal_start_s": 0.0081875,
+          "signal_end_s": 3.1928125,
+          "peak": 19076,
+          "rms": 3423.06100928994
+        }
+      ],
+      "targets": [
+        "ta-IN",
+        "te-IN",
+        "en-IN"
+      ]
+    },
+    {
+      "id": "r1-p14-overlap",
+      "repetition": 1,
+      "pair": 14,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "en_8",
+          "category": "en",
+          "index": 8,
+          "reference": "I need to buy a new phone next month.",
+          "sha256": "e9db310b7e93a0beb877377e40c9887a941c656f64342235616e90fb6e44236d",
+          "bytes": 84650,
+          "duration_s": 2.6453125,
+          "signal_start_s": 0.034375,
+          "signal_end_s": 2.4953125,
+          "peak": 18619,
+          "rms": 3477.2250312353917
+        },
+        {
+          "id": "en_13",
+          "category": "en",
+          "index": 13,
+          "reference": "The meeting has been moved to three o'clock.",
+          "sha256": "bcee2ee3a183b471d0d783fa03da3ba6875c8820a2117c171e0eaba051b4a159",
+          "bytes": 92842,
+          "duration_s": 2.9013125,
+          "signal_start_s": 0.024,
+          "signal_end_s": 2.604875,
+          "peak": 24380,
+          "rms": 3123.2724963279607
+        }
+      ],
+      "targets": [
+        "hi-IN",
+        "ta-IN",
+        "te-IN"
+      ]
+    },
+    {
+      "id": "r1-p14-alternating",
+      "repetition": 1,
+      "pair": 14,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "en_8",
+          "category": "en",
+          "index": 8,
+          "reference": "I need to buy a new phone next month.",
+          "sha256": "e9db310b7e93a0beb877377e40c9887a941c656f64342235616e90fb6e44236d",
+          "bytes": 84650,
+          "duration_s": 2.6453125,
+          "signal_start_s": 0.034375,
+          "signal_end_s": 2.4953125,
+          "peak": 18619,
+          "rms": 3477.2250312353917
+        },
+        {
+          "id": "en_13",
+          "category": "en",
+          "index": 13,
+          "reference": "The meeting has been moved to three o'clock.",
+          "sha256": "bcee2ee3a183b471d0d783fa03da3ba6875c8820a2117c171e0eaba051b4a159",
+          "bytes": 92842,
+          "duration_s": 2.9013125,
+          "signal_start_s": 0.024,
+          "signal_end_s": 2.604875,
+          "peak": 24380,
+          "rms": 3123.2724963279607
+        }
+      ],
+      "targets": [
+        "hi-IN",
+        "ta-IN",
+        "te-IN"
+      ]
+    },
+    {
+      "id": "r1-p01-alternating",
+      "repetition": 1,
+      "pair": 1,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "ta_7",
+          "category": "ta",
+          "index": 7,
+          "reference": "அவள் எங்கள் வீட்டிற்கு அருகில் ஒரு மருத்துவமனையில் வேலை செய்கிறாள்.",
+          "sha256": "ea4a13ed9531592fb3c210a881aa38783e8f27e79483a44619795c23bc4488aa",
+          "bytes": 144726,
+          "duration_s": 4.5226875,
+          "signal_start_s": 0.035375,
+          "signal_end_s": 4.39775,
+          "peak": 21696,
+          "rms": 3279.2200138219787
+        },
+        {
+          "id": "hi_18",
+          "category": "hi",
+          "index": 18,
+          "reference": "उसका प्रेजेंटेशन बहुत साफ और उपयोगी था।",
+          "sha256": "3c28564be8b04e5de4925476cfcd8a00356504831548f798a65c778d5bcc2f4a",
+          "bytes": 120150,
+          "duration_s": 3.7546875,
+          "signal_start_s": 0.0261875,
+          "signal_end_s": 3.6221875,
+          "peak": 27012,
+          "rms": 3025.7748635724784
+        }
+      ],
+      "targets": [
+        "en-IN",
+        "hi-IN",
+        "ta-IN"
+      ]
+    },
+    {
+      "id": "r1-p01-overlap",
+      "repetition": 1,
+      "pair": 1,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "ta_7",
+          "category": "ta",
+          "index": 7,
+          "reference": "அவள் எங்கள் வீட்டிற்கு அருகில் ஒரு மருத்துவமனையில் வேலை செய்கிறாள்.",
+          "sha256": "ea4a13ed9531592fb3c210a881aa38783e8f27e79483a44619795c23bc4488aa",
+          "bytes": 144726,
+          "duration_s": 4.5226875,
+          "signal_start_s": 0.035375,
+          "signal_end_s": 4.39775,
+          "peak": 21696,
+          "rms": 3279.2200138219787
+        },
+        {
+          "id": "hi_18",
+          "category": "hi",
+          "index": 18,
+          "reference": "उसका प्रेजेंटेशन बहुत साफ और उपयोगी था।",
+          "sha256": "3c28564be8b04e5de4925476cfcd8a00356504831548f798a65c778d5bcc2f4a",
+          "bytes": 120150,
+          "duration_s": 3.7546875,
+          "signal_start_s": 0.0261875,
+          "signal_end_s": 3.6221875,
+          "peak": 27012,
+          "rms": 3025.7748635724784
+        }
+      ],
+      "targets": [
+        "en-IN",
+        "hi-IN",
+        "ta-IN"
+      ]
+    },
+    {
+      "id": "r1-p13-alternating",
+      "repetition": 1,
+      "pair": 13,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "ta_9",
+          "category": "ta",
+          "index": 9,
+          "reference": "குழந்தைகள் பூங்காவில் விளையாடுகிறார்கள்.",
+          "sha256": "a40e4f5a09a3744d29134dfaafc0a9bb3b2f23ca9fe8fea7127aa046515a070f",
+          "bytes": 98304,
+          "duration_s": 3.072,
+          "signal_start_s": 0.0200625,
+          "signal_end_s": 2.9390625,
+          "peak": 17461,
+          "rms": 3427.070744385637
+        },
+        {
+          "id": "ta_2",
+          "category": "ta",
+          "index": 2,
+          "reference": "இந்த வாரம் வானிலை மிகவும் நன்றாக இருக்கிறது.",
+          "sha256": "ec0c8d6731d8247746dc5f50dfc1bc0e238cdd12bc38e320ad4aebaf7069c514",
+          "bytes": 109226,
+          "duration_s": 3.4133125,
+          "signal_start_s": 0.036,
+          "signal_end_s": 3.2558125,
+          "peak": 19535,
+          "rms": 3215.5731808898727
+        }
+      ],
+      "targets": [
+        "en-IN",
+        "hi-IN",
+        "ta-IN"
+      ]
+    },
+    {
+      "id": "r1-p13-overlap",
+      "repetition": 1,
+      "pair": 13,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "ta_9",
+          "category": "ta",
+          "index": 9,
+          "reference": "குழந்தைகள் பூங்காவில் விளையாடுகிறார்கள்.",
+          "sha256": "a40e4f5a09a3744d29134dfaafc0a9bb3b2f23ca9fe8fea7127aa046515a070f",
+          "bytes": 98304,
+          "duration_s": 3.072,
+          "signal_start_s": 0.0200625,
+          "signal_end_s": 2.9390625,
+          "peak": 17461,
+          "rms": 3427.070744385637
+        },
+        {
+          "id": "ta_2",
+          "category": "ta",
+          "index": 2,
+          "reference": "இந்த வாரம் வானிலை மிகவும் நன்றாக இருக்கிறது.",
+          "sha256": "ec0c8d6731d8247746dc5f50dfc1bc0e238cdd12bc38e320ad4aebaf7069c514",
+          "bytes": 109226,
+          "duration_s": 3.4133125,
+          "signal_start_s": 0.036,
+          "signal_end_s": 3.2558125,
+          "peak": 19535,
+          "rms": 3215.5731808898727
+        }
+      ],
+      "targets": [
+        "en-IN",
+        "hi-IN",
+        "ta-IN"
+      ]
+    },
+    {
+      "id": "r1-p06-overlap",
+      "repetition": 1,
+      "pair": 6,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "te_10",
+          "category": "te",
+          "index": 10,
+          "reference": "మీరు ఇంటికి చేరుకున్నప్పుడు నాకు కాల్ చేయండి.",
+          "sha256": "bc95a093f9003d182f77337b1b73b572d6596e3caae115eac104daa7877c745a",
+          "bytes": 122880,
+          "duration_s": 3.84,
+          "signal_start_s": 0.1999375,
+          "signal_end_s": 3.50925,
+          "peak": 20648,
+          "rms": 3319.7825989336925
+        },
+        {
+          "id": "hi_7",
+          "category": "hi",
+          "index": 7,
+          "reference": "वह हमारे घर के पास एक अस्पताल में काम करती है।",
+          "sha256": "37c66cd24d0cd58d05574d133ee4d028c28bf9e546104d02c4aa8f3d1f8dbf2a",
+          "bytes": 122880,
+          "duration_s": 3.84,
+          "signal_start_s": 0.020875,
+          "signal_end_s": 3.7039375,
+          "peak": 21570,
+          "rms": 2844.4075705998157
+        }
+      ],
+      "targets": [
+        "hi-IN",
+        "ta-IN",
+        "te-IN"
+      ]
+    },
+    {
+      "id": "r1-p06-alternating",
+      "repetition": 1,
+      "pair": 6,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "te_10",
+          "category": "te",
+          "index": 10,
+          "reference": "మీరు ఇంటికి చేరుకున్నప్పుడు నాకు కాల్ చేయండి.",
+          "sha256": "bc95a093f9003d182f77337b1b73b572d6596e3caae115eac104daa7877c745a",
+          "bytes": 122880,
+          "duration_s": 3.84,
+          "signal_start_s": 0.1999375,
+          "signal_end_s": 3.50925,
+          "peak": 20648,
+          "rms": 3319.7825989336925
+        },
+        {
+          "id": "hi_7",
+          "category": "hi",
+          "index": 7,
+          "reference": "वह हमारे घर के पास एक अस्पताल में काम करती है।",
+          "sha256": "37c66cd24d0cd58d05574d133ee4d028c28bf9e546104d02c4aa8f3d1f8dbf2a",
+          "bytes": 122880,
+          "duration_s": 3.84,
+          "signal_start_s": 0.020875,
+          "signal_end_s": 3.7039375,
+          "peak": 21570,
+          "rms": 2844.4075705998157
+        }
+      ],
+      "targets": [
+        "hi-IN",
+        "ta-IN",
+        "te-IN"
+      ]
+    },
+    {
+      "id": "r1-p04-overlap",
+      "repetition": 1,
+      "pair": 4,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "mix_9",
+          "category": "mix",
+          "index": 9,
+          "reference": "என் laptop screen crack ஆயிடுச்சு, repair பண்ணனும்.",
+          "sha256": "635c5fc9eb89f3fe9e2b41edd1c3fc811bf5477ffc4390c672f2fa8a1422591d",
+          "bytes": 150186,
+          "duration_s": 4.6933125,
+          "signal_start_s": 0.1904375,
+          "signal_end_s": 4.232375,
+          "peak": 30344,
+          "rms": 3845.3833711725374
+        },
+        {
+          "id": "te_1",
+          "category": "te",
+          "index": 1,
+          "reference": "నేను ఈరోజు ఉదయం కూరగాయలు కొనడానికి మార్కెట్‌కు వెళ్ళాను.",
+          "sha256": "292cdf009249b1f42b9baca61f3f8a8e57c229f14d5e3decd5a89167aea5dc21",
+          "bytes": 150186,
+          "duration_s": 4.6933125,
+          "signal_start_s": 0.0455625,
+          "signal_end_s": 4.5435625,
+          "peak": 18452,
+          "rms": 3193.941485592485
+        }
+      ],
+      "targets": [
+        "te-IN",
+        "en-IN",
+        "hi-IN"
+      ]
+    },
+    {
+      "id": "r1-p04-alternating",
+      "repetition": 1,
+      "pair": 4,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "mix_9",
+          "category": "mix",
+          "index": 9,
+          "reference": "என் laptop screen crack ஆயிடுச்சு, repair பண்ணனும்.",
+          "sha256": "635c5fc9eb89f3fe9e2b41edd1c3fc811bf5477ffc4390c672f2fa8a1422591d",
+          "bytes": 150186,
+          "duration_s": 4.6933125,
+          "signal_start_s": 0.1904375,
+          "signal_end_s": 4.232375,
+          "peak": 30344,
+          "rms": 3845.3833711725374
+        },
+        {
+          "id": "te_1",
+          "category": "te",
+          "index": 1,
+          "reference": "నేను ఈరోజు ఉదయం కూరగాయలు కొనడానికి మార్కెట్‌కు వెళ్ళాను.",
+          "sha256": "292cdf009249b1f42b9baca61f3f8a8e57c229f14d5e3decd5a89167aea5dc21",
+          "bytes": 150186,
+          "duration_s": 4.6933125,
+          "signal_start_s": 0.0455625,
+          "signal_end_s": 4.5435625,
+          "peak": 18452,
+          "rms": 3193.941485592485
+        }
+      ],
+      "targets": [
+        "te-IN",
+        "en-IN",
+        "hi-IN"
+      ]
+    },
+    {
+      "id": "r1-p02-overlap",
+      "repetition": 1,
+      "pair": 2,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "mix_2",
+          "category": "mix",
+          "index": 2,
+          "reference": "நீ market போற வழியில ரொம்ப busy ஆ இருந்துச்சு.",
+          "sha256": "43e4a4498bd08dabaa3160bc2357fd0ce5b0197661c942d36116d53bd33e7faf",
+          "bytes": 155648,
+          "duration_s": 4.864,
+          "signal_start_s": 0.8431875,
+          "signal_end_s": 4.35225,
+          "peak": 19393,
+          "rms": 2941.281459467114
+        },
+        {
+          "id": "mix_5",
+          "category": "mix",
+          "index": 5,
+          "reference": "அவன் project ரொம்ப நல்லா complete பண்ணிட்டான்.",
+          "sha256": "b9ae3e226a4900c917333d3a55d598474a87cf018d833ed43bd6d79e20993093",
+          "bytes": 117418,
+          "duration_s": 3.6693125,
+          "signal_start_s": 0.182875,
+          "signal_end_s": 3.0323125,
+          "peak": 19517,
+          "rms": 2776.3797019529975
+        }
+      ],
+      "targets": [
+        "hi-IN",
+        "ta-IN",
+        "te-IN"
+      ]
+    },
+    {
+      "id": "r1-p02-alternating",
+      "repetition": 1,
+      "pair": 2,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "mix_2",
+          "category": "mix",
+          "index": 2,
+          "reference": "நீ market போற வழியில ரொம்ப busy ஆ இருந்துச்சு.",
+          "sha256": "43e4a4498bd08dabaa3160bc2357fd0ce5b0197661c942d36116d53bd33e7faf",
+          "bytes": 155648,
+          "duration_s": 4.864,
+          "signal_start_s": 0.8431875,
+          "signal_end_s": 4.35225,
+          "peak": 19393,
+          "rms": 2941.281459467114
+        },
+        {
+          "id": "mix_5",
+          "category": "mix",
+          "index": 5,
+          "reference": "அவன் project ரொம்ப நல்லா complete பண்ணிட்டான்.",
+          "sha256": "b9ae3e226a4900c917333d3a55d598474a87cf018d833ed43bd6d79e20993093",
+          "bytes": 117418,
+          "duration_s": 3.6693125,
+          "signal_start_s": 0.182875,
+          "signal_end_s": 3.0323125,
+          "peak": 19517,
+          "rms": 2776.3797019529975
+        }
+      ],
+      "targets": [
+        "hi-IN",
+        "ta-IN",
+        "te-IN"
+      ]
+    },
+    {
+      "id": "r1-p12-overlap",
+      "repetition": 1,
+      "pair": 12,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "hi_16",
+          "category": "hi",
+          "index": 16,
+          "reference": "लाइब्रेरी शाम को आठ बजे बंद होती है।",
+          "sha256": "f22f14373dc69c5d5289d65a722f9a97504435702429ebfaf6236e7221b00817",
+          "bytes": 101034,
+          "duration_s": 3.1573125,
+          "signal_start_s": 0.03,
+          "signal_end_s": 3.0060625,
+          "peak": 20771,
+          "rms": 3319.4991954756347
+        },
+        {
+          "id": "ta_19",
+          "category": "ta",
+          "index": 19,
+          "reference": "பேருந்து நிறுத்தம் தெருவுக்கு அப்பாலேயே இருக்கிறது.",
+          "sha256": "826342e65b06a062b7b7f4d331392a4ee5fd02a8a5a63a7810b24d91d82cd283",
+          "bytes": 131072,
+          "duration_s": 4.096,
+          "signal_start_s": 0.0546875,
+          "signal_end_s": 3.9341875,
+          "peak": 20816,
+          "rms": 3067.1483546229642
+        }
+      ],
+      "targets": [
+        "te-IN",
+        "en-IN",
+        "hi-IN"
+      ]
+    },
+    {
+      "id": "r1-p12-alternating",
+      "repetition": 1,
+      "pair": 12,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "hi_16",
+          "category": "hi",
+          "index": 16,
+          "reference": "लाइब्रेरी शाम को आठ बजे बंद होती है।",
+          "sha256": "f22f14373dc69c5d5289d65a722f9a97504435702429ebfaf6236e7221b00817",
+          "bytes": 101034,
+          "duration_s": 3.1573125,
+          "signal_start_s": 0.03,
+          "signal_end_s": 3.0060625,
+          "peak": 20771,
+          "rms": 3319.4991954756347
+        },
+        {
+          "id": "ta_19",
+          "category": "ta",
+          "index": 19,
+          "reference": "பேருந்து நிறுத்தம் தெருவுக்கு அப்பாலேயே இருக்கிறது.",
+          "sha256": "826342e65b06a062b7b7f4d331392a4ee5fd02a8a5a63a7810b24d91d82cd283",
+          "bytes": 131072,
+          "duration_s": 4.096,
+          "signal_start_s": 0.0546875,
+          "signal_end_s": 3.9341875,
+          "peak": 20816,
+          "rms": 3067.1483546229642
+        }
+      ],
+      "targets": [
+        "te-IN",
+        "en-IN",
+        "hi-IN"
+      ]
+    },
+    {
+      "id": "r2-p13-overlap",
+      "repetition": 2,
+      "pair": 13,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "ta_9",
+          "category": "ta",
+          "index": 9,
+          "reference": "குழந்தைகள் பூங்காவில் விளையாடுகிறார்கள்.",
+          "sha256": "a40e4f5a09a3744d29134dfaafc0a9bb3b2f23ca9fe8fea7127aa046515a070f",
+          "bytes": 98304,
+          "duration_s": 3.072,
+          "signal_start_s": 0.0200625,
+          "signal_end_s": 2.9390625,
+          "peak": 17461,
+          "rms": 3427.070744385637
+        },
+        {
+          "id": "ta_2",
+          "category": "ta",
+          "index": 2,
+          "reference": "இந்த வாரம் வானிலை மிகவும் நன்றாக இருக்கிறது.",
+          "sha256": "ec0c8d6731d8247746dc5f50dfc1bc0e238cdd12bc38e320ad4aebaf7069c514",
+          "bytes": 109226,
+          "duration_s": 3.4133125,
+          "signal_start_s": 0.036,
+          "signal_end_s": 3.2558125,
+          "peak": 19535,
+          "rms": 3215.5731808898727
+        }
+      ],
+      "targets": [
+        "en-IN",
+        "hi-IN",
+        "ta-IN"
+      ]
+    },
+    {
+      "id": "r2-p13-alternating",
+      "repetition": 2,
+      "pair": 13,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "ta_9",
+          "category": "ta",
+          "index": 9,
+          "reference": "குழந்தைகள் பூங்காவில் விளையாடுகிறார்கள்.",
+          "sha256": "a40e4f5a09a3744d29134dfaafc0a9bb3b2f23ca9fe8fea7127aa046515a070f",
+          "bytes": 98304,
+          "duration_s": 3.072,
+          "signal_start_s": 0.0200625,
+          "signal_end_s": 2.9390625,
+          "peak": 17461,
+          "rms": 3427.070744385637
+        },
+        {
+          "id": "ta_2",
+          "category": "ta",
+          "index": 2,
+          "reference": "இந்த வாரம் வானிலை மிகவும் நன்றாக இருக்கிறது.",
+          "sha256": "ec0c8d6731d8247746dc5f50dfc1bc0e238cdd12bc38e320ad4aebaf7069c514",
+          "bytes": 109226,
+          "duration_s": 3.4133125,
+          "signal_start_s": 0.036,
+          "signal_end_s": 3.2558125,
+          "peak": 19535,
+          "rms": 3215.5731808898727
+        }
+      ],
+      "targets": [
+        "en-IN",
+        "hi-IN",
+        "ta-IN"
+      ]
+    },
+    {
+      "id": "r2-p10-alternating",
+      "repetition": 2,
+      "pair": 10,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "en_1",
+          "category": "en",
+          "index": 1,
+          "reference": "I went to the market this morning to buy vegetables.",
+          "sha256": "1b5092af19b1ef91c90f547362be4f3f1ef481f34bd91584dea00f3985c31d6d",
+          "bytes": 111958,
+          "duration_s": 3.4986875,
+          "signal_start_s": 0.033875,
+          "signal_end_s": 3.3286875,
+          "peak": 21982,
+          "rms": 2802.488084349976
+        },
+        {
+          "id": "te_3",
+          "category": "te",
+          "index": 3,
+          "reference": "మీరు రేపటిలోగా నివేదిక పంపగలరా?",
+          "sha256": "dc33b8701808208b21ab3418200066a53340c243fb84e7284b049e0468bc6285",
+          "bytes": 117418,
+          "duration_s": 3.6693125,
+          "signal_start_s": 0.029875,
+          "signal_end_s": 3.498875,
+          "peak": 20027,
+          "rms": 3115.62309705793
+        }
+      ],
+      "targets": [
+        "hi-IN",
+        "ta-IN",
+        "te-IN"
+      ]
+    },
+    {
+      "id": "r2-p10-overlap",
+      "repetition": 2,
+      "pair": 10,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "en_1",
+          "category": "en",
+          "index": 1,
+          "reference": "I went to the market this morning to buy vegetables.",
+          "sha256": "1b5092af19b1ef91c90f547362be4f3f1ef481f34bd91584dea00f3985c31d6d",
+          "bytes": 111958,
+          "duration_s": 3.4986875,
+          "signal_start_s": 0.033875,
+          "signal_end_s": 3.3286875,
+          "peak": 21982,
+          "rms": 2802.488084349976
+        },
+        {
+          "id": "te_3",
+          "category": "te",
+          "index": 3,
+          "reference": "మీరు రేపటిలోగా నివేదిక పంపగలరా?",
+          "sha256": "dc33b8701808208b21ab3418200066a53340c243fb84e7284b049e0468bc6285",
+          "bytes": 117418,
+          "duration_s": 3.6693125,
+          "signal_start_s": 0.029875,
+          "signal_end_s": 3.498875,
+          "peak": 20027,
+          "rms": 3115.62309705793
+        }
+      ],
+      "targets": [
+        "hi-IN",
+        "ta-IN",
+        "te-IN"
+      ]
+    },
+    {
+      "id": "r2-p15-overlap",
+      "repetition": 2,
+      "pair": 15,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "te_17",
+          "category": "te",
+          "index": 17,
+          "reference": "నేను కొండలకు ఒక ప్రయాణం ప్లాన్ చేస్తున్నాను.",
+          "sha256": "398869378b7b105a85f73fabb1b4942a57679b9e9d836334734b3935a89d8e3e",
+          "bytes": 117418,
+          "duration_s": 3.6693125,
+          "signal_start_s": 0.0374375,
+          "signal_end_s": 3.5678125,
+          "peak": 18176,
+          "rms": 2998.9585956745445
+        },
+        {
+          "id": "te_13",
+          "category": "te",
+          "index": 13,
+          "reference": "సమావేశం మూడు గంటలకు మార్చబడింది.",
+          "sha256": "1e933ae3eb358c376e9c8652d13062d412be1687ca6cf46d809c2748e621ba1d",
+          "bytes": 106496,
+          "duration_s": 3.328,
+          "signal_start_s": 0.0081875,
+          "signal_end_s": 3.1928125,
+          "peak": 19076,
+          "rms": 3423.06100928994
+        }
+      ],
+      "targets": [
+        "ta-IN",
+        "te-IN",
+        "en-IN"
+      ]
+    },
+    {
+      "id": "r2-p15-alternating",
+      "repetition": 2,
+      "pair": 15,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "te_17",
+          "category": "te",
+          "index": 17,
+          "reference": "నేను కొండలకు ఒక ప్రయాణం ప్లాన్ చేస్తున్నాను.",
+          "sha256": "398869378b7b105a85f73fabb1b4942a57679b9e9d836334734b3935a89d8e3e",
+          "bytes": 117418,
+          "duration_s": 3.6693125,
+          "signal_start_s": 0.0374375,
+          "signal_end_s": 3.5678125,
+          "peak": 18176,
+          "rms": 2998.9585956745445
+        },
+        {
+          "id": "te_13",
+          "category": "te",
+          "index": 13,
+          "reference": "సమావేశం మూడు గంటలకు మార్చబడింది.",
+          "sha256": "1e933ae3eb358c376e9c8652d13062d412be1687ca6cf46d809c2748e621ba1d",
+          "bytes": 106496,
+          "duration_s": 3.328,
+          "signal_start_s": 0.0081875,
+          "signal_end_s": 3.1928125,
+          "peak": 19076,
+          "rms": 3423.06100928994
+        }
+      ],
+      "targets": [
+        "ta-IN",
+        "te-IN",
+        "en-IN"
+      ]
+    },
+    {
+      "id": "r2-p06-alternating",
+      "repetition": 2,
+      "pair": 6,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "te_10",
+          "category": "te",
+          "index": 10,
+          "reference": "మీరు ఇంటికి చేరుకున్నప్పుడు నాకు కాల్ చేయండి.",
+          "sha256": "bc95a093f9003d182f77337b1b73b572d6596e3caae115eac104daa7877c745a",
+          "bytes": 122880,
+          "duration_s": 3.84,
+          "signal_start_s": 0.1999375,
+          "signal_end_s": 3.50925,
+          "peak": 20648,
+          "rms": 3319.7825989336925
+        },
+        {
+          "id": "hi_7",
+          "category": "hi",
+          "index": 7,
+          "reference": "वह हमारे घर के पास एक अस्पताल में काम करती है।",
+          "sha256": "37c66cd24d0cd58d05574d133ee4d028c28bf9e546104d02c4aa8f3d1f8dbf2a",
+          "bytes": 122880,
+          "duration_s": 3.84,
+          "signal_start_s": 0.020875,
+          "signal_end_s": 3.7039375,
+          "peak": 21570,
+          "rms": 2844.4075705998157
+        }
+      ],
+      "targets": [
+        "hi-IN",
+        "ta-IN",
+        "te-IN"
+      ]
+    },
+    {
+      "id": "r2-p06-overlap",
+      "repetition": 2,
+      "pair": 6,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "te_10",
+          "category": "te",
+          "index": 10,
+          "reference": "మీరు ఇంటికి చేరుకున్నప్పుడు నాకు కాల్ చేయండి.",
+          "sha256": "bc95a093f9003d182f77337b1b73b572d6596e3caae115eac104daa7877c745a",
+          "bytes": 122880,
+          "duration_s": 3.84,
+          "signal_start_s": 0.1999375,
+          "signal_end_s": 3.50925,
+          "peak": 20648,
+          "rms": 3319.7825989336925
+        },
+        {
+          "id": "hi_7",
+          "category": "hi",
+          "index": 7,
+          "reference": "वह हमारे घर के पास एक अस्पताल में काम करती है।",
+          "sha256": "37c66cd24d0cd58d05574d133ee4d028c28bf9e546104d02c4aa8f3d1f8dbf2a",
+          "bytes": 122880,
+          "duration_s": 3.84,
+          "signal_start_s": 0.020875,
+          "signal_end_s": 3.7039375,
+          "peak": 21570,
+          "rms": 2844.4075705998157
+        }
+      ],
+      "targets": [
+        "hi-IN",
+        "ta-IN",
+        "te-IN"
+      ]
+    },
+    {
+      "id": "r2-p05-overlap",
+      "repetition": 2,
+      "pair": 5,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "hi_2",
+          "category": "hi",
+          "index": 2,
+          "reference": "इस हफ्ते मौसम बहुत अच्छा है।",
+          "sha256": "eae77f1dbc101820bc0186e02eb5a937d4c5fc2e14ec7fe278cfb785156838ec",
+          "bytes": 90112,
+          "duration_s": 2.816,
+          "signal_start_s": 0.03725,
+          "signal_end_s": 2.6424375,
+          "peak": 21383,
+          "rms": 2579.083905079439
+        },
+        {
+          "id": "mix_1",
+          "category": "mix",
+          "index": 1,
+          "reference": "அந்த meeting நாளைக்கு morning ku postpone ஆகிடுச்சு.",
+          "sha256": "ad2622c5b64e002b622fae5cf9057e0c4e0e390093bef48f8c0602a0b1a81b00",
+          "bytes": 133802,
+          "duration_s": 4.1813125,
+          "signal_start_s": 0.2978125,
+          "signal_end_s": 3.9126875,
+          "peak": 22561,
+          "rms": 3800.8370294577735
+        }
+      ],
+      "targets": [
+        "en-IN",
+        "hi-IN",
+        "ta-IN"
+      ]
+    },
+    {
+      "id": "r2-p05-alternating",
+      "repetition": 2,
+      "pair": 5,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "hi_2",
+          "category": "hi",
+          "index": 2,
+          "reference": "इस हफ्ते मौसम बहुत अच्छा है।",
+          "sha256": "eae77f1dbc101820bc0186e02eb5a937d4c5fc2e14ec7fe278cfb785156838ec",
+          "bytes": 90112,
+          "duration_s": 2.816,
+          "signal_start_s": 0.03725,
+          "signal_end_s": 2.6424375,
+          "peak": 21383,
+          "rms": 2579.083905079439
+        },
+        {
+          "id": "mix_1",
+          "category": "mix",
+          "index": 1,
+          "reference": "அந்த meeting நாளைக்கு morning ku postpone ஆகிடுச்சு.",
+          "sha256": "ad2622c5b64e002b622fae5cf9057e0c4e0e390093bef48f8c0602a0b1a81b00",
+          "bytes": 133802,
+          "duration_s": 4.1813125,
+          "signal_start_s": 0.2978125,
+          "signal_end_s": 3.9126875,
+          "peak": 22561,
+          "rms": 3800.8370294577735
+        }
+      ],
+      "targets": [
+        "en-IN",
+        "hi-IN",
+        "ta-IN"
+      ]
+    },
+    {
+      "id": "r2-p01-overlap",
+      "repetition": 2,
+      "pair": 1,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "ta_7",
+          "category": "ta",
+          "index": 7,
+          "reference": "அவள் எங்கள் வீட்டிற்கு அருகில் ஒரு மருத்துவமனையில் வேலை செய்கிறாள்.",
+          "sha256": "ea4a13ed9531592fb3c210a881aa38783e8f27e79483a44619795c23bc4488aa",
+          "bytes": 144726,
+          "duration_s": 4.5226875,
+          "signal_start_s": 0.035375,
+          "signal_end_s": 4.39775,
+          "peak": 21696,
+          "rms": 3279.2200138219787
+        },
+        {
+          "id": "hi_18",
+          "category": "hi",
+          "index": 18,
+          "reference": "उसका प्रेजेंटेशन बहुत साफ और उपयोगी था।",
+          "sha256": "3c28564be8b04e5de4925476cfcd8a00356504831548f798a65c778d5bcc2f4a",
+          "bytes": 120150,
+          "duration_s": 3.7546875,
+          "signal_start_s": 0.0261875,
+          "signal_end_s": 3.6221875,
+          "peak": 27012,
+          "rms": 3025.7748635724784
+        }
+      ],
+      "targets": [
+        "en-IN",
+        "hi-IN",
+        "ta-IN"
+      ]
+    },
+    {
+      "id": "r2-p01-alternating",
+      "repetition": 2,
+      "pair": 1,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "ta_7",
+          "category": "ta",
+          "index": 7,
+          "reference": "அவள் எங்கள் வீட்டிற்கு அருகில் ஒரு மருத்துவமனையில் வேலை செய்கிறாள்.",
+          "sha256": "ea4a13ed9531592fb3c210a881aa38783e8f27e79483a44619795c23bc4488aa",
+          "bytes": 144726,
+          "duration_s": 4.5226875,
+          "signal_start_s": 0.035375,
+          "signal_end_s": 4.39775,
+          "peak": 21696,
+          "rms": 3279.2200138219787
+        },
+        {
+          "id": "hi_18",
+          "category": "hi",
+          "index": 18,
+          "reference": "उसका प्रेजेंटेशन बहुत साफ और उपयोगी था।",
+          "sha256": "3c28564be8b04e5de4925476cfcd8a00356504831548f798a65c778d5bcc2f4a",
+          "bytes": 120150,
+          "duration_s": 3.7546875,
+          "signal_start_s": 0.0261875,
+          "signal_end_s": 3.6221875,
+          "peak": 27012,
+          "rms": 3025.7748635724784
+        }
+      ],
+      "targets": [
+        "en-IN",
+        "hi-IN",
+        "ta-IN"
+      ]
+    },
+    {
+      "id": "r2-p09-overlap",
+      "repetition": 2,
+      "pair": 9,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "te_4",
+          "category": "te",
+          "index": 4,
+          "reference": "నా తమ్ముడు కళాశాలలో కంప్యూటర్ సైన్స్ చదువుతున్నాడు.",
+          "sha256": "2c4a6fbeb4c93a7152f2a440a25ec1a9120b62c42898d4d6936f98cfdcf62368",
+          "bytes": 147456,
+          "duration_s": 4.608,
+          "signal_start_s": 0.0483125,
+          "signal_end_s": 4.446375,
+          "peak": 24236,
+          "rms": 3238.1326108390363
+        },
+        {
+          "id": "en_0",
+          "category": "en",
+          "index": 0,
+          "reference": "Hello, how are you doing today?",
+          "sha256": "e94c48c6e654b4d6c79fc33b44a82af037bbac75d05518732324037549e04b1e",
+          "bytes": 62806,
+          "duration_s": 1.9626875,
+          "signal_start_s": 0.0141875,
+          "signal_end_s": 1.8596875,
+          "peak": 16865,
+          "rms": 3031.275285688363
+        }
+      ],
+      "targets": [
+        "en-IN",
+        "hi-IN",
+        "ta-IN"
+      ]
+    },
+    {
+      "id": "r2-p09-alternating",
+      "repetition": 2,
+      "pair": 9,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "te_4",
+          "category": "te",
+          "index": 4,
+          "reference": "నా తమ్ముడు కళాశాలలో కంప్యూటర్ సైన్స్ చదువుతున్నాడు.",
+          "sha256": "2c4a6fbeb4c93a7152f2a440a25ec1a9120b62c42898d4d6936f98cfdcf62368",
+          "bytes": 147456,
+          "duration_s": 4.608,
+          "signal_start_s": 0.0483125,
+          "signal_end_s": 4.446375,
+          "peak": 24236,
+          "rms": 3238.1326108390363
+        },
+        {
+          "id": "en_0",
+          "category": "en",
+          "index": 0,
+          "reference": "Hello, how are you doing today?",
+          "sha256": "e94c48c6e654b4d6c79fc33b44a82af037bbac75d05518732324037549e04b1e",
+          "bytes": 62806,
+          "duration_s": 1.9626875,
+          "signal_start_s": 0.0141875,
+          "signal_end_s": 1.8596875,
+          "peak": 16865,
+          "rms": 3031.275285688363
+        }
+      ],
+      "targets": [
+        "en-IN",
+        "hi-IN",
+        "ta-IN"
+      ]
+    },
+    {
+      "id": "r2-p02-alternating",
+      "repetition": 2,
+      "pair": 2,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "mix_2",
+          "category": "mix",
+          "index": 2,
+          "reference": "நீ market போற வழியில ரொம்ப busy ஆ இருந்துச்சு.",
+          "sha256": "43e4a4498bd08dabaa3160bc2357fd0ce5b0197661c942d36116d53bd33e7faf",
+          "bytes": 155648,
+          "duration_s": 4.864,
+          "signal_start_s": 0.8431875,
+          "signal_end_s": 4.35225,
+          "peak": 19393,
+          "rms": 2941.281459467114
+        },
+        {
+          "id": "mix_5",
+          "category": "mix",
+          "index": 5,
+          "reference": "அவன் project ரொம்ப நல்லா complete பண்ணிட்டான்.",
+          "sha256": "b9ae3e226a4900c917333d3a55d598474a87cf018d833ed43bd6d79e20993093",
+          "bytes": 117418,
+          "duration_s": 3.6693125,
+          "signal_start_s": 0.182875,
+          "signal_end_s": 3.0323125,
+          "peak": 19517,
+          "rms": 2776.3797019529975
+        }
+      ],
+      "targets": [
+        "hi-IN",
+        "ta-IN",
+        "te-IN"
+      ]
+    },
+    {
+      "id": "r2-p02-overlap",
+      "repetition": 2,
+      "pair": 2,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "mix_2",
+          "category": "mix",
+          "index": 2,
+          "reference": "நீ market போற வழியில ரொம்ப busy ஆ இருந்துச்சு.",
+          "sha256": "43e4a4498bd08dabaa3160bc2357fd0ce5b0197661c942d36116d53bd33e7faf",
+          "bytes": 155648,
+          "duration_s": 4.864,
+          "signal_start_s": 0.8431875,
+          "signal_end_s": 4.35225,
+          "peak": 19393,
+          "rms": 2941.281459467114
+        },
+        {
+          "id": "mix_5",
+          "category": "mix",
+          "index": 5,
+          "reference": "அவன் project ரொம்ப நல்லா complete பண்ணிட்டான்.",
+          "sha256": "b9ae3e226a4900c917333d3a55d598474a87cf018d833ed43bd6d79e20993093",
+          "bytes": 117418,
+          "duration_s": 3.6693125,
+          "signal_start_s": 0.182875,
+          "signal_end_s": 3.0323125,
+          "peak": 19517,
+          "rms": 2776.3797019529975
+        }
+      ],
+      "targets": [
+        "hi-IN",
+        "ta-IN",
+        "te-IN"
+      ]
+    },
+    {
+      "id": "r2-p04-alternating",
+      "repetition": 2,
+      "pair": 4,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "mix_9",
+          "category": "mix",
+          "index": 9,
+          "reference": "என் laptop screen crack ஆயிடுச்சு, repair பண்ணனும்.",
+          "sha256": "635c5fc9eb89f3fe9e2b41edd1c3fc811bf5477ffc4390c672f2fa8a1422591d",
+          "bytes": 150186,
+          "duration_s": 4.6933125,
+          "signal_start_s": 0.1904375,
+          "signal_end_s": 4.232375,
+          "peak": 30344,
+          "rms": 3845.3833711725374
+        },
+        {
+          "id": "te_1",
+          "category": "te",
+          "index": 1,
+          "reference": "నేను ఈరోజు ఉదయం కూరగాయలు కొనడానికి మార్కెట్‌కు వెళ్ళాను.",
+          "sha256": "292cdf009249b1f42b9baca61f3f8a8e57c229f14d5e3decd5a89167aea5dc21",
+          "bytes": 150186,
+          "duration_s": 4.6933125,
+          "signal_start_s": 0.0455625,
+          "signal_end_s": 4.5435625,
+          "peak": 18452,
+          "rms": 3193.941485592485
+        }
+      ],
+      "targets": [
+        "te-IN",
+        "en-IN",
+        "hi-IN"
+      ]
+    },
+    {
+      "id": "r2-p04-overlap",
+      "repetition": 2,
+      "pair": 4,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "mix_9",
+          "category": "mix",
+          "index": 9,
+          "reference": "என் laptop screen crack ஆயிடுச்சு, repair பண்ணனும்.",
+          "sha256": "635c5fc9eb89f3fe9e2b41edd1c3fc811bf5477ffc4390c672f2fa8a1422591d",
+          "bytes": 150186,
+          "duration_s": 4.6933125,
+          "signal_start_s": 0.1904375,
+          "signal_end_s": 4.232375,
+          "peak": 30344,
+          "rms": 3845.3833711725374
+        },
+        {
+          "id": "te_1",
+          "category": "te",
+          "index": 1,
+          "reference": "నేను ఈరోజు ఉదయం కూరగాయలు కొనడానికి మార్కెట్‌కు వెళ్ళాను.",
+          "sha256": "292cdf009249b1f42b9baca61f3f8a8e57c229f14d5e3decd5a89167aea5dc21",
+          "bytes": 150186,
+          "duration_s": 4.6933125,
+          "signal_start_s": 0.0455625,
+          "signal_end_s": 4.5435625,
+          "peak": 18452,
+          "rms": 3193.941485592485
+        }
+      ],
+      "targets": [
+        "te-IN",
+        "en-IN",
+        "hi-IN"
+      ]
+    },
+    {
+      "id": "r2-p11-overlap",
+      "repetition": 2,
+      "pair": 11,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "hi_12",
+          "category": "hi",
+          "index": 12,
+          "reference": "उसने खाने से पहले अपना होमवर्क पूरा किया।",
+          "sha256": "84b8c314e4250f602ff4276a9adde5d5456242639a0c660f8f87ff11b6cd7dc1",
+          "bytes": 117418,
+          "duration_s": 3.6693125,
+          "signal_start_s": 0.0280625,
+          "signal_end_s": 3.5149375,
+          "peak": 18821,
+          "rms": 2921.0187487733187
+        },
+        {
+          "id": "mix_4",
+          "category": "mix",
+          "index": 4,
+          "reference": "இந்த weekend நாங்க ஒரு trip plan பண்றோம்.",
+          "sha256": "ef5e80cd14080aa4b85eeec0893d3f52bd720d189f838b3b1ebed2c00d9cd25b",
+          "bytes": 106496,
+          "duration_s": 3.328,
+          "signal_start_s": 0.178875,
+          "signal_end_s": 3.00775,
+          "peak": 26624,
+          "rms": 2941.77725375978
+        }
+      ],
+      "targets": [
+        "ta-IN",
+        "te-IN",
+        "en-IN"
+      ]
+    },
+    {
+      "id": "r2-p11-alternating",
+      "repetition": 2,
+      "pair": 11,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "hi_12",
+          "category": "hi",
+          "index": 12,
+          "reference": "उसने खाने से पहले अपना होमवर्क पूरा किया।",
+          "sha256": "84b8c314e4250f602ff4276a9adde5d5456242639a0c660f8f87ff11b6cd7dc1",
+          "bytes": 117418,
+          "duration_s": 3.6693125,
+          "signal_start_s": 0.0280625,
+          "signal_end_s": 3.5149375,
+          "peak": 18821,
+          "rms": 2921.0187487733187
+        },
+        {
+          "id": "mix_4",
+          "category": "mix",
+          "index": 4,
+          "reference": "இந்த weekend நாங்க ஒரு trip plan பண்றோம்.",
+          "sha256": "ef5e80cd14080aa4b85eeec0893d3f52bd720d189f838b3b1ebed2c00d9cd25b",
+          "bytes": 106496,
+          "duration_s": 3.328,
+          "signal_start_s": 0.178875,
+          "signal_end_s": 3.00775,
+          "peak": 26624,
+          "rms": 2941.77725375978
+        }
+      ],
+      "targets": [
+        "ta-IN",
+        "te-IN",
+        "en-IN"
+      ]
+    },
+    {
+      "id": "r2-p08-alternating",
+      "repetition": 2,
+      "pair": 8,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "hi_1",
+          "category": "hi",
+          "index": 1,
+          "reference": "मैं आज सुबह सब्जियां खरीदने बाजार गया था।",
+          "sha256": "2252d7cdd3c1e8324f259fb4685b2b339aaa7b9e1f17427fc9a9164000d86e13",
+          "bytes": 128342,
+          "duration_s": 4.0106875,
+          "signal_start_s": 0.0443125,
+          "signal_end_s": 3.8786875,
+          "peak": 27344,
+          "rms": 3441.043065674839
+        },
+        {
+          "id": "en_17",
+          "category": "en",
+          "index": 17,
+          "reference": "I am planning a trip to the mountains.",
+          "sha256": "79c6b88eede1adce09aa35833792f6bc285c4250536c9ae2a9f9589c6ae214fd",
+          "bytes": 84650,
+          "duration_s": 2.6453125,
+          "signal_start_s": 0.02775,
+          "signal_end_s": 2.5311875,
+          "peak": 17811,
+          "rms": 2872.240402044241
+        }
+      ],
+      "targets": [
+        "te-IN",
+        "en-IN",
+        "hi-IN"
+      ]
+    },
+    {
+      "id": "r2-p08-overlap",
+      "repetition": 2,
+      "pair": 8,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "hi_1",
+          "category": "hi",
+          "index": 1,
+          "reference": "मैं आज सुबह सब्जियां खरीदने बाजार गया था।",
+          "sha256": "2252d7cdd3c1e8324f259fb4685b2b339aaa7b9e1f17427fc9a9164000d86e13",
+          "bytes": 128342,
+          "duration_s": 4.0106875,
+          "signal_start_s": 0.0443125,
+          "signal_end_s": 3.8786875,
+          "peak": 27344,
+          "rms": 3441.043065674839
+        },
+        {
+          "id": "en_17",
+          "category": "en",
+          "index": 17,
+          "reference": "I am planning a trip to the mountains.",
+          "sha256": "79c6b88eede1adce09aa35833792f6bc285c4250536c9ae2a9f9589c6ae214fd",
+          "bytes": 84650,
+          "duration_s": 2.6453125,
+          "signal_start_s": 0.02775,
+          "signal_end_s": 2.5311875,
+          "peak": 17811,
+          "rms": 2872.240402044241
+        }
+      ],
+      "targets": [
+        "te-IN",
+        "en-IN",
+        "hi-IN"
+      ]
+    },
+    {
+      "id": "r2-p12-alternating",
+      "repetition": 2,
+      "pair": 12,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "hi_16",
+          "category": "hi",
+          "index": 16,
+          "reference": "लाइब्रेरी शाम को आठ बजे बंद होती है।",
+          "sha256": "f22f14373dc69c5d5289d65a722f9a97504435702429ebfaf6236e7221b00817",
+          "bytes": 101034,
+          "duration_s": 3.1573125,
+          "signal_start_s": 0.03,
+          "signal_end_s": 3.0060625,
+          "peak": 20771,
+          "rms": 3319.4991954756347
+        },
+        {
+          "id": "ta_19",
+          "category": "ta",
+          "index": 19,
+          "reference": "பேருந்து நிறுத்தம் தெருவுக்கு அப்பாலேயே இருக்கிறது.",
+          "sha256": "826342e65b06a062b7b7f4d331392a4ee5fd02a8a5a63a7810b24d91d82cd283",
+          "bytes": 131072,
+          "duration_s": 4.096,
+          "signal_start_s": 0.0546875,
+          "signal_end_s": 3.9341875,
+          "peak": 20816,
+          "rms": 3067.1483546229642
+        }
+      ],
+      "targets": [
+        "te-IN",
+        "en-IN",
+        "hi-IN"
+      ]
+    },
+    {
+      "id": "r2-p12-overlap",
+      "repetition": 2,
+      "pair": 12,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "hi_16",
+          "category": "hi",
+          "index": 16,
+          "reference": "लाइब्रेरी शाम को आठ बजे बंद होती है।",
+          "sha256": "f22f14373dc69c5d5289d65a722f9a97504435702429ebfaf6236e7221b00817",
+          "bytes": 101034,
+          "duration_s": 3.1573125,
+          "signal_start_s": 0.03,
+          "signal_end_s": 3.0060625,
+          "peak": 20771,
+          "rms": 3319.4991954756347
+        },
+        {
+          "id": "ta_19",
+          "category": "ta",
+          "index": 19,
+          "reference": "பேருந்து நிறுத்தம் தெருவுக்கு அப்பாலேயே இருக்கிறது.",
+          "sha256": "826342e65b06a062b7b7f4d331392a4ee5fd02a8a5a63a7810b24d91d82cd283",
+          "bytes": 131072,
+          "duration_s": 4.096,
+          "signal_start_s": 0.0546875,
+          "signal_end_s": 3.9341875,
+          "peak": 20816,
+          "rms": 3067.1483546229642
+        }
+      ],
+      "targets": [
+        "te-IN",
+        "en-IN",
+        "hi-IN"
+      ]
+    },
+    {
+      "id": "r2-p03-overlap",
+      "repetition": 2,
+      "pair": 3,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "mix_7",
+          "category": "mix",
+          "index": 7,
+          "reference": "அந்த restaurant food ரொம்ப tasty ஆ இருந்துச்சு.",
+          "sha256": "f7c64760fe29c497d7da8aefb3c791679fce490e6717198e1cfe2f22ea3742a1",
+          "bytes": 111958,
+          "duration_s": 3.4986875,
+          "signal_start_s": 0.23975,
+          "signal_end_s": 3.158,
+          "peak": 18801,
+          "rms": 2778.3238237503856
+        },
+        {
+          "id": "ta_17",
+          "category": "ta",
+          "index": 17,
+          "reference": "நான் மலைகளுக்கு ஒரு பயணத்தை திட்டமிடுகிறேன்.",
+          "sha256": "6a3ece1bc8cf82504e5e16a5d3198a01677b278f959f0ece67c818af19caa83b",
+          "bytes": 114688,
+          "duration_s": 3.584,
+          "signal_start_s": 0.0400625,
+          "signal_end_s": 3.4251875,
+          "peak": 21013,
+          "rms": 2951.775979663245
+        }
+      ],
+      "targets": [
+        "ta-IN",
+        "te-IN",
+        "en-IN"
+      ]
+    },
+    {
+      "id": "r2-p03-alternating",
+      "repetition": 2,
+      "pair": 3,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "mix_7",
+          "category": "mix",
+          "index": 7,
+          "reference": "அந்த restaurant food ரொம்ப tasty ஆ இருந்துச்சு.",
+          "sha256": "f7c64760fe29c497d7da8aefb3c791679fce490e6717198e1cfe2f22ea3742a1",
+          "bytes": 111958,
+          "duration_s": 3.4986875,
+          "signal_start_s": 0.23975,
+          "signal_end_s": 3.158,
+          "peak": 18801,
+          "rms": 2778.3238237503856
+        },
+        {
+          "id": "ta_17",
+          "category": "ta",
+          "index": 17,
+          "reference": "நான் மலைகளுக்கு ஒரு பயணத்தை திட்டமிடுகிறேன்.",
+          "sha256": "6a3ece1bc8cf82504e5e16a5d3198a01677b278f959f0ece67c818af19caa83b",
+          "bytes": 114688,
+          "duration_s": 3.584,
+          "signal_start_s": 0.0400625,
+          "signal_end_s": 3.4251875,
+          "peak": 21013,
+          "rms": 2951.775979663245
+        }
+      ],
+      "targets": [
+        "ta-IN",
+        "te-IN",
+        "en-IN"
+      ]
+    },
+    {
+      "id": "r2-p07-overlap",
+      "repetition": 2,
+      "pair": 7,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "ta_18",
+          "category": "ta",
+          "index": 18,
+          "reference": "அவளுடைய விளக்கக்காட்சி மிகவும் தெளிவாகவும் பயனுள்ளதாகவும் இருந்தது.",
+          "sha256": "134c5726fe4b1f69bb3f9d7f41d2c4a16ff713fb7560d97d4a5d551d02e99c7f",
+          "bytes": 185686,
+          "duration_s": 5.8026875,
+          "signal_start_s": 0.03675,
+          "signal_end_s": 5.678,
+          "peak": 30752,
+          "rms": 4209.627379824822
+        },
+        {
+          "id": "en_18",
+          "category": "en",
+          "index": 18,
+          "reference": "Her presentation was very clear and useful.",
+          "sha256": "7b9f253744503ff849b6ff57dc87a5de6cc04f3523ebb410f3167a1512307f02",
+          "bytes": 109226,
+          "duration_s": 3.4133125,
+          "signal_start_s": 0.020875,
+          "signal_end_s": 3.2525,
+          "peak": 28406,
+          "rms": 2742.7925875448336
+        }
+      ],
+      "targets": [
+        "ta-IN",
+        "te-IN",
+        "en-IN"
+      ]
+    },
+    {
+      "id": "r2-p07-alternating",
+      "repetition": 2,
+      "pair": 7,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "ta_18",
+          "category": "ta",
+          "index": 18,
+          "reference": "அவளுடைய விளக்கக்காட்சி மிகவும் தெளிவாகவும் பயனுள்ளதாகவும் இருந்தது.",
+          "sha256": "134c5726fe4b1f69bb3f9d7f41d2c4a16ff713fb7560d97d4a5d551d02e99c7f",
+          "bytes": 185686,
+          "duration_s": 5.8026875,
+          "signal_start_s": 0.03675,
+          "signal_end_s": 5.678,
+          "peak": 30752,
+          "rms": 4209.627379824822
+        },
+        {
+          "id": "en_18",
+          "category": "en",
+          "index": 18,
+          "reference": "Her presentation was very clear and useful.",
+          "sha256": "7b9f253744503ff849b6ff57dc87a5de6cc04f3523ebb410f3167a1512307f02",
+          "bytes": 109226,
+          "duration_s": 3.4133125,
+          "signal_start_s": 0.020875,
+          "signal_end_s": 3.2525,
+          "peak": 28406,
+          "rms": 2742.7925875448336
+        }
+      ],
+      "targets": [
+        "ta-IN",
+        "te-IN",
+        "en-IN"
+      ]
+    },
+    {
+      "id": "r2-p14-alternating",
+      "repetition": 2,
+      "pair": 14,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "en_8",
+          "category": "en",
+          "index": 8,
+          "reference": "I need to buy a new phone next month.",
+          "sha256": "e9db310b7e93a0beb877377e40c9887a941c656f64342235616e90fb6e44236d",
+          "bytes": 84650,
+          "duration_s": 2.6453125,
+          "signal_start_s": 0.034375,
+          "signal_end_s": 2.4953125,
+          "peak": 18619,
+          "rms": 3477.2250312353917
+        },
+        {
+          "id": "en_13",
+          "category": "en",
+          "index": 13,
+          "reference": "The meeting has been moved to three o'clock.",
+          "sha256": "bcee2ee3a183b471d0d783fa03da3ba6875c8820a2117c171e0eaba051b4a159",
+          "bytes": 92842,
+          "duration_s": 2.9013125,
+          "signal_start_s": 0.024,
+          "signal_end_s": 2.604875,
+          "peak": 24380,
+          "rms": 3123.2724963279607
+        }
+      ],
+      "targets": [
+        "hi-IN",
+        "ta-IN",
+        "te-IN"
+      ]
+    },
+    {
+      "id": "r2-p14-overlap",
+      "repetition": 2,
+      "pair": 14,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "en_8",
+          "category": "en",
+          "index": 8,
+          "reference": "I need to buy a new phone next month.",
+          "sha256": "e9db310b7e93a0beb877377e40c9887a941c656f64342235616e90fb6e44236d",
+          "bytes": 84650,
+          "duration_s": 2.6453125,
+          "signal_start_s": 0.034375,
+          "signal_end_s": 2.4953125,
+          "peak": 18619,
+          "rms": 3477.2250312353917
+        },
+        {
+          "id": "en_13",
+          "category": "en",
+          "index": 13,
+          "reference": "The meeting has been moved to three o'clock.",
+          "sha256": "bcee2ee3a183b471d0d783fa03da3ba6875c8820a2117c171e0eaba051b4a159",
+          "bytes": 92842,
+          "duration_s": 2.9013125,
+          "signal_start_s": 0.024,
+          "signal_end_s": 2.604875,
+          "peak": 24380,
+          "rms": 3123.2724963279607
+        }
+      ],
+      "targets": [
+        "hi-IN",
+        "ta-IN",
+        "te-IN"
+      ]
+    },
+    {
+      "id": "r3-p12-overlap",
+      "repetition": 3,
+      "pair": 12,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "hi_16",
+          "category": "hi",
+          "index": 16,
+          "reference": "लाइब्रेरी शाम को आठ बजे बंद होती है।",
+          "sha256": "f22f14373dc69c5d5289d65a722f9a97504435702429ebfaf6236e7221b00817",
+          "bytes": 101034,
+          "duration_s": 3.1573125,
+          "signal_start_s": 0.03,
+          "signal_end_s": 3.0060625,
+          "peak": 20771,
+          "rms": 3319.4991954756347
+        },
+        {
+          "id": "ta_19",
+          "category": "ta",
+          "index": 19,
+          "reference": "பேருந்து நிறுத்தம் தெருவுக்கு அப்பாலேயே இருக்கிறது.",
+          "sha256": "826342e65b06a062b7b7f4d331392a4ee5fd02a8a5a63a7810b24d91d82cd283",
+          "bytes": 131072,
+          "duration_s": 4.096,
+          "signal_start_s": 0.0546875,
+          "signal_end_s": 3.9341875,
+          "peak": 20816,
+          "rms": 3067.1483546229642
+        }
+      ],
+      "targets": [
+        "te-IN",
+        "en-IN",
+        "hi-IN"
+      ]
+    },
+    {
+      "id": "r3-p12-alternating",
+      "repetition": 3,
+      "pair": 12,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "hi_16",
+          "category": "hi",
+          "index": 16,
+          "reference": "लाइब्रेरी शाम को आठ बजे बंद होती है।",
+          "sha256": "f22f14373dc69c5d5289d65a722f9a97504435702429ebfaf6236e7221b00817",
+          "bytes": 101034,
+          "duration_s": 3.1573125,
+          "signal_start_s": 0.03,
+          "signal_end_s": 3.0060625,
+          "peak": 20771,
+          "rms": 3319.4991954756347
+        },
+        {
+          "id": "ta_19",
+          "category": "ta",
+          "index": 19,
+          "reference": "பேருந்து நிறுத்தம் தெருவுக்கு அப்பாலேயே இருக்கிறது.",
+          "sha256": "826342e65b06a062b7b7f4d331392a4ee5fd02a8a5a63a7810b24d91d82cd283",
+          "bytes": 131072,
+          "duration_s": 4.096,
+          "signal_start_s": 0.0546875,
+          "signal_end_s": 3.9341875,
+          "peak": 20816,
+          "rms": 3067.1483546229642
+        }
+      ],
+      "targets": [
+        "te-IN",
+        "en-IN",
+        "hi-IN"
+      ]
+    },
+    {
+      "id": "r3-p07-alternating",
+      "repetition": 3,
+      "pair": 7,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "ta_18",
+          "category": "ta",
+          "index": 18,
+          "reference": "அவளுடைய விளக்கக்காட்சி மிகவும் தெளிவாகவும் பயனுள்ளதாகவும் இருந்தது.",
+          "sha256": "134c5726fe4b1f69bb3f9d7f41d2c4a16ff713fb7560d97d4a5d551d02e99c7f",
+          "bytes": 185686,
+          "duration_s": 5.8026875,
+          "signal_start_s": 0.03675,
+          "signal_end_s": 5.678,
+          "peak": 30752,
+          "rms": 4209.627379824822
+        },
+        {
+          "id": "en_18",
+          "category": "en",
+          "index": 18,
+          "reference": "Her presentation was very clear and useful.",
+          "sha256": "7b9f253744503ff849b6ff57dc87a5de6cc04f3523ebb410f3167a1512307f02",
+          "bytes": 109226,
+          "duration_s": 3.4133125,
+          "signal_start_s": 0.020875,
+          "signal_end_s": 3.2525,
+          "peak": 28406,
+          "rms": 2742.7925875448336
+        }
+      ],
+      "targets": [
+        "ta-IN",
+        "te-IN",
+        "en-IN"
+      ]
+    },
+    {
+      "id": "r3-p07-overlap",
+      "repetition": 3,
+      "pair": 7,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "ta_18",
+          "category": "ta",
+          "index": 18,
+          "reference": "அவளுடைய விளக்கக்காட்சி மிகவும் தெளிவாகவும் பயனுள்ளதாகவும் இருந்தது.",
+          "sha256": "134c5726fe4b1f69bb3f9d7f41d2c4a16ff713fb7560d97d4a5d551d02e99c7f",
+          "bytes": 185686,
+          "duration_s": 5.8026875,
+          "signal_start_s": 0.03675,
+          "signal_end_s": 5.678,
+          "peak": 30752,
+          "rms": 4209.627379824822
+        },
+        {
+          "id": "en_18",
+          "category": "en",
+          "index": 18,
+          "reference": "Her presentation was very clear and useful.",
+          "sha256": "7b9f253744503ff849b6ff57dc87a5de6cc04f3523ebb410f3167a1512307f02",
+          "bytes": 109226,
+          "duration_s": 3.4133125,
+          "signal_start_s": 0.020875,
+          "signal_end_s": 3.2525,
+          "peak": 28406,
+          "rms": 2742.7925875448336
+        }
+      ],
+      "targets": [
+        "ta-IN",
+        "te-IN",
+        "en-IN"
+      ]
+    },
+    {
+      "id": "r3-p13-alternating",
+      "repetition": 3,
+      "pair": 13,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "ta_9",
+          "category": "ta",
+          "index": 9,
+          "reference": "குழந்தைகள் பூங்காவில் விளையாடுகிறார்கள்.",
+          "sha256": "a40e4f5a09a3744d29134dfaafc0a9bb3b2f23ca9fe8fea7127aa046515a070f",
+          "bytes": 98304,
+          "duration_s": 3.072,
+          "signal_start_s": 0.0200625,
+          "signal_end_s": 2.9390625,
+          "peak": 17461,
+          "rms": 3427.070744385637
+        },
+        {
+          "id": "ta_2",
+          "category": "ta",
+          "index": 2,
+          "reference": "இந்த வாரம் வானிலை மிகவும் நன்றாக இருக்கிறது.",
+          "sha256": "ec0c8d6731d8247746dc5f50dfc1bc0e238cdd12bc38e320ad4aebaf7069c514",
+          "bytes": 109226,
+          "duration_s": 3.4133125,
+          "signal_start_s": 0.036,
+          "signal_end_s": 3.2558125,
+          "peak": 19535,
+          "rms": 3215.5731808898727
+        }
+      ],
+      "targets": [
+        "en-IN",
+        "hi-IN",
+        "ta-IN"
+      ]
+    },
+    {
+      "id": "r3-p13-overlap",
+      "repetition": 3,
+      "pair": 13,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "ta_9",
+          "category": "ta",
+          "index": 9,
+          "reference": "குழந்தைகள் பூங்காவில் விளையாடுகிறார்கள்.",
+          "sha256": "a40e4f5a09a3744d29134dfaafc0a9bb3b2f23ca9fe8fea7127aa046515a070f",
+          "bytes": 98304,
+          "duration_s": 3.072,
+          "signal_start_s": 0.0200625,
+          "signal_end_s": 2.9390625,
+          "peak": 17461,
+          "rms": 3427.070744385637
+        },
+        {
+          "id": "ta_2",
+          "category": "ta",
+          "index": 2,
+          "reference": "இந்த வாரம் வானிலை மிகவும் நன்றாக இருக்கிறது.",
+          "sha256": "ec0c8d6731d8247746dc5f50dfc1bc0e238cdd12bc38e320ad4aebaf7069c514",
+          "bytes": 109226,
+          "duration_s": 3.4133125,
+          "signal_start_s": 0.036,
+          "signal_end_s": 3.2558125,
+          "peak": 19535,
+          "rms": 3215.5731808898727
+        }
+      ],
+      "targets": [
+        "en-IN",
+        "hi-IN",
+        "ta-IN"
+      ]
+    },
+    {
+      "id": "r3-p09-alternating",
+      "repetition": 3,
+      "pair": 9,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "te_4",
+          "category": "te",
+          "index": 4,
+          "reference": "నా తమ్ముడు కళాశాలలో కంప్యూటర్ సైన్స్ చదువుతున్నాడు.",
+          "sha256": "2c4a6fbeb4c93a7152f2a440a25ec1a9120b62c42898d4d6936f98cfdcf62368",
+          "bytes": 147456,
+          "duration_s": 4.608,
+          "signal_start_s": 0.0483125,
+          "signal_end_s": 4.446375,
+          "peak": 24236,
+          "rms": 3238.1326108390363
+        },
+        {
+          "id": "en_0",
+          "category": "en",
+          "index": 0,
+          "reference": "Hello, how are you doing today?",
+          "sha256": "e94c48c6e654b4d6c79fc33b44a82af037bbac75d05518732324037549e04b1e",
+          "bytes": 62806,
+          "duration_s": 1.9626875,
+          "signal_start_s": 0.0141875,
+          "signal_end_s": 1.8596875,
+          "peak": 16865,
+          "rms": 3031.275285688363
+        }
+      ],
+      "targets": [
+        "en-IN",
+        "hi-IN",
+        "ta-IN"
+      ]
+    },
+    {
+      "id": "r3-p09-overlap",
+      "repetition": 3,
+      "pair": 9,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "te_4",
+          "category": "te",
+          "index": 4,
+          "reference": "నా తమ్ముడు కళాశాలలో కంప్యూటర్ సైన్స్ చదువుతున్నాడు.",
+          "sha256": "2c4a6fbeb4c93a7152f2a440a25ec1a9120b62c42898d4d6936f98cfdcf62368",
+          "bytes": 147456,
+          "duration_s": 4.608,
+          "signal_start_s": 0.0483125,
+          "signal_end_s": 4.446375,
+          "peak": 24236,
+          "rms": 3238.1326108390363
+        },
+        {
+          "id": "en_0",
+          "category": "en",
+          "index": 0,
+          "reference": "Hello, how are you doing today?",
+          "sha256": "e94c48c6e654b4d6c79fc33b44a82af037bbac75d05518732324037549e04b1e",
+          "bytes": 62806,
+          "duration_s": 1.9626875,
+          "signal_start_s": 0.0141875,
+          "signal_end_s": 1.8596875,
+          "peak": 16865,
+          "rms": 3031.275285688363
+        }
+      ],
+      "targets": [
+        "en-IN",
+        "hi-IN",
+        "ta-IN"
+      ]
+    },
+    {
+      "id": "r3-p02-overlap",
+      "repetition": 3,
+      "pair": 2,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "mix_2",
+          "category": "mix",
+          "index": 2,
+          "reference": "நீ market போற வழியில ரொம்ப busy ஆ இருந்துச்சு.",
+          "sha256": "43e4a4498bd08dabaa3160bc2357fd0ce5b0197661c942d36116d53bd33e7faf",
+          "bytes": 155648,
+          "duration_s": 4.864,
+          "signal_start_s": 0.8431875,
+          "signal_end_s": 4.35225,
+          "peak": 19393,
+          "rms": 2941.281459467114
+        },
+        {
+          "id": "mix_5",
+          "category": "mix",
+          "index": 5,
+          "reference": "அவன் project ரொம்ப நல்லா complete பண்ணிட்டான்.",
+          "sha256": "b9ae3e226a4900c917333d3a55d598474a87cf018d833ed43bd6d79e20993093",
+          "bytes": 117418,
+          "duration_s": 3.6693125,
+          "signal_start_s": 0.182875,
+          "signal_end_s": 3.0323125,
+          "peak": 19517,
+          "rms": 2776.3797019529975
+        }
+      ],
+      "targets": [
+        "hi-IN",
+        "ta-IN",
+        "te-IN"
+      ]
+    },
+    {
+      "id": "r3-p02-alternating",
+      "repetition": 3,
+      "pair": 2,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "mix_2",
+          "category": "mix",
+          "index": 2,
+          "reference": "நீ market போற வழியில ரொம்ப busy ஆ இருந்துச்சு.",
+          "sha256": "43e4a4498bd08dabaa3160bc2357fd0ce5b0197661c942d36116d53bd33e7faf",
+          "bytes": 155648,
+          "duration_s": 4.864,
+          "signal_start_s": 0.8431875,
+          "signal_end_s": 4.35225,
+          "peak": 19393,
+          "rms": 2941.281459467114
+        },
+        {
+          "id": "mix_5",
+          "category": "mix",
+          "index": 5,
+          "reference": "அவன் project ரொம்ப நல்லா complete பண்ணிட்டான்.",
+          "sha256": "b9ae3e226a4900c917333d3a55d598474a87cf018d833ed43bd6d79e20993093",
+          "bytes": 117418,
+          "duration_s": 3.6693125,
+          "signal_start_s": 0.182875,
+          "signal_end_s": 3.0323125,
+          "peak": 19517,
+          "rms": 2776.3797019529975
+        }
+      ],
+      "targets": [
+        "hi-IN",
+        "ta-IN",
+        "te-IN"
+      ]
+    },
+    {
+      "id": "r3-p06-overlap",
+      "repetition": 3,
+      "pair": 6,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "te_10",
+          "category": "te",
+          "index": 10,
+          "reference": "మీరు ఇంటికి చేరుకున్నప్పుడు నాకు కాల్ చేయండి.",
+          "sha256": "bc95a093f9003d182f77337b1b73b572d6596e3caae115eac104daa7877c745a",
+          "bytes": 122880,
+          "duration_s": 3.84,
+          "signal_start_s": 0.1999375,
+          "signal_end_s": 3.50925,
+          "peak": 20648,
+          "rms": 3319.7825989336925
+        },
+        {
+          "id": "hi_7",
+          "category": "hi",
+          "index": 7,
+          "reference": "वह हमारे घर के पास एक अस्पताल में काम करती है।",
+          "sha256": "37c66cd24d0cd58d05574d133ee4d028c28bf9e546104d02c4aa8f3d1f8dbf2a",
+          "bytes": 122880,
+          "duration_s": 3.84,
+          "signal_start_s": 0.020875,
+          "signal_end_s": 3.7039375,
+          "peak": 21570,
+          "rms": 2844.4075705998157
+        }
+      ],
+      "targets": [
+        "hi-IN",
+        "ta-IN",
+        "te-IN"
+      ]
+    },
+    {
+      "id": "r3-p06-alternating",
+      "repetition": 3,
+      "pair": 6,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "te_10",
+          "category": "te",
+          "index": 10,
+          "reference": "మీరు ఇంటికి చేరుకున్నప్పుడు నాకు కాల్ చేయండి.",
+          "sha256": "bc95a093f9003d182f77337b1b73b572d6596e3caae115eac104daa7877c745a",
+          "bytes": 122880,
+          "duration_s": 3.84,
+          "signal_start_s": 0.1999375,
+          "signal_end_s": 3.50925,
+          "peak": 20648,
+          "rms": 3319.7825989336925
+        },
+        {
+          "id": "hi_7",
+          "category": "hi",
+          "index": 7,
+          "reference": "वह हमारे घर के पास एक अस्पताल में काम करती है।",
+          "sha256": "37c66cd24d0cd58d05574d133ee4d028c28bf9e546104d02c4aa8f3d1f8dbf2a",
+          "bytes": 122880,
+          "duration_s": 3.84,
+          "signal_start_s": 0.020875,
+          "signal_end_s": 3.7039375,
+          "peak": 21570,
+          "rms": 2844.4075705998157
+        }
+      ],
+      "targets": [
+        "hi-IN",
+        "ta-IN",
+        "te-IN"
+      ]
+    },
+    {
+      "id": "r3-p01-alternating",
+      "repetition": 3,
+      "pair": 1,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "ta_7",
+          "category": "ta",
+          "index": 7,
+          "reference": "அவள் எங்கள் வீட்டிற்கு அருகில் ஒரு மருத்துவமனையில் வேலை செய்கிறாள்.",
+          "sha256": "ea4a13ed9531592fb3c210a881aa38783e8f27e79483a44619795c23bc4488aa",
+          "bytes": 144726,
+          "duration_s": 4.5226875,
+          "signal_start_s": 0.035375,
+          "signal_end_s": 4.39775,
+          "peak": 21696,
+          "rms": 3279.2200138219787
+        },
+        {
+          "id": "hi_18",
+          "category": "hi",
+          "index": 18,
+          "reference": "उसका प्रेजेंटेशन बहुत साफ और उपयोगी था।",
+          "sha256": "3c28564be8b04e5de4925476cfcd8a00356504831548f798a65c778d5bcc2f4a",
+          "bytes": 120150,
+          "duration_s": 3.7546875,
+          "signal_start_s": 0.0261875,
+          "signal_end_s": 3.6221875,
+          "peak": 27012,
+          "rms": 3025.7748635724784
+        }
+      ],
+      "targets": [
+        "en-IN",
+        "hi-IN",
+        "ta-IN"
+      ]
+    },
+    {
+      "id": "r3-p01-overlap",
+      "repetition": 3,
+      "pair": 1,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "ta_7",
+          "category": "ta",
+          "index": 7,
+          "reference": "அவள் எங்கள் வீட்டிற்கு அருகில் ஒரு மருத்துவமனையில் வேலை செய்கிறாள்.",
+          "sha256": "ea4a13ed9531592fb3c210a881aa38783e8f27e79483a44619795c23bc4488aa",
+          "bytes": 144726,
+          "duration_s": 4.5226875,
+          "signal_start_s": 0.035375,
+          "signal_end_s": 4.39775,
+          "peak": 21696,
+          "rms": 3279.2200138219787
+        },
+        {
+          "id": "hi_18",
+          "category": "hi",
+          "index": 18,
+          "reference": "उसका प्रेजेंटेशन बहुत साफ और उपयोगी था।",
+          "sha256": "3c28564be8b04e5de4925476cfcd8a00356504831548f798a65c778d5bcc2f4a",
+          "bytes": 120150,
+          "duration_s": 3.7546875,
+          "signal_start_s": 0.0261875,
+          "signal_end_s": 3.6221875,
+          "peak": 27012,
+          "rms": 3025.7748635724784
+        }
+      ],
+      "targets": [
+        "en-IN",
+        "hi-IN",
+        "ta-IN"
+      ]
+    },
+    {
+      "id": "r3-p11-alternating",
+      "repetition": 3,
+      "pair": 11,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "hi_12",
+          "category": "hi",
+          "index": 12,
+          "reference": "उसने खाने से पहले अपना होमवर्क पूरा किया।",
+          "sha256": "84b8c314e4250f602ff4276a9adde5d5456242639a0c660f8f87ff11b6cd7dc1",
+          "bytes": 117418,
+          "duration_s": 3.6693125,
+          "signal_start_s": 0.0280625,
+          "signal_end_s": 3.5149375,
+          "peak": 18821,
+          "rms": 2921.0187487733187
+        },
+        {
+          "id": "mix_4",
+          "category": "mix",
+          "index": 4,
+          "reference": "இந்த weekend நாங்க ஒரு trip plan பண்றோம்.",
+          "sha256": "ef5e80cd14080aa4b85eeec0893d3f52bd720d189f838b3b1ebed2c00d9cd25b",
+          "bytes": 106496,
+          "duration_s": 3.328,
+          "signal_start_s": 0.178875,
+          "signal_end_s": 3.00775,
+          "peak": 26624,
+          "rms": 2941.77725375978
+        }
+      ],
+      "targets": [
+        "ta-IN",
+        "te-IN",
+        "en-IN"
+      ]
+    },
+    {
+      "id": "r3-p11-overlap",
+      "repetition": 3,
+      "pair": 11,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "hi_12",
+          "category": "hi",
+          "index": 12,
+          "reference": "उसने खाने से पहले अपना होमवर्क पूरा किया।",
+          "sha256": "84b8c314e4250f602ff4276a9adde5d5456242639a0c660f8f87ff11b6cd7dc1",
+          "bytes": 117418,
+          "duration_s": 3.6693125,
+          "signal_start_s": 0.0280625,
+          "signal_end_s": 3.5149375,
+          "peak": 18821,
+          "rms": 2921.0187487733187
+        },
+        {
+          "id": "mix_4",
+          "category": "mix",
+          "index": 4,
+          "reference": "இந்த weekend நாங்க ஒரு trip plan பண்றோம்.",
+          "sha256": "ef5e80cd14080aa4b85eeec0893d3f52bd720d189f838b3b1ebed2c00d9cd25b",
+          "bytes": 106496,
+          "duration_s": 3.328,
+          "signal_start_s": 0.178875,
+          "signal_end_s": 3.00775,
+          "peak": 26624,
+          "rms": 2941.77725375978
+        }
+      ],
+      "targets": [
+        "ta-IN",
+        "te-IN",
+        "en-IN"
+      ]
+    },
+    {
+      "id": "r3-p10-overlap",
+      "repetition": 3,
+      "pair": 10,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "en_1",
+          "category": "en",
+          "index": 1,
+          "reference": "I went to the market this morning to buy vegetables.",
+          "sha256": "1b5092af19b1ef91c90f547362be4f3f1ef481f34bd91584dea00f3985c31d6d",
+          "bytes": 111958,
+          "duration_s": 3.4986875,
+          "signal_start_s": 0.033875,
+          "signal_end_s": 3.3286875,
+          "peak": 21982,
+          "rms": 2802.488084349976
+        },
+        {
+          "id": "te_3",
+          "category": "te",
+          "index": 3,
+          "reference": "మీరు రేపటిలోగా నివేదిక పంపగలరా?",
+          "sha256": "dc33b8701808208b21ab3418200066a53340c243fb84e7284b049e0468bc6285",
+          "bytes": 117418,
+          "duration_s": 3.6693125,
+          "signal_start_s": 0.029875,
+          "signal_end_s": 3.498875,
+          "peak": 20027,
+          "rms": 3115.62309705793
+        }
+      ],
+      "targets": [
+        "hi-IN",
+        "ta-IN",
+        "te-IN"
+      ]
+    },
+    {
+      "id": "r3-p10-alternating",
+      "repetition": 3,
+      "pair": 10,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "en_1",
+          "category": "en",
+          "index": 1,
+          "reference": "I went to the market this morning to buy vegetables.",
+          "sha256": "1b5092af19b1ef91c90f547362be4f3f1ef481f34bd91584dea00f3985c31d6d",
+          "bytes": 111958,
+          "duration_s": 3.4986875,
+          "signal_start_s": 0.033875,
+          "signal_end_s": 3.3286875,
+          "peak": 21982,
+          "rms": 2802.488084349976
+        },
+        {
+          "id": "te_3",
+          "category": "te",
+          "index": 3,
+          "reference": "మీరు రేపటిలోగా నివేదిక పంపగలరా?",
+          "sha256": "dc33b8701808208b21ab3418200066a53340c243fb84e7284b049e0468bc6285",
+          "bytes": 117418,
+          "duration_s": 3.6693125,
+          "signal_start_s": 0.029875,
+          "signal_end_s": 3.498875,
+          "peak": 20027,
+          "rms": 3115.62309705793
+        }
+      ],
+      "targets": [
+        "hi-IN",
+        "ta-IN",
+        "te-IN"
+      ]
+    },
+    {
+      "id": "r3-p08-overlap",
+      "repetition": 3,
+      "pair": 8,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "hi_1",
+          "category": "hi",
+          "index": 1,
+          "reference": "मैं आज सुबह सब्जियां खरीदने बाजार गया था।",
+          "sha256": "2252d7cdd3c1e8324f259fb4685b2b339aaa7b9e1f17427fc9a9164000d86e13",
+          "bytes": 128342,
+          "duration_s": 4.0106875,
+          "signal_start_s": 0.0443125,
+          "signal_end_s": 3.8786875,
+          "peak": 27344,
+          "rms": 3441.043065674839
+        },
+        {
+          "id": "en_17",
+          "category": "en",
+          "index": 17,
+          "reference": "I am planning a trip to the mountains.",
+          "sha256": "79c6b88eede1adce09aa35833792f6bc285c4250536c9ae2a9f9589c6ae214fd",
+          "bytes": 84650,
+          "duration_s": 2.6453125,
+          "signal_start_s": 0.02775,
+          "signal_end_s": 2.5311875,
+          "peak": 17811,
+          "rms": 2872.240402044241
+        }
+      ],
+      "targets": [
+        "te-IN",
+        "en-IN",
+        "hi-IN"
+      ]
+    },
+    {
+      "id": "r3-p08-alternating",
+      "repetition": 3,
+      "pair": 8,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "hi_1",
+          "category": "hi",
+          "index": 1,
+          "reference": "मैं आज सुबह सब्जियां खरीदने बाजार गया था।",
+          "sha256": "2252d7cdd3c1e8324f259fb4685b2b339aaa7b9e1f17427fc9a9164000d86e13",
+          "bytes": 128342,
+          "duration_s": 4.0106875,
+          "signal_start_s": 0.0443125,
+          "signal_end_s": 3.8786875,
+          "peak": 27344,
+          "rms": 3441.043065674839
+        },
+        {
+          "id": "en_17",
+          "category": "en",
+          "index": 17,
+          "reference": "I am planning a trip to the mountains.",
+          "sha256": "79c6b88eede1adce09aa35833792f6bc285c4250536c9ae2a9f9589c6ae214fd",
+          "bytes": 84650,
+          "duration_s": 2.6453125,
+          "signal_start_s": 0.02775,
+          "signal_end_s": 2.5311875,
+          "peak": 17811,
+          "rms": 2872.240402044241
+        }
+      ],
+      "targets": [
+        "te-IN",
+        "en-IN",
+        "hi-IN"
+      ]
+    },
+    {
+      "id": "r3-p05-alternating",
+      "repetition": 3,
+      "pair": 5,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "hi_2",
+          "category": "hi",
+          "index": 2,
+          "reference": "इस हफ्ते मौसम बहुत अच्छा है।",
+          "sha256": "eae77f1dbc101820bc0186e02eb5a937d4c5fc2e14ec7fe278cfb785156838ec",
+          "bytes": 90112,
+          "duration_s": 2.816,
+          "signal_start_s": 0.03725,
+          "signal_end_s": 2.6424375,
+          "peak": 21383,
+          "rms": 2579.083905079439
+        },
+        {
+          "id": "mix_1",
+          "category": "mix",
+          "index": 1,
+          "reference": "அந்த meeting நாளைக்கு morning ku postpone ஆகிடுச்சு.",
+          "sha256": "ad2622c5b64e002b622fae5cf9057e0c4e0e390093bef48f8c0602a0b1a81b00",
+          "bytes": 133802,
+          "duration_s": 4.1813125,
+          "signal_start_s": 0.2978125,
+          "signal_end_s": 3.9126875,
+          "peak": 22561,
+          "rms": 3800.8370294577735
+        }
+      ],
+      "targets": [
+        "en-IN",
+        "hi-IN",
+        "ta-IN"
+      ]
+    },
+    {
+      "id": "r3-p05-overlap",
+      "repetition": 3,
+      "pair": 5,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "hi_2",
+          "category": "hi",
+          "index": 2,
+          "reference": "इस हफ्ते मौसम बहुत अच्छा है।",
+          "sha256": "eae77f1dbc101820bc0186e02eb5a937d4c5fc2e14ec7fe278cfb785156838ec",
+          "bytes": 90112,
+          "duration_s": 2.816,
+          "signal_start_s": 0.03725,
+          "signal_end_s": 2.6424375,
+          "peak": 21383,
+          "rms": 2579.083905079439
+        },
+        {
+          "id": "mix_1",
+          "category": "mix",
+          "index": 1,
+          "reference": "அந்த meeting நாளைக்கு morning ku postpone ஆகிடுச்சு.",
+          "sha256": "ad2622c5b64e002b622fae5cf9057e0c4e0e390093bef48f8c0602a0b1a81b00",
+          "bytes": 133802,
+          "duration_s": 4.1813125,
+          "signal_start_s": 0.2978125,
+          "signal_end_s": 3.9126875,
+          "peak": 22561,
+          "rms": 3800.8370294577735
+        }
+      ],
+      "targets": [
+        "en-IN",
+        "hi-IN",
+        "ta-IN"
+      ]
+    },
+    {
+      "id": "r3-p15-alternating",
+      "repetition": 3,
+      "pair": 15,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "te_17",
+          "category": "te",
+          "index": 17,
+          "reference": "నేను కొండలకు ఒక ప్రయాణం ప్లాన్ చేస్తున్నాను.",
+          "sha256": "398869378b7b105a85f73fabb1b4942a57679b9e9d836334734b3935a89d8e3e",
+          "bytes": 117418,
+          "duration_s": 3.6693125,
+          "signal_start_s": 0.0374375,
+          "signal_end_s": 3.5678125,
+          "peak": 18176,
+          "rms": 2998.9585956745445
+        },
+        {
+          "id": "te_13",
+          "category": "te",
+          "index": 13,
+          "reference": "సమావేశం మూడు గంటలకు మార్చబడింది.",
+          "sha256": "1e933ae3eb358c376e9c8652d13062d412be1687ca6cf46d809c2748e621ba1d",
+          "bytes": 106496,
+          "duration_s": 3.328,
+          "signal_start_s": 0.0081875,
+          "signal_end_s": 3.1928125,
+          "peak": 19076,
+          "rms": 3423.06100928994
+        }
+      ],
+      "targets": [
+        "ta-IN",
+        "te-IN",
+        "en-IN"
+      ]
+    },
+    {
+      "id": "r3-p15-overlap",
+      "repetition": 3,
+      "pair": 15,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "te_17",
+          "category": "te",
+          "index": 17,
+          "reference": "నేను కొండలకు ఒక ప్రయాణం ప్లాన్ చేస్తున్నాను.",
+          "sha256": "398869378b7b105a85f73fabb1b4942a57679b9e9d836334734b3935a89d8e3e",
+          "bytes": 117418,
+          "duration_s": 3.6693125,
+          "signal_start_s": 0.0374375,
+          "signal_end_s": 3.5678125,
+          "peak": 18176,
+          "rms": 2998.9585956745445
+        },
+        {
+          "id": "te_13",
+          "category": "te",
+          "index": 13,
+          "reference": "సమావేశం మూడు గంటలకు మార్చబడింది.",
+          "sha256": "1e933ae3eb358c376e9c8652d13062d412be1687ca6cf46d809c2748e621ba1d",
+          "bytes": 106496,
+          "duration_s": 3.328,
+          "signal_start_s": 0.0081875,
+          "signal_end_s": 3.1928125,
+          "peak": 19076,
+          "rms": 3423.06100928994
+        }
+      ],
+      "targets": [
+        "ta-IN",
+        "te-IN",
+        "en-IN"
+      ]
+    },
+    {
+      "id": "r3-p04-overlap",
+      "repetition": 3,
+      "pair": 4,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "mix_9",
+          "category": "mix",
+          "index": 9,
+          "reference": "என் laptop screen crack ஆயிடுச்சு, repair பண்ணனும்.",
+          "sha256": "635c5fc9eb89f3fe9e2b41edd1c3fc811bf5477ffc4390c672f2fa8a1422591d",
+          "bytes": 150186,
+          "duration_s": 4.6933125,
+          "signal_start_s": 0.1904375,
+          "signal_end_s": 4.232375,
+          "peak": 30344,
+          "rms": 3845.3833711725374
+        },
+        {
+          "id": "te_1",
+          "category": "te",
+          "index": 1,
+          "reference": "నేను ఈరోజు ఉదయం కూరగాయలు కొనడానికి మార్కెట్‌కు వెళ్ళాను.",
+          "sha256": "292cdf009249b1f42b9baca61f3f8a8e57c229f14d5e3decd5a89167aea5dc21",
+          "bytes": 150186,
+          "duration_s": 4.6933125,
+          "signal_start_s": 0.0455625,
+          "signal_end_s": 4.5435625,
+          "peak": 18452,
+          "rms": 3193.941485592485
+        }
+      ],
+      "targets": [
+        "te-IN",
+        "en-IN",
+        "hi-IN"
+      ]
+    },
+    {
+      "id": "r3-p04-alternating",
+      "repetition": 3,
+      "pair": 4,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "mix_9",
+          "category": "mix",
+          "index": 9,
+          "reference": "என் laptop screen crack ஆயிடுச்சு, repair பண்ணனும்.",
+          "sha256": "635c5fc9eb89f3fe9e2b41edd1c3fc811bf5477ffc4390c672f2fa8a1422591d",
+          "bytes": 150186,
+          "duration_s": 4.6933125,
+          "signal_start_s": 0.1904375,
+          "signal_end_s": 4.232375,
+          "peak": 30344,
+          "rms": 3845.3833711725374
+        },
+        {
+          "id": "te_1",
+          "category": "te",
+          "index": 1,
+          "reference": "నేను ఈరోజు ఉదయం కూరగాయలు కొనడానికి మార్కెట్‌కు వెళ్ళాను.",
+          "sha256": "292cdf009249b1f42b9baca61f3f8a8e57c229f14d5e3decd5a89167aea5dc21",
+          "bytes": 150186,
+          "duration_s": 4.6933125,
+          "signal_start_s": 0.0455625,
+          "signal_end_s": 4.5435625,
+          "peak": 18452,
+          "rms": 3193.941485592485
+        }
+      ],
+      "targets": [
+        "te-IN",
+        "en-IN",
+        "hi-IN"
+      ]
+    },
+    {
+      "id": "r3-p03-alternating",
+      "repetition": 3,
+      "pair": 3,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "mix_7",
+          "category": "mix",
+          "index": 7,
+          "reference": "அந்த restaurant food ரொம்ப tasty ஆ இருந்துச்சு.",
+          "sha256": "f7c64760fe29c497d7da8aefb3c791679fce490e6717198e1cfe2f22ea3742a1",
+          "bytes": 111958,
+          "duration_s": 3.4986875,
+          "signal_start_s": 0.23975,
+          "signal_end_s": 3.158,
+          "peak": 18801,
+          "rms": 2778.3238237503856
+        },
+        {
+          "id": "ta_17",
+          "category": "ta",
+          "index": 17,
+          "reference": "நான் மலைகளுக்கு ஒரு பயணத்தை திட்டமிடுகிறேன்.",
+          "sha256": "6a3ece1bc8cf82504e5e16a5d3198a01677b278f959f0ece67c818af19caa83b",
+          "bytes": 114688,
+          "duration_s": 3.584,
+          "signal_start_s": 0.0400625,
+          "signal_end_s": 3.4251875,
+          "peak": 21013,
+          "rms": 2951.775979663245
+        }
+      ],
+      "targets": [
+        "ta-IN",
+        "te-IN",
+        "en-IN"
+      ]
+    },
+    {
+      "id": "r3-p03-overlap",
+      "repetition": 3,
+      "pair": 3,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "mix_7",
+          "category": "mix",
+          "index": 7,
+          "reference": "அந்த restaurant food ரொம்ப tasty ஆ இருந்துச்சு.",
+          "sha256": "f7c64760fe29c497d7da8aefb3c791679fce490e6717198e1cfe2f22ea3742a1",
+          "bytes": 111958,
+          "duration_s": 3.4986875,
+          "signal_start_s": 0.23975,
+          "signal_end_s": 3.158,
+          "peak": 18801,
+          "rms": 2778.3238237503856
+        },
+        {
+          "id": "ta_17",
+          "category": "ta",
+          "index": 17,
+          "reference": "நான் மலைகளுக்கு ஒரு பயணத்தை திட்டமிடுகிறேன்.",
+          "sha256": "6a3ece1bc8cf82504e5e16a5d3198a01677b278f959f0ece67c818af19caa83b",
+          "bytes": 114688,
+          "duration_s": 3.584,
+          "signal_start_s": 0.0400625,
+          "signal_end_s": 3.4251875,
+          "peak": 21013,
+          "rms": 2951.775979663245
+        }
+      ],
+      "targets": [
+        "ta-IN",
+        "te-IN",
+        "en-IN"
+      ]
+    },
+    {
+      "id": "r3-p14-overlap",
+      "repetition": 3,
+      "pair": 14,
+      "condition": "overlap",
+      "inputs": [
+        {
+          "id": "en_8",
+          "category": "en",
+          "index": 8,
+          "reference": "I need to buy a new phone next month.",
+          "sha256": "e9db310b7e93a0beb877377e40c9887a941c656f64342235616e90fb6e44236d",
+          "bytes": 84650,
+          "duration_s": 2.6453125,
+          "signal_start_s": 0.034375,
+          "signal_end_s": 2.4953125,
+          "peak": 18619,
+          "rms": 3477.2250312353917
+        },
+        {
+          "id": "en_13",
+          "category": "en",
+          "index": 13,
+          "reference": "The meeting has been moved to three o'clock.",
+          "sha256": "bcee2ee3a183b471d0d783fa03da3ba6875c8820a2117c171e0eaba051b4a159",
+          "bytes": 92842,
+          "duration_s": 2.9013125,
+          "signal_start_s": 0.024,
+          "signal_end_s": 2.604875,
+          "peak": 24380,
+          "rms": 3123.2724963279607
+        }
+      ],
+      "targets": [
+        "hi-IN",
+        "ta-IN",
+        "te-IN"
+      ]
+    },
+    {
+      "id": "r3-p14-alternating",
+      "repetition": 3,
+      "pair": 14,
+      "condition": "alternating",
+      "inputs": [
+        {
+          "id": "en_8",
+          "category": "en",
+          "index": 8,
+          "reference": "I need to buy a new phone next month.",
+          "sha256": "e9db310b7e93a0beb877377e40c9887a941c656f64342235616e90fb6e44236d",
+          "bytes": 84650,
+          "duration_s": 2.6453125,
+          "signal_start_s": 0.034375,
+          "signal_end_s": 2.4953125,
+          "peak": 18619,
+          "rms": 3477.2250312353917
+        },
+        {
+          "id": "en_13",
+          "category": "en",
+          "index": 13,
+          "reference": "The meeting has been moved to three o'clock.",
+          "sha256": "bcee2ee3a183b471d0d783fa03da3ba6875c8820a2117c171e0eaba051b4a159",
+          "bytes": 92842,
+          "duration_s": 2.9013125,
+          "signal_start_s": 0.024,
+          "signal_end_s": 2.604875,
+          "peak": 24380,
+          "rms": 3123.2724963279607
+        }
+      ],
+      "targets": [
+        "hi-IN",
+        "ta-IN",
+        "te-IN"
+      ]
+    }
+  ],
+  "expected_input_runs": 180,
+  "expected_stable_listener_input_results": 540
+}

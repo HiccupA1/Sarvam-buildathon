@@ -1,0 +1,330 @@
+{"receiver": 0, "at_ms": 12.457, "type": "joined", "party_id": "A", "language": "hi-IN", "resumed": false, "muted": true, "role": "listener"}
+{"receiver": 0, "at_ms": 12.506, "type": "ready"}
+{"receiver": 1, "at_ms": 19.534, "type": "joined", "party_id": "B", "language": "ta-IN", "resumed": false, "muted": true, "role": "listener"}
+{"receiver": 1, "at_ms": 19.586, "type": "peer_joined", "party_id": "A", "language": "hi-IN", "muted": true, "role": "listener"}
+{"receiver": 1, "at_ms": 19.605, "type": "ready"}
+{"receiver": 2, "at_ms": 30.126, "type": "joined", "party_id": "C", "language": "te-IN", "resumed": false, "muted": true, "role": "listener"}
+{"receiver": 2, "at_ms": 30.182, "type": "peer_joined", "party_id": "A", "language": "hi-IN", "muted": true, "role": "listener"}
+{"receiver": 2, "at_ms": 30.203, "type": "peer_joined", "party_id": "B", "language": "ta-IN", "muted": true, "role": "listener"}
+{"receiver": 2, "at_ms": 30.819, "type": "ready"}
+{"receiver": 3, "at_ms": 41.341, "type": "joined", "party_id": "D", "language": "hi-IN", "resumed": false, "muted": false, "role": "speaker"}
+{"receiver": 3, "at_ms": 41.56, "type": "peer_joined", "party_id": "A", "language": "hi-IN", "muted": true, "role": "listener"}
+{"receiver": 3, "at_ms": 41.586, "type": "peer_joined", "party_id": "B", "language": "ta-IN", "muted": true, "role": "listener"}
+{"receiver": 3, "at_ms": 41.603, "type": "peer_joined", "party_id": "C", "language": "te-IN", "muted": true, "role": "listener"}
+{"receiver": 3, "at_ms": 383.252, "type": "ready"}
+{"receiver": 4, "at_ms": 397.508, "type": "joined", "party_id": "E", "language": "hi-IN", "resumed": false, "muted": false, "role": "speaker"}
+{"receiver": 4, "at_ms": 397.545, "type": "peer_joined", "party_id": "A", "language": "hi-IN", "muted": true, "role": "listener"}
+{"receiver": 4, "at_ms": 397.557, "type": "peer_joined", "party_id": "B", "language": "ta-IN", "muted": true, "role": "listener"}
+{"receiver": 4, "at_ms": 397.567, "type": "peer_joined", "party_id": "C", "language": "te-IN", "muted": true, "role": "listener"}
+{"receiver": 4, "at_ms": 397.575, "type": "peer_joined", "party_id": "D", "language": "hi-IN", "muted": false, "role": "speaker"}
+{"receiver": 4, "at_ms": 653.296, "type": "ready"}
+{"receiver": 0, "at_ms": 653.482, "type": "peer_joined", "party_id": "B", "language": "ta-IN", "muted": true, "role": "listener"}
+{"receiver": 0, "at_ms": 653.508, "type": "peer_joined", "party_id": "C", "language": "te-IN", "muted": true, "role": "listener"}
+{"receiver": 0, "at_ms": 653.523, "type": "peer_joined", "party_id": "D", "language": "hi-IN", "muted": false, "role": "speaker"}
+{"receiver": 0, "at_ms": 653.536, "type": "peer_joined", "party_id": "E", "language": "hi-IN", "muted": false, "role": "speaker"}
+{"receiver": 1, "at_ms": 653.56, "type": "peer_joined", "party_id": "C", "language": "te-IN", "muted": true, "role": "listener"}
+{"receiver": 1, "at_ms": 653.575, "type": "peer_joined", "party_id": "D", "language": "hi-IN", "muted": false, "role": "speaker"}
+{"receiver": 1, "at_ms": 653.587, "type": "peer_joined", "party_id": "E", "language": "hi-IN", "muted": false, "role": "speaker"}
+{"receiver": 2, "at_ms": 653.607, "type": "peer_joined", "party_id": "D", "language": "hi-IN", "muted": false, "role": "speaker"}
+{"receiver": 2, "at_ms": 653.619, "type": "peer_joined", "party_id": "E", "language": "hi-IN", "muted": false, "role": "speaker"}
+{"receiver": 3, "at_ms": 653.638, "type": "peer_joined", "party_id": "E", "language": "hi-IN", "muted": false, "role": "speaker"}
+{"receiver": 1, "at_ms": 1123.304, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 0, "at_ms": 1123.445, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 3, "at_ms": 1123.566, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 2, "at_ms": 1123.585, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 4, "at_ms": 1123.649, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 1, "at_ms": 1149.144, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 0, "at_ms": 1149.241, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 3, "at_ms": 1149.266, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 2, "at_ms": 1149.281, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 4, "at_ms": 1149.314, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 4, "at_ms": 1152.396, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 2, "at_ms": 1152.448, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 1, "at_ms": 1152.471, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 0, "at_ms": 1152.488, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 3, "at_ms": 1152.505, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 1, "at_ms": 1515.491, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 0, "at_ms": 1515.542, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 3, "at_ms": 1515.875, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 2, "at_ms": 1515.902, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 4, "at_ms": 1515.919, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 0, "at_ms": 1535.196, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 1, "at_ms": 1535.549, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 2, "at_ms": 1535.57, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 3, "at_ms": 1535.585, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 4, "at_ms": 1535.641, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 4, "at_ms": 1537.462, "type": "transcript", "party": "D", "kind": "partial", "text": "I went"}
+{"receiver": 2, "at_ms": 1537.514, "type": "transcript", "party": "D", "kind": "partial", "text": "I went"}
+{"receiver": 1, "at_ms": 1537.536, "type": "transcript", "party": "D", "kind": "partial", "text": "I went"}
+{"receiver": 0, "at_ms": 1537.553, "type": "transcript", "party": "D", "kind": "partial", "text": "I went"}
+{"receiver": 3, "at_ms": 1537.642, "type": "transcript", "party": "D", "kind": "partial", "text": "I went"}
+{"receiver": 3, "at_ms": 1540.39, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to"}
+{"receiver": 2, "at_ms": 1540.454, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to"}
+{"receiver": 0, "at_ms": 1540.479, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to"}
+{"receiver": 4, "at_ms": 1540.497, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to"}
+{"receiver": 1, "at_ms": 1540.514, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to"}
+{"receiver": 0, "at_ms": 1550.38, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the"}
+{"receiver": 1, "at_ms": 1550.459, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the"}
+{"receiver": 4, "at_ms": 1550.92, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the"}
+{"receiver": 3, "at_ms": 1550.976, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the"}
+{"receiver": 2, "at_ms": 1551.007, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the"}
+{"receiver": 0, "at_ms": 1556.948, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 2, "at_ms": 1558.034, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 1, "at_ms": 1558.098, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 3, "at_ms": 1558.127, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 4, "at_ms": 1558.294, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 0, "at_ms": 1561.044, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the"}
+{"receiver": 2, "at_ms": 1561.565, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the"}
+{"receiver": 4, "at_ms": 1561.629, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the"}
+{"receiver": 1, "at_ms": 1561.672, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the"}
+{"receiver": 3, "at_ms": 1561.854, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the"}
+{"receiver": 0, "at_ms": 1846.641, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 3, "at_ms": 1846.673, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 1, "at_ms": 1846.764, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 4, "at_ms": 1846.778, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 2, "at_ms": 1846.824, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 0, "at_ms": 1848.368, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 1, "at_ms": 1848.493, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 2, "at_ms": 1848.509, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 3, "at_ms": 1848.588, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 4, "at_ms": 1848.602, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 0, "at_ms": 2032.317, "type": "transcript", "party": "D", "kind": "partial", "text": "I went"}
+{"receiver": 1, "at_ms": 2032.349, "type": "transcript", "party": "D", "kind": "partial", "text": "I went"}
+{"receiver": 2, "at_ms": 2032.363, "type": "transcript", "party": "D", "kind": "partial", "text": "I went"}
+{"receiver": 3, "at_ms": 2032.377, "type": "transcript", "party": "D", "kind": "partial", "text": "I went"}
+{"receiver": 4, "at_ms": 2032.389, "type": "transcript", "party": "D", "kind": "partial", "text": "I went"}
+{"receiver": 1, "at_ms": 2036.057, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to"}
+{"receiver": 2, "at_ms": 2036.089, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to"}
+{"receiver": 0, "at_ms": 2036.101, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to"}
+{"receiver": 3, "at_ms": 2036.113, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to"}
+{"receiver": 4, "at_ms": 2036.173, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to"}
+{"receiver": 1, "at_ms": 2039.83, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the"}
+{"receiver": 0, "at_ms": 2039.857, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the"}
+{"receiver": 2, "at_ms": 2039.867, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the"}
+{"receiver": 3, "at_ms": 2039.874, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the"}
+{"receiver": 4, "at_ms": 2039.881, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the"}
+{"receiver": 0, "at_ms": 2044.93, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the"}
+{"receiver": 3, "at_ms": 2044.98, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the"}
+{"receiver": 2, "at_ms": 2044.993, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the"}
+{"receiver": 1, "at_ms": 2045.004, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the"}
+{"receiver": 4, "at_ms": 2045.016, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the"}
+{"receiver": 0, "at_ms": 2332.173, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 1, "at_ms": 2332.361, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 2, "at_ms": 2332.381, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 3, "at_ms": 2332.466, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 4, "at_ms": 2332.481, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 0, "at_ms": 2335.07, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 1, "at_ms": 2335.218, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 2, "at_ms": 2335.235, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 3, "at_ms": 2335.245, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 4, "at_ms": 2336.43, "type": "transcript", "party": "E", "kind": "partial", "text": "N"}
+{"receiver": 0, "at_ms": 2531.531, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market"}
+{"receiver": 1, "at_ms": 2532.03, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market"}
+{"receiver": 2, "at_ms": 2532.177, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market"}
+{"receiver": 3, "at_ms": 2532.196, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market"}
+{"receiver": 4, "at_ms": 2532.254, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market"}
+{"receiver": 0, "at_ms": 2535.161, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this"}
+{"receiver": 1, "at_ms": 2535.199, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this"}
+{"receiver": 2, "at_ms": 2535.275, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this"}
+{"receiver": 3, "at_ms": 2535.333, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this"}
+{"receiver": 4, "at_ms": 2535.348, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this"}
+{"receiver": 3, "at_ms": 2542.796, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this"}
+{"receiver": 0, "at_ms": 2542.83, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this"}
+{"receiver": 1, "at_ms": 2542.844, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this"}
+{"receiver": 2, "at_ms": 2542.945, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this"}
+{"receiver": 4, "at_ms": 2544.264, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this"}
+{"receiver": 0, "at_ms": 2835.624, "type": "transcript", "party": "E", "kind": "partial", "text": "Need"}
+{"receiver": 4, "at_ms": 2835.648, "type": "transcript", "party": "E", "kind": "partial", "text": "Need"}
+{"receiver": 2, "at_ms": 2835.657, "type": "transcript", "party": "E", "kind": "partial", "text": "Need"}
+{"receiver": 3, "at_ms": 2835.664, "type": "transcript", "party": "E", "kind": "partial", "text": "Need"}
+{"receiver": 1, "at_ms": 2835.671, "type": "transcript", "party": "E", "kind": "partial", "text": "Need"}
+{"receiver": 0, "at_ms": 2853.732, "type": "transcript", "party": "E", "kind": "partial", "text": "Need"}
+{"receiver": 1, "at_ms": 2853.79, "type": "transcript", "party": "E", "kind": "partial", "text": "Need"}
+{"receiver": 2, "at_ms": 2855.838, "type": "transcript", "party": "E", "kind": "partial", "text": "Need"}
+{"receiver": 3, "at_ms": 2855.861, "type": "transcript", "party": "E", "kind": "partial", "text": "Need"}
+{"receiver": 4, "at_ms": 2855.87, "type": "transcript", "party": "E", "kind": "partial", "text": "Need"}
+{"receiver": 1, "at_ms": 3060.245, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market"}
+{"receiver": 0, "at_ms": 3060.281, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market"}
+{"receiver": 4, "at_ms": 3060.295, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market"}
+{"receiver": 2, "at_ms": 3060.307, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market"}
+{"receiver": 3, "at_ms": 3060.322, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market"}
+{"receiver": 0, "at_ms": 3062.139, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this"}
+{"receiver": 1, "at_ms": 3062.163, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this"}
+{"receiver": 3, "at_ms": 3062.361, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this"}
+{"receiver": 2, "at_ms": 3062.38, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this"}
+{"receiver": 4, "at_ms": 3062.39, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this"}
+{"receiver": 0, "at_ms": 3105.223, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning"}
+{"receiver": 3, "at_ms": 3105.249, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning"}
+{"receiver": 2, "at_ms": 3105.259, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning"}
+{"receiver": 1, "at_ms": 3105.267, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning"}
+{"receiver": 4, "at_ms": 3105.332, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning"}
+{"receiver": 0, "at_ms": 3106.669, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to"}
+{"receiver": 1, "at_ms": 3106.706, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to"}
+{"receiver": 2, "at_ms": 3106.722, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to"}
+{"receiver": 3, "at_ms": 3114.179, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to"}
+{"receiver": 4, "at_ms": 3114.205, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to"}
+{"receiver": 0, "at_ms": 3114.279, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to"}
+{"receiver": 1, "at_ms": 3114.29, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to"}
+{"receiver": 3, "at_ms": 3114.358, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to"}
+{"receiver": 4, "at_ms": 3114.366, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to"}
+{"receiver": 2, "at_ms": 3114.374, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to"}
+{"receiver": 0, "at_ms": 3355.803, "type": "transcript", "party": "E", "kind": "partial", "text": "Need"}
+{"receiver": 1, "at_ms": 3355.836, "type": "transcript", "party": "E", "kind": "partial", "text": "Need"}
+{"receiver": 2, "at_ms": 3356.957, "type": "transcript", "party": "E", "kind": "partial", "text": "Need"}
+{"receiver": 3, "at_ms": 3357.517, "type": "transcript", "party": "E", "kind": "partial", "text": "Need"}
+{"receiver": 4, "at_ms": 3357.629, "type": "transcript", "party": "E", "kind": "partial", "text": "Need"}
+{"receiver": 0, "at_ms": 3527.715, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning"}
+{"receiver": 1, "at_ms": 3527.74, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning"}
+{"receiver": 2, "at_ms": 3527.75, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning"}
+{"receiver": 3, "at_ms": 3528.798, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning"}
+{"receiver": 4, "at_ms": 3528.819, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning"}
+{"receiver": 1, "at_ms": 3529.851, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to"}
+{"receiver": 0, "at_ms": 3529.872, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to"}
+{"receiver": 2, "at_ms": 3529.912, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to"}
+{"receiver": 3, "at_ms": 3530.138, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to"}
+{"receiver": 4, "at_ms": 3530.158, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to"}
+{"receiver": 4, "at_ms": 3535.771, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to"}
+{"receiver": 1, "at_ms": 3535.794, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to"}
+{"receiver": 0, "at_ms": 3535.807, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to"}
+{"receiver": 2, "at_ms": 3535.818, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to"}
+{"receiver": 3, "at_ms": 3535.873, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to"}
+{"receiver": 0, "at_ms": 3538.73, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy"}
+{"receiver": 1, "at_ms": 3539.684, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy"}
+{"receiver": 2, "at_ms": 3539.702, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy"}
+{"receiver": 3, "at_ms": 3539.711, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy"}
+{"receiver": 4, "at_ms": 3539.747, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy"}
+{"receiver": 0, "at_ms": 3547.073, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy"}
+{"receiver": 1, "at_ms": 3547.098, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy"}
+{"receiver": 2, "at_ms": 3547.107, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy"}
+{"receiver": 4, "at_ms": 3547.115, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy"}
+{"receiver": 3, "at_ms": 3547.123, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy"}
+{"receiver": 0, "at_ms": 3834.276, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 2, "at_ms": 3834.302, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 1, "at_ms": 3834.311, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 4, "at_ms": 3834.319, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 3, "at_ms": 3834.326, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 0, "at_ms": 3838.051, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 1, "at_ms": 3838.076, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 3, "at_ms": 3838.607, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 2, "at_ms": 3838.624, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 4, "at_ms": 3838.633, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 0, "at_ms": 4021.839, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to"}
+{"receiver": 1, "at_ms": 4021.871, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to"}
+{"receiver": 2, "at_ms": 4021.974, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to"}
+{"receiver": 3, "at_ms": 4021.989, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to"}
+{"receiver": 4, "at_ms": 4022.037, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to"}
+{"receiver": 0, "at_ms": 4027.043, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy"}
+{"receiver": 1, "at_ms": 4027.329, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy"}
+{"receiver": 2, "at_ms": 4027.351, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy"}
+{"receiver": 3, "at_ms": 4027.363, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy"}
+{"receiver": 4, "at_ms": 4027.374, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy"}
+{"receiver": 0, "at_ms": 4030.595, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy"}
+{"receiver": 2, "at_ms": 4030.769, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy"}
+{"receiver": 1, "at_ms": 4030.788, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy"}
+{"receiver": 4, "at_ms": 4030.8, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy"}
+{"receiver": 3, "at_ms": 4030.811, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy"}
+{"receiver": 0, "at_ms": 4318.959, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 1, "at_ms": 4319.109, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 2, "at_ms": 4319.125, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 3, "at_ms": 4319.137, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 4, "at_ms": 4319.184, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 0, "at_ms": 4540.499, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy vegetables"}
+{"receiver": 1, "at_ms": 4540.991, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy vegetables"}
+{"receiver": 2, "at_ms": 4541.171, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy vegetables"}
+{"receiver": 3, "at_ms": 4541.198, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy vegetables"}
+{"receiver": 4, "at_ms": 4541.215, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy vegetables"}
+{"receiver": 0, "at_ms": 4543.296, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy vegetables."}
+{"receiver": 1, "at_ms": 4543.501, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy vegetables."}
+{"receiver": 4, "at_ms": 4543.522, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy vegetables."}
+{"receiver": 2, "at_ms": 4543.536, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy vegetables."}
+{"receiver": 3, "at_ms": 4543.586, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy vegetables."}
+{"receiver": 0, "at_ms": 4546.293, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy vegetables."}
+{"receiver": 1, "at_ms": 4546.496, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy vegetables."}
+{"receiver": 2, "at_ms": 4546.516, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy vegetables."}
+{"receiver": 3, "at_ms": 4546.528, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy vegetables."}
+{"receiver": 4, "at_ms": 4546.584, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy vegetables."}
+{"receiver": 0, "at_ms": 4591.698, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 2, "at_ms": 4591.731, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 3, "at_ms": 4591.893, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 4, "at_ms": 4591.907, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 1, "at_ms": 4591.918, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 0, "at_ms": 4604.386, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy vegetables."}
+{"receiver": 1, "at_ms": 4604.624, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy vegetables."}
+{"receiver": 2, "at_ms": 4604.652, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy vegetables."}
+{"receiver": 3, "at_ms": 4604.759, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy vegetables."}
+{"receiver": 4, "at_ms": 4604.845, "type": "transcript", "party": "D", "kind": "partial", "text": "I went to the market this morning to buy vegetables."}
+{"receiver": 0, "at_ms": 4687.314, "type": "transcript", "party": "D", "kind": "final", "text": "I went to the market this morning to buy vegetables.", "seq": 1}
+{"receiver": 1, "at_ms": 4687.453, "type": "transcript", "party": "D", "kind": "final", "text": "I went to the market this morning to buy vegetables.", "seq": 1}
+{"receiver": 3, "at_ms": 4687.54, "type": "transcript", "party": "D", "kind": "final", "text": "I went to the market this morning to buy vegetables.", "seq": 1}
+{"receiver": 2, "at_ms": 4687.555, "type": "transcript", "party": "D", "kind": "final", "text": "I went to the market this morning to buy vegetables.", "seq": 1}
+{"receiver": 4, "at_ms": 4687.86, "type": "transcript", "party": "D", "kind": "final", "text": "I went to the market this morning to buy vegetables.", "seq": 1}
+{"receiver": 0, "at_ms": 4949.04, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 2, "at_ms": 4949.883, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 1, "at_ms": 4949.917, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 3, "at_ms": 4949.931, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 4, "at_ms": 4949.943, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 0, "at_ms": 4952.671, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 2, "at_ms": 4952.694, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 1, "at_ms": 4952.703, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 3, "at_ms": 4952.759, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 4, "at_ms": 4952.77, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 0, "at_ms": 5119.466, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 1, "at_ms": 5119.489, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 3, "at_ms": 5119.498, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 4, "at_ms": 5119.505, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 2, "at_ms": 5119.512, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 0, "at_ms": 5136.034, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 1, "at_ms": 5136.06, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 2, "at_ms": 5136.07, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 4, "at_ms": 5136.079, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 3, "at_ms": 5136.086, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you"}
+{"receiver": 0, "at_ms": 5138.855, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you practice"}
+{"receiver": 1, "at_ms": 5138.878, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you practice"}
+{"receiver": 2, "at_ms": 5138.887, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you practice"}
+{"receiver": 3, "at_ms": 5138.942, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you practice"}
+{"receiver": 4, "at_ms": 5138.95, "type": "transcript", "party": "E", "kind": "partial", "text": "Need you practice"}
+{"receiver": 0, "at_ms": 5250.724, "type": "transcript", "party": "E", "kind": "final", "text": "మీరు రేపటి యోగ నివేదిక పంపగలరా?", "seq": 1}
+{"receiver": 3, "at_ms": 5250.921, "type": "transcript", "party": "E", "kind": "final", "text": "మీరు రేపటి యోగ నివేదిక పంపగలరా?", "seq": 1}
+{"receiver": 1, "at_ms": 5251.002, "type": "transcript", "party": "E", "kind": "final", "text": "మీరు రేపటి యోగ నివేదిక పంపగలరా?", "seq": 1}
+{"receiver": 2, "at_ms": 5251.046, "type": "transcript", "party": "E", "kind": "final", "text": "మీరు రేపటి యోగ నివేదిక పంపగలరా?", "seq": 1}
+{"receiver": 4, "at_ms": 5251.072, "type": "transcript", "party": "E", "kind": "final", "text": "మీరు రేపటి యోగ నివేదిక పంపగలరా?", "seq": 1}
+{"receiver": 1, "at_ms": 6119.353, "type": "translated", "speaker": "D", "language": "ta-IN", "text": "நான் இன்று காலை காய்கறிகள் வாங்குவதற்காகச் சந்தைக்குச் சென்றேன்.", "seq": 1}
+{"receiver": 4, "at_ms": 6218.56, "type": "translated", "speaker": "D", "language": "hi-IN", "text": "मैं आज सुबह सब्ज़ियाँ खरीदने के लिए बाज़ार गई थी।", "seq": 1}
+{"receiver": 0, "at_ms": 6218.617, "type": "translated", "speaker": "D", "language": "hi-IN", "text": "मैं आज सुबह सब्ज़ियाँ खरीदने के लिए बाज़ार गई थी।", "seq": 1}
+{"receiver": 2, "at_ms": 6302.389, "type": "translated", "speaker": "D", "language": "te-IN", "text": "నేను ఈ ఉదయం కూరగాయలు కొనడానికి మార్కెట్‌కి వెళ్ళాను.", "seq": 1}
+{"receiver": 2, "at_ms": 7282.877, "type": "translated", "speaker": "E", "language": "te-IN", "text": "రేపు యోగా నివేదిక పంపగలరా?", "seq": 1}
+{"receiver": 1, "at_ms": 7373.822, "type": "translated", "speaker": "E", "language": "ta-IN", "text": "நாளைக்கான யோகா அறிக்கையை அனுப்ப முடியுமா?", "seq": 1}
+{"receiver": 0, "at_ms": 7477.251, "type": "translated", "speaker": "E", "language": "hi-IN", "text": "क्या आप कृपया मुझे कल का योग रिपोर्ट भेज सकते हैं?", "seq": 1}
+{"receiver": 3, "at_ms": 7477.344, "type": "translated", "speaker": "E", "language": "hi-IN", "text": "क्या आप कृपया मुझे कल का योग रिपोर्ट भेज सकते हैं?", "seq": 1}
+{"receiver": 4, "at_ms": 7558.09, "type": "latency", "speaker": "D", "language": "hi-IN", "seq": 1, "stt_ms": 3564, "queue_ms": 0, "translate_ms": 1530, "tts_ms": 1340, "total_ms": 6434}
+{"receiver": 0, "at_ms": 7558.152, "type": "latency", "speaker": "D", "language": "hi-IN", "seq": 1, "stt_ms": 3564, "queue_ms": 0, "translate_ms": 1530, "tts_ms": 1340, "total_ms": 6434}
+{"receiver": 0, "at_ms": 7583.033, "type": "audio", "speaker": "D", "language": "hi-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757759399.0461, "wav_duration_s": 3.9253125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 125654, "wav_sha256": "84fe4042aa5dc9828f7d85cd1242bb1bdc5a33cb0fc6fe1d70a211c8e40d5417", "wav_valid": true}
+{"receiver": 4, "at_ms": 7594.766, "type": "audio", "speaker": "D", "language": "hi-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757759399.0461, "wav_duration_s": 3.9253125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 125654, "wav_sha256": "84fe4042aa5dc9828f7d85cd1242bb1bdc5a33cb0fc6fe1d70a211c8e40d5417", "wav_valid": true}
+{"receiver": 2, "at_ms": 7832.031, "type": "latency", "speaker": "D", "language": "te-IN", "seq": 1, "stt_ms": 3564, "queue_ms": 0, "translate_ms": 1467, "tts_ms": 1530, "total_ms": 6561}
+{"receiver": 2, "at_ms": 7865.396, "type": "audio", "speaker": "D", "language": "te-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757759399.0461, "wav_duration_s": 4.864, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 155692, "wav_sha256": "5df3a1a238d55449f974f3a539d4e3758e9ebb1e4c3efe62d2ddb4a6af3f387e", "wav_valid": true}
+{"receiver": 1, "at_ms": 8018.368, "type": "latency", "speaker": "D", "language": "ta-IN", "seq": 1, "stt_ms": 3564, "queue_ms": 0, "translate_ms": 1335, "tts_ms": 1900, "total_ms": 6799}
+{"receiver": 1, "at_ms": 8052.84, "type": "audio", "speaker": "D", "language": "ta-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757759399.0461, "wav_duration_s": 5.8026875, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 185730, "wav_sha256": "bfd0d44e89821f2624716378a6bf1a94a0fcb9be48d419eb5a35239e350c07fb", "wav_valid": true}
+{"receiver": 2, "at_ms": 8417.957, "type": "latency", "speaker": "E", "language": "te-IN", "seq": 1, "stt_ms": 3736, "queue_ms": 0, "translate_ms": 1863, "tts_ms": 1135, "total_ms": 6734}
+{"receiver": 2, "at_ms": 8442.332, "type": "audio", "speaker": "E", "language": "te-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757759709.321, "wav_duration_s": 2.7306875, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 87426, "wav_sha256": "24fbe22d1d01a11e88f4fcd4bcd2c7e3cf85d25f1673574e86e543d7b9e29f3e", "wav_valid": true}
+{"receiver": 1, "at_ms": 8662.541, "type": "latency", "speaker": "E", "language": "ta-IN", "seq": 1, "stt_ms": 3736, "queue_ms": 0, "translate_ms": 2037, "tts_ms": 1288, "total_ms": 7061}
+{"receiver": 1, "at_ms": 8687.079, "type": "audio", "speaker": "E", "language": "ta-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757759709.321, "wav_duration_s": 3.7546875, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 120194, "wav_sha256": "49d17733b6ea6b550c0e4a9c891b7d1d2f179b77f45aaf22fffdef94a0ef2963", "wav_valid": true}
+{"receiver": 0, "at_ms": 8694.643, "type": "latency", "speaker": "E", "language": "hi-IN", "seq": 1, "stt_ms": 3736, "queue_ms": 0, "translate_ms": 2225, "tts_ms": 1218, "total_ms": 7179}
+{"receiver": 3, "at_ms": 8694.8, "type": "latency", "speaker": "E", "language": "hi-IN", "seq": 1, "stt_ms": 3736, "queue_ms": 0, "translate_ms": 2225, "tts_ms": 1218, "total_ms": 7179}
+{"receiver": 0, "at_ms": 8719.951, "type": "audio", "speaker": "E", "language": "hi-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757759709.321, "wav_duration_s": 3.6693125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 117462, "wav_sha256": "c4dccf6f781d886ef5b0ad52ebf4dd5343acfac2e1a948dc0e5a8c0ec0fa388e", "wav_valid": true}
+{"receiver": 3, "at_ms": 8728.913, "type": "audio", "speaker": "E", "language": "hi-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757759709.321, "wav_duration_s": 3.6693125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 117462, "wav_sha256": "c4dccf6f781d886ef5b0ad52ebf4dd5343acfac2e1a948dc0e5a8c0ec0fa388e", "wav_valid": true}
+{"receiver": 0, "at_ms": 10883.043, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 2, "at_ms": 10884.423, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 2, "at_ms": 10884.483, "type": "peer_left", "party_id": "E"}
+{"receiver": 3, "at_ms": 10884.645, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 3, "at_ms": 10884.66, "type": "peer_left", "party_id": "E"}
+{"receiver": 1, "at_ms": 10885.059, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 1, "at_ms": 10885.1, "type": "peer_left", "party_id": "E"}
+{"receiver": 4, "at_ms": 10885.794, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 0, "at_ms": 10886.044, "type": "peer_left", "party_id": "E"}
+{"receiver": 0, "at_ms": 10915.163, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 3, "at_ms": 10915.399, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 1, "at_ms": 10916.179, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 1, "at_ms": 10916.218, "type": "peer_left", "party_id": "D"}
+{"receiver": 2, "at_ms": 10916.951, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 2, "at_ms": 10916.984, "type": "peer_left", "party_id": "D"}
+{"receiver": 0, "at_ms": 10917.132, "type": "peer_left", "party_id": "D"}

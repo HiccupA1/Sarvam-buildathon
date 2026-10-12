@@ -1,0 +1,70 @@
+{
+  "spec": {
+    "id": "r1-p07-alternating",
+    "repetition": 1,
+    "pair": 7,
+    "condition": "alternating",
+    "inputs": [
+      {
+        "id": "ta_18",
+        "category": "ta",
+        "index": 18,
+        "reference": "அவளுடைய விளக்கக்காட்சி மிகவும் தெளிவாகவும் பயனுள்ளதாகவும் இருந்தது.",
+        "sha256": "134c5726fe4b1f69bb3f9d7f41d2c4a16ff713fb7560d97d4a5d551d02e99c7f",
+        "bytes": 185686,
+        "duration_s": 5.8026875,
+        "signal_start_s": 0.03675,
+        "signal_end_s": 5.678,
+        "peak": 30752,
+        "rms": 4209.627379824822
+      },
+      {
+        "id": "en_18",
+        "category": "en",
+        "index": 18,
+        "reference": "Her presentation was very clear and useful.",
+        "sha256": "7b9f253744503ff849b6ff57dc87a5de6cc04f3523ebb410f3167a1512307f02",
+        "bytes": 109226,
+        "duration_s": 3.4133125,
+        "signal_start_s": 0.020875,
+        "signal_end_s": 3.2525,
+        "peak": 28406,
+        "rms": 2742.7925875448336
+      }
+    ],
+    "targets": [
+      "ta-IN",
+      "te-IN",
+      "en-IN"
+    ]
+  },
+  "room": "bench-r1-p07-alternating",
+  "parties": {
+    "0": "A",
+    "1": "B",
+    "2": "C",
+    "3": "D",
+    "4": "E"
+  },
+  "send_start_ms": {
+    "3": 500.18719999934547,
+    "4": 7305.2109999989625
+  },
+  "frames_sent": {
+    "3": {
+      "bytes": 368000,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    },
+    "4": {
+      "bytes": 150400,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    }
+  },
+  "duration_s": 17.096,
+  "error": null,
+  "events_file": "events\\r1-p07-alternating.jsonl",
+  "event_count": 475,
+  "events_sha256": "cf5cae2138f2976f5d24d74f5f824ebbaee1b54a78e1a7cbf0b57cf55862054e"
+}

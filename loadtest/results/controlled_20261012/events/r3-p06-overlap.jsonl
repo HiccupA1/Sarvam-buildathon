@@ -1,0 +1,525 @@
+{"receiver": 0, "at_ms": 10.398, "type": "joined", "party_id": "A", "language": "hi-IN", "resumed": false, "muted": true, "role": "listener"}
+{"receiver": 0, "at_ms": 10.619, "type": "ready"}
+{"receiver": 1, "at_ms": 20.037, "type": "joined", "party_id": "B", "language": "ta-IN", "resumed": false, "muted": true, "role": "listener"}
+{"receiver": 1, "at_ms": 20.156, "type": "peer_joined", "party_id": "A", "language": "hi-IN", "muted": true, "role": "listener"}
+{"receiver": 1, "at_ms": 20.313, "type": "ready"}
+{"receiver": 2, "at_ms": 27.716, "type": "joined", "party_id": "C", "language": "te-IN", "resumed": false, "muted": true, "role": "listener"}
+{"receiver": 2, "at_ms": 28.603, "type": "peer_joined", "party_id": "A", "language": "hi-IN", "muted": true, "role": "listener"}
+{"receiver": 2, "at_ms": 28.696, "type": "peer_joined", "party_id": "B", "language": "ta-IN", "muted": true, "role": "listener"}
+{"receiver": 2, "at_ms": 28.778, "type": "ready"}
+{"receiver": 3, "at_ms": 36.968, "type": "joined", "party_id": "D", "language": "hi-IN", "resumed": false, "muted": false, "role": "speaker"}
+{"receiver": 3, "at_ms": 37.024, "type": "peer_joined", "party_id": "A", "language": "hi-IN", "muted": true, "role": "listener"}
+{"receiver": 3, "at_ms": 37.046, "type": "peer_joined", "party_id": "B", "language": "ta-IN", "muted": true, "role": "listener"}
+{"receiver": 3, "at_ms": 37.063, "type": "peer_joined", "party_id": "C", "language": "te-IN", "muted": true, "role": "listener"}
+{"receiver": 3, "at_ms": 226.335, "type": "ready"}
+{"receiver": 4, "at_ms": 237.077, "type": "joined", "party_id": "E", "language": "hi-IN", "resumed": false, "muted": false, "role": "speaker"}
+{"receiver": 4, "at_ms": 237.788, "type": "peer_joined", "party_id": "A", "language": "hi-IN", "muted": true, "role": "listener"}
+{"receiver": 4, "at_ms": 237.865, "type": "peer_joined", "party_id": "B", "language": "ta-IN", "muted": true, "role": "listener"}
+{"receiver": 4, "at_ms": 237.902, "type": "peer_joined", "party_id": "C", "language": "te-IN", "muted": true, "role": "listener"}
+{"receiver": 4, "at_ms": 237.934, "type": "peer_joined", "party_id": "D", "language": "hi-IN", "muted": false, "role": "speaker"}
+{"receiver": 4, "at_ms": 434.117, "type": "ready"}
+{"receiver": 0, "at_ms": 434.263, "type": "peer_joined", "party_id": "B", "language": "ta-IN", "muted": true, "role": "listener"}
+{"receiver": 0, "at_ms": 434.278, "type": "peer_joined", "party_id": "C", "language": "te-IN", "muted": true, "role": "listener"}
+{"receiver": 0, "at_ms": 434.285, "type": "peer_joined", "party_id": "D", "language": "hi-IN", "muted": false, "role": "speaker"}
+{"receiver": 0, "at_ms": 434.292, "type": "peer_joined", "party_id": "E", "language": "hi-IN", "muted": false, "role": "speaker"}
+{"receiver": 1, "at_ms": 434.305, "type": "peer_joined", "party_id": "C", "language": "te-IN", "muted": true, "role": "listener"}
+{"receiver": 1, "at_ms": 434.311, "type": "peer_joined", "party_id": "D", "language": "hi-IN", "muted": false, "role": "speaker"}
+{"receiver": 1, "at_ms": 434.317, "type": "peer_joined", "party_id": "E", "language": "hi-IN", "muted": false, "role": "speaker"}
+{"receiver": 2, "at_ms": 434.327, "type": "peer_joined", "party_id": "D", "language": "hi-IN", "muted": false, "role": "speaker"}
+{"receiver": 2, "at_ms": 434.355, "type": "peer_joined", "party_id": "E", "language": "hi-IN", "muted": false, "role": "speaker"}
+{"receiver": 3, "at_ms": 434.411, "type": "peer_joined", "party_id": "E", "language": "hi-IN", "muted": false, "role": "speaker"}
+{"receiver": 0, "at_ms": 886.734, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 1, "at_ms": 886.757, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 4, "at_ms": 886.766, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 3, "at_ms": 886.773, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 2, "at_ms": 886.78, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 3, "at_ms": 921.116, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 1, "at_ms": 921.14, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 4, "at_ms": 921.15, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 0, "at_ms": 921.158, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 2, "at_ms": 921.165, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 1, "at_ms": 1091.088, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 0, "at_ms": 1091.11, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 4, "at_ms": 1091.12, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 3, "at_ms": 1091.127, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 2, "at_ms": 1091.211, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 0, "at_ms": 1127.151, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 2, "at_ms": 1127.174, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 1, "at_ms": 1127.184, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 4, "at_ms": 1127.193, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 3, "at_ms": 1127.201, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 1, "at_ms": 1313.525, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 4, "at_ms": 1313.569, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 2, "at_ms": 1313.587, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 0, "at_ms": 1313.601, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 3, "at_ms": 1313.614, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 0, "at_ms": 1317.682, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 1, "at_ms": 1317.717, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 2, "at_ms": 1317.731, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 3, "at_ms": 1317.743, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 4, "at_ms": 1317.805, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 0, "at_ms": 1609.855, "type": "transcript", "party": "E", "kind": "partial", "text": "Well"}
+{"receiver": 1, "at_ms": 1609.903, "type": "transcript", "party": "E", "kind": "partial", "text": "Well"}
+{"receiver": 2, "at_ms": 1609.924, "type": "transcript", "party": "E", "kind": "partial", "text": "Well"}
+{"receiver": 3, "at_ms": 1609.941, "type": "transcript", "party": "E", "kind": "partial", "text": "Well"}
+{"receiver": 4, "at_ms": 1609.957, "type": "transcript", "party": "E", "kind": "partial", "text": "Well"}
+{"receiver": 0, "at_ms": 1614.41, "type": "transcript", "party": "E", "kind": "partial", "text": "Well,"}
+{"receiver": 1, "at_ms": 1614.479, "type": "transcript", "party": "E", "kind": "partial", "text": "Well,"}
+{"receiver": 2, "at_ms": 1614.796, "type": "transcript", "party": "E", "kind": "partial", "text": "Well,"}
+{"receiver": 4, "at_ms": 1614.837, "type": "transcript", "party": "E", "kind": "partial", "text": "Well,"}
+{"receiver": 3, "at_ms": 1614.865, "type": "transcript", "party": "E", "kind": "partial", "text": "Well,"}
+{"receiver": 0, "at_ms": 1619.107, "type": "transcript", "party": "E", "kind": "partial", "text": "Well,"}
+{"receiver": 3, "at_ms": 1619.346, "type": "transcript", "party": "E", "kind": "partial", "text": "Well,"}
+{"receiver": 2, "at_ms": 1619.518, "type": "transcript", "party": "E", "kind": "partial", "text": "Well,"}
+{"receiver": 4, "at_ms": 1619.543, "type": "transcript", "party": "E", "kind": "partial", "text": "Well,"}
+{"receiver": 1, "at_ms": 1619.619, "type": "transcript", "party": "E", "kind": "partial", "text": "Well,"}
+{"receiver": 1, "at_ms": 1810.151, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 0, "at_ms": 1810.188, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 2, "at_ms": 1810.366, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 3, "at_ms": 1810.382, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 4, "at_ms": 1810.393, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 0, "at_ms": 1813.233, "type": "transcript", "party": "D", "kind": "partial", "text": "Near"}
+{"receiver": 1, "at_ms": 1813.268, "type": "transcript", "party": "D", "kind": "partial", "text": "Near"}
+{"receiver": 2, "at_ms": 1813.284, "type": "transcript", "party": "D", "kind": "partial", "text": "Near"}
+{"receiver": 3, "at_ms": 1813.295, "type": "transcript", "party": "D", "kind": "partial", "text": "Near"}
+{"receiver": 4, "at_ms": 1813.363, "type": "transcript", "party": "D", "kind": "partial", "text": "Near"}
+{"receiver": 0, "at_ms": 1815.945, "type": "transcript", "party": "D", "kind": "partial", "text": "Near"}
+{"receiver": 3, "at_ms": 1816.022, "type": "transcript", "party": "D", "kind": "partial", "text": "Near"}
+{"receiver": 1, "at_ms": 1816.149, "type": "transcript", "party": "D", "kind": "partial", "text": "Near"}
+{"receiver": 4, "at_ms": 1816.166, "type": "transcript", "party": "D", "kind": "partial", "text": "Near"}
+{"receiver": 2, "at_ms": 1816.213, "type": "transcript", "party": "D", "kind": "partial", "text": "Near"}
+{"receiver": 1, "at_ms": 2102.436, "type": "transcript", "party": "E", "kind": "partial", "text": "While"}
+{"receiver": 0, "at_ms": 2102.467, "type": "transcript", "party": "E", "kind": "partial", "text": "While"}
+{"receiver": 2, "at_ms": 2102.48, "type": "transcript", "party": "E", "kind": "partial", "text": "While"}
+{"receiver": 3, "at_ms": 2102.657, "type": "transcript", "party": "E", "kind": "partial", "text": "While"}
+{"receiver": 4, "at_ms": 2102.674, "type": "transcript", "party": "E", "kind": "partial", "text": "While"}
+{"receiver": 0, "at_ms": 2104.77, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 1, "at_ms": 2104.972, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 2, "at_ms": 2104.993, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 4, "at_ms": 2105.004, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 3, "at_ms": 2105.016, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 0, "at_ms": 2109.648, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 1, "at_ms": 2109.712, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 2, "at_ms": 2109.74, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 3, "at_ms": 2109.862, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 4, "at_ms": 2109.874, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 0, "at_ms": 2315.193, "type": "transcript", "party": "D", "kind": "partial", "text": "Near"}
+{"receiver": 1, "at_ms": 2315.456, "type": "transcript", "party": "D", "kind": "partial", "text": "Near"}
+{"receiver": 2, "at_ms": 2315.478, "type": "transcript", "party": "D", "kind": "partial", "text": "Near"}
+{"receiver": 4, "at_ms": 2315.49, "type": "transcript", "party": "D", "kind": "partial", "text": "Near"}
+{"receiver": 3, "at_ms": 2315.503, "type": "transcript", "party": "D", "kind": "partial", "text": "Near"}
+{"receiver": 0, "at_ms": 2322.28, "type": "transcript", "party": "D", "kind": "partial", "text": "Near"}
+{"receiver": 1, "at_ms": 2323.013, "type": "transcript", "party": "D", "kind": "partial", "text": "Near"}
+{"receiver": 2, "at_ms": 2323.172, "type": "transcript", "party": "D", "kind": "partial", "text": "Near"}
+{"receiver": 3, "at_ms": 2323.191, "type": "transcript", "party": "D", "kind": "partial", "text": "Near"}
+{"receiver": 4, "at_ms": 2323.204, "type": "transcript", "party": "D", "kind": "partial", "text": "Near"}
+{"receiver": 0, "at_ms": 2620.567, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 0, "at_ms": 2620.636, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 1, "at_ms": 2620.867, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 1, "at_ms": 2620.901, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 2, "at_ms": 2621.032, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 2, "at_ms": 2621.059, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 3, "at_ms": 2621.177, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 3, "at_ms": 2621.203, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 4, "at_ms": 2621.311, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 4, "at_ms": 2621.333, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 0, "at_ms": 2815.884, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the"}
+{"receiver": 4, "at_ms": 2815.917, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the"}
+{"receiver": 2, "at_ms": 2815.926, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the"}
+{"receiver": 3, "at_ms": 2815.934, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the"}
+{"receiver": 1, "at_ms": 2815.944, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the"}
+{"receiver": 0, "at_ms": 2819.053, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the"}
+{"receiver": 4, "at_ms": 2819.077, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the"}
+{"receiver": 1, "at_ms": 2819.087, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the"}
+{"receiver": 3, "at_ms": 2819.095, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the"}
+{"receiver": 2, "at_ms": 2819.102, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the"}
+{"receiver": 4, "at_ms": 3105.215, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 3, "at_ms": 3105.24, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 0, "at_ms": 3105.249, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 2, "at_ms": 3105.257, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 1, "at_ms": 3159.549, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 2, "at_ms": 3312.394, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the"}
+{"receiver": 1, "at_ms": 3312.418, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the"}
+{"receiver": 0, "at_ms": 3312.427, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the"}
+{"receiver": 3, "at_ms": 3312.435, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the"}
+{"receiver": 0, "at_ms": 3320.413, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the"}
+{"receiver": 4, "at_ms": 3320.458, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the"}
+{"receiver": 4, "at_ms": 3320.466, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the"}
+{"receiver": 1, "at_ms": 3320.496, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the"}
+{"receiver": 3, "at_ms": 3320.505, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the"}
+{"receiver": 2, "at_ms": 3320.516, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the"}
+{"receiver": 1, "at_ms": 3609.75, "type": "transcript", "party": "E", "kind": "partial", "text": "While, wit"}
+{"receiver": 2, "at_ms": 3609.775, "type": "transcript", "party": "E", "kind": "partial", "text": "While, wit"}
+{"receiver": 3, "at_ms": 3609.785, "type": "transcript", "party": "E", "kind": "partial", "text": "While, wit"}
+{"receiver": 0, "at_ms": 3609.793, "type": "transcript", "party": "E", "kind": "partial", "text": "While, wit"}
+{"receiver": 4, "at_ms": 3609.8, "type": "transcript", "party": "E", "kind": "partial", "text": "While, wit"}
+{"receiver": 0, "at_ms": 3613.768, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with"}
+{"receiver": 2, "at_ms": 3613.945, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with"}
+{"receiver": 1, "at_ms": 3613.964, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with"}
+{"receiver": 4, "at_ms": 3613.976, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with"}
+{"receiver": 3, "at_ms": 3613.986, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with"}
+{"receiver": 1, "at_ms": 3616.258, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with,"}
+{"receiver": 0, "at_ms": 3616.281, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with,"}
+{"receiver": 2, "at_ms": 3616.29, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with,"}
+{"receiver": 3, "at_ms": 3616.298, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with,"}
+{"receiver": 4, "at_ms": 3616.733, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with,"}
+{"receiver": 0, "at_ms": 3621.573, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with,"}
+{"receiver": 2, "at_ms": 3621.597, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with,"}
+{"receiver": 1, "at_ms": 3621.605, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with,"}
+{"receiver": 4, "at_ms": 3621.612, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with,"}
+{"receiver": 3, "at_ms": 3621.62, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with,"}
+{"receiver": 0, "at_ms": 3811.869, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end"}
+{"receiver": 1, "at_ms": 3812.004, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end"}
+{"receiver": 2, "at_ms": 3812.019, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end"}
+{"receiver": 4, "at_ms": 3812.053, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end"}
+{"receiver": 3, "at_ms": 3812.063, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end"}
+{"receiver": 1, "at_ms": 3813.966, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end,"}
+{"receiver": 0, "at_ms": 3813.99, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end,"}
+{"receiver": 2, "at_ms": 3813.999, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end,"}
+{"receiver": 4, "at_ms": 3814.007, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end,"}
+{"receiver": 3, "at_ms": 3814.014, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end,"}
+{"receiver": 0, "at_ms": 3818.008, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when"}
+{"receiver": 1, "at_ms": 3818.031, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when"}
+{"receiver": 4, "at_ms": 3818.04, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when"}
+{"receiver": 3, "at_ms": 3818.048, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when"}
+{"receiver": 2, "at_ms": 3818.055, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when"}
+{"receiver": 0, "at_ms": 3822.228, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I"}
+{"receiver": 4, "at_ms": 3822.251, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I"}
+{"receiver": 2, "at_ms": 3822.261, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I"}
+{"receiver": 1, "at_ms": 3822.268, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I"}
+{"receiver": 3, "at_ms": 3822.275, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I"}
+{"receiver": 0, "at_ms": 3827.048, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I"}
+{"receiver": 1, "at_ms": 3827.143, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I"}
+{"receiver": 4, "at_ms": 3827.155, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I"}
+{"receiver": 3, "at_ms": 3827.244, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I"}
+{"receiver": 2, "at_ms": 3827.254, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I"}
+{"receiver": 0, "at_ms": 4141.033, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with"}
+{"receiver": 3, "at_ms": 4141.067, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with"}
+{"receiver": 1, "at_ms": 4141.794, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with"}
+{"receiver": 2, "at_ms": 4141.817, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with"}
+{"receiver": 4, "at_ms": 4141.829, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with"}
+{"receiver": 0, "at_ms": 4143.339, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with,"}
+{"receiver": 1, "at_ms": 4143.37, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with,"}
+{"receiver": 2, "at_ms": 4143.457, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with,"}
+{"receiver": 3, "at_ms": 4143.471, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with,"}
+{"receiver": 4, "at_ms": 4143.482, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with,"}
+{"receiver": 0, "at_ms": 4147.834, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with,"}
+{"receiver": 1, "at_ms": 4148.041, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with,"}
+{"receiver": 2, "at_ms": 4148.06, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with,"}
+{"receiver": 3, "at_ms": 4148.087, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with,"}
+{"receiver": 4, "at_ms": 4148.175, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with,"}
+{"receiver": 0, "at_ms": 4307.317, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end,"}
+{"receiver": 1, "at_ms": 4307.355, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end,"}
+{"receiver": 2, "at_ms": 4307.518, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end,"}
+{"receiver": 3, "at_ms": 4307.536, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end,"}
+{"receiver": 4, "at_ms": 4307.818, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end,"}
+{"receiver": 0, "at_ms": 4311.137, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when"}
+{"receiver": 1, "at_ms": 4311.174, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when"}
+{"receiver": 2, "at_ms": 4311.188, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when"}
+{"receiver": 4, "at_ms": 4311.201, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when"}
+{"receiver": 3, "at_ms": 4311.274, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when"}
+{"receiver": 0, "at_ms": 4315.282, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I"}
+{"receiver": 1, "at_ms": 4315.413, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I"}
+{"receiver": 2, "at_ms": 4315.524, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I"}
+{"receiver": 3, "at_ms": 4315.542, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I"}
+{"receiver": 4, "at_ms": 4315.598, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I"}
+{"receiver": 1, "at_ms": 4322.486, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I"}
+{"receiver": 0, "at_ms": 4322.52, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I"}
+{"receiver": 2, "at_ms": 4322.534, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I"}
+{"receiver": 3, "at_ms": 4323.484, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I"}
+{"receiver": 4, "at_ms": 4323.513, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I"}
+{"receiver": 0, "at_ms": 4581.512, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 1, "at_ms": 4581.67, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 2, "at_ms": 4581.789, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 3, "at_ms": 4581.807, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 4, "at_ms": 4581.817, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 0, "at_ms": 4596.676, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I"}
+{"receiver": 1, "at_ms": 4596.827, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I"}
+{"receiver": 2, "at_ms": 4596.895, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I"}
+{"receiver": 3, "at_ms": 4596.95, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I"}
+{"receiver": 4, "at_ms": 4596.997, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I"}
+{"receiver": 0, "at_ms": 4601.409, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with,"}
+{"receiver": 2, "at_ms": 4601.635, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with,"}
+{"receiver": 3, "at_ms": 4601.655, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with,"}
+{"receiver": 1, "at_ms": 4601.667, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with,"}
+{"receiver": 4, "at_ms": 4601.679, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with,"}
+{"receiver": 0, "at_ms": 4607.844, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I return"}
+{"receiver": 2, "at_ms": 4607.96, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I return"}
+{"receiver": 4, "at_ms": 4608.112, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I return"}
+{"receiver": 1, "at_ms": 4608.153, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I return"}
+{"receiver": 1, "at_ms": 4608.163, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I returned"}
+{"receiver": 3, "at_ms": 4608.198, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I return"}
+{"receiver": 3, "at_ms": 4608.207, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I returned"}
+{"receiver": 0, "at_ms": 4608.217, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I returned"}
+{"receiver": 2, "at_ms": 4608.289, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I returned"}
+{"receiver": 4, "at_ms": 4608.302, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I returned"}
+{"receiver": 1, "at_ms": 4608.354, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, wit"}
+{"receiver": 2, "at_ms": 4608.424, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, wit"}
+{"receiver": 3, "at_ms": 4608.437, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, wit"}
+{"receiver": 4, "at_ms": 4608.48, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, wit"}
+{"receiver": 0, "at_ms": 4610.706, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, wit"}
+{"receiver": 0, "at_ms": 4620.199, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with"}
+{"receiver": 1, "at_ms": 4620.622, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with"}
+{"receiver": 2, "at_ms": 4620.692, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with"}
+{"receiver": 3, "at_ms": 4620.885, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with"}
+{"receiver": 4, "at_ms": 4620.962, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with"}
+{"receiver": 0, "at_ms": 4621.763, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I return"}
+{"receiver": 4, "at_ms": 4621.843, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I return"}
+{"receiver": 1, "at_ms": 4621.901, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I return"}
+{"receiver": 2, "at_ms": 4621.952, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I return"}
+{"receiver": 3, "at_ms": 4622.007, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I return"}
+{"receiver": 0, "at_ms": 4622.057, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I returned"}
+{"receiver": 1, "at_ms": 4622.105, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I returned"}
+{"receiver": 2, "at_ms": 4622.147, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I returned"}
+{"receiver": 4, "at_ms": 4622.57, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I returned"}
+{"receiver": 3, "at_ms": 4622.652, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I returned"}
+{"receiver": 1, "at_ms": 4622.979, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with,"}
+{"receiver": 3, "at_ms": 4623.132, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with,"}
+{"receiver": 0, "at_ms": 4623.151, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with,"}
+{"receiver": 4, "at_ms": 4623.169, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with,"}
+{"receiver": 2, "at_ms": 4623.183, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with,"}
+{"receiver": 0, "at_ms": 4626.616, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I returned,"}
+{"receiver": 2, "at_ms": 4626.823, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I returned,"}
+{"receiver": 1, "at_ms": 4626.844, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I returned,"}
+{"receiver": 3, "at_ms": 4626.856, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I returned,"}
+{"receiver": 4, "at_ms": 4626.94, "type": "transcript", "party": "D", "kind": "partial", "text": "Near the end, when I returned,"}
+{"receiver": 0, "at_ms": 4628.377, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with,"}
+{"receiver": 2, "at_ms": 4628.64, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with,"}
+{"receiver": 1, "at_ms": 4628.664, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with,"}
+{"receiver": 3, "at_ms": 4628.677, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with,"}
+{"receiver": 4, "at_ms": 4628.689, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with,"}
+{"receiver": 0, "at_ms": 4629.497, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, wit"}
+{"receiver": 1, "at_ms": 4629.53, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, wit"}
+{"receiver": 2, "at_ms": 4629.663, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, wit"}
+{"receiver": 4, "at_ms": 4629.68, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, wit"}
+{"receiver": 3, "at_ms": 4629.692, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, wit"}
+{"receiver": 0, "at_ms": 4637.303, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with"}
+{"receiver": 1, "at_ms": 4638.231, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with"}
+{"receiver": 3, "at_ms": 4639.071, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with"}
+{"receiver": 4, "at_ms": 4639.108, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with"}
+{"receiver": 2, "at_ms": 4639.122, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with"}
+{"receiver": 0, "at_ms": 4645.387, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with,"}
+{"receiver": 2, "at_ms": 4647.662, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with,"}
+{"receiver": 3, "at_ms": 4647.699, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with,"}
+{"receiver": 4, "at_ms": 4647.859, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with,"}
+{"receiver": 1, "at_ms": 4647.876, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with,"}
+{"receiver": 0, "at_ms": 4651.851, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with,"}
+{"receiver": 2, "at_ms": 4651.884, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with,"}
+{"receiver": 1, "at_ms": 4651.949, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with,"}
+{"receiver": 3, "at_ms": 4652.351, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with,"}
+{"receiver": 4, "at_ms": 4652.38, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with,"}
+{"receiver": 0, "at_ms": 4656.644, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, wit"}
+{"receiver": 1, "at_ms": 4656.782, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, wit"}
+{"receiver": 4, "at_ms": 4656.801, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, wit"}
+{"receiver": 2, "at_ms": 4657.057, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, wit"}
+{"receiver": 3, "at_ms": 4657.275, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, wit"}
+{"receiver": 2, "at_ms": 4657.734, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with"}
+{"receiver": 4, "at_ms": 4657.906, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with"}
+{"receiver": 3, "at_ms": 4658.059, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with"}
+{"receiver": 1, "at_ms": 4658.179, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with"}
+{"receiver": 0, "at_ms": 4658.319, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with"}
+{"receiver": 0, "at_ms": 4664.196, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with,"}
+{"receiver": 3, "at_ms": 4664.402, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with,"}
+{"receiver": 4, "at_ms": 4664.423, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with,"}
+{"receiver": 1, "at_ms": 4664.817, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with,"}
+{"receiver": 1, "at_ms": 4664.831, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with,"}
+{"receiver": 2, "at_ms": 4664.893, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with,"}
+{"receiver": 2, "at_ms": 4664.903, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with,"}
+{"receiver": 2, "at_ms": 4664.916, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, wit"}
+{"receiver": 3, "at_ms": 4664.967, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with,"}
+{"receiver": 3, "at_ms": 4664.977, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, wit"}
+{"receiver": 4, "at_ms": 4665.102, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with,"}
+{"receiver": 4, "at_ms": 4665.137, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, wit"}
+{"receiver": 1, "at_ms": 4665.207, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, wit"}
+{"receiver": 0, "at_ms": 4665.259, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with,"}
+{"receiver": 0, "at_ms": 4665.269, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, wit"}
+{"receiver": 0, "at_ms": 4669.243, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with"}
+{"receiver": 1, "at_ms": 4669.279, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with"}
+{"receiver": 4, "at_ms": 4669.293, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with"}
+{"receiver": 2, "at_ms": 4669.4, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with"}
+{"receiver": 3, "at_ms": 4669.417, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with"}
+{"receiver": 0, "at_ms": 4670.252, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with,"}
+{"receiver": 1, "at_ms": 4671.426, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with,"}
+{"receiver": 2, "at_ms": 4671.534, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with,"}
+{"receiver": 3, "at_ms": 4672.003, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with,"}
+{"receiver": 4, "at_ms": 4672.079, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with,"}
+{"receiver": 0, "at_ms": 4678.178, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with,"}
+{"receiver": 1, "at_ms": 4678.217, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with,"}
+{"receiver": 3, "at_ms": 4678.635, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with,"}
+{"receiver": 2, "at_ms": 4678.674, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with,"}
+{"receiver": 4, "at_ms": 4678.687, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with,"}
+{"receiver": 0, "at_ms": 4679.19, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, wit"}
+{"receiver": 1, "at_ms": 4679.526, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, wit"}
+{"receiver": 3, "at_ms": 4679.551, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, wit"}
+{"receiver": 2, "at_ms": 4679.616, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, wit"}
+{"receiver": 4, "at_ms": 4679.795, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, wit"}
+{"receiver": 0, "at_ms": 4681.32, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with"}
+{"receiver": 2, "at_ms": 4681.352, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with"}
+{"receiver": 4, "at_ms": 4681.478, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with"}
+{"receiver": 1, "at_ms": 4681.494, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with"}
+{"receiver": 3, "at_ms": 4681.506, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with"}
+{"receiver": 0, "at_ms": 4683.276, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with,"}
+{"receiver": 4, "at_ms": 4683.597, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with,"}
+{"receiver": 2, "at_ms": 4683.698, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with,"}
+{"receiver": 1, "at_ms": 4683.969, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with,"}
+{"receiver": 3, "at_ms": 4684.228, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with,"}
+{"receiver": 0, "at_ms": 4686.916, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with,"}
+{"receiver": 2, "at_ms": 4687.108, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with,"}
+{"receiver": 1, "at_ms": 4687.129, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with,"}
+{"receiver": 3, "at_ms": 4687.141, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with,"}
+{"receiver": 4, "at_ms": 4687.153, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with,"}
+{"receiver": 0, "at_ms": 4694.423, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, wit"}
+{"receiver": 1, "at_ms": 4694.455, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, wit"}
+{"receiver": 2, "at_ms": 4695.248, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, wit"}
+{"receiver": 3, "at_ms": 4695.579, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, wit"}
+{"receiver": 4, "at_ms": 4695.869, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, wit"}
+{"receiver": 0, "at_ms": 4697.71, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with"}
+{"receiver": 4, "at_ms": 4697.877, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with"}
+{"receiver": 1, "at_ms": 4697.897, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with"}
+{"receiver": 3, "at_ms": 4697.91, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with"}
+{"receiver": 2, "at_ms": 4697.962, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with"}
+{"receiver": 0, "at_ms": 4699.949, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with,"}
+{"receiver": 4, "at_ms": 4700.182, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with,"}
+{"receiver": 1, "at_ms": 4700.204, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with,"}
+{"receiver": 2, "at_ms": 4700.217, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with,"}
+{"receiver": 3, "at_ms": 4700.227, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with,"}
+{"receiver": 1, "at_ms": 4703.082, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with,"}
+{"receiver": 4, "at_ms": 4703.289, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with,"}
+{"receiver": 2, "at_ms": 4703.308, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with,"}
+{"receiver": 3, "at_ms": 4703.321, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with,"}
+{"receiver": 0, "at_ms": 4703.333, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with,"}
+{"receiver": 0, "at_ms": 4708.555, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, wit"}
+{"receiver": 1, "at_ms": 4708.844, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, wit"}
+{"receiver": 3, "at_ms": 4708.941, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, wit"}
+{"receiver": 4, "at_ms": 4709.016, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, wit"}
+{"receiver": 2, "at_ms": 4709.074, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, wit"}
+{"receiver": 1, "at_ms": 4715.186, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with"}
+{"receiver": 0, "at_ms": 4715.22, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with"}
+{"receiver": 4, "at_ms": 4716.275, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with"}
+{"receiver": 2, "at_ms": 4716.31, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with"}
+{"receiver": 3, "at_ms": 4716.383, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with"}
+{"receiver": 0, "at_ms": 4728.948, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with,"}
+{"receiver": 3, "at_ms": 4732.139, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with,"}
+{"receiver": 1, "at_ms": 4732.322, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with,"}
+{"receiver": 4, "at_ms": 4732.508, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with,"}
+{"receiver": 2, "at_ms": 4732.531, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with,"}
+{"receiver": 0, "at_ms": 4733.723, "type": "transcript", "party": "D", "kind": "final", "text": "మీరు ఇంటికి చేరుకున్నప్పుడు నాకు call చేయండి.", "seq": 1}
+{"receiver": 1, "at_ms": 4733.759, "type": "transcript", "party": "D", "kind": "final", "text": "మీరు ఇంటికి చేరుకున్నప్పుడు నాకు call చేయండి.", "seq": 1}
+{"receiver": 2, "at_ms": 4733.938, "type": "transcript", "party": "D", "kind": "final", "text": "మీరు ఇంటికి చేరుకున్నప్పుడు నాకు call చేయండి.", "seq": 1}
+{"receiver": 4, "at_ms": 4733.962, "type": "transcript", "party": "D", "kind": "final", "text": "మీరు ఇంటికి చేరుకున్నప్పుడు నాకు call చేయండి.", "seq": 1}
+{"receiver": 3, "at_ms": 4733.976, "type": "transcript", "party": "D", "kind": "final", "text": "మీరు ఇంటికి చేరుకున్నప్పుడు నాకు call చేయండి.", "seq": 1}
+{"receiver": 0, "at_ms": 4915.788, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with,"}
+{"receiver": 1, "at_ms": 4916.208, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with,"}
+{"receiver": 4, "at_ms": 4916.233, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with,"}
+{"receiver": 2, "at_ms": 4916.296, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with,"}
+{"receiver": 3, "at_ms": 4916.346, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with,"}
+{"receiver": 1, "at_ms": 4919.088, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, wit"}
+{"receiver": 4, "at_ms": 4919.254, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, wit"}
+{"receiver": 0, "at_ms": 4919.27, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, wit"}
+{"receiver": 3, "at_ms": 4919.283, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, wit"}
+{"receiver": 2, "at_ms": 4919.294, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, wit"}
+{"receiver": 0, "at_ms": 4920.622, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with"}
+{"receiver": 1, "at_ms": 4920.659, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with"}
+{"receiver": 3, "at_ms": 4920.767, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with"}
+{"receiver": 4, "at_ms": 4920.853, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with"}
+{"receiver": 2, "at_ms": 4920.868, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with"}
+{"receiver": 0, "at_ms": 4923.649, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with,"}
+{"receiver": 2, "at_ms": 4923.755, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with,"}
+{"receiver": 4, "at_ms": 4923.851, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with,"}
+{"receiver": 1, "at_ms": 4923.867, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with,"}
+{"receiver": 3, "at_ms": 4923.917, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with,"}
+{"receiver": 0, "at_ms": 4935.896, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with,"}
+{"receiver": 1, "at_ms": 4936.747, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with,"}
+{"receiver": 4, "at_ms": 4936.836, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with,"}
+{"receiver": 2, "at_ms": 4937.071, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with,"}
+{"receiver": 3, "at_ms": 4937.296, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with,"}
+{"receiver": 0, "at_ms": 4937.587, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, wit"}
+{"receiver": 1, "at_ms": 4937.879, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, wit"}
+{"receiver": 2, "at_ms": 4938.233, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, wit"}
+{"receiver": 4, "at_ms": 4938.315, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, wit"}
+{"receiver": 3, "at_ms": 4938.367, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, wit"}
+{"receiver": 0, "at_ms": 4940.59, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, with"}
+{"receiver": 1, "at_ms": 4940.876, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, with"}
+{"receiver": 2, "at_ms": 4941.102, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, with"}
+{"receiver": 4, "at_ms": 4941.316, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, with"}
+{"receiver": 0, "at_ms": 4941.802, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, with,"}
+{"receiver": 3, "at_ms": 4941.904, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, with"}
+{"receiver": 4, "at_ms": 4942.144, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, with,"}
+{"receiver": 3, "at_ms": 4942.237, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, with,"}
+{"receiver": 1, "at_ms": 4942.254, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, with,"}
+{"receiver": 2, "at_ms": 4942.486, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, with,"}
+{"receiver": 0, "at_ms": 4942.898, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, with,"}
+{"receiver": 1, "at_ms": 4943.516, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, with,"}
+{"receiver": 4, "at_ms": 4943.624, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, with,"}
+{"receiver": 3, "at_ms": 4943.729, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, with,"}
+{"receiver": 2, "at_ms": 4943.774, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, with,"}
+{"receiver": 2, "at_ms": 4943.785, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, with, wit"}
+{"receiver": 0, "at_ms": 4943.905, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, with, wit"}
+{"receiver": 3, "at_ms": 4943.924, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, with, wit"}
+{"receiver": 4, "at_ms": 4943.935, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, with, wit"}
+{"receiver": 1, "at_ms": 4943.997, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, with, wit"}
+{"receiver": 1, "at_ms": 4945.554, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, with, with"}
+{"receiver": 2, "at_ms": 4945.709, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, with, with"}
+{"receiver": 0, "at_ms": 4945.73, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, with, with"}
+{"receiver": 4, "at_ms": 4945.815, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, with, with"}
+{"receiver": 3, "at_ms": 4945.832, "type": "transcript", "party": "E", "kind": "partial", "text": "While, with, with, with, with, with, with, with, with, with, with, with"}
+{"receiver": 2, "at_ms": 4947.804, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 0, "at_ms": 4947.836, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 3, "at_ms": 4947.967, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 4, "at_ms": 4947.982, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 1, "at_ms": 4947.995, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 0, "at_ms": 5094.378, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 1, "at_ms": 5094.42, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 2, "at_ms": 5094.441, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 3, "at_ms": 5094.628, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 4, "at_ms": 5094.644, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 0, "at_ms": 5108.623, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 4, "at_ms": 5108.655, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 1, "at_ms": 5108.667, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 3, "at_ms": 5108.787, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 2, "at_ms": 5108.799, "type": "transcript", "party": "E", "kind": "partial", "text": "While,"}
+{"receiver": 0, "at_ms": 5238.63, "type": "transcript", "party": "E", "kind": "final", "text": "वह हमारे घर के पास एक अस्पताल में काम करती है।", "seq": 1}
+{"receiver": 1, "at_ms": 5238.873, "type": "transcript", "party": "E", "kind": "final", "text": "वह हमारे घर के पास एक अस्पताल में काम करती है।", "seq": 1}
+{"receiver": 2, "at_ms": 5238.898, "type": "transcript", "party": "E", "kind": "final", "text": "वह हमारे घर के पास एक अस्पताल में काम करती है।", "seq": 1}
+{"receiver": 4, "at_ms": 5238.913, "type": "transcript", "party": "E", "kind": "final", "text": "वह हमारे घर के पास एक अस्पताल में काम करती है।", "seq": 1}
+{"receiver": 3, "at_ms": 5238.926, "type": "transcript", "party": "E", "kind": "final", "text": "वह हमारे घर के पास एक अस्पताल में काम करती है।", "seq": 1}
+{"receiver": 2, "at_ms": 6792.776, "type": "translated", "speaker": "D", "language": "te-IN", "text": "దయచేసి మీరు ఇంటికి వచ్చేటప్పుడు నాకు ఫోన్ చేయండి.", "seq": 1}
+{"receiver": 1, "at_ms": 6844.302, "type": "translated", "speaker": "D", "language": "ta-IN", "text": "நீங்கள் என் வீட்டிற்கு அருகில் இருக்கும்போது எனக்கு ஒரு தொலைபேசி அழைப்பு கொடுங்கள்.", "seq": 1}
+{"receiver": 0, "at_ms": 6896.407, "type": "translated", "speaker": "D", "language": "hi-IN", "text": "कृपया जब आप आस-पास हों तो मुझे घर पर छोड़ने के लिए एक रिंग दें।", "seq": 1}
+{"receiver": 4, "at_ms": 6896.435, "type": "translated", "speaker": "D", "language": "hi-IN", "text": "कृपया जब आप आस-पास हों तो मुझे घर पर छोड़ने के लिए एक रिंग दें।", "seq": 1}
+{"receiver": 2, "at_ms": 7140.823, "type": "translated", "speaker": "E", "language": "te-IN", "text": "ఆమె మా ఇంటి సమీపంలో ఉన్న ఆసుపత్రిలో పనిచేస్తారు.", "seq": 1}
+{"receiver": 0, "at_ms": 7201.459, "type": "translated", "speaker": "E", "language": "hi-IN", "text": "वह हमारे घर के पास एक अस्पताल में काम करती हैं।", "seq": 1}
+{"receiver": 3, "at_ms": 7201.486, "type": "translated", "speaker": "E", "language": "hi-IN", "text": "वह हमारे घर के पास एक अस्पताल में काम करती हैं।", "seq": 1}
+{"receiver": 1, "at_ms": 7260.87, "type": "translated", "speaker": "E", "language": "ta-IN", "text": "அவர் எங்கள் வீட்டருகே உள்ள ஒரு மருத்துவமனையில் பணிபுரிகிறார்.", "seq": 1}
+{"receiver": 2, "at_ms": 8016.231, "type": "latency", "speaker": "D", "language": "te-IN", "seq": 1, "stt_ms": 3847, "queue_ms": 0, "translate_ms": 1921, "tts_ms": 1224, "total_ms": 6992}
+{"receiver": 2, "at_ms": 8040.484, "type": "audio", "speaker": "D", "language": "te-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791758269307.2256, "wav_duration_s": 4.4373125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 142038, "wav_sha256": "4259483b7483d62a8070b3b7a58ae1c84f71848cb010d2ba6d2835695ea572d5", "wav_valid": true}
+{"receiver": 0, "at_ms": 8247.749, "type": "latency", "speaker": "E", "language": "hi-IN", "seq": 1, "stt_ms": 4146, "queue_ms": 0, "translate_ms": 1964, "tts_ms": 1047, "total_ms": 7157}
+{"receiver": 3, "at_ms": 8247.811, "type": "latency", "speaker": "E", "language": "hi-IN", "seq": 1, "stt_ms": 4146, "queue_ms": 0, "translate_ms": 1964, "tts_ms": 1047, "total_ms": 7157}
+{"receiver": 0, "at_ms": 8259.371, "type": "audio", "speaker": "E", "language": "hi-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791758269523.1106, "wav_duration_s": 3.584, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 114732, "wav_sha256": "cde6d5bbcd38e807e9b1d4b20e21e7c4362a22a09d57e8c948459413f3c5e57e", "wav_valid": true}
+{"receiver": 3, "at_ms": 8270.144, "type": "audio", "speaker": "E", "language": "hi-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791758269523.1106, "wav_duration_s": 3.584, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 114732, "wav_sha256": "cde6d5bbcd38e807e9b1d4b20e21e7c4362a22a09d57e8c948459413f3c5e57e", "wav_valid": true}
+{"receiver": 0, "at_ms": 8308.02, "type": "latency", "speaker": "D", "language": "hi-IN", "seq": 1, "stt_ms": 3847, "queue_ms": 0, "translate_ms": 2161, "tts_ms": 1412, "total_ms": 7420}
+{"receiver": 4, "at_ms": 8308.046, "type": "latency", "speaker": "D", "language": "hi-IN", "seq": 1, "stt_ms": 3847, "queue_ms": 0, "translate_ms": 2161, "tts_ms": 1412, "total_ms": 7420}
+{"receiver": 0, "at_ms": 8330.197, "type": "audio", "speaker": "D", "language": "hi-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791758269307.2256, "wav_duration_s": 5.7173125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 182998, "wav_sha256": "dbdf721c706226e6eddde3b3579e7527dad3e6e88a79bcf2f2b3fec22378906f", "wav_valid": true}
+{"receiver": 4, "at_ms": 8339.387, "type": "audio", "speaker": "D", "language": "hi-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791758269307.2256, "wav_duration_s": 5.7173125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 182998, "wav_sha256": "dbdf721c706226e6eddde3b3579e7527dad3e6e88a79bcf2f2b3fec22378906f", "wav_valid": true}
+{"receiver": 1, "at_ms": 8340.187, "type": "latency", "speaker": "D", "language": "ta-IN", "seq": 1, "stt_ms": 3847, "queue_ms": 0, "translate_ms": 2018, "tts_ms": 1495, "total_ms": 7360}
+{"receiver": 1, "at_ms": 8358.423, "type": "audio", "speaker": "D", "language": "ta-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791758269307.2256, "wav_duration_s": 5.5466875, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 177538, "wav_sha256": "456f12d56b78df4b07935c6e8dff146bce1f276c0f5e0a6c38a59b9d4220a97f", "wav_valid": true}
+{"receiver": 1, "at_ms": 8365.859, "type": "latency", "speaker": "E", "language": "ta-IN", "seq": 1, "stt_ms": 4146, "queue_ms": 0, "translate_ms": 1923, "tts_ms": 1104, "total_ms": 7173}
+{"receiver": 1, "at_ms": 8377.985, "type": "audio", "speaker": "E", "language": "ta-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791758269523.1106, "wav_duration_s": 4.2666875, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 136578, "wav_sha256": "18676d3bd653a30f14b28d3cfe3f01447010a43d61406f22c02a98efb59c7584", "wav_valid": true}
+{"receiver": 2, "at_ms": 8699.986, "type": "latency", "speaker": "E", "language": "te-IN", "seq": 1, "stt_ms": 4146, "queue_ms": 0, "translate_ms": 1763, "tts_ms": 1559, "total_ms": 7468}
+{"receiver": 2, "at_ms": 8721.293, "type": "audio", "speaker": "E", "language": "te-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791758269523.1106, "wav_duration_s": 4.9493125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 158422, "wav_sha256": "1fefa70fdb995ff90b8024e1d8bdc94db6bb89873f47c2ba6ac291340cbfce09", "wav_valid": true}
+{"receiver": 3, "at_ms": 10900.702, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 3, "at_ms": 10900.743, "type": "peer_left", "party_id": "E"}
+{"receiver": 0, "at_ms": 10901.015, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 0, "at_ms": 10901.097, "type": "peer_left", "party_id": "E"}
+{"receiver": 1, "at_ms": 10901.302, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 1, "at_ms": 10901.339, "type": "peer_left", "party_id": "E"}
+{"receiver": 4, "at_ms": 10901.685, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 2, "at_ms": 10901.997, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 2, "at_ms": 10902.027, "type": "peer_left", "party_id": "E"}
+{"receiver": 0, "at_ms": 10902.309, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 2, "at_ms": 10903.781, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 2, "at_ms": 10903.822, "type": "peer_left", "party_id": "D"}
+{"receiver": 3, "at_ms": 10903.874, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 0, "at_ms": 10903.896, "type": "peer_left", "party_id": "D"}
+{"receiver": 1, "at_ms": 10903.915, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 1, "at_ms": 10903.927, "type": "peer_left", "party_id": "D"}

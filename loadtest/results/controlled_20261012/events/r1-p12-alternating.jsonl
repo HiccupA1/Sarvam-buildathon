@@ -1,0 +1,495 @@
+{"receiver": 0, "at_ms": 9.03, "type": "joined", "party_id": "A", "language": "te-IN", "resumed": false, "muted": true, "role": "listener"}
+{"receiver": 0, "at_ms": 9.091, "type": "ready"}
+{"receiver": 1, "at_ms": 14.312, "type": "joined", "party_id": "B", "language": "en-IN", "resumed": false, "muted": true, "role": "listener"}
+{"receiver": 1, "at_ms": 14.346, "type": "peer_joined", "party_id": "A", "language": "te-IN", "muted": true, "role": "listener"}
+{"receiver": 1, "at_ms": 14.399, "type": "ready"}
+{"receiver": 2, "at_ms": 22.497, "type": "joined", "party_id": "C", "language": "hi-IN", "resumed": false, "muted": true, "role": "listener"}
+{"receiver": 2, "at_ms": 22.55, "type": "peer_joined", "party_id": "A", "language": "te-IN", "muted": true, "role": "listener"}
+{"receiver": 2, "at_ms": 22.571, "type": "peer_joined", "party_id": "B", "language": "en-IN", "muted": true, "role": "listener"}
+{"receiver": 2, "at_ms": 22.937, "type": "ready"}
+{"receiver": 3, "at_ms": 27.997, "type": "joined", "party_id": "D", "language": "te-IN", "resumed": false, "muted": false, "role": "speaker"}
+{"receiver": 3, "at_ms": 28.093, "type": "peer_joined", "party_id": "A", "language": "te-IN", "muted": true, "role": "listener"}
+{"receiver": 3, "at_ms": 28.109, "type": "peer_joined", "party_id": "B", "language": "en-IN", "muted": true, "role": "listener"}
+{"receiver": 3, "at_ms": 28.221, "type": "peer_joined", "party_id": "C", "language": "hi-IN", "muted": true, "role": "listener"}
+{"receiver": 3, "at_ms": 240.06, "type": "ready"}
+{"receiver": 4, "at_ms": 247.846, "type": "joined", "party_id": "E", "language": "te-IN", "resumed": false, "muted": false, "role": "speaker"}
+{"receiver": 4, "at_ms": 247.881, "type": "peer_joined", "party_id": "A", "language": "te-IN", "muted": true, "role": "listener"}
+{"receiver": 4, "at_ms": 247.895, "type": "peer_joined", "party_id": "B", "language": "en-IN", "muted": true, "role": "listener"}
+{"receiver": 4, "at_ms": 247.906, "type": "peer_joined", "party_id": "C", "language": "hi-IN", "muted": true, "role": "listener"}
+{"receiver": 4, "at_ms": 247.914, "type": "peer_joined", "party_id": "D", "language": "te-IN", "muted": false, "role": "speaker"}
+{"receiver": 4, "at_ms": 500.717, "type": "ready"}
+{"receiver": 0, "at_ms": 500.812, "type": "peer_joined", "party_id": "B", "language": "en-IN", "muted": true, "role": "listener"}
+{"receiver": 0, "at_ms": 500.824, "type": "peer_joined", "party_id": "C", "language": "hi-IN", "muted": true, "role": "listener"}
+{"receiver": 0, "at_ms": 500.831, "type": "peer_joined", "party_id": "D", "language": "te-IN", "muted": false, "role": "speaker"}
+{"receiver": 0, "at_ms": 500.836, "type": "peer_joined", "party_id": "E", "language": "te-IN", "muted": false, "role": "speaker"}
+{"receiver": 1, "at_ms": 500.847, "type": "peer_joined", "party_id": "C", "language": "hi-IN", "muted": true, "role": "listener"}
+{"receiver": 1, "at_ms": 500.853, "type": "peer_joined", "party_id": "D", "language": "te-IN", "muted": false, "role": "speaker"}
+{"receiver": 1, "at_ms": 500.858, "type": "peer_joined", "party_id": "E", "language": "te-IN", "muted": false, "role": "speaker"}
+{"receiver": 2, "at_ms": 500.867, "type": "peer_joined", "party_id": "D", "language": "te-IN", "muted": false, "role": "speaker"}
+{"receiver": 2, "at_ms": 500.872, "type": "peer_joined", "party_id": "E", "language": "te-IN", "muted": false, "role": "speaker"}
+{"receiver": 3, "at_ms": 500.879, "type": "peer_joined", "party_id": "E", "language": "te-IN", "muted": false, "role": "speaker"}
+{"receiver": 0, "at_ms": 853.213, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 2, "at_ms": 853.544, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 1, "at_ms": 853.574, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 4, "at_ms": 853.595, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 3, "at_ms": 853.679, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 0, "at_ms": 887.468, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 1, "at_ms": 887.731, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 4, "at_ms": 887.97, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 3, "at_ms": 888.006, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 2, "at_ms": 888.121, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 0, "at_ms": 1356.093, "type": "transcript", "party": "D", "kind": "partial", "text": "L"}
+{"receiver": 1, "at_ms": 1356.119, "type": "transcript", "party": "D", "kind": "partial", "text": "L"}
+{"receiver": 3, "at_ms": 1356.328, "type": "transcript", "party": "D", "kind": "partial", "text": "L"}
+{"receiver": 2, "at_ms": 1356.357, "type": "transcript", "party": "D", "kind": "partial", "text": "L"}
+{"receiver": 4, "at_ms": 1356.371, "type": "transcript", "party": "D", "kind": "partial", "text": "L"}
+{"receiver": 0, "at_ms": 1358.765, "type": "transcript", "party": "D", "kind": "partial", "text": "Libr"}
+{"receiver": 2, "at_ms": 1358.798, "type": "transcript", "party": "D", "kind": "partial", "text": "Libr"}
+{"receiver": 1, "at_ms": 1358.815, "type": "transcript", "party": "D", "kind": "partial", "text": "Libr"}
+{"receiver": 4, "at_ms": 1358.906, "type": "transcript", "party": "D", "kind": "partial", "text": "Libr"}
+{"receiver": 3, "at_ms": 1358.92, "type": "transcript", "party": "D", "kind": "partial", "text": "Libr"}
+{"receiver": 0, "at_ms": 1364.526, "type": "transcript", "party": "D", "kind": "partial", "text": "Library"}
+{"receiver": 1, "at_ms": 1364.79, "type": "transcript", "party": "D", "kind": "partial", "text": "Library"}
+{"receiver": 4, "at_ms": 1364.822, "type": "transcript", "party": "D", "kind": "partial", "text": "Library"}
+{"receiver": 3, "at_ms": 1364.837, "type": "transcript", "party": "D", "kind": "partial", "text": "Library"}
+{"receiver": 2, "at_ms": 1364.848, "type": "transcript", "party": "D", "kind": "partial", "text": "Library"}
+{"receiver": 4, "at_ms": 1366.911, "type": "transcript", "party": "D", "kind": "partial", "text": "Library"}
+{"receiver": 0, "at_ms": 1366.936, "type": "transcript", "party": "D", "kind": "partial", "text": "Library"}
+{"receiver": 2, "at_ms": 1366.944, "type": "transcript", "party": "D", "kind": "partial", "text": "Library"}
+{"receiver": 3, "at_ms": 1366.951, "type": "transcript", "party": "D", "kind": "partial", "text": "Library"}
+{"receiver": 1, "at_ms": 1366.992, "type": "transcript", "party": "D", "kind": "partial", "text": "Library"}
+{"receiver": 0, "at_ms": 1905.34, "type": "transcript", "party": "D", "kind": "partial", "text": "L"}
+{"receiver": 1, "at_ms": 1905.495, "type": "transcript", "party": "D", "kind": "partial", "text": "L"}
+{"receiver": 2, "at_ms": 1905.576, "type": "transcript", "party": "D", "kind": "partial", "text": "L"}
+{"receiver": 4, "at_ms": 1905.656, "type": "transcript", "party": "D", "kind": "partial", "text": "L"}
+{"receiver": 3, "at_ms": 1905.67, "type": "transcript", "party": "D", "kind": "partial", "text": "L"}
+{"receiver": 0, "at_ms": 1908.506, "type": "transcript", "party": "D", "kind": "partial", "text": "Libr"}
+{"receiver": 1, "at_ms": 1908.543, "type": "transcript", "party": "D", "kind": "partial", "text": "Libr"}
+{"receiver": 2, "at_ms": 1908.675, "type": "transcript", "party": "D", "kind": "partial", "text": "Libr"}
+{"receiver": 4, "at_ms": 1908.691, "type": "transcript", "party": "D", "kind": "partial", "text": "Libr"}
+{"receiver": 3, "at_ms": 1908.703, "type": "transcript", "party": "D", "kind": "partial", "text": "Libr"}
+{"receiver": 0, "at_ms": 1911.708, "type": "transcript", "party": "D", "kind": "partial", "text": "Library"}
+{"receiver": 1, "at_ms": 1911.878, "type": "transcript", "party": "D", "kind": "partial", "text": "Library"}
+{"receiver": 2, "at_ms": 1911.895, "type": "transcript", "party": "D", "kind": "partial", "text": "Library"}
+{"receiver": 3, "at_ms": 1911.907, "type": "transcript", "party": "D", "kind": "partial", "text": "Library"}
+{"receiver": 4, "at_ms": 1911.919, "type": "transcript", "party": "D", "kind": "partial", "text": "Library"}
+{"receiver": 0, "at_ms": 1916.923, "type": "transcript", "party": "D", "kind": "partial", "text": "Library"}
+{"receiver": 4, "at_ms": 1916.958, "type": "transcript", "party": "D", "kind": "partial", "text": "Library"}
+{"receiver": 1, "at_ms": 1916.974, "type": "transcript", "party": "D", "kind": "partial", "text": "Library"}
+{"receiver": 3, "at_ms": 1916.986, "type": "transcript", "party": "D", "kind": "partial", "text": "Library"}
+{"receiver": 2, "at_ms": 1916.997, "type": "transcript", "party": "D", "kind": "partial", "text": "Library"}
+{"receiver": 1, "at_ms": 1919.833, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sha"}
+{"receiver": 3, "at_ms": 1919.87, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sha"}
+{"receiver": 2, "at_ms": 1919.886, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sha"}
+{"receiver": 0, "at_ms": 1919.9, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sha"}
+{"receiver": 4, "at_ms": 1919.969, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sha"}
+{"receiver": 2, "at_ms": 1926.043, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sha"}
+{"receiver": 1, "at_ms": 1926.08, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sha"}
+{"receiver": 0, "at_ms": 1926.094, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sha"}
+{"receiver": 4, "at_ms": 1926.227, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sha"}
+{"receiver": 3, "at_ms": 1926.242, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sha"}
+{"receiver": 0, "at_ms": 2365.138, "type": "transcript", "party": "D", "kind": "partial", "text": "Library"}
+{"receiver": 1, "at_ms": 2365.175, "type": "transcript", "party": "D", "kind": "partial", "text": "Library"}
+{"receiver": 2, "at_ms": 2365.369, "type": "transcript", "party": "D", "kind": "partial", "text": "Library"}
+{"receiver": 4, "at_ms": 2365.386, "type": "transcript", "party": "D", "kind": "partial", "text": "Library"}
+{"receiver": 3, "at_ms": 2365.394, "type": "transcript", "party": "D", "kind": "partial", "text": "Library"}
+{"receiver": 0, "at_ms": 2367.546, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sha"}
+{"receiver": 1, "at_ms": 2367.572, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sha"}
+{"receiver": 2, "at_ms": 2367.65, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sha"}
+{"receiver": 3, "at_ms": 2367.661, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sha"}
+{"receiver": 4, "at_ms": 2367.669, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sha"}
+{"receiver": 0, "at_ms": 2370.697, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham"}
+{"receiver": 1, "at_ms": 2370.787, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham"}
+{"receiver": 2, "at_ms": 2370.88, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham"}
+{"receiver": 4, "at_ms": 2370.893, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham"}
+{"receiver": 3, "at_ms": 2370.901, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham"}
+{"receiver": 2, "at_ms": 2375.039, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko"}
+{"receiver": 0, "at_ms": 2375.064, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko"}
+{"receiver": 1, "at_ms": 2375.073, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko"}
+{"receiver": 3, "at_ms": 2375.151, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko"}
+{"receiver": 4, "at_ms": 2375.164, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko"}
+{"receiver": 0, "at_ms": 2378.044, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko a"}
+{"receiver": 2, "at_ms": 2378.067, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko a"}
+{"receiver": 1, "at_ms": 2378.076, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko a"}
+{"receiver": 4, "at_ms": 2378.657, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko a"}
+{"receiver": 3, "at_ms": 2378.675, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko a"}
+{"receiver": 0, "at_ms": 2381.756, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath"}
+{"receiver": 1, "at_ms": 2381.782, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath"}
+{"receiver": 3, "at_ms": 2381.791, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath"}
+{"receiver": 4, "at_ms": 2381.798, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath"}
+{"receiver": 2, "at_ms": 2381.806, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath"}
+{"receiver": 2, "at_ms": 2386.705, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath"}
+{"receiver": 1, "at_ms": 2386.73, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath"}
+{"receiver": 3, "at_ms": 2386.739, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath"}
+{"receiver": 0, "at_ms": 2386.747, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath"}
+{"receiver": 4, "at_ms": 2386.754, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath"}
+{"receiver": 0, "at_ms": 2859.237, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham"}
+{"receiver": 1, "at_ms": 2859.266, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham"}
+{"receiver": 2, "at_ms": 2859.292, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham"}
+{"receiver": 3, "at_ms": 2859.3, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham"}
+{"receiver": 4, "at_ms": 2859.311, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham"}
+{"receiver": 1, "at_ms": 2861.635, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko"}
+{"receiver": 0, "at_ms": 2861.658, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko"}
+{"receiver": 4, "at_ms": 2861.667, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko"}
+{"receiver": 2, "at_ms": 2861.675, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko"}
+{"receiver": 3, "at_ms": 2861.682, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko"}
+{"receiver": 0, "at_ms": 2865.442, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko a"}
+{"receiver": 3, "at_ms": 2865.572, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko a"}
+{"receiver": 2, "at_ms": 2865.585, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko a"}
+{"receiver": 1, "at_ms": 2865.593, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko a"}
+{"receiver": 4, "at_ms": 2865.601, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko a"}
+{"receiver": 1, "at_ms": 2870.032, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath"}
+{"receiver": 4, "at_ms": 2870.057, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath"}
+{"receiver": 0, "at_ms": 2870.066, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath"}
+{"receiver": 2, "at_ms": 2870.129, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath"}
+{"receiver": 3, "at_ms": 2870.138, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath"}
+{"receiver": 0, "at_ms": 2874.229, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath b"}
+{"receiver": 1, "at_ms": 2874.37, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath b"}
+{"receiver": 2, "at_ms": 2874.399, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath b"}
+{"receiver": 3, "at_ms": 2874.414, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath b"}
+{"receiver": 4, "at_ms": 2874.514, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath b"}
+{"receiver": 0, "at_ms": 2880.955, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje"}
+{"receiver": 1, "at_ms": 2881.171, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje"}
+{"receiver": 2, "at_ms": 2881.188, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje"}
+{"receiver": 4, "at_ms": 2881.25, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje"}
+{"receiver": 3, "at_ms": 2881.259, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje"}
+{"receiver": 0, "at_ms": 2883.477, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje band"}
+{"receiver": 1, "at_ms": 2883.499, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje band"}
+{"receiver": 2, "at_ms": 2883.508, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje band"}
+{"receiver": 4, "at_ms": 2883.578, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje band"}
+{"receiver": 3, "at_ms": 2883.587, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje band"}
+{"receiver": 0, "at_ms": 2886.657, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje band"}
+{"receiver": 1, "at_ms": 2886.681, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje band"}
+{"receiver": 2, "at_ms": 2886.69, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje band"}
+{"receiver": 3, "at_ms": 2886.746, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje band"}
+{"receiver": 4, "at_ms": 2886.756, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje band"}
+{"receiver": 0, "at_ms": 3358.755, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath b"}
+{"receiver": 2, "at_ms": 3358.78, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath b"}
+{"receiver": 1, "at_ms": 3358.789, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath b"}
+{"receiver": 4, "at_ms": 3358.844, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath b"}
+{"receiver": 3, "at_ms": 3358.853, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath b"}
+{"receiver": 0, "at_ms": 3360.042, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje"}
+{"receiver": 2, "at_ms": 3360.064, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje"}
+{"receiver": 4, "at_ms": 3360.072, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje"}
+{"receiver": 3, "at_ms": 3360.082, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje"}
+{"receiver": 1, "at_ms": 3360.088, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje"}
+{"receiver": 1, "at_ms": 3363.076, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje band"}
+{"receiver": 0, "at_ms": 3363.1, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje band"}
+{"receiver": 2, "at_ms": 3363.109, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje band"}
+{"receiver": 3, "at_ms": 3363.194, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje band"}
+{"receiver": 4, "at_ms": 3363.203, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje band"}
+{"receiver": 2, "at_ms": 3368.025, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh"}
+{"receiver": 0, "at_ms": 3368.049, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh"}
+{"receiver": 1, "at_ms": 3368.058, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh"}
+{"receiver": 3, "at_ms": 3368.113, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh"}
+{"receiver": 4, "at_ms": 3368.122, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh"}
+{"receiver": 3, "at_ms": 3372.618, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hot"}
+{"receiver": 1, "at_ms": 3372.642, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hot"}
+{"receiver": 0, "at_ms": 3372.651, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hot"}
+{"receiver": 4, "at_ms": 3372.658, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hot"}
+{"receiver": 2, "at_ms": 3372.665, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hot"}
+{"receiver": 0, "at_ms": 3378.552, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hot"}
+{"receiver": 1, "at_ms": 3378.577, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hot"}
+{"receiver": 4, "at_ms": 3378.585, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hot"}
+{"receiver": 2, "at_ms": 3378.593, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hot"}
+{"receiver": 3, "at_ms": 3378.599, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hot"}
+{"receiver": 4, "at_ms": 3884.99, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh"}
+{"receiver": 0, "at_ms": 3885.035, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh"}
+{"receiver": 3, "at_ms": 3885.053, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh"}
+{"receiver": 2, "at_ms": 3885.068, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh"}
+{"receiver": 1, "at_ms": 3885.448, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh"}
+{"receiver": 0, "at_ms": 3891.674, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hot"}
+{"receiver": 1, "at_ms": 3891.887, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hot"}
+{"receiver": 2, "at_ms": 3892.077, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hot"}
+{"receiver": 3, "at_ms": 3892.101, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hot"}
+{"receiver": 4, "at_ms": 3892.121, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hot"}
+{"receiver": 0, "at_ms": 3895.239, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti"}
+{"receiver": 1, "at_ms": 3895.492, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti"}
+{"receiver": 3, "at_ms": 3895.517, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti"}
+{"receiver": 2, "at_ms": 3895.534, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti"}
+{"receiver": 4, "at_ms": 3895.63, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti"}
+{"receiver": 0, "at_ms": 3900.157, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti hai"}
+{"receiver": 2, "at_ms": 3900.205, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti hai"}
+{"receiver": 1, "at_ms": 3900.303, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti hai"}
+{"receiver": 3, "at_ms": 3900.38, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti hai"}
+{"receiver": 4, "at_ms": 3900.744, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti hai"}
+{"receiver": 0, "at_ms": 3902.035, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti hai."}
+{"receiver": 1, "at_ms": 3902.055, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti hai."}
+{"receiver": 4, "at_ms": 3902.065, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti hai."}
+{"receiver": 2, "at_ms": 3902.073, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti hai."}
+{"receiver": 3, "at_ms": 3902.112, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti hai."}
+{"receiver": 1, "at_ms": 3903.582, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti hai."}
+{"receiver": 0, "at_ms": 3903.604, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti hai."}
+{"receiver": 4, "at_ms": 3903.613, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti hai."}
+{"receiver": 3, "at_ms": 3903.621, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti hai."}
+{"receiver": 2, "at_ms": 3903.628, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti hai."}
+{"receiver": 1, "at_ms": 4144.153, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 2, "at_ms": 4144.208, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 0, "at_ms": 4144.508, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 3, "at_ms": 4144.535, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 4, "at_ms": 4144.555, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 0, "at_ms": 4163.428, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti"}
+{"receiver": 2, "at_ms": 4164.509, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti"}
+{"receiver": 1, "at_ms": 4164.567, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti"}
+{"receiver": 3, "at_ms": 4164.776, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti"}
+{"receiver": 4, "at_ms": 4164.812, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti"}
+{"receiver": 0, "at_ms": 4166.56, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti hai"}
+{"receiver": 1, "at_ms": 4166.913, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti hai"}
+{"receiver": 2, "at_ms": 4166.931, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti hai"}
+{"receiver": 3, "at_ms": 4166.943, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti hai"}
+{"receiver": 4, "at_ms": 4166.955, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti hai"}
+{"receiver": 3, "at_ms": 4168.802, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti hai."}
+{"receiver": 2, "at_ms": 4168.856, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti hai."}
+{"receiver": 0, "at_ms": 4168.879, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti hai."}
+{"receiver": 1, "at_ms": 4168.9, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti hai."}
+{"receiver": 4, "at_ms": 4168.919, "type": "transcript", "party": "D", "kind": "partial", "text": "Library sham ko aath baje bandh hoti hai."}
+{"receiver": 0, "at_ms": 4286.404, "type": "transcript", "party": "D", "kind": "final", "text": "library शाम को 8 बजे बंद होती है।", "seq": 1}
+{"receiver": 3, "at_ms": 4286.468, "type": "transcript", "party": "D", "kind": "final", "text": "library शाम को 8 बजे बंद होती है।", "seq": 1}
+{"receiver": 1, "at_ms": 4286.51, "type": "transcript", "party": "D", "kind": "final", "text": "library शाम को 8 बजे बंद होती है।", "seq": 1}
+{"receiver": 4, "at_ms": 4286.533, "type": "transcript", "party": "D", "kind": "final", "text": "library शाम को 8 बजे बंद होती है।", "seq": 1}
+{"receiver": 2, "at_ms": 4286.552, "type": "transcript", "party": "D", "kind": "final", "text": "library शाम को 8 बजे बंद होती है।", "seq": 1}
+{"receiver": 0, "at_ms": 5011.026, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 3, "at_ms": 5011.074, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 1, "at_ms": 5011.093, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 4, "at_ms": 5011.107, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 2, "at_ms": 5011.122, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 0, "at_ms": 5056.253, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 2, "at_ms": 5056.307, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 1, "at_ms": 5056.328, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 4, "at_ms": 5056.347, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 3, "at_ms": 5056.494, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 0, "at_ms": 5537.638, "type": "transcript", "party": "E", "kind": "partial", "text": "Per"}
+{"receiver": 2, "at_ms": 5537.691, "type": "transcript", "party": "E", "kind": "partial", "text": "Per"}
+{"receiver": 1, "at_ms": 5537.713, "type": "transcript", "party": "E", "kind": "partial", "text": "Per"}
+{"receiver": 4, "at_ms": 5537.731, "type": "transcript", "party": "E", "kind": "partial", "text": "Per"}
+{"receiver": 3, "at_ms": 5537.748, "type": "transcript", "party": "E", "kind": "partial", "text": "Per"}
+{"receiver": 0, "at_ms": 5541.604, "type": "transcript", "party": "E", "kind": "partial", "text": "Per"}
+{"receiver": 4, "at_ms": 5541.656, "type": "transcript", "party": "E", "kind": "partial", "text": "Per"}
+{"receiver": 3, "at_ms": 5541.676, "type": "transcript", "party": "E", "kind": "partial", "text": "Per"}
+{"receiver": 2, "at_ms": 5541.693, "type": "transcript", "party": "E", "kind": "partial", "text": "Per"}
+{"receiver": 1, "at_ms": 5541.714, "type": "transcript", "party": "E", "kind": "partial", "text": "Per"}
+{"receiver": 1, "at_ms": 5855.225, "type": "translated", "speaker": "D", "language": "en-IN", "text": "The library closes at 8 in the evening.", "seq": 1}
+{"receiver": 0, "at_ms": 6018.441, "type": "transcript", "party": "E", "kind": "partial", "text": "Per"}
+{"receiver": 1, "at_ms": 6018.807, "type": "transcript", "party": "E", "kind": "partial", "text": "Per"}
+{"receiver": 2, "at_ms": 6018.829, "type": "transcript", "party": "E", "kind": "partial", "text": "Per"}
+{"receiver": 4, "at_ms": 6018.838, "type": "transcript", "party": "E", "kind": "partial", "text": "Per"}
+{"receiver": 3, "at_ms": 6018.846, "type": "transcript", "party": "E", "kind": "partial", "text": "Per"}
+{"receiver": 4, "at_ms": 6366.642, "type": "translated", "speaker": "D", "language": "te-IN", "text": "గ్రంథాలయం సాయంత్రం 8 గంటలకు మూసివేయబడుతుంది.", "seq": 1}
+{"receiver": 0, "at_ms": 6366.693, "type": "translated", "speaker": "D", "language": "te-IN", "text": "గ్రంథాలయం సాయంత్రం 8 గంటలకు మూసివేయబడుతుంది.", "seq": 1}
+{"receiver": 2, "at_ms": 6460.122, "type": "translated", "speaker": "D", "language": "hi-IN", "text": "पुस्तकालय शाम 8 बजे बंद हो जाता है।", "seq": 1}
+{"receiver": 4, "at_ms": 6602.364, "type": "transcript", "party": "E", "kind": "partial", "text": "Perund"}
+{"receiver": 2, "at_ms": 6602.385, "type": "transcript", "party": "E", "kind": "partial", "text": "Perund"}
+{"receiver": 3, "at_ms": 6602.394, "type": "transcript", "party": "E", "kind": "partial", "text": "Perund"}
+{"receiver": 1, "at_ms": 6602.401, "type": "transcript", "party": "E", "kind": "partial", "text": "Perund"}
+{"receiver": 0, "at_ms": 6602.408, "type": "transcript", "party": "E", "kind": "partial", "text": "Perund"}
+{"receiver": 1, "at_ms": 6606.159, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundun"}
+{"receiver": 0, "at_ms": 6606.205, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundun"}
+{"receiver": 3, "at_ms": 6606.334, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundun"}
+{"receiver": 2, "at_ms": 6606.353, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundun"}
+{"receiver": 4, "at_ms": 6606.415, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundun"}
+{"receiver": 0, "at_ms": 6610.185, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunir"}
+{"receiver": 1, "at_ms": 6610.294, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunir"}
+{"receiver": 2, "at_ms": 6610.309, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunir"}
+{"receiver": 4, "at_ms": 6610.379, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunir"}
+{"receiver": 3, "at_ms": 6610.39, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunir"}
+{"receiver": 0, "at_ms": 6614.557, "type": "transcript", "party": "E", "kind": "partial", "text": "Perunduniruth"}
+{"receiver": 1, "at_ms": 6614.598, "type": "transcript", "party": "E", "kind": "partial", "text": "Perunduniruth"}
+{"receiver": 2, "at_ms": 6614.617, "type": "transcript", "party": "E", "kind": "partial", "text": "Perunduniruth"}
+{"receiver": 4, "at_ms": 6614.633, "type": "transcript", "party": "E", "kind": "partial", "text": "Perunduniruth"}
+{"receiver": 3, "at_ms": 6614.64, "type": "transcript", "party": "E", "kind": "partial", "text": "Perunduniruth"}
+{"receiver": 0, "at_ms": 6617.594, "type": "transcript", "party": "E", "kind": "partial", "text": "Perunduniruth"}
+{"receiver": 1, "at_ms": 6617.617, "type": "transcript", "party": "E", "kind": "partial", "text": "Perunduniruth"}
+{"receiver": 2, "at_ms": 6617.626, "type": "transcript", "party": "E", "kind": "partial", "text": "Perunduniruth"}
+{"receiver": 4, "at_ms": 6617.633, "type": "transcript", "party": "E", "kind": "partial", "text": "Perunduniruth"}
+{"receiver": 3, "at_ms": 6617.691, "type": "transcript", "party": "E", "kind": "partial", "text": "Perunduniruth"}
+{"receiver": 1, "at_ms": 6764.636, "type": "latency", "speaker": "D", "language": "en-IN", "seq": 1, "stt_ms": 3433, "queue_ms": 0, "translate_ms": 1478, "tts_ms": 909, "total_ms": 5820}
+{"receiver": 1, "at_ms": 6790.043, "type": "audio", "speaker": "D", "language": "en-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757702735.3384, "wav_duration_s": 2.7306875, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 87426, "wav_sha256": "b07f334d8884218159e8b78520ee7f3c6541666101e0c1b1302d0c69914a63bf", "wav_valid": true}
+{"receiver": 0, "at_ms": 7020.396, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundun"}
+{"receiver": 1, "at_ms": 7020.985, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundun"}
+{"receiver": 2, "at_ms": 7021.033, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundun"}
+{"receiver": 4, "at_ms": 7021.056, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundun"}
+{"receiver": 3, "at_ms": 7021.073, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundun"}
+{"receiver": 0, "at_ms": 7023.665, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunir"}
+{"receiver": 1, "at_ms": 7023.925, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunir"}
+{"receiver": 4, "at_ms": 7023.951, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunir"}
+{"receiver": 2, "at_ms": 7023.968, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunir"}
+{"receiver": 3, "at_ms": 7023.983, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunir"}
+{"receiver": 0, "at_ms": 7026.408, "type": "transcript", "party": "E", "kind": "partial", "text": "Perunduniruth"}
+{"receiver": 1, "at_ms": 7026.452, "type": "transcript", "party": "E", "kind": "partial", "text": "Perunduniruth"}
+{"receiver": 3, "at_ms": 7026.472, "type": "transcript", "party": "E", "kind": "partial", "text": "Perunduniruth"}
+{"receiver": 2, "at_ms": 7026.487, "type": "transcript", "party": "E", "kind": "partial", "text": "Perunduniruth"}
+{"receiver": 4, "at_ms": 7026.503, "type": "transcript", "party": "E", "kind": "partial", "text": "Perunduniruth"}
+{"receiver": 0, "at_ms": 7032.608, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham"}
+{"receiver": 2, "at_ms": 7032.658, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham"}
+{"receiver": 1, "at_ms": 7032.791, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham"}
+{"receiver": 4, "at_ms": 7032.813, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham"}
+{"receiver": 3, "at_ms": 7032.931, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham"}
+{"receiver": 1, "at_ms": 7036.678, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham ter"}
+{"receiver": 0, "at_ms": 7036.728, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham ter"}
+{"receiver": 2, "at_ms": 7037.959, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham ter"}
+{"receiver": 3, "at_ms": 7038.484, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham ter"}
+{"receiver": 4, "at_ms": 7038.533, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham ter"}
+{"receiver": 0, "at_ms": 7040.981, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruv"}
+{"receiver": 1, "at_ms": 7041.132, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruv"}
+{"receiver": 2, "at_ms": 7041.262, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruv"}
+{"receiver": 4, "at_ms": 7041.287, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruv"}
+{"receiver": 3, "at_ms": 7041.665, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruv"}
+{"receiver": 0, "at_ms": 7046.17, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvuk"}
+{"receiver": 1, "at_ms": 7046.223, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvuk"}
+{"receiver": 2, "at_ms": 7046.247, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvuk"}
+{"receiver": 3, "at_ms": 7046.265, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvuk"}
+{"receiver": 4, "at_ms": 7046.282, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvuk"}
+{"receiver": 1, "at_ms": 7048.372, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku"}
+{"receiver": 0, "at_ms": 7048.424, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku"}
+{"receiver": 2, "at_ms": 7048.58, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku"}
+{"receiver": 3, "at_ms": 7048.604, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku"}
+{"receiver": 4, "at_ms": 7048.683, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku"}
+{"receiver": 0, "at_ms": 7052.45, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku"}
+{"receiver": 1, "at_ms": 7052.789, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku"}
+{"receiver": 3, "at_ms": 7052.908, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku"}
+{"receiver": 2, "at_ms": 7052.928, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku"}
+{"receiver": 4, "at_ms": 7052.945, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku"}
+{"receiver": 0, "at_ms": 7526.239, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham"}
+{"receiver": 1, "at_ms": 7526.289, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham"}
+{"receiver": 3, "at_ms": 7526.464, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham"}
+{"receiver": 2, "at_ms": 7526.488, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham"}
+{"receiver": 4, "at_ms": 7526.505, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham"}
+{"receiver": 0, "at_ms": 7529.15, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham ter"}
+{"receiver": 1, "at_ms": 7529.198, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham ter"}
+{"receiver": 2, "at_ms": 7529.218, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham ter"}
+{"receiver": 3, "at_ms": 7529.339, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham ter"}
+{"receiver": 4, "at_ms": 7529.36, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham ter"}
+{"receiver": 0, "at_ms": 7532.149, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruv"}
+{"receiver": 4, "at_ms": 7532.295, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruv"}
+{"receiver": 3, "at_ms": 7532.454, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruv"}
+{"receiver": 1, "at_ms": 7532.48, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruv"}
+{"receiver": 2, "at_ms": 7532.497, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruv"}
+{"receiver": 0, "at_ms": 7537.298, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvuk"}
+{"receiver": 1, "at_ms": 7538.999, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvuk"}
+{"receiver": 2, "at_ms": 7539.046, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvuk"}
+{"receiver": 3, "at_ms": 7539.067, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvuk"}
+{"receiver": 4, "at_ms": 7539.086, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvuk"}
+{"receiver": 0, "at_ms": 7541.466, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku"}
+{"receiver": 1, "at_ms": 7541.518, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku"}
+{"receiver": 3, "at_ms": 7541.745, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku"}
+{"receiver": 2, "at_ms": 7541.779, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku"}
+{"receiver": 4, "at_ms": 7541.799, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku"}
+{"receiver": 0, "at_ms": 7546.346, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku app"}
+{"receiver": 3, "at_ms": 7546.599, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku app"}
+{"receiver": 2, "at_ms": 7546.864, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku app"}
+{"receiver": 1, "at_ms": 7546.959, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku app"}
+{"receiver": 4, "at_ms": 7547.006, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku app"}
+{"receiver": 1, "at_ms": 7551.694, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku app"}
+{"receiver": 0, "at_ms": 7551.753, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku app"}
+{"receiver": 2, "at_ms": 7551.776, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku app"}
+{"receiver": 3, "at_ms": 7551.794, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku app"}
+{"receiver": 4, "at_ms": 7551.959, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku app"}
+{"receiver": 2, "at_ms": 7589.3, "type": "latency", "speaker": "D", "language": "hi-IN", "seq": 1, "stt_ms": 3433, "queue_ms": 0, "translate_ms": 1996, "tts_ms": 1131, "total_ms": 6560}
+{"receiver": 2, "at_ms": 7607.364, "type": "audio", "speaker": "D", "language": "hi-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757702735.3384, "wav_duration_s": 3.7546875, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 120194, "wav_sha256": "0af34a8d58d54203b75de29f47b0b9ffcd257ffd51a4528ef09342ca806d2e60", "wav_valid": true}
+{"receiver": 4, "at_ms": 7901.533, "type": "latency", "speaker": "D", "language": "te-IN", "seq": 1, "stt_ms": 3433, "queue_ms": 0, "translate_ms": 2080, "tts_ms": 1535, "total_ms": 7048}
+{"receiver": 0, "at_ms": 7901.588, "type": "latency", "speaker": "D", "language": "te-IN", "seq": 1, "stt_ms": 3433, "queue_ms": 0, "translate_ms": 2080, "tts_ms": 1535, "total_ms": 7048}
+{"receiver": 0, "at_ms": 7933.017, "type": "audio", "speaker": "D", "language": "te-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757702735.3384, "wav_duration_s": 5.376, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 172076, "wav_sha256": "c49781b8b6ebc1d877bc07815eb0a1934dc0c5f015d5ae6a7b48f6bf3f36403d", "wav_valid": true}
+{"receiver": 4, "at_ms": 7944.906, "type": "audio", "speaker": "D", "language": "te-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757702735.3384, "wav_duration_s": 5.376, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 172076, "wav_sha256": "c49781b8b6ebc1d877bc07815eb0a1934dc0c5f015d5ae6a7b48f6bf3f36403d", "wav_valid": true}
+{"receiver": 0, "at_ms": 8019.797, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku app"}
+{"receiver": 1, "at_ms": 8021.535, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku app"}
+{"receiver": 3, "at_ms": 8021.62, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku app"}
+{"receiver": 2, "at_ms": 8021.749, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku app"}
+{"receiver": 4, "at_ms": 8022.255, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku app"}
+{"receiver": 1, "at_ms": 8025.228, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appalay"}
+{"receiver": 0, "at_ms": 8025.298, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appalay"}
+{"receiver": 4, "at_ms": 8025.541, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appalay"}
+{"receiver": 3, "at_ms": 8025.578, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appalay"}
+{"receiver": 2, "at_ms": 8026.588, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appalay"}
+{"receiver": 2, "at_ms": 8034.592, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appalay"}
+{"receiver": 0, "at_ms": 8034.667, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appalay"}
+{"receiver": 1, "at_ms": 8034.702, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appalay"}
+{"receiver": 4, "at_ms": 8036.015, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appalay"}
+{"receiver": 3, "at_ms": 8036.06, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appalay"}
+{"receiver": 0, "at_ms": 8540.654, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa"}
+{"receiver": 4, "at_ms": 8542.597, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa"}
+{"receiver": 1, "at_ms": 8542.669, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa"}
+{"receiver": 2, "at_ms": 8542.705, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa"}
+{"receiver": 3, "at_ms": 8542.874, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa"}
+{"receiver": 0, "at_ms": 8543.044, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa"}
+{"receiver": 1, "at_ms": 8543.074, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa"}
+{"receiver": 4, "at_ms": 8543.291, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa"}
+{"receiver": 3, "at_ms": 8543.315, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa"}
+{"receiver": 2, "at_ms": 8543.331, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa"}
+{"receiver": 1, "at_ms": 9026.543, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa lay"}
+{"receiver": 3, "at_ms": 9026.588, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa lay"}
+{"receiver": 4, "at_ms": 9026.607, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa lay"}
+{"receiver": 2, "at_ms": 9026.808, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa lay"}
+{"receiver": 0, "at_ms": 9026.829, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa lay"}
+{"receiver": 0, "at_ms": 9030.844, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye"}
+{"receiver": 1, "at_ms": 9030.895, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye"}
+{"receiver": 2, "at_ms": 9031.038, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye"}
+{"receiver": 3, "at_ms": 9031.209, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye"}
+{"receiver": 4, "at_ms": 9031.233, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye"}
+{"receiver": 0, "at_ms": 9035.57, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye ir"}
+{"receiver": 1, "at_ms": 9036.314, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye ir"}
+{"receiver": 2, "at_ms": 9036.525, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye ir"}
+{"receiver": 3, "at_ms": 9036.552, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye ir"}
+{"receiver": 4, "at_ms": 9036.569, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye ir"}
+{"receiver": 1, "at_ms": 9043.672, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye iruk"}
+{"receiver": 0, "at_ms": 9043.727, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye iruk"}
+{"receiver": 2, "at_ms": 9043.956, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye iruk"}
+{"receiver": 3, "at_ms": 9043.981, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye iruk"}
+{"receiver": 4, "at_ms": 9044.0, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye iruk"}
+{"receiver": 0, "at_ms": 9048.334, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye irukk"}
+{"receiver": 1, "at_ms": 9048.556, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye irukk"}
+{"receiver": 2, "at_ms": 9049.036, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye irukk"}
+{"receiver": 4, "at_ms": 9049.071, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye irukk"}
+{"receiver": 3, "at_ms": 9049.093, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye irukk"}
+{"receiver": 0, "at_ms": 9053.046, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye irukkki"}
+{"receiver": 1, "at_ms": 9053.091, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye irukkki"}
+{"receiver": 2, "at_ms": 9053.172, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye irukkki"}
+{"receiver": 3, "at_ms": 9053.871, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye irukkki"}
+{"receiver": 4, "at_ms": 9054.426, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye irukkki"}
+{"receiver": 0, "at_ms": 9057.726, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye irukkki"}
+{"receiver": 2, "at_ms": 9058.278, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye irukkki"}
+{"receiver": 3, "at_ms": 9058.317, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye irukkki"}
+{"receiver": 1, "at_ms": 9058.337, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye irukkki"}
+{"receiver": 4, "at_ms": 9058.414, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa laye irukkki"}
+{"receiver": 2, "at_ms": 9206.271, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 1, "at_ms": 9206.32, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 3, "at_ms": 9206.341, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 0, "at_ms": 9206.522, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 4, "at_ms": 9206.542, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 0, "at_ms": 9226.284, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa lay"}
+{"receiver": 1, "at_ms": 9226.334, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa lay"}
+{"receiver": 2, "at_ms": 9226.563, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa lay"}
+{"receiver": 3, "at_ms": 9226.586, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa lay"}
+{"receiver": 4, "at_ms": 9226.604, "type": "transcript", "party": "E", "kind": "partial", "text": "Perundunirutham teruvukku appa lay"}
+{"receiver": 4, "at_ms": 9327.954, "type": "transcript", "party": "E", "kind": "final", "text": "பேருந்து நிறுத்தம் தெருவுக்கு அப்பாலேயே இருக்கிறது", "seq": 1}
+{"receiver": 3, "at_ms": 9328.021, "type": "transcript", "party": "E", "kind": "final", "text": "பேருந்து நிறுத்தம் தெருவுக்கு அப்பாலேயே இருக்கிறது", "seq": 1}
+{"receiver": 2, "at_ms": 9328.048, "type": "transcript", "party": "E", "kind": "final", "text": "பேருந்து நிறுத்தம் தெருவுக்கு அப்பாலேயே இருக்கிறது", "seq": 1}
+{"receiver": 1, "at_ms": 9328.071, "type": "transcript", "party": "E", "kind": "final", "text": "பேருந்து நிறுத்தம் தெருவுக்கு அப்பாலேயே இருக்கிறது", "seq": 1}
+{"receiver": 0, "at_ms": 9328.092, "type": "transcript", "party": "E", "kind": "final", "text": "பேருந்து நிறுத்தம் தெருவுக்கு அப்பாலேயே இருக்கிறது", "seq": 1}
+{"receiver": 1, "at_ms": 10767.388, "type": "translated", "speaker": "E", "language": "en-IN", "text": "The bus stop is just across the street", "seq": 1}
+{"receiver": 0, "at_ms": 11255.192, "type": "translated", "speaker": "E", "language": "te-IN", "text": "బస్సు స్టాప్ వీధికి అడ్డంగా ఉంది.", "seq": 1}
+{"receiver": 3, "at_ms": 11255.241, "type": "translated", "speaker": "E", "language": "te-IN", "text": "బస్సు స్టాప్ వీధికి అడ్డంగా ఉంది.", "seq": 1}
+{"receiver": 2, "at_ms": 11336.374, "type": "translated", "speaker": "E", "language": "hi-IN", "text": "बस स्टॉप सड़क के पार है।", "seq": 1}
+{"receiver": 1, "at_ms": 11691.206, "type": "latency", "speaker": "E", "language": "en-IN", "seq": 1, "stt_ms": 4316, "queue_ms": 0, "translate_ms": 1347, "tts_ms": 924, "total_ms": 6587}
+{"receiver": 1, "at_ms": 11713.056, "type": "audio", "speaker": "E", "language": "en-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757706887.1853, "wav_duration_s": 2.9866875, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 95618, "wav_sha256": "571b11fbafaeef1da94258cb14e795c454159c549ed55a198d30f232a63347bd", "wav_valid": true}
+{"receiver": 2, "at_ms": 12066.582, "type": "latency", "speaker": "E", "language": "hi-IN", "seq": 1, "stt_ms": 4316, "queue_ms": 0, "translate_ms": 1846, "tts_ms": 730, "total_ms": 6892}
+{"receiver": 2, "at_ms": 12088.28, "type": "audio", "speaker": "E", "language": "hi-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757706887.1853, "wav_duration_s": 2.1333125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 68310, "wav_sha256": "50758e6b225f32a5a2f9f7f55350d23e55dcfb41502643ad665b764294080f38", "wav_valid": true}
+{"receiver": 0, "at_ms": 12131.771, "type": "latency", "speaker": "E", "language": "te-IN", "seq": 1, "stt_ms": 4316, "queue_ms": 0, "translate_ms": 1928, "tts_ms": 877, "total_ms": 7121}
+{"receiver": 3, "at_ms": 12131.832, "type": "latency", "speaker": "E", "language": "te-IN", "seq": 1, "stt_ms": 4316, "queue_ms": 0, "translate_ms": 1928, "tts_ms": 877, "total_ms": 7121}
+{"receiver": 0, "at_ms": 12149.013, "type": "audio", "speaker": "E", "language": "te-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757706887.1853, "wav_duration_s": 2.6453125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 84694, "wav_sha256": "d9bb34c0cde06817294d02f9f812c97b2fac9578f14d923f58007ce35c7011e8", "wav_valid": true}
+{"receiver": 3, "at_ms": 12159.55, "type": "audio", "speaker": "E", "language": "te-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757706887.1853, "wav_duration_s": 2.6453125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 84694, "wav_sha256": "d9bb34c0cde06817294d02f9f812c97b2fac9578f14d923f58007ce35c7011e8", "wav_valid": true}
+{"receiver": 2, "at_ms": 15051.169, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 2, "at_ms": 15051.213, "type": "peer_left", "party_id": "D"}
+{"receiver": 1, "at_ms": 15051.312, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 1, "at_ms": 15051.33, "type": "peer_left", "party_id": "D"}
+{"receiver": 3, "at_ms": 15052.388, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 0, "at_ms": 15052.628, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 0, "at_ms": 15052.648, "type": "peer_left", "party_id": "D"}
+{"receiver": 4, "at_ms": 15052.728, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 4, "at_ms": 15052.742, "type": "peer_left", "party_id": "D"}
+{"receiver": 0, "at_ms": 15113.209, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 0, "at_ms": 15113.277, "type": "peer_left", "party_id": "E"}
+{"receiver": 1, "at_ms": 15113.455, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 1, "at_ms": 15113.473, "type": "peer_left", "party_id": "E"}
+{"receiver": 2, "at_ms": 15113.494, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 2, "at_ms": 15113.506, "type": "peer_left", "party_id": "E"}
+{"receiver": 4, "at_ms": 15113.792, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}

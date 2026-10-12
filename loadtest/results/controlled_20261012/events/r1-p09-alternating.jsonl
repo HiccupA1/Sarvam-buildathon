@@ -1,0 +1,440 @@
+{"receiver": 0, "at_ms": 9.225, "type": "joined", "party_id": "A", "language": "en-IN", "resumed": false, "muted": true, "role": "listener"}
+{"receiver": 0, "at_ms": 9.266, "type": "ready"}
+{"receiver": 1, "at_ms": 13.841, "type": "joined", "party_id": "B", "language": "hi-IN", "resumed": false, "muted": true, "role": "listener"}
+{"receiver": 1, "at_ms": 13.904, "type": "peer_joined", "party_id": "A", "language": "en-IN", "muted": true, "role": "listener"}
+{"receiver": 1, "at_ms": 13.994, "type": "ready"}
+{"receiver": 2, "at_ms": 18.417, "type": "joined", "party_id": "C", "language": "ta-IN", "resumed": false, "muted": true, "role": "listener"}
+{"receiver": 2, "at_ms": 18.567, "type": "peer_joined", "party_id": "A", "language": "en-IN", "muted": true, "role": "listener"}
+{"receiver": 2, "at_ms": 18.584, "type": "peer_joined", "party_id": "B", "language": "hi-IN", "muted": true, "role": "listener"}
+{"receiver": 2, "at_ms": 18.722, "type": "ready"}
+{"receiver": 3, "at_ms": 24.647, "type": "joined", "party_id": "D", "language": "en-IN", "resumed": false, "muted": false, "role": "speaker"}
+{"receiver": 3, "at_ms": 25.544, "type": "peer_joined", "party_id": "A", "language": "en-IN", "muted": true, "role": "listener"}
+{"receiver": 3, "at_ms": 25.616, "type": "peer_joined", "party_id": "B", "language": "hi-IN", "muted": true, "role": "listener"}
+{"receiver": 3, "at_ms": 25.642, "type": "peer_joined", "party_id": "C", "language": "ta-IN", "muted": true, "role": "listener"}
+{"receiver": 3, "at_ms": 231.576, "type": "ready"}
+{"receiver": 4, "at_ms": 246.467, "type": "joined", "party_id": "E", "language": "en-IN", "resumed": false, "muted": false, "role": "speaker"}
+{"receiver": 4, "at_ms": 247.486, "type": "peer_joined", "party_id": "A", "language": "en-IN", "muted": true, "role": "listener"}
+{"receiver": 4, "at_ms": 247.56, "type": "peer_joined", "party_id": "B", "language": "hi-IN", "muted": true, "role": "listener"}
+{"receiver": 4, "at_ms": 247.593, "type": "peer_joined", "party_id": "C", "language": "ta-IN", "muted": true, "role": "listener"}
+{"receiver": 4, "at_ms": 247.618, "type": "peer_joined", "party_id": "D", "language": "en-IN", "muted": false, "role": "speaker"}
+{"receiver": 4, "at_ms": 456.63, "type": "ready"}
+{"receiver": 0, "at_ms": 456.896, "type": "peer_joined", "party_id": "B", "language": "hi-IN", "muted": true, "role": "listener"}
+{"receiver": 0, "at_ms": 456.925, "type": "peer_joined", "party_id": "C", "language": "ta-IN", "muted": true, "role": "listener"}
+{"receiver": 0, "at_ms": 456.942, "type": "peer_joined", "party_id": "D", "language": "en-IN", "muted": false, "role": "speaker"}
+{"receiver": 0, "at_ms": 456.954, "type": "peer_joined", "party_id": "E", "language": "en-IN", "muted": false, "role": "speaker"}
+{"receiver": 1, "at_ms": 456.979, "type": "peer_joined", "party_id": "C", "language": "ta-IN", "muted": true, "role": "listener"}
+{"receiver": 1, "at_ms": 456.992, "type": "peer_joined", "party_id": "D", "language": "en-IN", "muted": false, "role": "speaker"}
+{"receiver": 1, "at_ms": 457.004, "type": "peer_joined", "party_id": "E", "language": "en-IN", "muted": false, "role": "speaker"}
+{"receiver": 2, "at_ms": 457.021, "type": "peer_joined", "party_id": "D", "language": "en-IN", "muted": false, "role": "speaker"}
+{"receiver": 2, "at_ms": 457.034, "type": "peer_joined", "party_id": "E", "language": "en-IN", "muted": false, "role": "speaker"}
+{"receiver": 3, "at_ms": 457.052, "type": "peer_joined", "party_id": "E", "language": "en-IN", "muted": false, "role": "speaker"}
+{"receiver": 0, "at_ms": 813.142, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 3, "at_ms": 813.191, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 2, "at_ms": 813.209, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 1, "at_ms": 813.225, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 4, "at_ms": 813.358, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 0, "at_ms": 847.363, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 4, "at_ms": 847.417, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 2, "at_ms": 847.44, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 1, "at_ms": 847.458, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 3, "at_ms": 847.475, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 0, "at_ms": 1334.182, "type": "transcript", "party": "D", "kind": "partial", "text": "T"}
+{"receiver": 2, "at_ms": 1334.453, "type": "transcript", "party": "D", "kind": "partial", "text": "T"}
+{"receiver": 4, "at_ms": 1334.478, "type": "transcript", "party": "D", "kind": "partial", "text": "T"}
+{"receiver": 1, "at_ms": 1334.494, "type": "transcript", "party": "D", "kind": "partial", "text": "T"}
+{"receiver": 3, "at_ms": 1334.553, "type": "transcript", "party": "D", "kind": "partial", "text": "T"}
+{"receiver": 0, "at_ms": 1343.088, "type": "transcript", "party": "D", "kind": "partial", "text": "T"}
+{"receiver": 1, "at_ms": 1343.142, "type": "transcript", "party": "D", "kind": "partial", "text": "T"}
+{"receiver": 2, "at_ms": 1343.813, "type": "transcript", "party": "D", "kind": "partial", "text": "T"}
+{"receiver": 4, "at_ms": 1343.839, "type": "transcript", "party": "D", "kind": "partial", "text": "T"}
+{"receiver": 3, "at_ms": 1343.856, "type": "transcript", "party": "D", "kind": "partial", "text": "T"}
+{"receiver": 0, "at_ms": 1822.256, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala"}
+{"receiver": 1, "at_ms": 1822.294, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala"}
+{"receiver": 2, "at_ms": 1822.404, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala"}
+{"receiver": 3, "at_ms": 1822.415, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala"}
+{"receiver": 4, "at_ms": 1822.461, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala"}
+{"receiver": 1, "at_ms": 1828.677, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 0, "at_ms": 1828.706, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 3, "at_ms": 1828.828, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 2, "at_ms": 1828.838, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 4, "at_ms": 1828.845, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 2, "at_ms": 1831.128, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 4, "at_ms": 1831.177, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 0, "at_ms": 1831.197, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 1, "at_ms": 1831.212, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 3, "at_ms": 1831.228, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 3, "at_ms": 2368.231, "type": "transcript", "party": "D", "kind": "partial", "text": "T"}
+{"receiver": 0, "at_ms": 2368.306, "type": "transcript", "party": "D", "kind": "partial", "text": "T"}
+{"receiver": 2, "at_ms": 2368.686, "type": "transcript", "party": "D", "kind": "partial", "text": "T"}
+{"receiver": 4, "at_ms": 2369.172, "type": "transcript", "party": "D", "kind": "partial", "text": "T"}
+{"receiver": 1, "at_ms": 2369.23, "type": "transcript", "party": "D", "kind": "partial", "text": "T"}
+{"receiver": 0, "at_ms": 2846.01, "type": "transcript", "party": "D", "kind": "partial", "text": "T"}
+{"receiver": 4, "at_ms": 2846.053, "type": "transcript", "party": "D", "kind": "partial", "text": "T"}
+{"receiver": 2, "at_ms": 2846.065, "type": "transcript", "party": "D", "kind": "partial", "text": "T"}
+{"receiver": 1, "at_ms": 2846.075, "type": "transcript", "party": "D", "kind": "partial", "text": "T"}
+{"receiver": 3, "at_ms": 2846.085, "type": "transcript", "party": "D", "kind": "partial", "text": "T"}
+{"receiver": 0, "at_ms": 3358.614, "type": "transcript", "party": "D", "kind": "partial", "text": "T"}
+{"receiver": 2, "at_ms": 3358.767, "type": "transcript", "party": "D", "kind": "partial", "text": "T"}
+{"receiver": 3, "at_ms": 3358.799, "type": "transcript", "party": "D", "kind": "partial", "text": "T"}
+{"receiver": 1, "at_ms": 3358.821, "type": "transcript", "party": "D", "kind": "partial", "text": "T"}
+{"receiver": 4, "at_ms": 3360.202, "type": "transcript", "party": "D", "kind": "partial", "text": "T"}
+{"receiver": 0, "at_ms": 3826.152, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala"}
+{"receiver": 1, "at_ms": 3826.205, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala"}
+{"receiver": 3, "at_ms": 3826.225, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala"}
+{"receiver": 2, "at_ms": 3826.242, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala"}
+{"receiver": 4, "at_ms": 3826.728, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala"}
+{"receiver": 0, "at_ms": 3829.295, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 3, "at_ms": 3829.345, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 1, "at_ms": 3829.366, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 2, "at_ms": 3829.385, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 4, "at_ms": 3829.401, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 0, "at_ms": 3832.525, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 1, "at_ms": 3832.656, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 2, "at_ms": 3832.819, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 4, "at_ms": 3832.846, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 3, "at_ms": 3832.862, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 2, "at_ms": 3839.437, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 0, "at_ms": 3839.464, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 1, "at_ms": 3839.475, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 3, "at_ms": 3839.484, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 4, "at_ms": 3839.534, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 0, "at_ms": 4336.28, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala"}
+{"receiver": 1, "at_ms": 4336.606, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala"}
+{"receiver": 3, "at_ms": 4336.639, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala"}
+{"receiver": 4, "at_ms": 4336.892, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala"}
+{"receiver": 2, "at_ms": 4336.948, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala"}
+{"receiver": 0, "at_ms": 4340.687, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 1, "at_ms": 4340.737, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 4, "at_ms": 4340.757, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 2, "at_ms": 4340.773, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 3, "at_ms": 4341.513, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 4, "at_ms": 4344.24, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 1, "at_ms": 4344.68, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 0, "at_ms": 4344.714, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 2, "at_ms": 4344.889, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 3, "at_ms": 4344.915, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 0, "at_ms": 4349.978, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 1, "at_ms": 4350.031, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 2, "at_ms": 4350.05, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 4, "at_ms": 4350.068, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 3, "at_ms": 4350.084, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala,"}
+{"receiver": 0, "at_ms": 4823.817, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, stu"}
+{"receiver": 2, "at_ms": 4823.869, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, stu"}
+{"receiver": 3, "at_ms": 4823.89, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, stu"}
+{"receiver": 1, "at_ms": 4823.907, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, stu"}
+{"receiver": 4, "at_ms": 4824.102, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, stu"}
+{"receiver": 0, "at_ms": 4827.296, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, stu"}
+{"receiver": 1, "at_ms": 4827.34, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, stu"}
+{"receiver": 3, "at_ms": 4827.502, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, stu"}
+{"receiver": 2, "at_ms": 4827.522, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, stu"}
+{"receiver": 4, "at_ms": 4827.545, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, stu"}
+{"receiver": 1, "at_ms": 5324.835, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, stu"}
+{"receiver": 2, "at_ms": 5324.88, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, stu"}
+{"receiver": 4, "at_ms": 5324.899, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, stu"}
+{"receiver": 0, "at_ms": 5324.913, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, stu"}
+{"receiver": 3, "at_ms": 5325.03, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, stu"}
+{"receiver": 1, "at_ms": 5613.992, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 4, "at_ms": 5614.034, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 0, "at_ms": 5614.05, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 2, "at_ms": 5614.524, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 3, "at_ms": 5614.562, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 2, "at_ms": 5630.568, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, stud"}
+{"receiver": 3, "at_ms": 5630.633, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, stud"}
+{"receiver": 0, "at_ms": 5630.656, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, stud"}
+{"receiver": 4, "at_ms": 5630.674, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, stud"}
+{"receiver": 1, "at_ms": 5630.689, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, stud"}
+{"receiver": 3, "at_ms": 5635.388, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student"}
+{"receiver": 0, "at_ms": 5635.437, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student"}
+{"receiver": 1, "at_ms": 5635.459, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student"}
+{"receiver": 2, "at_ms": 5635.542, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student"}
+{"receiver": 4, "at_ms": 5636.035, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student"}
+{"receiver": 1, "at_ms": 5639.637, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student,"}
+{"receiver": 0, "at_ms": 5639.69, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student,"}
+{"receiver": 2, "at_ms": 5640.3, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student,"}
+{"receiver": 4, "at_ms": 5640.317, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student,"}
+{"receiver": 3, "at_ms": 5640.328, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student,"}
+{"receiver": 4, "at_ms": 5645.005, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student"}
+{"receiver": 1, "at_ms": 5645.058, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student"}
+{"receiver": 3, "at_ms": 5645.289, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student"}
+{"receiver": 2, "at_ms": 5645.666, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student"}
+{"receiver": 0, "at_ms": 5645.702, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student"}
+{"receiver": 0, "at_ms": 5649.763, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student,"}
+{"receiver": 1, "at_ms": 5649.967, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student,"}
+{"receiver": 3, "at_ms": 5653.659, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student,"}
+{"receiver": 2, "at_ms": 5653.793, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student,"}
+{"receiver": 4, "at_ms": 5653.824, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student,"}
+{"receiver": 0, "at_ms": 5656.531, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student,"}
+{"receiver": 3, "at_ms": 5656.773, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student,"}
+{"receiver": 1, "at_ms": 5656.801, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student,"}
+{"receiver": 4, "at_ms": 5657.114, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student,"}
+{"receiver": 2, "at_ms": 5657.274, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student,"}
+{"receiver": 1, "at_ms": 5661.771, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, stu"}
+{"receiver": 0, "at_ms": 5661.847, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, stu"}
+{"receiver": 2, "at_ms": 5662.748, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, stu"}
+{"receiver": 3, "at_ms": 5662.836, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, stu"}
+{"receiver": 4, "at_ms": 5662.876, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, stu"}
+{"receiver": 0, "at_ms": 5673.449, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, stud"}
+{"receiver": 1, "at_ms": 5673.88, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, stud"}
+{"receiver": 2, "at_ms": 5673.929, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, stud"}
+{"receiver": 3, "at_ms": 5674.214, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, stud"}
+{"receiver": 4, "at_ms": 5674.253, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, stud"}
+{"receiver": 0, "at_ms": 5679.227, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student"}
+{"receiver": 1, "at_ms": 5679.287, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student"}
+{"receiver": 2, "at_ms": 5679.512, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student"}
+{"receiver": 3, "at_ms": 5679.535, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student"}
+{"receiver": 4, "at_ms": 5679.555, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student"}
+{"receiver": 0, "at_ms": 5684.186, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student,"}
+{"receiver": 1, "at_ms": 5686.935, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student,"}
+{"receiver": 2, "at_ms": 5688.732, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student,"}
+{"receiver": 3, "at_ms": 5689.247, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student,"}
+{"receiver": 4, "at_ms": 5691.038, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student,"}
+{"receiver": 2, "at_ms": 5693.763, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student,"}
+{"receiver": 0, "at_ms": 5693.81, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student,"}
+{"receiver": 1, "at_ms": 5693.829, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student,"}
+{"receiver": 3, "at_ms": 5693.847, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student,"}
+{"receiver": 4, "at_ms": 5693.863, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student,"}
+{"receiver": 0, "at_ms": 5696.28, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, stu"}
+{"receiver": 1, "at_ms": 5696.483, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, stu"}
+{"receiver": 2, "at_ms": 5696.511, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, stu"}
+{"receiver": 3, "at_ms": 5696.608, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, stu"}
+{"receiver": 4, "at_ms": 5696.672, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, stu"}
+{"receiver": 0, "at_ms": 5698.761, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, stud"}
+{"receiver": 1, "at_ms": 5698.81, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, stud"}
+{"receiver": 2, "at_ms": 5699.168, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, stud"}
+{"receiver": 3, "at_ms": 5699.195, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, stud"}
+{"receiver": 4, "at_ms": 5699.206, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, stud"}
+{"receiver": 0, "at_ms": 5700.773, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student"}
+{"receiver": 4, "at_ms": 5700.806, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student"}
+{"receiver": 1, "at_ms": 5700.818, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student"}
+{"receiver": 3, "at_ms": 5700.828, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student"}
+{"receiver": 2, "at_ms": 5700.876, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student"}
+{"receiver": 2, "at_ms": 5702.986, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student,"}
+{"receiver": 0, "at_ms": 5703.028, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student,"}
+{"receiver": 4, "at_ms": 5703.045, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student,"}
+{"receiver": 1, "at_ms": 5703.059, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student,"}
+{"receiver": 3, "at_ms": 5703.151, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student,"}
+{"receiver": 0, "at_ms": 5704.765, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student,"}
+{"receiver": 2, "at_ms": 5704.936, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student,"}
+{"receiver": 1, "at_ms": 5704.958, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student,"}
+{"receiver": 4, "at_ms": 5705.058, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student,"}
+{"receiver": 3, "at_ms": 5705.075, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student,"}
+{"receiver": 0, "at_ms": 5706.605, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, stu"}
+{"receiver": 3, "at_ms": 5707.017, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, stu"}
+{"receiver": 4, "at_ms": 5707.034, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, stu"}
+{"receiver": 1, "at_ms": 5707.043, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, stu"}
+{"receiver": 2, "at_ms": 5707.051, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, stu"}
+{"receiver": 0, "at_ms": 5708.879, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, stud"}
+{"receiver": 1, "at_ms": 5708.906, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, stud"}
+{"receiver": 4, "at_ms": 5708.986, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, stud"}
+{"receiver": 2, "at_ms": 5708.996, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, stud"}
+{"receiver": 3, "at_ms": 5709.003, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, stud"}
+{"receiver": 4, "at_ms": 5711.115, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student"}
+{"receiver": 0, "at_ms": 5711.156, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student"}
+{"receiver": 2, "at_ms": 5711.172, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student"}
+{"receiver": 1, "at_ms": 5711.187, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student"}
+{"receiver": 3, "at_ms": 5711.251, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student"}
+{"receiver": 0, "at_ms": 5715.143, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student,"}
+{"receiver": 3, "at_ms": 5715.168, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student,"}
+{"receiver": 1, "at_ms": 5715.178, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student,"}
+{"receiver": 4, "at_ms": 5715.185, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student,"}
+{"receiver": 2, "at_ms": 5715.192, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student,"}
+{"receiver": 0, "at_ms": 5722.599, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student,"}
+{"receiver": 4, "at_ms": 5722.749, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student,"}
+{"receiver": 2, "at_ms": 5722.762, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student,"}
+{"receiver": 3, "at_ms": 5722.772, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student,"}
+{"receiver": 1, "at_ms": 5722.782, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student,"}
+{"receiver": 0, "at_ms": 5724.68, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, stu"}
+{"receiver": 2, "at_ms": 5724.704, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, stu"}
+{"receiver": 1, "at_ms": 5724.713, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, stu"}
+{"receiver": 4, "at_ms": 5724.72, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, stu"}
+{"receiver": 3, "at_ms": 5724.727, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, stu"}
+{"receiver": 1, "at_ms": 5728.497, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, stud"}
+{"receiver": 2, "at_ms": 5728.538, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, stud"}
+{"receiver": 0, "at_ms": 5728.554, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, stud"}
+{"receiver": 4, "at_ms": 5728.658, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, stud"}
+{"receiver": 3, "at_ms": 5728.674, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, stud"}
+{"receiver": 1, "at_ms": 5732.676, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, student"}
+{"receiver": 0, "at_ms": 5732.716, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, student"}
+{"receiver": 4, "at_ms": 5732.731, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, student"}
+{"receiver": 2, "at_ms": 5732.745, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, student"}
+{"receiver": 3, "at_ms": 5732.756, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, student"}
+{"receiver": 0, "at_ms": 5739.097, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, student,"}
+{"receiver": 4, "at_ms": 5739.176, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, student,"}
+{"receiver": 2, "at_ms": 5739.194, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, student,"}
+{"receiver": 1, "at_ms": 5739.208, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, student,"}
+{"receiver": 3, "at_ms": 5739.221, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, student,"}
+{"receiver": 0, "at_ms": 5742.941, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, student,"}
+{"receiver": 4, "at_ms": 5742.981, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, student,"}
+{"receiver": 3, "at_ms": 5742.995, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, student,"}
+{"receiver": 2, "at_ms": 5743.007, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, student,"}
+{"receiver": 1, "at_ms": 5743.265, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, student,"}
+{"receiver": 0, "at_ms": 5746.353, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, student, stu"}
+{"receiver": 1, "at_ms": 5746.392, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, student, stu"}
+{"receiver": 3, "at_ms": 5746.407, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, student, stu"}
+{"receiver": 2, "at_ms": 5746.42, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, student, stu"}
+{"receiver": 4, "at_ms": 5746.8, "type": "transcript", "party": "D", "kind": "partial", "text": "Tala, student, student, student, student, student, stu"}
+{"receiver": 0, "at_ms": 5864.273, "type": "transcript", "party": "D", "kind": "final", "text": "నా తమ్ముడు కళాశాలలో Computer Science చదువుతున్నాడు.", "seq": 1}
+{"receiver": 4, "at_ms": 5865.015, "type": "transcript", "party": "D", "kind": "final", "text": "నా తమ్ముడు కళాశాలలో Computer Science చదువుతున్నాడు.", "seq": 1}
+{"receiver": 3, "at_ms": 5865.049, "type": "transcript", "party": "D", "kind": "final", "text": "నా తమ్ముడు కళాశాలలో Computer Science చదువుతున్నాడు.", "seq": 1}
+{"receiver": 1, "at_ms": 5865.07, "type": "transcript", "party": "D", "kind": "final", "text": "నా తమ్ముడు కళాశాలలో Computer Science చదువుతున్నాడు.", "seq": 1}
+{"receiver": 2, "at_ms": 5865.095, "type": "transcript", "party": "D", "kind": "final", "text": "నా తమ్ముడు కళాశాలలో Computer Science చదువుతున్నాడు.", "seq": 1}
+{"receiver": 0, "at_ms": 6394.172, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 2, "at_ms": 6394.209, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 1, "at_ms": 6394.224, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 3, "at_ms": 6394.234, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 4, "at_ms": 6394.245, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 0, "at_ms": 6433.434, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 3, "at_ms": 6433.485, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 1, "at_ms": 6433.505, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 2, "at_ms": 6433.52, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 4, "at_ms": 6433.535, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 0, "at_ms": 6893.752, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello"}
+{"receiver": 1, "at_ms": 6893.802, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello"}
+{"receiver": 2, "at_ms": 6894.862, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello"}
+{"receiver": 4, "at_ms": 6894.934, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello"}
+{"receiver": 3, "at_ms": 6894.956, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello"}
+{"receiver": 0, "at_ms": 6899.254, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello,"}
+{"receiver": 4, "at_ms": 6899.311, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello,"}
+{"receiver": 3, "at_ms": 6899.332, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello,"}
+{"receiver": 2, "at_ms": 6899.351, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello,"}
+{"receiver": 1, "at_ms": 6899.455, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello,"}
+{"receiver": 0, "at_ms": 6902.893, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how"}
+{"receiver": 2, "at_ms": 6902.955, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how"}
+{"receiver": 4, "at_ms": 6902.976, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how"}
+{"receiver": 1, "at_ms": 6902.993, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how"}
+{"receiver": 3, "at_ms": 6903.01, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how"}
+{"receiver": 0, "at_ms": 6907.112, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how"}
+{"receiver": 1, "at_ms": 6907.359, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how"}
+{"receiver": 4, "at_ms": 6907.623, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how"}
+{"receiver": 2, "at_ms": 6907.661, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how"}
+{"receiver": 3, "at_ms": 6907.687, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how"}
+{"receiver": 0, "at_ms": 7248.475, "type": "translated", "speaker": "D", "language": "en-IN", "text": "My brother is studying computer science in college.", "seq": 1}
+{"receiver": 4, "at_ms": 7248.503, "type": "translated", "speaker": "D", "language": "en-IN", "text": "My brother is studying computer science in college.", "seq": 1}
+{"receiver": 0, "at_ms": 7417.004, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello"}
+{"receiver": 1, "at_ms": 7417.061, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello"}
+{"receiver": 2, "at_ms": 7417.324, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello"}
+{"receiver": 3, "at_ms": 7417.351, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello"}
+{"receiver": 4, "at_ms": 7417.371, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello"}
+{"receiver": 0, "at_ms": 7427.233, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello,"}
+{"receiver": 2, "at_ms": 7427.288, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello,"}
+{"receiver": 1, "at_ms": 7427.309, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello,"}
+{"receiver": 4, "at_ms": 7427.326, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello,"}
+{"receiver": 3, "at_ms": 7427.344, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello,"}
+{"receiver": 0, "at_ms": 7431.908, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how"}
+{"receiver": 1, "at_ms": 7432.368, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how"}
+{"receiver": 2, "at_ms": 7432.418, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how"}
+{"receiver": 3, "at_ms": 7432.451, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how"}
+{"receiver": 4, "at_ms": 7432.588, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how"}
+{"receiver": 0, "at_ms": 7437.697, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are"}
+{"receiver": 1, "at_ms": 7437.753, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are"}
+{"receiver": 2, "at_ms": 7439.227, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are"}
+{"receiver": 3, "at_ms": 7439.271, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are"}
+{"receiver": 4, "at_ms": 7439.292, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are"}
+{"receiver": 0, "at_ms": 7443.547, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you"}
+{"receiver": 1, "at_ms": 7443.618, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you"}
+{"receiver": 4, "at_ms": 7443.85, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you"}
+{"receiver": 2, "at_ms": 7443.875, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you"}
+{"receiver": 3, "at_ms": 7443.892, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you"}
+{"receiver": 0, "at_ms": 7451.301, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you"}
+{"receiver": 2, "at_ms": 7451.371, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you"}
+{"receiver": 3, "at_ms": 7451.396, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you"}
+{"receiver": 4, "at_ms": 7451.412, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you"}
+{"receiver": 1, "at_ms": 7451.427, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you"}
+{"receiver": 1, "at_ms": 7798.957, "type": "translated", "speaker": "D", "language": "hi-IN", "text": "मेरा भाई कॉलेज में कंप्यूटर विज्ञान की पढ़ाई कर रहा है।", "seq": 1}
+{"receiver": 2, "at_ms": 7854.096, "type": "translated", "speaker": "D", "language": "ta-IN", "text": "என் அண்ணன் கல்லூரியில் கணினி அறிவியலைப் பயின்று வருகிறார்.", "seq": 1}
+{"receiver": 0, "at_ms": 7959.267, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are"}
+{"receiver": 1, "at_ms": 7959.291, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are"}
+{"receiver": 2, "at_ms": 7959.3, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are"}
+{"receiver": 3, "at_ms": 7959.372, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are"}
+{"receiver": 4, "at_ms": 7959.408, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are"}
+{"receiver": 0, "at_ms": 7965.322, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you"}
+{"receiver": 2, "at_ms": 7965.358, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you"}
+{"receiver": 1, "at_ms": 7965.371, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you"}
+{"receiver": 3, "at_ms": 7965.716, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you"}
+{"receiver": 4, "at_ms": 7965.738, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you"}
+{"receiver": 0, "at_ms": 7968.548, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 2, "at_ms": 7968.572, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 3, "at_ms": 7968.581, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 1, "at_ms": 7968.588, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 4, "at_ms": 7968.594, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 0, "at_ms": 7972.928, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 1, "at_ms": 7972.953, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 2, "at_ms": 7972.962, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 3, "at_ms": 7973.019, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 4, "at_ms": 7973.028, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 2, "at_ms": 7976.036, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 1, "at_ms": 7976.058, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 4, "at_ms": 7976.067, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 0, "at_ms": 7976.073, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 3, "at_ms": 7976.079, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 0, "at_ms": 8152.412, "type": "latency", "speaker": "D", "language": "en-IN", "seq": 1, "stt_ms": 5051, "queue_ms": 0, "translate_ms": 1384, "tts_ms": 903, "total_ms": 7338}
+{"receiver": 4, "at_ms": 8152.472, "type": "latency", "speaker": "D", "language": "en-IN", "seq": 1, "stt_ms": 5051, "queue_ms": 0, "translate_ms": 1384, "tts_ms": 903, "total_ms": 7338}
+{"receiver": 0, "at_ms": 8179.12, "type": "audio", "speaker": "D", "language": "en-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757334761.6958, "wav_duration_s": 3.4986875, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 112002, "wav_sha256": "b7c939622373069ff9b26e470dfe53dbe1eba9d3d2bb32bcd27e8eaf3d13bb30", "wav_valid": true}
+{"receiver": 4, "at_ms": 8189.077, "type": "audio", "speaker": "D", "language": "en-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757334761.6958, "wav_duration_s": 3.4986875, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 112002, "wav_sha256": "b7c939622373069ff9b26e470dfe53dbe1eba9d3d2bb32bcd27e8eaf3d13bb30", "wav_valid": true}
+{"receiver": 0, "at_ms": 8403.555, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 3, "at_ms": 8403.629, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 4, "at_ms": 8403.738, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 2, "at_ms": 8403.766, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 1, "at_ms": 8403.782, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 0, "at_ms": 8407.589, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 1, "at_ms": 8407.64, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 4, "at_ms": 8407.661, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 3, "at_ms": 8407.678, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 2, "at_ms": 8407.695, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 0, "at_ms": 8413.149, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 1, "at_ms": 8413.35, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 2, "at_ms": 8413.379, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 3, "at_ms": 8413.5, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 4, "at_ms": 8413.521, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing"}
+{"receiver": 0, "at_ms": 8478.848, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 2, "at_ms": 8479.151, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 1, "at_ms": 8479.176, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 3, "at_ms": 8479.192, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 4, "at_ms": 8479.206, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 0, "at_ms": 8490.076, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing today"}
+{"receiver": 2, "at_ms": 8490.468, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing today"}
+{"receiver": 4, "at_ms": 8490.499, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing today"}
+{"receiver": 3, "at_ms": 8490.518, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing today"}
+{"receiver": 1, "at_ms": 8490.534, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing today"}
+{"receiver": 0, "at_ms": 8493.261, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing today?"}
+{"receiver": 1, "at_ms": 8493.522, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing today?"}
+{"receiver": 2, "at_ms": 8493.551, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing today?"}
+{"receiver": 3, "at_ms": 8493.575, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing today?"}
+{"receiver": 4, "at_ms": 8493.592, "type": "transcript", "party": "E", "kind": "partial", "text": "Hello, how are you doing today?"}
+{"receiver": 0, "at_ms": 8555.999, "type": "transcript", "party": "E", "kind": "final", "text": "Hello, how are you doing today?", "seq": 1}
+{"receiver": 1, "at_ms": 8556.052, "type": "transcript", "party": "E", "kind": "final", "text": "Hello, how are you doing today?", "seq": 1}
+{"receiver": 3, "at_ms": 8556.074, "type": "transcript", "party": "E", "kind": "final", "text": "Hello, how are you doing today?", "seq": 1}
+{"receiver": 4, "at_ms": 8556.092, "type": "transcript", "party": "E", "kind": "final", "text": "Hello, how are you doing today?", "seq": 1}
+{"receiver": 2, "at_ms": 8556.181, "type": "transcript", "party": "E", "kind": "final", "text": "Hello, how are you doing today?", "seq": 1}
+{"receiver": 1, "at_ms": 9007.209, "type": "latency", "speaker": "D", "language": "hi-IN", "seq": 1, "stt_ms": 5051, "queue_ms": 0, "translate_ms": 1840, "tts_ms": 1208, "total_ms": 8099}
+{"receiver": 1, "at_ms": 9030.364, "type": "audio", "speaker": "D", "language": "hi-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757334761.6958, "wav_duration_s": 4.4373125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 142038, "wav_sha256": "36bfce37f11580d74764637f3c6738c132b3a23513a75acd7f08df013bd09b2d", "wav_valid": true}
+{"receiver": 2, "at_ms": 9099.216, "type": "latency", "speaker": "D", "language": "ta-IN", "seq": 1, "stt_ms": 5051, "queue_ms": 0, "translate_ms": 1859, "tts_ms": 1246, "total_ms": 8156}
+{"receiver": 2, "at_ms": 9115.513, "type": "audio", "speaker": "D", "language": "ta-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757334761.6958, "wav_duration_s": 4.6933125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 150230, "wav_sha256": "fe6d95f313c0a374291009351292fc27c8142128f558fb2635f59d83bbe0127e", "wav_valid": true}
+{"receiver": 1, "at_ms": 9950.871, "type": "translated", "speaker": "E", "language": "hi-IN", "text": "नमस्ते, आज आप कैसे हैं?", "seq": 1}
+{"receiver": 2, "at_ms": 10107.268, "type": "translated", "speaker": "E", "language": "ta-IN", "text": "வணக்கம், இன்று எப்படி இருக்கிறீர்கள்?", "seq": 1}
+{"receiver": 0, "at_ms": 10463.538, "type": "translated", "speaker": "E", "language": "en-IN", "text": "Hello, how are you doing today?", "seq": 1}
+{"receiver": 3, "at_ms": 10463.563, "type": "translated", "speaker": "E", "language": "en-IN", "text": "Hello, how are you doing today?", "seq": 1}
+{"receiver": 1, "at_ms": 10725.396, "type": "latency", "speaker": "E", "language": "hi-IN", "seq": 1, "stt_ms": 2162, "queue_ms": 0, "translate_ms": 1331, "tts_ms": 776, "total_ms": 4269}
+{"receiver": 1, "at_ms": 10734.898, "type": "audio", "speaker": "E", "language": "hi-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757340350.5596, "wav_duration_s": 2.1333125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 68310, "wav_sha256": "f0c1675f996428ebab3e15a70c501b6059d323575b0b6458394a353abe5eea24", "wav_valid": true}
+{"receiver": 2, "at_ms": 10889.319, "type": "latency", "speaker": "E", "language": "ta-IN", "seq": 1, "stt_ms": 2162, "queue_ms": 0, "translate_ms": 1433, "tts_ms": 782, "total_ms": 4377}
+{"receiver": 2, "at_ms": 10904.722, "type": "audio", "speaker": "E", "language": "ta-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757340350.5596, "wav_duration_s": 2.6453125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 84694, "wav_sha256": "361f246f3d2d8ca618820900e3fa16ad9b8e2e679be4ecf9835633e219fbf83c", "wav_valid": true}
+{"receiver": 0, "at_ms": 11072.751, "type": "latency", "speaker": "E", "language": "en-IN", "seq": 1, "stt_ms": 2162, "queue_ms": 0, "translate_ms": 1908, "tts_ms": 609, "total_ms": 4679}
+{"receiver": 3, "at_ms": 11072.777, "type": "latency", "speaker": "E", "language": "en-IN", "seq": 1, "stt_ms": 2162, "queue_ms": 0, "translate_ms": 1908, "tts_ms": 609, "total_ms": 4679}
+{"receiver": 0, "at_ms": 11089.112, "type": "audio", "speaker": "E", "language": "en-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757340350.5596, "wav_duration_s": 2.048, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 65580, "wav_sha256": "cfe621142b6a99563cf708f700dea94b294a5b65d66ad9197d38afe11a6d93aa", "wav_valid": true}
+{"receiver": 3, "at_ms": 11093.33, "type": "audio", "speaker": "E", "language": "en-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757340350.5596, "wav_duration_s": 2.048, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 65580, "wav_sha256": "cfe621142b6a99563cf708f700dea94b294a5b65d66ad9197d38afe11a6d93aa", "wav_valid": true}
+{"receiver": 0, "at_ms": 14284.449, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 2, "at_ms": 14284.543, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 1, "at_ms": 14285.178, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 1, "at_ms": 14285.221, "type": "peer_left", "party_id": "E"}
+{"receiver": 3, "at_ms": 14285.811, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 3, "at_ms": 14285.854, "type": "peer_left", "party_id": "E"}
+{"receiver": 4, "at_ms": 14286.305, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 2, "at_ms": 14286.346, "type": "peer_left", "party_id": "E"}
+{"receiver": 0, "at_ms": 14286.529, "type": "peer_left", "party_id": "E"}
+{"receiver": 0, "at_ms": 14293.199, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 1, "at_ms": 14293.897, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 2, "at_ms": 14293.953, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 1, "at_ms": 14294.178, "type": "peer_left", "party_id": "D"}
+{"receiver": 0, "at_ms": 14294.207, "type": "peer_left", "party_id": "D"}
+{"receiver": 3, "at_ms": 14294.636, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 2, "at_ms": 14294.674, "type": "peer_left", "party_id": "D"}

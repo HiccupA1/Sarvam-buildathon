@@ -1,0 +1,355 @@
+{"receiver": 0, "at_ms": 12.236, "type": "joined", "party_id": "A", "language": "ta-IN", "resumed": false, "muted": true, "role": "listener"}
+{"receiver": 0, "at_ms": 12.309, "type": "ready"}
+{"receiver": 1, "at_ms": 24.852, "type": "joined", "party_id": "B", "language": "te-IN", "resumed": false, "muted": true, "role": "listener"}
+{"receiver": 1, "at_ms": 24.929, "type": "peer_joined", "party_id": "A", "language": "ta-IN", "muted": true, "role": "listener"}
+{"receiver": 1, "at_ms": 24.96, "type": "ready"}
+{"receiver": 2, "at_ms": 34.693, "type": "joined", "party_id": "C", "language": "en-IN", "resumed": false, "muted": true, "role": "listener"}
+{"receiver": 2, "at_ms": 34.764, "type": "peer_joined", "party_id": "A", "language": "ta-IN", "muted": true, "role": "listener"}
+{"receiver": 2, "at_ms": 34.783, "type": "peer_joined", "party_id": "B", "language": "te-IN", "muted": true, "role": "listener"}
+{"receiver": 2, "at_ms": 34.897, "type": "ready"}
+{"receiver": 3, "at_ms": 40.975, "type": "joined", "party_id": "D", "language": "ta-IN", "resumed": false, "muted": false, "role": "speaker"}
+{"receiver": 3, "at_ms": 41.391, "type": "peer_joined", "party_id": "A", "language": "ta-IN", "muted": true, "role": "listener"}
+{"receiver": 3, "at_ms": 41.46, "type": "peer_joined", "party_id": "B", "language": "te-IN", "muted": true, "role": "listener"}
+{"receiver": 3, "at_ms": 41.505, "type": "peer_joined", "party_id": "C", "language": "en-IN", "muted": true, "role": "listener"}
+{"receiver": 3, "at_ms": 285.19, "type": "ready"}
+{"receiver": 4, "at_ms": 300.401, "type": "joined", "party_id": "E", "language": "ta-IN", "resumed": false, "muted": false, "role": "speaker"}
+{"receiver": 4, "at_ms": 300.5, "type": "peer_joined", "party_id": "A", "language": "ta-IN", "muted": true, "role": "listener"}
+{"receiver": 4, "at_ms": 300.542, "type": "peer_joined", "party_id": "B", "language": "te-IN", "muted": true, "role": "listener"}
+{"receiver": 4, "at_ms": 301.517, "type": "peer_joined", "party_id": "C", "language": "en-IN", "muted": true, "role": "listener"}
+{"receiver": 4, "at_ms": 301.593, "type": "peer_joined", "party_id": "D", "language": "ta-IN", "muted": false, "role": "speaker"}
+{"receiver": 4, "at_ms": 545.708, "type": "ready"}
+{"receiver": 0, "at_ms": 545.928, "type": "peer_joined", "party_id": "B", "language": "te-IN", "muted": true, "role": "listener"}
+{"receiver": 0, "at_ms": 545.958, "type": "peer_joined", "party_id": "C", "language": "en-IN", "muted": true, "role": "listener"}
+{"receiver": 0, "at_ms": 545.979, "type": "peer_joined", "party_id": "D", "language": "ta-IN", "muted": false, "role": "speaker"}
+{"receiver": 0, "at_ms": 545.996, "type": "peer_joined", "party_id": "E", "language": "ta-IN", "muted": false, "role": "speaker"}
+{"receiver": 1, "at_ms": 546.025, "type": "peer_joined", "party_id": "C", "language": "en-IN", "muted": true, "role": "listener"}
+{"receiver": 1, "at_ms": 546.038, "type": "peer_joined", "party_id": "D", "language": "ta-IN", "muted": false, "role": "speaker"}
+{"receiver": 1, "at_ms": 546.05, "type": "peer_joined", "party_id": "E", "language": "ta-IN", "muted": false, "role": "speaker"}
+{"receiver": 2, "at_ms": 546.069, "type": "peer_joined", "party_id": "D", "language": "ta-IN", "muted": false, "role": "speaker"}
+{"receiver": 2, "at_ms": 546.081, "type": "peer_joined", "party_id": "E", "language": "ta-IN", "muted": false, "role": "speaker"}
+{"receiver": 3, "at_ms": 546.099, "type": "peer_joined", "party_id": "E", "language": "ta-IN", "muted": false, "role": "speaker"}
+{"receiver": 0, "at_ms": 898.812, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 1, "at_ms": 898.846, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 3, "at_ms": 899.021, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 2, "at_ms": 899.038, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 4, "at_ms": 899.051, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 0, "at_ms": 937.451, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 1, "at_ms": 937.485, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 2, "at_ms": 937.499, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 3, "at_ms": 937.511, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 4, "at_ms": 938.572, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 0, "at_ms": 1196.659, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 1, "at_ms": 1196.692, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 3, "at_ms": 1196.707, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 2, "at_ms": 1196.717, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 4, "at_ms": 1196.825, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 0, "at_ms": 1237.117, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 2, "at_ms": 1238.321, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 3, "at_ms": 1238.352, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 1, "at_ms": 1238.623, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 4, "at_ms": 1238.647, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 0, "at_ms": 1400.12, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 1, "at_ms": 1400.168, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 2, "at_ms": 1400.358, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 3, "at_ms": 1400.38, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 4, "at_ms": 1400.673, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 0, "at_ms": 1404.7, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 1, "at_ms": 1404.913, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 2, "at_ms": 1404.934, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 3, "at_ms": 1404.947, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 4, "at_ms": 1404.957, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 0, "at_ms": 1723.887, "type": "transcript", "party": "E", "kind": "partial", "text": "Sam"}
+{"receiver": 1, "at_ms": 1723.91, "type": "transcript", "party": "E", "kind": "partial", "text": "Sam"}
+{"receiver": 2, "at_ms": 1723.919, "type": "transcript", "party": "E", "kind": "partial", "text": "Sam"}
+{"receiver": 4, "at_ms": 1724.005, "type": "transcript", "party": "E", "kind": "partial", "text": "Sam"}
+{"receiver": 3, "at_ms": 1724.014, "type": "transcript", "party": "E", "kind": "partial", "text": "Sam"}
+{"receiver": 3, "at_ms": 1725.102, "type": "transcript", "party": "E", "kind": "partial", "text": "Sam"}
+{"receiver": 4, "at_ms": 1725.123, "type": "transcript", "party": "E", "kind": "partial", "text": "Sam"}
+{"receiver": 0, "at_ms": 1725.132, "type": "transcript", "party": "E", "kind": "partial", "text": "Sam"}
+{"receiver": 1, "at_ms": 1725.139, "type": "transcript", "party": "E", "kind": "partial", "text": "Sam"}
+{"receiver": 2, "at_ms": 1725.147, "type": "transcript", "party": "E", "kind": "partial", "text": "Sam"}
+{"receiver": 0, "at_ms": 1941.388, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 1, "at_ms": 1941.423, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 2, "at_ms": 1941.439, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 4, "at_ms": 1941.452, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 3, "at_ms": 1941.465, "type": "transcript", "party": "D", "kind": "partial", "text": "N"}
+{"receiver": 0, "at_ms": 1943.737, "type": "transcript", "party": "D", "kind": "partial", "text": "Need"}
+{"receiver": 1, "at_ms": 1943.776, "type": "transcript", "party": "D", "kind": "partial", "text": "Need"}
+{"receiver": 2, "at_ms": 1943.95, "type": "transcript", "party": "D", "kind": "partial", "text": "Need"}
+{"receiver": 4, "at_ms": 1943.969, "type": "transcript", "party": "D", "kind": "partial", "text": "Need"}
+{"receiver": 3, "at_ms": 1943.983, "type": "transcript", "party": "D", "kind": "partial", "text": "Need"}
+{"receiver": 0, "at_ms": 1948.085, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle"}
+{"receiver": 1, "at_ms": 1954.968, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle"}
+{"receiver": 2, "at_ms": 1955.007, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle"}
+{"receiver": 4, "at_ms": 1955.024, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle"}
+{"receiver": 3, "at_ms": 1955.037, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle"}
+{"receiver": 0, "at_ms": 1957.308, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle,"}
+{"receiver": 1, "at_ms": 1957.333, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle,"}
+{"receiver": 4, "at_ms": 1957.343, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle,"}
+{"receiver": 2, "at_ms": 1957.351, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle,"}
+{"receiver": 3, "at_ms": 1957.358, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle,"}
+{"receiver": 4, "at_ms": 1959.71, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, K"}
+{"receiver": 0, "at_ms": 1959.738, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, K"}
+{"receiver": 1, "at_ms": 1959.749, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, K"}
+{"receiver": 3, "at_ms": 1959.76, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, K"}
+{"receiver": 2, "at_ms": 1959.776, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, K"}
+{"receiver": 0, "at_ms": 1963.203, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kond"}
+{"receiver": 1, "at_ms": 1963.229, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kond"}
+{"receiver": 2, "at_ms": 1963.33, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kond"}
+{"receiver": 3, "at_ms": 1963.344, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kond"}
+{"receiver": 4, "at_ms": 1963.356, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kond"}
+{"receiver": 2, "at_ms": 1965.205, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala"}
+{"receiver": 1, "at_ms": 1965.236, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala"}
+{"receiver": 0, "at_ms": 1965.247, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala"}
+{"receiver": 3, "at_ms": 1965.317, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala"}
+{"receiver": 4, "at_ms": 1965.326, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala"}
+{"receiver": 1, "at_ms": 1968.934, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala"}
+{"receiver": 0, "at_ms": 1968.968, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala"}
+{"receiver": 2, "at_ms": 1976.805, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala"}
+{"receiver": 3, "at_ms": 1977.026, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala"}
+{"receiver": 4, "at_ms": 1977.062, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala"}
+{"receiver": 1, "at_ms": 2213.532, "type": "transcript", "party": "E", "kind": "partial", "text": "Sam"}
+{"receiver": 0, "at_ms": 2213.556, "type": "transcript", "party": "E", "kind": "partial", "text": "Sam"}
+{"receiver": 2, "at_ms": 2213.567, "type": "transcript", "party": "E", "kind": "partial", "text": "Sam"}
+{"receiver": 3, "at_ms": 2213.575, "type": "transcript", "party": "E", "kind": "partial", "text": "Sam"}
+{"receiver": 4, "at_ms": 2213.584, "type": "transcript", "party": "E", "kind": "partial", "text": "Sam"}
+{"receiver": 0, "at_ms": 2319.318, "type": "transcript", "party": "E", "kind": "partial", "text": "Sam"}
+{"receiver": 2, "at_ms": 2319.345, "type": "transcript", "party": "E", "kind": "partial", "text": "Sam"}
+{"receiver": 1, "at_ms": 2319.555, "type": "transcript", "party": "E", "kind": "partial", "text": "Sam"}
+{"receiver": 3, "at_ms": 2319.574, "type": "transcript", "party": "E", "kind": "partial", "text": "Sam"}
+{"receiver": 4, "at_ms": 2319.585, "type": "transcript", "party": "E", "kind": "partial", "text": "Sam"}
+{"receiver": 0, "at_ms": 2407.695, "type": "transcript", "party": "D", "kind": "partial", "text": "Need"}
+{"receiver": 3, "at_ms": 2407.719, "type": "transcript", "party": "D", "kind": "partial", "text": "Need"}
+{"receiver": 2, "at_ms": 2407.728, "type": "transcript", "party": "D", "kind": "partial", "text": "Need"}
+{"receiver": 1, "at_ms": 2407.735, "type": "transcript", "party": "D", "kind": "partial", "text": "Need"}
+{"receiver": 4, "at_ms": 2407.743, "type": "transcript", "party": "D", "kind": "partial", "text": "Need"}
+{"receiver": 0, "at_ms": 2414.565, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle"}
+{"receiver": 2, "at_ms": 2414.87, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle"}
+{"receiver": 4, "at_ms": 2414.898, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle"}
+{"receiver": 1, "at_ms": 2414.998, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle"}
+{"receiver": 3, "at_ms": 2415.016, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle"}
+{"receiver": 0, "at_ms": 2416.727, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle,"}
+{"receiver": 2, "at_ms": 2416.766, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle,"}
+{"receiver": 1, "at_ms": 2416.779, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle,"}
+{"receiver": 4, "at_ms": 2416.917, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle,"}
+{"receiver": 3, "at_ms": 2416.935, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle,"}
+{"receiver": 0, "at_ms": 2419.214, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, K"}
+{"receiver": 2, "at_ms": 2419.251, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, K"}
+{"receiver": 1, "at_ms": 2419.264, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, K"}
+{"receiver": 3, "at_ms": 2421.572, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, K"}
+{"receiver": 4, "at_ms": 2421.602, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, K"}
+{"receiver": 0, "at_ms": 2424.584, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kond"}
+{"receiver": 1, "at_ms": 2424.7, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kond"}
+{"receiver": 2, "at_ms": 2424.712, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kond"}
+{"receiver": 3, "at_ms": 2424.721, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kond"}
+{"receiver": 4, "at_ms": 2424.728, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kond"}
+{"receiver": 0, "at_ms": 2428.353, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala"}
+{"receiver": 3, "at_ms": 2428.379, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala"}
+{"receiver": 4, "at_ms": 2428.39, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala"}
+{"receiver": 2, "at_ms": 2428.399, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala"}
+{"receiver": 1, "at_ms": 2428.408, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala"}
+{"receiver": 3, "at_ms": 2430.55, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala"}
+{"receiver": 0, "at_ms": 2430.575, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala"}
+{"receiver": 2, "at_ms": 2430.585, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala"}
+{"receiver": 4, "at_ms": 2430.592, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala"}
+{"receiver": 1, "at_ms": 2430.599, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala"}
+{"receiver": 0, "at_ms": 2719.572, "type": "transcript", "party": "E", "kind": "partial", "text": "Samav"}
+{"receiver": 2, "at_ms": 2719.719, "type": "transcript", "party": "E", "kind": "partial", "text": "Samav"}
+{"receiver": 1, "at_ms": 2719.73, "type": "transcript", "party": "E", "kind": "partial", "text": "Samav"}
+{"receiver": 3, "at_ms": 2719.738, "type": "transcript", "party": "E", "kind": "partial", "text": "Samav"}
+{"receiver": 4, "at_ms": 2719.745, "type": "transcript", "party": "E", "kind": "partial", "text": "Samav"}
+{"receiver": 0, "at_ms": 2722.876, "type": "transcript", "party": "E", "kind": "partial", "text": "Samav"}
+{"receiver": 1, "at_ms": 2722.898, "type": "transcript", "party": "E", "kind": "partial", "text": "Samav"}
+{"receiver": 4, "at_ms": 2722.907, "type": "transcript", "party": "E", "kind": "partial", "text": "Samav"}
+{"receiver": 2, "at_ms": 2722.915, "type": "transcript", "party": "E", "kind": "partial", "text": "Samav"}
+{"receiver": 3, "at_ms": 2722.921, "type": "transcript", "party": "E", "kind": "partial", "text": "Samav"}
+{"receiver": 0, "at_ms": 2907.66, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala,"}
+{"receiver": 1, "at_ms": 2907.867, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala,"}
+{"receiver": 2, "at_ms": 2907.89, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala,"}
+{"receiver": 3, "at_ms": 2907.992, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala,"}
+{"receiver": 4, "at_ms": 2908.025, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala,"}
+{"receiver": 0, "at_ms": 2910.056, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala,"}
+{"receiver": 1, "at_ms": 2910.166, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala,"}
+{"receiver": 2, "at_ms": 2910.229, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala,"}
+{"receiver": 3, "at_ms": 2910.288, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala,"}
+{"receiver": 4, "at_ms": 2910.335, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala,"}
+{"receiver": 1, "at_ms": 3234.534, "type": "transcript", "party": "E", "kind": "partial", "text": "Samav"}
+{"receiver": 0, "at_ms": 3234.567, "type": "transcript", "party": "E", "kind": "partial", "text": "Samav"}
+{"receiver": 3, "at_ms": 3234.581, "type": "transcript", "party": "E", "kind": "partial", "text": "Samav"}
+{"receiver": 2, "at_ms": 3234.592, "type": "transcript", "party": "E", "kind": "partial", "text": "Samav"}
+{"receiver": 4, "at_ms": 3235.69, "type": "transcript", "party": "E", "kind": "partial", "text": "Samav"}
+{"receiver": 1, "at_ms": 3433.344, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala,"}
+{"receiver": 0, "at_ms": 3433.38, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala,"}
+{"receiver": 2, "at_ms": 3433.483, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala,"}
+{"receiver": 3, "at_ms": 3433.573, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala,"}
+{"receiver": 4, "at_ms": 3433.588, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala,"}
+{"receiver": 0, "at_ms": 3714.628, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda"}
+{"receiver": 1, "at_ms": 3714.714, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda"}
+{"receiver": 4, "at_ms": 3715.251, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda"}
+{"receiver": 2, "at_ms": 3715.284, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda"}
+{"receiver": 3, "at_ms": 3715.298, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda"}
+{"receiver": 0, "at_ms": 3718.079, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda,"}
+{"receiver": 1, "at_ms": 3718.114, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda,"}
+{"receiver": 2, "at_ms": 3718.247, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda,"}
+{"receiver": 3, "at_ms": 3718.259, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda,"}
+{"receiver": 4, "at_ms": 3718.266, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda,"}
+{"receiver": 3, "at_ms": 3722.084, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda,"}
+{"receiver": 1, "at_ms": 3722.115, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda,"}
+{"receiver": 0, "at_ms": 3722.125, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda,"}
+{"receiver": 2, "at_ms": 3722.133, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda,"}
+{"receiver": 4, "at_ms": 3722.14, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda,"}
+{"receiver": 1, "at_ms": 3725.935, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, thr"}
+{"receiver": 2, "at_ms": 3725.973, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, thr"}
+{"receiver": 0, "at_ms": 3725.988, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, thr"}
+{"receiver": 3, "at_ms": 3726.209, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, thr"}
+{"receiver": 4, "at_ms": 3726.226, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, thr"}
+{"receiver": 3, "at_ms": 3730.809, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 1, "at_ms": 3730.843, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 0, "at_ms": 3730.858, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 2, "at_ms": 3730.936, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 4, "at_ms": 3730.947, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 2, "at_ms": 3734.057, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 0, "at_ms": 3734.092, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 3, "at_ms": 3734.105, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 1, "at_ms": 3734.117, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 4, "at_ms": 3735.127, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 0, "at_ms": 3941.083, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala,"}
+{"receiver": 2, "at_ms": 3941.13, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala,"}
+{"receiver": 1, "at_ms": 3941.15, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala,"}
+{"receiver": 3, "at_ms": 3943.029, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala,"}
+{"receiver": 4, "at_ms": 3943.068, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala,"}
+{"receiver": 0, "at_ms": 3945.319, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Po"}
+{"receiver": 4, "at_ms": 3945.363, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Po"}
+{"receiver": 1, "at_ms": 3945.384, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Po"}
+{"receiver": 2, "at_ms": 3945.4, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Po"}
+{"receiver": 3, "at_ms": 3945.416, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Po"}
+{"receiver": 2, "at_ms": 3951.575, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Po"}
+{"receiver": 0, "at_ms": 3951.625, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Po"}
+{"receiver": 1, "at_ms": 3951.646, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Po"}
+{"receiver": 3, "at_ms": 3951.879, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Po"}
+{"receiver": 4, "at_ms": 3951.903, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Po"}
+{"receiver": 1, "at_ms": 4214.436, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda,"}
+{"receiver": 0, "at_ms": 4214.479, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda,"}
+{"receiver": 4, "at_ms": 4214.497, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda,"}
+{"receiver": 3, "at_ms": 4214.514, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda,"}
+{"receiver": 2, "at_ms": 4214.528, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda,"}
+{"receiver": 4, "at_ms": 4216.902, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda,"}
+{"receiver": 0, "at_ms": 4216.941, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda,"}
+{"receiver": 3, "at_ms": 4216.959, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda,"}
+{"receiver": 1, "at_ms": 4216.973, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda,"}
+{"receiver": 2, "at_ms": 4217.025, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda,"}
+{"receiver": 0, "at_ms": 4220.094, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, thr"}
+{"receiver": 4, "at_ms": 4220.136, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, thr"}
+{"receiver": 3, "at_ms": 4220.283, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, thr"}
+{"receiver": 2, "at_ms": 4220.379, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, thr"}
+{"receiver": 1, "at_ms": 4220.403, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, thr"}
+{"receiver": 0, "at_ms": 4224.02, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 1, "at_ms": 4224.065, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 2, "at_ms": 4224.222, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 4, "at_ms": 4224.244, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 3, "at_ms": 4224.261, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 0, "at_ms": 4228.586, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 1, "at_ms": 4229.092, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 2, "at_ms": 4229.199, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 3, "at_ms": 4229.394, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 4, "at_ms": 4230.158, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 3, "at_ms": 4430.996, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Po"}
+{"receiver": 0, "at_ms": 4431.046, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Po"}
+{"receiver": 2, "at_ms": 4431.066, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Po"}
+{"receiver": 4, "at_ms": 4431.084, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Po"}
+{"receiver": 1, "at_ms": 4431.101, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Po"}
+{"receiver": 1, "at_ms": 4436.418, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Po"}
+{"receiver": 0, "at_ms": 4436.49, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Po"}
+{"receiver": 4, "at_ms": 4437.467, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Po"}
+{"receiver": 2, "at_ms": 4437.654, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Po"}
+{"receiver": 3, "at_ms": 4437.686, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Po"}
+{"receiver": 0, "at_ms": 4711.839, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 1, "at_ms": 4711.892, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 2, "at_ms": 4711.912, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 4, "at_ms": 4711.929, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 3, "at_ms": 4712.08, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 2, "at_ms": 4725.484, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 0, "at_ms": 4725.54, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 1, "at_ms": 4725.565, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 3, "at_ms": 4725.762, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 4, "at_ms": 4725.785, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 0, "at_ms": 4730.862, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 4, "at_ms": 4730.915, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 2, "at_ms": 4730.938, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 1, "at_ms": 4730.955, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 3, "at_ms": 4730.972, "type": "transcript", "party": "E", "kind": "partial", "text": "Samaveda, three"}
+{"receiver": 0, "at_ms": 4816.876, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 1, "at_ms": 4816.922, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 2, "at_ms": 4816.941, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 3, "at_ms": 4817.113, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 4, "at_ms": 4817.134, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 0, "at_ms": 4820.865, "type": "transcript", "party": "E", "kind": "final", "text": "సమావేశం 3 గంటలకు మార్చబడింది.", "seq": 1}
+{"receiver": 2, "at_ms": 4821.47, "type": "transcript", "party": "E", "kind": "final", "text": "సమావేశం 3 గంటలకు మార్చబడింది.", "seq": 1}
+{"receiver": 4, "at_ms": 4821.518, "type": "transcript", "party": "E", "kind": "final", "text": "సమావేశం 3 గంటలకు మార్చబడింది.", "seq": 1}
+{"receiver": 1, "at_ms": 4821.543, "type": "transcript", "party": "E", "kind": "final", "text": "సమావేశం 3 గంటలకు మార్చబడింది.", "seq": 1}
+{"receiver": 3, "at_ms": 4821.63, "type": "transcript", "party": "E", "kind": "final", "text": "సమావేశం 3 గంటలకు మార్చబడింది.", "seq": 1}
+{"receiver": 1, "at_ms": 5070.336, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Power"}
+{"receiver": 0, "at_ms": 5070.389, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Power"}
+{"receiver": 3, "at_ms": 5070.639, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Power"}
+{"receiver": 4, "at_ms": 5070.713, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Power"}
+{"receiver": 2, "at_ms": 5070.736, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Power"}
+{"receiver": 0, "at_ms": 5072.629, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Power,"}
+{"receiver": 3, "at_ms": 5073.453, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Power,"}
+{"receiver": 1, "at_ms": 5073.515, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Power,"}
+{"receiver": 2, "at_ms": 5073.549, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Power,"}
+{"receiver": 4, "at_ms": 5073.577, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Power,"}
+{"receiver": 0, "at_ms": 5075.043, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Power,"}
+{"receiver": 1, "at_ms": 5075.093, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Power,"}
+{"receiver": 4, "at_ms": 5075.349, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Power,"}
+{"receiver": 2, "at_ms": 5075.386, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Power,"}
+{"receiver": 3, "at_ms": 5075.415, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Power,"}
+{"receiver": 0, "at_ms": 5077.76, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Power,"}
+{"receiver": 3, "at_ms": 5077.808, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Power,"}
+{"receiver": 1, "at_ms": 5077.83, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Power,"}
+{"receiver": 4, "at_ms": 5078.018, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Power,"}
+{"receiver": 2, "at_ms": 5078.045, "type": "transcript", "party": "D", "kind": "partial", "text": "Needle, Kondala, Power,"}
+{"receiver": 0, "at_ms": 5079.66, "type": "transcript", "party": "D", "kind": "final", "text": "నేను కొండలకు ఒక ప్రయాణం plan చేస్తున్నాను.", "seq": 1}
+{"receiver": 1, "at_ms": 5079.716, "type": "transcript", "party": "D", "kind": "final", "text": "నేను కొండలకు ఒక ప్రయాణం plan చేస్తున్నాను.", "seq": 1}
+{"receiver": 4, "at_ms": 5079.948, "type": "transcript", "party": "D", "kind": "final", "text": "నేను కొండలకు ఒక ప్రయాణం plan చేస్తున్నాను.", "seq": 1}
+{"receiver": 2, "at_ms": 5079.978, "type": "transcript", "party": "D", "kind": "final", "text": "నేను కొండలకు ఒక ప్రయాణం plan చేస్తున్నాను.", "seq": 1}
+{"receiver": 3, "at_ms": 5079.999, "type": "transcript", "party": "D", "kind": "final", "text": "నేను కొండలకు ఒక ప్రయాణం plan చేస్తున్నాను.", "seq": 1}
+{"receiver": 2, "at_ms": 6519.747, "type": "translated", "speaker": "E", "language": "en-IN", "text": "The meeting was changed at 3 o'clock.", "seq": 1}
+{"receiver": 2, "at_ms": 6597.836, "type": "translated", "speaker": "D", "language": "en-IN", "text": "I'm planning a trip to the mountains.", "seq": 1}
+{"receiver": 1, "at_ms": 7034.93, "type": "translated", "speaker": "E", "language": "te-IN", "text": "3 గంటలకు సమావేశం మార్చబడింది.", "seq": 1}
+{"receiver": 0, "at_ms": 7118.486, "type": "translated", "speaker": "D", "language": "ta-IN", "text": "நான் மலைகளுக்குப் பயணம் செய்யத் திட்டமிட்டுள்ளேன்.", "seq": 1}
+{"receiver": 4, "at_ms": 7118.555, "type": "translated", "speaker": "D", "language": "ta-IN", "text": "நான் மலைகளுக்குப் பயணம் செய்யத் திட்டமிட்டுள்ளேன்.", "seq": 1}
+{"receiver": 0, "at_ms": 7187.561, "type": "translated", "speaker": "E", "language": "ta-IN", "text": "3 மணிக்கு கூட்டம் மாற்றப்பட்டது.", "seq": 1}
+{"receiver": 3, "at_ms": 7187.611, "type": "translated", "speaker": "E", "language": "ta-IN", "text": "3 மணிக்கு கூட்டம் மாற்றப்பட்டது.", "seq": 1}
+{"receiver": 1, "at_ms": 7246.423, "type": "translated", "speaker": "D", "language": "te-IN", "text": "నేను పర్వతాలకు ఒక పర్యటనకు ప్రణాళిక వేస్తున్నాను.", "seq": 1}
+{"receiver": 2, "at_ms": 7348.063, "type": "latency", "speaker": "E", "language": "en-IN", "seq": 1, "stt_ms": 3624, "queue_ms": 0, "translate_ms": 1540, "tts_ms": 828, "total_ms": 5992}
+{"receiver": 2, "at_ms": 7374.681, "type": "audio", "speaker": "E", "language": "en-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757771606.575, "wav_duration_s": 2.4746875, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 79234, "wav_sha256": "cece3f595b3feac583602c1cecb27725e95b491f3183b7e7c30425143ab3993f", "wav_valid": true}
+{"receiver": 2, "at_ms": 7404.562, "type": "latency", "speaker": "D", "language": "en-IN", "seq": 1, "stt_ms": 4181, "queue_ms": 0, "translate_ms": 1381, "tts_ms": 806, "total_ms": 6368}
+{"receiver": 2, "at_ms": 7424.493, "type": "audio", "speaker": "D", "language": "en-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757771302.0598, "wav_duration_s": 2.56, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 81964, "wav_sha256": "cd47d2475f6d86f41712709a86dd6a3464c032b6b74841e018e39cc35930b149", "wav_valid": true}
+{"receiver": 1, "at_ms": 8118.439, "type": "latency", "speaker": "E", "language": "te-IN", "seq": 1, "stt_ms": 3624, "queue_ms": 0, "translate_ms": 2135, "tts_ms": 1084, "total_ms": 6843}
+{"receiver": 1, "at_ms": 8142.758, "type": "audio", "speaker": "E", "language": "te-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757771606.575, "wav_duration_s": 2.9013125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 92886, "wav_sha256": "73a9d849fb19d84ca8d8c7d688def325dd01db1196105e92e8b7f1bc271a09bd", "wav_valid": true}
+{"receiver": 0, "at_ms": 8152.909, "type": "latency", "speaker": "E", "language": "ta-IN", "seq": 1, "stt_ms": 3624, "queue_ms": 0, "translate_ms": 2365, "tts_ms": 966, "total_ms": 6955}
+{"receiver": 3, "at_ms": 8152.96, "type": "latency", "speaker": "E", "language": "ta-IN", "seq": 1, "stt_ms": 3624, "queue_ms": 0, "translate_ms": 2365, "tts_ms": 966, "total_ms": 6955}
+{"receiver": 0, "at_ms": 8168.326, "type": "audio", "speaker": "E", "language": "ta-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757771606.575, "wav_duration_s": 2.816, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 90156, "wav_sha256": "69afdcc808e22ec38242dac8ad91ca4a872b9f38530584aeae7be4809c470971", "wav_valid": true}
+{"receiver": 3, "at_ms": 8175.542, "type": "audio", "speaker": "E", "language": "ta-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757771606.575, "wav_duration_s": 2.816, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 90156, "wav_sha256": "69afdcc808e22ec38242dac8ad91ca4a872b9f38530584aeae7be4809c470971", "wav_valid": true}
+{"receiver": 0, "at_ms": 8176.233, "type": "latency", "speaker": "D", "language": "ta-IN", "seq": 1, "stt_ms": 4181, "queue_ms": 0, "translate_ms": 2038, "tts_ms": 1058, "total_ms": 7277}
+{"receiver": 4, "at_ms": 8176.256, "type": "latency", "speaker": "D", "language": "ta-IN", "seq": 1, "stt_ms": 4181, "queue_ms": 0, "translate_ms": 2038, "tts_ms": 1058, "total_ms": 7277}
+{"receiver": 0, "at_ms": 8205.384, "type": "audio", "speaker": "D", "language": "ta-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757771302.0598, "wav_duration_s": 3.328, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 106540, "wav_sha256": "7599114287f772228e78357b0a84c9a37870c124bc566dc1efef9ee0f89e0a9a", "wav_valid": true}
+{"receiver": 4, "at_ms": 8216.093, "type": "audio", "speaker": "D", "language": "ta-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757771302.0598, "wav_duration_s": 3.328, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 106540, "wav_sha256": "7599114287f772228e78357b0a84c9a37870c124bc566dc1efef9ee0f89e0a9a", "wav_valid": true}
+{"receiver": 1, "at_ms": 8507.568, "type": "latency", "speaker": "D", "language": "te-IN", "seq": 1, "stt_ms": 4181, "queue_ms": 0, "translate_ms": 2094, "tts_ms": 1261, "total_ms": 7536}
+{"receiver": 1, "at_ms": 8535.879, "type": "audio", "speaker": "D", "language": "te-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757771302.0598, "wav_duration_s": 4.5226875, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 144770, "wav_sha256": "3db8c452a0e46ac8a129a6e6ff9e34cb625d8610160b3b07e998efb59d42ee2a", "wav_valid": true}
+{"receiver": 1, "at_ms": 10488.23, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 0, "at_ms": 10488.426, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 2, "at_ms": 10488.654, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 2, "at_ms": 10488.701, "type": "peer_left", "party_id": "D"}
+{"receiver": 4, "at_ms": 10490.524, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 4, "at_ms": 10490.595, "type": "peer_left", "party_id": "D"}
+{"receiver": 4, "at_ms": 10490.628, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 0, "at_ms": 10491.903, "type": "peer_left", "party_id": "D"}
+{"receiver": 0, "at_ms": 10491.952, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 0, "at_ms": 10491.97, "type": "peer_left", "party_id": "E"}
+{"receiver": 3, "at_ms": 10492.563, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 1, "at_ms": 10492.718, "type": "peer_left", "party_id": "D"}
+{"receiver": 1, "at_ms": 10492.736, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 1, "at_ms": 10492.751, "type": "peer_left", "party_id": "E"}
+{"receiver": 2, "at_ms": 10492.817, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 2, "at_ms": 10492.831, "type": "peer_left", "party_id": "E"}

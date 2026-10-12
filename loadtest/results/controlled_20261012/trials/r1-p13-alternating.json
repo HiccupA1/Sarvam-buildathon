@@ -1,0 +1,70 @@
+{
+  "spec": {
+    "id": "r1-p13-alternating",
+    "repetition": 1,
+    "pair": 13,
+    "condition": "alternating",
+    "inputs": [
+      {
+        "id": "ta_9",
+        "category": "ta",
+        "index": 9,
+        "reference": "குழந்தைகள் பூங்காவில் விளையாடுகிறார்கள்.",
+        "sha256": "a40e4f5a09a3744d29134dfaafc0a9bb3b2f23ca9fe8fea7127aa046515a070f",
+        "bytes": 98304,
+        "duration_s": 3.072,
+        "signal_start_s": 0.0200625,
+        "signal_end_s": 2.9390625,
+        "peak": 17461,
+        "rms": 3427.070744385637
+      },
+      {
+        "id": "ta_2",
+        "category": "ta",
+        "index": 2,
+        "reference": "இந்த வாரம் வானிலை மிகவும் நன்றாக இருக்கிறது.",
+        "sha256": "ec0c8d6731d8247746dc5f50dfc1bc0e238cdd12bc38e320ad4aebaf7069c514",
+        "bytes": 109226,
+        "duration_s": 3.4133125,
+        "signal_start_s": 0.036,
+        "signal_end_s": 3.2558125,
+        "peak": 19535,
+        "rms": 3215.5731808898727
+      }
+    ],
+    "targets": [
+      "en-IN",
+      "hi-IN",
+      "ta-IN"
+    ]
+  },
+  "room": "bench-r1-p13-alternating",
+  "parties": {
+    "0": "A",
+    "1": "B",
+    "2": "C",
+    "3": "D",
+    "4": "E"
+  },
+  "send_start_ms": {
+    "3": 535.6953000009526,
+    "4": 4601.5441000054125
+  },
+  "frames_sent": {
+    "3": {
+      "bytes": 278400,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    },
+    "4": {
+      "bytes": 150400,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    }
+  },
+  "duration_s": 14.384,
+  "error": null,
+  "events_file": "events\\r1-p13-alternating.jsonl",
+  "event_count": 390,
+  "events_sha256": "49981194a86630af6be61b0808e02287254f0c49bae6a18215327438e48273a1"
+}

@@ -1,0 +1,70 @@
+{
+  "spec": {
+    "id": "r3-p04-alternating",
+    "repetition": 3,
+    "pair": 4,
+    "condition": "alternating",
+    "inputs": [
+      {
+        "id": "mix_9",
+        "category": "mix",
+        "index": 9,
+        "reference": "என் laptop screen crack ஆயிடுச்சு, repair பண்ணனும்.",
+        "sha256": "635c5fc9eb89f3fe9e2b41edd1c3fc811bf5477ffc4390c672f2fa8a1422591d",
+        "bytes": 150186,
+        "duration_s": 4.6933125,
+        "signal_start_s": 0.1904375,
+        "signal_end_s": 4.232375,
+        "peak": 30344,
+        "rms": 3845.3833711725374
+      },
+      {
+        "id": "te_1",
+        "category": "te",
+        "index": 1,
+        "reference": "నేను ఈరోజు ఉదయం కూరగాయలు కొనడానికి మార్కెట్‌కు వెళ్ళాను.",
+        "sha256": "292cdf009249b1f42b9baca61f3f8a8e57c229f14d5e3decd5a89167aea5dc21",
+        "bytes": 150186,
+        "duration_s": 4.6933125,
+        "signal_start_s": 0.0455625,
+        "signal_end_s": 4.5435625,
+        "peak": 18452,
+        "rms": 3193.941485592485
+      }
+    ],
+    "targets": [
+      "te-IN",
+      "en-IN",
+      "hi-IN"
+    ]
+  },
+  "room": "bench-r3-p04-alternating",
+  "parties": {
+    "0": "A",
+    "1": "B",
+    "2": "C",
+    "3": "D",
+    "4": "E"
+  },
+  "send_start_ms": {
+    "3": 469.6168999944348,
+    "4": 6164.757199992891
+  },
+  "frames_sent": {
+    "3": {
+      "bytes": 371200,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    },
+    "4": {
+      "bytes": 192000,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    }
+  },
+  "duration_s": 17.247,
+  "error": null,
+  "events_file": "events\\r3-p04-alternating.jsonl",
+  "event_count": 390,
+  "events_sha256": "3fbcc53d8deb84f7e6d2d63266f46ef14282f2d1d181eecb2b11d3420e4bf35b"
+}

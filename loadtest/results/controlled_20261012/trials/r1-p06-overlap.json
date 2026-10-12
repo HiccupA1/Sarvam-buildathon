@@ -1,0 +1,70 @@
+{
+  "spec": {
+    "id": "r1-p06-overlap",
+    "repetition": 1,
+    "pair": 6,
+    "condition": "overlap",
+    "inputs": [
+      {
+        "id": "te_10",
+        "category": "te",
+        "index": 10,
+        "reference": "మీరు ఇంటికి చేరుకున్నప్పుడు నాకు కాల్ చేయండి.",
+        "sha256": "bc95a093f9003d182f77337b1b73b572d6596e3caae115eac104daa7877c745a",
+        "bytes": 122880,
+        "duration_s": 3.84,
+        "signal_start_s": 0.1999375,
+        "signal_end_s": 3.50925,
+        "peak": 20648,
+        "rms": 3319.7825989336925
+      },
+      {
+        "id": "hi_7",
+        "category": "hi",
+        "index": 7,
+        "reference": "वह हमारे घर के पास एक अस्पताल में काम करती है।",
+        "sha256": "37c66cd24d0cd58d05574d133ee4d028c28bf9e546104d02c4aa8f3d1f8dbf2a",
+        "bytes": 122880,
+        "duration_s": 3.84,
+        "signal_start_s": 0.020875,
+        "signal_end_s": 3.7039375,
+        "peak": 21570,
+        "rms": 2844.4075705998157
+      }
+    ],
+    "targets": [
+      "hi-IN",
+      "ta-IN",
+      "te-IN"
+    ]
+  },
+  "room": "bench-r1-p06-overlap",
+  "parties": {
+    "0": "A",
+    "1": "B",
+    "2": "C",
+    "3": "D",
+    "4": "E"
+  },
+  "send_start_ms": {
+    "3": 512.268699996639,
+    "4": 819.1493999911472
+  },
+  "frames_sent": {
+    "3": {
+      "bytes": 172800,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    },
+    "4": {
+      "bytes": 163200,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    }
+  },
+  "duration_s": 11.019,
+  "error": null,
+  "events_file": "events\\r1-p06-overlap.jsonl",
+  "event_count": 475,
+  "events_sha256": "23b97595b053e1f504ffa1fd4c13bd711ed281e1d53f86a4ef3714ba2be1bd04"
+}

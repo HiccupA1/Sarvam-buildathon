@@ -1,0 +1,70 @@
+{
+  "spec": {
+    "id": "r1-p09-overlap",
+    "repetition": 1,
+    "pair": 9,
+    "condition": "overlap",
+    "inputs": [
+      {
+        "id": "te_4",
+        "category": "te",
+        "index": 4,
+        "reference": "నా తమ్ముడు కళాశాలలో కంప్యూటర్ సైన్స్ చదువుతున్నాడు.",
+        "sha256": "2c4a6fbeb4c93a7152f2a440a25ec1a9120b62c42898d4d6936f98cfdcf62368",
+        "bytes": 147456,
+        "duration_s": 4.608,
+        "signal_start_s": 0.0483125,
+        "signal_end_s": 4.446375,
+        "peak": 24236,
+        "rms": 3238.1326108390363
+      },
+      {
+        "id": "en_0",
+        "category": "en",
+        "index": 0,
+        "reference": "Hello, how are you doing today?",
+        "sha256": "e94c48c6e654b4d6c79fc33b44a82af037bbac75d05518732324037549e04b1e",
+        "bytes": 62806,
+        "duration_s": 1.9626875,
+        "signal_start_s": 0.0141875,
+        "signal_end_s": 1.8596875,
+        "peak": 16865,
+        "rms": 3031.275285688363
+      }
+    ],
+    "targets": [
+      "en-IN",
+      "hi-IN",
+      "ta-IN"
+    ]
+  },
+  "room": "bench-r1-p09-overlap",
+  "parties": {
+    "0": "A",
+    "1": "B",
+    "2": "C",
+    "3": "D",
+    "4": "E"
+  },
+  "send_start_ms": {
+    "3": 474.6580999926664,
+    "4": 780.8959999820217
+  },
+  "frames_sent": {
+    "3": {
+      "bytes": 185600,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    },
+    "4": {
+      "bytes": 176000,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    }
+  },
+  "duration_s": 11.335,
+  "error": null,
+  "events_file": "events\\r1-p09-overlap.jsonl",
+  "event_count": 390,
+  "events_sha256": "953d2a226b6d54ef907a94d96ba52ac250734390d8654b2b808285b9b3a9e7a0"
+}

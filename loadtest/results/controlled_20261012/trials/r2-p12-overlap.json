@@ -1,0 +1,70 @@
+{
+  "spec": {
+    "id": "r2-p12-overlap",
+    "repetition": 2,
+    "pair": 12,
+    "condition": "overlap",
+    "inputs": [
+      {
+        "id": "hi_16",
+        "category": "hi",
+        "index": 16,
+        "reference": "लाइब्रेरी शाम को आठ बजे बंद होती है।",
+        "sha256": "f22f14373dc69c5d5289d65a722f9a97504435702429ebfaf6236e7221b00817",
+        "bytes": 101034,
+        "duration_s": 3.1573125,
+        "signal_start_s": 0.03,
+        "signal_end_s": 3.0060625,
+        "peak": 20771,
+        "rms": 3319.4991954756347
+      },
+      {
+        "id": "ta_19",
+        "category": "ta",
+        "index": 19,
+        "reference": "பேருந்து நிறுத்தம் தெருவுக்கு அப்பாலேயே இருக்கிறது.",
+        "sha256": "826342e65b06a062b7b7f4d331392a4ee5fd02a8a5a63a7810b24d91d82cd283",
+        "bytes": 131072,
+        "duration_s": 4.096,
+        "signal_start_s": 0.0546875,
+        "signal_end_s": 3.9341875,
+        "peak": 20816,
+        "rms": 3067.1483546229642
+      }
+    ],
+    "targets": [
+      "te-IN",
+      "en-IN",
+      "hi-IN"
+    ]
+  },
+  "room": "bench-r2-p12-overlap",
+  "parties": {
+    "0": "A",
+    "1": "B",
+    "2": "C",
+    "3": "D",
+    "4": "E"
+  },
+  "send_start_ms": {
+    "3": 556.7599999776576,
+    "4": 842.6746999903116
+  },
+  "frames_sent": {
+    "3": {
+      "bytes": 179200,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    },
+    "4": {
+      "bytes": 172800,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    }
+  },
+  "duration_s": 11.326,
+  "error": null,
+  "events_file": "events\\r2-p12-overlap.jsonl",
+  "event_count": 485,
+  "events_sha256": "df539a8f62f672606dd22c5fe1fb1e5f8a1296a84ac82eae7f4e589b623e3863"
+}

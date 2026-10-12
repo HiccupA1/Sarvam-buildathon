@@ -1,0 +1,1160 @@
+{"receiver": 0, "at_ms": 13.492, "type": "joined", "party_id": "A", "language": "en-IN", "resumed": false, "muted": true, "role": "listener"}
+{"receiver": 0, "at_ms": 13.582, "type": "ready"}
+{"receiver": 1, "at_ms": 20.963, "type": "joined", "party_id": "B", "language": "hi-IN", "resumed": false, "muted": true, "role": "listener"}
+{"receiver": 1, "at_ms": 21.0, "type": "peer_joined", "party_id": "A", "language": "en-IN", "muted": true, "role": "listener"}
+{"receiver": 1, "at_ms": 21.013, "type": "ready"}
+{"receiver": 2, "at_ms": 30.683, "type": "joined", "party_id": "C", "language": "ta-IN", "resumed": false, "muted": true, "role": "listener"}
+{"receiver": 2, "at_ms": 30.766, "type": "peer_joined", "party_id": "A", "language": "en-IN", "muted": true, "role": "listener"}
+{"receiver": 2, "at_ms": 30.798, "type": "peer_joined", "party_id": "B", "language": "hi-IN", "muted": true, "role": "listener"}
+{"receiver": 2, "at_ms": 30.926, "type": "ready"}
+{"receiver": 3, "at_ms": 36.092, "type": "joined", "party_id": "D", "language": "en-IN", "resumed": false, "muted": false, "role": "speaker"}
+{"receiver": 3, "at_ms": 36.349, "type": "peer_joined", "party_id": "A", "language": "en-IN", "muted": true, "role": "listener"}
+{"receiver": 3, "at_ms": 36.395, "type": "peer_joined", "party_id": "B", "language": "hi-IN", "muted": true, "role": "listener"}
+{"receiver": 3, "at_ms": 36.423, "type": "peer_joined", "party_id": "C", "language": "ta-IN", "muted": true, "role": "listener"}
+{"receiver": 3, "at_ms": 254.633, "type": "ready"}
+{"receiver": 4, "at_ms": 269.463, "type": "joined", "party_id": "E", "language": "en-IN", "resumed": false, "muted": false, "role": "speaker"}
+{"receiver": 4, "at_ms": 269.548, "type": "peer_joined", "party_id": "A", "language": "en-IN", "muted": true, "role": "listener"}
+{"receiver": 4, "at_ms": 269.58, "type": "peer_joined", "party_id": "B", "language": "hi-IN", "muted": true, "role": "listener"}
+{"receiver": 4, "at_ms": 269.605, "type": "peer_joined", "party_id": "C", "language": "ta-IN", "muted": true, "role": "listener"}
+{"receiver": 4, "at_ms": 269.627, "type": "peer_joined", "party_id": "D", "language": "en-IN", "muted": false, "role": "speaker"}
+{"receiver": 4, "at_ms": 492.17, "type": "ready"}
+{"receiver": 0, "at_ms": 492.36, "type": "peer_joined", "party_id": "B", "language": "hi-IN", "muted": true, "role": "listener"}
+{"receiver": 0, "at_ms": 492.385, "type": "peer_joined", "party_id": "C", "language": "ta-IN", "muted": true, "role": "listener"}
+{"receiver": 0, "at_ms": 492.403, "type": "peer_joined", "party_id": "D", "language": "en-IN", "muted": false, "role": "speaker"}
+{"receiver": 0, "at_ms": 492.416, "type": "peer_joined", "party_id": "E", "language": "en-IN", "muted": false, "role": "speaker"}
+{"receiver": 1, "at_ms": 492.442, "type": "peer_joined", "party_id": "C", "language": "ta-IN", "muted": true, "role": "listener"}
+{"receiver": 1, "at_ms": 492.456, "type": "peer_joined", "party_id": "D", "language": "en-IN", "muted": false, "role": "speaker"}
+{"receiver": 1, "at_ms": 492.469, "type": "peer_joined", "party_id": "E", "language": "en-IN", "muted": false, "role": "speaker"}
+{"receiver": 2, "at_ms": 492.487, "type": "peer_joined", "party_id": "D", "language": "en-IN", "muted": false, "role": "speaker"}
+{"receiver": 2, "at_ms": 492.499, "type": "peer_joined", "party_id": "E", "language": "en-IN", "muted": false, "role": "speaker"}
+{"receiver": 3, "at_ms": 492.518, "type": "peer_joined", "party_id": "E", "language": "en-IN", "muted": false, "role": "speaker"}
+{"receiver": 3, "at_ms": 849.616, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 2, "at_ms": 849.638, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 1, "at_ms": 849.647, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 4, "at_ms": 849.655, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 0, "at_ms": 849.663, "type": "vad", "party": "D", "state": "start"}
+{"receiver": 0, "at_ms": 880.763, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 1, "at_ms": 880.799, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 2, "at_ms": 880.813, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 3, "at_ms": 880.824, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 4, "at_ms": 881.468, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 0, "at_ms": 886.321, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 2, "at_ms": 886.352, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 1, "at_ms": 886.397, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 4, "at_ms": 886.49, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 3, "at_ms": 886.503, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 0, "at_ms": 1141.196, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 1, "at_ms": 1141.34, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 2, "at_ms": 1141.762, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 4, "at_ms": 1142.07, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 3, "at_ms": 1142.115, "type": "vad", "party": "E", "state": "start"}
+{"receiver": 0, "at_ms": 1174.019, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 1, "at_ms": 1174.081, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 4, "at_ms": 1174.109, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 2, "at_ms": 1174.128, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 3, "at_ms": 1174.297, "type": "transcript", "party": "E", "kind": "partial", "text": ""}
+{"receiver": 0, "at_ms": 1359.54, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 1, "at_ms": 1359.986, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 2, "at_ms": 1360.241, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 3, "at_ms": 1360.283, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 4, "at_ms": 1360.416, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 1, "at_ms": 1364.981, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 0, "at_ms": 1365.298, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 2, "at_ms": 1365.603, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 4, "at_ms": 1365.642, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 3, "at_ms": 1365.67, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 0, "at_ms": 1369.392, "type": "transcript", "party": "D", "kind": "partial", "text": "I want"}
+{"receiver": 1, "at_ms": 1369.437, "type": "transcript", "party": "D", "kind": "partial", "text": "I want"}
+{"receiver": 2, "at_ms": 1369.636, "type": "transcript", "party": "D", "kind": "partial", "text": "I want"}
+{"receiver": 3, "at_ms": 1369.664, "type": "transcript", "party": "D", "kind": "partial", "text": "I want"}
+{"receiver": 4, "at_ms": 1369.683, "type": "transcript", "party": "D", "kind": "partial", "text": "I want"}
+{"receiver": 1, "at_ms": 1372.861, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you"}
+{"receiver": 0, "at_ms": 1373.113, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you"}
+{"receiver": 2, "at_ms": 1373.179, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you"}
+{"receiver": 3, "at_ms": 1373.375, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you"}
+{"receiver": 4, "at_ms": 1373.473, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you"}
+{"receiver": 0, "at_ms": 1377.589, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 1, "at_ms": 1377.771, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 2, "at_ms": 1378.814, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 3, "at_ms": 1378.85, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 4, "at_ms": 1378.868, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 0, "at_ms": 1381.73, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 3, "at_ms": 1381.779, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 2, "at_ms": 1381.8, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 1, "at_ms": 1381.816, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 4, "at_ms": 1381.959, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 0, "at_ms": 1383.624, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 4, "at_ms": 1383.809, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 1, "at_ms": 1384.096, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 2, "at_ms": 1384.126, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 3, "at_ms": 1384.15, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 0, "at_ms": 1387.31, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 1, "at_ms": 1387.542, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 2, "at_ms": 1387.571, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 3, "at_ms": 1387.591, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 4, "at_ms": 1387.658, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 1, "at_ms": 1650.123, "type": "transcript", "party": "E", "kind": "partial", "text": "U"}
+{"receiver": 4, "at_ms": 1650.176, "type": "transcript", "party": "E", "kind": "partial", "text": "U"}
+{"receiver": 0, "at_ms": 1650.201, "type": "transcript", "party": "E", "kind": "partial", "text": "U"}
+{"receiver": 2, "at_ms": 1650.222, "type": "transcript", "party": "E", "kind": "partial", "text": "U"}
+{"receiver": 3, "at_ms": 1650.245, "type": "transcript", "party": "E", "kind": "partial", "text": "U"}
+{"receiver": 0, "at_ms": 1651.584, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 1, "at_ms": 1651.666, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 2, "at_ms": 1651.802, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 4, "at_ms": 1651.84, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 3, "at_ms": 1652.023, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 2, "at_ms": 1657.379, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 0, "at_ms": 1657.429, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 1, "at_ms": 1657.537, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 3, "at_ms": 1657.66, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 4, "at_ms": 1657.812, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 0, "at_ms": 1851.223, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 1, "at_ms": 1851.272, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 2, "at_ms": 1851.287, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 3, "at_ms": 1851.299, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 4, "at_ms": 1851.398, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 0, "at_ms": 1856.239, "type": "transcript", "party": "D", "kind": "partial", "text": "I want"}
+{"receiver": 1, "at_ms": 1856.362, "type": "transcript", "party": "D", "kind": "partial", "text": "I want"}
+{"receiver": 2, "at_ms": 1856.43, "type": "transcript", "party": "D", "kind": "partial", "text": "I want"}
+{"receiver": 3, "at_ms": 1857.069, "type": "transcript", "party": "D", "kind": "partial", "text": "I want"}
+{"receiver": 4, "at_ms": 1857.324, "type": "transcript", "party": "D", "kind": "partial", "text": "I want"}
+{"receiver": 0, "at_ms": 1860.162, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you"}
+{"receiver": 1, "at_ms": 1860.201, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you"}
+{"receiver": 2, "at_ms": 1860.317, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you"}
+{"receiver": 4, "at_ms": 1860.334, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you"}
+{"receiver": 3, "at_ms": 1860.385, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you"}
+{"receiver": 0, "at_ms": 1864.676, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 1, "at_ms": 1864.904, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 2, "at_ms": 1864.927, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 4, "at_ms": 1865.006, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 3, "at_ms": 1865.024, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 0, "at_ms": 1871.516, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 2, "at_ms": 1871.554, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 1, "at_ms": 1871.631, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 3, "at_ms": 1872.232, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 4, "at_ms": 1872.339, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 0, "at_ms": 1874.459, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 1, "at_ms": 1874.496, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 2, "at_ms": 1874.626, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 3, "at_ms": 1874.643, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 4, "at_ms": 1874.655, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 0, "at_ms": 1878.111, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 1, "at_ms": 1878.826, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 4, "at_ms": 1878.852, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 2, "at_ms": 1878.864, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 3, "at_ms": 1878.875, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 0, "at_ms": 1883.89, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 1, "at_ms": 1883.926, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 2, "at_ms": 1884.053, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 4, "at_ms": 1884.068, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 3, "at_ms": 1884.082, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 0, "at_ms": 2165.148, "type": "transcript", "party": "E", "kind": "partial", "text": "U"}
+{"receiver": 2, "at_ms": 2165.332, "type": "transcript", "party": "E", "kind": "partial", "text": "U"}
+{"receiver": 1, "at_ms": 2165.35, "type": "transcript", "party": "E", "kind": "partial", "text": "U"}
+{"receiver": 3, "at_ms": 2165.378, "type": "transcript", "party": "E", "kind": "partial", "text": "U"}
+{"receiver": 4, "at_ms": 2165.437, "type": "transcript", "party": "E", "kind": "partial", "text": "U"}
+{"receiver": 2, "at_ms": 2170.205, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 0, "at_ms": 2170.23, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 1, "at_ms": 2170.24, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 3, "at_ms": 2170.246, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 4, "at_ms": 2170.253, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 1, "at_ms": 2173.467, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 0, "at_ms": 2173.493, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 2, "at_ms": 2173.501, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 3, "at_ms": 2173.51, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 4, "at_ms": 2173.547, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 2, "at_ms": 2177.787, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 0, "at_ms": 2177.81, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 1, "at_ms": 2177.819, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 3, "at_ms": 2177.826, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 4, "at_ms": 2177.833, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 0, "at_ms": 2363.967, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 4, "at_ms": 2363.992, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 3, "at_ms": 2364.002, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 1, "at_ms": 2364.011, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 2, "at_ms": 2364.019, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 2, "at_ms": 2366.62, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 0, "at_ms": 2366.643, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 1, "at_ms": 2366.702, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 3, "at_ms": 2366.711, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 4, "at_ms": 2366.743, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 0, "at_ms": 2676.466, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 1, "at_ms": 2676.533, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 2, "at_ms": 2677.432, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 3, "at_ms": 2677.456, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 4, "at_ms": 2677.466, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska"}
+{"receiver": 0, "at_ms": 2684.767, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska present"}
+{"receiver": 4, "at_ms": 2685.301, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska present"}
+{"receiver": 1, "at_ms": 2685.356, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska present"}
+{"receiver": 2, "at_ms": 2685.42, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska present"}
+{"receiver": 3, "at_ms": 2685.452, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska present"}
+{"receiver": 0, "at_ms": 2688.358, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation"}
+{"receiver": 1, "at_ms": 2688.398, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation"}
+{"receiver": 4, "at_ms": 2688.415, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation"}
+{"receiver": 3, "at_ms": 2688.429, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation"}
+{"receiver": 2, "at_ms": 2688.493, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation"}
+{"receiver": 2, "at_ms": 2693.201, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation"}
+{"receiver": 0, "at_ms": 2693.251, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation"}
+{"receiver": 3, "at_ms": 2693.274, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation"}
+{"receiver": 4, "at_ms": 2694.287, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation"}
+{"receiver": 1, "at_ms": 2694.326, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation"}
+{"receiver": 0, "at_ms": 2843.386, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 1, "at_ms": 2843.412, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 2, "at_ms": 2843.422, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 3, "at_ms": 2843.429, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 4, "at_ms": 2843.436, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 0, "at_ms": 2845.899, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 1, "at_ms": 2845.925, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 3, "at_ms": 2846.004, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 2, "at_ms": 2846.015, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 4, "at_ms": 2846.023, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 2, "at_ms": 3157.075, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska present"}
+{"receiver": 0, "at_ms": 3157.113, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska present"}
+{"receiver": 1, "at_ms": 3157.128, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska present"}
+{"receiver": 3, "at_ms": 3157.14, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska present"}
+{"receiver": 4, "at_ms": 3157.151, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska present"}
+{"receiver": 3, "at_ms": 3160.949, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation"}
+{"receiver": 1, "at_ms": 3160.984, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation"}
+{"receiver": 2, "at_ms": 3160.998, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation"}
+{"receiver": 0, "at_ms": 3161.008, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation"}
+{"receiver": 4, "at_ms": 3161.018, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation"}
+{"receiver": 0, "at_ms": 3164.667, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bah"}
+{"receiver": 1, "at_ms": 3164.69, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bah"}
+{"receiver": 2, "at_ms": 3164.699, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bah"}
+{"receiver": 4, "at_ms": 3164.707, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bah"}
+{"receiver": 3, "at_ms": 3164.713, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bah"}
+{"receiver": 0, "at_ms": 3171.594, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut"}
+{"receiver": 1, "at_ms": 3171.683, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut"}
+{"receiver": 2, "at_ms": 3171.989, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut"}
+{"receiver": 3, "at_ms": 3172.101, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut"}
+{"receiver": 4, "at_ms": 3172.119, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut"}
+{"receiver": 0, "at_ms": 3173.929, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut"}
+{"receiver": 2, "at_ms": 3174.136, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut"}
+{"receiver": 1, "at_ms": 3174.156, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut"}
+{"receiver": 3, "at_ms": 3174.202, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut"}
+{"receiver": 4, "at_ms": 3174.215, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut"}
+{"receiver": 3, "at_ms": 3352.325, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 4, "at_ms": 3352.353, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 2, "at_ms": 3352.365, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 0, "at_ms": 3352.375, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 1, "at_ms": 3352.384, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 1, "at_ms": 3355.726, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 4, "at_ms": 3355.747, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 2, "at_ms": 3355.756, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 0, "at_ms": 3355.764, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 3, "at_ms": 3355.77, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 0, "at_ms": 3360.007, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell"}
+{"receiver": 1, "at_ms": 3360.047, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell"}
+{"receiver": 2, "at_ms": 3360.173, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell"}
+{"receiver": 4, "at_ms": 3360.19, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell"}
+{"receiver": 3, "at_ms": 3360.204, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell"}
+{"receiver": 0, "at_ms": 3364.794, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me"}
+{"receiver": 1, "at_ms": 3364.819, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me"}
+{"receiver": 3, "at_ms": 3364.83, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me"}
+{"receiver": 2, "at_ms": 3364.838, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me"}
+{"receiver": 4, "at_ms": 3364.847, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me"}
+{"receiver": 0, "at_ms": 3368.532, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 1, "at_ms": 3368.59, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 2, "at_ms": 3368.644, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 3, "at_ms": 3368.653, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 4, "at_ms": 3368.682, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 0, "at_ms": 3372.518, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 1, "at_ms": 3372.683, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 2, "at_ms": 3372.757, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 4, "at_ms": 3372.767, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 3, "at_ms": 3372.797, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 1, "at_ms": 3378.195, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell"}
+{"receiver": 0, "at_ms": 3378.222, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell"}
+{"receiver": 2, "at_ms": 3379.388, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell"}
+{"receiver": 3, "at_ms": 3379.404, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell"}
+{"receiver": 4, "at_ms": 3379.482, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell"}
+{"receiver": 0, "at_ms": 3383.59, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me"}
+{"receiver": 1, "at_ms": 3383.615, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me"}
+{"receiver": 2, "at_ms": 3383.698, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me"}
+{"receiver": 3, "at_ms": 3383.709, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me"}
+{"receiver": 4, "at_ms": 3383.716, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me"}
+{"receiver": 0, "at_ms": 3386.106, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 3386.129, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 3386.139, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 3386.249, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 3386.269, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 3391.159, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 3391.206, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 3391.226, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 3391.242, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 3391.257, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 3396.829, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell"}
+{"receiver": 1, "at_ms": 3396.877, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell"}
+{"receiver": 2, "at_ms": 3396.93, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell"}
+{"receiver": 4, "at_ms": 3397.136, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell"}
+{"receiver": 3, "at_ms": 3397.151, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell"}
+{"receiver": 3, "at_ms": 3401.842, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me"}
+{"receiver": 1, "at_ms": 3401.894, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me"}
+{"receiver": 0, "at_ms": 3401.914, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me"}
+{"receiver": 2, "at_ms": 3401.922, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me"}
+{"receiver": 4, "at_ms": 3401.931, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me"}
+{"receiver": 0, "at_ms": 3405.582, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 3405.632, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 3405.651, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 3405.668, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 3405.682, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 3413.355, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 3413.638, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 3413.667, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 3413.794, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 3413.816, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 3417.201, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell"}
+{"receiver": 4, "at_ms": 3417.257, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell"}
+{"receiver": 1, "at_ms": 3417.837, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell"}
+{"receiver": 2, "at_ms": 3417.893, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell"}
+{"receiver": 3, "at_ms": 3417.924, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell"}
+{"receiver": 0, "at_ms": 3422.834, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 4, "at_ms": 3423.216, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 1, "at_ms": 3423.262, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 3, "at_ms": 3423.292, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 2, "at_ms": 3423.721, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 0, "at_ms": 3428.846, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 3428.906, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 3429.17, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 3429.196, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 3429.215, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 3434.932, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 3434.997, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 3435.021, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 3435.039, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 3435.055, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 3437.61, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 1, "at_ms": 3437.952, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 2, "at_ms": 3438.114, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 4, "at_ms": 3438.504, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 3, "at_ms": 3438.614, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 1, "at_ms": 3442.526, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 0, "at_ms": 3442.569, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 4, "at_ms": 3442.585, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 3, "at_ms": 3442.737, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 2, "at_ms": 3442.755, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 4, "at_ms": 3445.629, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 3445.69, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 3445.717, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 3445.74, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 3445.845, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 3447.926, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 3447.962, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 3447.975, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 3447.987, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 3448.043, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 3450.926, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 2, "at_ms": 3450.966, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 1, "at_ms": 3450.982, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 4, "at_ms": 3450.995, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 3, "at_ms": 3451.006, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 1, "at_ms": 3453.739, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 3, "at_ms": 3453.775, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 0, "at_ms": 3453.79, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 2, "at_ms": 3453.806, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 4, "at_ms": 3453.865, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 2, "at_ms": 3456.331, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 3456.372, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 3456.385, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 3456.396, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 3456.406, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 3460.266, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 3460.299, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 3460.311, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 3460.321, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 3460.37, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 3463.532, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 0, "at_ms": 3463.565, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 2, "at_ms": 3463.577, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 4, "at_ms": 3463.586, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 3, "at_ms": 3463.595, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 0, "at_ms": 3466.579, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 1, "at_ms": 3466.622, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 3, "at_ms": 3466.637, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 4, "at_ms": 3466.649, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 2, "at_ms": 3466.724, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 0, "at_ms": 3470.587, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 3470.61, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 3470.619, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 3470.627, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 3470.634, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 3473.925, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 1, "at_ms": 3474.092, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 4, "at_ms": 3474.292, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 2, "at_ms": 3474.312, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 3, "at_ms": 3474.326, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 2, "at_ms": 3677.598, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bah"}
+{"receiver": 3, "at_ms": 3677.623, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bah"}
+{"receiver": 1, "at_ms": 3677.632, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bah"}
+{"receiver": 0, "at_ms": 3677.638, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bah"}
+{"receiver": 4, "at_ms": 3678.161, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bah"}
+{"receiver": 0, "at_ms": 3681.775, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut"}
+{"receiver": 1, "at_ms": 3681.801, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut"}
+{"receiver": 3, "at_ms": 3681.849, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut"}
+{"receiver": 4, "at_ms": 3681.86, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut"}
+{"receiver": 2, "at_ms": 3681.867, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut"}
+{"receiver": 0, "at_ms": 3684.985, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut saf"}
+{"receiver": 2, "at_ms": 3685.01, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut saf"}
+{"receiver": 1, "at_ms": 3685.018, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut saf"}
+{"receiver": 4, "at_ms": 3685.026, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut saf"}
+{"receiver": 3, "at_ms": 3685.033, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut saf"}
+{"receiver": 1, "at_ms": 3688.441, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut saf"}
+{"receiver": 2, "at_ms": 3688.468, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut saf"}
+{"receiver": 4, "at_ms": 3688.522, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut saf"}
+{"receiver": 0, "at_ms": 3688.537, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut saf"}
+{"receiver": 3, "at_ms": 3688.546, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut saf"}
+{"receiver": 2, "at_ms": 3863.329, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 0, "at_ms": 3863.355, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 1, "at_ms": 3863.462, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 3, "at_ms": 3863.486, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 4, "at_ms": 3863.495, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 4, "at_ms": 3867.815, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 3, "at_ms": 3867.839, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 2, "at_ms": 3867.848, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 0, "at_ms": 3867.855, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 1, "at_ms": 3867.862, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 3, "at_ms": 3870.479, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 2, "at_ms": 3870.503, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 0, "at_ms": 3870.512, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 1, "at_ms": 3870.519, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 4, "at_ms": 3870.526, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 1, "at_ms": 3874.781, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 3, "at_ms": 3874.888, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 0, "at_ms": 3874.909, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 4, "at_ms": 3874.918, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 2, "at_ms": 3874.926, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 2, "at_ms": 3879.875, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 1, "at_ms": 3879.9, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 0, "at_ms": 3879.91, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 4, "at_ms": 3879.918, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 3, "at_ms": 3879.925, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 4, "at_ms": 3883.799, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell"}
+{"receiver": 1, "at_ms": 3883.823, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell"}
+{"receiver": 0, "at_ms": 3883.832, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell"}
+{"receiver": 2, "at_ms": 3883.839, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell"}
+{"receiver": 3, "at_ms": 3883.846, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell"}
+{"receiver": 0, "at_ms": 3886.938, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me"}
+{"receiver": 1, "at_ms": 3886.962, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me"}
+{"receiver": 3, "at_ms": 3886.97, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me"}
+{"receiver": 4, "at_ms": 3886.977, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me"}
+{"receiver": 2, "at_ms": 3886.984, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me"}
+{"receiver": 0, "at_ms": 3891.058, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 1, "at_ms": 3891.083, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 3, "at_ms": 3891.092, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 4, "at_ms": 3891.1, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 2, "at_ms": 3891.107, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 0, "at_ms": 3902.311, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 3, "at_ms": 3902.336, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 4, "at_ms": 3902.345, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 2, "at_ms": 3902.353, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 1, "at_ms": 3902.36, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 0, "at_ms": 3905.89, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell"}
+{"receiver": 1, "at_ms": 3905.917, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell"}
+{"receiver": 3, "at_ms": 3906.011, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell"}
+{"receiver": 2, "at_ms": 3906.021, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell"}
+{"receiver": 4, "at_ms": 3906.029, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell"}
+{"receiver": 0, "at_ms": 3909.91, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me"}
+{"receiver": 4, "at_ms": 3909.939, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me"}
+{"receiver": 1, "at_ms": 3909.951, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me"}
+{"receiver": 2, "at_ms": 3909.962, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me"}
+{"receiver": 3, "at_ms": 3909.968, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me"}
+{"receiver": 0, "at_ms": 3913.312, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 3913.334, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 3913.343, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 3913.35, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 3913.357, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 3917.368, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 3917.391, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 3917.4, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 3917.408, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 3917.415, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 3921.491, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell"}
+{"receiver": 0, "at_ms": 3921.516, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell"}
+{"receiver": 4, "at_ms": 3921.527, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell"}
+{"receiver": 3, "at_ms": 3921.534, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell"}
+{"receiver": 2, "at_ms": 3921.54, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell"}
+{"receiver": 1, "at_ms": 3926.463, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me"}
+{"receiver": 0, "at_ms": 3926.488, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me"}
+{"receiver": 2, "at_ms": 3926.497, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me"}
+{"receiver": 3, "at_ms": 3926.585, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me"}
+{"receiver": 4, "at_ms": 3926.596, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me"}
+{"receiver": 0, "at_ms": 3929.587, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 3929.611, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 3929.619, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 3929.626, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 3929.632, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 3934.696, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 3934.8, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 3934.811, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 3934.819, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 3934.827, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 3938.034, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell"}
+{"receiver": 4, "at_ms": 3938.058, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell"}
+{"receiver": 0, "at_ms": 3938.066, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell"}
+{"receiver": 2, "at_ms": 3938.124, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell"}
+{"receiver": 3, "at_ms": 3938.133, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell"}
+{"receiver": 1, "at_ms": 3943.369, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 0, "at_ms": 3943.456, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 4, "at_ms": 3943.495, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 3, "at_ms": 3943.506, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 2, "at_ms": 3943.516, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 0, "at_ms": 3946.159, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 3946.279, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 3946.29, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 3946.299, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 3946.307, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 3950.662, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 3950.686, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 3950.755, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 3950.766, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 3950.801, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 3954.191, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 1, "at_ms": 3954.291, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 4, "at_ms": 3954.302, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 2, "at_ms": 3954.311, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 3, "at_ms": 3954.343, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 0, "at_ms": 3958.428, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 2, "at_ms": 3958.453, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 1, "at_ms": 3958.462, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 4, "at_ms": 3958.47, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 3, "at_ms": 3958.477, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 0, "at_ms": 3963.086, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 3963.114, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 3963.125, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 3963.133, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 3963.173, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 3966.306, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 3966.327, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 3966.336, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 3966.344, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 3966.377, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 3970.105, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 1, "at_ms": 3970.179, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 4, "at_ms": 3970.256, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 3, "at_ms": 3970.266, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 2, "at_ms": 3970.274, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 0, "at_ms": 3974.659, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 1, "at_ms": 3974.809, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 4, "at_ms": 3974.822, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 3, "at_ms": 3974.83, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 2, "at_ms": 3974.837, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 0, "at_ms": 3979.33, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 3979.418, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 3979.577, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 3979.59, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 3979.599, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 3982.407, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 3982.427, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 3982.435, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 3982.493, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 3982.502, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 3987.089, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 1, "at_ms": 3987.11, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 2, "at_ms": 3987.182, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 3, "at_ms": 3987.192, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 4, "at_ms": 3987.199, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 4, "at_ms": 3991.535, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 0, "at_ms": 3991.564, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 2, "at_ms": 3991.574, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 3, "at_ms": 3991.583, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 1, "at_ms": 3991.604, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 0, "at_ms": 3996.317, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 3996.451, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 3996.465, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 3996.475, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 3996.483, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 3999.563, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 3999.588, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 3999.598, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 3999.607, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 3999.653, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 4004.838, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 3, "at_ms": 4004.864, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 1, "at_ms": 4004.875, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 2, "at_ms": 4004.884, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 4, "at_ms": 4004.959, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 0, "at_ms": 4007.82, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 1, "at_ms": 4007.861, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 2, "at_ms": 4007.871, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 3, "at_ms": 4007.953, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 4, "at_ms": 4007.962, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 1, "at_ms": 4168.034, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut sa"}
+{"receiver": 3, "at_ms": 4168.069, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut sa"}
+{"receiver": 2, "at_ms": 4168.081, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut sa"}
+{"receiver": 0, "at_ms": 4168.092, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut sa"}
+{"receiver": 4, "at_ms": 4168.151, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut sa"}
+{"receiver": 0, "at_ms": 4169.994, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar"}
+{"receiver": 1, "at_ms": 4170.104, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar"}
+{"receiver": 2, "at_ms": 4170.115, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar"}
+{"receiver": 4, "at_ms": 4170.123, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar"}
+{"receiver": 3, "at_ms": 4170.129, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar"}
+{"receiver": 0, "at_ms": 4173.767, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar up"}
+{"receiver": 2, "at_ms": 4173.946, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar up"}
+{"receiver": 1, "at_ms": 4173.965, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar up"}
+{"receiver": 3, "at_ms": 4173.981, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar up"}
+{"receiver": 4, "at_ms": 4173.991, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar up"}
+{"receiver": 3, "at_ms": 4178.452, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar up"}
+{"receiver": 1, "at_ms": 4178.476, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar up"}
+{"receiver": 0, "at_ms": 4178.485, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar up"}
+{"receiver": 2, "at_ms": 4178.493, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar up"}
+{"receiver": 4, "at_ms": 4178.501, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar up"}
+{"receiver": 0, "at_ms": 4356.086, "type": "transcript", "party": "D", "kind": "partial", "text": "I want"}
+{"receiver": 1, "at_ms": 4356.109, "type": "transcript", "party": "D", "kind": "partial", "text": "I want"}
+{"receiver": 3, "at_ms": 4356.118, "type": "transcript", "party": "D", "kind": "partial", "text": "I want"}
+{"receiver": 2, "at_ms": 4356.125, "type": "transcript", "party": "D", "kind": "partial", "text": "I want"}
+{"receiver": 4, "at_ms": 4356.186, "type": "transcript", "party": "D", "kind": "partial", "text": "I want"}
+{"receiver": 0, "at_ms": 4359.529, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you"}
+{"receiver": 1, "at_ms": 4359.619, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you"}
+{"receiver": 2, "at_ms": 4359.701, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you"}
+{"receiver": 3, "at_ms": 4359.712, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you"}
+{"receiver": 4, "at_ms": 4359.72, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you"}
+{"receiver": 3, "at_ms": 4363.233, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 4, "at_ms": 4363.259, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 0, "at_ms": 4363.269, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 1, "at_ms": 4363.276, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 2, "at_ms": 4363.283, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 1, "at_ms": 4366.787, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 3, "at_ms": 4366.81, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 0, "at_ms": 4366.82, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 2, "at_ms": 4366.827, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 4, "at_ms": 4366.863, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 0, "at_ms": 4370.616, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 1, "at_ms": 4370.641, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 3, "at_ms": 4370.65, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 2, "at_ms": 4370.706, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 4, "at_ms": 4370.715, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 3, "at_ms": 4375.021, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 0, "at_ms": 4375.068, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 4, "at_ms": 4375.22, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 1, "at_ms": 4375.234, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 2, "at_ms": 4375.242, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 1, "at_ms": 4378.535, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 0, "at_ms": 4378.558, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 2, "at_ms": 4378.567, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 3, "at_ms": 4378.574, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 4, "at_ms": 4379.008, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 4, "at_ms": 4384.274, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 3, "at_ms": 4384.299, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 0, "at_ms": 4384.309, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 2, "at_ms": 4384.364, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 1, "at_ms": 4384.373, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 0, "at_ms": 4387.205, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell"}
+{"receiver": 1, "at_ms": 4387.227, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell"}
+{"receiver": 3, "at_ms": 4387.235, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell"}
+{"receiver": 4, "at_ms": 4387.242, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell"}
+{"receiver": 2, "at_ms": 4387.251, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell"}
+{"receiver": 0, "at_ms": 4392.033, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me"}
+{"receiver": 1, "at_ms": 4392.09, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me"}
+{"receiver": 2, "at_ms": 4392.142, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me"}
+{"receiver": 3, "at_ms": 4392.173, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me"}
+{"receiver": 4, "at_ms": 4392.183, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me"}
+{"receiver": 1, "at_ms": 4395.57, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 2, "at_ms": 4395.595, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 0, "at_ms": 4395.605, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 3, "at_ms": 4395.613, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 4, "at_ms": 4395.619, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 0, "at_ms": 4399.834, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 3, "at_ms": 4399.859, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 1, "at_ms": 4399.868, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 2, "at_ms": 4399.874, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 4, "at_ms": 4399.882, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me,"}
+{"receiver": 2, "at_ms": 4405.033, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell"}
+{"receiver": 0, "at_ms": 4405.056, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell"}
+{"receiver": 4, "at_ms": 4405.065, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell"}
+{"receiver": 1, "at_ms": 4405.072, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell"}
+{"receiver": 3, "at_ms": 4405.079, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell"}
+{"receiver": 1, "at_ms": 4407.799, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me"}
+{"receiver": 0, "at_ms": 4407.824, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me"}
+{"receiver": 2, "at_ms": 4407.833, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me"}
+{"receiver": 4, "at_ms": 4407.839, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me"}
+{"receiver": 3, "at_ms": 4407.875, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me"}
+{"receiver": 2, "at_ms": 4413.648, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 4413.732, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 4413.743, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 4413.754, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 4413.762, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 4416.098, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 4416.12, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 4416.129, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 4416.137, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 4416.143, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 4419.735, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell"}
+{"receiver": 3, "at_ms": 4419.757, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell"}
+{"receiver": 0, "at_ms": 4419.766, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell"}
+{"receiver": 2, "at_ms": 4419.774, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell"}
+{"receiver": 4, "at_ms": 4419.812, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell"}
+{"receiver": 0, "at_ms": 4425.726, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me"}
+{"receiver": 2, "at_ms": 4425.753, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me"}
+{"receiver": 3, "at_ms": 4425.763, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me"}
+{"receiver": 4, "at_ms": 4425.772, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me"}
+{"receiver": 1, "at_ms": 4425.847, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me"}
+{"receiver": 0, "at_ms": 4429.006, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 4429.037, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 4429.05, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 4429.06, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 4429.071, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 4433.181, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 4433.203, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 4433.213, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 4433.221, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 4433.256, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 4436.433, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell"}
+{"receiver": 0, "at_ms": 4436.456, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell"}
+{"receiver": 3, "at_ms": 4436.527, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell"}
+{"receiver": 1, "at_ms": 4436.537, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell"}
+{"receiver": 4, "at_ms": 4436.544, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell"}
+{"receiver": 0, "at_ms": 4444.591, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 1, "at_ms": 4444.755, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 4, "at_ms": 4444.929, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 3, "at_ms": 4445.046, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 2, "at_ms": 4445.082, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 3, "at_ms": 4448.048, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 4448.089, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 4448.107, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 4448.309, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 4448.663, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 4451.265, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 4451.329, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 4451.347, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 4451.359, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 4451.369, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 4454.905, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 1, "at_ms": 4454.928, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 4, "at_ms": 4454.937, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 2, "at_ms": 4455.032, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 3, "at_ms": 4455.055, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 0, "at_ms": 4461.899, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 1, "at_ms": 4461.955, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 2, "at_ms": 4461.977, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 3, "at_ms": 4461.997, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 4, "at_ms": 4462.006, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 0, "at_ms": 4464.199, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 4464.22, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 4464.23, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 4464.286, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 4464.295, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 4466.719, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 4466.741, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 4466.75, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 4466.758, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 4466.798, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 4472.468, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 0, "at_ms": 4472.516, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 4, "at_ms": 4472.538, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 1, "at_ms": 4472.555, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 3, "at_ms": 4472.569, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 0, "at_ms": 4478.174, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 2, "at_ms": 4478.232, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 4, "at_ms": 4478.257, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 3, "at_ms": 4478.412, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 1, "at_ms": 4478.445, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 4, "at_ms": 4481.892, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 4481.944, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 4481.965, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 4481.982, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 4482.001, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 4484.616, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 4484.668, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 4484.69, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 4484.707, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 4484.796, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 4492.39, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 2, "at_ms": 4492.469, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 3, "at_ms": 4492.502, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 0, "at_ms": 4492.526, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 4, "at_ms": 4492.552, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 0, "at_ms": 4496.27, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 1, "at_ms": 4496.501, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 2, "at_ms": 4496.605, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 3, "at_ms": 4497.31, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 4, "at_ms": 4497.775, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 0, "at_ms": 4504.217, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 4504.271, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 4504.926, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 4504.961, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 4504.981, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 4507.832, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 3, "at_ms": 4507.912, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 4507.95, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 4507.983, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 4508.016, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 4512.646, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 1, "at_ms": 4512.729, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 2, "at_ms": 4512.772, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 3, "at_ms": 4512.987, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 4, "at_ms": 4513.049, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell"}
+{"receiver": 0, "at_ms": 4515.254, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 1, "at_ms": 4515.471, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 4, "at_ms": 4516.152, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 2, "at_ms": 4516.2, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 3, "at_ms": 4516.223, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me"}
+{"receiver": 3, "at_ms": 4518.423, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 4518.47, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 1, "at_ms": 4518.493, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 4, "at_ms": 4518.514, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 2, "at_ms": 4518.53, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me, tell me,"}
+{"receiver": 0, "at_ms": 4519.863, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 1, "at_ms": 4519.984, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 4, "at_ms": 4519.995, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 2, "at_ms": 4520.003, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 3, "at_ms": 4520.038, "type": "transcript", "party": "D", "kind": "partial", "text": ""}
+{"receiver": 1, "at_ms": 4668.705, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar"}
+{"receiver": 2, "at_ms": 4668.755, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar"}
+{"receiver": 3, "at_ms": 4668.776, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar"}
+{"receiver": 0, "at_ms": 4668.793, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar"}
+{"receiver": 4, "at_ms": 4668.955, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar"}
+{"receiver": 0, "at_ms": 4674.701, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar up"}
+{"receiver": 4, "at_ms": 4674.781, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar up"}
+{"receiver": 3, "at_ms": 4675.141, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar up"}
+{"receiver": 2, "at_ms": 4675.185, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar up"}
+{"receiver": 1, "at_ms": 4675.214, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar up"}
+{"receiver": 0, "at_ms": 4680.626, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upy"}
+{"receiver": 1, "at_ms": 4680.897, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upy"}
+{"receiver": 2, "at_ms": 4680.928, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upy"}
+{"receiver": 3, "at_ms": 4680.999, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upy"}
+{"receiver": 4, "at_ms": 4681.599, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upy"}
+{"receiver": 0, "at_ms": 4687.885, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi"}
+{"receiver": 3, "at_ms": 4687.943, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi"}
+{"receiver": 1, "at_ms": 4687.968, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi"}
+{"receiver": 2, "at_ms": 4688.114, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi"}
+{"receiver": 4, "at_ms": 4688.139, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi"}
+{"receiver": 0, "at_ms": 4690.744, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi tha"}
+{"receiver": 4, "at_ms": 4690.834, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi tha"}
+{"receiver": 3, "at_ms": 4691.317, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi tha"}
+{"receiver": 1, "at_ms": 4691.508, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi tha"}
+{"receiver": 2, "at_ms": 4691.644, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi tha"}
+{"receiver": 0, "at_ms": 4695.246, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi tha."}
+{"receiver": 2, "at_ms": 4695.362, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi tha."}
+{"receiver": 1, "at_ms": 4695.388, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi tha."}
+{"receiver": 4, "at_ms": 4695.412, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi tha."}
+{"receiver": 3, "at_ms": 4695.429, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi tha."}
+{"receiver": 0, "at_ms": 4697.88, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi tha."}
+{"receiver": 2, "at_ms": 4697.904, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi tha."}
+{"receiver": 1, "at_ms": 4697.915, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi tha."}
+{"receiver": 4, "at_ms": 4697.925, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi tha."}
+{"receiver": 3, "at_ms": 4697.936, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi tha."}
+{"receiver": 0, "at_ms": 4879.964, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 4, "at_ms": 4880.014, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 3, "at_ms": 4880.036, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 2, "at_ms": 4880.052, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 1, "at_ms": 4880.069, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 0, "at_ms": 4883.064, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 1, "at_ms": 4883.119, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 4, "at_ms": 4883.144, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 2, "at_ms": 4883.288, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 3, "at_ms": 4883.512, "type": "transcript", "party": "D", "kind": "partial", "text": "I"}
+{"receiver": 2, "at_ms": 4890.55, "type": "transcript", "party": "D", "kind": "partial", "text": "I want"}
+{"receiver": 1, "at_ms": 4890.609, "type": "transcript", "party": "D", "kind": "partial", "text": "I want"}
+{"receiver": 0, "at_ms": 4890.636, "type": "transcript", "party": "D", "kind": "partial", "text": "I want"}
+{"receiver": 3, "at_ms": 4890.655, "type": "transcript", "party": "D", "kind": "partial", "text": "I want"}
+{"receiver": 4, "at_ms": 4890.672, "type": "transcript", "party": "D", "kind": "partial", "text": "I want"}
+{"receiver": 0, "at_ms": 4895.127, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you"}
+{"receiver": 3, "at_ms": 4896.178, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you"}
+{"receiver": 1, "at_ms": 4896.265, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you"}
+{"receiver": 2, "at_ms": 4896.291, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you"}
+{"receiver": 4, "at_ms": 4896.311, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you"}
+{"receiver": 0, "at_ms": 4898.781, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 1, "at_ms": 4898.815, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 4, "at_ms": 4898.829, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 2, "at_ms": 4898.842, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 3, "at_ms": 4898.853, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 0, "at_ms": 4904.269, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 1, "at_ms": 4904.353, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 3, "at_ms": 4904.543, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 2, "at_ms": 4904.567, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 4, "at_ms": 4904.578, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to"}
+{"receiver": 1, "at_ms": 4906.198, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 0, "at_ms": 4906.227, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 4, "at_ms": 4906.241, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 2, "at_ms": 4906.251, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 3, "at_ms": 4906.26, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell"}
+{"receiver": 0, "at_ms": 4908.47, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 2, "at_ms": 4908.518, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 1, "at_ms": 4908.756, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 3, "at_ms": 4908.784, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 4, "at_ms": 4908.794, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me"}
+{"receiver": 0, "at_ms": 4910.307, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 2, "at_ms": 4910.334, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 4, "at_ms": 4910.345, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 1, "at_ms": 4910.354, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 3, "at_ms": 4910.364, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me,"}
+{"receiver": 0, "at_ms": 4916.668, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how"}
+{"receiver": 4, "at_ms": 4916.726, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how"}
+{"receiver": 1, "at_ms": 4916.749, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how"}
+{"receiver": 2, "at_ms": 4916.769, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how"}
+{"receiver": 3, "at_ms": 4916.841, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how"}
+{"receiver": 0, "at_ms": 4921.701, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how"}
+{"receiver": 1, "at_ms": 4921.752, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how"}
+{"receiver": 4, "at_ms": 4921.765, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how"}
+{"receiver": 2, "at_ms": 4921.776, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how"}
+{"receiver": 3, "at_ms": 4921.788, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how"}
+{"receiver": 0, "at_ms": 4924.232, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many"}
+{"receiver": 2, "at_ms": 4924.264, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many"}
+{"receiver": 1, "at_ms": 4924.276, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many"}
+{"receiver": 3, "at_ms": 4924.287, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many"}
+{"receiver": 4, "at_ms": 4924.299, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many"}
+{"receiver": 1, "at_ms": 4928.843, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many"}
+{"receiver": 2, "at_ms": 4928.876, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many"}
+{"receiver": 4, "at_ms": 4928.89, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many"}
+{"receiver": 0, "at_ms": 4928.902, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many"}
+{"receiver": 3, "at_ms": 4928.914, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many"}
+{"receiver": 0, "at_ms": 4934.978, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women"}
+{"receiver": 3, "at_ms": 4935.028, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women"}
+{"receiver": 2, "at_ms": 4935.045, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women"}
+{"receiver": 4, "at_ms": 4935.059, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women"}
+{"receiver": 1, "at_ms": 4935.072, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women"}
+{"receiver": 1, "at_ms": 4944.878, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women"}
+{"receiver": 4, "at_ms": 4944.924, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women"}
+{"receiver": 3, "at_ms": 4944.941, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women"}
+{"receiver": 2, "at_ms": 4944.957, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women"}
+{"receiver": 0, "at_ms": 4944.972, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women"}
+{"receiver": 0, "at_ms": 4952.305, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were"}
+{"receiver": 1, "at_ms": 4952.352, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were"}
+{"receiver": 4, "at_ms": 4952.517, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were"}
+{"receiver": 3, "at_ms": 4952.538, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were"}
+{"receiver": 2, "at_ms": 4952.553, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were"}
+{"receiver": 1, "at_ms": 4959.221, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were"}
+{"receiver": 2, "at_ms": 4959.269, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were"}
+{"receiver": 0, "at_ms": 4959.297, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were"}
+{"receiver": 4, "at_ms": 4959.46, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were"}
+{"receiver": 3, "at_ms": 4959.506, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were"}
+{"receiver": 0, "at_ms": 4968.271, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were wit"}
+{"receiver": 1, "at_ms": 4968.322, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were wit"}
+{"receiver": 3, "at_ms": 4968.343, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were wit"}
+{"receiver": 2, "at_ms": 4968.359, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were wit"}
+{"receiver": 4, "at_ms": 4968.439, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were wit"}
+{"receiver": 0, "at_ms": 4972.129, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with"}
+{"receiver": 1, "at_ms": 4972.18, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with"}
+{"receiver": 2, "at_ms": 4972.202, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with"}
+{"receiver": 4, "at_ms": 4972.385, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with"}
+{"receiver": 3, "at_ms": 4972.459, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with"}
+{"receiver": 2, "at_ms": 4977.593, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you"}
+{"receiver": 0, "at_ms": 4977.653, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you"}
+{"receiver": 1, "at_ms": 4977.677, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you"}
+{"receiver": 3, "at_ms": 4977.695, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you"}
+{"receiver": 4, "at_ms": 4977.797, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you"}
+{"receiver": 1, "at_ms": 4982.073, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you?"}
+{"receiver": 0, "at_ms": 4982.122, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you?"}
+{"receiver": 2, "at_ms": 4982.139, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you?"}
+{"receiver": 4, "at_ms": 4982.152, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you?"}
+{"receiver": 3, "at_ms": 4982.164, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you?"}
+{"receiver": 1, "at_ms": 4984.088, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you?"}
+{"receiver": 0, "at_ms": 4984.126, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you?"}
+{"receiver": 2, "at_ms": 4984.353, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you?"}
+{"receiver": 3, "at_ms": 4984.38, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you?"}
+{"receiver": 4, "at_ms": 4984.398, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you?"}
+{"receiver": 0, "at_ms": 5048.72, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 2, "at_ms": 5048.774, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 4, "at_ms": 5048.795, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 3, "at_ms": 5048.811, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 1, "at_ms": 5048.828, "type": "vad", "party": "E", "state": "end"}
+{"receiver": 1, "at_ms": 5063.483, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upy"}
+{"receiver": 0, "at_ms": 5063.679, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upy"}
+{"receiver": 2, "at_ms": 5064.466, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upy"}
+{"receiver": 4, "at_ms": 5064.515, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upy"}
+{"receiver": 3, "at_ms": 5064.538, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upy"}
+{"receiver": 1, "at_ms": 5069.315, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi"}
+{"receiver": 2, "at_ms": 5069.366, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi"}
+{"receiver": 3, "at_ms": 5069.386, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi"}
+{"receiver": 0, "at_ms": 5069.402, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi"}
+{"receiver": 4, "at_ms": 5069.418, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi"}
+{"receiver": 0, "at_ms": 5071.937, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi tha"}
+{"receiver": 4, "at_ms": 5075.634, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi tha"}
+{"receiver": 2, "at_ms": 5075.688, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi tha"}
+{"receiver": 3, "at_ms": 5075.932, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi tha"}
+{"receiver": 1, "at_ms": 5075.959, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi tha"}
+{"receiver": 2, "at_ms": 5077.526, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi tha."}
+{"receiver": 0, "at_ms": 5077.571, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi tha."}
+{"receiver": 1, "at_ms": 5077.594, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi tha."}
+{"receiver": 3, "at_ms": 5077.725, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi tha."}
+{"receiver": 4, "at_ms": 5077.75, "type": "transcript", "party": "E", "kind": "partial", "text": "Uska presentation bahut safar upyogi tha."}
+{"receiver": 1, "at_ms": 5175.922, "type": "transcript", "party": "E", "kind": "final", "text": "उसका presentation बहुत साफ़ और उपयोगी था।", "seq": 1}
+{"receiver": 0, "at_ms": 5176.023, "type": "transcript", "party": "E", "kind": "final", "text": "उसका presentation बहुत साफ़ और उपयोगी था।", "seq": 1}
+{"receiver": 3, "at_ms": 5176.063, "type": "transcript", "party": "E", "kind": "final", "text": "उसका presentation बहुत साफ़ और उपयोगी था।", "seq": 1}
+{"receiver": 4, "at_ms": 5176.088, "type": "transcript", "party": "E", "kind": "final", "text": "उसका presentation बहुत साफ़ और उपयोगी था।", "seq": 1}
+{"receiver": 2, "at_ms": 5176.106, "type": "transcript", "party": "E", "kind": "final", "text": "उसका presentation बहुत साफ़ और उपयोगी था।", "seq": 1}
+{"receiver": 0, "at_ms": 5459.812, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how"}
+{"receiver": 4, "at_ms": 5460.105, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how"}
+{"receiver": 2, "at_ms": 5460.29, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how"}
+{"receiver": 1, "at_ms": 5460.42, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how"}
+{"receiver": 3, "at_ms": 5460.94, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how"}
+{"receiver": 0, "at_ms": 5464.843, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how"}
+{"receiver": 3, "at_ms": 5465.464, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how"}
+{"receiver": 4, "at_ms": 5465.576, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how"}
+{"receiver": 2, "at_ms": 5465.626, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how"}
+{"receiver": 1, "at_ms": 5465.645, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how"}
+{"receiver": 0, "at_ms": 5469.339, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many"}
+{"receiver": 1, "at_ms": 5469.508, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many"}
+{"receiver": 2, "at_ms": 5469.535, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many"}
+{"receiver": 4, "at_ms": 5469.723, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many"}
+{"receiver": 3, "at_ms": 5469.811, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many"}
+{"receiver": 0, "at_ms": 5473.768, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many"}
+{"receiver": 3, "at_ms": 5474.386, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many"}
+{"receiver": 2, "at_ms": 5474.431, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many"}
+{"receiver": 4, "at_ms": 5474.452, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many"}
+{"receiver": 1, "at_ms": 5474.471, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many"}
+{"receiver": 2, "at_ms": 5478.699, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women"}
+{"receiver": 3, "at_ms": 5478.768, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women"}
+{"receiver": 0, "at_ms": 5478.801, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women"}
+{"receiver": 1, "at_ms": 5478.832, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women"}
+{"receiver": 4, "at_ms": 5478.86, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women"}
+{"receiver": 2, "at_ms": 5482.926, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women"}
+{"receiver": 0, "at_ms": 5482.952, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women"}
+{"receiver": 1, "at_ms": 5482.963, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women"}
+{"receiver": 3, "at_ms": 5483.023, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women"}
+{"receiver": 4, "at_ms": 5483.033, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women"}
+{"receiver": 0, "at_ms": 5486.817, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were"}
+{"receiver": 1, "at_ms": 5486.842, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were"}
+{"receiver": 2, "at_ms": 5486.923, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were"}
+{"receiver": 3, "at_ms": 5486.934, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were"}
+{"receiver": 4, "at_ms": 5486.942, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were"}
+{"receiver": 1, "at_ms": 5491.688, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were"}
+{"receiver": 0, "at_ms": 5491.74, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were"}
+{"receiver": 3, "at_ms": 5492.68, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were"}
+{"receiver": 2, "at_ms": 5492.715, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were"}
+{"receiver": 4, "at_ms": 5492.738, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were"}
+{"receiver": 1, "at_ms": 5494.454, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were wit"}
+{"receiver": 0, "at_ms": 5494.476, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were wit"}
+{"receiver": 2, "at_ms": 5494.485, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were wit"}
+{"receiver": 3, "at_ms": 5494.493, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were wit"}
+{"receiver": 4, "at_ms": 5494.534, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were wit"}
+{"receiver": 0, "at_ms": 5496.921, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with"}
+{"receiver": 1, "at_ms": 5496.943, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with"}
+{"receiver": 2, "at_ms": 5497.017, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with"}
+{"receiver": 3, "at_ms": 5497.025, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with"}
+{"receiver": 4, "at_ms": 5497.033, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with"}
+{"receiver": 0, "at_ms": 5501.185, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you"}
+{"receiver": 1, "at_ms": 5501.208, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you"}
+{"receiver": 2, "at_ms": 5501.218, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you"}
+{"receiver": 3, "at_ms": 5501.294, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you"}
+{"receiver": 4, "at_ms": 5501.305, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you"}
+{"receiver": 0, "at_ms": 5507.677, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you?"}
+{"receiver": 1, "at_ms": 5507.734, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you?"}
+{"receiver": 4, "at_ms": 5507.758, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you?"}
+{"receiver": 2, "at_ms": 5507.776, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you?"}
+{"receiver": 3, "at_ms": 5507.793, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you?"}
+{"receiver": 0, "at_ms": 5511.688, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you?"}
+{"receiver": 1, "at_ms": 5511.879, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you?"}
+{"receiver": 2, "at_ms": 5511.899, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you?"}
+{"receiver": 4, "at_ms": 5511.913, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you?"}
+{"receiver": 3, "at_ms": 5511.926, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you?"}
+{"receiver": 0, "at_ms": 5526.756, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 1, "at_ms": 5526.909, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 2, "at_ms": 5527.0, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 3, "at_ms": 5527.022, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 4, "at_ms": 5527.04, "type": "vad", "party": "D", "state": "end"}
+{"receiver": 0, "at_ms": 5544.622, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How"}
+{"receiver": 1, "at_ms": 5544.678, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How"}
+{"receiver": 2, "at_ms": 5544.928, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How"}
+{"receiver": 3, "at_ms": 5544.956, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How"}
+{"receiver": 4, "at_ms": 5544.975, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How"}
+{"receiver": 0, "at_ms": 5547.43, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How"}
+{"receiver": 4, "at_ms": 5547.465, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How"}
+{"receiver": 2, "at_ms": 5547.481, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How"}
+{"receiver": 3, "at_ms": 5547.494, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How"}
+{"receiver": 1, "at_ms": 5547.505, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How"}
+{"receiver": 0, "at_ms": 5550.671, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many"}
+{"receiver": 2, "at_ms": 5550.72, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many"}
+{"receiver": 4, "at_ms": 5550.741, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many"}
+{"receiver": 1, "at_ms": 5550.76, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many"}
+{"receiver": 3, "at_ms": 5550.874, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many"}
+{"receiver": 0, "at_ms": 5554.911, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How"}
+{"receiver": 1, "at_ms": 5554.937, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How"}
+{"receiver": 2, "at_ms": 5554.948, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How"}
+{"receiver": 3, "at_ms": 5554.958, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How"}
+{"receiver": 4, "at_ms": 5555.003, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How"}
+{"receiver": 0, "at_ms": 5559.466, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many"}
+{"receiver": 3, "at_ms": 5559.49, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many"}
+{"receiver": 1, "at_ms": 5559.5, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many"}
+{"receiver": 4, "at_ms": 5559.509, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many"}
+{"receiver": 2, "at_ms": 5559.517, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many"}
+{"receiver": 0, "at_ms": 5563.336, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many"}
+{"receiver": 1, "at_ms": 5563.36, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many"}
+{"receiver": 2, "at_ms": 5563.445, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many"}
+{"receiver": 4, "at_ms": 5563.456, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many"}
+{"receiver": 3, "at_ms": 5563.465, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many"}
+{"receiver": 0, "at_ms": 5567.709, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women"}
+{"receiver": 1, "at_ms": 5567.916, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women"}
+{"receiver": 2, "at_ms": 5567.985, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women"}
+{"receiver": 3, "at_ms": 5568.008, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women"}
+{"receiver": 4, "at_ms": 5568.025, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women"}
+{"receiver": 0, "at_ms": 5572.814, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women"}
+{"receiver": 3, "at_ms": 5572.838, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women"}
+{"receiver": 1, "at_ms": 5572.849, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women"}
+{"receiver": 4, "at_ms": 5572.857, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women"}
+{"receiver": 2, "at_ms": 5572.865, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women"}
+{"receiver": 0, "at_ms": 5576.977, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were"}
+{"receiver": 1, "at_ms": 5577.002, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were"}
+{"receiver": 3, "at_ms": 5577.013, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were"}
+{"receiver": 4, "at_ms": 5577.022, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were"}
+{"receiver": 2, "at_ms": 5577.03, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were"}
+{"receiver": 0, "at_ms": 5582.324, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were"}
+{"receiver": 2, "at_ms": 5582.373, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were"}
+{"receiver": 4, "at_ms": 5582.395, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were"}
+{"receiver": 1, "at_ms": 5582.411, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were"}
+{"receiver": 3, "at_ms": 5582.428, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were"}
+{"receiver": 0, "at_ms": 5587.003, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were wit"}
+{"receiver": 1, "at_ms": 5587.03, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were wit"}
+{"receiver": 3, "at_ms": 5587.042, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were wit"}
+{"receiver": 2, "at_ms": 5587.051, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were wit"}
+{"receiver": 4, "at_ms": 5587.097, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were wit"}
+{"receiver": 0, "at_ms": 5590.35, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were with"}
+{"receiver": 2, "at_ms": 5590.401, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were with"}
+{"receiver": 1, "at_ms": 5590.422, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were with"}
+{"receiver": 3, "at_ms": 5590.439, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were with"}
+{"receiver": 4, "at_ms": 5590.523, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were with"}
+{"receiver": 0, "at_ms": 5594.412, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were with you"}
+{"receiver": 1, "at_ms": 5594.512, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were with you"}
+{"receiver": 2, "at_ms": 5594.525, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were with you"}
+{"receiver": 4, "at_ms": 5594.581, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were with you"}
+{"receiver": 3, "at_ms": 5594.591, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were with you"}
+{"receiver": 0, "at_ms": 5599.556, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were with you?"}
+{"receiver": 4, "at_ms": 5599.591, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were with you?"}
+{"receiver": 2, "at_ms": 5599.607, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were with you?"}
+{"receiver": 3, "at_ms": 5599.621, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were with you?"}
+{"receiver": 1, "at_ms": 5599.866, "type": "transcript", "party": "D", "kind": "partial", "text": "I want you to tell me, how many women were with you? How many women were with you?"}
+{"receiver": 0, "at_ms": 5739.124, "type": "transcript", "party": "D", "kind": "final", "text": "அவள் எங்கள் வீட்டிற்கு அருகில் ஒரு மருத்துவமனையில் வேலை செய்கிறாள்", "seq": 1}
+{"receiver": 1, "at_ms": 5739.368, "type": "transcript", "party": "D", "kind": "final", "text": "அவள் எங்கள் வீட்டிற்கு அருகில் ஒரு மருத்துவமனையில் வேலை செய்கிறாள்", "seq": 1}
+{"receiver": 2, "at_ms": 5739.456, "type": "transcript", "party": "D", "kind": "final", "text": "அவள் எங்கள் வீட்டிற்கு அருகில் ஒரு மருத்துவமனையில் வேலை செய்கிறாள்", "seq": 1}
+{"receiver": 3, "at_ms": 5739.485, "type": "transcript", "party": "D", "kind": "final", "text": "அவள் எங்கள் வீட்டிற்கு அருகில் ஒரு மருத்துவமனையில் வேலை செய்கிறாள்", "seq": 1}
+{"receiver": 4, "at_ms": 5739.509, "type": "transcript", "party": "D", "kind": "final", "text": "அவள் எங்கள் வீட்டிற்கு அருகில் ஒரு மருத்துவமனையில் வேலை செய்கிறாள்", "seq": 1}
+{"receiver": 0, "at_ms": 6633.557, "type": "translated", "speaker": "E", "language": "en-IN", "text": "His presentation was very clear and very useful.", "seq": 1}
+{"receiver": 3, "at_ms": 6633.726, "type": "translated", "speaker": "E", "language": "en-IN", "text": "His presentation was very clear and very useful.", "seq": 1}
+{"receiver": 0, "at_ms": 7129.17, "type": "translated", "speaker": "D", "language": "en-IN", "text": "She works in a hospital near our house", "seq": 1}
+{"receiver": 4, "at_ms": 7129.223, "type": "translated", "speaker": "D", "language": "en-IN", "text": "She works in a hospital near our house", "seq": 1}
+{"receiver": 1, "at_ms": 7215.386, "type": "translated", "speaker": "E", "language": "hi-IN", "text": "उनकी प्रस्तुति बहुत स्पष्ट और बहुत उपयोगी थी।", "seq": 1}
+{"receiver": 2, "at_ms": 7281.781, "type": "translated", "speaker": "E", "language": "ta-IN", "text": "அவரது விளக்கக்காட்சி மிகவும் தெளிவாகவும் மிகவும் பயனுள்ளதாகவும் இருந்தது.", "seq": 1}
+{"receiver": 2, "at_ms": 7661.646, "type": "translated", "speaker": "D", "language": "ta-IN", "text": "எங்கள் வீட்டிற்கு அருகே உள்ள மருத்துவமனையில் பணிபுரிகிறார்.", "seq": 1}
+{"receiver": 1, "at_ms": 7746.19, "type": "translated", "speaker": "D", "language": "hi-IN", "text": "वह हमारे घर के पास एक अस्पताल में काम करती है।", "seq": 1}
+{"receiver": 3, "at_ms": 7815.396, "type": "latency", "speaker": "E", "language": "en-IN", "seq": 1, "stt_ms": 4034, "queue_ms": 0, "translate_ms": 1458, "tts_ms": 1182, "total_ms": 6674}
+{"receiver": 0, "at_ms": 7815.449, "type": "latency", "speaker": "E", "language": "en-IN", "seq": 1, "stt_ms": 4034, "queue_ms": 0, "translate_ms": 1458, "tts_ms": 1182, "total_ms": 6674}
+{"receiver": 0, "at_ms": 7836.723, "type": "audio", "speaker": "E", "language": "en-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757567431.3303, "wav_duration_s": 3.84, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 122924, "wav_sha256": "1338a7a407951784335673142e35d7b454e8c79ec52c8db0672c562046c663ed", "wav_valid": true}
+{"receiver": 3, "at_ms": 7851.861, "type": "audio", "speaker": "E", "language": "en-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757567431.3303, "wav_duration_s": 3.84, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 122924, "wav_sha256": "1338a7a407951784335673142e35d7b454e8c79ec52c8db0672c562046c663ed", "wav_valid": true}
+{"receiver": 0, "at_ms": 8112.265, "type": "latency", "speaker": "D", "language": "en-IN", "seq": 1, "stt_ms": 4889, "queue_ms": 0, "translate_ms": 1388, "tts_ms": 984, "total_ms": 7261}
+{"receiver": 4, "at_ms": 8112.329, "type": "latency", "speaker": "D", "language": "en-IN", "seq": 1, "stt_ms": 4889, "queue_ms": 0, "translate_ms": 1388, "tts_ms": 984, "total_ms": 7261}
+{"receiver": 0, "at_ms": 8128.251, "type": "audio", "speaker": "D", "language": "en-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757567117.022, "wav_duration_s": 2.9013125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 92886, "wav_sha256": "a719660fb93332eca34ddb63dca0dc7afdad2f6a1f58c6eaff981d306fbadff0", "wav_valid": true}
+{"receiver": 4, "at_ms": 8134.56, "type": "audio", "speaker": "D", "language": "en-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757567117.022, "wav_duration_s": 2.9013125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 92886, "wav_sha256": "a719660fb93332eca34ddb63dca0dc7afdad2f6a1f58c6eaff981d306fbadff0", "wav_valid": true}
+{"receiver": 1, "at_ms": 8382.093, "type": "latency", "speaker": "E", "language": "hi-IN", "seq": 1, "stt_ms": 4034, "queue_ms": 0, "translate_ms": 1955, "tts_ms": 1167, "total_ms": 7156}
+{"receiver": 1, "at_ms": 8413.621, "type": "audio", "speaker": "E", "language": "hi-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757567431.3303, "wav_duration_s": 4.1813125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 133846, "wav_sha256": "1b4108cfc10cbf38dc2a2c7f2410a87ded1e168d1ee4738e62d87165ff75160a", "wav_valid": true}
+{"receiver": 2, "at_ms": 8810.184, "type": "latency", "speaker": "E", "language": "ta-IN", "seq": 1, "stt_ms": 4034, "queue_ms": 0, "translate_ms": 1950, "tts_ms": 1529, "total_ms": 7513}
+{"receiver": 2, "at_ms": 8842.433, "type": "audio", "speaker": "E", "language": "ta-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757567431.3303, "wav_duration_s": 5.9733125, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 191190, "wav_sha256": "cc9eb8540ae0e0d31c51b19e66a299bfa0c86137498a569b108b9e43ea3de1ab", "wav_valid": true}
+{"receiver": 2, "at_ms": 8855.009, "type": "latency", "speaker": "D", "language": "ta-IN", "seq": 1, "stt_ms": 4889, "queue_ms": 0, "translate_ms": 1782, "tts_ms": 1194, "total_ms": 7865}
+{"receiver": 2, "at_ms": 8871.117, "type": "audio", "speaker": "D", "language": "ta-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757567117.022, "wav_duration_s": 4.2666875, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 136578, "wav_sha256": "759e965ba254e46fd0781a251de01a30b62c04830544c41e7867dec9546460dc", "wav_valid": true}
+{"receiver": 1, "at_ms": 8994.279, "type": "latency", "speaker": "D", "language": "hi-IN", "seq": 1, "stt_ms": 4889, "queue_ms": 0, "translate_ms": 1931, "tts_ms": 1248, "total_ms": 8068}
+{"receiver": 1, "at_ms": 9020.017, "type": "audio", "speaker": "D", "language": "hi-IN", "format": "wav", "seq": 1, "capture_start_ms": 1791757567117.022, "wav_duration_s": 4.352, "wav_rate": 16000, "wav_channels": 1, "wav_bytes": 139308, "wav_sha256": "42f03212e7cdebd07d6f7b219feeaa14c2d5ec0d5286022ba3af2b7a1e29660b", "wav_valid": true}
+{"receiver": 0, "at_ms": 11332.653, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 1, "at_ms": 11333.504, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 2, "at_ms": 11334.265, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 2, "at_ms": 11334.31, "type": "peer_left", "party_id": "D"}
+{"receiver": 2, "at_ms": 11334.33, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 2, "at_ms": 11334.347, "type": "peer_left", "party_id": "E"}
+{"receiver": 3, "at_ms": 11335.295, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 0, "at_ms": 11335.57, "type": "peer_left", "party_id": "D"}
+{"receiver": 0, "at_ms": 11335.6, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 0, "at_ms": 11335.623, "type": "peer_left", "party_id": "E"}
+{"receiver": 4, "at_ms": 11336.173, "type": "stream_drained", "party_id": "D", "completed": true, "committed_segments": 1}
+{"receiver": 4, "at_ms": 11336.249, "type": "peer_left", "party_id": "D"}
+{"receiver": 4, "at_ms": 11336.272, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 1, "at_ms": 11336.45, "type": "peer_left", "party_id": "D"}
+{"receiver": 1, "at_ms": 11336.466, "type": "stream_drained", "party_id": "E", "completed": true, "committed_segments": 1}
+{"receiver": 1, "at_ms": 11336.479, "type": "peer_left", "party_id": "E"}

@@ -1,0 +1,70 @@
+{
+  "spec": {
+    "id": "r3-p05-alternating",
+    "repetition": 3,
+    "pair": 5,
+    "condition": "alternating",
+    "inputs": [
+      {
+        "id": "hi_2",
+        "category": "hi",
+        "index": 2,
+        "reference": "इस हफ्ते मौसम बहुत अच्छा है।",
+        "sha256": "eae77f1dbc101820bc0186e02eb5a937d4c5fc2e14ec7fe278cfb785156838ec",
+        "bytes": 90112,
+        "duration_s": 2.816,
+        "signal_start_s": 0.03725,
+        "signal_end_s": 2.6424375,
+        "peak": 21383,
+        "rms": 2579.083905079439
+      },
+      {
+        "id": "mix_1",
+        "category": "mix",
+        "index": 1,
+        "reference": "அந்த meeting நாளைக்கு morning ku postpone ஆகிடுச்சு.",
+        "sha256": "ad2622c5b64e002b622fae5cf9057e0c4e0e390093bef48f8c0602a0b1a81b00",
+        "bytes": 133802,
+        "duration_s": 4.1813125,
+        "signal_start_s": 0.2978125,
+        "signal_end_s": 3.9126875,
+        "peak": 22561,
+        "rms": 3800.8370294577735
+      }
+    ],
+    "targets": [
+      "en-IN",
+      "hi-IN",
+      "ta-IN"
+    ]
+  },
+  "room": "bench-r3-p05-alternating",
+  "parties": {
+    "0": "A",
+    "1": "B",
+    "2": "C",
+    "3": "D",
+    "4": "E"
+  },
+  "send_start_ms": {
+    "3": 476.9199000147637,
+    "4": 4306.1281999980565
+  },
+  "frames_sent": {
+    "3": {
+      "bytes": 294400,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    },
+    "4": {
+      "bytes": 172800,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    }
+  },
+  "duration_s": 14.75,
+  "error": null,
+  "events_file": "events\\r3-p05-alternating.jsonl",
+  "event_count": 435,
+  "events_sha256": "2e6ca25d3dd72a15869f4f218485d2c5fc98d7a54dd5c5dc11fa5796c9252ae3"
+}

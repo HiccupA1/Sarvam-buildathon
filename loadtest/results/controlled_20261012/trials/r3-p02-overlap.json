@@ -1,0 +1,70 @@
+{
+  "spec": {
+    "id": "r3-p02-overlap",
+    "repetition": 3,
+    "pair": 2,
+    "condition": "overlap",
+    "inputs": [
+      {
+        "id": "mix_2",
+        "category": "mix",
+        "index": 2,
+        "reference": "நீ market போற வழியில ரொம்ப busy ஆ இருந்துச்சு.",
+        "sha256": "43e4a4498bd08dabaa3160bc2357fd0ce5b0197661c942d36116d53bd33e7faf",
+        "bytes": 155648,
+        "duration_s": 4.864,
+        "signal_start_s": 0.8431875,
+        "signal_end_s": 4.35225,
+        "peak": 19393,
+        "rms": 2941.281459467114
+      },
+      {
+        "id": "mix_5",
+        "category": "mix",
+        "index": 5,
+        "reference": "அவன் project ரொம்ப நல்லா complete பண்ணிட்டான்.",
+        "sha256": "b9ae3e226a4900c917333d3a55d598474a87cf018d833ed43bd6d79e20993093",
+        "bytes": 117418,
+        "duration_s": 3.6693125,
+        "signal_start_s": 0.182875,
+        "signal_end_s": 3.0323125,
+        "peak": 19517,
+        "rms": 2776.3797019529975
+      }
+    ],
+    "targets": [
+      "hi-IN",
+      "ta-IN",
+      "te-IN"
+    ]
+  },
+  "room": "bench-r3-p02-overlap",
+  "parties": {
+    "0": "A",
+    "1": "B",
+    "2": "C",
+    "3": "D",
+    "4": "E"
+  },
+  "send_start_ms": {
+    "3": 448.0487999971956,
+    "4": 760.7298000075389
+  },
+  "frames_sent": {
+    "3": {
+      "bytes": 195200,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    },
+    "4": {
+      "bytes": 185600,
+      "late_frames": 0,
+      "max_lateness_ms": 0
+    }
+  },
+  "duration_s": 11.687,
+  "error": null,
+  "events_file": "events\\r3-p02-overlap.jsonl",
+  "event_count": 505,
+  "events_sha256": "5af2654f960e0706732e1f1949c0ffb6461ab015181bc19e89d70a5b680462f2"
+}

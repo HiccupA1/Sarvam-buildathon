@@ -1,0 +1,16 @@
+{
+  "scope": "measured trials only; diagnostics excluded",
+  "provider_audio_seconds": 1129.0,
+  "reported_speaker_sessions": 180,
+  "successful_translation_input_chars": 23508,
+  "observed_tts_input_chars": 24769,
+  "estimated_inr_excluding_gst": 130.73133333333334,
+  "rate_source": "https://docs.sarvam.ai/api/getting-started/pricing",
+  "rate_checked_date_local": "2026-10-12",
+  "rate_assumptions": {
+    "stt_inr_per_hour": 30,
+    "translation_inr_per_10k_chars": 20,
+    "tts_inr_per_10k_chars": 30
+  },
+  "actual_account_billing_verified": false
+}

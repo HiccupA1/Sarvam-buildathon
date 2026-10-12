@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "measured_trials": 90,
+  "input_runs": 180,
+  "target_checks": 540,
+  "checks": [
+    "fixed manifests",
+    "build hashes",
+    "fixture/event/WAV hashes",
+    "secret field exclusion",
+    "provider-end segment counts",
+    "complete stable-listener sequence sets",
+    "independent nearest-rank percentiles"
+  ]
+}
