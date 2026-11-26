@@ -71,7 +71,9 @@ service. Blueprint configuration synchronization is separate from code deploys.
 The repository includes `render.yaml` for a free Docker preview in Singapore.
 In Render, create a new Blueprint from this repository and its `main` branch.
 Review that the proposed service uses the free plan before creating it. It
-uses `/health` and deploys updates after CI passes. No Sarvam key or invite is
+uses `/health`. `autoDeployTrigger: checksPass` is the intended Blueprint
+setting, but this existing public-repository preview needs manual code deploys
+until the Git provider is connected, as noted above. No Sarvam key or invite is
 required: live access is disabled and all paid API allowances are zero.
 
 This preview has no persistent disk and must not be converted to live access
@@ -224,10 +226,12 @@ default verification path.
 
 ## Evidence still required
 
-- Native speakers must review Hindi, Tamil, Telugu, and mixed-language sentences
-  and translations. Synthetic voice clips cannot establish human conversation
-  accuracy. Preserve expected text, returned transcript, and translated text;
-  record reviewer, correction, and pass/fail before making accuracy claims.
+- Bilingual human text/audio review was completed on 90 outputs from 30
+  synthetic clips in one alternating repetition. The cross-language subset had
+  62/72 outputs rated at least 4/5. See [the consolidated report](docs/TESTING-REPORT.md)
+  and archived reviews for scope and errors. Broader consented human-speech
+  evaluation, independent second ratings, and critical-error assessment remain
+  useful next steps; this review does not establish universal conversation accuracy.
 - One sample per language pair is a smoke check. Even when CSV reports p95, it
   is not statistically useful at that sample size. Expand samples before quoting
   percentile performance on a resume.
@@ -258,6 +262,7 @@ API calls through per-language fan-out and listen-only sessions, and added
 checkpointed benchmarks, reconnect recovery, and persistent usage limits.
 
 Add "deployed over HTTPS" only after deployment and two-device verification.
-Add measured latency or accuracy only with the matching sample size, measurement
-boundary, and a completed evaluation. Do not claim native-speaker validation,
-horizontal scaling, or full-duplex echo cancellation until those are verified.
+Use the completed [evaluation](docs/TESTING-REPORT.md) with its sample sizes
+and timing boundaries. Bilingual human review is complete; native-speaker
+credentials and broad real-conversation accuracy were not independently verified.
+Horizontal scaling and robust full-duplex echo cancellation remain unverified.

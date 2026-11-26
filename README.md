@@ -1,100 +1,101 @@
-# Live Speech Interpreter
+# Sarvam Live Speech Interpreter
 
-Real-time speech interpreter for a room of up to 5 people, live, in the
-browser. Everyone picks a language they want to **hear** in -- that's it.
-What you actually **speak** is completely separate: any of the four
-(Hindi, English, Tamil, Telugu), switch mid-conversation, or mix languages
-within a sentence. The model figures out what was said; everyone else gets
-it translated into whatever they personally picked. Built on Sarvam AI's
-realtime STT, translation, and TTS APIs.
+A browser-based interpreter that lets people speak naturally while each listener
+hears their preferred language. It supports English, Hindi, Tamil, and Telugu,
+including language switching and code-mixed input, in rooms of up to five people.
 
-## Portfolio release
+For example, a participant can choose to hear Tamil while speaking English, and
+another participant can receive that speech as Hindi text and audio. A listening
+preference never locks someone into a speaking language.
 
-[Hosted preview](https://sarvam-interpreter-preview.onrender.com/) deployed on
-Render with Docker on 2026-10-10. This free preview intentionally disables live
-speech processing and has zero API allowances. It can take around a minute to
-wake after inactivity. Protected live access uses a private laptop-hosted demo;
-the user has verified basic two-device functionality.
+- [Evaluation and human review](docs/TESTING-REPORT.md)
+- [How to record a working demo](docs/DEMO-RECORDING.md)
+- [Hosted interface preview](https://sarvam-interpreter-preview.onrender.com/)
+  — live processing is disabled; use the local setup below for actual speech.
 
-See [DEPLOYMENT.md](DEPLOYMENT.md) for the INR 500 budget, deployment steps,
-verification commands, and resume wording. Live Sarvam access now defaults to
-disabled and requires a private demo invite. Listen-only participants use no
-upstream STT. Short reconnects preserve identity and STT within a 10-second
-grace period; server restarts and longer interruptions start fresh sessions.
-Usage reservations persist in SQLite and stop new paid work at configured limits.
+## Competition story and my contribution
 
-Explicit microphone mute/unmute and visible capture state are now available.
-Rooms allow at most two unmuted speaker streams, translated independently;
-incoming audio is queued rather than interrupting earlier translations.
-See [audio concurrency](docs/AUDIO-CONCURRENCY.md) for testing and limitations.
+I proposed this idea for a campus competition. The Sarvam team recognized the
+idea and awarded Sarvam credits to continue building it beyond the competition.
 
-The structured harness now defaults to a zero-credit five-clip dry run, saves
-each utterance immediately, resumes completed samples, and stops on failures.
-The pilot completed all 5 categories / 20 target outputs. The full campaign then
-completed all 92 utterances / 368 target outputs with no missing final results.
-See [the benchmark report](loadtest/results/structured_test_campaign_report.md)
-for per-pair results and methodology; two failed attempts required controlled
-retries. Conservative lifetime reservations for both runs total INR 112.111
-before GST; this is not a provider billing receipt.
+This is a solo project built with AI-assisted coding and real Sarvam API
+integration. I defined the product idea, directed the AI-assisted implementation,
+and worked through integration, testing, and evaluation of the resulting
+prototype. The application integrates Sarvam's existing speech recognition,
+translation, and speech synthesis models.
 
-The newer [controlled two-speaker benchmark](loadtest/results/controlled_20261012/REPORT.md)
-ran 30 balanced synthetic fixtures, two conditions and three repetitions:
-180 input runs / 540 complete stable-listener results, no trial-level retries.
-Post-clip complete-audio-receipt p95 was 4.49s alternating / 4.79s overlapping.
-This excludes playback, WAN and physical microphone effects. Normalized WER
-was 11.65%, not a translation-accuracy score. Native quality review and the
-30-minute endurance test remain unperformed. See [protocol](docs/CONTROLLED-BENCHMARK-PLAN.md)
-and [reproduction commands](loadtest/README.md).
+The work went beyond generating an interface: the repository includes real API
+integration, independent speaker handling, reconnect and usage controls, a
+controlled benchmark, and archived bilingual human reviews. The evaluation also
+records mistakes and playback delays so that the next improvements follow the
+evidence.
 
-## Architecture
+## What participants can do
 
+- Join a shared browser room with up to five participants and choose what to hear.
+- Speak English, Hindi, Tamil, or Telugu without changing their hearing preference.
+- Use up to two independent microphone streams concurrently.
+- Follow live transcripts and receive translated text and audio in their language.
+- Mute explicitly or join as a listener without opening a speech-recognition stream.
+
+Incoming translations play in order rather than cutting off a previous clip.
+This preserves complete clips but can add waiting during overlapping speech.
+Headphones are recommended to prevent playback from feeding back into the mic.
+
+## Evaluation snapshot
+
+The controlled benchmark ran on 12 October 2026; the consolidated report and
+completed human review are dated 13 October 2026.
+
+| Question | Observed result | Scope |
+| --- | --- | --- |
+| Was meaning preserved across languages? | 62 of 72 cross-language outputs (86.1%) scored at least 4/5 | Bilingual human text/audio review; 30 synthetic source clips; one alternating repetition |
+| Did translated outputs reach listeners? | 540 of 540 stable-listener outputs delivered across 180 input runs | Controlled localhost/Docker run using real Sarvam APIs |
+| How long did complete audio receipt take? | p95 4.49s alternating / 4.79s overlapping | Clip-end to last audio receipt; capture, WAN, and playback excluded |
+| Did clips play completely? | 24 of 24 cached clips started and ended once | Browser replay across desktop and mobile-sized viewports |
+| Was repeated work avoided? | 25% fewer logical translation/TTS invocations | 540 shared pipelines for 720 recipient deliveries versus per-recipient processing |
+
+These results describe the measured samples, not a production reliability or
+universal translation-accuracy claim. Across all 90 human-reviewed outputs,
+77 scored at least 4/5; 13 fell below that threshold. Some mixed-language and
+Telugu inputs produced meaning errors. Overlap playback queueing remains an
+important experience limitation. Human satisfaction and real microphone-to-heard
+latency have not been quantified.
+
+See the [consolidated report](docs/TESTING-REPORT.md),
+[review summary](loadtest/results/reviewed_20261013/human_review_summary.json), and
+[90 reviewed observations](loadtest/results/reviewed_20261013/reviewed_observations.csv).
+The [original controlled benchmark](loadtest/results/controlled_20261012/REPORT.md)
+is retained as the historical quantitative study, before human review was added.
+
+## Demo access
+
+The Render link is an interface preview with live speech processing intentionally
+disabled. A private two-device live demo was verified previously; there is no
+always-on public live interpreter. The [recording guide](docs/DEMO-RECORDING.md)
+explains how to demonstrate real translation on one laptop or two devices.
+
+Live processing requires a Sarvam key and a private invite. Usage allowances
+persist in SQLite; listen-only participants use no upstream STT. Short reconnects
+preserve participant identity and the STT session within a default 10-second grace
+period. Audio captured during a disconnect is discarded.
+
+## How it works
+
+```text
+Browser microphone -> independent Sarvam Saaras STT stream
+                   -> committed transcript
+                   -> group other listeners by their hearing language
+                   -> Sarvam Mayura translation -> Sarvam Bulbul TTS
+                   -> translated text/audio over WebSockets -> queued playback
 ```
-mic (browser) --PCM16/16kHz--> FastAPI backend --> Sarvam realtime STT (language_code="auto", mode="codemix")
-                                                          |
-                                                   transcript.final (whatever was actually said)
-                                                          v
-                                    group other participants by THEIR hearing-language preference
-                                                          v
-                        Mayura translate, source_language_code="auto" (once per distinct language) -- concurrent
-                                                          v
-                                          Bulbul v3 TTS (once per distinct language)
-                                                          v
-                                 WebSocket --> that language's listeners --> playback
-```
 
-Each speaking participant runs their own one-directional pipeline (mic -> their own
-STT, always `language_code="auto"` so they're never boxed into one
-language); audio flows in one direction per speaker, through the pipeline,
-once per *distinct target language* among the other participants -- not
-once per listener. With up to 5 people but only 4 supported languages, at
-least two participants must share a hearing-language preference once the
-room has 5 people, so that translate+TTS call is naturally reused for all
-of them rather than repeated. The backend is the hub (not peer-to-peer, not
-mesh) -- everyone connects to the same room on the backend, which fans out
-translated text/audio to the right listeners.
-
-**Speak/hear are fully decoupled.** A participant's selected language is
-only ever used as their *listening* preference (which translate/TTS group
-they belong to when someone else talks) and never constrains what they
-speak. There's no same-language shortcut anymore either -- since the
-speaker's actual language isn't known ahead of time (it can vary utterance
-to utterance), every utterance gets a real `translate()` call per
-target-language group, with `source_language_code="auto"` so Mayura
-detects it from the text itself. Verified: a participant who set their
-hearing preference to Telugu but spoke English had their English correctly
-transcribed (not forced into Telugu), and a listener whose preference was
-Tamil received a correct Tamil translation of it.
-
-Transcript and VAD events (in the speaker's own language) are broadcast to
-**everyone**, so any device can render a full participant grid. Translated
-captions, latency, and audio are sent only to the specific listeners in that
-language group -- broadcasting audio room-wide would mean everyone hears
-every language's synthesized speech, not just their own.
-
-See [phase0_realtime_stt.py](phase0_realtime_stt.py) and the docstring at
-the top of [backend/app.py](backend/app.py) for what was verified against
-Sarvam's docs and why specific design choices were made (e.g. why STT's own
-`translate` mode isn't used -- it only ever outputs English).
+The backend uses Python and FastAPI; the browser uses JavaScript and an
+AudioWorklet to send 16kHz PCM16 audio. Each speaker has an independent pipeline.
+Translation and synthesis run once per distinct target language and the resulting
+audio is reused for matching listeners. Language groups are processed concurrently.
+Model inference runs through Sarvam's cloud APIs. Docker packages the backend
+and browser application.
 
 ## Setup
 
@@ -191,7 +192,7 @@ session limits, and the persistent usage ledger configured before exposing it.
 
 ## Deploying beyond localhost
 
-Two hard constraints if you host this somewhere other than a LAN demo:
+Hosting requirements beyond a LAN demo:
 
 - **HTTPS is required.** Browsers only grant microphone access
   (`getUserMedia`) on a secure context -- `https://` or exactly
@@ -211,83 +212,6 @@ Two hard constraints if you host this somewhere other than a LAN demo:
   shared store (Redis, etc.) before scaling horizontally -- not done here.
 - `GET /health` returns `{"status": "ok", "active_rooms": N}` for
   platforms that expect a health-check endpoint.
-
-## What's implemented
-
-- **Phase 0-1**: single-leg pipeline (mic -> STT -> translate -> TTS ->
-  local playback), verified against live Sarvam docs.
-- **Phase 2**: two-party room model, correct audio/text routing between
-  participants.
-- **Phase 3**: explicit, documented VAD commit policy; strictly ordered
-  per-speaker translation/TTS (no race conditions between rapid
-  utterances); barge-in policy (new audio interrupts currently-playing
-  audio rather than queuing, to keep lag bounded).
-- **Phase 4**: two-pane UI (built for a single shared screen), VAD pulse
-  indicators, live latency meter with sparkline.
-- **Phase 5**: per-utterance latency logged to `logs/metrics.jsonl`
-  (`stt_ms` = speech-start to transcript-commit, `translate_ms`, `tts_ms`,
-  `total_ms`).
-- **Hardening pass**: WebSocket auto-reconnect with backoff if the
-  connection drops unexpectedly (mic stays live; the portfolio pass now retains
-  the STT session within a bounded reconnect grace period); secure-context check before requesting mic access
-  (clear error instead of a silent failure over plain HTTP on a non-
-  localhost host); friendly messages for mic-permission-denied/no-mic;
-  audio blob URLs are revoked after use; best-effort cleanup on tab close
-  so a closed tab doesn't leave a phantom participant in a room; visual
-  connection-status indicator.
-- **Rejoin fix**: leaving a room used to leave it permanently occupied.
-  The handler waited for both the audio-relay loop *and* the STT event
-  loop to finish before cleaning up, but the STT loop only ends when
-  Sarvam's server closes its side -- not guaranteed to happen just
-  because the client said it's done. Fixed to tear down on a bounded
-  grace period instead of an unbounded wait (see backend/app.py).
-- **Phase 6 (conference mode)**: up to `MAX_PARTICIPANTS = 5` people per
-  room, each with their own selected language. A committed utterance is
-  translated/synthesized once per distinct target language among the
-  other participants (concurrently), not once per listener, and reused
-  across everyone who picked that language. Verified: 5/5 capacity with
-  the 6th join rejected while all 5 are still connected, correct fan-out
-  to all 4 languages from one speaker, and the two same-language
-  listeners sharing a single translate+TTS pass.
-
-  **Latency variance, root-caused (see `loadtest/`)**: an early ad-hoc
-  test showed one 5-participant utterance take ~17.5s to commit
-  (`stt_ms`) versus ~3.1s in a similar run right after. A dedicated load
-  test (`loadtest/run_load_test.py`, 16 full 5-person sessions using
-  pre-recorded audio, no manual test-process churn happening
-  concurrently) never reproduced anything close to that: `stt_ms` across
-  all 16 sessions ranged 2.4s-4.8s (p50 3.9s, p90 4.7s) -- the earlier
-  17.5s figure was very likely an artifact of other test processes being
-  killed/restarted on the same machine at that exact moment, not a
-  property of the architecture.
-
-  The load test did find a real, reproducible correlation: each
-  participant's own STT-connection-establishment time (newly measured as
-  `connect_ms`) is strongly negatively correlated with their first
-  utterance's `stt_ms` (Pearson r about -0.99 across 8 sessions) -- a
-  faster handshake correlates with slower initial transcription and vice
-  versa, consistent with Sarvam's backend needing a brief warm-up after
-  the WebSocket opens. Tried priming each connection with 300ms of
-  digital silence before real audio to test that theory; re-ran the same
-  16-session test and it made no measurable difference (mean `stt_ms`
-  3878ms before vs 3778ms after -- a ~100ms difference against a ~700ms
-  standard deviation, i.e. noise). Reverted the priming code since it
-  added latency with no benefit. The correlation itself is real, but its
-  cause is inside Sarvam's own backend, not something fixable from this
-  codebase -- documented rather than "fixed" with something that doesn't
-  work. `connect_ms` is still logged for every connection going forward.
-- **Phase 7 (decoupled speak/hear languages)**: a participant's selected
-  language now governs only what they *hear*. STT switched from a fixed
-  `language_code` per participant to `language_code="auto"` +
-  `mode="codemix"`, so anyone can speak any supported language, switch
-  mid-conversation, or mix languages within an utterance. Translation
-  switched to `source_language_code="auto"` for the same reason -- the
-  speaker's language is no longer known ahead of time, so there's no
-  same-language shortcut anymore; every utterance gets a real translate
-  call per target-language group. Verified: a participant whose hearing
-  preference was Telugu but who spoke English had it transcribed
-  correctly as English (not forced into Telugu), and a Tamil-preference
-  listener got a correct Tamil translation of it.
 
 ## Measurement boundaries and remaining work
 
@@ -309,8 +233,9 @@ Two hard constraints if you host this somewhere other than a LAN demo:
   plays; it is off by default for two-speaker capture. Headphones remain recommended; robust
   full-duplex echo suppression needs separate device testing.
 - **Deployment:** private invite access is implemented. Rooms still live in one
-  process; run one worker/instance. Distributed routing and native-speaker
-  accuracy review remain future work, as detailed in DEPLOYMENT.md.
+  process; run one worker/instance. Distributed routing, broader real-speech evaluation, and a full 30-minute
+  endurance run remain future work. The completed bilingual human review is
+  documented in [the consolidated report](docs/TESTING-REPORT.md).
 - **Stretch goals not built**: real telephony bridge, voice cloning,
   document AI integration -- all explicitly out of scope for the core demo.
 
@@ -319,6 +244,9 @@ Two hard constraints if you host this somewhere other than a LAN demo:
 ```
 backend/app.py          FastAPI app: WebSocket room/pipeline logic
 backend/requirements.txt
+docs/TESTING-REPORT.md  Consolidated measurements and bilingual human review
+docs/DEMO-RECORDING.md  Recording setup, walkthrough, and access instructions
+loadtest/results/reviewed_20261013/  Archived human scores and derived summaries
 frontend/index.html     Participant grid UI, room join, mic capture wiring
 frontend/audio-processor.js   AudioWorklet: resamples mic input to 16kHz PCM16
 chat.py                 Minimal Sarvam chat completion smoke test

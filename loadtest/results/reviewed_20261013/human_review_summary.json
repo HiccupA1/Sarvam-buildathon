@@ -1,0 +1,755 @@
+{
+  "report_date": "2026-10-13",
+  "review_source_sha256": "a8d754c7dec377a1c19d165cba4c77d0a7925ff41e32aa3648f1ad209cb73837",
+  "submission_rows": 270,
+  "matched_rows": 270,
+  "reviewed_rows": 90,
+  "unreviewed_submission_rows": 180,
+  "unsubmitted_benchmark_rows": 270,
+  "review_conditions": {
+    "alternating": 90
+  },
+  "review_repetitions": {
+    "1": 90
+  },
+  "reviewer_labels": {
+    "reviewer_en": 22,
+    "reviewer_hi": 22,
+    "reviewer_ta": 24,
+    "reviewer_te": 22
+  },
+  "review_method_confirmation": {
+    "confirmed_by": "project owner in chat",
+    "date": "2026-10-13",
+    "bilingual_human_reviewers": true,
+    "audio_listened_to": true,
+    "reviewer_identities_credentials_and_listening_logs": "not supplied",
+    "separate_audio_intelligibility_scores": "not supplied"
+  },
+  "all_reviewed": {
+    "n": 90,
+    "score_sum": 416,
+    "mean": 4.622222222222222,
+    "median": 5.0,
+    "score_4_or_5": 77,
+    "score_4_or_5_pct": 85.55555555555556,
+    "below_4": 13,
+    "distribution": {
+      "1": 0,
+      "2": 4,
+      "3": 9,
+      "4": 4,
+      "5": 73
+    },
+    "fixtures": 30
+  },
+  "cross_language": {
+    "n": 72,
+    "score_sum": 333,
+    "mean": 4.625,
+    "median": 5.0,
+    "score_4_or_5": 62,
+    "score_4_or_5_pct": 86.11111111111111,
+    "below_4": 10,
+    "distribution": {
+      "1": 0,
+      "2": 3,
+      "3": 7,
+      "4": 4,
+      "5": 58
+    },
+    "fixtures": 30
+  },
+  "same_language": {
+    "n": 18,
+    "score_sum": 83,
+    "mean": 4.611111111111111,
+    "median": 5.0,
+    "score_4_or_5": 15,
+    "score_4_or_5_pct": 83.33333333333333,
+    "below_4": 3,
+    "distribution": {
+      "1": 0,
+      "2": 1,
+      "3": 2,
+      "4": 0,
+      "5": 15
+    },
+    "fixtures": 18
+  },
+  "by_source": [
+    {
+      "source_category": "en",
+      "n": 18,
+      "score_sum": 89,
+      "mean": 4.944444444444445,
+      "median": 5.0,
+      "score_4_or_5": 18,
+      "score_4_or_5_pct": 100.0,
+      "below_4": 0,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 1,
+        "5": 17
+      },
+      "fixtures": 6
+    },
+    {
+      "source_category": "hi",
+      "n": 18,
+      "score_sum": 90,
+      "mean": 5,
+      "median": 5.0,
+      "score_4_or_5": 18,
+      "score_4_or_5_pct": 100.0,
+      "below_4": 0,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 18
+      },
+      "fixtures": 6
+    },
+    {
+      "source_category": "mix",
+      "n": 18,
+      "score_sum": 77,
+      "mean": 4.277777777777778,
+      "median": 5.0,
+      "score_4_or_5": 13,
+      "score_4_or_5_pct": 72.22222222222223,
+      "below_4": 5,
+      "distribution": {
+        "1": 0,
+        "2": 2,
+        "3": 3,
+        "4": 1,
+        "5": 12
+      },
+      "fixtures": 6
+    },
+    {
+      "source_category": "ta",
+      "n": 18,
+      "score_sum": 84,
+      "mean": 4.666666666666667,
+      "median": 5.0,
+      "score_4_or_5": 15,
+      "score_4_or_5_pct": 83.33333333333333,
+      "below_4": 3,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 3,
+        "4": 0,
+        "5": 15
+      },
+      "fixtures": 6
+    },
+    {
+      "source_category": "te",
+      "n": 18,
+      "score_sum": 76,
+      "mean": 4.222222222222222,
+      "median": 5.0,
+      "score_4_or_5": 13,
+      "score_4_or_5_pct": 72.22222222222223,
+      "below_4": 5,
+      "distribution": {
+        "1": 0,
+        "2": 2,
+        "3": 3,
+        "4": 2,
+        "5": 11
+      },
+      "fixtures": 6
+    }
+  ],
+  "by_target": [
+    {
+      "target_language": "en-IN",
+      "n": 22,
+      "score_sum": 104,
+      "mean": 4.7272727272727275,
+      "median": 5.0,
+      "score_4_or_5": 20,
+      "score_4_or_5_pct": 90.9090909090909,
+      "below_4": 2,
+      "distribution": {
+        "1": 0,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 19
+      },
+      "fixtures": 22
+    },
+    {
+      "target_language": "hi-IN",
+      "n": 22,
+      "score_sum": 101,
+      "mean": 4.590909090909091,
+      "median": 5.0,
+      "score_4_or_5": 18,
+      "score_4_or_5_pct": 81.81818181818181,
+      "below_4": 4,
+      "distribution": {
+        "1": 0,
+        "2": 1,
+        "3": 3,
+        "4": 0,
+        "5": 18
+      },
+      "fixtures": 22
+    },
+    {
+      "target_language": "ta-IN",
+      "n": 24,
+      "score_sum": 109,
+      "mean": 4.541666666666667,
+      "median": 5.0,
+      "score_4_or_5": 20,
+      "score_4_or_5_pct": 83.33333333333333,
+      "below_4": 4,
+      "distribution": {
+        "1": 0,
+        "2": 1,
+        "3": 3,
+        "4": 2,
+        "5": 18
+      },
+      "fixtures": 24
+    },
+    {
+      "target_language": "te-IN",
+      "n": 22,
+      "score_sum": 102,
+      "mean": 4.636363636363637,
+      "median": 5.0,
+      "score_4_or_5": 19,
+      "score_4_or_5_pct": 86.36363636363636,
+      "below_4": 3,
+      "distribution": {
+        "1": 0,
+        "2": 1,
+        "3": 2,
+        "4": 1,
+        "5": 18
+      },
+      "fixtures": 22
+    }
+  ],
+  "by_source_target": [
+    {
+      "source_category": "en",
+      "target_language": "en-IN",
+      "n": 3,
+      "score_sum": 15,
+      "mean": 5,
+      "median": 5,
+      "score_4_or_5": 3,
+      "score_4_or_5_pct": 100.0,
+      "below_4": 0,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 3
+      },
+      "fixtures": 3
+    },
+    {
+      "source_category": "en",
+      "target_language": "hi-IN",
+      "n": 5,
+      "score_sum": 25,
+      "mean": 5,
+      "median": 5,
+      "score_4_or_5": 5,
+      "score_4_or_5_pct": 100.0,
+      "below_4": 0,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 5
+      },
+      "fixtures": 5
+    },
+    {
+      "source_category": "en",
+      "target_language": "ta-IN",
+      "n": 5,
+      "score_sum": 25,
+      "mean": 5,
+      "median": 5,
+      "score_4_or_5": 5,
+      "score_4_or_5_pct": 100.0,
+      "below_4": 0,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 5
+      },
+      "fixtures": 5
+    },
+    {
+      "source_category": "en",
+      "target_language": "te-IN",
+      "n": 5,
+      "score_sum": 24,
+      "mean": 4.8,
+      "median": 5,
+      "score_4_or_5": 5,
+      "score_4_or_5_pct": 100.0,
+      "below_4": 0,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 1,
+        "5": 4
+      },
+      "fixtures": 5
+    },
+    {
+      "source_category": "hi",
+      "target_language": "en-IN",
+      "n": 5,
+      "score_sum": 25,
+      "mean": 5,
+      "median": 5,
+      "score_4_or_5": 5,
+      "score_4_or_5_pct": 100.0,
+      "below_4": 0,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 5
+      },
+      "fixtures": 5
+    },
+    {
+      "source_category": "hi",
+      "target_language": "hi-IN",
+      "n": 5,
+      "score_sum": 25,
+      "mean": 5,
+      "median": 5,
+      "score_4_or_5": 5,
+      "score_4_or_5_pct": 100.0,
+      "below_4": 0,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 5
+      },
+      "fixtures": 5
+    },
+    {
+      "source_category": "hi",
+      "target_language": "ta-IN",
+      "n": 4,
+      "score_sum": 20,
+      "mean": 5,
+      "median": 5.0,
+      "score_4_or_5": 4,
+      "score_4_or_5_pct": 100.0,
+      "below_4": 0,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 4
+      },
+      "fixtures": 4
+    },
+    {
+      "source_category": "hi",
+      "target_language": "te-IN",
+      "n": 4,
+      "score_sum": 20,
+      "mean": 5,
+      "median": 5.0,
+      "score_4_or_5": 4,
+      "score_4_or_5_pct": 100.0,
+      "below_4": 0,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 4
+      },
+      "fixtures": 4
+    },
+    {
+      "source_category": "mix",
+      "target_language": "en-IN",
+      "n": 4,
+      "score_sum": 17,
+      "mean": 4.25,
+      "median": 5.0,
+      "score_4_or_5": 3,
+      "score_4_or_5_pct": 75.0,
+      "below_4": 1,
+      "distribution": {
+        "1": 0,
+        "2": 1,
+        "3": 0,
+        "4": 0,
+        "5": 3
+      },
+      "fixtures": 4
+    },
+    {
+      "source_category": "mix",
+      "target_language": "hi-IN",
+      "n": 4,
+      "score_sum": 18,
+      "mean": 4.5,
+      "median": 5.0,
+      "score_4_or_5": 3,
+      "score_4_or_5_pct": 75.0,
+      "below_4": 1,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 0,
+        "5": 3
+      },
+      "fixtures": 4
+    },
+    {
+      "source_category": "mix",
+      "target_language": "ta-IN",
+      "n": 5,
+      "score_sum": 19,
+      "mean": 3.8,
+      "median": 4,
+      "score_4_or_5": 3,
+      "score_4_or_5_pct": 60.0,
+      "below_4": 2,
+      "distribution": {
+        "1": 0,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 2
+      },
+      "fixtures": 5
+    },
+    {
+      "source_category": "mix",
+      "target_language": "te-IN",
+      "n": 5,
+      "score_sum": 23,
+      "mean": 4.6,
+      "median": 5,
+      "score_4_or_5": 4,
+      "score_4_or_5_pct": 80.0,
+      "below_4": 1,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 0,
+        "5": 4
+      },
+      "fixtures": 5
+    },
+    {
+      "source_category": "ta",
+      "target_language": "en-IN",
+      "n": 6,
+      "score_sum": 28,
+      "mean": 4.666666666666667,
+      "median": 5.0,
+      "score_4_or_5": 5,
+      "score_4_or_5_pct": 83.33333333333333,
+      "below_4": 1,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 0,
+        "5": 5
+      },
+      "fixtures": 6
+    },
+    {
+      "source_category": "ta",
+      "target_language": "hi-IN",
+      "n": 4,
+      "score_sum": 18,
+      "mean": 4.5,
+      "median": 5.0,
+      "score_4_or_5": 3,
+      "score_4_or_5_pct": 75.0,
+      "below_4": 1,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 0,
+        "5": 3
+      },
+      "fixtures": 4
+    },
+    {
+      "source_category": "ta",
+      "target_language": "ta-IN",
+      "n": 5,
+      "score_sum": 23,
+      "mean": 4.6,
+      "median": 5,
+      "score_4_or_5": 4,
+      "score_4_or_5_pct": 80.0,
+      "below_4": 1,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 0,
+        "5": 4
+      },
+      "fixtures": 5
+    },
+    {
+      "source_category": "ta",
+      "target_language": "te-IN",
+      "n": 3,
+      "score_sum": 15,
+      "mean": 5,
+      "median": 5,
+      "score_4_or_5": 3,
+      "score_4_or_5_pct": 100.0,
+      "below_4": 0,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 3
+      },
+      "fixtures": 3
+    },
+    {
+      "source_category": "te",
+      "target_language": "en-IN",
+      "n": 4,
+      "score_sum": 19,
+      "mean": 4.75,
+      "median": 5.0,
+      "score_4_or_5": 4,
+      "score_4_or_5_pct": 100.0,
+      "below_4": 0,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 1,
+        "5": 3
+      },
+      "fixtures": 4
+    },
+    {
+      "source_category": "te",
+      "target_language": "hi-IN",
+      "n": 4,
+      "score_sum": 15,
+      "mean": 3.75,
+      "median": 4.0,
+      "score_4_or_5": 2,
+      "score_4_or_5_pct": 50.0,
+      "below_4": 2,
+      "distribution": {
+        "1": 0,
+        "2": 1,
+        "3": 1,
+        "4": 0,
+        "5": 2
+      },
+      "fixtures": 4
+    },
+    {
+      "source_category": "te",
+      "target_language": "ta-IN",
+      "n": 5,
+      "score_sum": 22,
+      "mean": 4.4,
+      "median": 5,
+      "score_4_or_5": 4,
+      "score_4_or_5_pct": 80.0,
+      "below_4": 1,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 1,
+        "5": 3
+      },
+      "fixtures": 5
+    },
+    {
+      "source_category": "te",
+      "target_language": "te-IN",
+      "n": 5,
+      "score_sum": 20,
+      "mean": 4,
+      "median": 5,
+      "score_4_or_5": 3,
+      "score_4_or_5_pct": 60.0,
+      "below_4": 2,
+      "distribution": {
+        "1": 0,
+        "2": 1,
+        "3": 1,
+        "4": 0,
+        "5": 3
+      },
+      "fixtures": 5
+    }
+  ],
+  "fixtures_all_targets_score_4_or_5": 25,
+  "fixtures_with_score_below_4": 5,
+  "fixtures_with_any_score_below_5": 9,
+  "rounding_changes": {
+    "wav_duration_s": 193,
+    "audio_received_ms": 132
+  },
+  "maximum_rounding_difference": {
+    "wav_duration_s": "5E-7",
+    "audio_received_ms": "0.005"
+  },
+  "historical_smoke_runs": [
+    {
+      "file": "load_test_1790449705.json",
+      "sessions": 8,
+      "events": {
+        "peer_joined": 160,
+        "vad": 80,
+        "transcript": 1385,
+        "translated": 32,
+        "latency": 32,
+        "audio": 32
+      }
+    },
+    {
+      "file": "load_test_1790449995.json",
+      "sessions": 8,
+      "events": {
+        "peer_joined": 160,
+        "vad": 80,
+        "transcript": 2170,
+        "translated": 32,
+        "latency": 32,
+        "audio": 32
+      }
+    }
+  ],
+  "source_hashes": {
+    "summary.json": "910b9b2382f6d232d6c5afef9d6f6ac7fd3cf543a87ad79a83b3443d42d24f24",
+    "targets.csv": "58ee0716c97efbec28c102385ee638a24a667767acf32ef2d335327ee1299886",
+    "inputs.csv": "98e73e235a0e232ff80e2b8161bc365bf7a8abcf9f26064df41bb32b44bbcaae",
+    "playback_replay.json": "9eaf4f6926523eb530d092f2e9e49bc6336f041280c5c5af66e8616a66d4fc9e",
+    "consumption.json": "d93c0d9cd94300a532fdeea0ab33abb4a861f423bb41a281dab520f9d990df08"
+  },
+  "issue_catalogue": [
+    {
+      "fixture": "mix_2",
+      "label": "Semantic role shift",
+      "n": 3,
+      "targets": "hi, ta, te",
+      "scores": "3, 3, 3",
+      "explanation": "Busy attributed to the person rather than the route. Review the source phrasing and preserve who/what the modifier describes.",
+      "attribution": "Meaning attribution; ambiguous source/context"
+    },
+    {
+      "fixture": "mix_7",
+      "label": "Incomplete content",
+      "n": 2,
+      "targets": "ta, en",
+      "scores": "2, 2",
+      "explanation": "Tamil and English target translations were rated incomplete / cut off. Valid WAV delivery does not prove full semantic content.",
+      "attribution": "Trace source transcription, translation and speech termination before assigning cause"
+    },
+    {
+      "fixture": "te_10",
+      "label": "Travel-direction mistranslation",
+      "n": 2,
+      "targets": "hi, te",
+      "scores": "2, 2",
+      "explanation": "Hindi and Telugu outputs were described as dropping off / picking up to take home instead of the intended meaning.",
+      "attribution": "Translation/source interpretation; not a demonstrated transport failure"
+    },
+    {
+      "fixture": "te_3",
+      "label": "STT error propagation",
+      "n": 3,
+      "targets": "hi, ta, te",
+      "scores": "3, 3, 3",
+      "explanation": "The Telugu deadline expression was misrecognized; reviewer notes say the corrupted phrase propagated to all three targets.",
+      "attribution": "Reviewer-attributed upstream recognition issue"
+    },
+    {
+      "fixture": "ta_2",
+      "label": "STT error propagation",
+      "n": 3,
+      "targets": "en, hi, ta",
+      "scores": "3, 3, 3",
+      "explanation": "Reviewer notes say the Tamil time/context expression was misrecognized, changing the intended context to 'here'.",
+      "attribution": "Reviewer-attributed upstream issue; verify exact waveform/transcript alignment"
+    },
+    {
+      "fixture": "te_4",
+      "label": "Relationship detail changed",
+      "n": 1,
+      "targets": "ta",
+      "scores": "4",
+      "explanation": "Younger brother became older brother in Tamil. Rated 4, but the relationship fact changed.",
+      "attribution": "A high score alone does not exclude important factual errors"
+    },
+    {
+      "fixture": "mix_4",
+      "label": "Output repetition",
+      "n": 1,
+      "targets": "ta",
+      "scores": "4",
+      "explanation": "Tamil output repeated the quantity marker ('a 1' in the review description).",
+      "attribution": "Minor fluency/formatting issue"
+    },
+    {
+      "fixture": "en_13",
+      "label": "Meaning nuance",
+      "n": 1,
+      "targets": "te",
+      "scores": "4",
+      "explanation": "Telugu wording changed 'moved' to 'postponed'.",
+      "attribution": "Scheduling nuance; needs context-sensitive review"
+    },
+    {
+      "fixture": "te_13",
+      "label": "Awkward phrasing",
+      "n": 1,
+      "targets": "en",
+      "scores": "4",
+      "explanation": "English output was described as 'changed at 3 o'clock'.",
+      "attribution": "Minor fluency issue; clarify temporal phrasing"
+    }
+  ]
+}

@@ -44,6 +44,10 @@ FIFO order, no media errors and no horizontal overflow. Receive-to-playing
 delay is not live end-to-end latency. Local WAVs: ignored
 `logs/controlled-benchmark/audio/`. Raw JSONL events omit audio base64.
 
-Synthetic voice/reference bias, no native semantic review, loopback network,
-two independent speaker streams only, no endurance run. Do not turn WER into
-an unsupported translation-accuracy percentage.
+The original benchmark used synthetic voice/reference clips, a loopback network,
+and two independent speaker streams; a full 30-minute endurance run is unperformed.
+A later bilingual human text/audio review assessed 90 outputs from 30 fixtures in
+one alternating repetition. See [the consolidated report](../docs/TESTING-REPORT.md)
+and [archived review evidence](results/reviewed_20261013/README.md). The original
+quantitative report is retained unchanged. Do not turn WER or mean human ratings
+into a universal translation-accuracy percentage.
