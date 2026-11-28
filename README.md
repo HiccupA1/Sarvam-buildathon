@@ -9,7 +9,6 @@ another participant can receive that speech as Hindi text and audio. A listening
 preference never locks someone into a speaking language.
 
 - [Evaluation and human review](docs/TESTING-REPORT.md)
-- [How to record a working demo](docs/DEMO-RECORDING.md)
 - [Hosted interface preview](https://sarvam-interpreter-preview.onrender.com/)
   — live processing is disabled; use the local setup below for actual speech.
 
@@ -72,8 +71,9 @@ is retained as the historical quantitative study, before human review was added.
 
 The Render link is an interface preview with live speech processing intentionally
 disabled. A private two-device live demo was verified previously; there is no
-always-on public live interpreter. The [recording guide](docs/DEMO-RECORDING.md)
-explains how to demonstrate real translation on one laptop or two devices.
+always-on public live interpreter. Use the local setup below or the
+[private laptop demo](DEPLOYMENT.md#no-hosting-cost-temporary-laptop-demo)
+for actual speech translation.
 
 Live processing requires a Sarvam key and a private invite. Usage allowances
 persist in SQLite; listen-only participants use no upstream STT. Short reconnects
@@ -245,7 +245,6 @@ Hosting requirements beyond a LAN demo:
 backend/app.py          FastAPI app: WebSocket room/pipeline logic
 backend/requirements.txt
 docs/TESTING-REPORT.md  Consolidated measurements and bilingual human review
-docs/DEMO-RECORDING.md  Recording setup, walkthrough, and access instructions
 loadtest/results/reviewed_20261013/  Archived human scores and derived summaries
 frontend/index.html     Participant grid UI, room join, mic capture wiring
 frontend/audio-processor.js   AudioWorklet: resamples mic input to 16kHz PCM16
